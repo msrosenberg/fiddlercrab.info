@@ -1,0 +1,387 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Merienda+One);
+
+body { 
+  background-color: white;
+  font-family: "Lora", "Georgia", serif;
+  font-size: medium;
+ }
+
+a,
+a:visited {
+  color: blue;
+  text-decoration: none;
+ }
+
+a:hover {
+  color: red;
+ }
+
+h2 a,
+h2 a:hover,
+h3 a,
+h3 a:hover {
+  color: black;
+ }
+
+h3 {
+  clear: both;
+  }
+
+#home {
+  font-family: "Merienda One", "Monotype Corsiva", cursive;
+  background: black;
+  margin-bottom: 5px;
+ }
+
+#home a {
+  background: black url(images/stylifera75.png) no-repeat 1px 50%;
+  color: yellow;
+  display: block;
+  font-size: 60px;
+  min-height: 75px;
+  padding-left: 120px;
+ }
+
+header {
+  background-color: seagreen;
+  color: #D4FEE7;
+  padding: 0 20px;
+  border: 5px #20613C solid;
+  border-radius: 20px;
+ }
+
+header h1 {
+  font-size: 300%;
+  padding-bottom: 20px 0;
+  margin-bottom: 0;
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+ }
+
+header h2 {
+  padding: 0 0 20px 0;
+  margin: 0;  
+}
+
+nav {
+  padding-bottom: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+ }
+
+nav a,
+nav a:visited {
+  float: left;
+  display: block;
+  color: #20613C;
+  background: #AAFECF;
+  border-radius: 8px;
+  border: 1px #20613C solid;
+  padding: 4px 8px;
+  margin: 0 3px 0 0;
+ }
+
+nav a:hover {
+  color: black;
+  background: #69D948;
+  border: 1px black solid;
+ } 
+
+.sppic {
+  float: left;
+  margin: 10px;
+ }
+
+.sppic img {
+  height: 200px;
+  border: 1px blue solid;
+ }
+
+.sppic img:hover {
+  border: 1px red solid;
+ }
+
+.fullpic {
+  text-align: center;
+ }
+
+.fullpic figcaption {
+  font-style: italic;
+ }
+
+.spsection {
+  clear : both;
+  border-top: 3px #D4FEE7 groove;
+ }
+
+.topspsection {
+  clear : both;
+ }
+
+.topphotosection {
+  clear: both;
+ }
+
+.photosection {
+  clear: both;
+  border-top: 3px #D4FEE7 groove;
+ }
+
+.topphotosection h2 a,
+.topphotosection h2 a:visited,
+.photosection h2 a,
+.photosection h2 a:visited {
+  color: black;
+ }
+.photosection h2 a:hover {
+  color: red;
+ }
+
+.species {
+  font-style: italic;
+ }
+
+.fossilImg {
+  height: 1em;
+  padding-left: 5px;
+ }
+
+a.spmap,
+a:visited.spamp {
+  padding-left:50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url(images/globe.png) no-repeat 1px 50%;
+  display: block;
+ }
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+  xborder-top: 3px #D4FEE7 groove;
+  padding-top: 0.5em;
+ }
+
+dd blockquote {
+  background: #D4FEE7;
+  color: #20613C;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 5em;
+ }
+
+
+dd {
+  padding-bottom: 10px;
+ }
+
+.common dt {
+  border-top: 3px #D4FEE7 groove;
+}
+
+footer {
+  clear: both;
+  font-style: italic;
+  font-size: 0.75em;
+  background-color: seagreen;
+  color: #D4FEE7;
+  border: 3px #20613C inset;
+  text-align: center;
+  padding-left: 0 20px;
+	height: 80px;
+ }
+
+footer a,
+footer a:hover,
+footer a:visited {
+  color: #AAFECF;
+}
+
+#footmap {
+	padding: 0;
+	margin: 2px;
+	float: right;
+ }
+
+#citation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+
+#citation ul li {
+	padding-left: 25px;
+	padding-bottom: 1em;
+  text-indent: -25px;
+ }
+
+#citation a,
+#citation a:hover {
+  xcolor: black;
+ }
+
+#splist {
+  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3; /* Safari and Chrome */
+  column-count: 3;
+  -moz-column-rule: 2px groove seagreen; /* Firefox */
+  -webkit-column-rule: 2px groove seagreen; /* Safari and Chrome */
+  column-rule: 2px groove seagreen;  
+  -moz-column-gap: 1em; /* Firefox */
+  -webkit-column-gap: 1em; /* Safari and Chrome */
+  column-gap: 1em;
+ }
+ 
+#splist li {
+  list-style-type: none;
+  padding-left: 20px;
+ }
+ 
+.synarrow {
+  font-size: 150%;
+  vertical-align: -10%;
+ }
+ 
+.spsection table {
+  width: 800px;
+  border-top: 2px solid black;
+  padding-bottom: 1em;
+ }
+ 
+.spsection th {
+  border-bottom: 2px solid black;
+ }
+ 
+.spsection td {
+  border-bottom: 1px solid silver;
+ }
+ 
+.spsection tfoot {
+  font-size: 0.75em;
+  font-style: italic;
+ }
+ 
+.spsection tfoot td {
+  border-bottom: 0;
+ }
+ 
+.spsection blockquote {
+  border: 3px solid #20613C;
+  background: seagreen;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+ }
+ 
+.classcol1 {
+  font-weight: bold;
+  padding-right: 1em;
+ }
+ 
+ .map_data {
+  font-size: 0.75em;
+ } 
+ 
+.spsection figcaption{
+	font-style: italic;
+	font-size: 0.75em;
+	text-align: center;
+ }
+ 
+ 
+a.vidlink,
+a:visited.vidlink {
+  padding-left:55px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url(images/film.png) no-repeat 1px 100%;
+  xdisplay: block;
+  font-weight: bold;
+ }
+
+.vidlist dd {
+  margin-left:55px;
+  padding-bottom: 20px;
+}
+
+.vidcaption {
+  font-style: italic;
+ }
+ 
+.viddetails {
+  font-size: 0.75em;
+ }
+ 
+.viddetails dd {
+  padding-bottom: 0;
+  margin-left: 15px;
+}
+ 
+.syspic {
+	text-align: center;
+ }
+ 
+.syspic img {
+   height: 230px;
+ }
+
+.syspic figcaption {
+  text-align: center;
+}
+
+.citetable td {
+  padding: 0px 5px;
+ }
+
+.citetable th{
+  border-bottom: 1px silver solid;
+}
+
+.rowspacer {
+  border-bottom: 1px silver solid;
+  font-size: 0.5em;
+ }
+
+.namecol {
+  float: left;
+  width: 40%;
+ }
+ 
+.morphdesc {
+  xfloat : left;
+  xwidth: 500px;
+  padding: 0.5em;
+ } 
+ 
+.morphimg  {
+  xfloat: left;
+  width: 500px;
+  xmargin-left: 0;
+  xmargin-right: 0;
+  padding-bottom: 1em;
+  } 
+
+.morphimg img {
+  }
+  
+.morphimg figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+ }
+ 
