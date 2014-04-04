@@ -13,6 +13,7 @@ mapURL = "uca_ranges.html"
 lifeCycleURL = "uca_lifecycle.html"
 treeURL = "uca_phylogeny.html"
 artURL = "uca_art.html"
+morphURL = "uca_morphology.html"
 fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" />"
 
 randSeed = random.randint(0,10000)
@@ -227,6 +228,40 @@ class ArtClass():
         return self.__notes
     def setNotes(self,x):
         self.__notes = x
+
+
+class MorphologyClass():
+    def __init__(self):
+        self.__character = ""
+        self.__parent = ""
+        self.__image = ""
+        self.__description = ""
+        self.__caption = ""
+        self.__maxHeight = "0"
+    def character(self):
+        return self.__character
+    def setCharacter(self,x):
+        self.__character = x
+    def parent(self):
+        return self.__parent
+    def setParent(self,x):
+        self.__parent = x
+    def image(self):
+        return self.__image
+    def setImage(self,x):
+        self.__image = x
+    def description(self):
+        return self.__description
+    def setDescription(self,x):
+        self.__description = x
+    def caption(self):
+        return self.__caption
+    def setCaption(self,x):
+        self.__caption = x
+    def maxHeight(self):
+        return self.__maxHeight
+    def setMaxHeight(self,x):
+        self.__maxHeight = x
 
 
 class SpeciesClass():
@@ -2293,7 +2328,7 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("      <table>\n")
     outfile.write("        <thead>\n")
     outfile.write("          <tr>\n")
-    outfile.write("            <th>New/Validated Species</th><th>Reference(s)</th>\n")
+    outfile.write("            <th>New/Validated Extant Species</th><th>Reference(s)</th>\n")
     outfile.write("          </tr>\n")
     outfile.write("        </thead>\n")
     outfile.write("        <tfoot>\n")
@@ -2351,6 +2386,10 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("          <tr>\n")
     outfile.write("            <td><em class=\"species\">Uca splendida</em></td>\n")
     outfile.write("            <td><a href=\"references/Stimpson1858.html\">Stimpson (1858)</a>, <a href=\"references/Shih2012.html\">Shih <em>et al.</em> (2012)</a></td>\n")
+    outfile.write("          </tr>\n")
+    outfile.write("          <tr>\n")
+    outfile.write("            <td><em class=\"species\">Uca boninensis</em></td>\n")
+    outfile.write("            <td><a href=\"references/Shih2013.2.html\">Shih <em>et al.</em> (2013)</a></td>\n")
     outfile.write("          </tr>\n")
     outfile.write("        </tbody>\n")
     outfile.write("      </table>\n")
@@ -2547,6 +2586,163 @@ def createPhylogeny():
     outfile.close()
 
 
+def morphLink(parent,character):
+    if parent == ".":
+        return character.replace(" ","_")
+    else:
+        return parent.replace(" ","_")+"_"+character.replace(" ","_")
+
+
+def findMorphParent(p,mList):
+    x = ""
+    for m in mList:
+        if p == m.character():
+            x = morphLink(m.parent(),m.character())
+    return x
+
+
+def createMorphPage(morph,morphList):
+    """ create individual pages for morphology descriptions """
+    outfile = codecs.open("morphology/"+morphLink(morph.parent(),morph.character())+".html", "w", "utf-8")
+    if morph.parent() == ".":
+        p = ""
+    else:
+        p = " ("+morph.parent()+")"
+    commonHTMLHeader(outfile,"Fiddler Crab Morphology: " + morph.character() + p,"../")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>"+morph.character()+"</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    if morph.parent() != ".":
+        outfile.write("          <li><a href=\""+findMorphParent(morph.parent(),morphList)+".html\">"+morph.parent()+"</a></li>\n")
+    outfile.write("          <li><a href=\"../"+morphURL+"\">General Morphology</a></li>\n")
+    outfile.write("          <li><a href=\".\">Morphology Index</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")  
+    outfile.write("    <div class=\"morphdesc\">\n")
+    outfile.write("     <p>\n")
+    outfile.write("       " + morph.description() + "\n")
+    outfile.write("     </p>\n")
+    c = 0
+    for m in morphList:
+        if m.parent() == morph.character():
+            c += 1
+    if c > 0:
+        outfile.write("     <h2>More Detail</h2>\n")
+        outfile.write("     <ul>\n")
+        for m in morphList:
+            if m.parent() == morph.character():
+                outfile.write("       <li><a href=\""+morphLink(m.parent(),m.character())+".html\">"+m.character()+"</a></li>\n")
+        outfile.write("     </ul>\n")
+    outfile.write("    </div>\n")
+    if "|" in morph.image():
+        plist = morph.image().split("|")
+        clist = morph.caption().split("|")
+    else:
+        plist = [morph.image()]
+        clist = [morph.caption()]
+    for i in range(len(plist)):
+        outfile.write("    <figure class=\"morphimg\">\n")
+        outfile.write("      <img src=\""+plist[i]+"\" alt=\""+clist[i]+"\" />\n")
+        outfile.write("      <figcaption>"+clist[i]+"</figcaption>\n")
+        outfile.write("    </figure>\n")
+
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
+def createMorphIndex(morphList):
+    """ create index for morphology pages """
+    outfile = codecs.open("morphology/index.html", "w", "utf-8")
+    commonHTMLHeader(outfile,"Morphology Index","../")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Morphology Index</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\"../"+morphURL+"\">General Morphology</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")  
+    outfile.write("     <ul>\n")
+    uniqueList = {}
+    for m in morphList:
+        if m.character() in uniqueList:
+            uniqueList[m.character()] += 1
+        else:
+            uniqueList[m.character()] = 1
+
+    sortList = []
+    for m in morphList:
+        if uniqueList[m.character()] > 1:
+            sortList.append([m.character() + " (" + m.parent() + ")",m])
+        else:
+            sortList.append([m.character(),m])
+    sortList.sort()
+    for s in sortList:
+        m = s[1]
+        if uniqueList[m.character()] > 1:
+            p = " ("+m.parent()+")"
+        else:
+            p = ""
+        outfile.write("      <li><a href=\""+morphLink(m.parent(),m.character())+".html\">"+m.character()+ p +"</a></li>\n")
+    outfile.write("     </ul>\n")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
+def createMorphologyPages(morphology):
+    """ create page for general morphology descriptions """
+    outfile = codecs.open(morphURL, "w", "utf-8")
+    commonHTMLHeader(outfile,"Fiddler Crab Morphology","../")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Morphology</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\"morphology/index.html\">Index</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")  
+    outfile.write("    <div class=\"morphdesc\">\n")
+    outfile.write("     <p>\n")
+    outfile.write("      Fiddler crabs are decapod &ldquo;true crabs&rdquo; which much of the standard morphology found within this group. The following\n")
+    outfile.write("      sections briefly describe major morphological features as well as characteristics that are often used to distinguish among species.\n")
+    outfile.write("     </p>\n")
+    outfile.write("      The morphology is organized hierarchically by major body component with further details within each section.\n")
+    outfile.write("     <p>\n")
+    outfile.write("     </p>\n")
+    outfile.write("     <h2>More Detail</h2>\n")
+    outfile.write("     <ul>\n")
+    for m in morphology:
+        if m.parent() == ".":
+            outfile.write("      <li><a href=\"morphology/"+morphLink(m.parent(),m.character())+".html\">"+m.character()+"</a></li>\n")
+        createMorphPage(m,morphology)
+    createMorphIndex(morphology)
+    outfile.write("     </ul>\n")
+    outfile.write("    </div>\n")
+
+    # max height = 335
+    
+    outfile.write("    <figure class=\"morphimg\">\n")
+    outfile.write("      <img src=\"morphology/dorsal_view.png\" alt=\"dorsal view of crab\" />\n")
+    outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
+    outfile.write("    </figure>\n")
+    outfile.write("    <figure class=\"morphimg\">\n")
+    outfile.write("      <img src=\"morphology/ventral_view.png\" alt=\"ventral view of crab\" />\n")
+    outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
+    outfile.write("    </figure>\n")
+    outfile.write("    <figure class=\"morphimg\">\n")
+    outfile.write("      <img src=\"morphology/anterior_view.png\" alt=\"anterior view of crab\" />\n")
+    outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
+    outfile.write("    </figure>\n")
+
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
 def createIndex(species,refs):
     """ create the site index """
     outfile = codecs.open("index.html", "w", "utf-8")
@@ -2606,8 +2802,7 @@ def createIndex(species,refs):
     outfile.write("      <li><a href=\""+commonURL+"\">Common Names</a></li>\n")
     outfile.write("      <li><a href=\""+mapURL+"\">Geographic Ranges</a></li>\n")
     outfile.write("      <li><a href=\""+lifeCycleURL+"\">Life Cycle</a></li>\n")
-    # This is upcoming...
-    #outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
+    outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
     outfile.write("      <li><a href=\""+refURL+"\">Comprehensive Reference List</a></li>\n")
     outfile.write("    </ul>\n")
     outfile.write("    <h2>Multimedia</h2>\n")  
@@ -2658,6 +2853,8 @@ def main():
     createMapHTML(species)
     createLifeCycle()
     createPhylogeny()
+    #morphology = getMorphology()
+    #createMorphologyPages(morphology)    
     createIndex(species,references)
     print("done")
 
