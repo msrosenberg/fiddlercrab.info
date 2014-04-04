@@ -703,6 +703,9 @@ def referencesToHTML(refList):
     outfile.write("      Many of these papers (particularly the older ones) are primarily taxonomic lists. I tried to leave out papers which just casually refer to fiddlers without providing any information (<em>e.g.</em>, &ldquo;...the results of these experiments on the lobster are similar to those seen in green crabs and fiddler crabs.&rdquo;).\n")
     outfile.write("    </p>\n")    
     outfile.write("    <p>\n")
+    outfile.write("      The references can also be downloaded as <a href=\"references/Uca_references.enlx\">compressed Endnote</a>, <a href=\"references/Uca_references_RIS.txt\">RIS (text)</a>, or <a href=\"references/Uca_references_RIS.xml\">RIS (XML)</a>.\n")
+    outfile.write("    </p>\n")
+    outfile.write("    <p>\n")
     outfile.write("      Linked references contain information on every name applied to fiddler crabs within the publication, including context and the correct name as we currently understand it.\n")
     outfile.write("      These data are in the process of being compiled (chronologically for all publications I have access to a copy of), with most references still incomplete.\n")
     outfile.write("    </p>\n")    
@@ -2783,13 +2786,6 @@ def createIndex(species,refs):
        "males, where the movement of the small claw from the ground to its mouth " + \
        "resembles the motion of a someone moving a bow across a fiddle (the large claw).\n")
     outfile.write("    </p>\n")
-    """
-  <div style="height: 165px;">
-   <img src="Pics/U_lactea8.gif" width="160" height="120" alt="Uca lactea feeding" 
-     style="padding: 5px; " />
-   <i>From a <a href="http://www.ebio.idv.tw/ebiotw/ix-life.htm">Taiwanese website</a>.</i>
-  </div>
-     """
     outfile.write("    <h2>Information</h2>\n")  
     outfile.write("    <ul>\n")
     outfile.write("      <li><a href=\""+systURL+"\">Systematics</a></li>\n")
@@ -2802,7 +2798,7 @@ def createIndex(species,refs):
     outfile.write("      <li><a href=\""+commonURL+"\">Common Names</a></li>\n")
     outfile.write("      <li><a href=\""+mapURL+"\">Geographic Ranges</a></li>\n")
     outfile.write("      <li><a href=\""+lifeCycleURL+"\">Life Cycle</a></li>\n")
-    outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
+    #outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
     outfile.write("      <li><a href=\""+refURL+"\">Comprehensive Reference List</a></li>\n")
     outfile.write("    </ul>\n")
     outfile.write("    <h2>Multimedia</h2>\n")  
@@ -2811,21 +2807,6 @@ def createIndex(species,refs):
     outfile.write("      <li><a href=\""+videoURL+"\">Videos</a></li>\n")
     outfile.write("      <li><a href=\""+artURL+"\">Art</a></li>\n")
     outfile.write("    </ul>\n")
-
-    """
-    <ul>
-     <li>Pictures of 
-      <a href="uca_mystery.html">unindentified species</a> found on the net</li>
-    </ul>
-
-  <h3>Miscellaneous</h3>
-  <ul>
-   <li><a href="uca_links.html">Fiddler Crab Links</a></li>
-   <li><a href="uca_art.html">Fiddler Crab Art</a></li>
-   <li><a href="http://lsweb.la.asu.edu/rosenberg">Michael S. Rosenberg's Website</a></li>
-  </ul>
-
-"""
 
     commonHTMLFooter(outfile)
     outfile.close()
