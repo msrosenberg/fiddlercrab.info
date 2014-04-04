@@ -47,3 +47,12 @@ This program takes a single KML file ("Fiddler Crabs.kml") which contains intern
 A temporary file called doc.kml is produced by this program; it is not automatically deleted upon completion of the code.
 
 This program will create all of the .kmz files in the current directory, but the webpages created by CreatePages.py expects to find all of the .kmz files in a subfolder titled maps
+
+--
+The Data directory includes a variety of raw(ish) data files not directly used by the code to create the site. These include
+
+* the full bibliography in three formats: compressed Endnote, RIS (text), and RIS (XML)
+
+* an Excel spreadsheet with the citation data used to create the citeinfo.txt file in the primary directory
+
+* an Excel spreadsheet with a variety of pages used to create most of the other text data files in the primary directory
