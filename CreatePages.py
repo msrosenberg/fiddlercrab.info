@@ -237,7 +237,7 @@ class MorphologyClass():
         self.__image = ""
         self.__description = ""
         self.__caption = ""
-        self.__maxHeight = "0"
+        #self.__maxHeight = "0"
     def character(self):
         return self.__character
     def setCharacter(self,x):
@@ -258,10 +258,10 @@ class MorphologyClass():
         return self.__caption
     def setCaption(self,x):
         self.__caption = x
-    def maxHeight(self):
-        return self.__maxHeight
-    def setMaxHeight(self,x):
-        self.__maxHeight = x
+    #def maxHeight(self):
+    #    return self.__maxHeight
+    #def setMaxHeight(self,x):
+    #   self.__maxHeight = x
 
 
 class SpeciesClass():
@@ -574,8 +574,8 @@ def getMorphology():
         newMorph.setParent(m[1])
         newMorph.setImage(m[2])
         newMorph.setCaption(m[3])
-        newMorph.setMaxHeight(m[4])
-        newMorph.setDescription(m[5])
+        #newMorph.setMaxHeight(m[4])
+        newMorph.setDescription(m[4])
         morphList.append(newMorph)
     return morphList
 
@@ -2798,7 +2798,7 @@ def createIndex(species,refs):
     outfile.write("      <li><a href=\""+commonURL+"\">Common Names</a></li>\n")
     outfile.write("      <li><a href=\""+mapURL+"\">Geographic Ranges</a></li>\n")
     outfile.write("      <li><a href=\""+lifeCycleURL+"\">Life Cycle</a></li>\n")
-    #outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
+    outfile.write("      <li><a href=\""+morphURL+"\">Morphology</a></li>\n")
     outfile.write("      <li><a href=\""+refURL+"\">Comprehensive Reference List</a></li>\n")
     outfile.write("    </ul>\n")
     outfile.write("    <h2>Multimedia</h2>\n")  
@@ -2834,8 +2834,8 @@ def main():
     createMapHTML(species)
     createLifeCycle()
     createPhylogeny()
-    #morphology = getMorphology()
-    #createMorphologyPages(morphology)    
+    morphology = getMorphology()
+    createMorphologyPages(morphology)    
     createIndex(species,references)
     print("done")
 
