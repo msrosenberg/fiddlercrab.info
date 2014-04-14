@@ -1649,7 +1649,8 @@ def writeSpeciesPhotoPage(fname,species,commonName,caption,pn,pspecies):
     outfile.write("    <header>\n")
     outfile.write("      <h1><em class=\"species\">"+ptitle+"</em> Photo</h1>\n")
     if not isMulti:
-        outfile.write("      <h2>"+commonName+"</h2>\n")
+        if commonName != "#":
+            outfile.write("      <h2>"+commonName+"</h2>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
     if isMulti:
