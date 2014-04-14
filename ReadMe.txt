@@ -3,9 +3,10 @@ This is the code and data required to completely reconstruct the fiddlercrab.inf
 There are two programs, both written in Python 3 (without any external dependencies).
 
 (1) CreatePages.py 
-This creates all of the webpages from the various input flatfiles (described below). To run properly it expects to find the following five subfolders, not automatically created:
+This creates all of the webpages from the various input flatfiles (described below). To run properly it expects to find the following six subfolders, not automatically created:
 
 art
+morphology
 names
 photos
 references
@@ -39,6 +40,9 @@ Contains primary data for all videos on the site, used on both individual specie
 
 (i) references.html
 This is an html file containing all of the references in the database, already properly formatted for web display. It is exported into html output from Endnote. The references are in the same exact order as found in the references_cites.txt file. This html page is not used directly on the site: rather, the pre-formatted references are extracted from this file and output into various pages on the site as necessary.
+
+(j) morphology.txt
+Contains primary data for the morphological descriptions on the site.
 
 --
 (2) CreateKML.py
