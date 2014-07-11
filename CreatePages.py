@@ -1411,7 +1411,7 @@ def createCommonNamesHTML():
     outfile.write("            These differ materially from the kinds we have described, in habits, \n")
     outfile.write("            appearance, and structure. By the use of their powerful oar-like legs they\n")
     outfile.write("            are enabled to propel themselves through the water with great rapidity and\n")
-    outfile.write("            precision,a nd by darting among the meshes of the fishing-nets they becomes\n")
+    outfile.write("            precision, and by darting among the meshes of the fishing-nets they becomes\n")
     outfile.write("            so helplessly entangled, that\n")
     outfile.write("            a &ldquo;<em>Fiddler Crab</em>&rdquo; (as it is sometimes called from\n")
     outfile.write("            the rapidity with which it works its elbows) in a <em>transel net</em>, is\n")
