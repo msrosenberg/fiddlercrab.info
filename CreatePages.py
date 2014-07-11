@@ -1443,7 +1443,7 @@ def createCommonNamesHTML():
     outfile.write("          And again in Johnson and Snook's book, <em>Seashore Animals of the Pacific Cost</em> (1927), p. 400:\n")
     outfile.write("          <blockquote>\n")
     outfile.write("            The males are frequently seen to brandish the large claw in a peculiar way. First, they reach out with it as far as it will go, then they bring it toward the body with a sudden movement.\n")
-    outfile.write("            This motion which has probably suggested the name &ldquo;fiddler&rdquo; crab is carried on during hte breeding season and is presecuted more vigorously when a female crab is nearby.\n")
+    outfile.write("            This motion which has probably suggested the name &ldquo;fiddler&rdquo; crab is carried on during the breeding season and is presecuted more vigorously when a female crab is nearby.\n")
     outfile.write("          </blockquote>\n")
     outfile.write("          Similar confusing claims are made by Boyce (1924), while Boone (1927) returns to the resemblance of the large claw (without associated motion) (see quotes under &ldquo;Calling Crab&rdquo; below).\n")
     outfile.write("        </dd>\n")
