@@ -14,6 +14,7 @@ lifeCycleURL = "uca_lifecycle.html"
 treeURL = "uca_phylogeny.html"
 artURL = "uca_art.html"
 morphURL = "uca_morphology.html"
+citeURL = "citation.html"
 fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" />"
 
 randSeed = random.randint(0,10000)
@@ -87,6 +88,8 @@ class SubgenusClass():
         self.__author = ""
         self.__typeSpecies = ""
         self.__notes = ""
+        self.__taxonid = ""
+        self.__EOLid = ""
     def subgenus(self):
         return self.__subgenus
     def setSubgenus(self,x):
@@ -103,6 +106,14 @@ class SubgenusClass():
         return self.__notes
     def setNotes(self,x):
         self.__notes = x
+    def taxonid(self):
+        return self.__taxonid
+    def setTaxonid(self,x):
+        self.__taxonid = x
+    def EOLid(self):
+        return self.__EOLid
+    def setEOLid(self,x):
+        self.__EOLid = x
 
 
 class VideoClass():
@@ -276,6 +287,8 @@ class SpeciesClass():
         self.__rangeRefs = ""
         self.__region = ""
         self.__status = ""
+        self.__taxonid = ""
+        self.__EOLid = ""
     def species(self):
         return self.__species
     def setSpecies(self,x):
@@ -316,6 +329,14 @@ class SpeciesClass():
         return self.__status
     def setStatus(self,x):
         self.__status = x
+    def taxonid(self):
+        return self.__taxonid
+    def setTaxonid(self,x):
+        self.__taxonid = x
+    def EOLid(self):
+        return self.__EOLid
+    def setEOLid(self,x):
+        self.__EOLid = x
 
 
 class CitationClass():
@@ -477,6 +498,8 @@ def getSpecies():
         newSpecies.setRangeRefs(s[7])
         newSpecies.setRegion(s[8])
         newSpecies.setStatus(s[9])
+        newSpecies.setTaxonid(s[10])
+        newSpecies.setEOLid(s[11])
         sList.append(newSpecies)
     return sList
 
@@ -524,6 +547,8 @@ def getSubgenera():
         newSubgenus.setAuthor(g[1])
         newSubgenus.setTypeSpecies(g[2])
         newSubgenus.setNotes(g[3])
+        newSubgenus.setTaxonid(g[4])
+        newSubgenus.setEOLid(g[5])
         genList.append(newSubgenus)
     return genList
 
@@ -652,12 +677,13 @@ def commonSpeciesHTMLHeader(outfile,title,indexpath,species):
 def commonHTMLHeader(outfile,title,indexpath):
     commonHeaderPart1(outfile,title,indexpath)
     commonHeaderPart2(outfile,indexpath,False)
-   
+
 
 def commonHTMLFooter(outfile):
     outfile.write("\n")
     outfile.write("    <footer>\n")
     outfile.write("       <p id=\"footmap\">Visitors <script type=\"text/javascript\" src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script></p>\n")
+    outfile.write("       <p id=\"citation\"><a href=\""+citeURL+"\">How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact <a href=\"mailto:msr@asu.edu\">Dr. Michael S. Rosenberg</a></p>\n")
     outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2014 All Rights Reserved</p>\n")
     outfile.write("    </footer>\n")
@@ -1766,10 +1792,6 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
     outfile.write("        <dt><em class=\"species\">"+species.typeSpecies()+"</em></dt>\n")
     tRef = refDict[species.typeRef()]
     outfile.write("        <dd>"+tRef.formattedHTML()+"</dd>\n")
-
-
-
-
     outfile.write("      </dl>\n")
     outfile.write("    </section>\n")
     outfile.write("\n")
@@ -1820,6 +1842,15 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
                 mapCiteList.append(m)
         outfile.write("           Map data derived from: "+"; ".join(mapCiteList)+"\n")
         outfile.write("         </dd>\n")
+
+    # External links
+    outfile.write("       <dt>External Links</dt>\n")
+    if species.EOLid() != ".":
+        outfile.write("         <dd><a href=\"http://eol.org/pages/"+species.EOLid()+"/overview\">Encyclopedia of Life</a></dd>\n")
+    outfile.write("         <dd><a href=\"http://en.wikipedia.org/wiki/Uca_"+species.species()+"\">Wikipedia</a></dd>\n")
+    if species.taxonid() != ".":
+        outfile.write("         <dd><a href=\"http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id="+species.taxonid()+"\">NCBI Taxonomy Browser/Genbank</a></dd>\n")
+
     outfile.write("      </dl>\n")
     outfile.write("    </section>\n")
     outfile.write("\n")
@@ -2747,6 +2778,32 @@ def createMorphologyPages(morphology):
     outfile.close()
 
 
+def createCitationPage(refDict):
+    """ create page with site citation info """
+    outfile = codecs.open(citeURL, "w", "utf-8")
+    commonHTMLHeader(outfile,"Fiddler Crab Website Citation","")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Citation Info</h1>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")  
+    outfile.write("    <p>\n")
+    outfile.write("      Generally it is best to cite the primary literature, whenever possible. However, the following paper " + \
+                  "desribes much of the data that is unique to this website:\n")
+    outfile.write("    </p>\n")
+    outfile.write("    <div id=\"citation\">\n")
+    outfile.write("      <ul>\n")
+    ref = refDict["Rosenberg2014"] # citation describing the database
+    outfile.write("        <li><a href=\"references/Rosenberg2014.html\">" + ref.formattedHTML() + "</a></li>\n")
+    outfile.write("      </ul>\n")
+    outfile.write("    </div>\n")
+    outfile.write("    <ul>\n")
+    outfile.write("      <li><a href=\"http://dx.plos.org/10.1371/journal.pone.0101704\">Read paper online at PLoS ONE</a></li>\n")
+    outfile.write("      <li><a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data repository on Github</a></li>\n")
+    outfile.write("    </ul>\n")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
 def createIndex(species,refs):
     """ create the site index """
     outfile = codecs.open("index.html", "w", "utf-8")
@@ -2808,6 +2865,11 @@ def createIndex(species,refs):
     outfile.write("      <li><a href=\""+videoURL+"\">Videos</a></li>\n")
     outfile.write("      <li><a href=\""+artURL+"\">Art</a></li>\n")
     outfile.write("    </ul>\n")
+    outfile.write("    <h2>Miscellania</h2>\n")  
+    outfile.write("    <ul>\n")
+    outfile.write("      <li><a href=\""+citeURL+"\">Citation info for this website</a></li>\n")
+    outfile.write("      <li><a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data on Github</a></li>\n")
+    outfile.write("    </ul>\n")
 
     commonHTMLFooter(outfile)
     outfile.close()
@@ -2838,6 +2900,7 @@ def main():
     morphology = getMorphology()
     createMorphologyPages(morphology)    
     createIndex(species,references)
+    createCitationPage(refDict)
     print("done")
 
 main()
