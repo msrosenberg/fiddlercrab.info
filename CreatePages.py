@@ -1333,7 +1333,7 @@ def createMapHTML(species):
     outfile.close()
 
 
-def createCommonNamesHTML():
+def createCommonNamesHTML(refDict):
     """ output common names to HTML """
     outfile = codecs.open(commonURL, "w", "utf-8")
     commonHTMLHeader(outfile,"Common Names of Fiddler Crabs","")
@@ -1569,7 +1569,7 @@ def createCommonNamesHTML():
     outfile.write("        <dd>\n")
     outfile.write("          Today there is a slight difference in the Japanese spelling (シオマネキ vs. シホマネキ) (note 2<sup>nd</sup> character) and English transliteration\n")
     outfile.write("          (&ldquo;shio-maneki&rdquo; vs. &ldquo;siho-maneki&rdquo;) than presented by de Haan and subsequent authors. I do not know if this change is due to the way\n")
-    outfile.write("          we transliterate or represents an error by de Haan (1835) which carried over\n")
+    outfile.write("          we transliterate or represents an error by <a href=\"references/deHaan1835.html\">de Haan (1835)</a> which carried over\n")
     outfile.write("          to later authors.\n")
     outfile.write("        </dd>\n")
     outfile.write("\n")
@@ -2890,7 +2890,7 @@ def main():
     speciesToHTML(species,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict)
     subgenera = getSubgenera()
     createSystematicsHTML(subgenera,species)
-    createCommonNamesHTML()
+    createCommonNamesHTML(refDict)
     createPhotosHTML(species,photos)
     createArtHTML(art)
     createVideosHTML(videos)
