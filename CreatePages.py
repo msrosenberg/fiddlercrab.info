@@ -1507,7 +1507,7 @@ def createCommonNamesHTML():
     outfile.write("            (<em class=\"species\">Gelasimus vocans</em>) are running over its surface, the males of which hold up their enormous claws in front, as if in defiance.\n")
     outfile.write("            At the approach of an intruder, every one hastens into his burrow, and in a moment the muddy bank, that was alive with the moving\n")
     outfile.write("            atoms, is perfectly still&hellip;The little Crabs are very swift and wary, so that it is difficult to capture them, except by making a\n")
-    outfile.write("            sudden rush froma  distance among them.\n")
+    outfile.write("            sudden rush from a distance among them.\n")
     outfile.write("          </blockquote>\n")
     outfile.write("          or Tennent (1861) in Sri Lanka (p. 477-478):\n")
     outfile.write("          <blockquote>\n")
