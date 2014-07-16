@@ -290,6 +290,7 @@ class SpeciesClass():
         self.__taxonid = ""
         self.__EOLid = ""
         self.__iNatid = ""
+        self.__gbifid = ""
     def species(self):
         return self.__species
     def setSpecies(self,x):
@@ -342,6 +343,10 @@ class SpeciesClass():
         return self.__iNatid
     def setiNatid(self,x):
         self.__iNatid = x
+    def gbifid(self):
+        return self.__gbifid
+    def setgbifid(self,x):
+        self.__gbifid = x
 
 
 class CitationClass():
@@ -512,6 +517,7 @@ def getSpecies():
         newSpecies.setTaxonid(s[10])
         newSpecies.setEOLid(s[11])
         newSpecies.setiNatid(s[12])
+        newSpecies.setgbifid(s[13])
         sList.append(newSpecies)
     return sList
 
@@ -1864,6 +1870,8 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
         outfile.write("         <dd><a href=\"www.inaturalist.org/taxa/"+species.iNatid()+"\">iNaturalist</a></dd>\n")
     if species.taxonid() != ".":
         outfile.write("         <dd><a href=\"http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id="+species.taxonid()+"\">NCBI Taxonomy Browser/Genbank</a></dd>\n")
+    if species.gbifid() != ".":
+        outfile.write("         <dd><a href=\"http://www.gbif.org/species/"+species.gbifid()+"\">GBIF</a></dd>\n")
 
     outfile.write("      </dl>\n")
     outfile.write("    </section>\n")
