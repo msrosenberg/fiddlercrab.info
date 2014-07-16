@@ -289,6 +289,7 @@ class SpeciesClass():
         self.__status = ""
         self.__taxonid = ""
         self.__EOLid = ""
+        self.__iNatid = ""
     def species(self):
         return self.__species
     def setSpecies(self,x):
@@ -337,6 +338,10 @@ class SpeciesClass():
         return self.__EOLid
     def setEOLid(self,x):
         self.__EOLid = x
+    def iNatid(self):
+        return self.__iNatid
+    def setiNatid(self,x):
+        self.__iNatid = x
 
 
 class CitationClass():
@@ -350,6 +355,7 @@ class CitationClass():
         self.__application = ""
         self.__citeN = ""
         self.__actual = ""
+        self.__source = ""
         self.__nameNote = ""
         self.__generalNote = ""
     def citeKey(self):
@@ -388,6 +394,10 @@ class CitationClass():
         return self.__actual
     def setActual(self,x):
         self.__actual = x
+    def source(self):
+        return self.__source
+    def setSource(self,x):
+        self.__source = x
     def nameNote(self):
         return self.__nameNote
     def setNameNote(self,x):
@@ -454,8 +464,9 @@ def getReferences():
             newCite.setApplication(cite[6])
             newCite.setCiteN(cite[7])
             newCite.setActual(cite[8])
-            newCite.setNameNote(cite[9])
-            newCite.setGeneralNote(cite[10])
+            newCite.setSource(cite[9])
+            newCite.setNameNote(cite[10])
+            newCite.setGeneralNote(cite[11])
             citeList.append(newCite)       
     reffile.close()
     return refList,refDict,citeList
@@ -500,6 +511,7 @@ def getSpecies():
         newSpecies.setStatus(s[9])
         newSpecies.setTaxonid(s[10])
         newSpecies.setEOLid(s[11])
+        newSpecies.setiNatid(s[12])
         sList.append(newSpecies)
     return sList
 
@@ -1848,6 +1860,8 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
     if species.EOLid() != ".":
         outfile.write("         <dd><a href=\"http://eol.org/pages/"+species.EOLid()+"/overview\">Encyclopedia of Life</a></dd>\n")
     outfile.write("         <dd><a href=\"http://en.wikipedia.org/wiki/Uca_"+species.species()+"\">Wikipedia</a></dd>\n")
+    if species.iNatid() != ".":
+        outfile.write("         <dd><a href=\"www.inaturalist.org/taxa/"+species.iNatid()+"\">iNaturalist</a></dd>\n")
     if species.taxonid() != ".":
         outfile.write("         <dd><a href=\"http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id="+species.taxonid()+"\">NCBI Taxonomy Browser/Genbank</a></dd>\n")
 
