@@ -858,6 +858,7 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("    <p>\n")
     outfile.write("      A summary of the references  in the database (last updated {}).\n".format(datetime.date.isoformat(datetime.date.today())))
     outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
+    outfile.write("      See also the <a href=\"names/"+namesumURL+"\">name summary page</a> for information on reference patterns to specific species.\n")
     outfile.write("    </p>\n")    
     outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
@@ -1334,7 +1335,7 @@ def createSpecificNamePage(name,binomialNames,refDict):
         refname = "unknown"
     outfile.write("          <dd>"+refname+"</dd>\n")
     outfile.write("        <dt>Derivation</dt>\n")
-    if name.meaning() = ".":
+    if name.meaning() == ".":
         outfile.write("          <dd>unknown</dd>\n")
     else:
         outfile.write("          <dd>"+name.meaning()+"</dd>\n")
@@ -1378,7 +1379,7 @@ def matchSpecificName(name,specificNames):
         return y
 
 
-def createNameSummary(binomialYearCnts,specificYearCnts):
+def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     outfile = codecs.open("names/"+namesumURL, "w", "utf-8")
     commonHeaderPart1(outfile,"Fiddler Crab Name Summary","../")
     outfile.write("    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n")
@@ -1442,6 +1443,14 @@ def createNameSummary(binomialYearCnts,specificYearCnts):
         outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
+    outfile.write("        var data5 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Species', 'Referring References'],\n")
+    tmpSlist = list(speciesRefs.keys())
+    tmpSlist.sort()
+    for s in tmpSlist:
+        outfile.write("          ['"+s+"', "+str(len(speciesRefs[s]))+"],\n")
+    outfile.write("        ]);\n")
+    outfile.write("\n")
     outfile.write("        var options1 = {\n")
     outfile.write("          title: \"Cumulative Unique Binomial/Compound Names by Year\", \n")
     outfile.write("          legend: { position: 'none' }\n")
@@ -1464,6 +1473,12 @@ def createNameSummary(binomialYearCnts,specificYearCnts):
     outfile.write("          bar: { groupWidth: '80%' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
+    outfile.write("        var options5 = {\n")
+    outfile.write("          title: \"Number of References Referring to Accepted Species\", \n")
+    outfile.write("          legend: { position: 'none' },\n")
+    outfile.write("          bar: { groupWidth: '80%' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
     outfile.write("        var chart1 = new google.visualization.LineChart(document.getElementById('chart1_div'));\n")
     outfile.write("        chart1.draw(data1, options1);\n")
     outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
@@ -1472,6 +1487,8 @@ def createNameSummary(binomialYearCnts,specificYearCnts):
     outfile.write("        chart3.draw(data3, options3);\n")
     outfile.write("        var chart4 = new google.visualization.ColumnChart(document.getElementById('chart4_div'));\n")
     outfile.write("        chart4.draw(data4, options4);\n")
+    outfile.write("        var chart5 = new google.visualization.ColumnChart(document.getElementById('chart5_div'));\n")
+    outfile.write("        chart5.draw(data5, options5);\n")
     outfile.write("      }\n")
     outfile.write("    </script>\n")
     commonHeaderPart2(outfile,"",False)
@@ -1487,17 +1504,19 @@ def createNameSummary(binomialYearCnts,specificYearCnts):
     outfile.write("\n")
     outfile.write("    <p>\n")
     outfile.write("      A summary of the names in the database (last updated {}).\n".format(datetime.date.isoformat(datetime.date.today())))
+    outfile.write("      Most of these data are only based on <a href=\"../"+refsumURL+"\">references whose citation data is already included in the database</a>.\n")
     #outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("    </p>\n")    
     outfile.write("    <div id=\"chart1_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    outfile.write("    <div id=\"chart5_div\" style=\"width: 1500px; height: 400px; \"></div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
 
 
-def indexNamePages(refDict,citeList,specificNames):
+def indexNamePages(refDict,citeList,specificNames,speciesRefs):
     """ create an index of binomials and specific names """
     nameTable = createNameTable(citeList)
     uniqueNames = list()    
@@ -1586,7 +1605,7 @@ def indexNamePages(refDict,citeList,specificNames):
     outfile.write("    </div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
-    createNameSummary(binomialYearCnts,specificYearCnts)
+    createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs)
     return uniqueNames
 
 
@@ -3224,17 +3243,17 @@ def createIndex(species,refs):
 def main():
     references,refDict,citeList,yearDict,citeCount = getReferences()
     yearDat, yearDat1900 = summarizeYear(yearDict)
+    species = getSpecies()
+    speciesRefs = connectRefsToSpecies(species,citeList)
     referencesToHTML(references)
     referenceSummary(len(references),yearDat,yearDat1900,citeCount)
     referencePages(references,refDict,citeList)
     specificNames = getSpecificNames()
-    allNames = indexNamePages(refDict,citeList,specificNames)
+    allNames = indexNamePages(refDict,citeList,specificNames,speciesRefs)
     specificNamePages(citeList,specificNames)
-    species = getSpecies()
     photos = getPhotos()
     videos = getVideos()
     art = getArt()
-    speciesRefs = connectRefsToSpecies(species,citeList)
     speciesToHTML(species,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict)
     subgenera = getSubgenera()
     createSystematicsHTML(subgenera,species)
