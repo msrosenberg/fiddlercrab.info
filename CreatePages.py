@@ -16,6 +16,7 @@ treeURL = "uca_phylogeny.html"
 artURL = "uca_art.html"
 morphURL = "uca_morphology.html"
 citeURL = "citation.html"
+namesumURL = "name_graphs.html"
 fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" />"
 
 randSeed = random.randint(0,10000)
@@ -493,13 +494,18 @@ def getReferences():
             citeDone[cite[0]][0] = True
     reffile.close()
 
+    citeCount = 0
     for y in yearDat:
         yearDat[y] = [yearDat[y],0]
     for x in citeDone:
         c = citeDone[x]
-        if c[1] in yearDat and c[0]:
-            yearDat[c[1]][1] += 1    
-    return refList,refDict,citeList,yearDat
+        if c[0]:
+            citeCount += 1
+            if c[1] in yearDat:
+                yearDat[c[1]][1] += 1    
+        #if c[1] in yearDat and c[0]:
+        #    yearDat[c[1]][1] += 1    
+    return refList,refDict,citeList,yearDat,citeCount
 
 
 def readSimpleFile(fname):
@@ -759,7 +765,7 @@ def formatReference(i,ref):
             print("missing label: ",ref.citeKey())
 
 
-def referenceSummary(refList,yearData,yearData1900):
+def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile = codecs.open(refsumURL, "w", "utf-8")
     commonHeaderPart1(outfile,"Fiddler Crab Reference Summary","")
     outfile.write("    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n")
@@ -767,7 +773,7 @@ def referenceSummary(refList,yearData,yearData1900):
     outfile.write("      google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});\n")
     outfile.write("      google.setOnLoadCallback(drawChart);\n")
     outfile.write("      function drawChart() {\n")
-    outfile.write("        var data = google.visualization.arrayToDataTable([\n")
+    outfile.write("        var data1 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'Cumulative Publications'],\n")
     for y in yearData:
         outfile.write("          ['"+str(y[0])+"', "+str(y[2])+"],\n")
@@ -797,7 +803,7 @@ def referenceSummary(refList,yearData,yearData1900):
         outfile.write("          ['"+str(y[0])+"', "+str(y[2])+", "+str(y[1]-y[2])+"],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
-    outfile.write("        var options = {\n")
+    outfile.write("        var options1 = {\n")
     outfile.write("          title: \"Cumulative References by Year\", \n")
     outfile.write("          legend: { position: 'none' }\n")
     outfile.write("        };\n")
@@ -810,22 +816,24 @@ def referenceSummary(refList,yearData,yearData1900):
     outfile.write("        var options3 = {\n")
     outfile.write("          title: \"References with Citation Data in Database\", \n")
     outfile.write("          legend: { position: 'bottom' },\n")
-    outfile.write("          isStacked: true,\n")
+    outfile.write("          isStacked: true\n")
     outfile.write("        };\n")
     outfile.write("\n")
     outfile.write("        var options4 = {\n")
     outfile.write("          title: \"References by Year (since 1900)\", \n")
-    outfile.write("          legend: { position: 'none' }\n")
+    outfile.write("          legend: { position: 'none' },\n")
+    outfile.write("          bar: { groupWidth: '80%' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
     outfile.write("        var options5 = {\n")
     outfile.write("          title: \"References with Citation Data in Database (since 1900)\", \n")
     outfile.write("          legend: { position: 'bottom' },\n")
     outfile.write("          isStacked: true,\n")
+    outfile.write("          bar: { groupWidth: '80%' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
     outfile.write("        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));\n")
-    outfile.write("        chart.draw(data, options);\n")
+    outfile.write("        chart.draw(data1, options1);\n")
     outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
     outfile.write("        chart2.draw(data2, options2);\n")
     outfile.write("        var chart3 = new google.visualization.ColumnChart(document.getElementById('chart3_div'));\n")
@@ -848,7 +856,8 @@ def referenceSummary(refList,yearData,yearData1900):
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <p>\n")
-    outfile.write("      A summary of the {:0,} references  in the database (last updated {}).\n".format(len(refList),datetime.date.isoformat(datetime.date.today())))
+    outfile.write("      A summary of the references  in the database (last updated {}).\n".format(datetime.date.isoformat(datetime.date.today())))
+    outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("    </p>\n")    
     outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
@@ -859,8 +868,7 @@ def referenceSummary(refList,yearData,yearData1900):
     outfile.close()
     
     
-def referencesToHTML(refList,yearData,yearData1900):
-    referenceSummary(refList,yearData,yearData1900)
+def referencesToHTML(refList):
     outfile = codecs.open(refURL, "w", "utf-8")
     commonHTMLHeader(outfile,"Fiddler Crab Publications","")
     outfile.write("    <header>\n")
@@ -1323,10 +1331,13 @@ def createSpecificNamePage(name,binomialNames,refDict):
         except:
             print(name.prioritySource())
     else:
-        refname = "."
+        refname = "unknown"
     outfile.write("          <dd>"+refname+"</dd>\n")
     outfile.write("        <dt>Derivation</dt>\n")
-    outfile.write("          <dd>"+name.meaning()+"</dd>\n")
+    if name.meaning() = ".":
+        outfile.write("          <dd>unknown</dd>\n")
+    else:
+        outfile.write("          <dd>"+name.meaning()+"</dd>\n")
     outfile.write("      <dl>\n")
     outfile.write("    </section>\n")
     outfile.write("\n")
@@ -1367,17 +1378,149 @@ def matchSpecificName(name,specificNames):
         return y
 
 
-def binomialNamePages(refDict,citeList,specificNames):
+def createNameSummary(binomialYearCnts,specificYearCnts):
+    outfile = codecs.open("names/"+namesumURL, "w", "utf-8")
+    commonHeaderPart1(outfile,"Fiddler Crab Name Summary","../")
+    outfile.write("    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n")
+    outfile.write("    <script type=\"text/javascript\">\n")
+    outfile.write("      google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});\n")
+    outfile.write("      google.setOnLoadCallback(drawChart);\n")
+    outfile.write("      function drawChart() {\n")
+    minY = 2014
+    maxY = 0
+    for y in binomialYearCnts:
+        if y < minY:
+            minY = y
+        if y > maxY:
+            maxY = y
+    bYears = []
+    c = 0
+    for y in range(minY,maxY+1):
+        if y in binomialYearCnts:
+            c = c + binomialYearCnts[y]
+            bYears.append([y,binomialYearCnts[y],c])
+        else:
+            bYears.append([y,0,c])
+
+    minY = 2014
+    maxY = 0
+    for y in specificYearCnts:
+        if y < minY:
+            minY = y
+        if y > maxY:
+            maxY = y
+    sYears = []
+    c = 0
+    for y in range(minY,maxY+1):
+        if y in specificYearCnts:
+            c = c + specificYearCnts[y]
+            sYears.append([y,specificYearCnts[y],c])
+        else:
+            sYears.append([y,0,c])
+            
+    outfile.write("        var data1 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Year', 'Cumulative Unique Binomial/Compound Names'],\n")
+    for y in bYears:
+        outfile.write("          ['"+str(y[0])+"', "+str(y[2])+"],\n")
+    outfile.write("        ]);\n")
+    outfile.write("\n")
+    outfile.write("        var data2 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Year', 'New Unique Binomial/Compound Names'],\n")
+    for y in bYears:
+        outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
+    outfile.write("        ]);\n")
+    outfile.write("\n")
+    outfile.write("        var data3 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Year', 'Cumulative Unique Specific Names'],\n")
+    for y in sYears:
+        outfile.write("          ['"+str(y[0])+"', "+str(y[2])+"],\n")
+    outfile.write("        ]);\n")
+    outfile.write("\n")
+    outfile.write("        var data4 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Year', 'New Unique Specific Names'],\n")
+    for y in sYears:
+        outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
+    outfile.write("        ]);\n")
+    outfile.write("\n")
+    outfile.write("        var options1 = {\n")
+    outfile.write("          title: \"Cumulative Unique Binomial/Compound Names by Year\", \n")
+    outfile.write("          legend: { position: 'none' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
+    outfile.write("        var options2 = {\n")
+    outfile.write("          title: \"Unique Binomial/Compound Names by Year\", \n")
+    outfile.write("          legend: { position: 'none' },\n")
+    outfile.write("          bar: { groupWidth: '80%' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
+    outfile.write("        var options3 = {\n")
+    outfile.write("          title: \"Cumulative Unique Specific Names by Year\", \n")
+    outfile.write("          legend: { position: 'none' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
+    outfile.write("        var options4 = {\n")
+    outfile.write("          title: \"Unique Specific Names by Year\", \n")
+    outfile.write("          legend: { position: 'none' },\n")
+    outfile.write("          bar: { groupWidth: '80%' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
+    outfile.write("        var chart1 = new google.visualization.LineChart(document.getElementById('chart1_div'));\n")
+    outfile.write("        chart1.draw(data1, options1);\n")
+    outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
+    outfile.write("        chart2.draw(data2, options2);\n")
+    outfile.write("        var chart3 = new google.visualization.LineChart(document.getElementById('chart3_div'));\n")
+    outfile.write("        chart3.draw(data3, options3);\n")
+    outfile.write("        var chart4 = new google.visualization.ColumnChart(document.getElementById('chart4_div'));\n")
+    outfile.write("        chart4.draw(data4, options4);\n")
+    outfile.write("      }\n")
+    outfile.write("    </script>\n")
+    commonHeaderPart2(outfile,"",False)
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Summary of Names</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\".\">Name Index</a></li>\n")
+    outfile.write("          <li><a href=\"../"+speciesURL+"\">Accepted Species</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")
+    outfile.write("    <p>\n")
+    outfile.write("      A summary of the names in the database (last updated {}).\n".format(datetime.date.isoformat(datetime.date.today())))
+    #outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
+    outfile.write("    </p>\n")    
+    outfile.write("    <div id=\"chart1_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
+def indexNamePages(refDict,citeList,specificNames):
     """ create an index of binomials and specific names """
     nameTable = createNameTable(citeList)
     uniqueNames = list()    
     nameSet = set()
+    binomialYearCnts = {}
     for c in citeList:
         if c.name() != ".":
             clean = cleanName(c.name())
             if not clean.lower() in nameSet:
                 nameSet = nameSet | {clean.lower()}
                 uniqueNames.append(clean)
+                y = refDict[c.citeKey()].citation()
+                y = y[y.find("(")+1:y.find(")")]
+                if (y != "?") and (y.lower() != "in press"):
+                    if y[0] == "~":
+                        y = y[1:]
+                    if len(y) > 4:
+                        y = y[:4]
+                    y = int(y)
+                    if y in binomialYearCnts:
+                        binomialYearCnts[y] += 1
+                    else:
+                        binomialYearCnts[y] = 1
     uniqueNames.sort(key = lambda s: s.lower())
 
     # create name index
@@ -1385,6 +1528,12 @@ def binomialNamePages(refDict,citeList,specificNames):
     commonHTMLHeader(outfile,"Name Index","../")
     outfile.write("    <header>\n")
     outfile.write("      <h1>Name Index</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\""+namesumURL+"\">Name Summary</a></li>\n")
+    outfile.write("          <li><a href=\"../"+speciesURL+"\">Accepted Species</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")    
     outfile.write("    </header>\n")
     outfile.write("    <p>\n")
     outfile.write("      This is an index of every scientific name (including all alternate spellings) which have been\n")
@@ -1415,13 +1564,29 @@ def binomialNamePages(refDict,citeList,specificNames):
     outfile.write("      <h3>Specific Names</h3>\n")
     outfile.write("      <ul>\n")
     outfile.write("\n")
+    specificYearCnts = {}
     for name in specificNames:
         outfile.write("        <li><a href=\"sn_"+name.name()+".html\">"+formatNameString(name.name())+"</a></li>\n")
         createSpecificNamePage(name,uniqueNames,refDict)
+        tmpKey = name.prioritySource()
+        if tmpKey != ".":
+            y = refDict[tmpKey].citation()
+            y = y[y.find("(")+1:y.find(")")]
+            if (y != "?") and (y.lower() != "in press"):
+                if y[0] == "~":
+                    y = y[1:]
+                if len(y) > 4:
+                    y = y[:4]
+                y = int(y)
+                if y in specificYearCnts:
+                    specificYearCnts[y] += 1
+                else:
+                    specificYearCnts[y] = 1
     outfile.write("      </ul>\n")
     outfile.write("    </div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
+    createNameSummary(binomialYearCnts,specificYearCnts)
     return uniqueNames
 
 
@@ -3057,12 +3222,13 @@ def createIndex(species,refs):
 
 
 def main():
-    references,refDict,citeList,yearDict = getReferences()
+    references,refDict,citeList,yearDict,citeCount = getReferences()
     yearDat, yearDat1900 = summarizeYear(yearDict)
-    referencesToHTML(references,yearDat,yearDat1900)
+    referencesToHTML(references)
+    referenceSummary(len(references),yearDat,yearDat1900,citeCount)
     referencePages(references,refDict,citeList)
     specificNames = getSpecificNames()
-    allNames = binomialNamePages(refDict,citeList,specificNames)
+    allNames = indexNamePages(refDict,citeList,specificNames)
     specificNamePages(citeList,specificNames)
     species = getSpecies()
     photos = getPhotos()
@@ -3082,14 +3248,7 @@ def main():
     morphology = getMorphology()
     createMorphologyPages(morphology)    
     createIndex(species,references)
-    createCitationPage(refDict)
-
-    # tmp
-    outfile = open("year.txt","w")
-    for x in yearDat:
-        outfile.write(str(x[0])+"\t"+str(x[1])+"\t"+str(x[2])+"\n")
-    outfile.close()
-    
+    createCitationPage(refDict)    
     print("done")
 
 main()
