@@ -1056,7 +1056,7 @@ def cleanSpecificName(x):
 
 def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,nameTable):
     firstName = True
-    ncols = 4
+    ncols = 5
     if notecnt > 0:
         ncols += 1
     if comcnt > 0:
@@ -1072,7 +1072,7 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             if firstName:
                 firstName = False
             else:
-                outfile.write("      <td class=\"rowspacer\" colspan=\""+str(ncols)+"\">&nbsp;</td>\n")                        
+                outfile.write("      <td class=\"rowspacer\" colspan=\""+str(ncols)+"\">&nbsp;</td>\n")
                 outfile.write("    </tr>\n")
                 outfile.write("    <tr>\n")
 
@@ -1129,14 +1129,30 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             outfile.write("      <td>&nbsp;</td>\n")
 
         # accepted species name                                
-        if n.actual() in {"?","=","."}:
-            outfile.write("      <td>"+n.actual()+"</td>\n")
+        if n.actual() == "?":
+            outfile.write("      <td>?</td>\n")
+        elif n.actual() in {".","="}:
+            outfile.write("      <td>TBD</td>\n")
         elif n.actual() == "n/a":
             outfile.write("      <td>&nbsp;</td>\n")                    
         elif n.actual()[0] == ">":
             outfile.write("      <td><em class=\"species\">"+n.actual()[1:]+"</em></td>\n")
         else:
             outfile.write("      <td><a href=\"../u_"+n.actual()+".html\"><em class=\"species\">Uca "+n.actual()+"</em></a></td>\n")
+
+        # source of accepted species
+        if n.source() == ".": # currently not listed
+            outfile.write("      <td>&nbsp;</td>\n")                                
+        elif n.source() == "<": # original name retained
+            outfile.write("      <td>Original</td>\n")                                
+        elif n.source() == "=": # automatically computer
+            outfile.write("      <td>Computed</td>\n")                                
+        elif n.source() in refDict: # another reference
+            crossref = refDict[n.source()]
+            outfile.write("      <td><a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
+        else: # should start with a >
+            outfile.write("      <td>"+n.source()[1:]+"</td>\n")                                
+
         # notes
         if notecnt > 0:
             if n.nameNote() == ".":
@@ -1203,6 +1219,7 @@ def referencePages(refList,refDict,citeList):
                 outfile.write("        <th>Where</th>\n")
                 outfile.write("        <th>Applied to...</th>\n")
                 outfile.write("        <th>Accepted Species</th>\n")
+                outfile.write("        <th>Source of Accepted</th>\n")
                 if notecnt > 0:
                     outfile.write("        <th>Note(s)</th>\n")
                 outfile.write("      </tr>\n")
@@ -1285,6 +1302,7 @@ def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName):
     outfile.write("        <th>Where</th>\n")
     outfile.write("        <th>Applied to...</th>\n")
     outfile.write("        <th>Accepted Species</th>\n")
+    outfile.write("        <th>Source of Accepted</th>\n")
     if notecnt > 0:
         outfile.write("        <th>Note(s)</th>\n")
     outfile.write("      </tr>\n")
