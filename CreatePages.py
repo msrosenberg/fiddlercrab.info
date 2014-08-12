@@ -1105,23 +1105,33 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
         if n.context() == "location":
             outfile.write("      <td>location: "+n.application()+"</td>\n")
         elif n.context() == "citation":
-            if (n.application() in refDict) and (n.application() in nameTable):
+            if (n.application() in refDict):
                 crossref = refDict[n.application()]
-                nstr = n.citeN()
-                if nstr == "0":
-                    outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
-                else:
-                    if "." in nstr:
-                        #print(n[0],nstr,n[6])
-                        extraref = " ["+nameTable[n.application()][nstr][1]+"]"
-                        refname = nameTable[n.application()][nstr][0]
+                if (n.application() in nameTable):
+                    nstr = n.citeN()
+                    if nstr == "0":
+                        outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
                     else:
-                        extraref = ""                                
-                        #print(nstr,n)
-                        refname = nameTable[n.application()][int(nstr)]
-                    outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a> → "+formatNameString(refname)+extraref+"</td>\n")
+                        if "." in nstr:
+                            try:
+                                extraref = " ["+nameTable[n.application()][nstr][1]+"]"
+                                refname = nameTable[n.application()][nstr][0]
+                            except:
+                                if IsName: # only print errors on one pass
+                                    print('Error in citation:',n.citeKey(),'cites',nstr,'in',n.application())
+                                extraref = ""
+                                refname = ""
+                        else:
+                            extraref = ""                                
+                            #print(nstr,n.citeKey(),n.application())
+                            refname = nameTable[n.application()][int(nstr)]
+                        outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a> → "+formatNameString(refname)+extraref+"</td>\n")
+                else:
+                    outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
             else:
                 outfile.write("      <td>citation: "+n.application()+"</td>\n")
+                if IsName: # only print on one pass
+                    print("Citation not in DB:",n.citeKey(),'cites',n.application())
         elif n.context() == "specimen":
             if n.application() == "?":
                 outfile.write("      <td>specimen: unknown locality</td>\n")
@@ -1650,7 +1660,7 @@ def specificNamePages(citeList,specificNames):
             if n in s.variations():
                 isFound = True
         if not isFound:
-            print("Missing: "+n)
+            print("Missing specific name: "+n)
             outfile.write(n+"\n")
     outfile.close()
 
