@@ -785,12 +785,14 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
         outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
+    """
     outfile.write("        var data3 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'Citations in DB', 'Pending'],\n")
     for y in yearData:
         outfile.write("          ['"+str(y[0])+"', "+str(y[3])+", "+str(y[1]-y[3])+"],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
+    """
     outfile.write("        var data4 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'Publications'],\n")
     for y in yearData1900:
@@ -813,12 +815,14 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("          legend: { position: 'none' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
+    """
     outfile.write("        var options3 = {\n")
     outfile.write("          title: \"References with Citation Data in Database\", \n")
     outfile.write("          legend: { position: 'bottom' },\n")
     outfile.write("          isStacked: true\n")
     outfile.write("        };\n")
     outfile.write("\n")
+    """
     outfile.write("        var options4 = {\n")
     outfile.write("          title: \"References by Year (since 1900)\", \n")
     outfile.write("          legend: { position: 'none' },\n")
@@ -826,7 +830,7 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("        };\n")
     outfile.write("\n")
     outfile.write("        var options5 = {\n")
-    outfile.write("          title: \"References with Citation Data in Database (since 1900)\", \n")
+    outfile.write("          title: \"References with Citation Data in Database (since 1900; all pre-1900 literature is complete)\", \n")
     outfile.write("          legend: { position: 'bottom' },\n")
     outfile.write("          isStacked: true,\n")
     outfile.write("          bar: { groupWidth: '80%' }\n")
@@ -836,8 +840,8 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("        chart.draw(data1, options1);\n")
     outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
     outfile.write("        chart2.draw(data2, options2);\n")
-    outfile.write("        var chart3 = new google.visualization.ColumnChart(document.getElementById('chart3_div'));\n")
-    outfile.write("        chart3.draw(data3, options3);\n")
+    #outfile.write("        var chart3 = new google.visualization.ColumnChart(document.getElementById('chart3_div'));\n")
+    #outfile.write("        chart3.draw(data3, options3);\n")
     outfile.write("        var chart4 = new google.visualization.ColumnChart(document.getElementById('chart4_div'));\n")
     outfile.write("        chart4.draw(data4, options4);\n")
     outfile.write("        var chart5 = new google.visualization.ColumnChart(document.getElementById('chart5_div'));\n")
@@ -862,7 +866,7 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("    </p>\n")    
     outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    #outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart5_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     commonHTMLFooter(outfile)
