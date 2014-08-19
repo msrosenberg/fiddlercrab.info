@@ -17,7 +17,7 @@ artURL = "uca_art.html"
 morphURL = "uca_morphology.html"
 citeURL = "citation.html"
 namesumURL = "name_graphs.html"
-fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" />"
+fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" title=\" (fossil)\" />"
 
 randSeed = random.randint(0,10000)
 
@@ -1156,11 +1156,12 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
 
         # source of accepted species
         if n.source() == ".": # currently not listed
-            outfile.write("      <td>&nbsp;</td>\n")                                
+            outfile.write("      <td>&nbsp;</td>\n")                   
         elif n.source() == "<": # original name retained
             outfile.write("      <td>Original</td>\n")                                
         elif n.source() == "=": # automatically computer
-            outfile.write("      <td>Computed</td>\n")                                
+            #outfile.write("      <td>Computed</td>\n")                                
+            outfile.write("      <td style=\"text-align: center\"><img src=\"../images/gears.png\" alt=\"Computed\" title=\"Computed\" /></td>\n")                                
         elif n.source() in refDict: # another reference
             crossref = refDict[n.source()]
             outfile.write("      <td><a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
@@ -2057,7 +2058,7 @@ def writeSpeciesPhotoPage(fname,species,commonName,caption,pn,pspecies):
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <figure class=\"fullpic\">\n")
-    outfile.write("      <img src=\"U_"+spname+format(pn,"0>2")+".jpg\" alt=\"Uca "+species+"\" />\n")
+    outfile.write("      <img src=\"U_"+spname+format(pn,"0>2")+".jpg\" alt=\"Uca "+species+"\" title=\"Uca "+species+"\" />\n")
     outfile.write("      <figcaption>"+caption+"</figcaption>\n")
     outfile.write("    </figure>\n")
     commonHTMLFooter(outfile)            
@@ -2239,7 +2240,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
                 pfname = "photos/u_"+species.species()+format(pn,"0>2")+".html"
                 tname = species.species()
             outfile.write("      <figure class=\"sppic\">\n")
-            outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+tname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+species.species()+"\" /></a>\n")
+            outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+tname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+species.species()+"\" title=\"Uca "+species.species()+"\" /></a>\n")
             outfile.write("      </figure>\n")
             writeSpeciesPhotoPage(pfname,species.species(),species.common(),photo.caption(),pn,photo.species())
             photoN += 1
@@ -2285,7 +2286,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
             if species.species() in slist:
                 pfname = "art/"+art.image()+".html"
                 outfile.write("      <figure class=\"sppic\">\n")
-                outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" /></a>\n")
+                outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
                 outfile.write("      </figure>\n")
                 artN += 1
         if artN == 0:
@@ -2343,7 +2344,7 @@ def createPhotosHTML(speciesList,photos):
                     spname = photo.species()
                 pfname = "photos/u_"+spname+format(pn,"0>2")+".html"
                 outfile.write("      <figure class=\"sppic\">\n")
-                outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+spname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+spname+"\" /></a>\n")
+                outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+spname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+spname+"\" title=\"Uca "+spname+"\" /></a>\n")
                 outfile.write("      </figure>\n")
                 photoN += 1
         if photoN == 0:
@@ -2424,7 +2425,7 @@ def writeScienceArtPage(fname,art):
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <figure class=\"fullpic\">\n")
-    outfile.write("      <img src=\""+art.image()+"."+art.ext()+"\" alt=\""+ptitle+"\" />\n")
+    outfile.write("      <img src=\""+art.image()+"."+art.ext()+"\" alt=\""+ptitle+"\" title=\""+ptitle+"\" />\n")
     outfile.write("      <figcaption>"+art.notes()+"</figcaption>\n")
     outfile.write("    </figure>\n")
     commonHTMLFooter(outfile)            
@@ -2477,7 +2478,7 @@ def createArtHTML(artList):
                 if artist == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art)
     outfile.write("    </section>\n")
@@ -2507,7 +2508,7 @@ def createArtHTML(artList):
                 if art.author() == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art)
     outfile.write("    </section>\n")
@@ -2537,7 +2538,7 @@ def createArtHTML(artList):
                 if art.author() == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art)
     outfile.write("    </section>\n")
@@ -2595,7 +2596,7 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("         <a href=\"references/Seba1758.html\">Seba (1758)</a>, which he called <em class=\"species\">Cancer uka una, Brasiliensibus</em> (shown below).\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure>\n")
-    outfile.write("        <img src=\"art/Seba_Uca_una.jpg\" width=\"647\" height=\"477\" alt=\"Seba's fiddler crab\" />\n")
+    outfile.write("        <img src=\"art/Seba_Uca_una.jpg\" width=\"647\" height=\"477\" alt=\"Seba's fiddler crab\" title=\"Seba's fiddler crab\" />\n")
     outfile.write("      </figure>\n")
     outfile.write("      <p>\n")
     outfile.write("        A number of authors subsequently used this same picture as a basis for naming the " + \
@@ -2620,15 +2621,15 @@ def createSystematicsHTML(subgenList,speciesList):
        "could be applied to mangrove crabs; as this was an invalid proposal, <em class=\"species\">Uca</em> " + \
        "is retained for fiddlers, despite being due to a pair of errors (<a href=\"references/Tavares1993.html\">Tavares 1993</a>).\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Maracoani.png\" alt=\"Marcgrave's Maracoani\">\n")
+    outfile.write("          <img src=\"art/Marcgrave_Maracoani.png\" alt=\"Marcgrave's Maracoani\" title=\"Marcgrave's Maracoani\">\n")
     outfile.write("          <figcaption>Oldest known drawing of a fiddler crab (<a href=\"references/Marcgrave1648.html\">Marcgrave, 1648</a>). He labeled it &ldquo;Maracoani&rdquo;, and it represents the namesake of the species <em class=\"species\">Uca maracoani.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Uca_una.png\" alt=\"Marcgrave's Uca una\">\n")
+    outfile.write("          <img src=\"art/Marcgrave_Uca_una.png\" alt=\"Marcgrave's Uca una\" title=\"Marcgrave's Uca una\">\n")
     outfile.write("          <figcaption>The drawing actually labeled &ldquo;Uca Una&rdquo; by <a href=\"references/Marcgrave1648.html\">Marcgrave (1648)</a> is not a fiddler crab. Today this species is known as the mangrove crab <em class=\"species\">Ucides cordatus.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Ciecie_Ete.png\" alt=\"Marcgrave's Ciecie Ete\">\n")
+    outfile.write("          <img src=\"art/Marcgrave_Ciecie_Ete.png\" alt=\"Marcgrave's Ciecie Ete\" title=\"Marcgrave's Ciecie Ete\">\n")
     outfile.write("          <figcaption>The other fiddler crab drawing found in <a href=\"references/Marcgrave1648.html\">Marcrgrave (1648)</a>, labeled &ldquo;Ciecie Ete&rdquo; (he also refers to a very similar species called &ldquo;Ciecie Panema&rdquo;). This figure is believed to most likely represent <em class=\"species\">Uca thayeri.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("      </blockquote>\n")
@@ -2919,11 +2920,11 @@ def createLifeCycle():
                   "These are sometimes known as &ldquo;sponge&rdquo; crabs.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_rapax10.html\"><img src=\"photos/U_rapax10tn.jpg\" alt=\"Gravid female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_rapax10.html\"><img src=\"photos/U_rapax10tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></a>\n")
     outfile.write("        <figcaption>Gravid female</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_rapax11.html\"><img src=\"photos/U_rapax11tn.jpg\" alt=\"Gravid female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_rapax11.html\"><img src=\"photos/U_rapax11tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></a>\n")
     outfile.write("        <figcaption>Close up of eggs</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -2935,11 +2936,11 @@ def createLifeCycle():
                   "free-swimming larvae. The early stage larvae are known as zoea.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis07.html\"><img src=\"photos/U_ecuadoriensis07tn.jpg\" alt=\"zoea\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis07.html\"><img src=\"photos/U_ecuadoriensis07tn.jpg\" alt=\"zoea\" title=\"zoea\" /></a>\n")
     outfile.write("        <figcaption>Zoea</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis08.html\"><img src=\"photos/U_ecuadoriensis08tn.jpg\" alt=\"zoea\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis08.html\"><img src=\"photos/U_ecuadoriensis08tn.jpg\" alt=\"zoea\" title=\"zoea\" /></a>\n")
     outfile.write("        <figcaption>Zoea</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -2951,7 +2952,7 @@ def createLifeCycle():
                   "As they grow and go through a number of molt stages. Older larvae are known as megalopa.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis09.html\"><img src=\"photos/U_ecuadoriensis09tn.jpg\" alt=\"megalopa\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis09.html\"><img src=\"photos/U_ecuadoriensis09tn.jpg\" alt=\"megalopa\" title=\"megalopa\" /></a>\n")
     outfile.write("        <figcaption>Megalopa</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -2963,14 +2964,14 @@ def createLifeCycle():
                   "The amount of time spent as a swimming larvae (hatching to true crab stage) varies among species, but ranges from a few weeks to a few months.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis10.html\"><img src=\"photos/U_ecuadoriensis10tn.jpg\" alt=\"early stage crab\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis10.html\"><img src=\"photos/U_ecuadoriensis10tn.jpg\" alt=\"early stage crab\" title=\"early stage crab\" /></a>\n")
     outfile.write("        <figcaption>Early Stage Full Crab</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <p style=\"clear: both\">\n")
     outfile.write("        The crabs return to land and begin to grow; juvenile male and female crabs look alike.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_pugilator21.html\"><img src=\"photos/U_pugilator21tn.jpg\" alt=\"juveniles\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_pugilator21.html\"><img src=\"photos/U_pugilator21tn.jpg\" alt=\"juveniles\" title=\"juveniles\" /></a>\n")
     outfile.write("        <figcaption>Juvenile Crabs</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <p style=\"clear: both\">\n")
@@ -2978,11 +2979,11 @@ def createLifeCycle():
                   "Adult crabs mate and the cycle starts over.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_tangeri10.html\"><img src=\"photos/U_tangeri10tn.jpg\" alt=\"adult female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_tangeri10.html\"><img src=\"photos/U_tangeri10tn.jpg\" alt=\"adult female\" title=\"adult female\" /></a>\n")
     outfile.write("        <figcaption>Adult Female</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_tangeri12.html\"><img src=\"photos/U_tangeri12tn.jpg\" alt=\"adult male\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_tangeri12.html\"><img src=\"photos/U_tangeri12tn.jpg\" alt=\"adult male\" title=\"adult male\" /></a>\n")
     outfile.write("        <figcaption>Adult Male</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -3077,7 +3078,7 @@ def createMorphPage(morph,morphList):
         clist = [morph.caption()]
     for i in range(len(plist)):
         outfile.write("    <figure class=\"morphimg\">\n")
-        outfile.write("      <img src=\""+plist[i]+"\" alt=\""+clist[i]+"\" />\n")
+        outfile.write("      <img src=\""+plist[i]+"\" alt=\""+clist[i]+"\" title=\""+clist[i]+"\" />\n")
         outfile.write("      <figcaption>"+clist[i]+"</figcaption>\n")
         outfile.write("    </figure>\n")
 
@@ -3159,15 +3160,15 @@ def createMorphologyPages(morphology):
     # max height = 335
     
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/dorsal_view.png\" alt=\"dorsal view of crab\" />\n")
+    outfile.write("      <img src=\"morphology/dorsal_view.png\" alt=\"dorsal view of crab\" title=\"dorsal view of crab\" />\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/ventral_view.png\" alt=\"ventral view of crab\" />\n")
+    outfile.write("      <img src=\"morphology/ventral_view.png\" alt=\"ventral view of crab\" title=\"ventral view of crab\" />\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/anterior_view.png\" alt=\"anterior view of crab\" />\n")
+    outfile.write("      <img src=\"morphology/anterior_view.png\" alt=\"anterior view of crab\" title=\"anterior view of crab\" />\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
 
