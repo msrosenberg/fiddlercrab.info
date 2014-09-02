@@ -730,7 +730,7 @@ Stimpson1858	1.2	Gelasimus vocans	.	text p. 99	citation	Rumphius1705	1	=	=	.	.
 Stimpson1858	1.3	Gelasimus vocans	.	text p. 99	citation	Dana1852	1	=	=	.	.	
 Stimpson1858	1.4	Gelasimus vocans	.	text p. 99	location	Hong Kong	.	vocans	.	.	.	
 Stimpson1858	1.5	Gelasimus vocans	.	text p. 99	location	"Ryukyu Islands, Japan"	.	.	.	.	.	
-Stimpson1858	2	Gelasimus dubius	.	text p. 99	location	"Ryukyu Islands, Japan"	.	.	.	.	.	
+Stimpson1858	2	Gelasimus dubius	.	text p. 99	location	"Ryukyu Islands, Japan"	.	coarctata	Sakai1976.2	.	.	
 Stimpson1858	3	Gelasimus vocante	.	text p. 99	n/a	.	.	vocans	.	conjugation of vocans?	.	
 Stimpson1858	4	Gelasimus vocantis	.	text p. 99	n/a	.	.	vocans	.	conjugation of vocans?	.	
 Stimpson1858	5	Gelasimus acuto	.	text p. 99	n/a	.	.	acuta	.	conjugation of acutus?	.	
@@ -2369,6 +2369,8 @@ Osorio1898	1.1	Gelasimus Tangeri	.	text p. 193	location	Bissau	.	tangeri	.	.	.
 Osorio1898	1.2	Gelasimus Tangeri	.	text p. 193	location	"Bioko Island, Equitorial Guinea"	.	tangeri	.	.	.	
 Osorio1898	1.3	Gelasimus Tangeri	.	text p. 193	location	São Tomé and Príncipe	.	tangeri	.	.	.	
 Osorio1898	1.4	Gelasimus Tangeri	.	text p. 193	location	Angola	.	tangeri	.	.	.	
+Loeb1896	1	Gelasimus	.	"text p. 124, 134-135"	n/a	<	.	>Uca	<	.	.	
+Loeb1896	2	Gelasimus pugnax	.	text p. 134	n/a	<	.	pugnax	<	.	.	
 Doflein1899	1.1	Uca vocator	.	text p. 191	specimen	Cartagena	.	.	.	.	.	
 Doflein1899	1.2	Uca vocator	.	text p. 191	specimen	Guayaquil	.	.	.	.	.	
 Doflein1899	2	Uca pugilator	.	text p. 191	specimen	Baranquilla	.	.	.	.	.	
@@ -3550,7 +3552,7 @@ Parisi1918	1.4	Uca vocans	.	text p. 92	specimen	Misaki	.	vocans	.	.	.
 Parisi1918	2.1	Uca lactea	.	text p. 92-93	citation	Alcock1900	3	=	=	.	.	
 Parisi1918	2.2	Uca lactea	.	text p. 92-93	specimen	Is. dei Navigatori	.	.	.	.	.	
 Parisi1918	2.3	Uca lactea	.	text p. 92-93	specimen	"Fiume Tamsui, Formosa"	.	.	.	.	.	
-Parisi1918	2.4	Uca lactea	.	text p. 92-93	specimen	"Chichijima, Is. Bonin"	.	.	.	.	.	
+Parisi1918	2.4	Uca lactea	.	text p. 92-93	specimen	"Chichijima, Is. Bonin"	.	lactea	<	.	.	
 Parisi1918	3.01	Uca arcuata	.	text p. 93	citation	deHaan1835	6	=	=	.	.	
 Parisi1918	3.02	Uca arcuata	.	text p. 93	citation	MilneEdwards1852	8	=	=	.	.	
 Parisi1918	3.03	Uca arcuata	.	text p. 93	citation	MilneEdwards1873	3	=	=	.	.	
@@ -4033,7 +4035,7 @@ Balss1922.1	1.1	Uca annulipes	.	text p. 142	citation	Alcock1900	1	=	=	.	.
 Balss1922.1	1.2	Uca annulipes	.	text p. 142	citation	Stimpson1907	15	=	=	.	.	
 Balss1922.1	1.3	Uca annulipes	.	text p. 142	citation	Parisi1918	4	=	=	.	.	
 Balss1922.1	1.4	Uca annulipes	.	text p. 142	citation	Kemp1915	1	=	=	.	.	
-Balss1922.1	1.5	Uca annulipes	.	text p. 142	specimen	Bonin Islands	.	.	.	.	.	
+Balss1922.1	1.5	Uca annulipes	.	text p. 142	specimen	Bonin Islands	.	lactea	Sakai1976.2	.	.	
 Balss1922.1	2.1	Uca latreillei	.	text p. 142	citation	Ortmann1894.1	13	=	=	.	.	
 Balss1922.1	2.2	Uca latreillei	.	text p. 142	specimen	"Phuc Son, Annam"	.	crassipes	.	.	.	
 Balss1922.1	2.3	Uca latreillei	.	text p. 142	specimen	"Tourane, Annam"	.	crassipes	.	.	.	
@@ -4566,8 +4568,8 @@ Nobre1936	1.15	Gelasimus Tangeri	.	text p. 58-60; figure 41	citation	MirandayRiv
 Nobre1936	1.16	Gelasimus Tangeri	.	text p. 58-60; figure 41	citation	Carus1885	2	=	=	.	.	
 Miyake1936	1	Uca dubia	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	dussumieri	.	.	.	
 Miyake1936	2	Uca marionis nitidus	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	vocans	.	.	.	
-Miyake1936	3	Uca lactea	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	lactea	.	could be multiple species	.	
-Miyake1936	4	Uca annulipes	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	lactea	.	could be multiple species	.	
+Miyake1936	3	Uca lactea	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	lactea	<	could be multiple species	.	
+Miyake1936	4	Uca annulipes	.	text p. 511	specimen	"Ryukyu Islands, Japan"	.	lactea	Sakai1976.2	could be multiple species	.	
 Kleinholz1936	1	Uca pugilator	.	"text p. 163, 173-174, 178, 183"	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
 Abramowitz1936.1	1.1	Uca	.	text p. 522-523	location	"Woods Hole, Massachusetts, USA"	.	pugilator	Abramowitz1938.2	.	"Likely studied a mix of species, as indicated in his later paper."	
 Abramowitz1936.1	1.2	Uca	.	text p. 522-523	location	"Woods Hole, Massachusetts, USA"	.	pugnax	Abramowitz1938.2	.	.	
@@ -4790,9 +4792,11 @@ Ward1939	1.2	Uca duperryi	.	text p. 14-15	citation	GuerinMeneville1830	1.1	=	=	.
 Ward1939	1.3	Uca duperryi	.	text p. 14-15	location	Penrhyn Island	.	tetragonon	.	.	.	
 Ward1939	2	Uca tetragona	.	text p. 15	n/a	<	.	tetragonon	.	.	.	
 Hult1939	1.1	Uca galapagensis	.	text p. 14	citation	Boone1927	1	=	=	.	.	
-Hult1939	1.2	Uca galapagensis	.	text p. 14	specimen	"Indefatigable Island, Galapagos Islands"	.	galapagensis	.	.	.	
-Abramowitz1940	1	Uca pugilator	.	text p. 179-188	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
-Bouvier1940	1.01	Uca Tangeri	.	text p. 280-284; figure 177	location	Europe	.	tangeri	.	.	.	
+Hult1939	1.2	Uca galapagensis	.	text p. 14	specimen	"Indefatigable Island, Galapagos Islands"	.	galapagensis	<	.	.	
+Abramowitz1940	1	Uca pugilator	.	text p. 179-188	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Abramowitz1940.2	1.1	Uca pugilator	.	"text p. 502, 504-505"	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Abramowitz1940.2	1.2	Uca pugilator	.	"text p. 502, 504-505"	citation	Abramowitz1938	1	=	=	.	.	
+Bouvier1940	1.01	Uca Tangeri	.	text p. 280-284; figure 177	location	Europe	.	tangeri	<	.	.	
 Bouvier1940	1.02	Uca Tangeri	.	text p. 280-284; figure 177	citation	Eydoux1835	1	=	=	.	.	
 Bouvier1940	1.03	Uca Tangeri	.	text p. 280-284; figure 177	citation	MilneEdwards1852	23	=	=	.	.	
 Bouvier1940	1.04	Uca Tangeri	.	text p. 280-284; figure 177	citation	Baudouin1906	1	=	=	.	.	
@@ -5280,6 +5284,9 @@ Hedgpeth1950	2.3	Uca pugilator	.	text p. 116-117	citation	Rathbun1918.2	15	=	=	.
 Hedgpeth1950	2.4	Uca pugilator	.	text p. 116-117	citation	Hyman1920.1	1	=	=	.	.	
 Whitten1950	1	Uca minax	.	text p. 80	location	"Texas, USA"	.	minax	<	.	.	
 Whitten1950	2	Uca pugilator	.	text p. 80	location	"Texas, USA"	.	panacea	>MSR: Geography	.	.	
+Pearse1950	1.1	Uca	fiddler crab	"text p. 39, 58, 64-65, 86, 108-109, 133-134; figures 10-11, 22"	citation	Pearse1914.1	0	>Uca	<	.	.	
+Pearse1950	1.2	Uca	fiddler crab	"text p. 39, 58, 64-65, 86, 108-109, 133-134; figures 10-11, 22"	citation	Pearse1928	0	>Uca	<	.	.	
+Pearse1950	1.3	Uca	fiddler crab	"text p. 39, 58, 64-65, 86, 108-109, 133-134; figures 10-11, 22"	citation	Dembowski1926	0	>Uca	<	.	.	
 Brown1951	1	Uca pugnax	.	text p. 71-82	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
 Brown1952	1	Uca pugnax	.	text p. 57-69	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
 Dakin1952	1	Uca marionis var. vomeris	fiddler-crab	"text p. 187, 194-195; plate 42: figure 6"	location	"New South Wales, Australia"	.	vomeris	.	.	.	
@@ -5297,6 +5304,8 @@ Oliveira1953	3	Uca maracoani	tesoura	text p. 512	location	"Guanabara Bay, Brazil
 Oliveira1953	4	Uca olympioi	chama-maré	text p. 512	location	"Guanabara Bay, Brazil"	.	uruguayensis	.	.	.	
 Scholander1953	1	Uca mordax	fiddler crab	"text p. 71, 75, 79-80; figures 2, 10"	location	"US Naval Station, Coco Solo, Panama"	.	.	.	"They are not at all clear where the specimens were collected, but this is the most likely location. Could be either coast, however."	.	
 Hines1953	1	Uca pugnax	.	text p. 375-376	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
+Webb1953	1	Uca pugnax	.	text p. 386-387	n/a	<	.	pugnax	<	.	.	
+Brown1953.4	1	Uca	fiddler crab	text p. 362	n/a	<	.	>Uca	<	.	.	
 Webb1954.1	1	Uca pugnax	.	text p. 796	n/a	<	.	pugnax	.	.	.	
 Webb1954.2	1	Uca pugilator	.	text p. 371-376	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
 Webb1954.2	2	Uca pugnax	.	text p. 386-396	citation	Brown1953.3	.	=	=	.	.	
@@ -5436,6 +5445,8 @@ Tweedie1954	1.1	Uca rosea	.	text p. 118	location	Singapore	.	.	.	.	.
 Tweedie1954	1.2	Uca rosea	.	text p. 118	location	West coast of Malaysian Peninsula	.	.	.	.	.	
 Tweedie1954	2	Uca angustifrons	.	text p. 118	location	Northwest Borneo	.	bellator	.	.	.	
 Tweedie1954	3	Uca rhizophorae	.	text p. 118	location	Northwest Borneo	.	rhizophorae	.	.	.	
+Sandeen1954	1.1	Uca pugnax	.	text p. 350	citation	Brown1953.3	.	=	=	.	.	
+Sandeen1954	1.2	Uca pugnax	.	text p. 350	citation	Brown1954.2	1	=	=	.	.	
 Altevogt1955.1	1.1	Uca marionis nitidus	.	"text p. 702, 705-716; figure 12; plate 2: figures 4-6; plate 3: figure 7; plate 5: figure 9; plate 6: figure 13"	location	"Bombay, India"	.	hesperiae	.	.	.	
 Altevogt1955.1	2.1	Uca annulipes	.	"text p. 702-705, 708, 710-715; plate 1: figures 2-3; plate 5: figure 10; plate 6: figure 11"	citation	Alcock1892	1	=	=	.	.	
 Altevogt1955.1	2.2	Uca annulipes	.	"text p. 702-705, 708, 710-715; plate 1: figures 2-3; plate 5: figure 10; plate 6: figure 11"	location	"Bombay, India"	.	annulipes	.	.	.	
@@ -5515,6 +5526,15 @@ Wurtz1955	1	Uca minax	.	text p. 190	location	"Neches River, Beaumont, Texas, USA
 Wurtz1955	2	Uca pugnax	.	text p. 190	location	"Sabine River, Orange, Texas, USA"	.	.	.	.	.	
 Wurtz1955	3	Uca pugnax rapax	.	text p. 190	location	"Escamba River, Pensacola, Florida, USA"	.	.	.	.	.	
 Gross1955	1	Uca crenulata	.	text p. 208	citation	Jones1941	1	=	=	.	.	
+Brown1955.3	1.1	Uca	fiddler crabs	"text p. 238-239, 241, 245"	citation	Brown1948.2	0	>Uca	<	.	.	
+Brown1955.3	1.2	Uca	fiddler crabs	"text p. 238-239, 241, 245"	citation	Webb1953	0	>Uca	<	.	.	
+Brown1955.3	1.3	Uca	fiddler crabs	"text p. 238-239, 241, 245"	citation	Brown1953.3	0	>Uca	<	.	.	
+Brown1955.3	1.4	Uca	fiddler crabs	"text p. 238-239, 241, 245"	citation	Brown1954.2	0	>Uca	<	.	.	
+Brown1955.3	1.5	Uca	fiddler crabs	"text p. 238-239, 241, 245"	citation	Brown1954.4	0	>Uca	<	.	.	
+Brown1955.3	2	Uca pugnax	.	"text p. 239, 241, 243-246, 248-253"	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Brown1955.3	3	Uca pugilator	.	"text p. 239, 243-246, 248-251, 253"	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Brown1955.4	1	Uca pugnax	.	text p. 281	citation	Brown1954.2	1	=	=	.	.	
+Brown1955.4	2	.	fiddler crabs	"text p. 289, 291"	citation	Brown1948.2	0	>Uca	<	.	.	
 Fingerman1956.1	1.1	Uca pugnax	.	"text p. 274-277, 282, 289"	citation	Brown1953.3	.	=	=	.	.	
 Fingerman1956.1	1.2	Uca pugnax	.	"text p. 274-277, 282, 289"	citation	Brown1954.4	1	=	=	.	.	
 Fingerman1956.1	1.3	Uca pugnax	.	"text p. 274-277, 282, 289"	citation	Hines1954	1	=	=	.	.	
@@ -5921,7 +5941,7 @@ Claff1958	1	Uca pugnax	.	text p. 347-348	n/a	<	.	pugnax	.	.	.
 Fingerman1958	1.1	Uca pugilator	.	"text p. 271-272, 275-282"	citation	Fingerman1956.1	2	=	=	.	.	
 Fingerman1958	1.2	Uca pugilator	.	"text p. 271-272, 275-282"	citation	Fingerman1957	2	=	=	.	.	
 Fingerman1958	1.3	Uca pugilator	.	"text p. 271-272, 275-282"	location	"Ocean Springs, Mississippi"	.	.	.	.	.	
-Fingerman1958	2	Uca minax	.	"text p. 271-272, 280-281"	location	"Ocean Springs, Mississippi"	.	.	.	.	.	
+Fingerman1958	2	Uca minax	.	"text p. 271-272, 280-281"	location	"Ocean Springs, Mississippi"	.	longisignalis	Barnwell1968.2	.	.	
 Fingerman1958	3.1	Uca pugnax	.	text p. 271	citation	Brown1953.3	.	=	=	.	.	
 Fingerman1958	3.2	Uca pugnax	.	text p. 271	citation	Brown1955	1	=	=	.	.	
 Fingerman1958	4	Uca speciosa	.	text p. 271-272	citation	Fingerman1956.1	3	=	=	.	.	
@@ -5942,6 +5962,9 @@ Webb1958	2	Uca pugilator	.	text p. 303	citation	Brown1954.2	2	=	=	.	.
 Woods1958	1	Uca pugnax	Fiddler crab	text p. 519	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
 Woods1958	2	Uca pugilator	Calico fiddler crab	text p. 519	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
 Woods1958	3	Uca minax	Fiddler crab	text p. 519	location	"Woods Hole, Massachusetts, USA"	.	minax	.	.	.	
+Stephens1958.1	1	Uca	.	text p. 367	n/a	<	.	>Uca	<	.	.	
+Stephens1958.2	1	Uca pugilator	.	text p. 367-368	n/a	<	.	pugilator	<	.	.	
+Stephens1958.3	1	Uca pugnax	.	text p. 368	n/a	<	.	pugnax	<	.	.	
 Bennett1959.1	1	Uca pugnax	.	text p. 404	location	"Cape Cod, Massachusetts, USA"	.	pugnax	.	.	.	
 Bennett1959.2	1	Uca pugnax	.	text p. 404	location	"Cape Cod, Massachusetts, USA"	.	pugnax	.	.	.	
 Brett1959	1	Uca pugnax	.	text p. 405	location	"Cape Cod, Massachusetts, USA"	.	pugnax	.	.	.	
@@ -6225,10 +6248,10 @@ Webb1960	1	Uca pugnax	.	text p. 346-347	location	"Woods Hole, Massachusetts, USA
 Wilkens1960	1	Uca pugilator	.	text p. 350-351	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
 Brett1960	1	Uca pugnax	.	text p. 310-311	n/a	<	.	pugnax	.	.	.	
 Robertson1960	1	Uca pugilator	.	text p. 208	citation	Guyselman1953	1	=	=	.	.	
-Edney1960	1	Uca minax	.	text p. 376	citation	Pearse1950	.	=	=	.	.	
-Edney1960	2.1	Uca pugilator	.	"text p. 376, 378"	citation	Pearse1950	.	=	=	.	.	
+Edney1960	1	Uca minax	.	text p. 376	citation	Pearse1950	0	=	=	.	.	
+Edney1960	2.1	Uca pugilator	.	"text p. 376, 378"	citation	Pearse1950	0	=	=	.	.	
 Edney1960	2.2	Uca pugilator	.	"text p. 376, 378"	citation	Orr1955	1	=	=	.	.	
-Edney1960	3	Uca pugnax	.	text p. 376	citation	Pearse1950	.	=	=	.	.	
+Edney1960	3	Uca pugnax	.	text p. 376	citation	Pearse1950	0	=	=	.	.	
 Edney1960	4	Uca signatus	.	text p. 378	citation	Verwey1930	1	=	=	.	.	
 Edney1960	5	Uca consobrinus	.	text p. 378	citation	Verwey1930	2	=	=	.	.	
 Waterman1960	1	.	fiddler crabs	text p. 30	citation	Crane1957	0	>Uca	<	.	.	
@@ -6263,11 +6286,11 @@ Teissier1960	1.3	Uca	.	text p. 552	citation	Morgan1923.2	0	>Uca	<	.	.
 Bliss1960	1	Uca pugnax	.	text p. 565	citation	Hoadley1937	1	=	=	.	.	
 Bliss1960	2	Uca mordax	.	text p. 565-566	citation	Welsh1955	.	=	=	.	.	
 Balss1961	1	Uca pugnax	.	"text p. 1774, 1792"	n/a	<	.	>Uca	.	.	.	
-Edney1961	1	Uca urvillei	.	"text p. 71-74, 76-82, 85"	location	"Inhaca Island, Mozambique"	.	urvillei	.	.	.	
-Edney1961	2	Uca marionis	.	"text p. 71-74, 76-77, 83-85, 87"	location	"Inhaca Island, Mozambique"	.	hesperiae	.	.	.	
-Edney1961	3	Uca chlorophthalmus	.	"text p. 71-74, 76-79, 83, 85"	location	"Inhaca Island, Mozambique"	.	chlorophthalmus	.	.	.	
-Edney1961	4	Uca annulipes	.	"text p. 71-77, 79-85, 87-88"	location	"Inhaca Island, Mozambique"	.	annulipes	.	.	.	
-Edney1961	5	Uca inversa	.	"text p. 71-74, 76-83, 85, 88"	location	"Inhaca Island, Mozambique"	.	inversa	.	.	.	
+Edney1961	1	Uca urvillei	.	"text p. 71-74, 76-82, 85"	location	"Inhaca Island, Mozambique"	.	urvillei	<	.	.	
+Edney1961	2	Uca marionis	.	"text p. 71-74, 76-77, 83-85, 87"	location	"Inhaca Island, Mozambique"	.	hesperiae	MSR: geography	.	.	
+Edney1961	3	Uca chlorophthalmus	.	"text p. 71-74, 76-79, 83, 85"	location	"Inhaca Island, Mozambique"	.	chlorophthalmus	<	.	.	
+Edney1961	4	Uca annulipes	.	"text p. 71-77, 79-85, 87-88"	location	"Inhaca Island, Mozambique"	.	annulipes	<	.	.	
+Edney1961	5	Uca inversa	.	"text p. 71-74, 76-83, 85, 88"	location	"Inhaca Island, Mozambique"	.	inversa	<	.	.	
 Edney1961	6.1	Uca crenulata	.	"text p. 84, 88"	citation	Jones1941	1	=	=	.	.	
 Edney1961	6.2	Uca crenulata	.	"text p. 84, 88"	citation	Gross1955	1	=	=	.	.	
 Edney1961	6.3	Uca crenulata	.	"text p. 84, 88"	citation	Gross1957.1	1	=	=	.	.	
@@ -6371,6 +6394,105 @@ vonHagen1961	2	Uca pugilator	.	text p. 140	citation	Burkenroad1947	1	=	=	.	.
 Wass1961	1	Uca minax	.	text p. XII-19	location	"Virginia, USA"	.	minax	.	.	.	
 Wass1961	2	Uca pugnax	.	text p. XII-19	location	"Virginia, USA"	.	pugnax	.	.	.	
 Wass1961	3	Uca pugilator	.	text p. XII-19	location	"Virginia, USA"	.	pugilator	.	.	.	
+Waterman1961.1	1	Uca	.	text p. 39-40	citation	Clark1935	0	>Uca	<	.	.	
+Cohen1961	1	Uca	.	text p. 91	citation	Lyon1900	0	>Uca	<	.	.	
+Kleinholz1961	1.1	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Abramowitz1937	0	>Uca	<	.	.	
+Kleinholz1961	1.2	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Brown1948.1	0	>Uca	<	.	.	
+Kleinholz1961	1.3	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Brown1952	0	>Uca	<	.	.	
+Kleinholz1961	1.4	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Sandeen1950	0	>Uca	<	.	.	
+Kleinholz1961	1.5	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	PerezGonzalez1957	0	>Uca	<	.	.	
+Kleinholz1961	1.6	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Stephens1958.1	0	>Uca	<	.	.	
+Kleinholz1961	1.7	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Abramowitz1938	0	>Uca	<	.	.	
+Kleinholz1961	1.8	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Edwards1950	0	>Uca	<	.	.	
+Kleinholz1961	1.9	Uca	fiddler crab	"text p. 136, 139-142, 144-147"	citation	Abramowitz1938.2	0	>Uca	<	.	.	
+Kleinholz1961	2.1	Uca pugilator	.	"text p. 136, 138, 143-144"	citation	Brown1950	1	=	=	.	.	
+Kleinholz1961	2.2	Uca pugilator	.	"text p. 136, 138, 143-144"	citation	Abramowitz1937.2	.	=	=	.	.	
+Kleinholz1961	2.3	Uca pugilator	.	"text p. 136, 138, 143-144"	citation	Abramowitz1938	1	=	=	.	.	
+Kleinholz1961	2.4	Uca pugilator	.	"text p. 136, 138, 143-144"	citation	Stephens1956	1	=	=	.	.	
+Kleinholz1961	3	Uca pugnax	.	text p. 138	citation	Abramowitz1937.2	.	=	=	.	.	
+Welsh1961	1.1	Uca	.	text p. 297-299	citation	Abramowitz1937	0	>Uca	<	.	.	
+Welsh1961	1.2	Uca	.	text p. 297-299	citation	Abramowitz1940.2	0	>Uca	<	.	.	
+Welsh1961	1.3	Uca	.	text p. 297-299	citation	PerezGonzalez1957	0	>Uca	<	.	.	
+Welsh1961	2.1	Uca pugilator	.	"text p. 298, 302"	citation	Stephens1956	1	=	=	.	.	
+Welsh1961	2.2	Uca pugilator	.	"text p. 298, 302"	citation	PerezGonzalez1957	1	=	=	.	.	
+Welsh1961	3	Uca pugnax	.	text p. 302	citation	PerezGonzalez1957	2	=	=	.	.	
+Lochhead1961	1	Uca pugilator	.	text p. 335	citation	Dembowski1926	1	=	=	.	.	
+Lochhead1961	2	Uca	.	text p. 340	citation	Hyman1920.1	0	>Uca	<	.	.	
+Pardi1961	1.1	Uca	.	"text p. 371, 391"	citation	Herter1927	0	>Uca	<	.	.	
+Pardi1961	1.2	Uca	.	"text p. 371, 391"	citation	Loeb1896	0	>Uca	<	.	.	
+Pardi1961	2	Uca pugnax	.	"text p. 373, 390"	citation	Holmes1908	1	=	=	.	.	
+Pardi1961	3	Uca pugnax	.	"text p. 373, 390"	citation	Kropp1928	1	=	=	.	.	
+Brown1961	1.1	Uca	.	"text p. 403, 415, 421-422"	citation	Abramowitz1937	0	>Uca	<	.	.	
+Brown1961	1.2	Uca	.	"text p. 403, 415, 421-422"	citation	Carlson1935	0	>Uca	<	.	.	
+Brown1961	1.3	Uca	.	"text p. 403, 415, 421-422"	citation	Carlson1936	0	>Uca	<	.	.	
+Brown1961	1.4	Uca	.	"text p. 403, 415, 421-422"	citation	Megusar1912	0	>Uca	<	.	.	
+Brown1961	1.5	Uca	.	"text p. 403, 415, 421-422"	citation	Brown1948.2	0	>Uca	<	.	.	
+Brown1961	1.6	Uca	.	"text p. 403, 415, 421-422"	citation	Brown1954.4	0	>Uca	<	.	.	
+Brown1961	1.7	Uca	.	"text p. 403, 415, 421-422"	citation	Brown1949	0	>Uca	<	.	.	
+Brown1961	1.8	Uca	.	"text p. 403, 415, 421-422"	citation	Webb1950.1	0	>Uca	<	.	.	
+Brown1961	1.9	Uca	.	"text p. 403, 415, 421-422"	citation	Webb1954.1	0	>Uca	<	.	.	
+Brown1961	2.1	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Brown1950	1	=	=	.	.	
+Brown1961	2.2	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Fingerman1956.1	2	=	=	.	.	
+Brown1961	2.3	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Edwards1950	2	=	=	.	.	
+Brown1961	2.4	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Bennett1957	2	=	=	.	.	
+Brown1961	2.5	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Brown1954.2	2	=	=	.	.	
+Brown1961	2.6	Uca pugilator	.	"text p. 403, 405, 410-412, 424"	citation	Brown1955.3	3	=	=	.	.	
+Brown1961	3.1	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1953.3	.	=	=	.	.	
+Brown1961	3.2	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Hines1954	1	=	=	.	.	
+Brown1961	3.3	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1956.2	.	=	=	.	.	
+Brown1961	3.4	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Edwards1950	1	=	=	.	.	
+Brown1961	3.5	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Bennett1957	1	=	=	.	.	
+Brown1961	3.6	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1958	.	=	=	.	.	
+Brown1961	3.7	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1954.2	1	=	=	.	.	
+Brown1961	3.8	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1955.3	2	=	=	.	.	
+Brown1961	3.9	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1956.1	.	=	=	.	.	
+Brown1961	3.10	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1951	1	=	=	.	.	
+Brown1961	3.11	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Stephens1957	1	=	=	.	.	
+Brown1961	3.12	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Webb1954.1	1	=	=	.	.	
+Brown1961	3.13	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Webb1950.1	1	=	=	.	.	
+Brown1961	3.14	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1954.3	1	=	=	.	.	
+Brown1961	3.15	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1952	1	=	=	.	.	
+Brown1961	3.16	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1949	1	=	=	.	.	
+Brown1961	3.17	Uca pugnax	.	"text p. 403-405, 410-413, 416-424"	citation	Brown1955	1	=	=	.	.	
+Brown1961	4.1	Uca speciosa	.	text p. 405	citation	Fingerman1956.1	3	=	=	.	.	
+Brown1961	4.2	Uca speciosa	.	text p. 405	citation	Fingerman1957	3	=	=	.	.	
+Bainbridge1961	1	Uca pugilator	.	text p. 451	n/a	<	.	pugilator	<	.	.	
+Waterman1961.2	1.1	Uca	fiddler crabs	"text p. 539, 546, 559, 580"	citation	Crane1957	0	>Uca	<	.	.	
+Waterman1961.2	1.2	Uca	fiddler crabs	"text p. 539, 546, 559, 580"	citation	Crane1958	0	>Uca	<	.	.	
+Schone1961	1.1	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Altevogt1957.1	0	>Uca	<	.	.	
+Schone1961	1.2	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Pearse1912.2	0	>Uca	<	.	.	
+Schone1961	1.3	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Crane1941	0	>Uca	<	.	.	
+Schone1961	1.4	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Crane1958	0	>Uca	<	.	.	
+Schone1961	1.5	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Schwartz1915.1	0	>Uca	<	.	.	
+Schone1961	1.6	Uca	.	"text p. 467-470, 473, 477, 479-482, 498-501, 503, 505-506, 510, 512-514"	citation	Schafer1954	0	>Uca	<	.	.	
+Schone1961	2.1	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Dembowski1926	1	=	=	.	.	
+Schone1961	2.2	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Dembowski1925	.	=	=	.	.	
+Schone1961	2.3	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Crane1943.3	3	=	=	.	.	
+Schone1961	2.4	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Burkenroad1947	1	=	=	.	.	
+Schone1961	2.5	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Altevogt1957.1	13	=	=	.	.	
+Schone1961	2.6	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Balss1955	.	=	=	.	.	
+Schone1961	2.7	Uca pugilator	.	"text p. 468, 474, 481-482, 485-486, 488, 507-509"	citation	Schwartz1915.1	3	=	=	.	.	
+Schone1961	3	Uca maracoani	.	"text p. 470, 475-477, 481, 513"	citation	Crane1958	1	=	=	.	.	
+Schone1961	4.1	Uca marionis	.	"text p. 475-478, 481; figures 5, 6"	citation	Altevogt1957.1	3	=	=	.	.	
+Schone1961	4.2	Uca marionis	.	"text p. 475-478, 481; figures 5, 6"	citation	Pearse1912.2	3	=	=	.	.	
+Schone1961	5	Uca forcipata	.	text p. 476	citation	Pearse1912.2	2	=	=	.	.	
+Schone1961	6	Uca terpsichores	.	text p. 476	citation	Crane1941	28	=	=	.	.	
+Schone1961	7.1	Uca annulipes	.	"text p. 477, 480-481, 502, 513; figure 7"	citation	Altevogt1957.1	2	=	=	.	.	
+Schone1961	7.2	Uca annulipes	.	"text p. 477, 480-481, 502, 513; figure 7"	citation	Pearse1912.2	6	=	=	.	.	
+Schone1961	8.1	Uca saltitanta	.	text p. 481	citation	Crane1957	21	=	=	.	.	
+Schone1961	8.2	Uca saltitanta	.	text p. 481	citation	Crane1941	20	=	=	.	.	
+Schone1961	9	Uca pugnax	.	"text p. 502, 513"	citation	Brown1956.2	.	=	=	.	.	
+Schone1961	10	Uca festae	.	text p. 503	citation	Crane1957	37	=	=	.	.	
+Schone1961	11	Uca deichmanni	.	text p. 503	citation	Crane1957	35	=	=	.	.	
+Schone1961	12	Uca cumulanta	.	text p. 503	citation	Crane1957	33	=	=	.	.	
+Schone1961	13	Uca lactea	.	text p. 503	citation	Crane1957	23	=	=	.	.	
+Schone1961	14	Uca leptodactyla	.	text p. 503	citation	Crane1957	34	=	=	.	.	
+Schone1961	15	Uca rhizophorae	.	text p. 503	citation	Crane1957	2	=	=	.	.	
+Schone1961	16	Uca beebei	.	"text p. 505, 513"	citation	Crane1941	21	=	=	.	.	
+Schone1961	17	Uca stenodactyla	.	text p. 513	citation	Crane1941	22	=	=	.	.	
+Schone1961	18	Uca rapax	.	text p. 513	citation	n/a	<	rapax	<	.	.	
+Costlow1961	1	Uca pugilator	.	text p. 443	n/a	<	.	pugilator	<	.	.	
+Sandeen1961	1	Uca pugilator	.	text p. 469	n/a	<	.	pugilator	<	.	.	
 Edmondson1962	1.1	Uca tetragonon	.	text p. 18-19; figure 8a	citation	deMan1891	2	=	=	.	.	
 Edmondson1962	1.2	Uca tetragonon	.	text p. 18-19; figure 8a	citation	Alcock1900	7	=	=	.	.	
 Edmondson1962	1.3	Uca tetragonon	.	text p. 18-19; figure 8a	citation	Rathbun1906	2	=	=	.	.	
@@ -6476,6 +6598,12 @@ Macnae1962	4.2	Uca annulipes	.	"text p. 26, 30, 32"	citation	Edney1961	4	=	=	.	.
 Macnae1962	4.3	Uca annulipes	.	"text p. 26, 30, 32"	citation	Altevogt1957.1	2	=	=	.	.	
 Macnae1962	5.1	Uca marionis	.	"text p. 30, 32"	location	"Inhaca Island, Mozambique"	.	hesperiae	.	.	.	
 Macnae1962	5.2	Uca marionis	.	"text p. 30, 32"	citation	Altevogt1957.1	3	=	=	.	.	
+Vernberg1962	1	Uca minax	.	text p. 455	n/a	<	.	minax	<	.	.	
+Sandeen1962.2	1	Uca pugilator	.	text p. 554	n/a	<	.	pugilator	<	.	.	
+Fingerman1962	1	Uca pugilator	.	text p. 522	n/a	<	.	pugilator	<	.	.	
+Fingerman1962.2	1	Uca pugnax	.	text p. 522-523	n/a	<	.	pugnax	<	.	.	
+Green1962	1	Uca pugnax	.	text p. 526	n/a	<	.	pugnax	<	.	.	
+Sandeen1962	1	Uca pugilator	.	text p. 554	n/a	<	.	pugilator	<	.	.	
 Altevogt1963.1	1.1	Uca tangeri	.	text p. 447-458	location	Morocco	.	tangeri	.	.	.	
 Altevogt1963.1	1.2	Uca tangeri	.	text p. 447-458	citation	Altevogt1959.1	1	=	=	.	.	
 Altevogt1963.1	2	Uca annulipes	.	text p. 447	citation	Altevogt1955.2	3	=	=	.	.	
@@ -6539,6 +6667,25 @@ Wass1963	3	Uca pugilator	.	text p. 45	location	"Virginia, USA"	.	pugilator	.	.	.
 Stevenson1963.1	1	Uca pugnax	.	text p. 392	n/a	.	.	pugnax	<	.	.	
 Stevenson1963.2	1	Uca pugnax	.	text p. 532	n/a	.	.	pugnax	<	.	.	
 Passano1963	1	Uca	.	text p. 196	n/a	<	.	>Uca	<	.	.	
+Busnel1963	1	.	fiddler crab	text p. 74	n/a	<	.	>Uca	<	.	.	
+Dumortier1963	1.1	Uca musica	.	text p. 314-315; figure 184	citation	Rathbun1915	3	=	=	.	.	
+Dumortier1963	1.2	Uca musica	.	text p. 314-315; figure 184	citation	Crane1941	41	=	=	.	.	
+Dumortier1963	2	Uca terpsichores	.	text p. 315	citation	Crane1941	28	=	=	.	.	
+Dumortier1963	3.1	Uca pugilator	.	text p. 328	citation	Burkenroad1947	1	=	=	.	.	
+Dumortier1963	3.2	Uca pugilator	.	text p. 328	citation	Dembowski1925	.	=	=	.	.	
+Dumortier1963.2	1.1	Uca	fiddler crabs	"text p. 583, 587, 589, 599, 606, 612, 618"	citation	Balss1921	0	>Uca	<	.	.	
+Dumortier1963.2	1.2	Uca	fiddler crabs	"text p. 583, 587, 589, 599, 606, 612, 618"	citation	Dembowski1925	0	>Uca	<	.	.	
+Dumortier1963.2	1.3	Uca	fiddler crabs	"text p. 583, 587, 589, 599, 606, 612, 618"	citation	GuinotDumortier1960	0	>Uca	<	.	.	
+Dumortier1963.2	2.1	Uca pugilator	.	"text p. 586, 616"	citation	Altevogt1955.2	4	=	=	.	.	
+Dumortier1963.2	2.2	Uca pugilator	.	"text p. 586, 616"	citation	Altevogt1957.1	13	=	=	.	.	
+Dumortier1963.2	2.3	Uca pugilator	.	"text p. 586, 616"	citation	Burkenroad1947	1	=	=	.	.	
+Dumortier1963.2	2.4	Uca pugilator	.	"text p. 586, 616"	citation	Dembowski1925	.	=	=	.	.	
+Dumortier1963.2	3.1	Uca tangeri	.	"text p. 586, 597, 625"	citation	Altevogt1955.2	1	=	=	.	.	
+Dumortier1963.2	3.2	Uca tangeri	.	"text p. 586, 597, 625"	citation	Altevogt1959.1	1	=	=	.	.	
+Frankenberg1963	1	Uca pugilator	.	"text p. 87-88, 91"	location	"Sapelo Island, Georgia, USA"	.	pugilator	<	.	.	
+Frankenberg1963	2	Uca pugnax	.	text p. 92	citation	Brown1954.2	1	=	=	.	.	
+Dean1963	1	Uca pugilator	.	text p. 521	n/a	<	.	pugilator	<	.	.	
+Fingerman1963.2	1	Uca pugilator	.	text p. 542	n/a	<	.	pugilator	<	.	.	
 Nagabhushanam1964	1	Gelasimus annulipes	.	text p. 69-71	location	"Vellar Estuary, India"	.	annulipes	.	.	.	
 Nagabhushanam1964	2.1	Uca pugilator	.	"text p. 69, 71"	citation	Carlson1936	.	=	=	.	.	
 Nagabhushanam1964	2.2	Uca pugilator	.	"text p. 69, 71"	citation	Brown1950	1	=	=	.	.	
@@ -6573,6 +6720,14 @@ Gross1964	1.1	Uca crenulata	.	text p. 447-465	citation	Jones1941	1	=	=	.	.
 Gross1964	1.2	Uca crenulata	.	text p. 447-465	location	"Newport, California, USA"	.	crenulata	<	.	.	
 Gross1964	2	Uca pugnax	.	"text p. 447, 453"	citation	Green1959	1	=	=	.	.	
 Gross1964	3	Uca pugilator	.	"text p. 447, 453"	citation	Green1959	2	=	=	.	.	
+Potts1964	1.1	Uca	.	"text p. 73, 280"	citation	Green1959	0	>Uca	<	.	.	
+Potts1964	1.2	Uca	.	"text p. 73, 280"	citation	Jones1941	0	>Uca	<	.	.	
+Potts1964	2.1	Uca pugnax	.	"text p. 284, 321-322"	citation	Green1959	1	=	=	.	.	
+Potts1964	2.2	Uca pugnax	.	"text p. 284, 321-322"	citation	Jones1941	1	=	=	.	.	
+Kleinholz1964	1	Uca pugilator	.	text p. 421	n/a	<	.	pugilator	<	.	.	
+Fingerman1964.1	1	Uca pugilator	.	text p. 334	location	"Florida, USA"	.	?	<	"Could be either <em class=""species"">Uca pugilator, U. panacea,</em> or a mix of both."	.	
+Fingerman1964.1	2	.	fiddler crabs	text p. 334	citation	Abramowitz1937	0	>Uca	<	.	.	
+Shibley1964	1	Uca	.	text p. 285	n/a	<	.	>Uca	<	.	.	
 Altevogt1965.1	1.01	Uca tangeri	.	text p. 31-35	location	"Tangier, Morocco"	.	tangeri	.	.	.	
 Altevogt1965.1	1.02	Uca tangeri	.	text p. 31-35	citation	Eydoux1835	1	=	=	.	.	
 Altevogt1965.1	1.03	Uca tangeri	.	text p. 31-35	citation	Altevogt1959.1	1	=	=	.	.	
@@ -6778,6 +6933,8 @@ Wass1965	1	Uca minax	.	text p. 41	location	"Virginia, USA"	.	minax	.	.	.
 Wass1965	2	Uca pugnax	.	text p. 41	location	"Virginia, USA"	.	pugnax	.	.	.	
 Wass1965	3	Uca pugilator	.	text p. 42	location	"Virginia, USA"	.	pugilator	.	.	.	
 Meyerriecks1965	1	Uca pugilator	.	text p. 402-403	location	"St. Petersburg, Florida, USA"	.	pugilator	.	.	.	
+Webb1965.2	1	.	fiddler crabs	text p. 675	n/a	<	.	>Uca	<	.	.	
+Kleinholz1965.2	1	Uca	.	text p. 674	n/a	<	.	>Uca	<	.	.	
 Abbott1966	1	Uca sp.	.	text p. 1320	location	"Ocean Springs, Mississippi"	.	?	.	.	.	
 Barnwell1966	1.1	Uca pugilator	.	"text p. 1-2, 7-10, 12-13, 15-16"	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
 Barnwell1966	1.2	Uca pugilator	.	"text p. 1-2, 7-10, 12-13, 15-16"	citation	Edwards1950	2	=	=	.	.	
@@ -6893,9 +7050,51 @@ Sarojini1966	3	Uca minax	.	text p. 274-275	citation	Huxley1932	2	=	=	.	.
 Sarojini1966	4.1	Uca pugnax	.	text p. 274-275	citation	Morgan1923.1	1	=	=	.	.	
 Sarojini1966	4.2	Uca pugnax	.	text p. 274-275	citation	Morgan1923.2	1	=	=	.	.	
 Herrnkind1966	1	Uca pugilator	.	text p. 298-299	location	"Miami, Florida, USA"	.	pugilator	.	.	.	
+Vernberg1966.6	1.1	Uca rapax	.	text p. 326-327	location	"Florida, USA"	.	rapax	<	.	.	
+Vernberg1966.6	1.2	Uca rapax	.	text p. 326-327	location	Jamaica	.	rapax	<	.	.	
+Vernberg1966.6	1.3	Uca rapax	.	text p. 326-327	location	Brazil	.	rapax	<	.	.	
+Vernberg1966.6	2	Uca pugnax	.	text p. 327	location	"North Carolina, USA"	.	pugnax	<	.	.	
+Vernberg1966.7	1.1	Uca rapax	.	text p. 327	location	"Florida, USA"	.	rapax	<	.	.	
+Vernberg1966.7	1.2	Uca rapax	.	text p. 327	location	Jamaica	.	rapax	<	.	.	
+Vernberg1966.7	1.3	Uca rapax	.	text p. 327	location	Brazil	.	rapax	<	.	.	
+Vernberg1966.7	2	Uca uruguayensis	.	text p. 327	location	Brazil	.	uruguayensis	<	.	.	
+Skobe1966	1	Uca	.	text p. 520	n/a	<	.	>Uca	<	.	.	
+Blanquet1966	1	Uca pugilator	.	text p. 563	n/a	<	.	pugilator	<	.	.	
+Fingerman1966.2	1	Uca pugilator	.	text p. 602-603	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Hariharan1966	1	Uca pugilator	.	text p. 507	n/a	<	.	pugilator	<	.	.	
+Salmon1966	1.1	Uca pugilator	Sand Fiddler Crab	text p. 515	location	"Florida, USA"	.	?	<	"Could be either <em class=""species"">Uca pugilator, U. panacea,</em> or a mix of both."	.	
+Salmon1966	1.2	Uca pugilator	Sand Fiddler Crab	text p. 515	citation	Salmon1965	1	=	=	.	.	
+Salmon1966	2	Uca rapax	.	text p. 515	location	"Florida, USA"	.	rapax	<	.	.	
+Salmon1966	3	Uca thayeri	.	text p. 515	location	"Florida, USA"	.	thayeri	<	.	.	
+Salmon1966	4	Uca pugnax	.	text p. 515	location	"Florida, USA"	.	pugnax	<	.	.	
+Salmon1966	5	Uca minax	.	text p. 515	location	"Florida, USA"	.	minax	<	.	.	
+Salmon1966	6	Uca sp. {1}	.	text p. 515	location	"Florida, USA"	.	longisignalis	MSR	It is very likely this was one of the unidentified species	.	
+Salmon1966	7	Uca sp. {2}	.	text p. 515	location	"Florida, USA"	.	virens	MSR	It is very likely this was one of the unidentified species	.	
+Fingerman1966.1	1.1	Uca pugilator	.	text p. 169-178	citation	PerezGonzalez1957	1.1	=	=	.	.	
+Fingerman1966.1	1.2	Uca pugilator	.	text p. 169-178	citation	Stephens1956	1	=	=	.	.	
+Fingerman1966.1	1.3	Uca pugilator	.	text p. 169-178	citation	Fingerman1956.2	1	=	=	.	.	
+Fingerman1966.1	1.4	Uca pugilator	.	text p. 169-178	location	Florida	.	?	.	"could be <em class=""species"">Uca pugilator</em> or <em class=""species"">U. panacea.</em>"	.	
+Fingerman1966.1	1.5	Uca pugilator	.	text p. 169-178	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Fingerman1966.1	2.1	Uca	.	text p. 169-171	citation	Fingerman1965	0	>Uca	<	.	.	
+Fingerman1966.1	2.2	Uca	.	text p. 169-171	citation	Fingerman1965.2	0	>Uca	<	.	.	
+Fingerman1966.1	2.3	Uca	.	text p. 169-171	citation	Carlson1935	0	>Uca	<	.	.	
+Fingerman1966.1	2.4	Uca	.	text p. 169-171	citation	Brown1950	0	>Uca	<	.	.	
+Fingerman1966.1	2.5	Uca	.	text p. 169-171	citation	Sandeen1950	0	>Uca	<	.	.	
+Fingerman1966.1	2.6	Uca	.	text p. 169-171	citation	Fingerman1963.2	0	>Uca	<	.	.	
+Fingerman1966.1	2.7	Uca	.	text p. 169-171	citation	Abramowitz1937	0	>Uca	<	.	.	
+Fingerman1966.1	2.8	Uca	.	text p. 169-171	citation	Brown1948.1	0	>Uca	<	.	.	
+Fingerman1966.1	2.9	Uca	.	text p. 169-171	citation	Abramowitz1938.2	0	>Uca	<	.	.	
+Fingerman1966.1	2.10	Uca	.	text p. 169-171	citation	Brown1940	0	>Uca	<	.	.	
+Fingerman1966.1	2.11	Uca	.	text p. 169-171	citation	Webb1954.2	0	>Uca	<	.	.	
+Fingerman1966.1	3	Uca pugnax	.	text p. 174	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Webb1966	1	Uca pugnax	.	text p. 181-186	location	"Buzzards Bay, Massachusetts, USA"	.	pugnax	<	.	.	
+Webb1966	2.1	Uca	.	text p. 181	citation	Brown1948.2	0	>Uca	<	.	.	
+Webb1966	2.2	Uca	.	text p. 181	citation	Brown1949	0	>Uca	<	.	.	
+Webb1966	2.3	Uca	.	text p. 181	citation	Webb1950.1	0	>Uca	<	.	.	
+Webb1966	2.4	Uca	.	text p. 181	citation	Brown1953.3	0	>Uca	<	.	.	
 Bartell1967	1.1	Uca pugilator	.	text p. 208-212	n/a	<	.	pugilator	.	Location where species was collected is not specified.	.	
 Bartell1967	1.2	Uca pugilator	.	text p. 208-212	citation	Stephens1956	1	=	=	.	.	
-Bartell1967	1.3	Uca pugilator	.	text p. 208-212	citation	Fingerman1966.1	.	=	=	.	.	
+Bartell1967	1.3	Uca pugilator	.	text p. 208-212	citation	Fingerman1966.1	1	=	=	.	.	
 Evans1967	1	Gelasimus panamensis	.	text p. 408	specimen	Panama	.	panamensis	.	.	.	
 Fingerman1967.1	1.1	Uca pugilator	.	text p. 303-318	location	"Alligator Harbor, Florida, USA"	.	.	.	.	.	
 Fingerman1967.1	1.2	Uca pugilator	.	text p. 303-318	location	"Shell Point Island, Florida, USA"	.	.	.	.	.	
@@ -6974,7 +7173,7 @@ Salmon1967	3.1	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: f
 Salmon1967	3.2	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: figure 5"	citation	Salmon1965	2	=	=	.	.	
 Salmon1967	3.3	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: figure 5"	citation	Tashian1958	1	=	=	.	.	
 Salmon1967	3.4	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: figure 5"	location	"Northeast coast of Florida, USA"	.	pugnax	<	.	.	
-Salmon1967	3.5	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: figure 5"	location	"Northwest coast of Florida, USA"	.	.	.	.	.	
+Salmon1967	3.5	Uca pugnax	.	"text p. 449-454, 456-458; plates 9: figure 4, 10: figure 5"	location	"Northwest coast of Florida, USA"	.	longisignalis	Barnwell1968.2	.	.	
 Salmon1967	4.1	Uca minax	.	text p. 449-450	citation	Crane1943.3	2	=	=	.	.	
 Salmon1967	4.2	Uca minax	.	text p. 449-450	citation	Salmon1965	3	=	=	.	.	
 Salmon1967	4.3	Uca minax	.	text p. 449-450	citation	Rathbun1918.2	10	=	=	.	.	
@@ -7052,6 +7251,20 @@ Lockwood1967	4.6	Uca pugnax	.	"text p. 57-58, 136-137, 143, 145-149, 153"	citati
 Lockwood1967	4.7	Uca pugnax	.	"text p. 57-58, 136-137, 143, 145-149, 153"	citation	Gray1957	2	=	=	.	.	
 Lockwood1967	5.1	Uca rapax	.	"text p. 137-138, 140, 143-144"	citation	Vernberg1959.2	2	=	=	.	.	
 Lockwood1967	5.2	Uca rapax	.	"text p. 137-138, 140, 143-144"	citation	Vernberg1959.3	1	=	=	.	.	
+Bartell1967.2	1	Uca pugilator	.	"text p. 812-815, 822"	n/a	<	.	pugilator	<	No location given for specimens	.	
+Miller1967	1	Uca rapax	.	text p. 766	location	"Florida, USA"	.	rapax	<	.	.	
+Miller1967	2	Uca thayeri	.	text p. 766	location	"Florida, USA"	.	thayeri	<	.	.	
+Miller1967	3	Uca minax	.	text p. 766	location	"Florida, USA"	.	minax	<	.	.	
+Miller1967	4.1	Uca pugnax	.	text p. 766	location	"Florida, USA"	.	pugnax	<	.	.	
+Miller1967	4.2	Uca pugnax	.	text p. 766	citation	Passano1960	1	=	=	.	.	
+Barnwell967	1	.	fiddler crabs	text p. 768	n/a	<	.	>Uca	<	.	.	
+Wright1967	1	Uca	.	text p. 769	n/a	<	.	>Uca	<	.	.	
+Salmon1967.2	1	Uca	.	text p. 769	n/a	<	.	>Uca	<	.	.	
+Schone1967	1	.	fiddler crabs	text p. 770	n/a	<	.	>Uca	<	.	.	
+Herrnkind1967	1	Uca pugilator	sand fiddler crab	text p. 768-769	n/a	<	.	pugilator	<	.	.	
+Vernberg1967.2	1	Uca pugilator	.	text p. 194	location	"Beaufort, North Carolina, USA"	.	pugilator	<	.	.	
+Vernberg1967.2	2.1	Uca rapax	.	text p. 194	location	"Florida, USA"	.	rapax	<	.	.	
+Vernberg1967.2	2.2	Uca rapax	.	text p. 194	location	Puerto Rico	.	rapax	<	.	.	
 Alvarez1968	1.1	Uca tangeri	.	"text p. 415, 419; figure 138"	location	Spain	.	tangeri	.	.	.	
 Alvarez1968	1.2	Uca tangeri	.	"text p. 415, 419; figure 138"	citation	Eydoux1835	1	=	=	.	.	
 Alvarez1968	1.3	Uca tangeri	.	"text p. 415, 419; figure 138"	citation	Heller1863	2	=	=	.	.	
@@ -7358,6 +7571,110 @@ SchmidtNielsen1968	4	Uca pugilator	.	text p. 479	citation	Green1959	2	=	=	.	.
 Ricketts1968	1.1	Uca crenulata	fiddler crab; siho maneki	"text p. 307-311, 499; figure 223"	location	"Southern California, USA"	.	crenulata	<	.	.	
 Ricketts1968	1.2	Uca crenulata	fiddler crab; siho maneki	"text p. 307-311, 499; figure 223"	citation	Crane1941	24	=	=	.	.	
 Bartell1968	1	Uca pugilator	.	text p. 414	n/a	<	.	pugilator	.	Location where species was collected is not specified.	.	
+Fingerman1968.2	1	Uca pugilator	.	text p. 756-757	n/a	<	.	pugilator	<	.	.	
+Krishnakumaran1968	1	Uca pugilator	.	text p. 776	n/a	<	.	pugilator	<	.	.	
+Barnwell1968.2	1	Uca maracoani	.	"text p. 570-572, 577"	citation	Crane1958	1.1	=	=	.	.	
+Barnwell1968.2	2.1	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Altevogt1957.1	0	>Uca	<	.	.	
+Barnwell1968.2	2.2	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Teal1959	0	>Uca	<	.	.	
+Barnwell1968.2	2.3	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Crane1958	0	>Uca	<	.	.	
+Barnwell1968.2	2.4	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Altevogt1962	0	>Uca	<	.	.	
+Barnwell1968.2	2.5	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	vonHagen1962.1	0	>Uca	<	.	.	
+Barnwell1968.2	2.6	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Salmon1965	0	>Uca	<	.	.	
+Barnwell1968.2	2.7	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Salmon1967	0	>Uca	<	.	.	
+Barnwell1968.2	2.8	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Barnwell1966	0	>Uca	<	.	.	
+Barnwell1968.2	2.9	Uca	fiddler crabs	"text p. 569, 571-574, 582"	citation	Abramowitz1937	0	>Uca	<	.	.	
+Barnwell1968.2	3	Uca urvillei	.	text p. 571-572	citation	Crane1958	12	=	=	.	.	
+Barnwell1968.2	4	Uca annulipes	.	text p. 571-572	citation	Crane1958	5	=	=	.	.	
+Barnwell1968.2	5.1	Uca pugilator	.	"text p. 571, 574-575, 580"	citation	Verrill1873	1	=	=	.	.	
+Barnwell1968.2	5.2	Uca pugilator	.	"text p. 571, 574-575, 580"	citation	Brown1954.2	2	=	=	.	.	
+Barnwell1968.2	5.3	Uca pugilator	.	"text p. 571, 574-575, 580"	citation	Barnwell1963.1	1	=	=	.	.	
+Barnwell1968.2	5.4	Uca pugilator	.	"text p. 571, 574-575, 580"	location	"Woods Hole, Massachusetts, USA"	.	pugilator	.	.	.	
+Barnwell1968.2	5.5	Uca pugilator	.	"text p. 571, 574-575, 580"	citation	Teal1959	2	=	=	.	.	
+Barnwell1968.2	5.6	Uca pugilator	.	"text p. 571, 574-575, 580"	citation	Barnwell1966	1	=	=	.	.	
+Barnwell1968.2	6	Uca tangeri	.	text p. 572	citation	vonHagen1962.1	1	=	=	.	.	
+Barnwell1968.2	7	Uca latimanus	.	text p. 572	citation	Crane1941	27	=	=	.	.	
+Barnwell1968.2	8.1	Uca pugnax	.	"text p. 572, 575, 578, 580"	citation	Barnwell1963.1	2	=	=	.	.	
+Barnwell1968.2	8.2	Uca pugnax	.	"text p. 572, 575, 578, 580"	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
+Barnwell1968.2	8.3	Uca pugnax	.	"text p. 572, 575, 578, 580"	citation	Teal1959	3	=	=	.	.	
+Barnwell1968.2	8.4	Uca pugnax	.	"text p. 572, 575, 578, 580"	citation	Barnwell1966	2	=	=	.	.	
+Barnwell1968.2	9.1	Uca minax	.	text p. 576-580	location	"Woods Hole, Massachusetts, USA"	.	minax	.	.	.	
+Barnwell1968.2	9.2	Uca minax	.	text p. 576-580	citation	Barnwell1966	3	=	=	.	.	
+Barnwell1968.2	10	Uca princeps	.	text p. 577	n/a	<	.	princeps	<	Reference to a manuscript which does not appear to have ever been published.	.	
+Barnwell1968.2	11	Uca stylifera	.	text p. 577	n/a	<	.	stylifera	<	Reference to a manuscript which does not appear to have ever been published.	.	
+Barnwell1968.2	12.1	Uca mordax	.	text p. 577	n/a	<	.	mordax	<	Reference to a manuscript which does not appear to have ever been published.	.	
+Barnwell1968.2	12.2	Uca mordax	.	text p. 577	citation	Barnwell1963.2	6	=	=	.	.	
+Barnwell1968.2	13	Uca vocator	.	text p. 577-578	n/a	<	.	vocator	<	Reference to a manuscript which does not appear to have ever been published.	.	
+Barnwell1968.2	14.1	Uca sp.	.	text p. 578-581	location	"Ocean Springs, Mississippi, USA"	.	longisignalis	MSR	"Refers to an undescribed species, which I believe is <em class=""species"">Uca longisignalis.</em>"	.	
+Barnwell1968.2	14.2	Uca sp.	.	text p. 578-581	citation	Fingerman1958	2	=	=	.	.	
+Barnwell1968.2	14.3	Uca sp.	.	text p. 578-581	citation	Salmon1967	3.5	=	=	.	.	
+Bliss1968.1	1.01	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Teal1958	0	>Uca	<	.	.	
+Bliss1968.1	1.02	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Crane1941	0	>Uca	<	.	.	
+Bliss1968.1	1.03	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Crane1957	0	>Uca	<	.	.	
+Bliss1968.1	1.04	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Crane1958	0	>Uca	<	.	.	
+Bliss1968.1	1.05	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Crane1966.1	0	>Uca	<	.	.	
+Bliss1968.1	1.06	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Salmon1967.2	0	>Uca	<	.	.	
+Bliss1968.1	1.07	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Salmon1968.2	0	>Uca	<	.	.	
+Bliss1968.1	1.08	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Pearse1914.2	0	>Uca	<	.	.	
+Bliss1968.1	1.09	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Altevogt1955.2	0	>Uca	<	.	.	
+Bliss1968.1	1.1	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Altevogt1957.1	0	>Uca	<	.	.	
+Bliss1968.1	1.11	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Altevogt1959.3	0	>Uca	<	.	.	
+Bliss1968.1	1.12	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Altevogt1959.1	0	>Uca	<	.	.	
+Bliss1968.1	1.13	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Altevogt1964.3	0	>Uca	<	.	.	
+Bliss1968.1	1.14	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Edney1961	0	>Uca	<	.	.	
+Bliss1968.1	1.15	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Edney1962	0	>Uca	<	.	.	
+Bliss1968.1	1.16	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Vernberg1959.1	0	>Uca	<	.	.	
+Bliss1968.1	1.17	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Vernberg1966.4	0	>Uca	<	.	.	
+Bliss1968.1	1.18	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Vernberg1966.5	0	>Uca	<	.	.	
+Bliss1968.1	1.19	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Vernberg1966.3	0	>Uca	<	.	.	
+Bliss1968.1	1.2	Uca	fiddler crabs	"text p. 358-359, 364-365, 370"	citation	Edney1960	0	>Uca	<	.	.	
+Bliss1968.1	2	Uca maracoani	.	text p. 359	citation	Crane1958	1	=	=	.	.	
+Bliss1968.1	3.1	Uca pugilator	.	"text p. 360, 365, 368-369, 375-376"	citation	Salmon1965	1	=	=	.	.	
+Bliss1968.1	3.2	Uca pugilator	.	"text p. 360, 365, 368-369, 375-376"	citation	Wilkens1965	1	=	=	.	.	
+Bliss1968.1	3.3	Uca pugilator	.	"text p. 360, 365, 368-369, 375-376"	citation	Green1959	2	=	=	.	.	
+Bliss1968.1	4.1	Uca inversa	.	text p. 365	citation	Edney1961	5	=	=	.	.	
+Bliss1968.1	4.2	Uca inversa	.	text p. 365	citation	Edney1962	1	=	=	.	.	
+Bliss1968.1	5.1	Uca urvillei	.	text p. 365	citation	Edney1961	1	=	=	.	.	
+Bliss1968.1	5.2	Uca urvillei	.	text p. 365	citation	Edney1962	4	=	=	.	.	
+Bliss1968.1	6.1	Uca annulipes	.	"text p. 366, 369"	citation	Edney1962	2	=	=	.	.	
+Bliss1968.1	6.2	Uca annulipes	.	"text p. 366, 369"	citation	Edney1961	4	=	=	.	.	
+Bliss1968.1	7	Uca marionis	.	text p. 369	citation	Edney1961	2	=	=	.	.	
+Bliss1968.1	8	Uca minax	.	text p. 369	n/a	<	.	minax	<	.	.	
+Bliss1968.1	9	Uca pugnax	.	text p. 375-376	citation	Green1959	1	=	=	.	.	
+Bliss1968.1	10	Uca crenulata	.	text p. 375	citation	Gross1964	1	=	=	.	.	
+Bliss1968.2	1	Uca	.	"text p. 667, 670-672"	n/a	<	.	>Uca	<	.	.	
+Bousfield1968	1	Uca	.	text p. 397-398	n/a	<	.	>Uca	<	.	.	
+Edney1968	1	Uca	.	text p. 600	n/a	<	.	>Uca	<	.	.	
+Edney1968	2	Uca pugilator	Sand fiddlers	text p. 600	n/a	<	.	pugilator	<	.	.	
+Edney1968	3.1	Uca tangeri	Afro-European Fiddler Crab	text p. 601	citation	Altevogt1965.2	1	=	=	.	.	
+Edney1968	3.2	Uca tangeri	Afro-European Fiddler Crab	text p. 601	citation	Altevogt1964.2	1	=	=	.	.	
+Herrnkind1968	1	Uca	.	text p. 491	n/a	<	.	>Uca	<	.	.	
+Herrnkind1968	2	Uca pugilator	.	text p. 491	n/a	<	.	pugilator	<	.	.	
+Herrnkind1968	3	Uca pugnax	.	text p. 492	n/a	<	.	pugnax	<	.	.	
+Herrnkind1968	4	Uca rapax	.	text p. 492	n/a	<	.	rapax	<	.	.	
+Miller1968	1.1	Uca rapax	.	"text p. 459-463, 465, 467-468"	location	"East coast of Florida, USA"	.	rapax	<	.	.	
+Miller1968	1.2	Uca rapax	.	"text p. 459-463, 465, 467-468"	citation	Salmon1967	5.4	=	=	.	.	
+Miller1968	1.3	Uca rapax	.	"text p. 459-463, 465, 467-468"	citation	Tashian1958	2.1	=	=	.	.	
+Miller1968	1.4	Uca rapax	.	"text p. 459-463, 465, 467-468"	citation	Vernberg1959.1	2	=	=	.	.	
+Miller1968	1.5	Uca rapax	.	"text p. 459-463, 465, 467-468"	citation	Vernberg1959.3	1	=	=	.	.	
+Miller1968	1.6	Uca rapax	.	"text p. 459-463, 465, 467-468"	citation	Vernberg1966.2	1	=	=	.	.	
+Miller1968	2.1	Uca thayeri	.	"text p. 459-461, 463, 468"	location	"East coast of Florida, USA"	.	thayeri	<	.	.	
+Miller1968	2.2	Uca thayeri	.	"text p. 459-461, 463, 468"	citation	Vernberg1966.2	2	=	=	.	.	
+Miller1968	3.1	Uca pugnax	.	text p. 459-468	location	Eastern United States	.	pugnax	<	.	.	
+Miller1968	3.2	Uca pugnax	.	text p. 459-468	citation	Rathbun1918.2	13	=	=	.	.	
+Miller1968	3.3	Uca pugnax	.	text p. 459-468	citation	Vernberg1959.1	1	=	=	.	.	
+Miller1968	3.4	Uca pugnax	.	text p. 459-468	citation	Vernberg1959.3	2	=	=	.	.	
+Miller1968	3.5	Uca pugnax	.	text p. 459-468	citation	Vernberg1966.2	5	=	=	.	.	
+Miller1968	3.6	Uca pugnax	.	text p. 459-468	citation	Passano1960	1	=	=	.	.	
+Miller1968	4.1	Uca pugilator	.	text p. 459-467	location	Eastern United States	.	pugilator	<	.	.	
+Miller1968	4.2	Uca pugilator	.	text p. 459-467	citation	Rathbun1918.2	15	=	=	.	.	
+Miller1968	5.1	Uca minax	.	text p. 460-463	location	Eastern United States	.	minax	<	.	.	
+Miller1968	5.2	Uca minax	.	text p. 460-463	citation	Rathbun1918.2	10	=	=	.	.	
+Miller1968	5.3	Uca minax	.	text p. 460-463	citation	Vernberg1966.2	3	=	=	.	.	
+Miller1968	6	Uca speciosa	.	text p. 460	location	"East coast of Florida, USA"	.	speciosa	<	.	.	
+Miller1968	7.1	Uca mordax	.	text p. 460-461	location	"East coast of Florida, USA"	.	burgersi	MSR: geography	.	.	
+Miller1968	7.2	Uca mordax	.	text p. 460-461	citation	Salmon1967	6.3	=	=	.	.	
+Wright1968	1.1	Uca spp.	.	"text p. 655-657, 659, 662"	citation	Crane1957	0	>Uca	<	.	.	
+Wright1968	1.2	Uca spp.	.	"text p. 655-657, 659, 662"	citation	Crane1966.1	0	>Uca	<	.	.	
 Bartell1969	1	Uca pugilator	.	text p. 390-391	n/a	<	.	pugilator	.	Location where species was collected is not specified.	.	
 Chace1969	1.1	Uca maracoani	.	"text p. 3, 204"	citation	Sloane1725	1.1	=	=	.	.	
 Chace1969	1.2	Uca maracoani	.	"text p. 3, 204"	citation	Holthuis1959.1	3	=	=	.	.	
@@ -7445,7 +7762,7 @@ Fingerman1969.4	1.3	Uca pugilator	.	text p. 97-104	citation	Brown1948.1	1	=	=	.	
 Fingerman1969.4	1.4	Uca pugilator	.	text p. 97-104	citation	Brown1948.2	1	=	=	.	.	
 Fingerman1969.4	1.5	Uca pugilator	.	text p. 97-104	location	"Massachusetts, USA"	.	pugilator	.	.	.	
 Fingerman1969.4	1.6	Uca pugilator	.	text p. 97-104	citation	Barnwell1966	1	=	=	.	.	
-Fingerman1969.4	1.7	Uca pugilator	.	text p. 97-104	citation	Fingerman1966.2	.	=	=	.	.	
+Fingerman1969.4	1.7	Uca pugilator	.	text p. 97-104	citation	Fingerman1966.2	1	=	=	.	.	
 Green1969.1	1	Uca pugnax	.	text p. 277-285	location	"Massachusetts, USA"	.	pugnax	.	.	.	
 Green1969.2	1	Uca pugnax	.	text p. 401	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
 Herreid1969	1	Uca pugilator	.	text p. 424-428	location	"North Carolina, USA"	.	pugilator	.	.	.	
@@ -7552,7 +7869,9 @@ Feest1969	11	Uca leptodactyla	.	text p. 174	citation	Gerlach1958.1	1	=	=	.	.
 Feest1969	12	Uca signatus	.	text p. 174	citation	Verwey1930	1	=	=	.	.	
 Feest1969	13	Uca arcuata	.	text p. 200	citation	Ono1965	2	=	=	.	.	
 Feest1969	14	Uca lactea	.	text p. 200	citation	Ono1965	1	=	=	.	.	
-Spirito1969	1	Uca pugnax	.	text p. 1112-1113	location	"Woods Hole, Massachusetts, USA"	.	pugnax	.	.	.	
+Spirito1969	1	Uca pugnax	.	text p. 1112-1113	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Miller1969	1	Uca pugilator	.	text p. 1142	location	"Wellfleet, Massachusetts, USA"	.	pugilator	<	.	.	
+Stewart1969	1	Uca pugilator	.	text p. 579	n/a	<	.	pugilator	<	.	.	
 Green1970.1	1	Uca pugnax	.	text p. 88	n/a	<	.	pugnax	.	.	.	
 Bourdon1970	1.1	Uca pugilator	.	"text p. 409-411, 413-414, 416, 418, 421"	citation	Leidy1855	1	=	=	.	.	
 Bourdon1970	1.2	Uca pugilator	.	"text p. 409-411, 413-414, 416, 418, 421"	citation	Pearse1947	1	=	=	.	.	
@@ -7570,7 +7889,7 @@ Fingerman1970.1	1.1	Uca pugilator	.	text p. 115-121	location	"Panacea, Florida, 
 Fingerman1970.1	1.2	Uca pugilator	.	text p. 115-121	citation	Abramowitz1937	1	=	=	.	.	
 Fingerman1970.1	1.3	Uca pugilator	.	text p. 115-121	citation	Kleinholz1936	1	=	=	.	.	
 Fingerman1970.1	1.4	Uca pugilator	.	text p. 115-121	citation	Fingerman1965	.	=	=	.	.	
-Fingerman1970.1	1.5	Uca pugilator	.	text p. 115-121	citation	Fingerman1966.1	.	=	=	.	.	
+Fingerman1970.1	1.5	Uca pugilator	.	text p. 115-121	citation	Fingerman1966.1	1	=	=	.	.	
 Fingerman1970.1	1.6	Uca pugilator	.	text p. 115-121	citation	Webb1954.2	1	=	=	.	.	
 Fingerman1970.1	1.7	Uca pugilator	.	text p. 115-121	citation	Fingerman1967.2	.	=	=	.	.	
 Fingerman1970.2	1.1	Uca pugilator	.	text p. 341-348	location	"Panacea, Florida, USA"	.	?	.	"Could be either <em class=""species"">Uca pugilator, U. panacea,</em> or a mix of both."	.	
@@ -7640,7 +7959,7 @@ vonHagen1970.1	1.1	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	spec
 vonHagen1970.1	1.2	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Buitendijk1950	4	=	=	.	.	
 vonHagen1970.1	1.3	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Chace1969	3	=	=	.	.	
 vonHagen1970.1	1.4	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Holthuis1959.1	11	=	=	.	.	
-vonHagen1970.1	1.5	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Miller1968	.	=	=	.	.	
+vonHagen1970.1	1.5	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Miller1968	6	=	=	.	.	
 vonHagen1970.1	1.6	Uca speciosa	.	"text p. 218, 222, 224, 227-228, 230-233"	citation	Salmon1967	7	=	=	.	.	
 vonHagen1970.1	2.1	Uca burgersi	.	"text p. 221, 225-226, 228, 230-233"	citation	Streets1872	1	=	=	.	.	
 vonHagen1970.1	2.2	Uca burgersi	.	"text p. 221, 225-226, 228, 230-233"	specimen	Trinidad	.	burgersi	.	.	.	
@@ -7660,7 +7979,7 @@ vonHagen1970.1	4.5	Uca major	.	"text p. 220, 224, 228, 231, 233"	citation	Rathbu
 vonHagen1970.1	4.6	Uca major	.	"text p. 220, 224, 228, 231, 233"	citation	Chace1969	9	=	=	.	.	
 vonHagen1970.1	5.1	Uca rapax	.	"text p. 221, 226, 228-233"	specimen	Surinam	.	rapax	.	.	.	
 vonHagen1970.1	5.2	Uca rapax	.	"text p. 221, 226, 228-233"	citation	Tashian1958	2	=	=	.	.	
-vonHagen1970.1	5.3	Uca rapax	.	"text p. 221, 226, 228-233"	citation	Miller1968	.	=	=	.	.	
+vonHagen1970.1	5.3	Uca rapax	.	"text p. 221, 226, 228-233"	citation	Miller1968	1	=	=	.	.	
 vonHagen1970.1	5.4	Uca rapax	.	"text p. 221, 226, 228-233"	citation	Chace1969	10	=	=	.	.	
 vonHagen1970.1	5.5	Uca rapax	.	"text p. 221, 226, 228-233"	citation	Rathbun1918.2	14	=	=	.	.	
 vonHagen1970.1	6	Uca stylifera	.	text p. 220	n/a	<	.	stylifera	.	.	.	
@@ -7698,7 +8017,7 @@ vonHagen1970.1	19.3	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	specimen
 vonHagen1970.1	19.4	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Holthuis1959.1	10	=	=	.	.	
 vonHagen1970.1	19.5	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Crane1957	19	=	=	.	.	
 vonHagen1970.1	19.6	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Rathbun1918.2	19	=	=	.	.	
-vonHagen1970.1	19.7	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Miller1968	.	=	=	.	.	
+vonHagen1970.1	19.7	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Miller1968	2	=	=	.	.	
 vonHagen1970.1	19.8	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Salmon1967	9	=	=	.	.	
 vonHagen1970.1	19.9	Uca thayeri	.	"text p. 221, 224, 226, 228, 230-232"	citation	Chace1969	11	=	=	.	.	
 vonHagen1970.1	20	Uca tomentosa	.	"text p. 221, 230"	n/a	<	.	tomentosa	.	.	.	
@@ -7763,7 +8082,7 @@ Jansen1970	4.1	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	
 Jansen1970	4.2	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	Teal1958	2	=	=	.	.	
 Jansen1970	4.3	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	Guyselman1953	1	=	=	.	.	
 Jansen1970	4.4	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	Webb1954.2	2	=	=	.	.	
-Jansen1970	4.5	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	Sandeen1962	.	=	=	.	.	
+Jansen1970	4.5	Uca pugilator	.	"text p. 61, 63, 70, 78-79, 88, 90, 92"	citation	Sandeen1962	1	=	=	.	.	
 Jansen1970	5	Uca minax	.	text p. 63	citation	Teal1958	1	=	=	.	.	
 Jansen1970	6.1	Uca annulipes	.	"text p. 78, 87-88"	citation	Feest1969	1	=	=	.	.	
 Jansen1970	6.2	Uca annulipes	.	"text p. 78, 87-88"	citation	Edney1961	4	=	=	.	.	
@@ -7860,7 +8179,7 @@ Vernberg1970	2.4	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	c
 Vernberg1970	2.5	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Vernberg1966.5	4	=	=	.	.	
 Vernberg1970	2.6	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Vernberg1964	.	=	=	.	.	
 Vernberg1970	2.7	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Vernberg1966.2	4	=	=	.	.	
-Vernberg1970	2.8	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Schone1961	.	=	=	.	.	
+Vernberg1970	2.8	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Schone1961	2	=	=	.	.	
 Vernberg1970	2.9	Uca pugilator	.	"text p. 70, 113, 130-132, 134-136, 211, 235"	citation	Miller1961	1	=	=	.	.	
 Vernberg1970	3.1	Uca pugnax	.	"text p. 70, 116-117, 130-136"	citation	Vernberg1959.1	1	=	=	.	.	
 Vernberg1970	3.2	Uca pugnax	.	"text p. 70, 116-117, 130-136"	citation	Vernberg1959.2	1	=	=	.	.	
@@ -7885,6 +8204,33 @@ Vernberg1970	7.2	Uca thayeri	.	"text p. 112, 130-131"	citation	Vernberg1959.2	6	
 Vernberg1970	8	Uca mordax	.	text p. 130-131	citation	Vernberg1959.2	5	=	=	.	.	
 Vernberg1970	9	Uca leptodactyla	.	text p. 130-131	citation	Vernberg1959.2	7	=	=	.	.	
 Vernberg1970	10	Uca crenulata	.	text p. 167	citation	Lockwood1962	.	=	=	.	.	
+Fingerman1970.3	1.01	Uca pugilator	.	text p. 350-355	citation	Brown1948.1	1	=	=	.	.	
+Fingerman1970.3	1.02	Uca pugilator	.	text p. 350-355	citation	Wilkens1965	1	=	=	.	.	
+Fingerman1970.3	1.03	Uca pugilator	.	text p. 350-355	citation	Stephens1956	1	=	=	.	.	
+Fingerman1970.3	1.04	Uca pugilator	.	text p. 350-355	citation	Rao1967.1	1	=	=	.	.	
+Fingerman1970.3	1.05	Uca pugilator	.	text p. 350-355	citation	Rao1968.1	1	=	=	.	.	
+Fingerman1970.3	1.06	Uca pugilator	.	text p. 350-355	citation	Fingerman1966.1	1	=	=	.	.	
+Fingerman1970.3	1.07	Uca pugilator	.	text p. 350-355	citation	Carlson1935	1	=	=	.	.	
+Fingerman1970.3	1.08	Uca pugilator	.	text p. 350-355	citation	Brown1950	1	=	=	.	.	
+Fingerman1970.3	1.09	Uca pugilator	.	text p. 350-355	citation	Brown1951.2	.	=	=	.	.	
+Fingerman1970.3	1.1	Uca pugilator	.	text p. 350-355	citation	Fingerman1967.2	.	=	=	.	.	
+Fingerman1970.3	1.11	Uca pugilator	.	text p. 350-355	citation	Kleinholz1965	1	=	=	.	.	
+Fingerman1970.3	1.12	Uca pugilator	.	text p. 350-355	citation	Bartell1967	1	=	=	.	.	
+Fingerman1970.3	1.13	Uca pugilator	.	text p. 350-355	citation	Bartell1967.2	1	=	=	.	.	
+Fingerman1970.3	1.14	Uca pugilator	.	text p. 350-355	citation	Rao1967.3	.	=	=	.	.	
+Fingerman1970.3	1.15	Uca pugilator	.	text p. 350-355	citation	Fingerman1967.1	1	=	=	.	.	
+Fingerman1970.3	2.1	Uca pugnax	.	"text p. 351, 364"	citation	Barnwell1968.1	4	=	=	.	.	
+Fingerman1970.3	2.2	Uca pugnax	.	"text p. 351, 364"	citation	Fingerman1963	1	=	=	.	.	
+Fingerman1970.3	3	Uca galapagensis herradurensis	.	text p. 351	citation	Barnwell1968.1	2	=	=	.	.	
+Fingerman1970.3	4	Uca zacae	.	text p. 351	citation	Barnwell1968.1	3	=	=	.	.	
+Fingerman1970.3	5	Uca annulipes	.	text p. 351	citation	Nagabhushanam1967	1	=	=	.	.	
+Baird1970	1	Uca pugilator	.	text p. 500	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Barnwell1970	1	Uca	.	text p. 522	location	Americas	.	>Uca	<	"The abstract mentions a study of 40 species, but they are not specified."	.	
+Green1970.2	1	Uca pugnax	.	text p. 511	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Neff1970	1	Uca	.	text p. 545	n/a	<	.	>Uca	<	No species is specified	.	
+Rao1970.4	1	Uca pugilator	.	text p. 495	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Rao1970.5	1	Uca pugilator	.	text p. 495-496	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Snyder1970	1	Uca	.	text p. 511	n/a	<	.	>Uca	<	No species is specified	.	
 Aspey1971	1.1	Uca pugnax	.	text p. 669-676	location	"Sapelo Island, Georgia, USA"	.	pugnax	.	.	.	
 Aspey1971	1.2	Uca pugnax	.	text p. 669-676	citation	Teal1958	3	=	=	.	.	
 Aspey1971	1.3	Uca pugnax	.	text p. 669-676	citation	Pearse1914.1	2	=	=	.	.	
@@ -7984,6 +8330,10 @@ Yamaguchi1971	6.1	Uca annulipes	.	text p. 23	citation	Altevogt1957.1	2	=	=	.	.
 Yamaguchi1971	6.2	Uca annulipes	.	text p. 23	citation	Altevogt1955.1	2	=	=	.	.	
 Yamaguchi1971	7	Uca maracoani	.	text p. 23	citation	Crane1958	1	=	=	.	.	
 Vohra1971	1	Uca marionis	.	"text p. 692, 697, 708"	location	Singapore	.	vocans	>MSR: geography & synonymy	.	.	
+Fingerman1971.2	1	Uca pugilator	.	text p. 646	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Rao1971	1	Uca pugilator	.	text p. 644	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Unglaub1971	1	Uca pugnax	.	text p. 696	location	"South Carolina, USA"	.	pugnax	<	.	.	
+Wolin1971	1	Uca	.	text p. 679	n/a	<	.	>Uca	<	No species is specified	.	
 Braithwaite1972	1	Uca annulipes	.	"text p. 266-268, 273-274, 282"	location	Seychelles	.	annulipes	.	.	.	
 Bright1972	1.1	Uca pugilator	sand fiddler crab	"text p. 6, 12, 39"	citation	Burkenroad1947	1	=	=	.	.	
 Bright1972	1.2	Uca pugilator	sand fiddler crab	"text p. 6, 12, 39"	citation	Crane1943.3	3	=	=	.	.	
@@ -8040,8 +8390,8 @@ Brito1972	2	Uca maracoani maracoani	.	text p. 96-98	location	Brazil	.	maracoani	
 Rao1972	1.1	Uca pugilator	.	text p. 270-282	location	"Panacea, Florida, USA"	.	?	.	"Could be either <em class=""species"">Uca pugilator, U. panacea,</em> or a mix of both."	.	
 Rao1972	1.2	Uca pugilator	.	text p. 270-282	citation	Krishnakumaran1970	1	=	=	.	.	
 Salmon1972	1	Uca maracoani	.	text p. 62	citation	Crane1958	1	=	=	.	.	
-Salmon1972	2	Uca princeps	.	text p. 62	citation	Barnwell1968.2	.	=	=	.	.	
-Salmon1972	3	Uca stylifera	.	text p. 62	citation	Barnwell1968.2	.	=	=	.	.	
+Salmon1972	2	Uca princeps	.	text p. 62	citation	Barnwell1968.2	10	=	=	.	.	
+Salmon1972	3	Uca stylifera	.	text p. 62	citation	Barnwell1968.2	11	=	=	.	.	
 Salmon1972	4.1	Uca pugilator	.	"text p. 62-63, 65-66, 68-69, 71-72, 74-79, 82-94"	citation	Salmon1965	1	=	=	.	.	
 Salmon1972	4.2	Uca pugilator	.	"text p. 62-63, 65-66, 68-69, 71-72, 74-79, 82-94"	citation	Burkenroad1947	1	=	=	.	.	
 Salmon1972	4.3	Uca pugilator	.	"text p. 62-63, 65-66, 68-69, 71-72, 74-79, 82-94"	citation	Salmon1962.2	1	=	=	.	.	
@@ -8100,6 +8450,7 @@ Bayley1972	1	Uca crenulata	.	text p. 258-259	citation	Jones1941	1	=	=	.	.
 Bayley1972	2	Uca mimax	.	text p. 259	citation	Teal1958	1	=	=	typo	.	
 Bayley1972	3	Uca pugilator	.	text p. 259	citation	Teal1958	2	=	=	.	.	
 Bayley1972	4	Uca pugnax	.	text p. 259	citation	Teal1958	3	=	=	.	.	
+Zucker1972	1	Uca terpsichores	.	text p. 655	location	Pacific coat of Panama	.	terpsichores	<	.	.	
 Bott1973.1	1.1	Uca tangeri	.	text p. 312-314	citation	Herbst1782	2.1	=	=	.	.	
 Bott1973.1	1.2	Uca tangeri	.	text p. 312-314	citation	Lamarck1801	1	=	=	.	.	
 Bott1973.1	1.3	Uca tangeri	.	text p. 312-314	citation	Leach1814	2	=	=	.	.	
@@ -8223,7 +8574,7 @@ Salmon1973	4.1	Uca pugnax	.	"text p. 530-531, 538"	location	"Beaufort, North Car
 Salmon1973	4.2	Uca pugnax	.	"text p. 530-531, 538"	citation	Salmon1968.2	5	=	=	.	.	
 Fingerman1973.2	1.1	Uca pugilator	.	text p. 277-287	citation	Fingerman1971.1	1.01	=	=	.	.	
 Fingerman1973.2	1.2	Uca pugilator	.	text p. 277-287	citation	Fingerman1972	1.1	=	=	.	.	
-Fingerman1973.2	1.3	Uca pugilator	.	text p. 277-287	location	"Panacea, Florida"	.	?	.	"Could be either <em class=""species"">Uca pugilator</em> or <em class=""species"">U. panacea.</em>"	.	
+Fingerman1973.2	1.3	Uca pugilator	.	text p. 277-287	location	"Panacea, Florida"	.	?	MSR	"Could be either <em class=""species"">Uca pugilator</em> or <em class=""species"">U. panacea.</em>"	.	
 Fingerman1973.2	1.4	Uca pugilator	.	text p. 277-287	citation	Fielder1971.2	.	=	=	.	.	
 Frey1973	1	.	Fiddler Crab	text p. 229	citation	Wolf1970	.	=	=	.	.	
 Frey1973	2	Uca pugilator	.	Figure 1	location	"Georgia, USA"	.	pugilator	.	.	.	
@@ -8421,7 +8772,7 @@ Sandifer1973	1.7	Uca spp.	.	"text p. 235, 238-239, 247, 254-255"	citation	Tagatz
 Smith1973	1.1	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	location	"Key Largo, Florida, USA"	.	rapax	<	.	"A number of the citations in this paper are incorrect (<em>e.g.</em>, mangling/mixing up citation information of multiple papers or outright referencing the wrong paper). I've tried to reference the correct paper when it was reasonable to do so."	
 Smith1973	1.2	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	citation	Tashian1958	2	=	=	.	.	
 Smith1973	1.3	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	citation	Salmon1967	5	=	=	.	.	
-Smith1973	1.4	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	citation	Miller1968	.	=	=	.	.	
+Smith1973	1.4	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	citation	Miller1968	1	=	=	.	.	
 Smith1973	1.5	Uca rapax	.	"text p. 186-193, 195-197, 199, 201-206"	citation	Vernberg1959.1	2	=	=	.	.	
 Smith1973	2.1	Uca pugilator	.	"text p. 186, 188-206"	location	"Key Largo, Florida, USA"	.	pugilator	<	.	.	
 Smith1973	2.2	Uca pugilator	.	"text p. 186, 188-206"	citation	Schwartz1915.2	2	=	=	.	.	
@@ -8433,7 +8784,7 @@ Smith1973	2.7	Uca pugilator	.	"text p. 186, 188-206"	citation	Pearse1914.2	3	=	=
 Smith1973	2.8	Uca pugilator	.	"text p. 186, 188-206"	citation	Wilkens1965	1	=	=	The authors misspell the name of the author of the cited paper.	.	
 Smith1973	2.9	Uca pugilator	.	"text p. 186, 188-206"	citation	Demeusy1957	2	=	=	"The authors misspell the name of the author of the cited paper. They also cite this paper with respect to <em class=""species"">U. rapax</a>, even though that species is never mentioned in this paper."	.	
 Smith1973	2.10	Uca pugilator	.	"text p. 186, 188-206"	citation	Teal1959	2	=	=	.	.	
-Smith1973	2.11	Uca pugilator	.	"text p. 186, 188-206"	citation	Miller1968	.	=	=	.	.	
+Smith1973	2.11	Uca pugilator	.	"text p. 186, 188-206"	citation	Miller1968	4	=	=	.	.	
 Smith1973	2.12	Uca pugilator	.	"text p. 186, 188-206"	citation	Vernberg1959.1	7	=	=	.	.	
 Smith1973	3.1	Uca pugnax	.	text p. 203	citation	Barnwell1968.1	4	=	=	.	.	
 Smith1973	3.2	Uca pugnax	.	text p. 203	citation	Teal1959	3	=	=	.	.	
@@ -8563,6 +8914,15 @@ Brusca1973	7	Uca monilifera	.	text p. 266; figure 7.61	location	Gulf of Californ
 Brusca1973	8	Uca princeps	.	text p. 266; figure 7.62	location	Gulf of California	.	princeps	<	.	.	
 Brusca1973	9	Uca pugnax	.	text p. 264	citation	Brown1953.1	1	=	=	.	.	
 Chandy1973	1	Gelasimus dussumieri	.	text p. 402	location	"Gulf of Kutch, India"	.	urvillei	>MSR: geography	.	.	
+Dame1973	1	Uca pugilator	sand fiddler crab	text p. 1292	location	"South Carolina, USA"	.	pugilator	<	.	.	
+Heit1973	1	Uca pugilator	.	text p. 1275	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Herman1973	1	Uca	.	text p. 1276	citation	Brown1941	0	>Uca	<	.	.	
+Mantel1973	1	Uca pugilator	.	text p. 1339	location	"New York, USA"	.	pugilator	<	.	.	
+Powers1973	1	Uca pugnax	.	text p. 1271	location	"Texas, USA"	.	virens	Powers1975.2	.	.	
+Powers1973	2	Uca pugilator	.	text p. 1271	location	"Texas, USA"	.	panacea	Powers1975.2	.	.	
+Rao1973	1	Uca pugilator	.	text p. 1276	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Silverthorn1973.3	1	Uca pugnax	.	text p. 1275-1276	location	"South Carolina, USA"	.	pugnax	<	.	.	
+Silverthorn1973.3	2	Uca pugilator	.	text p. 1275-1276	location	"South Carolina, USA"	.	pugilator	<	.	.	
 Novak1974	1.1	Uca panacea	.	text p. 313-325; figures 1-8	location	"Panacea, Florida, USA"	.	panacea	.	type description	.	
 Novak1974	1.2	Uca panacea	.	text p. 313-325; figures 1-8	citation	Rao1968.3	.	=	=	.	.	
 Novak1974	1.3	Uca panacea	.	text p. 313-325; figures 1-8	citation	Selander1971	2	=	=	.	.	
@@ -8668,6 +9028,8 @@ Vernberg1974.1	1	Uca pugilator	.	text p. 381-421	location	"Georgetown, South Car
 Waldichuk1974	1.1	Uca pugilator	.	"text p. 25, 29"	citation	OHara1973.1	1	=	=	.	.	
 Waldichuk1974	1.2	Uca pugilator	.	"text p. 25, 29"	citation	OHara1973.2	1	=	=	.	.	
 Waldichuk1974	1.3	Uca pugilator	.	"text p. 25, 29"	citation	Vernberg1972.2	1	=	=	.	.	
+Fingerman1974.2	1	Uca pugilator	.	text p. 1295	n/a	<	.	pugilator	<	No location given for specimens.	.	
+Rao1974	1	Uca	.	text p. 1246	n/a	<	.	>Uca	<	No species is specified	.	
 Crane1975	1.01	Uca	.	text p. 15-20	citation	Leach1814	3	=	=	.	.	
 Crane1975	1.02	Uca	.	text p. 15-20	citation	Leach1815	0	>Uca	<	.	.	
 Crane1975	1.03	Uca	.	text p. 15-20	citation	Rathbun1897.1	1	=	=	.	.	
@@ -9701,11 +10063,11 @@ Crane1975	73.44	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146,
 Crane1975	73.45	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1966	1	=	=	.	.	
 Crane1975	73.46	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Knopf1966	1	=	=	.	.	
 Crane1975	73.47	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Salmon1967	2	=	=	.	.	
-Crane1975	73.48	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1967	.	=	=	.	.	
+Crane1975	73.48	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1967	1	=	=	.	.	
 Crane1975	73.49	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1968.1	1	=	=	.	.	
 Crane1975	73.5	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1968.2	1	=	=	.	.	
 Crane1975	73.51	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Herrnkind1968.3	.	=	=	.	.	
-Crane1975	73.52	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Miller1968	.	=	=	.	.	
+Crane1975	73.52	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Miller1968	4	=	=	.	.	
 Crane1975	73.53	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Salmon1968.2	1	=	=	.	.	
 Crane1975	73.54	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Salmon1969	1	=	=	.	.	
 Crane1975	73.55	Uca (Celuca) pugilator	sand fiddler	"text p. 100, 118, 121, 146, 176-178, 200-201, 203, 216-217, 223-228, 237-238, 304, 306, 327, 357, 383, 408, 426, 433, 436, 441, 444, 461, 463, 467, 474, 478-481, 483, 485, 487-490, 495-496, 500-502, 505, 510-511, 515-516, 523, 566; figure 37K, 69F, 101; map 16; plate 29E-H"	citation	Horch1969	1	=	=	.	.	
@@ -10081,7 +10443,7 @@ Crane1975	124	Gelasimus variegatus	.	text p. 326	citation	Heller1862.1	1	=	=	Dis
 Coohill1975	1.1	Uca pugilator	.	text p. 57-62	citation	Coohill1970	1	=	=	.	.	
 Coohill1975	1.2	Uca pugilator	.	text p. 57-62	location	"West Falmouth, Massachusetts, USA"	.	pugilator	<	.	.	
 Fingerman1975	1.1	Uca pugilator	.	text p. 55-59	citation	Brown1950	1	=	=	.	.	
-Fingerman1975	1.2	Uca pugilator	.	text p. 55-59	citation	Fingerman1966.2	.	=	=	.	.	
+Fingerman1975	1.2	Uca pugilator	.	text p. 55-59	citation	Fingerman1966.2	1	=	=	.	.	
 Fingerman1975	1.3	Uca pugilator	.	text p. 55-59	citation	Fingerman1970.2	1	=	=	.	.	
 Fingerman1975	1.4	Uca pugilator	.	text p. 55-59	citation	Rao1970.1	1	=	=	.	.	
 Fingerman1975	1.5	Uca pugilator	.	text p. 55-59	citation	Fingerman1974.5	1	=	=	.	.	
@@ -10136,11 +10498,11 @@ Vacca1975.2	1.2	Uca pugilator	.	text p. 483-486	location	?	.	?	>MSR: geography	"
 Powers1975.2	1.1	Uca panacea	.	"text p. vi, 4-17, 22-49, 57-58, 71, 75-76, 93, 102-117, 122-124, 126-127, 130-132, 134, 136-139, 147-155, 157, 164-170, 174, 178-182; figure I-1"	location	"Mustang Island, Texas, USA"	.	panacea	<	.	.	
 Powers1975.2	1.2	Uca panacea	.	"text p. vi, 4-17, 22-49, 57-58, 71, 75-76, 93, 102-117, 122-124, 126-127, 130-132, 134, 136-139, 147-155, 157, 164-170, 174, 178-182; figure I-1"	citation	Novak1974	1	=	=	.	.	
 Powers1975.2	1.3	Uca panacea	.	"text p. vi, 4-17, 22-49, 57-58, 71, 75-76, 93, 102-117, 122-124, 126-127, 130-132, 134, 136-139, 147-155, 157, 164-170, 174, 178-182; figure I-1"	citation	Selander1971	2	=	=	.	.	
-Powers1975.2	1.4	Uca panacea	.	"text p. vi, 4-17, 22-49, 57-58, 71, 75-76, 93, 102-117, 122-124, 126-127, 130-132, 134, 136-139, 147-155, 157, 164-170, 174, 178-182; figure I-1"	citation	Powers1973	.	=	=	.	.	
+Powers1975.2	1.4	Uca panacea	.	"text p. vi, 4-17, 22-49, 57-58, 71, 75-76, 93, 102-117, 122-124, 126-127, 130-132, 134, 136-139, 147-155, 157, 164-170, 174, 178-182; figure I-1"	citation	Powers1973	2	=	=	.	.	
 Powers1975.2	2.1	Uca virens	.	"text p. vi, 2, 4, 9, 22-25, 33, 35-40, 45-49, 71, 75-76, 81, 91-92, 97, 106-118, 123-124, 136-139, 147, 152, 154-155, 157, 167-170, 174"	location	"Mustang Island, Texas, USA"	.	virens	<	.	.	
 Powers1975.2	2.2	Uca virens	.	"text p. vi, 2, 4, 9, 22-25, 33, 35-40, 45-49, 71, 75-76, 81, 91-92, 97, 106-118, 123-124, 136-139, 147, 152, 154-155, 157, 167-170, 174"	citation	Salmon1968.1	4	=	=	.	.	
 Powers1975.2	2.3	Uca virens	.	"text p. vi, 2, 4, 9, 22-25, 33, 35-40, 45-49, 71, 75-76, 81, 91-92, 97, 106-118, 123-124, 136-139, 147, 152, 154-155, 157, 167-170, 174"	citation	Selander1971	5	=	=	.	.	
-Powers1975.2	2.4	Uca virens	.	"text p. vi, 2, 4, 9, 22-25, 33, 35-40, 45-49, 71, 75-76, 81, 91-92, 97, 106-118, 123-124, 136-139, 147, 152, 154-155, 157, 167-170, 174"	citation	Powers1973	.	=	=	.	.	
+Powers1975.2	2.4	Uca virens	.	"text p. vi, 2, 4, 9, 22-25, 33, 35-40, 45-49, 71, 75-76, 81, 91-92, 97, 106-118, 123-124, 136-139, 147, 152, 154-155, 157, 167-170, 174"	citation	Powers1973	1	=	=	.	.	
 Powers1975.2	3.1	Uca pugnax	.	"text p. 2, 4, 105, 119, 122, 134, 147"	citation	Salmon1968.1	1	=	=	.	.	
 Powers1975.2	3.2	Uca pugnax	.	"text p. 2, 4, 105, 119, 122, 134, 147"	citation	Selander1971	3	=	=	.	.	
 Powers1975.2	3.3	Uca pugnax	.	"text p. 2, 4, 105, 119, 122, 134, 147"	citation	Pearse1914.2	2	=	=	.	.	
@@ -10175,7 +10537,7 @@ Powers1975.2	15	Uca annulipes	.	text p. 96	citation	Edney1961	4	=	=	.	.
 Powers1975.2	16	Uca thayeri	.	"text p. 105, 124"	citation	Crane1958	2	=	=	.	.	
 Powers1975.2	17	Uca maracoani	.	text p. 105	citation	Crane1958	1	=	=	.	.	
 Powers1975.2	18.1	Uca rapax	.	"text p. 105, 134, 149"	citation	Smith1973	1	=	=	.	.	
-Powers1975.2	18.2	Uca rapax	.	"text p. 105, 134, 149"	citation	Miller1968	.	=	=	.	.	
+Powers1975.2	18.2	Uca rapax	.	"text p. 105, 134, 149"	citation	Miller1968	1	=	=	.	.	
 Powers1975.2	18.3	Uca rapax	.	"text p. 105, 134, 149"	citation	Vernberg1959.1	2	=	=	.	.	
 Powers1975.2	18.4	Uca rapax	.	"text p. 105, 134, 149"	citation	Crane1967	1	=	=	.	.	
 Powers1975.2	19	Uca crenulata	.	text p. 106	citation	Honegger1973.2	1	=	=	.	.	
@@ -10198,13 +10560,13 @@ Powers1975.1	3.3	Uca longisignalis	.	"text p. 67, 69-70"	citation	Leary1961	.	=	
 Powers1975.1	3.4	Uca longisignalis	.	"text p. 67, 69-70"	citation	Felder1973	.	=	=	.	.	
 Powers1975.1	4	Uca tangeri	.	"text p. 67, 75"	citation	Altevogt1959.1	1	=	=	.	.	
 Powers1975.1	5.1	Uca pugilator	.	text p. 69	citation	Rathbun1918.2	15	=	=	.	.	
-Powers1975.1	5.2	Uca pugilator	.	text p. 69	citation	Powers1973	.	=	=	.	.	
+Powers1975.1	5.2	Uca pugilator	.	text p. 69	citation	Powers1973	2	=	=	.	.	
 Powers1975.1	5.3	Uca pugilator	.	text p. 69	citation	Novak1974	2	=	=	.	.	
 Powers1975.1	5.4	Uca pugilator	.	text p. 69	citation	Rao1968.3	.	=	=	.	.	
 Powers1975.1	5.5	Uca pugilator	.	text p. 69	citation	Selander1971	1	=	=	.	.	
 Powers1975.1	5.6	Uca pugilator	.	text p. 69	citation	Barnwell1966	1	=	=	.	.	
 Powers1975.1	6.1	Uca pugnax	.	text p. 69	citation	Rathbun1918.2	13	=	=	.	.	
-Powers1975.1	6.2	Uca pugnax	.	text p. 69	citation	Powers1973	.	=	=	.	.	
+Powers1975.1	6.2	Uca pugnax	.	text p. 69	citation	Powers1973	1	=	=	.	.	
 Powers1975.1	6.3	Uca pugnax	.	text p. 69	citation	Salmon1968.1	1	=	=	.	.	
 Greenspan1975	1.1	Uca rapax	.	"text p. 1, 6-9, 11-186, 192"	citation	Crane1975	65	=	=	.	.	
 Greenspan1975	1.2	Uca rapax	.	"text p. 1, 6-9, 11-186, 192"	citation	Salmon1967	5	=	=	.	.	
@@ -10224,8 +10586,8 @@ Greenspan1975	8	Uca burgersi	.	text p. 24	location	Puerto Rico	.	burgersi	<	.	.
 Greenspan1975	9	Uca speciosa	.	"text p. 30, 69"	location	"Placida, Florida, USA"	.	speciosa	<	.	.	
 Greenspan1975	10.1	Uca thayeri	.	"text p. 30, 60"	location	"Placida, Florida, USA"	.	thayeri	<	.	.	
 Greenspan1975	10.2	Uca thayeri	.	"text p. 30, 60"	citation	Crane1975	39	=	=	.	.	
-Greenspan1975	11	Uca panacea	.	"text p. 60, 155, 162-163"	citation	Powers1973	.	=	=	.	.	
-Greenspan1975	12	Uca virens	.	"text p. 60, 155, 162-163"	citation	Powers1973	.	=	=	.	.	
+Greenspan1975	11	Uca panacea	.	"text p. 60, 155, 162-163"	citation	Powers1973	2	=	=	.	.	
+Greenspan1975	12	Uca virens	.	"text p. 60, 155, 162-163"	citation	Powers1973	1	=	=	.	.	
 Greenspan1975	13	Uca leptodactyla	.	"text p. 69, 177"	location	Puerto Rico	.	leptodactyla	<	.	.	
 Greenspan1975	14	Uca minax	.	text p. 69	citation	Gray1942	1	=	=	.	.	
 Barnes1975.2	1	Uca pugnax	.	text p. 431-437	n/a	<	.	pugnax	<	.	.	
@@ -10312,7 +10674,7 @@ vonHagen1975	8.2	Uca cumulanta	.	"text p. 301, 303-304, 310-311"	citation	vonHag
 vonHagen1975	8.3	Uca cumulanta	.	"text p. 301, 303-304, 310-311"	citation	vonHagen1970.1	23	=	=	.	.	
 vonHagen1975	9	Uca leptodactyla	.	"text p. 301, 311"	location	West Indies	.	leptodactyla	<	.	.	
 vonHagen1975	10	Uca tangeri	.	"text p. 301, 304, 312, 314; figure 2"	citation	vonHagen1962.1	1	=	=	.	.	
-vonHagen1975	11	Uca pugilator	.	text p. 303	citation	Dumortier1963	.	=	=	.	.	
+vonHagen1975	11	Uca pugilator	.	text p. 303	citation	Dumortier1963	3	=	=	.	.	
 vonHagen1975	12.1	Uca pugnax	.	text p. 305-306	citation	Salmon1967	3	=	=	.	.	
 vonHagen1975	12.2	Uca pugnax	.	text p. 305-306	citation	Salmon1968.1	1	=	=	.	.	
 vonHagen1975	13	Uca minax	.	text p. 306	citation	Salmon1968.1	3	=	=	.	.	
@@ -10323,6 +10685,8 @@ vonHagen1975	17	Uca limicola	.	text p. 310	citation	Crane1941	25	=	=	.	.
 vonHagen1975	18	Uca dorotheae	.	text p. 310	citation	vonHagen1968.2	14	=	=	.	.	
 vonHagen1975	19	Uca terpsichores	.	text p. 310	n/a	<	.	terpsichores	<	.	.	
 vonHagen1975	20	Uca musica	.	text p. 310	citation	Rathbun1918.2	29	=	=	.	.	
+Hsiang1975	1	Uca pugilator	.	text p. 786	location	"New York, USA"	.	pugilator	<	.	.	
+Lambert1975	1	Uca pugilator	.	text p. 790	n/a	<	.	pugilator	<	No location given for specimens.	.	
 Honegger1976	1.1	Uca crenulata	.	text p. 93-101	citation	Honegger1973.1	1	=	=	.	.	
 Honegger1976	1.2	Uca crenulata	.	text p. 93-101	citation	Honegger1973.2	1	=	=	.	.	
 Honegger1976	1.3	Uca crenulata	.	text p. 93-101	location	"Carlsbad, California, UCA"	.	crenulata	<	.	.	
@@ -10332,6 +10696,122 @@ Honegger1976	3.1	Uca urvillei	.	"text p. 95, 101"	citation	Lehmann1976	.	=	=	.	.
 Honegger1976	3.2	Uca urvillei	.	"text p. 95, 101"	citation	Lehmann1974	.	=	=	.	.	
 Honegger1976	4	Uca pugilator	.	text p. 101	citation	Rawson1976	.	=	=	.	.	
 Allen1976	1	Uca crenulata	Southern California Fiddler Crab	"text p. 9, 39, 240, 252-253; figure 393"	location	"Southern California, USA"	.	crenulata	<	.	.	
+Ahmed1976.1	1.1	Uca cumulanta	.	text p. 499-504	citation	Crane1943.2	6	=	=	.	.	
+Ahmed1976.1	1.2	Uca cumulanta	.	text p. 499-504	location	Venezuela	.	cumulanta	<	.	.	
+Ahmed1976.1	2.1	Uca rapax	.	text p. 499-503	citation	Vernberg1966.1	1	=	=	.	.	
+Ahmed1976.1	2.2	Uca rapax	.	text p. 499-503	citation	Tashian1958	2	=	=	.	.	
+Ahmed1976.1	2.3	Uca rapax	.	text p. 499-503	location	Venezuela	.	rapax	<	.	.	
+Ahmed1976.1	3.1	Uca pugilator	.	"text p. 499, 503"	citation	Hyman1920.2	1	=	=	.	.	
+Ahmed1976.1	3.2	Uca pugilator	.	"text p. 499, 503"	citation	Morgan1920	1	=	=	.	.	
+Ahmed1976.1	4.1	Uca pugnax	.	"text p. 499, 502-504"	citation	Hyman1920.2	2	=	=	.	.	
+Ahmed1976.1	4.2	Uca pugnax	.	"text p. 499, 502-504"	citation	Morgan1920	2	=	=	.	.	
+Ahmed1976.1	4.3	Uca pugnax	.	"text p. 499, 502-504"	citation	Valiela1974	1	=	=	.	.	
+Ahmed1976.1	5	Uca minax	.	"text p. 499, 503-504"	citation	Hyman1920.2	3	=	=	.	.	
+Ahmed1976.1	6.1	Uca	.	"text p. 499, 504"	citation	Morgan1923.1	1	=	=	.	.	
+Ahmed1976.1	6.2	Uca	.	"text p. 499, 504"	citation	Crane1957	0	>Uca	<	.	.	
+Ahmed1976.2	1	Uca lactea	.	text p. 216-217	location	"Manora Island, Karachi, Pakistan"	.	?	MSR: geography	"It is not clear what species they are referring to, particularly given they specify <em class=""species"">Uca annulipes</em> as a related species also found in the area. Their use of <em class=""species"">U. lactea</em> either also refers to <em class=""species"">U. annulipes</em>, or perhaps <em class=""species"">U. iranica</em> or <em class=""species"">U. albimana</em> if one of their ranges is expanded to include Pakistan."	.	
+Ahmed1976.2	2	Uca annulipes	.	text p. 217	location	"Karachi, Pakistan"	.	annulipes	<	.	.	
+Baldwin1976.2	1	Uca crenulata	.	text p. 158	citation	Jones1941	1	=	=	.	.	
+Baldwin1976.2	2.1	Uca pugnax	.	text p. 158-159	citation	Green1959	1	=	=	.	.	
+Baldwin1976.2	2.2	Uca pugnax	.	text p. 158-159	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Baldwin1976.2	3.1	Uca pugilator	.	text p. 158-159	citation	Green1959	2	=	=	.	.	
+Baldwin1976.2	3.2	Uca pugilator	.	text p. 158-159	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Baldwin1976.2	4	Uca mordax	.	text p. 158	citation	SchmidtNielsen1968	1	=	=	.	.	
+Baldwin1976.2	5	Uca	.	text p. 169	citation	Pearse1936.2	0	>Uca	=	.	.	
+Baldwin1976.3	1	Uca crenulata	.	text p. 172	citation	Jones1941	1	=	=	.	.	
+Baldwin1976.3	2	Uca mordax	.	text p. 172	citation	SchmidtNielsen1968	1	=	=	.	.	
+Baldwin1976.3	3.1	Uca pugilator	.	text p. 172-173	citation	Heit1975	1	=	=	.	.	
+Baldwin1976.3	3.2	Uca pugilator	.	text p. 172-173	citation	Hannan1973	2	=	=	.	.	
+Baldwin1976.3	3.3	Uca pugilator	.	text p. 172-173	location	"Woods Hole, Massachusetts, USA"	.	pugilator	<	.	.	
+Baldwin1976.3	4	Uca minax	.	text p. 172	citation	Hannan1973	1	=	=	.	.	
+Baldwin1976.3	5	Uca rapax	.	text p. 172	citation	Hannan1973	3	=	=	.	.	
+Baldwin1976.3	6	Uca pugnax	.	text p. 173	location	"Woods Hole, Massachusetts, USA"	.	pugnax	<	.	.	
+Christiansen1976	1.1	Uca pugilator	.	text p. 91-97	citation	Pearse1914.2	3	=	=	.	.	
+Christiansen1976	1.2	Uca pugilator	.	text p. 91-97	citation	Dembowski1926	1	=	=	.	.	
+Christiansen1976	1.3	Uca pugilator	.	text p. 91-97	citation	Crane1943.3	3	=	=	.	.	
+Christiansen1976	1.4	Uca pugilator	.	text p. 91-97	citation	Herrnkind1968.2	1	=	=	.	.	
+Christiansen1976	1.5	Uca pugilator	.	text p. 91-97	citation	Vernberg1972.1	1	=	=	.	.	
+Christiansen1976	1.6	Uca pugilator	.	text p. 91-97	citation	Hyman1920.2	1	=	=	.	.	
+Christiansen1976	1.7	Uca pugilator	.	text p. 91-97	location	"Key Biscayne, Florida, USA"	.	pugilator	<	.	.	
+Claybrook1976	1	Uca pugilator	.	text p. 63-67	location	"Georgetown, South Carolina, USA"	.	pugilator	<	.	.	
+Evans1976	1.1	Uca pugilator	.	text p. 203-216	citation	Hannan1973	2	=	=	.	.	
+Evans1976	1.2	Uca pugilator	.	text p. 203-216	citation	Green1959	2	=	=	.	.	
+Evans1976	1.3	Uca pugilator	.	text p. 203-216	location	"Biscayne Bay, Florida, USA"	.	pugilator	<	.	.	
+Frith1976	1.1	Uca lactea annulipes	.	"text p. 14-15, 18-19, 23, 35"	location	"Phuket Island, Thailand"	.	annulipes	<	.	.	
+Frith1976	1.2	Uca lactea annulipes	.	"text p. 14-15, 18-19, 23, 35"	citation	Macnae1968	2	=	=	.	.	
+Frith1976	2.1	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	location	"Phuket Island, Thailand"	.	urvillei	<	.	.	
+Frith1976	2.2	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Macnae1968	10	=	=	.	.	
+Frith1976	2.3	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Crane1975	16	=	=	.	.	
+Frith1976	2.4	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Macnae1962	2	=	=	.	.	
+Frith1976	2.5	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Macnae1963	3	=	=	.	.	
+Frith1976	2.6	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Fourmanoir1953	.	=	=	.	.	
+Frith1976	2.7	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Fourmanoir1955	.	=	=	.	.	
+Frith1976	2.8	Uca urvillei	.	"text p. 14, 19, 23-24, 35"	citation	Day1974	.	=	=	.	.	
+Frith1976	3	Uca forcipata	.	"text p. 14, 19, 24, 35"	location	"Phuket Island, Thailand"	.	forcipata	<	.	.	
+Frith1976	4	Uca vocans vocans	.	"text p. 18, 24, 35"	location	"Phuket Island, Thailand"	.	vocans	<	.	.	
+Frith1976	5	Uca triangularis	.	"text p. 19, 35"	location	"Phuket Island, Thailand"	.	bengali	MSR: geography	.	.	
+Frith1976	6.1	Uca lactea	.	text p. 28	citation	Macnae1966	1	=	=	.	.	
+Frith1976	6.2	Uca lactea	.	text p. 28	citation	Macnae1962	4	=	=	.	.	
+Frith1976	6.3	Uca lactea	.	text p. 28	citation	Macnae1963	1	=	=	.	.	
+Frith1976	6.4	Uca lactea	.	text p. 28	citation	Fourmanoir1953	.	=	=	.	.	
+Frith1976	6.5	Uca lactea	.	text p. 28	citation	Fourmanoir1955	.	=	=	.	.	
+Frith1976	6.6	Uca lactea	.	text p. 28	citation	Day1974	.	=	=	.	.	
+Frith1976	6.7	Uca lactea	.	text p. 28	citation	Macnae1967	.	=	=	.	.	
+Frith1976	7.1	Uca vocans	.	text p. 28	citation	Macnae1966	8	=	=	.	.	
+Frith1976	7.2	Uca vocans	.	text p. 28	citation	Macnae1967	.	=	=	.	.	
+Haines1976	1	Uca pugnax	.	text p. 880-882	location	"Sapelo Island, Georgia, USA"	.	pugnax	<	.	.	
+Lacerda1976	1	Uca olympioi	.	text p. 49-60	location	"Parana, Brazil"	.	uruguayensis	MSR: synonymy	.	.	
+Lacerda1976	2.1	Uca pugnax	.	text p. 49-60	location	"Parana, Brazil"	.	rapax	MSR: geography	.	.	
+Lacerda1976	2.2	Uca pugnax	.	text p. 49-60	citation	Abramowitz1937	2	=	=	.	.	
+Lacerda1976	3.1	Uca pugilator	.	"text p. 49, 53, 55-56"	citation	Brown1950	1	=	=	.	.	
+Lacerda1976	3.2	Uca pugilator	.	"text p. 49, 53, 55-56"	citation	Abramowitz1937	1	=	=	.	.	
+Lacerda1976	3.3	Uca pugilator	.	"text p. 49, 53, 55-56"	citation	Sandeen1950	1	=	=	.	.	
+Lacerda1976	3.4	Uca pugilator	.	"text p. 49, 53, 55-56"	citation	Fingerman1970.3	1	=	=	.	.	
+Lambert1976.1	1.1	Uca pugilator	.	text p. 115-120	citation	Lambert1973	1	=	=	.	.	
+Lambert1976.1	1.2	Uca pugilator	.	text p. 115-120	location	"Beaufort, North Carolina, USA"	.	pugilator	<	.	.	
+Lambert1976.2	1.1	Uca pugilator	.	"text p. 25, 27"	citation	Lambert1973	1	=	=	.	.	
+Lambert1976.2	1.2	Uca pugilator	.	"text p. 25, 27"	location	"Panacea, Florida, USA"	.	?	MSR	"Could be either <em class=""species"">Uca pugilator</em> or <em class=""species"">U. panacea.</em>"	.	
+Powers1976	1.1	Uca panacea	.	"text p. 141, 143, 149-150, 153-155"	location	"Mustang Island, Texas, USA"	.	panacea	<	.	.	
+Powers1976	1.2	Uca panacea	.	"text p. 141, 143, 149-150, 153-155"	citation	Powers1975.1	1	=	=	.	.	
+Powers1976	2.1	Uca virens	.	"text p. 141, 144, 148, 151-152, 155"	location	"Mustang Island, Texas, USA"	.	virens	<	.	.	
+Powers1976	2.2	Uca virens	.	"text p. 141, 144, 148, 151-152, 155"	citation	Powers1975.1	2	=	=	.	.	
+Powers1976	3.1	Uca pugilator	.	"text p. 149, 153-155"	citation	Teal1958	2	=	=	.	.	
+Powers1976	3.2	Uca pugilator	.	"text p. 149, 153-155"	citation	Smith1973	2	=	=	.	.	
+Powers1976	3.3	Uca pugilator	.	"text p. 149, 153-155"	citation	Salmon1965	1	=	=	.	.	
+Powers1976	3.4	Uca pugilator	.	"text p. 149, 153-155"	citation	Knopf1966	1	=	=	.	.	
+Powers1976	3.5	Uca pugilator	.	"text p. 149, 153-155"	citation	Wilkens1965	1	=	=	.	.	
+Powers1976	3.6	Uca pugilator	.	"text p. 149, 153-155"	citation	Miller1968	4	=	=	.	.	
+Powers1976	4	Uca marionis	.	text p. 149	citation	Vohra1971	1	=	=	.	.	
+Powers1976	5.1	Uca pugnax	.	"text p. 149, 154-155"	citation	Smith1973	3	=	=	.	.	
+Powers1976	5.2	Uca pugnax	.	"text p. 149, 154-155"	citation	Passano1960	1	=	=	.	.	
+Powers1976	6	Uca annulipes	.	text p. 150	citation	Edney1961	4	=	=	.	.	
+Powers1976	7	Uca leptodactyla	.	text p. 150	citation	Matthews1930	1	=	=	.	.	
+Powers1976	8	Uca terpsichores	.	text p. 151	citation	Zucker1974	1	=	=	.	.	
+Powers1976	9	Uca thayeri	.	text p. 153-154	citation	Crane1958	2	=	=	.	.	
+Powers1976	10	Uca maracoani	.	text p. 154	citation	Crane1958	1	=	=	.	.	
+Powers1976	11	Uca rapax	.	text p. 155	citation	Smith1973	1	=	=	.	.	
+Powers1976	12	Uca crenulata	.	text p. 155	citation	Honegger1973.2	1	=	=	.	.	
+Sakai1976.2	1	Uca (Deltuca) dussumieri dussumieri	.	"text p. 32, 34, 38; frontspiece: figure 3"	location	"Okinawa, Japan"	.	dussumieri	<	.	.	
+Sakai1976.2	2.1	Uca (Deltuca) coarctata coarctata	.	"text p. 32, 34, 38; frontspiece: figure 2"	location	"Okinawa, Japan"	.	coarctata	<	.	.	
+Sakai1976.2	2.2	Uca (Deltuca) coarctata coarctata	.	"text p. 32, 34, 38; frontspiece: figure 2"	citation	Stimpson1858	2	=	=	.	.	
+Sakai1976.2	3	Uca (Thalassuca) vocans vocans	.	"text p. 32, 38"	location	"Okinawa, Japan"	.	vocans	<	"Could also be <em class=""species"">Uca jocelynae.</em>"	.	
+Sakai1976.2	4	Uca (Thalassuca) tetragonon	.	"text p. 32, 38"	location	"Okinawa, Japan"	.	tetragonon	<	.	.	
+Sakai1976.2	5	Uca (Amphiuca) chlorophthalmus crassipes	.	"text p. 32, 38"	location	"Okinawa, Japan"	.	crassipes	<	.	.	
+Sakai1976.2	6	Uca (Celuca) triangularis triangularis	.	"text p. 32, 38"	location	"Okinawa, Japan"	.	triangularis	<	.	.	
+Sakai1976.2	7.1	Uca (Celuca) lactea lactea	.	"text p. 32, 38"	location	"Okinawa, Japan"	.	lactea	<	.	.	
+Sakai1976.2	7.2	Uca (Celuca) lactea lactea	.	"text p. 32, 39"	citation	Balss1922.1	1.5	=	=	.	.	
+Sakai1976.2	7.3	Uca (Celuca) lactea lactea	.	"text p. 32, 39"	citation	Miyake1936	4	=	=	.	.	
+Sakai1976.2	7.4	Uca (Celuca) lactea lactea	.	"text p. 32, 39"	citation	Parisi1918	5	=	=	.	.	
+Spindler1976	1.1	Uca pugilator	.	text p. 301-303	citation	Kleinholz1973	1	=	=	.	.	
+Spindler1976	1.2	Uca pugilator	.	text p. 301-303	n/a	<	.	pugilator	<	They do not specify the source of the specimens.	.	
+Subrahmanyam1976	1.1	Uca spp.	.	"text p. 172, 174, 181, 184-186, 192"	location	"Northwestern Florida, USA"	.	>Uca	<	Could be a mix of a number of species.	.	
+Subrahmanyam1976	1.2	Uca spp.	.	"text p. 172, 174, 181, 184-186, 192"	citation	Frankenberg1963	0	>Uca	<	.	.	
+Subrahmanyam1976	2	Uca longisignalis	.	text p. 184	location	"Northwestern Florida, USA"	.	longisignalis	<	.	.	
+Subrahmanyam1976	3	Uca pugilator	.	text p. 184	location	"Northwestern Florida, USA"	.	pugilator	<	.	.	
+Subrahmanyam1976	4	Uca speciosa	.	text p. 184	location	"Northwestern Florida, USA"	.	speciosa	<	.	.	
+Windom1976	1	Uca sp.	fiddler crabs	text p. 579-582	location	"Georgia, USA"	.	>Uca	<	"Likely a mix of <em class=""species"">Uca pugilator, U. pugnax,</em> and <em class=""species"">U. minax.</em>"	.	
+DeCoursey1976	1	Uca	.	text p. 244	location	"South Carolina, USA"	.	>Uca	<	.	.	
+Mantel1976	1	Uca	.	text p. 223	location	"New York, USA"	.	>Uca	<	.	.	
 Warner1977	1.01	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-79, 91, 93-95, 97, 102-103, 105-112, 115-118, 125, 137, 142-148, 150, 155, 157-160, 165; figure 28d"	citation	Green1972	0	>Uca	<	.	.	
 Warner1977	1.02	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-79, 91, 93-95, 97, 102-103, 105-112, 115-118, 125, 137, 142-148, 150, 155, 157-160, 165; figure 28d"	citation	Salmon1971	0	>Uca	<	.	.	
 Warner1977	1.03	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-79, 91, 93-95, 97, 102-103, 105-112, 115-118, 125, 137, 142-148, 150, 155, 157-160, 165; figure 28d"	citation	Salmon1972	0	>Uca	<	.	.	
@@ -10361,12 +10841,12 @@ Warner1977	1.26	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-
 Warner1977	1.27	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-79, 91, 93-95, 97, 102-103, 105-112, 115-118, 125, 137, 142-148, 150, 155, 157-160, 165; figure 28d"	citation	Green1959	0	>Uca	<	.	.	
 Warner1977	1.28	Uca	fiddler crab	"text p. 8, 49-50, 52-53, 55-56, 59-61, 63, 77-79, 91, 93-95, 97, 102-103, 105-112, 115-118, 125, 137, 142-148, 150, 155, 157-160, 165; figure 28d"	citation	Teal1967	0	>Uca	<	.	.	
 Warner1977	2.1	Uca rapax	.	"text p. 108-109, 111, 143; figure 30"	location	Jamaica	.	rapax	<	.	.	
-Warner1977	2.2	Uca rapax	.	"text p. 108-109, 111, 143; figure 30"	citation	Miller1968	.	=	=	.	.	
+Warner1977	2.2	Uca rapax	.	"text p. 108-109, 111, 143; figure 30"	citation	Miller1968	1	=	=	.	.	
 Warner1977	3	Uca lactea	.	text p. 115-116	citation	Yamaguchi1971	1	=	=	.	.	
 Warner1977	4	Uca annulipes	.	text p. 142-143	citation	Edney1961	4	=	=	.	.	
 Warner1977	5	Uca inversa	.	text p. 143	citation	Edney1961	5	=	=	.	.	
 Warner1977	6	Uca urvillei	.	text p. 143	citation	Edney1961	1	=	=	.	.	
-Warner1977	7	Uca pugnax	.	text p. 143	citation	Miller1968	.	=	=	.	.	
+Warner1977	7	Uca pugnax	.	text p. 143	citation	Miller1968	3	=	=	.	.	
 Warner1977	8	Uca  burgersi	.	text p. 149	location	Jamaica	.	burgersi	<	.	.	
 Warner1977	9	Uca tangeri	.	text p. 176	location	Portugal	.	tangeri	<	.	.	
 Brusca1980	1.1	Uca crenulata	.	"text p. 292-293, 295, 303-304; figure 20.14"	location	Gulf of California	.	crenulata	<	.	.	
@@ -10384,7 +10864,7 @@ Brusca1980	8	Uca brevifrons	.	"text p. 295, 303"	location	Gulf of California	.	b
 Brusca1980	9	Uca pugnax	.	text p. 303	n/a	<	.	pugnax	<	.	.	
 Brusca1980	10	Uca crenulata coloradensis	.	text p. 304	location	Gulf of California	.	coloradensis	<	.	.	
 Brusca1980	11	Uca crenulata crenulata	.	text p. 304	location	Gulf of California	.	crenulata	<	.	.	
-Brusca1980	12	Uca virens	.	text p. 304	citation	Powers1976	.	=	=	.	.	
+Brusca1980	12	Uca virens	.	text p. 304	citation	Powers1976	2	=	=	.	.	
 Brusca1980	13	Uca musica terpsichores	.	text p. 304	location	Central America to Peru	.	terpsichores	<	.	.	
 Brusca1980	14	Uca vocator vocator	.	text p. 305	location	West Atlantic	.	vocator	<	.	.	
 Brusca1980	15	Uca princeps princeps	.	text p. 305; figure 20.17	location	Gulf of California	.	princeps	<	.	.	
@@ -10585,7 +11065,7 @@ vonHagen1987.1	15	Uca tallanica	.	text p.  88	n/a	<	.	tallanica	.	.	.
 vonHagen1987.1	16	Uca zacae	.	text p.  88	n/a	<	.	zacae	.	.	.	
 vonHagen1987.1	17	Uca subcylindrica	.	text p.  88	n/a	<	.	subcylindrica	.	.	.	
 Rao1988.2	1.1	Uca pugilator	.	text p. 410-413	citation	Fingerman1973.1	1	=	=	.	.	
-Rao1988.2	1.2	Uca pugilator	.	text p. 410-413	citation	Rao1973	.	=	=	.	.	
+Rao1988.2	1.2	Uca pugilator	.	text p. 410-413	citation	Rao1973	1	=	=	.	.	
 Rao1988.2	1.3	Uca pugilator	.	text p. 410-413	citation	Kulkarni1986.2	.	=	=	.	.	
 Rao1988.2	1.4	Uca pugilator	.	text p. 410-413	citation	Rao1985.1	.	=	=	.	.	
 Rao1988.2	1.5	Uca pugilator	.	text p. 410-413	citation	Zahnow1985	.	=	=	.	.	
