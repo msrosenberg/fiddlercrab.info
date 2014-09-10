@@ -29,6 +29,7 @@ class ReferenceClass():
         self.__formattedHTML = ""
         self.__citation = ""
         self.__citeKey = ""
+        self.__language = ""
     def citation(self):
         return self.__citation
     def setCitation(self,x):
@@ -41,6 +42,10 @@ class ReferenceClass():
         return self.__formattedHTML
     def setFormattedHTML(self,x):
         self.__formattedHTML = x
+    def language(self):
+        return self.__language
+    def setLanguage(self,x):
+        self.__language = x
 
 
 class SpecificNameClass():
@@ -427,11 +432,13 @@ def getReferences():
     for line in reffile:
         line = line.replace("et al.","<em>et al.</em>")
         ref = line.strip().split("\t")
-        if len(ref) == 1:
+        #if len(ref) == 1:
+        while len(ref) < 3:
             ref.append("")
         newRef = ReferenceClass()
         newRef.setCitation(ref[0])
         newRef.setciteKey(ref[1])
+        newRef.setLanguage(ref[2])
         # calculate publishing trend
         y = ref[0]
         y = y[y.find("(")+1:y.find(")")]
@@ -491,6 +498,7 @@ def getReferences():
             newCite.setNameNote(cite[10])
             newCite.setGeneralNote(cite[11])
             citeList.append(newCite)
+            #print(cite)
             citeDone[cite[0]][0] = True
     reffile.close()
 
@@ -765,7 +773,7 @@ def formatReference(i,ref):
             print("missing label: ",ref.citeKey())
 
 
-def referenceSummary(nrefs,yearData,yearData1900,citeCount):
+def referenceSummary(nrefs,yearData,yearData1900,citeCount,languages):
     outfile = codecs.open(refsumURL, "w", "utf-8")
     commonHeaderPart1(outfile,"Fiddler Crab Reference Summary","")
     outfile.write("    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n")
@@ -804,6 +812,16 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     for y in yearData1900:
         outfile.write("          ['"+str(y[0])+"', "+str(y[2])+", "+str(y[1]-y[2])+"],\n")
     outfile.write("        ]);\n")
+
+    outfile.write("        var data6 = google.visualization.arrayToDataTable([\n")
+    outfile.write("          ['Language', 'Count'],\n")
+    langlist = list(languages.keys())       
+    langlist.sort()
+    #for l in languages:
+    for l in langlist:
+        outfile.write("          ['"+l+"', "+str(languages[l])+"],\n")
+    outfile.write("        ]);\n")
+
     outfile.write("\n")
     outfile.write("        var options1 = {\n")
     outfile.write("          title: \"Cumulative References by Year\", \n")
@@ -836,6 +854,15 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("          bar: { groupWidth: '80%' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
+
+    outfile.write("        var options6 = {\n")
+    outfile.write("          title: \"Primary Language of References\", \n")
+    outfile.write("          titleTextStle: { fontSize: '16' },\n")
+    #outfile.write("          isStacked: true,\n")
+    #outfile.write("          bar: { groupWidth: '80%' }\n")
+    outfile.write("        };\n")
+    outfile.write("\n")
+
     outfile.write("        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));\n")
     outfile.write("        chart.draw(data1, options1);\n")
     outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
@@ -846,6 +873,8 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("        chart4.draw(data4, options4);\n")
     outfile.write("        var chart5 = new google.visualization.ColumnChart(document.getElementById('chart5_div'));\n")
     outfile.write("        chart5.draw(data5, options5);\n")
+    outfile.write("        var chart6 = new google.visualization.PieChart(document.getElementById('chart6_div'));\n")
+    outfile.write("        chart6.draw(data6, options6);\n")
     outfile.write("      }\n")
     outfile.write("    </script>\n")
     commonHeaderPart2(outfile,"",False)
@@ -864,6 +893,7 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount):
     outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("      See also the <a href=\"names/"+namesumURL+"\">name summary page</a> for information on reference patterns to specific species.\n")
     outfile.write("    </p>\n")    
+    outfile.write("    <div id=\"chart6_div\" style=\"width: 1000px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
     #outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
@@ -2900,6 +2930,21 @@ def summarizeYear(yearDict):
     return dataList, dataList1900
 
 
+def summarizeLanguages(refs):
+    languages = {}
+    for ref in refs:
+        l = ref.language()
+        if l != "":
+            s = l.find(" ")
+            if (s > -1):
+                l = l[:s]
+            if l in languages:
+                languages[l] += 1
+            else:
+                languages[l] = 1
+    return languages
+
+
 def createLifeCycle():
     """ create the life cycle page """
     outfile = codecs.open(lifeCycleURL, "w", "utf-8")
@@ -3276,10 +3321,11 @@ def createIndex(species,refs):
 def main():
     references,refDict,citeList,yearDict,citeCount = getReferences()
     yearDat, yearDat1900 = summarizeYear(yearDict)
+    languages = summarizeLanguages(references)
     species = getSpecies()
     speciesRefs = connectRefsToSpecies(species,citeList)
     referencesToHTML(references)
-    referenceSummary(len(references),yearDat,yearDat1900,citeCount)
+    referenceSummary(len(references),yearDat,yearDat1900,citeCount,languages)
     referencePages(references,refDict,citeList)
     specificNames = getSpecificNames()
     allNames = indexNamePages(refDict,citeList,specificNames,speciesRefs)
