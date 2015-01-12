@@ -742,7 +742,7 @@ def commonHTMLFooter(outfile):
     outfile.write("       <p id=\"footmap\">Visitors <script type=\"text/javascript\" src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script></p>\n")
     outfile.write("       <p id=\"citation\"><a href=\""+citeURL+"\">How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact <a href=\"mailto:msr@asu.edu\">Dr. Michael S. Rosenberg</a></p>\n")
-    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2014 All Rights Reserved</p>\n")
+    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2015 All Rights Reserved</p>\n")
     outfile.write("    </footer>\n")
     outfile.write("  </body>\n")
     outfile.write("</html>\n")
@@ -1081,7 +1081,7 @@ def cleanSpecificName(x):
             x = x[:x.find("{")-1]        
         y = x.split(" ")
         x = y[len(y)-1].lower()
-        skipList = ["sp.","spp.","var.","a","ete","panema","pagurus","quadratus","albidus","vociferans","(gelasimus)","raniformis","nigra"]
+        skipList = ["sp.","spp.","var.","a","ete","panema","pagurus","quadratus","albidus","vociferans","(gelasimus)","raniformis","nigra","spec."]
         if x in skipList or ("gruppe" in x):
             return ""
         else:
