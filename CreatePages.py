@@ -432,7 +432,6 @@ def getReferences():
     for line in reffile:
         line = line.replace("et al.","<em>et al.</em>")
         ref = line.strip().split("\t")
-        #if len(ref) == 1:
         while len(ref) < 3:
             ref.append("")
         newRef = ReferenceClass()
@@ -470,6 +469,8 @@ def getReferences():
     reffile.close()
     refDict = {}
     for ref in refList:
+        if ref.citeKey() in refDict and ref.citeKey() != "<pending>":
+            print("Duplicate reference key:",ref.citeKey())
         refDict[ref.citeKey()] = ref    
     # citation info
     reffile = open("citeinfo.txt","r")
@@ -498,7 +499,6 @@ def getReferences():
             newCite.setNameNote(cite[10])
             newCite.setGeneralNote(cite[11])
             citeList.append(newCite)
-            #print(cite)
             citeDone[cite[0]][0] = True
     reffile.close()
 
