@@ -2716,8 +2716,8 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("      </p>")
     outfile.write("      <p>")
     outfile.write("       <a href=\"references/Rosenberg2001.html\">Rosenberg (2001)</a> partly cleared up the confusion between the two systems. More recent work by " + \
-        "<a href=\"references/Beinlich2006.html\">Beinlich &amp; von Hagen (2006)</a>, <a href=\"references/Shih2009.html\">Shih <em>et al.</em> (2009), <a href=\"references/Spivak2009.html\">Spivak &amp; Cuesta (2009)</a>, <a href=\"references/Naderloo2010.html\">Naderloo <em>et al.</em> (2010)</a>, and " + \
-        "<a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schbart (2010)</a> has continued to refine the subgenera as detailed below.\n")
+        "<a href=\"references/Beinlich2006.html\">Beinlich &amp; von Hagen (2006)</a>, <a href=\"references/Shih2009.html\">Shih <em>et al.</em> (2009), <a href=\"references/Spivak2009.html\">Spivak &amp; Cuesta (2009)</a>, <a href=\"references/Naderloo2010.html\">Naderloo <em>et al.</em> (2010)</a>, " + \
+        "<a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schbart (2010)</a>, and <a href=\"references/Shih2015.2.html\">Shih (2015)</a> have continued to refine the subgenera as detailed below.\n")
     outfile.write("      </p>")
     outfile.write("      <ul>\n")
     for subgen in subgenList:
@@ -3048,12 +3048,14 @@ def createPhylogeny():
     outfile.write("     The phylogeny of fiddler crabs is still largely unresolved. Two trees are shown below: one "+\
                   "just the subgenera and one including all species. These are both rough, conservative estimates "+\
                   "based on combining information from <a href=\"references/Levinton1996.html\">Levinton <em>et al.</em> (1996)</a>, <a href=\"references/Sturmbauer1996.html\">Sturmbauer <em>et al.</em> (1996)</a>, <a href=\"references/Rosenberg2001.html\">Rosenberg (2001)</a>, "+\
-                  "<a href=\"references/Shih2009.html\">Shih <em>et al.</em> (2009)</a>, <a href=\"references/Shih2010.1.html\">Shih <em>et al.</em> (2010)</a>, <a href=\"references/Shih2012.html\">Shih <em>et al.</em> (2012)</a>, <a href=\"references/Shih2013.html\">Shih <em>et al.</em> (2013a)</a>, <a href=\"references/Shih2013.2.html\">Shih <em>et al.</em> (2013b)</a>, and <a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schubart (2010)</a>.\n")
+                  "<a href=\"references/Shih2009.html\">Shih <em>et al.</em> (2009)</a>, <a href=\"references/Shih2010.1.html\">Shih <em>et al.</em> (2010)</a>, <a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schubart (2010)</a>, "+\
+                  "<a href=\"references/Shih2012.html\">Shih <em>et al.</em> (2012)</a>, <a href=\"references/Shih2013.html\">Shih <em>et al.</em> (2013a)</a>, <a href=\"references/Shih2013.2.html\">Shih <em>et al.</em> (2013b)</a>, "+\
+                  "and <a href=\"references/Shih2015.2.html\">Shih (2015)</a>.\n")
     outfile.write("    </p>\n")
     outfile.write("\n")  
     outfile.write("    <section class=\"spsection\">\n")
     outfile.write("      <h2>Subgenera Phylogeny</h2>\n")
-    outfile.write("      <object width=\"600px\" height=\"300px\" data=\"images/tree_subgenera.svg\" type=\"image/svg+xml\"></object>\n")
+    outfile.write("      <object width=\"600px\" height=\"450px\" data=\"images/tree_subgenera.svg\" type=\"image/svg+xml\"></object>\n")
     outfile.write("    </section>\n")
     outfile.write("    <section class=\"spsection\">\n")
     outfile.write("      <h2>Species Phylogeny</h2>\n")
