@@ -13,7 +13,10 @@ videoURL = "uca_videos.html"
 mapURL = "uca_ranges.html"
 lifeCycleURL = "uca_lifecycle.html"
 treeURL = "uca_phylogeny.html"
-artURL = "uca_art.html"
+#artURL = "uca_art.html"
+artSciURL = "uca_art_science.html"
+artStampURL = "uca_art_stamps.html"
+artCraftURL = "uca_art_crafts.html"
 morphURL = "uca_morphology.html"
 citeURL = "citation.html"
 namesumURL = "name_graphs.html"
@@ -1074,6 +1077,26 @@ def nameToFileName(x):
 
 def cleanSpecificName(x):
     """ function to extract the specific names from binomials """
+    skipList = ["sp.",
+                "spp.",
+                "var.",
+                "a",
+                "ete",
+                "panema",
+                "pagurus",
+                "quadratus",
+                "albidus",
+                "vociferans",
+                "(gelasimus)",
+                "raniformis",
+                "nigra",
+                "albicans",
+                "arenarius",
+                "raninus",
+                "spec."]
+
+
+
     if not " " in x:
         return ""
     else:
@@ -1081,7 +1104,6 @@ def cleanSpecificName(x):
             x = x[:x.find("{")-1]        
         y = x.split(" ")
         x = y[len(y)-1].lower()
-        skipList = ["sp.","spp.","var.","a","ete","panema","pagurus","quadratus","albidus","vociferans","(gelasimus)","raniformis","nigra","spec."]
         if x in skipList or ("gruppe" in x):
             return ""
         else:
@@ -1840,7 +1862,7 @@ def createCommonNamesHTML(refDict):
     outfile.write("          And again in Johnson and Snook's book, <a href=\"references/Johnson1927.html\"><em>Seashore Animals of the Pacific Cost</em> (1927)</a>, p. 400:\n")
     outfile.write("          <blockquote>\n")
     outfile.write("            The males are frequently seen to brandish the large claw in a peculiar way. First, they reach out with it as far as it will go, then they bring it toward the body with a sudden movement.\n")
-    outfile.write("            This motion which has probably suggested the name &ldquo;fiddler&rdquo; crab is carried on during the breeding season and is presecuted more vigorously when a female crab is nearby.\n")
+    outfile.write("            This motion which has probably suggested the name &ldquo;fiddler&rdquo; crab is carried on during the breeding season and is persecuted more vigorously when a female crab is nearby.\n")
     outfile.write("          </blockquote>\n")
     outfile.write("          Similar confusing claims are made by <a href=\"references/Boyce1924.html\">Boyce (1924)</a>, while <a href=\"references/Boone1927.html\">Boone (1927)</a> returns to the resemblance of the large claw (without associated motion) (see quotes under &ldquo;Calling Crab&rdquo; below).\n")
     outfile.write("        </dd>\n")
@@ -1856,14 +1878,14 @@ def createCommonNamesHTML(refDict):
     outfile.write("            in the most amusing manner. No matter how often seen,\n")
     outfile.write("            one cannot help thinking of the musician&mdash;usually bald-headed&mdash;away down to the left of\n")
     outfile.write("            the orchestra, who so vigorously saws the bass notes from the viol.\n")
-    outfile.write("            Let the latter scamper awasy, viol and all, as rapidly as does the crab, and the simile would be complete.\n")
+    outfile.write("            Let the latter scamper away, viol and all, as rapidly as does the crab, and the simile would be complete.\n")
     outfile.write("          </blockquote>\n")
     outfile.write("        </dd>\n")
     outfile.write("        <dd>\n")
     outfile.write("          <a href=\"references/Paulmier1905.html\">Paulmier (1905)</a> gives a similar explanation (p. 148):\n")
     outfile.write("          <blockquote>\n")
     outfile.write("            These three species are commonly known as &ldquo;fiddlers&rdquo;; for, when running over the beach with the large\n")
-    outfile.write("            claw held out in front of them and the small one sawing in front of it, they lucicrously resemble a man carrying a bass viol.\n")
+    outfile.write("            claw held out in front of them and the small one sawing in front of it, they ludicrously resemble a man carrying a bass viol.\n")
     outfile.write("          </blockquote>\n")
     outfile.write("        </dd>\n")
     outfile.write("        <dd>\n")
@@ -2435,7 +2457,7 @@ def createVideosHTML(videos):
     outfile.close()
 
 
-def writeScienceArtPage(fname,art):
+def writeScienceArtPage(fname,art,backURL,backText):
     """ create the indivdual page for each piece of art """
     outfile = codecs.open(fname, "w", "utf-8")
     ptitle = art.title() + " (" + art.author() + " "+art.year()+")"
@@ -2449,7 +2471,7 @@ def writeScienceArtPage(fname,art):
         outfile.write("          <li><a href=\"../u_"+art.species()+".html\">Species page</a></li>\n")
     if art.citeKey() != "n/a":
         outfile.write("          <li><a href=\"../references/"+art.citeKey()+".html\">Reference</a></li>\n")
-    outfile.write("          <li><a href=\"../"+artURL+"\">All art</a></li>\n")
+    outfile.write("          <li><a href=\"../"+backURL+"\">"+backText+"</a></li>\n")
     outfile.write("        </ul>\n")
     outfile.write("      </nav>\n")
     outfile.write("    </header>\n")
@@ -2462,8 +2484,138 @@ def writeScienceArtPage(fname,art):
     outfile.close()
 
 
+def createArtScienceHTML(artList):
+    """ create the art science index """
+    outfile = codecs.open(artSciURL, "w", "utf-8")
+    commonHTMLHeader(outfile,"Fiddler Crab Art - Scientific","")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Scientific Drawings</h1>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")
+    artSource = []
+    cnt = 0
+    for art in artList:
+        if art.artType() == "science":
+            cnt += 1
+            artist = art.author() + " (" + art.year() + ")"
+            try:
+                artSource.index(artist)
+            except:
+                artSource.append(artist)
+    outfile.write("      <p>\n")
+    outfile.write("        Formal scientific drawings are often works of art as well as scientific illustration. These are ordered chronologically.\n")
+    outfile.write("      </p>\n")
+    outfile.write("      <p>\n")
+    outfile.write("        Total scientific drawing count is "+str(cnt)+".\n")
+    outfile.write("      </p>\n")
+    createBlankIndex("art/index.html")
+    for a in artSource:
+        outfile.write("      <h3>"+a+"</h3>\n")
+        for art in artList:
+            if art.artType() == "science":
+                artist = art.author() + " (" + art.year() + ")"
+                if artist == a:
+                    pfname = "art/"+art.image()+".html"
+                    outfile.write("      <figure class=\"sppic\">\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("      </figure>\n")
+                    writeScienceArtPage(pfname,art,artSciURL,"All Scientific Drawings")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
+def createArtStampsHTML(artList):
+    """ create the art stamps index """
+    outfile = codecs.open(artStampURL, "w", "utf-8")
+    commonHTMLHeader(outfile,"Fiddler Crab Stamps","")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Postage Stamps</h1>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")
+    artSource = []
+    cnt = 0
+    for art in artList:
+        if art.artType() == "stamp":
+            cnt += 1
+            try:
+                artSource.index(art.author())
+            except:
+                artSource.append(art.author())
+    outfile.write("      <p>\n")
+    outfile.write("        Fiddler crabs have been featured on postage stamps surprisingly often. Quality control leaves something to be desired, however, as misidentifications are common (<em>e.g.</em>, see The Gambia and the Solomon Islands).\n")
+    outfile.write("        Omori &amp; Holthuis (2000, 2005) have actually written papers about crustacea on postage stamps.\n")
+    outfile.write("      </p>\n")
+    outfile.write("      <p>\n")
+    outfile.write("        Total fiddler crab stamps is "+str(cnt)+".\n")
+    outfile.write("      </p>\n")
+    for a in artSource:
+        outfile.write("      <h3>"+a+"</h3>\n")
+        for art in artList:
+            if art.artType() == "stamp":
+                if art.author() == a:
+                    pfname = "art/"+art.image()+".html"
+                    outfile.write("      <figure class=\"sppic\">\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("      </figure>\n")
+                    writeScienceArtPage(pfname,art,artStampURL,"All Stamps")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+    
+def createArtCraftsHTML(artList):
+    """ create the art craft index """
+    outfile = codecs.open(artCraftURL, "w", "utf-8")
+    commonHTMLHeader(outfile,"Fiddler Crab Crafts","")
+    outfile.write("    <header>\n")
+    outfile.write("      <h1>Art</h1>\n")
+    outfile.write("      <nav>\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\"#origami\">Origami</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </nav>\n")
+    outfile.write("    </header>\n")
+    outfile.write("\n")
+    outfile.write("      <h2><a name=\"origami\">Origami</a></h2>\n")
+    artSource = []
+    cnt = 0
+    for art in artList:
+        if art.artType() == "origami":
+            cnt += 1
+            try:
+                artSource.index(art.author())
+            except:
+                artSource.append(art.author())
+    outfile.write("      <p>\n")
+    outfile.write("        Male fiddler crabs are a particular challenge for origami because of the asymmetry, but a number of\n")
+    outfile.write("        origami experts have developed fiddler crab models.\n")
+    outfile.write("      </p>\n")
+    outfile.write("      <p>\n")
+    outfile.write("        Total fiddler crab origami models is "+str(cnt)+".\n")
+    outfile.write("      </p>\n")
+    for a in artSource:
+        outfile.write("      <h3>"+a+"</h3>\n")
+        for art in artList:
+            if art.artType() == "origami":
+                if art.author() == a:
+                    pfname = "art/"+art.image()+".html"
+                    outfile.write("      <figure class=\"sppic\">\n")
+                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("      </figure>\n")
+                    writeScienceArtPage(pfname,art,artCraftURL,"All Crafts")
+    commonHTMLFooter(outfile)
+    outfile.close()
+
+
+
 def createArtHTML(artList):
+    """ create the art pages """
+    createArtScienceHTML(artList)
+    createArtStampsHTML(artList)
+    createArtCraftsHTML(artList)
+
+
     """ create the art index """
+    """
     outfile = codecs.open(artURL, "w", "utf-8")
     commonHTMLHeader(outfile,"Fiddler Crab Art","")
     outfile.write("    <header>\n")
@@ -2575,7 +2727,8 @@ def createArtHTML(artList):
 
     commonHTMLFooter(outfile)
     outfile.close()
-    
+    """
+
 
 def speciesToHTML(speciesList,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict):
     """ output species list and individual species pages """
@@ -3308,7 +3461,13 @@ def createIndex(species,refs):
     outfile.write("    <ul>\n")
     outfile.write("      <li><a href=\""+photoURL+"\">Photos</a></li>\n")
     outfile.write("      <li><a href=\""+videoURL+"\">Videos</a></li>\n")
-    outfile.write("      <li><a href=\""+artURL+"\">Art</a></li>\n")
+    outfile.write("      <li>Art\n")
+    outfile.write("        <ul>\n")
+    outfile.write("          <li><a href=\""+artSciURL+"\">Scientific Art</a></li>\n")
+    outfile.write("          <li><a href=\""+artStampURL+"\">Postage Stamps</a></li>\n")
+    outfile.write("          <li><a href=\""+artCraftURL+"\">Crafts</a></li>\n")
+    outfile.write("        </ul>\n")
+    outfile.write("      </li>\n")
     outfile.write("    </ul>\n")
     outfile.write("    <h2>Miscellania</h2>\n")  
     outfile.write("    <ul>\n")
