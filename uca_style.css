@@ -2,6 +2,7 @@
 
 body { 
   background-color: white;
+  background-color: white;
   font-family: "Lora", "Georgia", serif;
   font-size: medium;
  }
@@ -12,14 +13,8 @@ a:visited {
   text-decoration: none;
  }
 
-a:hover {
-  color: red;
- }
-
 h2 a,
-h2 a:hover,
-h3 a,
-h3 a:hover {
+h3 a {
   color: black;
  }
 
@@ -27,6 +22,15 @@ h3 {
   clear: both;
   }
 
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+figure {
+  max-width: 100%;
+}
+  
 #home {
   font-family: "Merienda One", "Monotype Corsiva", cursive;
   background: black;
@@ -37,9 +41,48 @@ h3 {
   background: black url(images/stylifera75.png) no-repeat 1px 50%;
   color: yellow;
   display: block;
-  font-size: 60px;
+  font-size: 2em;
   min-height: 75px;
   padding-left: 120px;
+ }
+
+.indeximages {
+	text-align: center;
+}
+
+footer {
+  clear: both;
+  font-style: italic;
+  font-size: 0.75em;
+  background-color: seagreen;
+  color: #D4FEE7;
+  border: 3px #20613C inset;
+  padding-left: 0 20px;
+ }
+
+footer a,
+footer a:visited {
+  color: #AAFECF;
+}
+
+#footmap {
+	padding: 0;
+	margin: 2px;
+	float: right;
+ }
+
+footer figcaption {text-align: center}
+
+#citation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+
+#citation ul li {
+	padding-left: 25px;
+	padding-bottom: 1em;
+	text-indent: -25px;
  }
 
 header {
@@ -51,7 +94,7 @@ header {
  }
 
 header h1 {
-  font-size: 300%;
+  font-size: 200%;
   padding-bottom: 20px 0;
   margin-bottom: 0;
   color: white;
@@ -65,7 +108,8 @@ header h2 {
 }
 
 nav {
-  padding-bottom: 40px;
+  padding-bottom: 1em;
+  overflow: auto;
 }
 
 nav ul {
@@ -92,84 +136,69 @@ nav a:visited {
   margin: 0 3px 0 0;
  }
 
-nav a:hover {
-  color: black;
-  background: #69D948;
-  border: 1px black solid;
- } 
+#chart_div ,
+#chart2_div,
+#chart4_div,
+#chart5_div,
+#chart6_div,
+#namechart1_div,
+#namechart2_div,
+#namechart3_div,
+#namechart4_div,
+#namechart5_div {width: 100%}
+ 
+#subgenera_phylogeny {width: 100%}
+#species_phylogeny {width: 100%}
 
 .sppic {
-  float: left;
   margin: 10px;
- }
-
-.sppic img {
-  height: 200px;
-  border: 1px blue solid;
- }
-
-.sppic img:hover {
-  border: 1px red solid;
- }
-
-.fullpic {
   text-align: center;
  }
 
-.fullpic figcaption {
-  font-style: italic;
+.sppic img {
+  border: 1px blue solid;
  }
 
 .spsection {
   clear : both;
   border-top: 3px #D4FEE7 groove;
  }
-
+ 
+.spsection figcaption {
+	font-style: italic;
+	font-size: 0.75em;
+	text-align: center;
+ }
+ 
 .topspsection {
   clear : both;
- }
-
-.topphotosection {
-  clear: both;
- }
-
-.photosection {
-  clear: both;
-  border-top: 3px #D4FEE7 groove;
- }
-
-.topphotosection h2 a,
-.topphotosection h2 a:visited,
-.photosection h2 a,
-.photosection h2 a:visited {
-  color: black;
- }
-.photosection h2 a:hover {
-  color: red;
  }
 
 .species {
   font-style: italic;
  }
 
-.fossilImg {
-  height: 1em;
-  padding-left: 5px;
- }
-
-a.spmap,
-a:visited.spamp {
-  padding-left:50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url(images/globe.png) no-repeat 1px 50%;
-  display: block;
+.morphdesc {
+  padding: 0.5em;
+ } 
+ 
+.morphimg  {
+  padding-bottom: 1em;
+  } 
+  
+.morphimg figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
  }
 
 dt {
   font-weight: bold;
   font-style: italic;
-  xborder-top: 3px #D4FEE7 groove;
   padding-top: 0.5em;
  }
 
@@ -181,7 +210,6 @@ dd blockquote {
   margin-right: 5em;
  }
 
-
 dd {
   padding-bottom: 10px;
  }
@@ -190,71 +218,21 @@ dd {
   border-top: 3px #D4FEE7 groove;
 }
 
-footer {
-  clear: both;
-  font-style: italic;
-  font-size: 0.75em;
-  background-color: seagreen;
-  color: #D4FEE7;
-  border: 3px #20613C inset;
-  text-align: center;
-  padding-left: 0 20px;
-	height: 80px;
- }
-
-footer a,
-footer a:hover,
-footer a:visited {
-  color: #AAFECF;
-}
-
-#footmap {
-	padding: 0;
-	margin: 2px;
-	float: right;
- }
-
-#citation ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
- }
-
-#citation ul li {
-	padding-left: 25px;
-	padding-bottom: 1em;
-  text-indent: -25px;
- }
-
-#citation a,
-#citation a:hover {
-  xcolor: black;
- }
-
-#splist {
-  -moz-column-count: 3; /* Firefox */
-  -webkit-column-count: 3; /* Safari and Chrome */
-  column-count: 3;
-  -moz-column-rule: 2px groove seagreen; /* Firefox */
-  -webkit-column-rule: 2px groove seagreen; /* Safari and Chrome */
-  column-rule: 2px groove seagreen;  
-  -moz-column-gap: 1em; /* Firefox */
-  -webkit-column-gap: 1em; /* Safari and Chrome */
-  column-gap: 1em;
- }
+.spsection blockquote {
+  border: 3px solid #20613C;
+  background: seagreen;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+ } 
  
-#splist li {
-  list-style-type: none;
-  padding-left: 20px;
+.fossilImg {
+  height: 1em;
+  padding-left: 5px;
  }
- 
-.synarrow {
-  font-size: 150%;
-  vertical-align: -10%;
- }
- 
+
 .spsection table {
-  width: 800px;
+  width: 100%;
   border-top: 2px solid black;
   padding-bottom: 1em;
  }
@@ -275,42 +253,114 @@ footer a:visited {
 .spsection tfoot td {
   border-bottom: 0;
  }
+
+#map_canvas_sp,
+#map_canvas {
+	width: 300px;
+	height: 200px;
+}
  
-.spsection blockquote {
-  border: 3px solid #20613C;
-  background: seagreen;
-  color: white;
-  border-radius: 8px;
-  padding: 10px;
+#splist {
+   font-size: 1.25em;
  }
  
+#splist li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 0.25em;
+ }
+
+.topphotosection {
+  clear: both;
+ }
+
+.photosection {
+  clear: both;
+  border-top: 3px #D4FEE7 groove;
+ }
+
+.topphotosection h2 a,
+.topphotosection h2 a:visited,
+.photosection h2 a,
+.photosection h2 a:visited {
+  color: black;
+ }
+ 
+.fullpic {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+ }
+ 
+.fullpic figcaption {
+  font-style: italic;
+ }
+
+ 
+.syspic {
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+ }
+
+.syspic figcaption {
+  text-align: center;
+}
+
 .classcol1 {
   font-weight: bold;
   padding-right: 1em;
  }
- 
+
  .map_data {
   font-size: 0.75em;
  } 
- 
-.spsection figcaption{
-	font-style: italic;
-	font-size: 0.75em;
-	text-align: center;
+
+.namecol {
+  font-size: 1.25em;
  }
+
+.namecol li {
+  padding-bottom: 0.25em;	
+}
  
+.citetable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    xborder: 1px solid #bbb;	
+	font-size: 0.75em;
+}
  
+.citetable td {
+  padding: 0px 5px;
+ }
+
+.citetable tbody tr:nth-child(even)  td { background-color: #eee; }
+ 
+.citetable th{
+  border-bottom: 1px silver solid;
+}
+
+.rowspacer {
+  border-bottom: 1px silver solid;
+  font-size: 0.5em;
+ }
+
 a.vidlink,
 a:visited.vidlink {
   padding-left:55px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url(images/film.png) no-repeat 1px 100%;
-  xdisplay: block;
+  padding-bottom: 30px;
+  background: url(images/film.png) no-repeat;
   font-weight: bold;
+  display: inline-block;
  }
-
+ 
 .vidlist dd {
+  margin-top: -30px;
   margin-left:55px;
   padding-bottom: 20px;
 }
@@ -327,61 +377,154 @@ a:visited.vidlink {
   padding-bottom: 0;
   margin-left: 15px;
 }
+
+
  
-.syspic {
-	text-align: center;
- }
  
-.syspic img {
-   height: 230px;
- }
+@media screen and (min-width: 600px) {
+	a:hover {
+	  color: red;
+	 }
 
-.syspic figcaption {
-  text-align: center;
-}
+	h2 a:hover,
+	h3 a:hover {
+	  color: black;
+	 }
 
-.citetable td {
-  padding: 0px 5px;
- }
+	 #home a {
+	  font-size: 60px;
+	 }
 
-.citetable th{
-  border-bottom: 1px silver solid;
-}
+   .indeximages {
+		text-align: left;
+	}
 
-.rowspacer {
-  border-bottom: 1px silver solid;
-  font-size: 0.5em;
- }
+	footer {
+		text-align: center;
+		height: 95px;
+	}
+	
+	footer a:hover {
+		color: #AAFECF;
+	}
+	
+	header h1 {
+	  font-size: 300%;
+	}
+	
+	nav {
+	  xpadding-bottom: 40px;
+	}	
+	nav a:hover {
+	  color: black;
+	  background: #69D948;
+	  border: 1px black solid;
+	 } 
 
-.namecol {
-  float: left;
-  width: 40%;
- }
+	#chart_div,
+	#chart2_div,
+	#chart4_div,
+	#chart5_div {
+		width: 1500px; 
+		height: 500px;
+		}
+	#chart6_div {
+		width: 1000px; 
+		height: 500px;
+		}
+
+	#namechart1_div,
+	#namechart2_div,
+	#namechart3_div,
+	#namechart4_div {
+		width: 1500px; 
+		height: 500px;
+		}
+	#namechart5_div {
+		width: 1500px; 
+		height: 400px;
+		}
+
+	
+	#subgenera_phylogeny {
+		width: 600px;
+		height: 450px;
+	}
+	#species_phylogeny {
+		width: 600px;
+		height: 2500px;
+		}
+
+	.sppic {
+	  float: left;
+	  text-align: left;
+	 }
+
+	 .sppic img {
+		height: 200px;
+		}
+
+	.sppic img:hover {
+	  border: 1px red solid;
+	 }
+
+	 .morphimg  {
+	  width: 500px;
+	  } 
+
+	.spsection table {
+	  width: 800px;
+	 }
+
+	#map_canvas {
+		width: 600px;
+		height: 400px;
+	}
+
+	#map_canvas_sp {
+		width: 450px;
+		height: 350px;
+	}
+
+	#splist {
+	  -moz-column-count: 3; /* Firefox */
+	  -webkit-column-count: 3; /* Safari and Chrome */
+	  column-count: 3;
+	  -moz-column-rule: 2px groove seagreen; /* Firefox */
+	  -webkit-column-rule: 2px groove seagreen; /* Safari and Chrome */
+	  column-rule: 2px groove seagreen;  
+	  -moz-column-gap: 1em; /* Firefox */
+	  -webkit-column-gap: 1em; /* Safari and Chrome */
+	  column-gap: 1em;
+      font-size: 1em;
+	 }
+
  
-.morphdesc {
-  xfloat : left;
-  xwidth: 500px;
-  padding: 0.5em;
- } 
- 
-.morphimg  {
-  xfloat: left;
-  width: 500px;
-  xmargin-left: 0;
-  xmargin-right: 0;
-  padding-bottom: 1em;
-  } 
+	#splist li {
+	  padding-bottom: 0;
+	 }
 
-.morphimg img {
-  }
-  
-.morphimg figcaption {
-  font-style: italic;
-  font-size: 0.75em;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
- }
+	.photosection h2 a:hover {
+	  color: red;
+	 }
+
+	.syspic img {
+	   height: 230px;
+	 }
+
+	.namecol {
+	  float: left;
+	  width: 40%;
+	  font-size: 1em;
+	 }
  
+	.namecol li {
+	  padding-bottom: 0;	
+	}
+
+	.citetable {
+		font-size: 1em;
+	}
+ 
+ 
+} 

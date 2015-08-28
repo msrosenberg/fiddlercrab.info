@@ -258,7 +258,6 @@ class MorphologyClass():
         self.__image = ""
         self.__description = ""
         self.__caption = ""
-        #self.__maxHeight = "0"
     def character(self):
         return self.__character
     def setCharacter(self,x):
@@ -279,10 +278,6 @@ class MorphologyClass():
         return self.__caption
     def setCaption(self,x):
         self.__caption = x
-    #def maxHeight(self):
-    #    return self.__maxHeight
-    #def setMaxHeight(self,x):
-    #   self.__maxHeight = x
 
 
 class SpeciesClass():
@@ -659,7 +654,6 @@ def getMorphology():
         newMorph.setParent(m[1])
         newMorph.setImage(m[2])
         newMorph.setCaption(m[3])
-        #newMorph.setMaxHeight(m[4])
         newMorph.setDescription(m[4])
         morphList.append(newMorph)
     return morphList
@@ -674,6 +668,7 @@ def commonHeaderPart1(outfile,title,indexpath):
     outfile.write("<html lang=\"en\">\n")
     outfile.write("  <head>\n")
     outfile.write("    <meta charset=\"utf-8\" />\n")
+    outfile.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n")
     outfile.write("    <title>"+title+"</title>\n")
     outfile.write("    <meta name=\"description\" content=\"Fiddler Crabs\" />\n")
     outfile.write("    <link rel=\"icon\" sizes=\"128x128\" href=\"favicon128.png\" type=\"image/png\" />\n")
@@ -688,7 +683,7 @@ def commonHeaderPart1(outfile,title,indexpath):
     outfile.write("    <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"apple-touch-icon-114x114-precomposed.png\">\n")
     outfile.write("    <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"apple-touch-icon-144x144-precomposed.png\">\n")
     outfile.write("    <link rel=\"stylesheet\" href=\"http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic\" />\n")
-    outfile.write("    <link rel=\"stylesheet\" href=\""+indexpath+"uca_style.css?"+str(randSeed)+"\" />\n")
+    outfile.write("    <link rel=\"stylesheet\" href=\""+indexpath+"uca_style.css\" />\n")
     outfile.write("    <link rel=\"author\" href=\"mailto:msr@asu.edu\" />\n")
 
 def commonHeaderPart2(outfile,indexpath,incMap):
@@ -723,10 +718,12 @@ def commonSpeciesHTMLHeader(outfile,title,indexpath,species):
     outfile.write("          overviewMapControl: false,\n")
     outfile.write("          mapTypeId: google.maps.MapTypeId.TERRAIN\n")
     outfile.write("        };\n")
-    outfile.write("        var map = new google.maps.Map(document.getElementById(\"map_canvas\"),mapOptions);\n")
+    #outfile.write("        var map = new google.maps.Map(document.getElementById(\"map_canvas_sp\"),mapOptions);\n")
     if species == "":
+        outfile.write("        var map = new google.maps.Map(document.getElementById(\"map_canvas\"),mapOptions);\n")
         outfile.write("        var ctaLayer = new google.maps.KmlLayer(\"http://www.fiddlercrab.info/maps/uca.kmz\",{suppressInfoWindows: true});\n")
     else:
+        outfile.write("        var map = new google.maps.Map(document.getElementById(\"map_canvas_sp\"),mapOptions);\n")
         outfile.write("        var ctaLayer = new google.maps.KmlLayer(\"http://www.fiddlercrab.info/maps/u_"+species+".kmz\",{suppressInfoWindows: true});\n")
     outfile.write("        ctaLayer.setMap(map);\n")
     outfile.write("      }\n")
@@ -742,7 +739,7 @@ def commonHTMLHeader(outfile,title,indexpath):
 def commonHTMLFooter(outfile):
     outfile.write("\n")
     outfile.write("    <footer>\n")
-    outfile.write("       <p id=\"footmap\">Visitors <script type=\"text/javascript\" src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script></p>\n")
+    outfile.write("       <figure id=\"footmap\"><script type=\"text/javascript\" src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>\n")
     outfile.write("       <p id=\"citation\"><a href=\""+citeURL+"\">How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact <a href=\"mailto:msr@asu.edu\">Dr. Michael S. Rosenberg</a></p>\n")
     outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2015 All Rights Reserved</p>\n")
@@ -896,12 +893,12 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount,languages):
     outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("      See also the <a href=\"names/"+namesumURL+"\">name summary page</a> for information on reference patterns to specific species.\n")
     outfile.write("    </p>\n")    
-    outfile.write("    <div id=\"chart6_div\" style=\"width: 1000px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    #outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart5_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
+    outfile.write("    <div id=\"chart6_div\"></div>\n")
+    outfile.write("    <div id=\"chart2_div\"></div>\n")
+    outfile.write("    <div id=\"chart4_div\"></div>\n")
+    #outfile.write("    <div id=\"chart3_div\"></div>\n")
+    outfile.write("    <div id=\"chart5_div\"></div>\n")
+    outfile.write("    <div id=\"chart_div\"></div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
     
@@ -1077,6 +1074,8 @@ def nameToFileName(x):
 
 def cleanSpecificName(x):
     """ function to extract the specific names from binomials """
+    # this is a list of terms that are not actual species names
+    # or specific names that have never been part of a fiddler genus
     skipList = ["sp.",
                 "spp.",
                 "var.",
@@ -1093,9 +1092,8 @@ def cleanSpecificName(x):
                 "albicans",
                 "arenarius",
                 "raninus",
+                "serratus",
                 "spec."]
-
-
 
     if not " " in x:
         return ""
@@ -1564,15 +1562,15 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     outfile.write("          bar: { groupWidth: '80%' }\n")
     outfile.write("        };\n")
     outfile.write("\n")
-    outfile.write("        var chart1 = new google.visualization.LineChart(document.getElementById('chart1_div'));\n")
+    outfile.write("        var chart1 = new google.visualization.LineChart(document.getElementById('namechart1_div'));\n")
     outfile.write("        chart1.draw(data1, options1);\n")
-    outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('chart2_div'));\n")
+    outfile.write("        var chart2 = new google.visualization.ColumnChart(document.getElementById('namechart2_div'));\n")
     outfile.write("        chart2.draw(data2, options2);\n")
-    outfile.write("        var chart3 = new google.visualization.LineChart(document.getElementById('chart3_div'));\n")
+    outfile.write("        var chart3 = new google.visualization.LineChart(document.getElementById('namechart3_div'));\n")
     outfile.write("        chart3.draw(data3, options3);\n")
-    outfile.write("        var chart4 = new google.visualization.ColumnChart(document.getElementById('chart4_div'));\n")
+    outfile.write("        var chart4 = new google.visualization.ColumnChart(document.getElementById('namechart4_div'));\n")
     outfile.write("        chart4.draw(data4, options4);\n")
-    outfile.write("        var chart5 = new google.visualization.ColumnChart(document.getElementById('chart5_div'));\n")
+    outfile.write("        var chart5 = new google.visualization.ColumnChart(document.getElementById('namechart5_div'));\n")
     outfile.write("        chart5.draw(data5, options5);\n")
     outfile.write("      }\n")
     outfile.write("    </script>\n")
@@ -1592,11 +1590,11 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     outfile.write("      Most of these data are only based on <a href=\"../"+refsumURL+"\">references whose citation data is already included in the database</a>.\n")
     #outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("    </p>\n")    
-    outfile.write("    <div id=\"chart1_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart2_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart3_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart4_div\" style=\"width: 1500px; height: 500px; \"></div>\n")
-    outfile.write("    <div id=\"chart5_div\" style=\"width: 1500px; height: 400px; \"></div>\n")
+    outfile.write("    <div id=\"namechart1_div\"></div>\n")
+    outfile.write("    <div id=\"namechart2_div\"></div>\n")
+    outfile.write("    <div id=\"namechart3_div\"></div>\n")
+    outfile.write("    <div id=\"namechart4_div\"></div>\n")
+    outfile.write("    <div id=\"namechart5_div\"></div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
 
@@ -1729,7 +1727,7 @@ def createMapHTML(species):
     outfile.write("\n")
     outfile.write("    <section class=\"topspsection\">\n")
     outfile.write("      <p class=\"map_section\">\n")
-    outfile.write("        <div id=\"map_canvas\" style=\"width: 600px; height: 400px;\"></div>\n")
+    outfile.write("        <div id=\"map_canvas\"></div>\n")
     outfile.write("      </p>\n")
     outfile.write("      <p>\n")
     outfile.write("        The above map shows the approximate density of species richness, with denser color where more species are found. "+\
@@ -2110,7 +2108,7 @@ def writeSpeciesPhotoPage(fname,species,commonName,caption,pn,pspecies):
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <figure class=\"fullpic\">\n")
-    outfile.write("      <img src=\"U_"+spname+format(pn,"0>2")+".jpg\" alt=\"Uca "+species+"\" title=\"Uca "+species+"\" />\n")
+    outfile.write("      <picture><img src=\"U_"+spname+format(pn,"0>2")+".jpg\" alt=\"Uca "+species+"\" title=\"Uca "+species+"\" /></picture>\n")
     outfile.write("      <figcaption>"+caption+"</figcaption>\n")
     outfile.write("    </figure>\n")
     commonHTMLFooter(outfile)            
@@ -2247,7 +2245,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
     outfile.write("         <dd>"+species.region()+": "+species.range()+"</dd>\n")
     if not isFossil:
         outfile.write("         <dd>\n")
-        outfile.write("           <div id=\"map_canvas\" style=\"width: 450px; height: 350px;\"></div>\n")
+        outfile.write("           <div id=\"map_canvas_sp\"></div>\n")
         outfile.write("         </dd>\n")
         outfile.write("         <dd class=\"map_data\">\n")
         mapRefKeyList = species.rangeRefs().split(";")
@@ -2292,7 +2290,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
                 pfname = "photos/u_"+species.species()+format(pn,"0>2")+".html"
                 tname = species.species()
             outfile.write("      <figure class=\"sppic\">\n")
-            outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+tname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+species.species()+"\" title=\"Uca "+species.species()+"\" /></a>\n")
+            outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"photos/U_"+tname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+species.species()+"\" title=\"Uca "+species.species()+"\" /></picture></a>\n")
             outfile.write("      </figure>\n")
             writeSpeciesPhotoPage(pfname,species.species(),species.common(),photo.caption(),pn,photo.species())
             photoN += 1
@@ -2338,7 +2336,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
             if species.species() in slist:
                 pfname = "art/"+art.image()+".html"
                 outfile.write("      <figure class=\"sppic\">\n")
-                outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></picture></a>\n")
                 outfile.write("      </figure>\n")
                 artN += 1
         if artN == 0:
@@ -2396,7 +2394,7 @@ def createPhotosHTML(speciesList,photos):
                     spname = photo.species()
                 pfname = "photos/u_"+spname+format(pn,"0>2")+".html"
                 outfile.write("      <figure class=\"sppic\">\n")
-                outfile.write("        <a href=\""+pfname+"\"><img src=\"photos/U_"+spname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+spname+"\" title=\"Uca "+spname+"\" /></a>\n")
+                outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"photos/U_"+spname+format(pn,"0>2")+"tn.jpg\" alt=\"Uca "+spname+"\" title=\"Uca "+spname+"\" /></picture></a>\n")
                 outfile.write("      </figure>\n")
                 photoN += 1
         if photoN == 0:
@@ -2477,7 +2475,7 @@ def writeScienceArtPage(fname,art,backURL,backText):
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <figure class=\"fullpic\">\n")
-    outfile.write("      <img src=\""+art.image()+"."+art.ext()+"\" alt=\""+ptitle+"\" title=\""+ptitle+"\" />\n")
+    outfile.write("      <picture><img src=\""+art.image()+"."+art.ext()+"\" alt=\""+ptitle+"\" title=\""+ptitle+"\" /></picture>\n")
     outfile.write("      <figcaption>"+art.notes()+"</figcaption>\n")
     outfile.write("    </figure>\n")
     commonHTMLFooter(outfile)            
@@ -2517,7 +2515,7 @@ def createArtScienceHTML(artList):
                 if artist == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></picture></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art,artSciURL,"All Scientific Drawings")
     commonHTMLFooter(outfile)
@@ -2555,7 +2553,7 @@ def createArtStampsHTML(artList):
                 if art.author() == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></picture></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art,artStampURL,"All Stamps")
     commonHTMLFooter(outfile)
@@ -2599,7 +2597,7 @@ def createArtCraftsHTML(artList):
                 if art.author() == a:
                     pfname = "art/"+art.image()+".html"
                     outfile.write("      <figure class=\"sppic\">\n")
-                    outfile.write("        <a href=\""+pfname+"\"><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></a>\n")
+                    outfile.write("        <a href=\""+pfname+"\"><picture><img src=\"art/"+art.image()+"_tn."+art.ext()+"\" alt=\""+art.title()+"\" title=\""+art.title()+"\" /></picture></a>\n")
                     outfile.write("      </figure>\n")
                     writeScienceArtPage(pfname,art,artCraftURL,"All Crafts")
     commonHTMLFooter(outfile)
@@ -2759,7 +2757,7 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("      </nav>\n")
     outfile.write("    </header>\n")
     outfile.write("\n")
-    outfile.write("    <div class=\"topspection\">\n")
+    outfile.write("    <div class=\"topsection\">\n")
     outfile.write("    <p>The following information is an expansion and update of that found in:</p>\n")
     outfile.write("    <blockquote>\n")
     outfile.write("      Rosenberg, M.S. 2001. The systematics and taxonomy of fiddler crabs: A\n")
@@ -2779,7 +2777,7 @@ def createSystematicsHTML(subgenList,speciesList):
     outfile.write("         <a href=\"references/Seba1758.html\">Seba (1758)</a>, which he called <em class=\"species\">Cancer uka una, Brasiliensibus</em> (shown below).\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure>\n")
-    outfile.write("        <img src=\"art/Seba_Uca_una.jpg\" width=\"647\" height=\"477\" alt=\"Seba's fiddler crab\" title=\"Seba's fiddler crab\" />\n")
+    outfile.write("        <picture><img src=\"art/Seba_Uca_una.jpg\" style=\"padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; text-align: center\" alt=\"Seba's fiddler crab\" title=\"Seba's fiddler crab\" /></picture>\n")
     outfile.write("      </figure>\n")
     outfile.write("      <p>\n")
     outfile.write("        A number of authors subsequently used this same picture as a basis for naming the " + \
@@ -2804,15 +2802,15 @@ def createSystematicsHTML(subgenList,speciesList):
        "could be applied to mangrove crabs; as this was an invalid proposal, <em class=\"species\">Uca</em> " + \
        "is retained for fiddlers, despite being due to a pair of errors (<a href=\"references/Tavares1993.html\">Tavares 1993</a>).\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Maracoani.png\" alt=\"Marcgrave's Maracoani\" title=\"Marcgrave's Maracoani\">\n")
+    outfile.write("          <picture><img src=\"art/Marcgrave_Maracoani.png\" alt=\"Marcgrave's Maracoani\" title=\"Marcgrave's Maracoani\"></picture>\n")
     outfile.write("          <figcaption>Oldest known drawing of a fiddler crab (<a href=\"references/Marcgrave1648.html\">Marcgrave, 1648</a>). He labeled it &ldquo;Maracoani&rdquo;, and it represents the namesake of the species <em class=\"species\">Uca maracoani.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Uca_una.png\" alt=\"Marcgrave's Uca una\" title=\"Marcgrave's Uca una\">\n")
+    outfile.write("          <picture><img src=\"art/Marcgrave_Uca_una.png\" alt=\"Marcgrave's Uca una\" title=\"Marcgrave's Uca una\"></picture>\n")
     outfile.write("          <figcaption>The drawing actually labeled &ldquo;Uca Una&rdquo; by <a href=\"references/Marcgrave1648.html\">Marcgrave (1648)</a> is not a fiddler crab. Today this species is known as the mangrove crab <em class=\"species\">Ucides cordatus.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("        <figure class=\"syspic\">\n")
-    outfile.write("          <img src=\"art/Marcgrave_Ciecie_Ete.png\" alt=\"Marcgrave's Ciecie Ete\" title=\"Marcgrave's Ciecie Ete\">\n")
+    outfile.write("          <picture><img src=\"art/Marcgrave_Ciecie_Ete.png\" alt=\"Marcgrave's Ciecie Ete\" title=\"Marcgrave's Ciecie Ete\"></picture>\n")
     outfile.write("          <figcaption>The other fiddler crab drawing found in <a href=\"references/Marcgrave1648.html\">Marcrgrave (1648)</a>, labeled &ldquo;Ciecie Ete&rdquo; (he also refers to a very similar species called &ldquo;Ciecie Panema&rdquo;). This figure is believed to most likely represent <em class=\"species\">Uca thayeri.</em></figcaption>\n")
     outfile.write("        </figure>\n")
     outfile.write("      </blockquote>\n")
@@ -3118,11 +3116,11 @@ def createLifeCycle():
                   "These are sometimes known as &ldquo;sponge&rdquo; crabs.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_rapax10.html\"><img src=\"photos/U_rapax10tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_rapax10.html\"><picture><img src=\"photos/U_rapax10tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></picture></a>\n")
     outfile.write("        <figcaption>Gravid female</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_rapax11.html\"><img src=\"photos/U_rapax11tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_rapax11.html\"><picture><img src=\"photos/U_rapax11tn.jpg\" alt=\"Gravid female\" title=\"Gravid female\" /></picture></a>\n")
     outfile.write("        <figcaption>Close up of eggs</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -3134,11 +3132,11 @@ def createLifeCycle():
                   "free-swimming larvae. The early stage larvae are known as zoea.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis07.html\"><img src=\"photos/U_ecuadoriensis07tn.jpg\" alt=\"zoea\" title=\"zoea\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis07.html\"><picture><img src=\"photos/U_ecuadoriensis07tn.jpg\" alt=\"zoea\" title=\"zoea\" /></picture></a>\n")
     outfile.write("        <figcaption>Zoea</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis08.html\"><img src=\"photos/U_ecuadoriensis08tn.jpg\" alt=\"zoea\" title=\"zoea\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis08.html\"><picture><img src=\"photos/U_ecuadoriensis08tn.jpg\" alt=\"zoea\" title=\"zoea\" /></picture></a>\n")
     outfile.write("        <figcaption>Zoea</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -3150,7 +3148,7 @@ def createLifeCycle():
                   "As they grow and go through a number of molt stages. Older larvae are known as megalopa.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis09.html\"><img src=\"photos/U_ecuadoriensis09tn.jpg\" alt=\"megalopa\" title=\"megalopa\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis09.html\"><picture><img src=\"photos/U_ecuadoriensis09tn.jpg\" alt=\"megalopa\" title=\"megalopa\" /></picture></a>\n")
     outfile.write("        <figcaption>Megalopa</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -3162,14 +3160,14 @@ def createLifeCycle():
                   "The amount of time spent as a swimming larvae (hatching to true crab stage) varies among species, but ranges from a few weeks to a few months.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_ecuadoriensis10.html\"><img src=\"photos/U_ecuadoriensis10tn.jpg\" alt=\"early stage crab\" title=\"early stage crab\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_ecuadoriensis10.html\"><picture><img src=\"photos/U_ecuadoriensis10tn.jpg\" alt=\"early stage crab\" title=\"early stage crab\" /></picture></a>\n")
     outfile.write("        <figcaption>Early Stage Full Crab</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <p style=\"clear: both\">\n")
     outfile.write("        The crabs return to land and begin to grow; juvenile male and female crabs look alike.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_pugilator21.html\"><img src=\"photos/U_pugilator21tn.jpg\" alt=\"juveniles\" title=\"juveniles\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_pugilator21.html\"><picture><img src=\"photos/U_pugilator21tn.jpg\" alt=\"juveniles\" title=\"juveniles\" /></picture></a>\n")
     outfile.write("        <figcaption>Juvenile Crabs</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <p style=\"clear: both\">\n")
@@ -3177,11 +3175,11 @@ def createLifeCycle():
                   "Adult crabs mate and the cycle starts over.\n")
     outfile.write("      </p>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_tangeri10.html\"><img src=\"photos/U_tangeri10tn.jpg\" alt=\"adult female\" title=\"adult female\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_tangeri10.html\"><picture><img src=\"photos/U_tangeri10tn.jpg\" alt=\"adult female\" title=\"adult female\" /></picture></a>\n")
     outfile.write("        <figcaption>Adult Female</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("      <figure class=\"sppic\">\n")
-    outfile.write("        <a href=\"photos\\u_tangeri12.html\"><img src=\"photos/U_tangeri12tn.jpg\" alt=\"adult male\" title=\"adult male\" /></a>\n")
+    outfile.write("        <a href=\"photos\\u_tangeri12.html\"><picture><img src=\"photos/U_tangeri12tn.jpg\" alt=\"adult male\" title=\"adult male\" /></picture></a>\n")
     outfile.write("        <figcaption>Adult Male</figcaption>")
     outfile.write("      </figure>\n")
     outfile.write("    </section>\n")
@@ -3208,11 +3206,11 @@ def createPhylogeny():
     outfile.write("\n")  
     outfile.write("    <section class=\"spsection\">\n")
     outfile.write("      <h2>Subgenera Phylogeny</h2>\n")
-    outfile.write("      <object width=\"600px\" height=\"450px\" data=\"images/tree_subgenera.svg\" type=\"image/svg+xml\"></object>\n")
+    outfile.write("      <object id=\"subgenera_phylogeny\" data=\"images/tree_subgenera.svg\" type=\"image/svg+xml\"></object>\n")
     outfile.write("    </section>\n")
     outfile.write("    <section class=\"spsection\">\n")
     outfile.write("      <h2>Species Phylogeny</h2>\n")
-    outfile.write("      <object width=\"600px\" height=\"2500px\" data=\"images/tree_species.svg\" type=\"image/svg+xml\"></object>\n")
+    outfile.write("      <object id=\"species_phylogeny\" data=\"images/tree_species.svg\" type=\"image/svg+xml\"></object>\n")
     outfile.write("    </section>\n")
     outfile.write("\n")  
     commonHTMLFooter(outfile)
@@ -3278,7 +3276,7 @@ def createMorphPage(morph,morphList):
         clist = [morph.caption()]
     for i in range(len(plist)):
         outfile.write("    <figure class=\"morphimg\">\n")
-        outfile.write("      <img src=\""+plist[i]+"\" alt=\""+clist[i]+"\" title=\""+clist[i]+"\" />\n")
+        outfile.write("      <picture><img src=\""+plist[i]+"\" alt=\""+clist[i]+"\" title=\""+clist[i]+"\" /></picture>\n")
         outfile.write("      <figcaption>"+clist[i]+"</figcaption>\n")
         outfile.write("    </figure>\n")
 
@@ -3329,7 +3327,7 @@ def createMorphIndex(morphList):
 def createMorphologyPages(morphology):
     """ create page for general morphology descriptions """
     outfile = codecs.open(morphURL, "w", "utf-8")
-    commonHTMLHeader(outfile,"Fiddler Crab Morphology","../")
+    commonHTMLHeader(outfile,"Fiddler Crab Morphology","")
     outfile.write("    <header>\n")
     outfile.write("      <h1>Morphology</h1>\n")
     outfile.write("      <nav>\n")
@@ -3356,19 +3354,16 @@ def createMorphologyPages(morphology):
     createMorphIndex(morphology)
     outfile.write("     </ul>\n")
     outfile.write("    </div>\n")
-
-    # max height = 335
-    
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/dorsal_view.png\" alt=\"dorsal view of crab\" title=\"dorsal view of crab\" />\n")
+    outfile.write("      <picture><img src=\"morphology/dorsal_view.png\" alt=\"dorsal view of crab\" title=\"dorsal view of crab\" /></picture>\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/ventral_view.png\" alt=\"ventral view of crab\" title=\"ventral view of crab\" />\n")
+    outfile.write("      <picture><img src=\"morphology/ventral_view.png\" alt=\"ventral view of crab\" title=\"ventral view of crab\" /></picture>\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
     outfile.write("    <figure class=\"morphimg\">\n")
-    outfile.write("      <img src=\"morphology/anterior_view.png\" alt=\"anterior view of crab\" title=\"anterior view of crab\" />\n")
+    outfile.write("      <picture><img src=\"morphology/anterior_view.png\" alt=\"anterior view of crab\" title=\"anterior view of crab\" /></picture>\n")
     outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
     outfile.write("    </figure>\n")
 
@@ -3417,10 +3412,10 @@ def createIndex(species,refs):
        "<a href=\""+speciesURL+"\">There are currently {} recognized extant species</a>.\n".format(scnt))
 
     outfile.write("    </p>\n")
-    outfile.write("    <div>\n")
-    outfile.write("      <img src=\"photos/U_mjoebergi04tn.jpg\" />\n")
-    outfile.write("      <img src=\"photos/U_minax07tn.jpg\" />\n")
-    outfile.write("      <img src=\"photos/U_crassipes19tn.jpg\" />\n")
+    outfile.write("    <div class=\"indeximages\">\n")
+    outfile.write("      <picture><img src=\"photos/U_mjoebergi04tn.jpg\" /></picture>\n")
+    outfile.write("      <picture><img src=\"photos/U_minax07tn.jpg\" /></picture>\n")
+    outfile.write("      <picture><img src=\"photos/U_crassipes19tn.jpg\" /></picture>\n")
     outfile.write("    </div>\n")
     outfile.write("\n")  
     outfile.write("    <h2>Classification</h2>\n")  
