@@ -22,7 +22,7 @@ citeURL = "citation.html"
 namesumURL = "name_graphs.html"
 fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" title=\" (fossil)\" />"
 
-randSeed = random.randint(0,10000)
+randSeed = random.randint(0, 10000)
 
 #----classes----
 
@@ -414,21 +414,26 @@ class CitationClass():
         self.__nameNote = x
     def generalNote(self):
         return self.__generalNote
-    def setGeneralNote(self,x):
+    def setGeneralNote(self, x):
         self.__generalNote = x
 
 
 #----functions----
 
-def getReferences():
+def reportError(logfile, outstr):
+    print(outstr)
+    logfile.write(outstr + "\n")
+
+
+def getReferences(logfile):
     """ read reference data """
     refList = []
     yearDat = {}
     citeDone = {}
     # citation and species data from text
-    reffile = codecs.open("references_cites.txt","r","utf-8")
+    reffile = codecs.open("references_cites.txt", "r", "utf-8")
     for line in reffile:
-        line = line.replace("et al.","<em>et al.</em>")
+        line = line.replace("et al.", "<em>et al.</em>")
         ref = line.strip().split("\t")
         while len(ref) < 3:
             ref.append("")
@@ -468,7 +473,7 @@ def getReferences():
     refDict = {}
     for ref in refList:
         if ref.citeKey() in refDict and ref.citeKey() != "<pending>":
-            print("Duplicate reference key:",ref.citeKey())
+            reportError(logfile, "Duplicate reference key:" + ref.citeKey())
         refDict[ref.citeKey()] = ref    
     # citation info
     reffile = open("citeinfo.txt","r")
@@ -516,7 +521,7 @@ def getReferences():
 
 def readSimpleFile(fname):
     """ read data from generic flatfile """
-    infile = open(fname,"r")
+    infile = open(fname, "r")
     #infile = codecs.open(fname,"r")
     spList= []
     gotHeader = False
@@ -661,7 +666,6 @@ def getMorphology():
 
 ###-----End input code----###
 
-
 def commonHeaderPart1(outfile,title,indexpath):
     """ part 1 of the header for all html """
     outfile.write("<!DOCTYPE HTML>\n")
@@ -763,14 +767,15 @@ def createBlankIndex(fname):
     outfile.close()
 
 
-def formatReference(i,ref):
+def formatReference(i, ref, logfile):
     if ref.citeKey() == "<pending>":
         return "          <li>" + ref.formattedHTML() + "</li>\n"
     else:
         try:
             return "          <li><a href=\"references/"+ref.citeKey()+".html\">" + ref.formattedHTML() + "</a></li>\n"
         except:
-            print("missing label: ",ref.citeKey())
+            #print("missing label: ",ref.citeKey())
+            reportError(logfile, "missing label: " + ref.citeKey())
 
 
 def referenceSummary(nrefs,yearData,yearData1900,citeCount,languages):
@@ -903,7 +908,7 @@ def referenceSummary(nrefs,yearData,yearData1900,citeCount,languages):
     outfile.close()
     
     
-def referencesToHTML(refList):
+def referencesToHTML(refList, logfile):
     outfile = codecs.open(refURL, "w", "utf-8")
     commonHTMLHeader(outfile,"Fiddler Crab Publications","")
     outfile.write("    <header>\n")
@@ -936,7 +941,7 @@ def referencesToHTML(refList):
     outfile.write("      <div id=\"citation\">\n")
     outfile.write("        <ul>\n")
     for i,ref in enumerate(refList):
-        outfile.write(formatReference(i+1,ref))
+        outfile.write(formatReference(i+1, ref, logfile))
     outfile.write("        </ul>\n")
     outfile.write("      </div>\n")
     outfile.write("    </section>\n")
@@ -1108,7 +1113,7 @@ def cleanSpecificName(x):
             return x.lower()
 
 
-def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,nameTable):
+def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,nameTable, logfile):
     firstName = True
     ncols = 5
     if notecnt > 0:
@@ -1168,7 +1173,8 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
                                 refname = nameTable[n.application()][nstr][0]
                             except:
                                 if IsName: # only print errors on one pass
-                                    print('Error in citation:',n.citeKey(),'cites',nstr,'in',n.application())
+                                    #print('Error in citation:',n.citeKey(),'cites',nstr,'in',n.application())
+                                    reportError(logfile, "Error in citation: " + n.citeKey() + " cites" + nstr + " in " + n.application())
                                 extraref = ""
                                 refname = ""
                         else:
@@ -1181,7 +1187,8 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             else:
                 outfile.write("      <td>citation: "+n.application()+"</td>\n")
                 if IsName: # only print on one pass
-                    print("Citation not in DB:",n.citeKey(),'cites',n.application())
+                    #print("Citation not in DB:",n.citeKey(),'cites',n.application())
+                    reportError(logfile, "Citation not in DB: " + n.citeKey() + " cites " + n.application())
         elif n.context() == "specimen":
             if n.application() == "?":
                 outfile.write("      <td>specimen: unknown locality</td>\n")
@@ -1228,7 +1235,7 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
     outfile.write("    </table>\n")
     
 
-def referencePages(refList,refDict,citeList):
+def referencePages(refList,refDict,citeList,logfile):
     createBlankIndex("references/index.html")
     nameTable = createNameTable(citeList)
     updateCiteList(citeList)
@@ -1289,7 +1296,7 @@ def referencePages(refList,refDict,citeList):
                     outfile.write("        <th>Note(s)</th>\n")
                 outfile.write("      </tr>\n")
 
-                outputNameTable(False,outfile,names,uniquenames,notecnt,comcnt,refDict,nameTable)
+                outputNameTable(False,outfile,names,uniquenames,notecnt,comcnt,refDict,nameTable, logfile)
             else:
                 outfile.write("    Data not yet available.\n")
 
@@ -1325,7 +1332,7 @@ def cleanName(x):
     return x
 
 
-def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName):
+def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName,logfile):
     """ create a page listing all citations using a specific binomial """
     outfile = codecs.open("names/"+namefile+".html", "w", "utf-8")
     commonHTMLHeader(outfile,name,"../")
@@ -1371,14 +1378,14 @@ def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName):
     if notecnt > 0:
         outfile.write("        <th>Note(s)</th>\n")
     outfile.write("      </tr>\n")
-    outputNameTable(True,outfile,cites,uniquecites,notecnt,comcnt,refDict,nameTable)
+    outputNameTable(True,outfile,cites,uniquecites,notecnt,comcnt,refDict,nameTable, logfile)
     outfile.write("    <p>\n")
     outfile.write("    </p>\n")
     commonHTMLFooter(outfile)
     outfile.close()
 
 
-def createSpecificNamePage(name,binomialNames,refDict):
+def createSpecificNamePage(name,binomialNames,refDict, logfile):
     """ create a page with the history of a specific name """
     outfile = codecs.open("names/sn_"+name.name()+".html", "w", "utf-8")
     commonHTMLHeader(outfile,name.name(),"../")
@@ -1413,7 +1420,8 @@ def createSpecificNamePage(name,binomialNames,refDict):
             ref = refDict[name.prioritySource()]
             refname = ref.formattedHTML()
         except:
-            print(name.prioritySource())
+            #print(name.prioritySource())
+            reportError(logfile, name.prioritySource())
     else:
         refname = "unknown"
     outfile.write("          <dd>"+refname+"</dd>\n")
@@ -1599,7 +1607,7 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     outfile.close()
 
 
-def indexNamePages(refDict,citeList,specificNames,speciesRefs):
+def indexNamePages(refDict, citeList, specificNames, speciesRefs, logfile):
     """ create an index of binomials and specific names """
     nameTable = createNameTable(citeList)
     uniqueNames = list()    
@@ -1627,7 +1635,7 @@ def indexNamePages(refDict,citeList,specificNames,speciesRefs):
 
     # create name index
     outfile = codecs.open("names/index.html", "w", "utf-8")
-    commonHTMLHeader(outfile,"Name Index","../")
+    commonHTMLHeader(outfile, "Name Index", "../")
     outfile.write("    <header>\n")
     outfile.write("      <h1>Name Index</h1>\n")
     outfile.write("      <nav>\n")
@@ -1656,10 +1664,11 @@ def indexNamePages(refDict,citeList,specificNames,speciesRefs):
     outfile.write("      <ul>\n")
     outfile.write("\n")
     for name in uniqueNames:
-        sName = matchSpecificName(name,specificNames)
+        sName = matchSpecificName(name, specificNames)
         namefile = nameToFileName(name)
         outfile.write("        <li><a href=\""+namefile+".html\">"+formatNameString(name)+"</a></li>\n")
-        createBinomialNamePage(name,namefile,refDict,citeList,nameTable,sName)
+        createBinomialNamePage(name, namefile, refDict, citeList, nameTable,
+                               sName, logfile)
     outfile.write("      </ul>\n")
     outfile.write("    </div>\n")
     outfile.write("    <div class=\"namecol\">\n")
@@ -1669,7 +1678,7 @@ def indexNamePages(refDict,citeList,specificNames,speciesRefs):
     specificYearCnts = {}
     for name in specificNames:
         outfile.write("        <li><a href=\"sn_"+name.name()+".html\">"+formatNameString(name.name())+"</a></li>\n")
-        createSpecificNamePage(name,uniqueNames,refDict)
+        createSpecificNamePage(name, uniqueNames, refDict, logfile)
         tmpKey = name.prioritySource()
         if tmpKey != ".":
             y = refDict[tmpKey].citation()
@@ -1688,11 +1697,11 @@ def indexNamePages(refDict,citeList,specificNames,speciesRefs):
     outfile.write("    </div>\n")
     commonHTMLFooter(outfile)
     outfile.close()
-    createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs)
+    createNameSummary(binomialYearCnts, specificYearCnts, speciesRefs)
     return uniqueNames
 
 
-def specificNamePages(citeList,specificNames):
+def specificNamePages(citeList, specificNames, logfile):
     """ produces a list of specific names not in the accepted list """
     uniqueNames = list()    
     nameSet = set()
@@ -1704,23 +1713,27 @@ def specificNamePages(citeList,specificNames):
                 uniqueNames.append(clean)
     uniqueNames.sort()
 
-    outfile = open("missing specific names.txt","w")
+    #outfile = open("missing specific names.txt","w")
     for n in uniqueNames:
         isFound = False
         for s in specificNames:
             if n in s.variations():
                 isFound = True
         if not isFound:
-            print("Missing specific name: "+n)
-            outfile.write(n+"\n")
-    outfile.close()
+            #print("Missing specific name: "+n)
+            #outfile.write(n+"\n")
+            reportError(logfile, "Missing specific name: " + n)
+    #outfile.close()
 
 
 def createMapHTML(species):
     """ output geopgraphic ranges to HTML """
-    regions = ("Eastern Atlantic","Western Atlantic","Eastern Pacific","Indo-West Pacific")
+    regions = ("Eastern Atlantic",
+               "Western Atlantic",
+               "Eastern Pacific",
+               "Indo-West Pacific")
     outfile = codecs.open(mapURL, "w", "utf-8")
-    commonSpeciesHTMLHeader(outfile,"Fiddler Crab Geographic Ranges","","")
+    commonSpeciesHTMLHeader(outfile, "Fiddler Crab Geographic Ranges", "", "")
     outfile.write("    <header>\n")
     outfile.write("      <h1>Geographic Ranges</h1>\n")
     outfile.write("    </header>\n")
@@ -2115,18 +2128,18 @@ def writeSpeciesPhotoPage(fname,species,commonName,caption,pn,pspecies):
     outfile.close()
 
 
-def writeSpeciesVideoPage(fname,species,commonName,video,vn):    
+def writeSpeciesVideoPage(fname, species, commonName, video, vn):    
     """ create page for a specific video """
-    outfile = codecs.open(fname,"w","utf-8")
+    outfile = codecs.open(fname, "w", "utf-8")
     if ";" in video.species():
-        spname = video.species().replace(";","_")
-        vtitle = "Uca " + video.species().replace(";"," & Uca ")
+        spname = video.species().replace(";", "_")
+        vtitle = "Uca " + video.species().replace(";", " & Uca ")
         isMulti = True
     else:
         spname = species
         vtitle = "Uca " + species
         isMulti = False
-    commonHTMLHeader(outfile,vtitle+" Video","../")
+    commonHTMLHeader(outfile, vtitle + " Video", "../")
     outfile.write("    <header>\n")
     outfile.write("      <h1><em class=\"species\">"+vtitle+"</em> Video</h1>\n")
     if not isMulti:
@@ -2168,7 +2181,7 @@ def writeSpeciesVideoPage(fname,species,commonName,video,vn):
     outfile.close()
 
 
-def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,artList,spRefs,refDict):
+def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,artList,spRefs,refDict,logfile):
     """ create the master page for a species """
     if species.status() == "fossil":
         isFossil = True
@@ -2354,7 +2367,7 @@ def writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art
     outfile.write("        <ul>\n")
     for i,ref in enumerate(references):
         if ref.citeKey() in spRefs:
-            outfile.write(formatReference(i+1,ref))
+            outfile.write(formatReference(i+1, ref, logfile))
     outfile.write("        </ul>\n")
     outfile.write("      </div>\n")    
     outfile.write("    </section>\n")
@@ -2728,7 +2741,7 @@ def createArtHTML(artList):
     """
 
 
-def speciesToHTML(speciesList,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict):
+def speciesToHTML(speciesList,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict,logfile):
     """ output species list and individual species pages """
     writeSpeciesList(speciesList)
     for species in speciesList:
@@ -2739,7 +2752,7 @@ def speciesToHTML(speciesList,references,specificNames,allNames,photos,videos,ar
         writeSpeciesPage(species,specInfo,references,specificNames,allNames,photos,videos,art,spRefs)
         """
         spRefs = speciesRefs[species.species()]
-        writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art,spRefs,refDict)
+        writeSpeciesPage(species,references,specificNames,allNames,photos,videos,art,spRefs,refDict,logfile)
 
 
 def createSystematicsHTML(subgenList,speciesList):
@@ -3400,7 +3413,7 @@ def createCitationPage(refDict):
 def createIndex(species,refs):
     """ create the site index """
     outfile = codecs.open("index.html", "w", "utf-8")
-    commonHTMLHeader(outfile,"Fiddler Crabs (Genus Uca)","")
+    commonHTMLHeader(outfile, "Fiddler Crabs (Genus Uca)", "")
     outfile.write("    <p>\n")
     scnt = 0
     for s in species:
@@ -3475,34 +3488,39 @@ def createIndex(species,refs):
 
 
 def main():
-    references,refDict,citeList,yearDict,citeCount = getReferences()
-    yearDat, yearDat1900 = summarizeYear(yearDict)
-    languages = summarizeLanguages(references)
-    species = getSpecies()
-    speciesRefs = connectRefsToSpecies(species,citeList)
-    referencesToHTML(references)
-    referenceSummary(len(references),yearDat,yearDat1900,citeCount,languages)
-    referencePages(references,refDict,citeList)
-    specificNames = getSpecificNames()
-    allNames = indexNamePages(refDict,citeList,specificNames,speciesRefs)
-    specificNamePages(citeList,specificNames)
-    photos = getPhotos()
-    videos = getVideos()
-    art = getArt()
-    speciesToHTML(species,references,specificNames,allNames,photos,videos,art,speciesRefs,refDict)
-    subgenera = getSubgenera()
-    createSystematicsHTML(subgenera,species)
-    createCommonNamesHTML(refDict)
-    createPhotosHTML(species,photos)
-    createArtHTML(art)
-    createVideosHTML(videos)
-    createMapHTML(species)
-    createLifeCycle()
-    createPhylogeny()
-    morphology = getMorphology()
-    createMorphologyPages(morphology)    
-    createIndex(species,references)
-    createCitationPage(refDict)    
+    with open("errorlog.txt", "w") as logfile:
+        (references, refDict, citeList, yearDict,
+         citeCount) = getReferences(logfile)
+        yearDat, yearDat1900 = summarizeYear(yearDict)
+        languages = summarizeLanguages(references)
+        species = getSpecies()
+        speciesRefs = connectRefsToSpecies(species, citeList)
+        referencesToHTML(references, logfile)
+        referenceSummary(len(references), yearDat, yearDat1900, citeCount,
+                         languages)
+        referencePages(references, refDict, citeList, logfile)
+        specificNames = getSpecificNames()
+        allNames = indexNamePages(refDict, citeList, specificNames,
+                                  speciesRefs, logfile)
+        specificNamePages(citeList, specificNames, logfile)
+        photos = getPhotos()
+        videos = getVideos()
+        art = getArt()
+        speciesToHTML(species, references, specificNames, allNames,
+                      photos, videos, art, speciesRefs, refDict, logfile)
+        subgenera = getSubgenera()
+        createSystematicsHTML(subgenera, species)
+        createCommonNamesHTML(refDict)
+        createPhotosHTML(species, photos)
+        createArtHTML(art)
+        createVideosHTML(videos)
+        createMapHTML(species)
+        createLifeCycle()
+        createPhylogeny()
+        morphology = getMorphology()
+        createMorphologyPages(morphology)    
+        createIndex(species, references)
+        createCitationPage(refDict)    
     print("done")
 
 main()
