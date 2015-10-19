@@ -416,6 +416,14 @@ class CitationClass():
         return self.__generalNote
     def setGeneralNote(self, x):
         self.__generalNote = x
+    def __lt__(self, x):
+        if self.name() == x.name():
+            if self.context() == x.context():
+                return self.application() < x.application()
+            else:
+                return self.context() < x.context()
+        else:
+            return self.name() < x.name()
 
 
 #----functions----
@@ -1113,7 +1121,8 @@ def cleanSpecificName(x):
             return x.lower()
 
 
-def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,nameTable, logfile):
+def outputNameTable(IsName, outfile, itemList, uniqueList, notecnt, comcnt,
+                    refDict, nameTable, logfile):
     firstName = True
     ncols = 5
     if notecnt > 0:
@@ -1131,7 +1140,8 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             if firstName:
                 firstName = False
             else:
-                outfile.write("      <td class=\"rowspacer\" colspan=\""+str(ncols)+"\">&nbsp;</td>\n")
+                outfile.write("      <td class=\"rowspacer\" colspan=\"" +
+                              str(ncols) + "\">&nbsp;</td>\n")
                 outfile.write("    </tr>\n")
                 outfile.write("    <tr>\n")
 
@@ -1139,17 +1149,21 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
                 outfile.write("      <td>&nbsp;</td>\n")
             elif IsName: # output citation
                 crossref = refDict[nref]
-                outfile.write("      <td><a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
+                outfile.write("      <td><a href=\"../references/" +
+                              crossref.citeKey() + ".html\">" +
+                              crossref.citation() + "</a></td>\n")
             else: # output species name
-                outfile.write("      <td><a href=\"../names/"+nameToFileName(nref)+".html\">"+formatNameString(nref)+"</a></td>\n")
+                outfile.write("      <td><a href=\"../names/" +
+                              nameToFileName(nref) + ".html\">" +
+                              formatNameString(nref) + "</a></td>\n")
 
             # common names
             if comcnt > 0:
                 if n.common() == ".":
                     outfile.write("      <td>&nbsp;</td>\n")
                 else:
-                    outfile.write("      <td>"+n.common()+"</td>\n")
-            outfile.write("      <td>"+n.where()+"</td>\n")
+                    outfile.write("      <td>" + n.common() + "</td>\n")
+            outfile.write("      <td>" + n.where() + "</td>\n")
             uniqueList = uniqueList - {nref}
         else:
             outfile.write("      <td>&nbsp;</td>\n")
@@ -1158,7 +1172,7 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             outfile.write("      <td>&nbsp;</td>\n")
         # applies to...
         if n.context() == "location":
-            outfile.write("      <td>location: "+n.application()+"</td>\n")
+            outfile.write("      <td>location: " + n.application() + "</td>\n")
         elif n.context() == "citation":
             if (n.application() in refDict):
                 crossref = refDict[n.application()]
@@ -1169,12 +1183,13 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
                     else:
                         if "." in nstr:
                             try:
-                                extraref = " ["+nameTable[n.application()][nstr][1]+"]"
+                                extraref = " [" + nameTable[n.application()][nstr][1] + "]"
                                 refname = nameTable[n.application()][nstr][0]
                             except:
                                 if IsName: # only print errors on one pass
-                                    #print('Error in citation:',n.citeKey(),'cites',nstr,'in',n.application())
-                                    reportError(logfile, "Error in citation: " + n.citeKey() + " cites" + nstr + " in " + n.application())
+                                    reportError(logfile, "Error in citation: " +
+                                                n.citeKey() + " cites" + nstr +
+                                                " in " + n.application())
                                 extraref = ""
                                 refname = ""
                         else:
@@ -1185,17 +1200,20 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
                 else:
                     outfile.write("      <td>citation: <a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
             else:
-                outfile.write("      <td>citation: "+n.application()+"</td>\n")
+                outfile.write("      <td>citation: " + n.application() +
+                              "</td>\n")
                 if IsName: # only print on one pass
-                    #print("Citation not in DB:",n.citeKey(),'cites',n.application())
-                    reportError(logfile, "Citation not in DB: " + n.citeKey() + " cites " + n.application())
+                    reportError(logfile, "Citation not in DB: " +
+                                n.citeKey() + " cites " + n.application())
         elif n.context() == "specimen":
             if n.application() == "?":
                 outfile.write("      <td>specimen: unknown locality</td>\n")
             else:
-                outfile.write("      <td>specimen: "+n.application()+"</td>\n")
+                outfile.write("      <td>specimen: " + n.application() +
+                              "</td>\n")
         elif n.context() == "unpublished":
-            outfile.write("      <td>unpublished name <em class=\"species\">"+n.application()+"</em></td>\n")
+            outfile.write("      <td>unpublished name <em class=\"species\">" +
+                          n.application() + "</em></td>\n")
         else: # "n/a"
             outfile.write("      <td>&nbsp;</td>\n")
 
@@ -1207,9 +1225,12 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
         elif n.actual() == "n/a":
             outfile.write("      <td>&nbsp;</td>\n")                    
         elif n.actual()[0] == ">":
-            outfile.write("      <td><em class=\"species\">"+n.actual()[1:]+"</em></td>\n")
+            outfile.write("      <td><em class=\"species\">" + n.actual()[1:] +
+                          "</em></td>\n")
         else:
-            outfile.write("      <td><a href=\"../u_"+n.actual()+".html\"><em class=\"species\">Uca "+n.actual()+"</em></a></td>\n")
+            outfile.write("      <td><a href=\"../u_" + n.actual() +
+                          ".html\"><em class=\"species\">Uca " + n.actual() +
+                          "</em></a></td>\n")
 
         # source of accepted species
         if n.source() == ".": # currently not listed
@@ -1221,34 +1242,38 @@ def outputNameTable(IsName,outfile,itemList,uniqueList,notecnt,comcnt,refDict,na
             outfile.write("      <td style=\"text-align: center\"><img src=\"../images/gears.png\" alt=\"Computed\" title=\"Computed\" /></td>\n")                                
         elif n.source() in refDict: # another reference
             crossref = refDict[n.source()]
-            outfile.write("      <td><a href=\"../references/"+crossref.citeKey()+".html\">"+crossref.citation()+"</a></td>\n")
+            outfile.write("      <td><a href=\"../references/" +
+                          crossref.citeKey() + ".html\">" +
+                          crossref.citation() + "</a></td>\n")
         else: # should start with a >
-            outfile.write("      <td>"+n.source()[1:]+"</td>\n")                                
+            outfile.write("      <td>" + n.source()[1:] + "</td>\n")                                
 
         # notes
         if notecnt > 0:
             if n.nameNote() == ".":
                 outfile.write("      <td>&nbsp;</td>\n")
             else:
-                outfile.write("      <td>"+n.nameNote()+"</td>\n")                 
+                outfile.write("      <td>" + n.nameNote() + "</td>\n")                 
         outfile.write("    </tr>\n")
     outfile.write("    </table>\n")
     
 
-def referencePages(refList,refDict,citeList,logfile):
+def referencePages(refList, refDict, citeList, logfile):
     createBlankIndex("references/index.html")
     nameTable = createNameTable(citeList)
     updateCiteList(citeList)
     for ref in refList:
         if ref.citeKey() != "<pending>":
-            outfile = codecs.open("references/"+ref.citeKey()+".html", "w", "utf-8")
-            commonHTMLHeader(outfile,ref.citation(),"../")
+            outfile = codecs.open("references/" + ref.citeKey() + ".html",
+                                  "w", "utf-8")
+            commonHTMLHeader(outfile, ref.citation(), "../")
             outfile.write("    <header>\n")
-            outfile.write("      <h1>"+ref.citation()+"</h1>\n")
-            outfile.write("      <h2>"+ref.formattedHTML()+"</h2>\n")
+            outfile.write("      <h1>" + ref.citation() + "</h1>\n")
+            outfile.write("      <h2>" + ref.formattedHTML() + "</h2>\n")
             outfile.write("      <nav>\n")
             outfile.write("        <ul>\n")
-            outfile.write("          <li><a href=\"../"+refURL+"\">Full Reference List</a></li>\n")
+            outfile.write("          <li><a href=\"../" + refURL +
+                          "\">Full Reference List</a></li>\n")
             outfile.write("        </ul>\n")
             outfile.write("      </nav>\n")
             outfile.write("    </header>\n")
@@ -1270,7 +1295,7 @@ def referencePages(refList,refDict,citeList,logfile):
                     if not startedNote:
                         outfile.write("    <p>\n")
                         startedNote = True
-                    outfile.write("      "+n.generalNote()+"\n")
+                    outfile.write("      " + n.generalNote() + "\n")
                 if n.common() != ".":
                     comcnt += 1
                 if n.nameNote() != ".":
@@ -1295,8 +1320,9 @@ def referencePages(refList,refDict,citeList,logfile):
                 if notecnt > 0:
                     outfile.write("        <th>Note(s)</th>\n")
                 outfile.write("      </tr>\n")
-
-                outputNameTable(False,outfile,names,uniquenames,notecnt,comcnt,refDict,nameTable, logfile)
+                names.sort()
+                outputNameTable(False, outfile, names, uniquenames, notecnt,
+                                comcnt, refDict, nameTable, logfile)
             else:
                 outfile.write("    Data not yet available.\n")
 
@@ -1307,14 +1333,15 @@ def referencePages(refList,refDict,citeList,logfile):
                 for c in citesTo:
                     if c.citeKey() in refDict:
                         crossref = refDict[c.citeKey()]
-                        cs = cs | {"<a href=\""+crossref.citeKey()+".html\">"+crossref.citation()+"</a>"}
+                        cs = cs | {"<a href=\"" + crossref.citeKey() +
+                                   ".html\">" + crossref.citation() + "</a>"}
                     else:
                         cs = cs | {c.citeKey()}
                 cl = []
                 for x in cs:
                     cl.append(x)
                 cl.sort()
-                outfile.write("     "+", ".join(cl)+"\n")                
+                outfile.write("     " + ", ".join(cl) + "\n")                
                 outfile.write("    </p>\n")
             else:
                 outfile.write("    <p>\n")
@@ -1326,7 +1353,7 @@ def referencePages(refList,refDict,citeList,logfile):
 
 def cleanName(x):
     """ function to clean up names so that variation such as punctuation does not prevent a match """
-    x = x.replace(", var."," var.")
+    x = x.replace(", var.", " var.")
     if "{" in x:
         x = x[:x.find("{")-1]
     return x
