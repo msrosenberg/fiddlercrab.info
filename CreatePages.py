@@ -298,59 +298,59 @@ class SpeciesClass():
         self.__gbifid = ""
     def species(self):
         return self.__species
-    def setSpecies(self,x):
+    def setSpecies(self, x):
         self.__species = x
     def subgenus(self):
         return self.__subgenus
-    def setSubgenus(self,x):
+    def setSubgenus(self, x):
         self.__subgenus = x
     def typeSpecies(self):
         return self.__typeSpecies
-    def setTypeSpecies(self,x):
+    def setTypeSpecies(self, x):
         self.__typeSpecies = x
     def typeRef(self):
         return self.__typeRef
-    def setTypeRef(self,x):
+    def setTypeRef(self, x):
         self.__typeRef = x
     def common(self):
         return self.__common
-    def setCommon(self,x):
+    def setCommon(self, x):
         self.__common = x
     def commonext(self):
         return self.__commonext
-    def setCommonext(self,x):
+    def setCommonext(self, x):
         self.__commonext = x
     def range(self):
         return self.__range
-    def setRange(self,x):
+    def setRange(self, x):
         self.__range = x
     def rangeRefs(self):
         return self.__rangeRefs
-    def setRangeRefs(self,x):
+    def setRangeRefs(self, x):
         self.__rangeRefs = x
     def region(self):
         return self.__region
-    def setRegion(self,x):
+    def setRegion(self, x):
         self.__region = x
     def status(self):
         return self.__status
-    def setStatus(self,x):
+    def setStatus(self, x):
         self.__status = x
     def taxonid(self):
         return self.__taxonid
-    def setTaxonid(self,x):
+    def setTaxonid(self, x):
         self.__taxonid = x
     def EOLid(self):
         return self.__EOLid
-    def setEOLid(self,x):
+    def setEOLid(self, x):
         self.__EOLid = x
     def iNatid(self):
         return self.__iNatid
-    def setiNatid(self,x):
+    def setiNatid(self, x):
         self.__iNatid = x
     def gbifid(self):
         return self.__gbifid
-    def setgbifid(self,x):
+    def setgbifid(self, x):
         self.__gbifid = x
 
 
@@ -1073,15 +1073,17 @@ def formatNameString(x):
 
 def nameToFileName(x):
     """ Convert a full species name into a valid file name """
-    x = x.replace(" ","_")
-    x = x.replace("(","")
-    x = x.replace(")","")
-    x = x.replace(",","")
-    x = x.replace(".","")
-    x = x.replace("æ","_ae_")
-    x = x.replace("ö","_o_")
-    x = x.replace("œ","_oe_")
-    x = x.replace("ç","_c_")
+    x = x.replace(" ", "_")
+    x = x.replace("(", "")
+    x = x.replace(")", "")
+    x = x.replace(",", "")
+    x = x.replace(".", "")
+    x = x.replace("æ", "_ae_")
+    x = x.replace("ö", "_o_")
+    x = x.replace("œ", "_oe_")
+    x = x.replace("ç", "_c_")
+    x = x.replace("[", "_")
+    x = x.replace("]", "_")
     return x
 
 
@@ -1089,7 +1091,7 @@ def cleanSpecificName(x):
     """ function to extract the specific names from binomials """
     # this is a list of terms that are not actual species names
     # or specific names that have never been part of a fiddler genus
-    skipList = ["sp.",
+    skipList = ("sp.",
                 "spp.",
                 "var.",
                 "a",
@@ -1106,7 +1108,7 @@ def cleanSpecificName(x):
                 "arenarius",
                 "raninus",
                 "serratus",
-                "spec."]
+                "spec.")
 
     if not " " in x:
         return ""
@@ -1352,23 +1354,26 @@ def referencePages(refList, refDict, citeList, logfile):
 
 
 def cleanName(x):
-    """ function to clean up names so that variation such as punctuation does not prevent a match """
+    """ function to clean up names so that variation such as punctuation
+        does not prevent a match """
     x = x.replace(", var.", " var.")
     if "{" in x:
         x = x[:x.find("{")-1]
     return x
 
 
-def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName,logfile):
+def createBinomialNamePage(name, namefile, refDict, citeList, nameTable,
+                           specName, logfile):
     """ create a page listing all citations using a specific binomial """
-    outfile = codecs.open("names/"+namefile+".html", "w", "utf-8")
-    commonHTMLHeader(outfile,name,"../")
+    outfile = codecs.open("names/" + namefile + ".html", "w", "utf-8")
+    commonHTMLHeader(outfile, name, "../")
     outfile.write("    <header>\n")
-    outfile.write("      <h1>"+formatNameString(name)+"</h1>\n")
+    outfile.write("      <h1>" + formatNameString(name) + "</h1>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
     if specName != "":
-        outfile.write("          <li><a href=\"sn_"+specName+".html\">"+formatNameString(specName)+"</a></li>\n")
+        outfile.write("          <li><a href=\"sn_" + specName + ".html\">" +
+                      formatNameString(specName) + "</a></li>\n")
     outfile.write("          <li><a href=\"index.html\">Full Name Index</a></li>\n")
     outfile.write("        </ul>\n")
     outfile.write("      </nav>\n")
@@ -1405,19 +1410,20 @@ def createBinomialNamePage(name,namefile,refDict,citeList,nameTable,specName,log
     if notecnt > 0:
         outfile.write("        <th>Note(s)</th>\n")
     outfile.write("      </tr>\n")
-    outputNameTable(True,outfile,cites,uniquecites,notecnt,comcnt,refDict,nameTable, logfile)
+    outputNameTable(True, outfile, cites, uniquecites, notecnt, comcnt,
+                    refDict, nameTable, logfile)
     outfile.write("    <p>\n")
     outfile.write("    </p>\n")
     commonHTMLFooter(outfile)
     outfile.close()
 
 
-def createSpecificNamePage(name,binomialNames,refDict, logfile):
+def createSpecificNamePage(name, binomialNames, refDict, logfile):
     """ create a page with the history of a specific name """
-    outfile = codecs.open("names/sn_"+name.name()+".html", "w", "utf-8")
-    commonHTMLHeader(outfile,name.name(),"../")
+    outfile = codecs.open("names/sn_" + name.name() + ".html", "w", "utf-8")
+    commonHTMLHeader(outfile, name.name(), "../")
     outfile.write("    <header>\n")
-    outfile.write("      <h1>"+formatNameString(name.name())+"</h1>\n")
+    outfile.write("      <h1>"+ formatNameString(name.name()) + "</h1>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
     outfile.write("          <li><a href=\"index.html\">Full Name Index</a></li>\n")
@@ -1436,11 +1442,15 @@ def createSpecificNamePage(name,binomialNames,refDict, logfile):
         if name.synonym() == "?":
             outfile.write("          <dd>Unknown</dd>\n")
         elif name.synonym().startswith(">"):
-            outfile.write("          <dd><em class=\"species\">"+name.synonym()[1:]+"</em></dd>\n")
+            outfile.write("          <dd><em class=\"species\">" +
+                          name.synonym()[1:] + "</em></dd>\n")
         else:
-            outfile.write("          <dd>"+createSpeciesLink(name.synonym(),"","../")+"</dd>\n")
+            outfile.write("          <dd>" +
+                          createSpeciesLink(name.synonym(), "", "../") +
+                          "</dd>\n")
     outfile.write("        <dt>Original Usage</dt>\n")
-    outfile.write("          <dd>"+formatNameString(name.originalBinomial())+"</dd>\n")
+    outfile.write("          <dd>" +
+                  formatNameString(name.originalBinomial()) + "</dd>\n")
     outfile.write("        <dt>Original Source with Priority</dt>\n")
     if name.prioritySource() != ".":
         try:
@@ -1451,12 +1461,12 @@ def createSpecificNamePage(name,binomialNames,refDict, logfile):
             reportError(logfile, name.prioritySource())
     else:
         refname = "unknown"
-    outfile.write("          <dd>"+refname+"</dd>\n")
+    outfile.write("          <dd>" + refname + "</dd>\n")
     outfile.write("        <dt>Derivation</dt>\n")
     if name.meaning() == ".":
         outfile.write("          <dd>unknown</dd>\n")
     else:
-        outfile.write("          <dd>"+name.meaning()+"</dd>\n")
+        outfile.write("          <dd>" + name.meaning() + "</dd>\n")
     outfile.write("      <dl>\n")
     outfile.write("    </section>\n")
     outfile.write("\n")
@@ -1464,7 +1474,7 @@ def createSpecificNamePage(name,binomialNames,refDict, logfile):
         outfile.write("    <section class=\"spsection\">\n")
         outfile.write("      <h3>Notes/Comments</h3>\n")
         outfile.write("      <p>\n")
-        outfile.write("        "+name.notes()+"\n")
+        outfile.write("        " + name.notes() + "\n")
         outfile.write("      </p>\n")
         outfile.write("    </section>\n")
     outfile.write("    <section class=\"spsection\">\n")
@@ -1475,7 +1485,8 @@ def createSpecificNamePage(name,binomialNames,refDict, logfile):
         tmpnamelist = name.variations().split(";")
         if (x != "") and (x in tmpnamelist):
             namefile = nameToFileName(n)
-            outfile.write("      <li><a href=\""+namefile+".html\">"+formatNameString(n)+"</a></li>\n")
+            outfile.write("      <li><a href=\"" + namefile + ".html\">" +
+                          formatNameString(n) + "</a></li>\n")
     outfile.write("      </ul>\n")
     outfile.write("    </section>\n")
     
@@ -1483,8 +1494,9 @@ def createSpecificNamePage(name,binomialNames,refDict, logfile):
     outfile.close()
 
 
-def matchSpecificName(name,specificNames):
-    """ match the specific name from a binomial to the list of accepted specific names """
+def matchSpecificName(name, specificNames):
+    """ match the specific name from a binomial to the list of accepted
+        specific names """
     c = cleanSpecificName(name)
     if c == "":
         return c
@@ -1497,9 +1509,9 @@ def matchSpecificName(name,specificNames):
         return y
 
 
-def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
-    outfile = codecs.open("names/"+namesumURL, "w", "utf-8")
-    commonHeaderPart1(outfile,"Fiddler Crab Name Summary","../")
+def createNameSummary(binomialYearCnts, specificYearCnts, speciesRefs):
+    outfile = codecs.open("names/" + namesumURL, "w", "utf-8")
+    commonHeaderPart1(outfile, "Fiddler Crab Name Summary", "../")
     outfile.write("    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n")
     outfile.write("    <script type=\"text/javascript\">\n")
     outfile.write("      google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});\n")
@@ -1514,12 +1526,12 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
             maxY = y
     bYears = []
     c = 0
-    for y in range(minY,maxY+1):
+    for y in range(minY, maxY+1):
         if y in binomialYearCnts:
             c = c + binomialYearCnts[y]
-            bYears.append([y,binomialYearCnts[y],c])
+            bYears.append([y, binomialYearCnts[y], c])
         else:
-            bYears.append([y,0,c])
+            bYears.append([y, 0, c])
 
     minY = 2014
     maxY = 0
@@ -1530,35 +1542,35 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
             maxY = y
     sYears = []
     c = 0
-    for y in range(minY,maxY+1):
+    for y in range(minY, maxY+1):
         if y in specificYearCnts:
             c = c + specificYearCnts[y]
-            sYears.append([y,specificYearCnts[y],c])
+            sYears.append([y, specificYearCnts[y], c])
         else:
-            sYears.append([y,0,c])
+            sYears.append([y, 0, c])
             
     outfile.write("        var data1 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'Cumulative Unique Binomial/Compound Names'],\n")
     for y in bYears:
-        outfile.write("          ['"+str(y[0])+"', "+str(y[2])+"],\n")
+        outfile.write("          ['" + str(y[0]) + "', " + str(y[2]) + "],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
     outfile.write("        var data2 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'New Unique Binomial/Compound Names'],\n")
     for y in bYears:
-        outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
+        outfile.write("          ['" + str(y[0]) + "', " + str(y[1]) + "],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
     outfile.write("        var data3 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'Cumulative Unique Specific Names'],\n")
     for y in sYears:
-        outfile.write("          ['"+str(y[0])+"', "+str(y[2])+"],\n")
+        outfile.write("          ['" + str(y[0]) + "', " + str(y[2]) + "],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
     outfile.write("        var data4 = google.visualization.arrayToDataTable([\n")
     outfile.write("          ['Year', 'New Unique Specific Names'],\n")
     for y in sYears:
-        outfile.write("          ['"+str(y[0])+"', "+str(y[1])+"],\n")
+        outfile.write("          ['" + str(y[0]) + "', " + str(y[1]) + "],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
     outfile.write("        var data5 = google.visualization.arrayToDataTable([\n")
@@ -1566,7 +1578,8 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     tmpSlist = list(speciesRefs.keys())
     tmpSlist.sort()
     for s in tmpSlist:
-        outfile.write("          ['"+s+"', "+str(len(speciesRefs[s]))+"],\n")
+        outfile.write("          ['" + s + "', " + str(len(speciesRefs[s])) +
+                      "],\n")
     outfile.write("        ]);\n")
     outfile.write("\n")
     outfile.write("        var options1 = {\n")
@@ -1609,20 +1622,23 @@ def createNameSummary(binomialYearCnts,specificYearCnts,speciesRefs):
     outfile.write("        chart5.draw(data5, options5);\n")
     outfile.write("      }\n")
     outfile.write("    </script>\n")
-    commonHeaderPart2(outfile,"",False)
+    commonHeaderPart2(outfile, "", False)
     outfile.write("    <header>\n")
     outfile.write("      <h1>Summary of Names</h1>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
     outfile.write("          <li><a href=\".\">Name Index</a></li>\n")
-    outfile.write("          <li><a href=\"../"+speciesURL+"\">Accepted Species</a></li>\n")
+    outfile.write("          <li><a href=\"../" + speciesURL +
+                  "\">Accepted Species</a></li>\n")
     outfile.write("        </ul>\n")
     outfile.write("      </nav>\n")
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <p>\n")
     outfile.write("      A summary of the names in the database (last updated {}).\n".format(datetime.date.isoformat(datetime.date.today())))
-    outfile.write("      Most of these data are only based on <a href=\"../"+refsumURL+"\">references whose citation data is already included in the database</a>.\n")
+    outfile.write("      Most of these data are only based on <a href=\"../" +
+                  refsumURL +
+                  "\">references whose citation data is already included in the database</a>.\n")
     #outfile.write("      "+str(citeCount)+" of "+str(nrefs)+" references  have had citation data recorded.\n")
     outfile.write("    </p>\n")    
     outfile.write("    <div id=\"namechart1_div\"></div>\n")
@@ -1667,8 +1683,10 @@ def indexNamePages(refDict, citeList, specificNames, speciesRefs, logfile):
     outfile.write("      <h1>Name Index</h1>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
-    outfile.write("          <li><a href=\""+namesumURL+"\">Name Summary</a></li>\n")
-    outfile.write("          <li><a href=\"../"+speciesURL+"\">Accepted Species</a></li>\n")
+    outfile.write("          <li><a href=\"" + namesumURL +
+                  "\">Name Summary</a></li>\n")
+    outfile.write("          <li><a href=\"../" + speciesURL +
+                  "\">Accepted Species</a></li>\n")
     outfile.write("        </ul>\n")
     outfile.write("      </nav>\n")    
     outfile.write("    </header>\n")
@@ -1693,7 +1711,8 @@ def indexNamePages(refDict, citeList, specificNames, speciesRefs, logfile):
     for name in uniqueNames:
         sName = matchSpecificName(name, specificNames)
         namefile = nameToFileName(name)
-        outfile.write("        <li><a href=\""+namefile+".html\">"+formatNameString(name)+"</a></li>\n")
+        outfile.write("        <li><a href=\"" + namefile + ".html\">" +
+                      formatNameString(name) + "</a></li>\n")
         createBinomialNamePage(name, namefile, refDict, citeList, nameTable,
                                sName, logfile)
     outfile.write("      </ul>\n")
@@ -1704,7 +1723,8 @@ def indexNamePages(refDict, citeList, specificNames, speciesRefs, logfile):
     outfile.write("\n")
     specificYearCnts = {}
     for name in specificNames:
-        outfile.write("        <li><a href=\"sn_"+name.name()+".html\">"+formatNameString(name.name())+"</a></li>\n")
+        outfile.write("        <li><a href=\"sn_" + name.name() + ".html\">" +
+                      formatNameString(name.name()) + "</a></li>\n")
         createSpecificNamePage(name, uniqueNames, refDict, logfile)
         tmpKey = name.prioritySource()
         if tmpKey != ".":
@@ -1778,12 +1798,14 @@ def createMapHTML(species):
     for r in regions:
         outfile.write("\n")  
         outfile.write("    <section class=\"spsection\">\n")
-        outfile.write("      <h2>"+r+"</h2>\n")
+        outfile.write("      <h2>" + r + "</h2>\n")
         outfile.write("      <ul id=\"splist\">\n")
         for s in species:
             if s.region() == r:
                 if s.status() != "fossil":
-                    outfile.write("        <li>"+createSpeciesLink(s.species(),"","")+"</li>\n")                
+                    outfile.write("        <li>" +
+                                  createSpeciesLink(s.species(), "", "") +
+                                  "</li>\n")                
         outfile.write("      </ul>\n")
         outfile.write("    </section>\n")
     commonHTMLFooter(outfile)
@@ -1793,7 +1815,7 @@ def createMapHTML(species):
 def createCommonNamesHTML(refDict):
     """ output common names to HTML """
     outfile = codecs.open(commonURL, "w", "utf-8")
-    commonHTMLHeader(outfile,"Common Names of Fiddler Crabs","")
+    commonHTMLHeader(outfile, "Common Names of Fiddler Crabs", "")
     outfile.write("    <header>\n")
     outfile.write("      <h1>Common Names of Fiddler Crabs</h1>\n")
     outfile.write("    </header>\n")
@@ -2075,7 +2097,7 @@ def createCommonNamesHTML(refDict):
     outfile.close()
 
 
-def connectRefsToSpecies(species,citeList):
+def connectRefsToSpecies(species, citeList):
     """ create list of references for each species """
     # create dictionary with empty reference lists
     speciesRefs = {}
@@ -2105,51 +2127,60 @@ def writeSpeciesList(speciesList):
         if s.status() == "fossil":
             nf += 1
     tstr = "      The following lists all {} of the currently recognized species of fiddler crab, as well as {} fossil species (marked with"+fossilImage+").\n"
-    outfile.write(tstr.format(len(speciesList)-nf,nf))
+    outfile.write(tstr.format(len(speciesList)-nf, nf))
     outfile.write("      See the <a href=\"/names\">complete name index</a> for alternate species names and spellings.\n")
     outfile.write("    </p>")  
     outfile.write("\n")  
     outfile.write("    <ul id=\"splist\">\n")
     for species in speciesList:
-        outfile.write("      <li>"+createSpeciesLink(species.species(),species.status(),"")+"</li>\n")
+        outfile.write("      <li>" +
+                      createSpeciesLink(species.species(), species.status(), "")
+                      + "</li>\n")
     outfile.write("    </ul>\n")
     commonHTMLFooter(outfile)
     outfile.close()
 
 
-def writeSpeciesPhotoPage(fname,species,commonName,caption,pn,pspecies):
+def writeSpeciesPhotoPage(fname, species, commonName, caption, pn, pspecies):
     """ create page for a specific photo """
-    outfile = open(fname,"w")
+    outfile = open(fname, "w")
     if ";" in pspecies:
-        spname = pspecies.replace(";","_")
-        ptitle = "Uca " + pspecies.replace(";"," & Uca ")
+        spname = pspecies.replace(";", "_")
+        ptitle = "Uca " + pspecies.replace(";", " & Uca ")
         isMulti = True
     else:
         spname = species
         ptitle = "Uca " + species
         isMulti = False
-    commonHTMLHeader(outfile,ptitle+" Photo","../")
+    commonHTMLHeader(outfile, ptitle+" Photo", "../")
     outfile.write("    <header>\n")
-    outfile.write("      <h1><em class=\"species\">"+ptitle+"</em> Photo</h1>\n")
+    outfile.write("      <h1><em class=\"species\">" + ptitle +
+                  "</em> Photo</h1>\n")
     if not isMulti:
         if commonName != "#":
-            outfile.write("      <h2>"+commonName+"</h2>\n")
+            outfile.write("      <h2>" + commonName + "</h2>\n")
     outfile.write("      <nav>\n")
     outfile.write("        <ul>\n")
     if isMulti:
         spList = pspecies.split(";")
         for s in spList:
-            outfile.write("          <li><a href=\"../u_"+s+".html\"><em class=\"species\">Uca "+s+"</em> page</a></li>\n")
+            outfile.write("          <li><a href=\"../u_" + s +
+                          ".html\"><em class=\"species\">Uca " + s +
+                          "</em> page</a></li>\n")
     else:
-        outfile.write("          <li><a href=\"../u_"+species+".html\">Species page</a></li>\n")
-    outfile.write("          <li><a href=\"../"+photoURL+"\">All species photos</a></li>\n")
+        outfile.write("          <li><a href=\"../u_" + species +
+                      ".html\">Species page</a></li>\n")
+    outfile.write("          <li><a href=\"../" + photoURL +
+                  "\">All species photos</a></li>\n")
     outfile.write("        </ul>\n")
     outfile.write("      </nav>\n")
     outfile.write("    </header>\n")
     outfile.write("\n")
     outfile.write("    <figure class=\"fullpic\">\n")
-    outfile.write("      <picture><img src=\"U_"+spname+format(pn,"0>2")+".jpg\" alt=\"Uca "+species+"\" title=\"Uca "+species+"\" /></picture>\n")
-    outfile.write("      <figcaption>"+caption+"</figcaption>\n")
+    outfile.write("      <picture><img src=\"U_" + spname + format(pn, "0>2") +
+                  ".jpg\" alt=\"Uca " + species + "\" title=\"Uca " + species +
+                  "\" /></picture>\n")
+    outfile.write("      <figcaption>" + caption + "</figcaption>\n")
     outfile.write("    </figure>\n")
     commonHTMLFooter(outfile)            
     outfile.close()
