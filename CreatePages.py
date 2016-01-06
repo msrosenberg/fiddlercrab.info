@@ -754,7 +754,7 @@ def commonHTMLFooter(outfile):
     outfile.write("       <figure id=\"footmap\"><script type=\"text/javascript\" src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>\n")
     outfile.write("       <p id=\"citation\"><a href=\""+citeURL+"\">How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact <a href=\"mailto:msr@asu.edu\">Dr. Michael S. Rosenberg</a></p>\n")
-    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2015 All Rights Reserved</p>\n")
+    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2016 All Rights Reserved</p>\n")
     outfile.write("    </footer>\n")
     outfile.write("  </body>\n")
     outfile.write("</html>\n")
@@ -3581,4 +3581,5 @@ def main():
         createCitationPage(refDict)    
     print("done")
 
-main()
+if __name__ == "__main__":
+    main()
