@@ -1,7 +1,7 @@
 species	subgenus	type	typeref	common	common(s)	range	rangecites	region	status	NCBITaxonID	EOLID	iNaturalist	GBIF
 acuta	Tubuca	Gelasimus acutus	Stimpson1858	Acute Fiddler Crab	Acute Fiddler Crab	China (Hong Kong to Fuzhou)	Crane1975;Bairagi1988;Jones1994	Indo-West Pacific	extant	.	3118991	67466	4382548
 albimana	Austruca	Gelasimus annulipes var. albimana	Kossmann1877	White-handed Fiddler Crab	White-handed Fiddler Crab	"Red Sea, Gulf of Aden, Socotra, Arabian Sea, Oman (Dhofar), south Gulf of Oman, southeastern Persian Gulf, SW part of Persian Gulf, W part of Gulf of Oman"	Shih2009;Naderloo2010;Naderloo2012	Indo-West Pacific	extant	578098	2981565	84897	4382531
-annulipes	Austruca	Gelasimus annulipes	MilneEdwards1837.2	Ring-legged Fiddler Crab	Ring-legged Fiddler Crab	"Madagascar, South Africa to Somalia, India to southern China, Philippines, Indonesia, Malaysia"	Shih2009;Naderloo2010;Naderloo2012	Indo-West Pacific	extant	196277	2981567	67501	4382553
+annulipes	Austruca	Gelasimus annulipes	MilneEdwards1837.2	Ring-legged Fiddler Crab	Ring-legged Fiddler Crab	"India to southern China, Philippines, Indonesia, Malaysia"	Naderloo2016	Indo-West Pacific	extant	196277	2981567	67501	4382553
 antiqua	Uca	Uca maracoani antiqua	Brito1972	#	#	Northern Brazil	Brito1972	Miocene	fossil	.	42294056	.	.
 arcuata	Tubuca	Gelasimus arcuatus	deHaan1835	Bowed Fiddler Crab	Bowed Fiddler Crab	"China, Taiwan, Korea, Japan"	Crane1975;Fukui1989;Huang1989;Dai1991;Hosoya1993;Jones1994	Indo-West Pacific	extant	626341	4268359	67509	5863496
 argillicola	Leptuca	Uca argillicola	Crane1941	Clay Fiddler Crab	Clay Fiddler Crab	Costa Rica (Gulf of Dulce) to Colombia (Buenaventura)	Crane1975;vonPrahl1982	Eastern Pacific	extant	659858	3118970	67553	4382558
@@ -58,10 +58,11 @@ marguerita	Minuca	Uca marguerita	Thurman1981.1	Olmec Fiddler Crab	Olmec Fiddler 
 marinae	Uca	Uca marinae	DominguezAlonso2008	#	#	"Cedeno, Gulf of Fonseca, Honduras"	DominguezAlonso2008	Plio-Pleistocene	fossil	.	42294061	.	.
 minax	Minuca	Gelasimus minax	LeConte1855	Red-jointed Fiddler Crab	"Red-jointed Fiddler Crab, Brackish Water Fiddler Crab"	"USA (Massachusetts to Northeast Florida, Northwest Florida to Louisiana, a few scattered locations in Texas)"	Hopkins2010.2	Western Atlantic	extant	504420	344116	53742	2221536
 miocenica	Afruca	Uca miocenica	Artal2008	#	#	Spain	Artal2008	Miocene	fossil	.	.	.	.
-mjoebergi	Austruca	Uca mjöbergi	Rathbun1924.1	Mjöberg's Fiddler Crab	Mjöberg's Fiddler Crab	"Australia (Northwest Territory to Western Australia), scattered records on New Guinea and central Indonesia"	Shih2009;Naderloo2010;Barnes2010	Indo-West Pacific	extant	555858	12020264	84900	4646675
+mjoebergi	Austruca	Uca mjöbergi	Rathbun1924.1	Mjöberg's Fiddler Crab	Mjöberg's Fiddler Crab; Banana Fiddler Crab	"Australia (Northwest Territory to Western Australia), scattered records on New Guinea and central Indonesia"	Shih2009;Naderloo2010;Barnes2010	Indo-West Pacific	extant	555858	12020264	84900	4646675
 monilifera	Uca	Uca monilifera	Rathbun1915	Necklaced Fiddler Crab	Necklaced Fiddler Crab	Northern Gulf of California	Crane1975;Brusca1980;Mangum1996.1	Eastern Pacific	extant	.	3119009	67461	4382567
 mordax	Minuca	Gelasimus mordax	Smith1870.2	Biting Fiddler Crab	Biting Fiddler Crab	Belize to Brazil	Thurman2013.1	Western Atlantic	extant	1239960	3118978	67496	4382509
 musica	Leptuca	Uca musica	Rathbun1915	Musical Fiddler Crab	Musical Fiddler Crab	"Gulf of California, Mexico (Nayarit to Baja California)"	Crane1975;Brusca1980;Hendrickx1984;Campos1989	Eastern Pacific	extant	.	3118955	67464	4382489
+occidentalis	Austruca	Uca occidentalis	Naderloo2016	East African Fiddler Crab	East African Fiddler Crab	East coast of Africa; Madagascar	Naderloo2016	Indo-West Pacific	extant	.	.	.	.
 oerstedi	Leptuca	Uca oerstedi	Rathbun1904.1	Aqua Fiddler Crab	"Aqua Fiddler Crab, Œrsted's Fiddler Crab"	El Salvador to Panama	Crane1975;Abele1989	Eastern Pacific	extant	.	3118956	67548	4382582
 oldroydi	Uca	Uca oldroydi	Rathbun1926.1	#	#	"USA (California: Deadman Island, near San Pedro, Los Angeles County)"	Rathbun1926.1	Pliocene	fossil	.	42294063	.	.
 ornata	Uca	Gelasimus ornatus	Smith1870.2	Ornate Fiddler Crab	Ornate Fiddler Crab	El Salvador to Northern Peru	Crane1975	Eastern Pacific	extant	.	3119010	67545	4382549
