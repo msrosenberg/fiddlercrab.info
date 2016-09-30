@@ -3476,20 +3476,27 @@ def create_index(species):
 
 def main():
     with open("errorlog.txt", "w") as logfile:
+        print("...Reading References...")
         references, refdict, citelist, yeardict, citecount = get_references(logfile)
         yeardat, yeardat1900 = summarize_year(yeardict)
         languages = summarize_languages(references)
+        print("...Reading Species...")
         species = get_species()
+        print("...Conneting References...")
         species_refs = connect_refs_to_species(species, citelist)
+        print("...Writing References...")
         references_to_html(references, logfile)
         reference_summary(len(references), yeardat, yeardat1900, citecount, languages)
         reference_pages(references, refdict, citelist, logfile)
+        print("...Reading Species Names...")
         specific_names = get_specific_names()
         all_names = index_name_pages(refdict, citelist, specific_names, species_refs, logfile)
         specific_name_pages(citelist, specific_names, logfile)
+        print("...Reading Photos and Videos...")
         photos = get_photos()
         videos = get_videos()
         art = get_art()
+        print("...Writing Species...")
         species_to_html(species, references, specific_names, all_names, photos, videos, art, species_refs, refdict,
                         logfile)
         subgenera = get_subgenera()
