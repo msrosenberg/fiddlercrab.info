@@ -20,7 +20,7 @@ Lawson1709	1	.	Fiddler; Fidlars	"text p. 121, 162"	location	Atlantic coast of Un
 Lawson1714	1	.	Fiddler; Fidlars	"text p. 121, 162"	location	Atlantic coast of United States	.	?	.	"Likely refers to both <em class=""species"">Uca pugilator</em> and <em class=""species"">Uca pugnax</em>."	"This book has been reprinted many times, with different typesetting and, therefore, different page numbering. The basic text is essentially identical in all editions, however."	
 Sloane1725	1.1	Cancer palustris	Maracoani	text p. 269-270: 2	location	Jamaica	.	major	>MSR:synonymy/geography	.	The Latin means &ldquo;marsh crab.&rdquo;	
 Sloane1725	1.2	Cancer palustris	Maracoani	text p. 269-270: 2	citation	Marcgrave1648	1	=	=	.	.	
-Catesby1743	1	Cancer arenarius	Sand Crab	text p. 35; figure 35	citation	Atlantic coast of United States	.	>Ocypode quadrata	>MSR	.	.	
+Catesby1743	1	Cancer arenarius	Sand Crab	text p. 35; figure 35	location	Atlantic coast of United States	.	>Ocypode quadrata	>MSR	.	.	
 Brown1756	1	Cancer major albidus	Mangrove Crab	text p. 422: #15	location	Jamaica	.	.	.	.	.	
 Linnaeus1758	1.1	Cancer vocans	.	text p. 626: #6	citation	Rumphius1705	1	=	=	.	.	
 Linnaeus1758	1.2	Cancer vocans	.	text p. 626: #6	citation	Catesby1743	1	=	=	.	.	
@@ -4792,6 +4792,8 @@ Balss1935	1.2	Uca dussumieri	.	text p. 141	citation	Alcock1900	12	=	=	.	.
 Balss1935	1.3	Uca dussumieri	.	text p. 141	citation	Grant1906	1	=	=	.	.	
 Balss1935	1.4	Uca dussumieri	.	text p. 141	citation	Rathbun1924.1	2	=	=	.	.	
 Balss1935	1.5	Uca dussumieri	.	text p. 141	location	Houtman Abrolhos	.	dussumieri	<	.	.	
+Kamita1935	1	Uca lactea	.	"text p. 61, 64, 69"	location	Western Korea	.	lactea	<	.	.	
+Kamita1935	2	Uca arcuata	.	"text p. 61, 64, 69"	location	Western Korea	.	arcuata	<	.	.	
 Pearse1936	1	Uca manni	hermit crab	text p. 353	location	Ganges Delta	.	rosea	Crane1975	.	.	
 Nobre1936	1.01	Gelasimus Tangeri	.	text p. 58-60; figure 41	location	Portugal	.	tangeri	<	.	.	
 Nobre1936	1.02	Gelasimus Tangeri	.	text p. 58-60; figure 41	citation	Eydoux1835	1	=	=	.	.	
@@ -10037,7 +10039,7 @@ Crane1975	12.14	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 
 Crane1975	12.15	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Shen1932	.	=	=	.	.	
 Crane1975	12.16	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Sakai1934	.	=	=	.	.	
 Crane1975	12.17	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Takahasi1935	1	=	=	.	.	
-Crane1975	12.18	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Kamita1935	.	=	=	.	.	
+Crane1975	12.18	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Kamita1935	2	=	=	.	.	
 Crane1975	12.19	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Serene1937	.	=	=	.	.	
 Crane1975	12.2	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Shen1937.1	1	=	=	.	.	
 Crane1975	12.21	Uca (Deltuca) [coarctata] arcuata	.	"text p. 21, 24-27, 30, 36, 44-47, 49-50, 53, 58, 84, 176, 334-335, 376, 405, 429, 433, 437, 442, 446, 452, 474, 500, 513, 542; figures 8C, 9C, 61J, 98; map 19; plate 5A-F"	citation	Shen1937.2	.	=	=	.	.	
@@ -11242,7 +11244,7 @@ Crane1975	95.124	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99
 Crane1975	95.125	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Kellogg1928	3	=	=	does not specify subspecies	.	
 Crane1975	95.126	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Gordon1931	3	=	=	does not specify subspecies	.	
 Crane1975	95.127	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Sakai1934	.	=	=	does not specify subspecies	.	
-Crane1975	95.128	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Kamita1935	.	=	=	does not specify subspecies	.	
+Crane1975	95.128	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Kamita1935	1	=	=	does not specify subspecies	.	
 Crane1975	95.129	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Takahasi1935	4	=	=	does not specify subspecies	.	
 Crane1975	95.13	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Sakai1936	.	=	=	does not specify subspecies	.	
 Crane1975	95.131	Uca (Celuca) lactea lactea	.	"text p. 27, 60, 64-65, 85, 88, 99, 105-106, 121, 211-212, 214, 216, 218-219, 278, 284, 286-289, 292-303, 322-324, 340, 371, 383, 408, 431-433, 436-437, 444, 451, 456, 462, 465, 467, 474, 483, 487, 489-491, 494, 497, 500-501, 503, 514-516, 518, 523, 533, 577; figures 19A, 54J,JJ, 69E, 101; map 21; plate 40A-B,E-F"	citation	Miyake1936	3	=	=	does not specify subspecies	.	
@@ -14590,7 +14592,7 @@ Naderloo2010	6.18	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31;
 Naderloo2010	6.19	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Sakai1934	.	=	=	.	.	
 Naderloo2010	6.2	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Sakai1936	.	=	=	.	.	
 Naderloo2010	6.21	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Sakai1939	.	=	=	.	.	
-Naderloo2010	6.22	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Kamita1935	.	=	=	.	.	
+Naderloo2010	6.22	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Kamita1935	1	=	=	.	.	
 Naderloo2010	6.23	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Miyake1936	3	=	=	.	.	
 Naderloo2010	6.24	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Miyake1939	.	=	=	.	.	
 Naderloo2010	6.25	Uca (Austruca) lactea	.	"text p. 1-3, 10, 19-22, 25-26, 29-31; figures 10-11, 14a, 15a, 18a-b"	citation	Ono1965	1	=	=	.	.	
