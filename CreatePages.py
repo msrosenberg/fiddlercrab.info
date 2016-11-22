@@ -20,7 +20,8 @@ artCraftURL = "uca_art_crafts.html"
 morphURL = "uca_morphology.html"
 citeURL = "citation.html"
 namesumURL = "name_graphs.html"
-fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" title=\" (fossil)\" />"
+# fossilImage = "<img class=\"fossilImg\" src=\"images/fossil.png\" alt=\" (fossil)\" title=\" (fossil)\" />"
+fossilImage = " <span class=\"fossil-img\">&#9760;</span>"
 
 randSeed = random.randint(0, 10000)
 
@@ -866,23 +867,34 @@ def common_header_part1(outfile, title, indexpath):
     outfile.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n")
     outfile.write("    <title>" + title + "</title>\n")
     outfile.write("    <meta name=\"description\" content=\"Fiddler Crabs\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"128x128\" href=\"favicon128.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"96x96\" href=\"favicon96.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"72x72\" href=\"favicon72.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"48x48\" href=\"favicon48.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"32x32\" href=\"favicon32.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"24x24\" href=\"favicon24.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"icon\" sizes=\"16x16\" href=\"favicon16.png\" type=\"image/png\" />\n")
-    outfile.write("    <link rel=\"apple-touch-icon-precomposed\" href=\"apple-touch-icon-precomposed.png\">\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"128x128\" href=\"" + indexpath +
+                  "favicon128.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"96x96\" href=\"" + indexpath +
+                  "favicon96.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"72x72\" href=\"" + indexpath +
+                  "favicon72.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"48x48\" href=\"" + indexpath +
+                  "favicon48.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"32x32\" href=\"" + indexpath +
+                  "favicon32.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"24x24\" href=\"" + indexpath +
+                  "favicon24.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"icon\" sizes=\"16x16\" href=\"" + indexpath +
+                  "favicon16.png\" type=\"image/png\" />\n")
+    outfile.write("    <link rel=\"apple-touch-icon-precomposed\" href=\"" + indexpath +
+                  "apple-touch-icon-precomposed.png\">\n")
     outfile.write("    <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" "
-                  "href=\"apple-touch-icon-72x72-precomposed.png\">\n")
+                  "href=\"" + indexpath + "apple-touch-icon-72x72-precomposed.png\">\n")
     outfile.write("    <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" "
-                  "href=\"apple-touch-icon-114x114-precomposed.png\">\n")
+                  "href=\"" + indexpath + "apple-touch-icon-114x114-precomposed.png\">\n")
     outfile.write("    <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" "
-                  "href=\"apple-touch-icon-144x144-precomposed.png\">\n")
+                  "href=\"" + indexpath + "apple-touch-icon-144x144-precomposed.png\">\n")
     outfile.write("    <link rel=\"stylesheet\" href=\"http://fonts.googleapis.com/css?family=Merienda+One|"
                   "Lora:400,700,400italic,700italic\" />\n")
     outfile.write("    <link rel=\"stylesheet\" href=\"" + indexpath + "uca_style.css\" />\n")
+    # outfile.write("    <script src=\"https://use.fontawesome.com/3669ad7c2b.js\"></script>\n")
+    outfile.write("    <link rel=\"stylesheet\" href=\"" + indexpath +
+                  "images/font-awesome/css/font-awesome.min.css\">\n")
     outfile.write("    <link rel=\"author\" href=\"mailto:msr@asu.edu\" />\n")
 
 
@@ -946,9 +958,11 @@ def common_html_footer(outfile):
     outfile.write("       <figure id=\"footmap\"><script type=\"text/javascript\" "
                   "src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0',"
                   "'150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>\n")
-    outfile.write("       <p id=\"citation\"><a href=\"" + citeURL + "\">How to cite this site</a></p>\n")
+    outfile.write("       <p id=\"citation\"><a href=\"" + citeURL +
+                  "\"><span class=\"fa fa-pencil\"></span> How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact "
-                  "<a href=\"mailto:msr@asu.edu\">Dr. Michael S. Rosenberg</a></p>\n")
+                  "<a href=\"mailto:msr@asu.edu\"><span class=\"fa fa-envelope-o\"></span> "
+                  "Dr. Michael S. Rosenberg</a></p>\n")
     outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2016 All Rights Reserved</p>\n")
     outfile.write("    </footer>\n")
     outfile.write("  </body>\n")
@@ -1096,7 +1110,8 @@ def reference_summary(nrefs, year_data, year_data_1900, cite_count, languages):
         outfile.write("      <h1>Summary of References</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\"" + refURL + "\">Full Reference List</a></li>\n")
+        outfile.write("          <li><a href=\"" + refURL +
+                      "\"><span class=\"fa fa-list\"></span> Full Reference List</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -1125,7 +1140,8 @@ def references_to_html(reflist, logfile):
         outfile.write("      <h1>Publications</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\"" + refsumURL + "\">Reference/Citation Summary</a></li>\n")
+        outfile.write("          <li><a href=\"" + refsumURL +
+                      "\"><span class=\"fa fa-line-chart\"></span> Reference/Citation Summary</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
 
@@ -1246,7 +1262,7 @@ def create_species_link(species, status, path):
         sc = fossilImage
     else:
         sc = ""
-    return "<a href=\"" + path + "u_" + species + ".html\"><em class=\"species\">Uca " + species + sc + "</em></a>"
+    return "<a href=\"" + path + "u_" + species + ".html\"><em class=\"species\">Uca " + species + "</em></a>" + sc
 
 
 def format_name_string(x):
@@ -1446,8 +1462,9 @@ def outputn_name_table(is_name, outfile, itemlist, uniquelist, notecnt, comcnt, 
             outfile.write("      <td>Original</td>\n")                                
         elif n.source == "=":  # automatically computer
             # outfile.write("      <td>Computed</td>\n")
-            outfile.write("      <td style=\"text-align: center\"><img src=\"../images/gears.png\" alt=\"Computed\" "
-                          "title=\"Computed\" /></td>\n")
+            # outfile.write("      <td style=\"text-align: center\"><img src=\"../images/gears.png\" alt=\"Computed\" "
+            #               "title=\"Computed\" /></td>\n")
+            outfile.write("      <td><span class=\"fa fa-gears\"></span> Computed</td>\n")
         elif n.source in refdict:  # another reference
             crossref = refdict[n.source]
             outfile.write("      <td><a href=\"../references/" +
@@ -1479,7 +1496,8 @@ def reference_pages(reflist, refdict, citelist, logfile):
                 outfile.write("      <h2>" + ref.formatted_html + "</h2>\n")
                 outfile.write("      <nav>\n")
                 outfile.write("        <ul>\n")
-                outfile.write("          <li><a href=\"../" + refURL + "\">Full Reference List</a></li>\n")
+                outfile.write("          <li><a href=\"../" + refURL +
+                              "\"><span class=\"fa fa-list\"></span> Full Reference List</a></li>\n")
                 outfile.write("        </ul>\n")
                 outfile.write("      </nav>\n")
                 outfile.write("    </header>\n")
@@ -1571,9 +1589,11 @@ def create_binomial_name_page(name, namefile, refdict, citelist, name_table, spe
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
         if species_name != "":
-            outfile.write("          <li><a href=\"sn_" + species_name + ".html\">" +
-                          format_name_string(species_name) + "</a></li>\n")
-        outfile.write("          <li><a href=\"index.html\">Full Name Index</a></li>\n")
+            outfile.write("          <li><a href=\"sn_" + species_name +
+                          ".html\"><span class=\"fa fa-window-minimize\"></span> " + format_name_string(species_name) +
+                          "</a></li>\n")
+        outfile.write("          <li><a href=\"index.html\"><span class=\"fa fa-list\"></span> "
+                      "Full Name Index</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -1623,7 +1643,8 @@ def create_specific_name_page(name, binomial_names, refdict, logfile):
         outfile.write("      <h1>" + format_name_string(name.name) + "</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\"index.html\">Full Name Index</a></li>\n")
+        outfile.write("          <li><a href=\"index.html\"><span class=\"fa fa-list\"></span> "
+                      "Full Name Index</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -1828,9 +1849,9 @@ def create_name_summary(binomial_year_cnts, specific_year_cnts, species_refs):
         outfile.write("      <h1>Summary of Names</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\".\">Name Index</a></li>\n")
+        outfile.write("          <li><a href=\".\"><span class=\"fa fa-list\"></span> Name Index</a></li>\n")
         outfile.write("          <li><a href=\"../" + speciesURL +
-                      "\">Accepted Species</a></li>\n")
+                      "\"><span class=\"fa fa-check-circle\"></span> Accepted Species</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -1883,8 +1904,10 @@ def index_name_pages(refdict, citelist, specific_names, species_refs, logfile):
         outfile.write("      <h1>Name Index</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\"" + namesumURL + "\">Name Summary</a></li>\n")
-        outfile.write("          <li><a href=\"../" + speciesURL + "\">Accepted Species</a></li>\n")
+        outfile.write("          <li><a href=\"" + namesumURL +
+                      "\"><span class=\"fa fa-line-chart\"></span> Name Summary</a></li>\n")
+        outfile.write("          <li><a href=\"../" + speciesURL +
+                      "\"><span class=\"fa fa-check-circle\"></span> Accepted Species</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -2205,13 +2228,16 @@ def write_species_page(species, references, specific_names, all_names, photos, v
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
         outfile.write("          <li><a href=\"#type\">Type</a></li>\n")
-        outfile.write("          <li><a href=\"#info\">Information</a></li>\n")
-        outfile.write("          <li><a href=\"#pics\">Photos</a></li>\n")
+        outfile.write("          <li><a href=\"#info\"><span class=\"fa fa-info-circle\"></span> "
+                      "Information</a></li>\n")
+        outfile.write("          <li><a href=\"#pics\"><span class=\"fa fa-camera\"></span> Photos</a></li>\n")
         if not is_fossil:
-            outfile.write("          <li><a href=\"#video\">Video</a></li>\n")
-            outfile.write("          <li><a href=\"#art\">Art</a></li>\n")
-        outfile.write("          <li><a href=\"#refs\">References</a></li>\n")
-        outfile.write("          <li><a href=\"uca_species.html\">Species List</a></li>\n")
+            outfile.write("          <li><a href=\"#video\"><span class=\"fa fa-video-camera\"></span> "
+                          "Video</a></li>\n")
+            outfile.write("          <li><a href=\"#art\"><span class=\"fa fa-paint-brush\"></span> Art</a></li>\n")
+        outfile.write("          <li><a href=\"#refs\"><span class=\"fa fa-book\"></span> References</a></li>\n")
+        outfile.write("          <li><a href=\"uca_species.html\"><span class=\"fa fa-list\"></span> "
+                      "Species List</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -2226,7 +2252,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
         outfile.write("    </section>\n")
         outfile.write("\n")
         outfile.write("    <section class=\"spsection\">\n")
-        outfile.write("      <h2><a name=\"info\">Information</a></h2>\n")
+        outfile.write("      <h2><a name=\"info\"><span class=\"fa fa-info-circle\"></span> Information</a></h2>\n")
         outfile.write("      <dl>\n")
         outfile.write("       <dt>Subgenus</dt>\n")
         outfile.write("         <dd><a href=\"" + systURL + "#" + species.subgenus + "\"><em class=\"species\">" +
@@ -2295,7 +2321,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
         outfile.write("    </section>\n")
         outfile.write("\n")
         outfile.write("    <section class=\"spsection\">\n")
-        outfile.write("      <h2><a name=\"pics\">Photos</a></h2>\n")
+        outfile.write("      <h2><a name=\"pics\"><span class=\"fa fa-camera\"></span> Photos</a></h2>\n")
         photo_n = 0
         for photo in photos:
             slist = photo.species.split(";")
@@ -2324,7 +2350,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
         outfile.write("\n")
         if not is_fossil:
             outfile.write("    <section class=\"spsection\">\n")
-            outfile.write("      <h2><a name=\"video\">Video</a></h2>\n")
+            outfile.write("      <h2><a name=\"video\"><span class=\"fa fa-video-camera\"></span> Video</a></h2>\n")
             videon = 0
             for video in videos:
                 slist = video.species.split(";")
@@ -2353,7 +2379,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
             outfile.write("\n")
 
             outfile.write("    <section class=\"spsection\">\n")
-            outfile.write("      <h2><a name=\"art\">Art</a></h2>\n")
+            outfile.write("      <h2><a name=\"art\"><span class=\"fa fa-paint-brush\"></span> Art</a></h2>\n")
             artn = 0
             for art in artlist:
                 slist = art.species.split(";")
@@ -2375,7 +2401,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
             outfile.write("\n")
 
         outfile.write("    <section class=\"spsection\">\n")
-        outfile.write("      <h2><a name=\"refs\">References</a></h2>\n")
+        outfile.write("      <h2><a name=\"refs\"><span class=\"fa fa-book\"></span> References</a></h2>\n")
         outfile.write("      <div id=\"citation\">\n")
         outfile.write("        <ul>\n")
         # for i, ref in enumerate(references):
@@ -3241,7 +3267,7 @@ def create_morphology_page(morph, morphlist):
             outfile.write("          <li><a href=\"" + find_morphology_parent(morph.parent, morphlist) + ".html\">" +
                           morph.parent + "</a></li>\n")
         outfile.write("          <li><a href=\"../" + morphURL + "\">General Morphology</a></li>\n")
-        outfile.write("          <li><a href=\".\">Morphology Index</a></li>\n")
+        outfile.write("          <li><a href=\".\"><span class=\"fa fa-list\"></span> Morphology Index</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -3327,7 +3353,8 @@ def create_morphology_pages(morphology):
         outfile.write("      <h1>Morphology</h1>\n")
         outfile.write("      <nav>\n")
         outfile.write("        <ul>\n")
-        outfile.write("          <li><a href=\"morphology/index.html\">Index</a></li>\n")
+        outfile.write("          <li><a href=\"morphology/index.html\"><span class=\"fa fa-list\"></span> "
+                      "Index</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -3389,11 +3416,13 @@ def create_citation_page(refdict):
         outfile.write("        <li><a href=\"references/Rosenberg2014.html\">" + ref.formatted_html + "</a></li>\n")
         outfile.write("      </ul>\n")
         outfile.write("    </div>\n")
-        outfile.write("    <ul>\n")
-        outfile.write("      <li><a href=\"http://dx.plos.org/10.1371/journal.pone.0101704\">Read paper online at "
+        outfile.write("    <ul class=\"fa-ul\">\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-file-pdf-o\"></span>"
+                      "<a href=\"http://dx.plos.org/10.1371/journal.pone.0101704\">Read paper online at "
                       "PLoS ONE</a></li>\n")
-        outfile.write("      <li><a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data repository "
-                      "on Github</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-github\"></span>"
+                      "<a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data repository on "
+                      "Github</a></li>\n")
         outfile.write("    </ul>\n")
         common_html_footer(outfile)
 
@@ -3439,25 +3468,34 @@ def create_index(species):
                       "resembles the motion of a someone moving a bow across a fiddle (the large claw).\n")
         outfile.write("    </p>\n")
         outfile.write("    <h2>Information</h2>\n")
-        outfile.write("    <ul>\n")
-        outfile.write("      <li><a href=\"" + systURL + "\">Systematics</a></li>\n")
-        outfile.write("      <li><a href=\"" + treeURL + "\">Phylogeny</a></li>\n")
-        outfile.write("      <li><a href=\"" + speciesURL + "\">Species</a>\n")
+        outfile.write("    <ul class=\"fa-ul\">\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-signal fa-rotate-270\"></span><a href=\"" + systURL +
+                      "\">Systematics</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-share-alt fa-rotate-270\"></span><a href=\"" + treeURL +
+                      "\">Phylogeny</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-list\"></span><a href=\"" + speciesURL + "\">Species</a>\n")
         outfile.write("        <ul>\n")
         outfile.write("           <li><a href=\"names\">Name Index</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </li>\n")
-        outfile.write("      <li><a href=\"" + commonURL + "\">Common Names</a></li>\n")
-        outfile.write("      <li><a href=\"" + mapURL + "\">Geographic Ranges</a></li>\n")
-        outfile.write("      <li><a href=\"" + lifeCycleURL + "\">Life Cycle</a></li>\n")
-        outfile.write("      <li><a href=\"" + morphURL + "\">Morphology</a></li>\n")
-        outfile.write("      <li><a href=\"" + refURL + "\">Comprehensive Reference List</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-comments-o\"></span><a href=\"" + commonURL +
+                      "\">Common Names</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-map-o\"></span><a href=\"" + mapURL +
+                      "\">Geographic Ranges</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-refresh\"></span><a href=\"" + lifeCycleURL +
+                      "\">Life Cycle</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-heart-o\"></span><a href=\"" + morphURL +
+                      "\">Morphology</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-book\"></span><a href=\"" + refURL +
+                      "\">Comprehensive Reference List</a></li>\n")
         outfile.write("    </ul>\n")
         outfile.write("    <h2>Multimedia</h2>\n")
-        outfile.write("    <ul>\n")
-        outfile.write("      <li><a href=\"" + photoURL + "\">Photos</a></li>\n")
-        outfile.write("      <li><a href=\"" + videoURL + "\">Videos</a></li>\n")
-        outfile.write("      <li>Art\n")
+        outfile.write("    <ul class=\"fa-ul\">\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-camera\"></span><a href=\"" + photoURL +
+                      "\">Photos</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-video-camera\"></span><a href=\"" + videoURL +
+                      "\">Videos</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-paint-brush\"></span>Art\n")
         outfile.write("        <ul>\n")
         outfile.write("          <li><a href=\"" + artSciURL + "\">Scientific Art</a></li>\n")
         outfile.write("          <li><a href=\"" + artStampURL + "\">Postage Stamps</a></li>\n")
@@ -3466,10 +3504,11 @@ def create_index(species):
         outfile.write("      </li>\n")
         outfile.write("    </ul>\n")
         outfile.write("    <h2>Miscellania</h2>\n")
-        outfile.write("    <ul>\n")
-        outfile.write("      <li><a href=\"" + citeURL + "\">Citation info for this website</a></li>\n")
-        outfile.write("      <li><a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data on "
-                      "Github</a></li>\n")
+        outfile.write("    <ul class=\"fa-ul\">\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-pencil\"></span>"
+                      "<a href=\"" + citeURL + "\">Citation info for this website</a></li>\n")
+        outfile.write("      <li><span class=\"fa-li fa fa-github\"></span>"
+                      "<a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data on Github</a></li>\n")
         outfile.write("    </ul>\n")
         common_html_footer(outfile)
 
