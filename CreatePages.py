@@ -2131,11 +2131,14 @@ def write_species_photo_page(fname, species, common_name, caption, pn, pspecies)
         if is_multi:
             splist = pspecies.split(";")
             for s in splist:
-                outfile.write("          <li><a href=\"../u_" + s + ".html\"><em class=\"species\">Uca " + s +
+                outfile.write("          <li><a href=\"../u_" + s +
+                              ".html\"><span class=\"fa fa-info-circle\"></span> <em class=\"species\">Uca " + s +
                               "</em> page</a></li>\n")
         else:
-            outfile.write("          <li><a href=\"../u_" + species + ".html\">Species page</a></li>\n")
-        outfile.write("          <li><a href=\"../" + photoURL + "\">All species photos</a></li>\n")
+            outfile.write("          <li><a href=\"../u_" + species +
+                          ".html\"><span class=\"fa fa-info-circle\"></span> Species page</a></li>\n")
+        outfile.write("          <li><a href=\"../" + photoURL +
+                      "\"><span class=\"fa fa-camera\"></span> All species photos</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
@@ -2169,11 +2172,14 @@ def write_species_video_page(fname, species, common_name, video, vn):
         if is_multi:
             splist = video.species.split(";")
             for s in splist:
-                outfile.write("          <li><a href=\"../u_" + s + ".html\"><em class=\"species\">Uca " + s +
+                outfile.write("          <li><a href=\"../u_" + s +
+                              ".html\"><span class=\"fa fa-info-circle\"></span> <em class=\"species\">Uca " + s +
                               "</em> page</a></li>\n")
         else:
-            outfile.write("          <li><a href=\"../u_" + species + ".html\">Species page</a></li>\n")
-        outfile.write("          <li><a href=\"../" + videoURL + "\">All species videos</a></li>\n")
+            outfile.write("          <li><a href=\"../u_" + species +
+                          ".html\"><span class=\"fa fa-info-circle\"></span> Species page</a></li>\n")
+        outfile.write("          <li><a href=\"../" + videoURL +
+                      "\"><span class=\"fa fa-video-camera\"></span> All species videos</a></li>\n")
         outfile.write("        </ul>\n")
         outfile.write("      </nav>\n")
         outfile.write("    </header>\n")
