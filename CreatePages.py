@@ -952,13 +952,13 @@ def common_html_header(outfile, title, indexpath):
     common_header_part2(outfile, indexpath, False)
 
 
-def common_html_footer(outfile):
+def common_html_footer(outfile, indexpath):
     outfile.write("\n")
     outfile.write("    <footer>\n")
     outfile.write("       <figure id=\"footmap\"><script type=\"text/javascript\" "
                   "src=\"http://jf.revolvermaps.com/p.js\"></script><script type=\"text/javascript\">rm2d_ki101('0',"
                   "'150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>\n")
-    outfile.write("       <p id=\"citation\"><a href=\"" + citeURL +
+    outfile.write("       <p id=\"citation\"><a href=\"" + indexpath + citeURL +
                   "\"><span class=\"fa fa-pencil\"></span> How to cite this site</a></p>\n")
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact "
                   "<a href=\"mailto:msr@asu.edu\"><span class=\"fa fa-envelope-o\"></span> "
@@ -1130,7 +1130,7 @@ def reference_summary(nrefs, year_data, year_data_1900, cite_count, languages):
         # outfile.write("    <div id=\"chart3_div\"></div>\n")
         outfile.write("    <div id=\"chart5_div\"></div>\n")
         outfile.write("    <div id=\"chart_div\"></div>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
     
 def references_to_html(reflist, logfile):
@@ -1179,7 +1179,7 @@ def references_to_html(reflist, logfile):
         outfile.write("        </ul>\n")
         outfile.write("      </div>\n")
         outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_name_table(citelist):
@@ -1569,7 +1569,7 @@ def reference_pages(reflist, refdict, citelist, logfile):
                     outfile.write("    <p>\n")
                 outfile.write("    </p>\n")
 
-                common_html_footer(outfile)
+                common_html_footer(outfile, "../")
 
 
 def clean_name(x):
@@ -1632,7 +1632,7 @@ def create_binomial_name_page(name, namefile, refdict, citelist, name_table, spe
         outputn_name_table(True, outfile, cites, uniquecites, notecnt, comcnt, refdict, name_table, logfile)
         outfile.write("    <p>\n")
         outfile.write("    </p>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def create_specific_name_page(name, binomial_names, refdict, logfile):
@@ -1709,7 +1709,7 @@ def create_specific_name_page(name, binomial_names, refdict, logfile):
         outfile.write("      </ul>\n")
         outfile.write("    </section>\n")
 
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def match_specific_name(name, specific_names):
@@ -1868,7 +1868,7 @@ def create_name_summary(binomial_year_cnts, specific_year_cnts, species_refs):
         outfile.write("    <div id=\"namechart3_div\"></div>\n")
         outfile.write("    <div id=\"namechart4_div\"></div>\n")
         outfile.write("    <div id=\"namechart5_div\"></div>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def index_name_pages(refdict, citelist, specific_names, species_refs, logfile):
@@ -1961,7 +1961,7 @@ def index_name_pages(refdict, citelist, specific_names, species_refs, logfile):
                         specific_year_cnts[y] = 1
         outfile.write("      </ul>\n")
         outfile.write("    </div>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
     create_name_summary(binomial_year_cnts, specific_year_cnts, species_refs)
     return unique_names
 
@@ -2022,7 +2022,7 @@ def create_map_html(species):
                                       "</li>\n")
             outfile.write("      </ul>\n")
             outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_common_names_html():
@@ -2063,7 +2063,7 @@ def create_common_names_html():
                     outfile.write("          </blockquote>\n")
         outfile.write("        </dd>\n")
         outfile.write("    </dl>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def connect_refs_to_species(species, citelist):
@@ -2106,7 +2106,7 @@ def write_species_list(specieslist):
         for species in specieslist:
             outfile.write("      <li>" + create_species_link(species.species, species.status, "") + "</li>\n")
         outfile.write("    </ul>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def write_species_photo_page(fname, species, common_name, caption, pn, pspecies):
@@ -2145,7 +2145,7 @@ def write_species_photo_page(fname, species, common_name, caption, pn, pspecies)
                       "\" title=\"Uca " + species + "\" /></picture>\n")
         outfile.write("      <figcaption>" + caption + "</figcaption>\n")
         outfile.write("    </figure>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def write_species_video_page(fname, species, common_name, video, vn):
@@ -2199,7 +2199,7 @@ def write_species_video_page(fname, species, common_name, video, vn):
             outfile.write("      <dt>Notes</dt>\n")
             outfile.write("        <dd>" + video.notes + "</dd>\n")
         outfile.write("    </dl>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def write_species_page(species, references, specific_names, all_names, photos, videos, artlist, sprefs, refdict,
@@ -2411,7 +2411,7 @@ def write_species_page(species, references, specific_names, all_names, photos, v
         outfile.write("        </ul>\n")
         outfile.write("      </div>\n")
         outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_photos_html(specieslist, photos):
@@ -2457,7 +2457,7 @@ def create_photos_html(specieslist, photos):
                 outfile.write("        <em>No pictures available at this time.</em>\n")
                 outfile.write("      </p>\n")
             outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_videos_html(videos):
@@ -2507,7 +2507,7 @@ def create_videos_html(videos):
                                   "</dd>\n")
             outfile.write("      </dl>\n")
             outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def write_science_art_page(fname, art, backurl, backtext):
@@ -2534,7 +2534,7 @@ def write_science_art_page(fname, art, backurl, backtext):
                       "\" title=\"" + ptitle + "\" /></picture>\n")
         outfile.write("      <figcaption>" + art.notes + "</figcaption>\n")
         outfile.write("    </figure>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def create_art_science_html(artlist):
@@ -2576,7 +2576,7 @@ def create_art_science_html(artlist):
                                       "\" /></picture></a>\n")
                         outfile.write("      </figure>\n")
                         write_science_art_page(pfname, art, artSciURL, "All Scientific Drawings")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_art_stamps_html(artlist):
@@ -2617,7 +2617,7 @@ def create_art_stamps_html(artlist):
                                       "\" /></picture></a>\n")
                         outfile.write("      </figure>\n")
                         write_science_art_page(pfname, art, artStampURL, "All Stamps")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
     
 def create_art_crafts_html(artlist):
@@ -2662,7 +2662,7 @@ def create_art_crafts_html(artlist):
                                       art.title + "\" /></picture></a>\n")
                         outfile.write("      </figure>\n")
                         write_science_art_page(pfname, art, artCraftURL, "All Crafts")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_art_html(artlist):
@@ -3045,7 +3045,7 @@ def create_systematics_html(subgenlist, specieslist):
                       "I follow this practice throughout this website.\n")
         outfile.write("      </p>\n")
         outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def summarize_year(yeardict):
@@ -3195,7 +3195,7 @@ def create_life_cycle():
         outfile.write("        <figcaption>Adult Male</figcaption>")
         outfile.write("      </figure>\n")
         outfile.write("    </section>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_phylogeny():
@@ -3232,7 +3232,7 @@ def create_phylogeny():
                       "type=\"image/svg+xml\"></object>\n")
         outfile.write("    </section>\n")
         outfile.write("\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def morphology_link(parent, character):
@@ -3302,7 +3302,7 @@ def create_morphology_page(morph, morphlist):
             outfile.write("      <figcaption>" + clist[i] + "</figcaption>\n")
             outfile.write("    </figure>\n")
 
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def create_morphology_index(morphlist):
@@ -3342,7 +3342,7 @@ def create_morphology_index(morphlist):
             outfile.write("      <li><a href=\"" + morphology_link(m.parent, m.character) + ".html\">" +
                           m.character + p + "</a></li>\n")
         outfile.write("     </ul>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "../")
 
 
 def create_morphology_pages(morphology):
@@ -3395,7 +3395,7 @@ def create_morphology_pages(morphology):
         outfile.write("      <figcaption>Figure modified from Crane (1975).</figcaption>\n")
         outfile.write("    </figure>\n")
 
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_citation_page(refdict):
@@ -3424,7 +3424,7 @@ def create_citation_page(refdict):
                       "<a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data repository on "
                       "Github</a></li>\n")
         outfile.write("    </ul>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def create_index(species):
@@ -3510,7 +3510,7 @@ def create_index(species):
         outfile.write("      <li><span class=\"fa-li fa fa-github\"></span>"
                       "<a href=\"https://github.com/msrosenberg/fiddlercrab.info\">Website data on Github</a></li>\n")
         outfile.write("    </ul>\n")
-        common_html_footer(outfile)
+        common_html_footer(outfile, "")
 
 
 def main():
