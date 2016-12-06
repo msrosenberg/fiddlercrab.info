@@ -1391,14 +1391,15 @@ def outputn_name_table(is_name, outfile, itemlist, uniquelist, notecnt, comcnt, 
             outfile.write("      <td>&nbsp;</td>\n")
         # applies to...
         if n.context == "location":
-            outfile.write("      <td>location: " + n.application + "</td>\n")
+            outfile.write("      <td><span class=\"fa fa-map-marker\"></span> location: " + n.application + "</td>\n")
         elif n.context == "citation":
             if n.application in refdict:
                 crossref = refdict[n.application]
                 if n.application in name_table:
                     nstr = n.cite_n
                     if nstr == "0":
-                        outfile.write("      <td>citation: <a href=\"../references/" + crossref.cite_key +
+                        outfile.write("      <td><span class=\"fa fa-pencil-square-o\"></span> citation: "
+                                      "<a href=\"../references/" + crossref.cite_key +
                                       ".html\">" + crossref.citation + "</a></td>\n")
                     else:
                         if "." in nstr:
@@ -1416,23 +1417,25 @@ def outputn_name_table(is_name, outfile, itemlist, uniquelist, notecnt, comcnt, 
                             extraref = ""                                
                             # print(nstr, n.cite_key, n.application)
                             refname = name_table[n.application][int(nstr)]
-                        outfile.write("      <td>citation: <a href=\"../references/" + crossref.cite_key +
+                        outfile.write("      <td><span class=\"fa fa-pencil-square-o\"></span> citation: "
+                                      "<a href=\"../references/" + crossref.cite_key +
                                       ".html\">" + crossref.citation + "</a> → " + format_name_string(refname) +
                                       extraref + "</td>\n")
                 else:
-                    outfile.write("      <td>citation: <a href=\"../references/" + crossref.cite_key +
+                    outfile.write("      <td><span class=\"fa fa-pencil-square-o\"></span> citation: "
+                                  "<a href=\"../references/" + crossref.cite_key +
                                   ".html\">" + crossref.citation + "</a></td>\n")
             else:
-                outfile.write("      <td>citation: " + n.application +
+                outfile.write("      <td><span class=\"fa fa-pencil-square-o\"></span> citation: " + n.application +
                               "</td>\n")
                 if is_name:  # only print on one pass
                     report_error(logfile, "Citation not in DB: " +
                                  n.cite_key + " cites " + n.application)
         elif n.context == "specimen":
             if n.application == "?":
-                outfile.write("      <td>specimen: unknown locality</td>\n")
+                outfile.write("      <td><span class=\"fa fa-flask\"></span> specimen: unknown locality</td>\n")
             else:
-                outfile.write("      <td>specimen: " + n.application +
+                outfile.write("      <td><span class=\"fa fa-flask\"></span> specimen: " + n.application +
                               "</td>\n")
         elif n.context == "unpublished":
             outfile.write("      <td>unpublished name <em class=\"species\">" +
@@ -1459,7 +1462,8 @@ def outputn_name_table(is_name, outfile, itemlist, uniquelist, notecnt, comcnt, 
         if n.source == ".":  # currently not listed
             outfile.write("      <td>&nbsp;</td>\n")                   
         elif n.source == "<":  # original name retained
-            outfile.write("      <td>Original</td>\n")                                
+            # outfile.write("      <td>Original</td>\n")
+            outfile.write("      <td><span class=\"fa fa-arrow-left\"></span> Original</td>\n")
         elif n.source == "=":  # automatically computer
             # outfile.write("      <td>Computed</td>\n")
             # outfile.write("      <td style=\"text-align: center\"><img src=\"../images/gears.png\" alt=\"Computed\" "
@@ -1471,7 +1475,13 @@ def outputn_name_table(is_name, outfile, itemlist, uniquelist, notecnt, comcnt, 
                           crossref.cite_key + ".html\">" +
                           crossref.citation + "</a></td>\n")
         else:  # should start with a >
-            outfile.write("      <td>" + n.source[1:] + "</td>\n")
+            tmpsource = n.source[1:]
+            tmpsource = tmpsource.replace("MSR:", "")
+            tmpsource = tmpsource.replace("/", "/<br />")
+            tmpsource = tmpsource.replace("geography", "<span class=\"fa fa-map-o\"></span> Geography")
+            tmpsource = tmpsource.replace("synonymy", "<span class=\"fa fa-exchange\"></span> Synonymy")
+            outfile.write("      <td>" + tmpsource + "</td>\n")
+            # outfile.write("      <td>" + n.source[1:] + "</td>\n")
 
         # notes
         if notecnt > 0:
@@ -1538,7 +1548,7 @@ def reference_pages(reflist, refdict, citelist, logfile):
                         outfile.write("        <th>Common Name(s)</th>\n")
                     outfile.write("        <th>Where</th>\n")
                     outfile.write("        <th>Applied to...</th>\n")
-                    outfile.write("        <th>Accepted Species</th>\n")
+                    outfile.write("        <th>Accepted Name</th>\n")
                     outfile.write("        <th>Source of Accepted</th>\n")
                     if notecnt > 0:
                         outfile.write("        <th>Note(s)</th>\n")
@@ -1624,7 +1634,7 @@ def create_binomial_name_page(name, namefile, refdict, citelist, name_table, spe
             outfile.write("        <th>Common Name(s)</th>\n")
         outfile.write("        <th>Where</th>\n")
         outfile.write("        <th>Applied to...</th>\n")
-        outfile.write("        <th>Accepted Species</th>\n")
+        outfile.write("        <th>Accepted Name</th>\n")
         outfile.write("        <th>Source of Accepted</th>\n")
         if notecnt > 0:
             outfile.write("        <th>Note(s)</th>\n")
