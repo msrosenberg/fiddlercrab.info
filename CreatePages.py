@@ -963,7 +963,7 @@ def common_html_footer(outfile, indexpath):
     outfile.write("       <p id=\"contact\">Questions or comments about the site? Contact "
                   "<a href=\"mailto:msr@asu.edu\"><span class=\"fa fa-envelope-o\"></span> "
                   "Dr. Michael S. Rosenberg</a></p>\n")
-    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2016 All Rights Reserved</p>\n")
+    outfile.write("       <p id=\"copyright\">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>\n")
     outfile.write("    </footer>\n")
     outfile.write("  </body>\n")
     outfile.write("</html>\n")
@@ -2854,7 +2854,7 @@ def create_systematics_html(subgenlist, specieslist):
                       "<a href=\"references/Shih2009.html\">Shih <em>et al.</em> (2009), "
                       "<a href=\"references/Spivak2009.html\">Spivak &amp; Cuesta (2009)</a>, "
                       "<a href=\"references/Naderloo2010.html\">Naderloo <em>et al.</em> (2010)</a>, "
-                      "<a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schbart (2010)</a>, and "
+                      "<a href=\"references/Landstorfer2010.html\">Landstorfer &amp; Schubart (2010)</a>, and "
                       "<a href=\"references/Shih2015.2.html\">Shih (2015)</a> have continued to refine the subgenera "
                       "as detailed below.\n")
         outfile.write("      </p>")
@@ -3537,7 +3537,7 @@ def main():
         languages = summarize_languages(references)
         print("...Reading Species...")
         species = get_species()
-        print("...Conneting References...")
+        print("...Connecting References...")
         species_refs = connect_refs_to_species(species, citelist)
         print("...Writing References...")
         references_to_html(references, logfile)
