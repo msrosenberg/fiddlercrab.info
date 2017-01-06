@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca monilifera / Necklaced Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_monilifera.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca monilifera</h1>
+      <h2>Necklaced Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca monilifera</em></dt>
+        <dd>Rathbun, M.J. (1915) New genera and species of American Brachyrhynchous crabs. <em>Proceedings of the United States National Museum</em> 47(2047):117-129.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Necklaced Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Uca_Uca_monilifera.html"><em class="species">Uca (Uca) monilifera</em></a>, <a href="names/Uca_Uca_princeps_monilifera.html"><em class="species">Uca (Uca) princeps monilifera</em></a>, <a href="names/Uca_molinifera.html"><em class="species">Uca molinifera</em></a>, <a href="names/Uca_monilfera.html"><em class="species">Uca monilfera</em></a>, <a href="names/Uca_monilifera.html"><em class="species">Uca monilifera</em></a>, <a href="names/Uca_princeps_monilifera.html"><em class="species">Uca princeps monilifera</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Eastern Pacific: Northern Gulf of California</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Brusca1980.html">Brusca (1980)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Mangum1996.1.html">Mangum & Greaves (1996)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/3119009/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_monilifera">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67461">iNaturalist</a></dd>
+         <dd><a href="http://www.gbif.org/species/4382567">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_monilifera01.html"><picture><img src="photos/U_monilifera01tn.jpg" alt="Uca monilifera" title="Uca monilifera" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_princeps_monilifera1.html"><picture><img src="art/Crane_Uca_princeps_monilifera1_tn.png" alt="Uca princeps monilifera" title="Uca princeps monilifera" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Agassiz_nd.html">Agassiz, L. (?) Museum label.</a></li>
+          <li><a href="references/Barnwell1990.html">Barnwell, F.H., and J.H. Stillman (1990) Differences in daily and tidal rhythms in populations of the fiddler crabs <em>Uca princeps</em> and <em>U. monilifera</em>. <em>American Zoologist</em> 30(4):138A.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
+          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105-123.</a></li>
+          <li><a href="references/Haney2007.html">Haney, B.R., and D.S. Pope (2007) Assessing the potential for sexual conflict in the fiddler crab <em>Uca princeps Integrative and Comparative Biology</em> 47(Supplement):e46.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Mangum1993.2.html">Mangum, C.P. (1993) Structural polymorphisms of fiddler crab hemocyanins. <em>American Zoologist</em> 33(5):64A.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Rathbun1915.html">Rathbun, M.J. (1915) New genera and species of American Brachyrhynchous crabs. <em>Proceedings of the United States National Museum</em> 47(2047):117-129.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1926.1.html">Rathbun, M.J. (1926) The fossil stalk-eyed Crustacea of the Pacific slope of North America. <em>United States National Museum Bulletin</em> 138:1-155.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

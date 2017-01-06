@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca crenulata / Crenulated Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_crenulata.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca crenulata</h1>
+      <h2>Crenulated Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Gelasimus crenulatus</em></dt>
+        <dd>Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145-156.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Crenulated Fiddler Crab, Notched Fiddler Crab, Mexican Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_crenulatus.html"><em class="species">Gelasimus crenulatus</em></a>, <a href="names/Gelasimus_gracilis.html"><em class="species">Gelasimus gracilis</em></a>, <a href="names/Uca_Celuca__crenulata__crenulata_crenulata.html"><em class="species">Uca (Celuca) [crenulata] crenulata crenulata</em></a>, <a href="names/Uca_Leptuca_crenulata.html"><em class="species">Uca (Leptuca) crenulata</em></a>, <a href="names/Uca_Minuca_crenulata.html"><em class="species">Uca (Minuca) crenulata</em></a>, <a href="names/Uca_crenulata.html"><em class="species">Uca crenulata</em></a>, <a href="names/Uca_crenulata_crenulata.html"><em class="species">Uca crenulata crenulata</em></a>, <a href="names/Uca_gracilis.html"><em class="species">Uca gracilis</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Eastern Pacific: USA (rarely as far north as Santa Barbara) to Mexico (Nayarit)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Brusca1980.html">Brusca (1980)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Garth1980.html">Garth & Abbott (1980)</a>; <a href="references/Green1980.html">Green (1980)</a>; <a href="references/Hendrickx1984.html">Hendrickx (1984)</a>; <a href="references/Hubbard1989.html">Hubbard & Dugan (1989)</a>; <a href="references/LeijaTristan1990.html">Leija-Tristán <em>et al.</em> (1990)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/1021897/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_crenulata">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67488">iNaturalist</a></dd>
+         <dd><a href="http://www.gbif.org/species/2221547">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata01.html"><picture><img src="photos/U_crenulata01tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata02.html"><picture><img src="photos/U_crenulata02tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata03.html"><picture><img src="photos/U_crenulata03tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata04.html"><picture><img src="photos/U_crenulata04tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata05.html"><picture><img src="photos/U_crenulata05tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata06.html"><picture><img src="photos/U_crenulata06tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_crenulata07.html"><picture><img src="photos/U_crenulata07tn.jpg" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Holmes_Uca_crenulata1.html"><picture><img src="art/Holmes_Uca_crenulata1_tn.png" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Holmes_Uca_crenulata2.html"><picture><img src="art/Holmes_Uca_crenulata2_tn.png" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_crenulata.html"><picture><img src="art/Crane_Uca_crenulata_tn.png" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Hinton_Uca_crenulata.html"><picture><img src="art/Hinton_Uca_crenulata_tn.png" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_crenulata_crenulata1.html"><picture><img src="art/Crane_Uca_crenulata_crenulata1_tn.png" alt="Uca crenulata crenulata" title="Uca crenulata crenulata" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Allen_Uca_crenulata.html"><picture><img src="art/Allen_Uca_crenulata_tn.png" alt="Uca crenulata" title="Uca crenulata" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Allen1976.html">Allen, R.K. (1976) <em>Common Intertidal Invertebrates of Southern California</em>. Revised Edition. Palo Alto, CA: Peek Publications.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
+          <li><a href="references/Faxon1895.html">Faxon, W. (1895) Reports on an exploration off the west coasts of Mexico, Central and South America, and off the Galapagos Islands, in charge of Alexander Agassiz, by the U.S. Fish Commission steamer “Albatross,” during 1891, Lieut.-Commander Z.L. Tanner, U.S.N. commanding. XV. The stalk-eyed Crustacea. <em>Memoirs of the Museum of Comparative Zoölogy at Harvard College</em> 18:1–292.</a></li>
+          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105-123.</a></li>
+          <li><a href="references/Green1980.html">Green, C.J.R. (1980) Behavioral taxonomy resolves differences between Gulf of California <em>Uca</em> species (Brachyura, Ocypodidae). <em>American Zoologist</em> 20(4):957.</a></li>
+          <li><a href="references/Gross1961.html">Gross, W.J. (1961) Osmotic tolerance and regulation in crabs from a hypersaline lagoon. <em>Biological Bulletin</em> 121(2):290-301.</a></li>
+          <li><a href="references/Gross1964.html">Gross, W.J. (1964) Trends in water and salt regulation among aquatic and amphibious crabs. <em>Biological Bulletin</em> 127(3):447-466.</a></li>
+          <li><a href="references/Headstrom1979.html">Headstrom, R. (1979) <em>Lobsters, Crabs, Shrimps, and Their Relatives</em>. London: A.S. Barnes.</a></li>
+          <li><a href="references/Hinton1969.html">Hinton, S. (1969) <em>Seashore Life of Southern California</em>. Berkeley: University of California Press.</a></li>
+          <li><a href="references/Holmes1900.html">Holmes, S.J. (1900) Synopsis of California stalk-eyes Crustacea. <em>Occasional Papers of the California Academy of Sciences</em> 7:1-262.</a></li>
+          <li><a href="references/Holmes1904.html">Holmes, S.J. (1904) On some new or imperfectly known species of West American Crustacea. <em>Proceedings of the California Academy of Sciences. Third Series. Zoology</em> 3(12):307-331.</a></li>
+          <li><a href="references/Honegger1973.2.html">Honegger, H.-W. (1973) Rhythmic activity responses of the fiddler crab <em>Uca crenulata</em> to artifical tides and artificial light. <em>Marine Biology</em> 21(3):196-202.</a></li>
+          <li><a href="references/Honegger1973.1.html">Honegger, H.-W. (1973) Rhythmic motor activity responses of the California fiddler crab <em>Uca crenulata</em> to artifical light conditions. <em>Marine Biology</em> 18(1):19-31.</a></li>
+          <li><a href="references/Honegger1976.html">Honegger, H.-W. (1976) Locomotor activity in <em>Uca crenulata</em>, and the response to two Zeitgebers, light-dark and tides. Pp. 93-102 in <em>Biological Rhythms in the Marine Environment</em>, P.J. DeCoursey, ed., Volume 4. Columbia, SC: University of South Carolina Press.</a></li>
+          <li><a href="references/Johnson1927.html">Johnson, M.E., and H.J. Snook (1927) <em>Seashore Animals of the Pacific Coast</em>. New York: Macmillan.</a></li>
+          <li><a href="references/Jones1941.html">Jones, L.L. (1941) Osmotic regulation in several crabs of the Pacific coast of North America. <em>Journal of Cellular and Comparative Physiology</em> 18(1):79-92.</a></li>
+          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145-156.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/McFaddon2003.html">McFadden, A., and C.L. Thurman, II (2003) Osmoregulation by fiddler crabs (genus <em>Uca</em>) from California and South Florida. <em>Integrative and Comparative Biology</em> 43(6):1044.</a></li>
+          <li><a href="references/Naiditch2001.html">Naiditch, S.E., J.M. Neuffer, D. Woodward, and S.C. Harris Cotner (2001) Interspecific aggression in fiddler crabs, genus <em>Uca</em>: Part 2: Fight elements. <em>American Zoologist</em> 41(6):1535.</a></li>
+          <li><a href="references/Neuffer2001.html">Neuffer, J.M., S.E. Naiditch, S.C. Harris Cotner, and D. Woodward (2001) Aggression in fiddler crabs, genus <em>Uca</em>: Part 1. <em>American Zoologist</em> 41(6):1538.</a></li>
+          <li><a href="references/Nobili1899.1.html">Nobili, G. (1899) Intorno ad alcuni Crostacei Decapodi del Brasile. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 14(355):1-6.</a></li>
+          <li><a href="references/Nobili1901.3.html">Nobili, G. (1901) Viaggio del Dr. Enrico Festa nella Repubblica dell'Ecuador e regioni vicine. XXIII. Decapodi e Stomatopodi. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(415):1-58.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Przibram1905.html">Przibram, H. (1905) Die &quot;Heterochelie&quot; bei decapoden Crustaceen (zugleich: Experimentelle Studien über Regeneration. Dritte Mitteilung). <em>Archiv für Entwicklungsmechanik der Organismen</em> 19(2):181-247.</a></li>
+          <li><a href="references/Rathbun1893.html">Rathbun, M.J. (1893) Descriptions of new genera and species of crabs from the west coast of North America and the Sandwich Islands. <em>Proceedings of the United States National Museum</em> 16(933):223-260.</a></li>
+          <li><a href="references/Rathbun1899.html">Rathbun, M.J. (1899) The Brachyura collected by the U. S. Fish Commission steamer Albatross on the voyage from Norfolk, Virginia, to San Francisco, California, 1887-1888. <em>Proceedings of the United States National Museum</em> 21(1162):567-616.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
+          <li><a href="references/Rathbun1904.2.html">Rathbun, M.J. (1904) Decapod crustaceans of the northwest coast of North America. Pp. 1–210 in <em>Harriman Alaska Expedition with cooperation of Washington Academy of Sciences. Alaska</em>, M.J. Rathbun, H. Richardson, S.J. Holmes and L.J. Cole, eds., Volume 10. New York: Doubleday, Page &amp; Co.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1923.html">Rathbun, M.J. (1923) The Brachyuran crabs collected by the U.S. Fisheries steamer 'Albatross' in 1911, chiefly on the west coast of Mexico. <em>Bulletin of the American Museum of Natural History</em> 48(8):619-637.</a></li>
+          <li><a href="references/Rathbun1924.4.html">Rathbun, M.J. (1924) Expedition of the California Academy of Sciences to the Gulf of California in 1921. Crustacea (Brachyura). <em>Proceedings of the California Academy of Sciences. Fourth Series</em> 13(23):373-379.</a></li>
+          <li><a href="references/Ricketts1968.html">Ricketts, E.F., J. Calvin, and J.W. Hedgpeth (1968) <em>Between Pacific Tides</em>. Fourth Edition. Stanford, CA: Stanford University Press.</a></li>
+          <li><a href="references/Sarkisian1957.html">Sarkisian, L.N. (1957) <em>Maritrema uca</em>, a new species (Trematoda: Microphallidae) from the fiddler crab, <em>Uca crenulata</em> (Lockington). <em>Wasmann Journal of Biology</em> 15:35-48.</a></li>
+          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

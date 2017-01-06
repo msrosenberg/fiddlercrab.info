@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca princeps / Princely Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_princeps.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca princeps</h1>
+      <h2>Princely Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Gelasimus princeps</em></dt>
+        <dd>Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Princely FiddlerCrab, Greater Mexican Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_princeps.html"><em class="species">Gelasimus princeps</em></a>, <a href="names/Uca_Uca_princeps.html"><em class="species">Uca (Uca) princeps</em></a>, <a href="names/Uca_Uca_princeps_princeps.html"><em class="species">Uca (Uca) princeps princeps</em></a>, <a href="names/Uca_princeps.html"><em class="species">Uca princeps</em></a>, <a href="names/Uca_princeps_princeps.html"><em class="species">Uca princeps princeps</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Eastern Pacific: Mexico to Peru</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Brusca1980.html">Brusca (1980)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Hendrickx1984.html">Hendrickx (1984)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/4268408/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_princeps">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67462">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=378832">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/5863491">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_princeps01.html"><picture><img src="photos/U_princeps01tn.jpg" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_princeps02.html"><picture><img src="photos/U_princeps02tn.jpg" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_princeps03.html"><picture><img src="photos/U_princeps03tn.jpg" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <dl class="vidlist">
+            <dt><a class="vidlink" href="webout/video/u_princeps01.html">Male <em class="species">Uca princeps</em> waving</a></dt>
+              <dd>1:26 min., 352 x 240, MP4</dd>
+            <dt><a class="vidlink" href="webout/video/u_princeps02.html">Male <em class="species">Uca princeps</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
+              <dd>3:13 min., 352 x 240, MP4</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_princeps.html"><picture><img src="art/Crane_Uca_princeps_tn.png" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_princeps2.html"><picture><img src="art/Crane_Uca_princeps2_tn.png" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Bott_Gelasimus_princeps.html"><picture><img src="art/Bott_Gelasimus_princeps_tn.png" alt="Gelasimus princeps" title="Gelasimus princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_princeps_princeps1.html"><picture><img src="art/Crane_Uca_princeps_princeps1_tn.png" alt="Uca princeps princeps" title="Uca princeps princeps" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Shih_Uca_princeps1.html"><picture><img src="art/Shih_Uca_princeps1_tn.png" alt="Uca princeps" title="Uca princeps" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238-249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
+          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569-583.</a></li>
+          <li><a href="references/Barnwell1990.html">Barnwell, F.H., and J.H. Stillman (1990) Differences in daily and tidal rhythms in populations of the fiddler crabs <em>Uca princeps</em> and <em>U. monilifera</em>. <em>American Zoologist</em> 30(4):138A.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
+          <li><a href="references/Garth1957.html">Garth, J.S. (1957) Reports of the Lund University Chile expedition 1948-1949. No. 29. The Crustacea Decapoda Brachyura of Chile. <em>Lunds Universitets Årsskrift</em> 53(7):1-128.</a></li>
+          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105-123.</a></li>
+          <li><a href="references/Kerstitch1989.html">Kerstitch, A. (1989) <em>Sea of Cortez Marine Invertebrates: A Guide for the Pacific Coast, Mexico to Ecuador</em>. Monterey, CA: Sea Challengers.</a></li>
+          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145-156.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Maloney1989.html">Maloney, C.T., L.E. Burnett, and P.L. deFur (1989) Branchial water acid-base status in intertidal crabs during air exposure. <em>American Zoologist</em> 29(4):104A.</a></li>
+          <li><a href="references/McMahon1988.html">McMahon, B.R., and W.W. Burggren (1988) Respiration. Pp. 249-297 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531-620.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1924.4.html">Rathbun, M.J. (1924) Expedition of the California Academy of Sciences to the Gulf of California in 1921. Crustacea (Brachyura). <em>Proceedings of the California Academy of Sciences. Fourth Series</em> 13(23):373-379.</a></li>
+          <li><a href="references/Saussure1853.html">Saussure, H.d. (1853) Description de quelques crustacés nouveaux de la côte occidentale du Mexique. <em>Revue et Magasin de Zoologie pure et appliquée. Série 2</em> 5:354-368.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

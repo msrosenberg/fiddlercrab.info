@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca minax / Red-jointed Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_minax.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca minax</h1>
+      <h2>Red-jointed Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Gelasimus minax</em></dt>
+        <dd>Le Conte, J. (1855) On a new species of <em>Gelasimus</em>. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 7:402-403.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Red-jointed Fiddler Crab, Brackish Water Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_minax.html"><em class="species">Gelasimus minax</em></a>, <a href="names/Gelasimus_vocator_var_minax.html"><em class="species">Gelasimus vocator </em> var. <em class="species"> minax</em></a>, <a href="names/Uca_Minuca__minax__minax.html"><em class="species">Uca (Minuca) [minax] minax</em></a>, <a href="names/Uca_Minuca_minax.html"><em class="species">Uca (Minuca) minax</em></a>, <a href="names/Uca_mimax.html"><em class="species">Uca mimax</em></a>, <a href="names/Uca_minas.html"><em class="species">Uca minas</em></a>, <a href="names/Uca_minax.html"><em class="species">Uca minax</em></a>, <a href="names/Uca_vocator_var_minax.html"><em class="species">Uca vocator </em> var. <em class="species"> minax</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Western Atlantic: USA (Massachusetts to Northeast Florida, Northwest Florida to Louisiana, a few scattered locations in Texas)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Hopkins2010.2.html">Hopkins & Thurman (2010)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/344116/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_minax">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/53742">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=504420">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/2221536">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax01.html"><picture><img src="photos/U_minax01tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax02.html"><picture><img src="photos/U_minax02tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax03.html"><picture><img src="photos/U_minax03tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax04.html"><picture><img src="photos/U_minax04tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax06.html"><picture><img src="photos/U_minax06tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_minax07.html"><picture><img src="photos/U_minax07tn.jpg" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Paulmier_Uca_minax.html"><picture><img src="art/Paulmier_Uca_minax_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Fowler_Uca_minax1.html"><picture><img src="art/Fowler_Uca_minax1_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Fowler_Uca_minax2.html"><picture><img src="art/Fowler_Uca_minax2_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Williams_Uca_minax.html"><picture><img src="art/Williams_Uca_minax_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Kurata_Uca_minax.html"><picture><img src="art/Kurata_Uca_minax_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_minax1.html"><picture><img src="art/Crane_Uca_minax1_tn.png" alt="Uca minax" title="Uca minax" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Abbott1913.html">Abbott, J.F. (1913) The effect of distilled water upon the fiddler crab. <em>Biological Bulletin</em> 24(3):169-174.</a></li>
+          <li><a href="references/Abramowitz1937.html">Abramowitz, A.A. (1937) The chromatophorotropic hormone of the Crustacea: Standardization, properties and physiology of the eye-stalk glands. <em>Biological Bulletin</em> 72(3):344-365.</a></li>
+          <li><a href="references/Abramowitz1937.2.html">Abramowitz, A.A. (1937) The comparative physiology of pigmentary responses in the Crustacea. <em>Journal of Experimental Zoology</em> 76(3):407-422.</a></li>
+          <li><a href="references/Abramowitz1938.2.html">Abramowitz, A.A. (1938) The similarity between the hypophyseal chromatphorotropic horomone and the chromatophorotropic hormone of the crustacean eyestalk. <em>Physiological Zoology</em> 11(3):299-311.</a></li>
+          <li><a href="references/Abreu1975.html">Abreu, V. (1975) Fiddlers on the shorelines. <em>Of Sea and Shore</em> 6(3):139-140.</a></li>
+          <li><a href="references/Allen1973.html">Allen, E.A., and H.A. Curran (1973) Lebensspuren of selected decapod crustaceans in recent lagoon margin and estuarine environments. <em>Abstracts with Programs</em> 4(1):1.</a></li>
+          <li><a href="references/Allen1974.html">Allen, E.A., and H.A. Curran (1974) Biogenic sedimentary structures produced by crabs in lagoon margin and salt marsh environments near Beaufort, North Carolina. <em>Journal of Sedimentary Petrology</em> 44(2):538-548.</a></li>
+          <li><a href="references/Aurivillius1893.html">Aurivillius, C.W.S. (1893) Die Beziehungen der Sinnesorgane amphibischer Decapoden zur Lebensweise und Athmung. <em>Nova Acta Regiæ Societatis Scientiarum Upsaliensis. Seriei 3</em> 16(9):1-48.</a></li>
+          <li><a href="references/Barnwell1966.html">Barnwell, F.H. (1966) Daily and tidal patterns of activity in individual fiddler crab (genus <em>Uca</em>) from the Woods Hole region. <em>Biological Bulletin</em> 130(1):1-17.</a></li>
+          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569-583.</a></li>
+          <li><a href="references/Basan1977.html">Basan, P.B., and R.W. Frey (1977) Actual-palaeontology and neoichnology of salt marshes near Sapelo Island, Georgia. Pp. 41-70 in <em>Trace Fossils 2</em>, T.P. Crimes and J.C. Harper, eds. Liverpool: Seel House Press.</a></li>
+          <li><a href="references/Behre1950.html">Behre, E.H. (1950) Annotated list of the fauna of the Grand Isle region. <em>Occasional Papers of the Marine Lab of Louisiana State University</em> 6:1-66.</a></li>
+          <li><a href="references/Bishop1993.html">Bishop, G.A. (1993) History of North Amercann decapod paleocarcinology. Pp. 293-320 in <em>Crustacean Issues 8: History of Carcinology</em>, F. Truesdale, ed. Rotterdam: Balkema.</a></li>
+          <li><a href="references/Bliss1968.1.html">Bliss, D.E. (1968) Transition from water to land in decapod crustaceans. <em>American Zoologist</em> 8(3):355-392.</a></li>
+          <li><a href="references/Borgianini2005.html">Borgianini, S.A., J. Jurisa, R. Styles, and R.J. Brodie (2005) A model describing the dispersal capabilities of the red-jointed fiddler crab (<em>Uca minax</em> LeConte) postlarvae in a river-dominated estuary. <em>Integrative and Comparative Biology</em> 45(6):1112.</a></li>
+          <li><a href="references/Borgianini2007.2.html">Borgianini, S.A., G. Sproul, M.M. Flenniken, M.C. Sutton, and R.J. Brodie (2007) Cost of living differences among fiddler crab populations along a tidal river. <em>Integrative and Comparative Biology</em> 47(Supplement):e11.</a></li>
+          <li><a href="references/Borgianini2007.1.html">Borgianini, S.A., M.C. Sutton, M.M. Flenniken, and R.J. Brodie (2007) Behavioral, developmental and physiological constraints on the distribution of fiddler crabs (<em>Uca minax,</em> Leconte, 1855) within a river-dominated sstuary. <em>Integrative and Comparative Biology</em> 47(Supplement):e161.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Bourdon1970.html">Bourdon, R., and T.E. Bowman (1970) Western Atlantic species of the parasitic genus <em>Leidya</em> (Epicaridea: Bopyridae). <em>Proceedings of the Biological Society of Washington</em> 83:409-424.</a></li>
+          <li><a href="references/Brodie2004.1.html">Brodie, R.J. (2004) Life on the wedge: Survival of low salinity conditions in larvae of the fiddler crab <em>Uca minax</em>. <em>Integrative and Comparative Biology</em> 44(6):530.</a></li>
+          <li><a href="references/Brodie2006.2.html">Brodie, R.J., and J. Godley (2006) The effect of summer storms on the recruitment success of fiddler crabs. <em>Integrative and Comparative Biology</em> 46(Supplement):317.</a></li>
+          <li><a href="references/Brodie2004.2.html">Brodie, R.J., and J.L. Staton (2004) Re-invasion of low salinity adult habitats following marine planktonic development in fiddler crabs. <em>Ecological Society of America Annual Meeting Abstracts</em> 89:64.</a></li>
+          <li><a href="references/Brodie2003.html">Brodie, R.J., and J.S. Staton (2003) Freshwater invasion and larval settlement: Reinvasion of low salinity adult habitats after marine planktonic development in the fiddler crabs <em>Uca pugilator</em>, <em>Uca pugnax </em>and <em>Uca minax</em>. <em>Integrative and Comparative Biology</em> 43(6):1080.</a></li>
+          <li><a href="references/Brown1980.html">Brown, S.K., and R.E. Loveland (1980) Reproductive cycles of the fiddler crabs <em>Uca minax</em> and <em>Uca pugnax</em>. <em>American Zoologist</em> 20(4):957.</a></li>
+          <li><a href="references/Bumpus1898.html">Bumpus, H.C. (1898) The breeding of animals at Woods Hole during the months of June, July, and August, 1898. <em>Science</em> 8(207):850-858.</a></li>
+          <li><a href="references/Coues1871.html">Coues, E. (1871) Notes on the natural history of Fort Macon, N.C., and vicinity (No. 2.). <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1871:120-148.</a></li>
+          <li><a href="references/Coward1970.html">Coward, S.J., H.C. Gerhardt, and D.T. Crockett (1970) Behavioral variation in natural populations of two species of fiddler crabs (<em>Uca</em>) and some preliminary observations on directed modifications. <em>Journal of Biological Psychology</em> 12(1):24-31.</a></li>
+          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</a></li>
+          <li><a href="references/Crane1943.3.html">Crane, J. (1943) Display, breeding and relationships of fiddler crabs (Brachyura, Genus <em>Uca</em>) in the Northeastern United States. <em>Zoologica NY</em> 28:217-223.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/Croker1965.html">Croker, R.A., and A.J. Wilson (1965) Kinetics and effects of DDT in a tidal marsh ditch. <em>Transactions of the American Fisheries Society</em> 94(2):152-159.</a></li>
+          <li><a href="references/Croll2000.2.html">Croll, G.A., and J.B. McClintock (2000) An evaluation of lekking behavior in the fiddler crab <em>Uca</em> spp. <em>Journal of Experimental Marine Biology and Ecology</em> 254(1):109-121.</a></li>
+          <li><a href="references/Croll2000.1.html">Croll, G.A., and J.B. McClintock (2000) Sexual dimorphism, cheliped assymetry and selection pressure in <em>Uca</em> spp. <em>American Zoologist</em> 40(6):984.</a></li>
+          <li><a href="references/Doherty1978.2.html">Doherty, J.A. (1978) Temperature effects on the courtship wave display in fiddler crabs. <em>American Zoologist</em> 18(3):621.</a></li>
+          <li><a href="references/Edwards1950.html">Edwards, G.A. (1950) The influence of eyestalk removal on the metabolism of the fiddler crab. <em>Physiologia Comparata et Oecologia</em> 2:34-50.</a></li>
+          <li><a href="references/Ellis1979.html">Ellis, L.L., Jr., and D.L. Claybrook (1979) An in-vitro analysis of volume regulation in the hepatopancreas of the fiddler crab <em>Uca minax</em>. <em>American Zoologist</em> 19(3):972.</a></li>
+          <li><a href="references/Ellis1980.1.html">Ellis, L.L., Jr., and D.L. Claybrook (1980) Partial characterization of glutamate dehydrogenase from <em>Uca minax</em>. <em>American Zoologist</em> 20(4):797.</a></li>
+          <li><a href="references/Engel1973.html">Engel, D.W. (1973) The radiation sensitivities of 3 species of fiddler crabs <em>Uca pugilator</em> <em>Uca pugnax</em> and <em>Uca minax</em>. <em>Chesapeake Science</em> 14(4):289-291.</a></li>
+          <li><a href="references/Engel1971.html">Engel, D.W., J.W. Angelovic, and J.C. White, Jr (1971) The radiation sensitivities of selected estuarine Crustacea. <em>Radiation Research</em> 47(1):301.</a></li>
+          <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
+          <li><a href="references/Fowler1911.html">Fowler, H.W. (1911) The fishes of Delaware. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 63:3-16.</a></li>
+          <li><a href="references/Fowler1912.html">Fowler, H.W. (1912) The Crustacea of New Jersey. Pp. 29-650 in <em>Annual Report of the New Jersey State Museum 1911</em>. Trenton, N.J.: MacCrellish &amp; Quigley.</a></li>
+          <li><a href="references/George1957.html">George, J.L., R.F. Darsie, Jr., and P.F. Springer (1957) Effects on wildlife of aerial applications of Strobane, DDT and BHC to tidal marshes in Deleware. <em>Journal of Wildlife Management</em> 21(1):42-53.</a></li>
+          <li><a href="references/Giblock2013.html">Giblock, S.M., and D. Crain (2013) Fiddler crabs (<em>Uca pugilator</em>) as bioindicators of environmental health in coastal estuarine communities of Beaufort, South Carolina. <em>Interdisciplinary Journal of Undergraduate Research</em> 2(13):1-11.</a></li>
+          <li><a href="references/Gilchrist1988.html">Gilchrist, S.L. (1988) Natural histories of selected terrestrial crabs. Pp. 382-390 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Gosner1978.html">Gosner, K.L. (1978) <em>A Field Guide to the Atlantic Seashore from the Bay of Fundy to Cape Hatteras</em>, Volume 24. Boston: Houghton Mifflin Company.</a></li>
+          <li><a href="references/Gray1942.html">Gray, E.H. (1942) Ecological and life history aspects of the red-jointed fiddler crab, <em>Uca minax</em> (Le Conte), region of Solomons Island, Maryland. <em>Chesapeake Biological Laboratory Publication</em> 51:3-20.</a></li>
+          <li><a href="references/Gray1957.html">Gray, I.E. (1957) A comparative study of the gill area of crabs. <em>Biological Bulletin</em> 112(1):34-42.</a></li>
+          <li><a href="references/Green1959.html">Green, J.W., M. Harsch, L. Barr, and C.L. Prosser (1959) The regulation of water and salt by the fiddler crabs, <em>Uca pugnax</em> and <em>Uca pugilator</em>. <em>Biological Bulletin</em> 116(1):70-87.</a></li>
+          <li><a href="references/Grimes1976.html">Grimes, B.H. (1976) Notes on the distribution of <em>Hyalophysa </em>and <em>Gymnodinioides </em>on crustacean hosts in coastal North Carolina and a description of <em>Hyalophysa trageri</em> sp. n. <em>Journal of Protozoology</em> 23(2):246-251.</a></li>
+          <li><a href="references/Hannan1973.html">Hannan, J.V., and D.H. Evans (1973) Water permeability in some euryhaline decapods and <em>Limulus polyphemus</em>. <em>Comparative Biochemistry and Physiology</em> 44A(4):1199-1213.</a></li>
+          <li><a href="references/Hay1915.html">Hay, W.P., and C.A. Shore (1915-1916) The decapod crustaceans of Beaufort, N. C., and the surrounding region. <em>Bulletin of the United States Bureau of Fisheries</em> 35:369-475.</a></li>
+          <li><a href="references/Headstrom1979.html">Headstrom, R. (1979) <em>Lobsters, Crabs, Shrimps, and Their Relatives</em>. London: A.S. Barnes.</a></li>
+          <li><a href="references/Heard1970.html">Heard, R.W., Jr. (1970) Parasites of the clapper rail, <em>Rallus longirostris</em> Boddaert. II. Some trematodes and cestodes from <em>Spartina </em>marshes of the eastern United States. <em>Proceedings of the Helminthological Society of Washington</em> 37(2):147-153.</a></li>
+          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
+          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52-53.</a></li>
+          <li><a href="references/Heard1983.html">Heard, R.W., Jr., and R.M. Overstreet (1983) Taxonomy and life histories of two North American species of &quot;Carneophallus&quot; (=<em>Microphallus</em>) (Digenea: Microphallidae). <em>Proceedings of the Helminthological Society of Washington</em> 50(1):170-174.</a></li>
+          <li><a href="references/Heilprin1888.html">Heilprin, A. (1888) <em>The Animal Life of our Sea-Shore</em>. Philadelphia: J.B. Lippincott Company.</a></li>
+          <li><a href="references/Herreid1969.2.html">Herreid, C.F., II (1969) Water loss of crabs from different habitats. <em>Comparative Biochemistry and Physiology</em> 28(2):829-839.</a></li>
+          <li><a href="references/Holmes1904.html">Holmes, S.J. (1904) On some new or imperfectly known species of West American Crustacea. <em>Proceedings of the California Academy of Sciences. Third Series. Zoology</em> 3(12):307-331.</a></li>
+          <li><a href="references/Honegger1973.1.html">Honegger, H.-W. (1973) Rhythmic motor activity responses of the California fiddler crab <em>Uca crenulata</em> to artifical light conditions. <em>Marine Biology</em> 18(1):19-31.</a></li>
+          <li><a href="references/Hunter1953.html">Hunter, W.S., and W.B. Vernberg (1953) Early stages in the life cycle of the trematode, <em>Gynaecotyla adunca</em> (Linton, 1905). <em>Transactions of the American Microscopical Society</em> 72(2):163-170.</a></li>
+          <li><a href="references/Huxley1924.1.html">Huxley, J.S. (1924) Constant differential growth-ratios and their significance. <em>Nature</em> 114(2877):895-896.</a></li>
+          <li><a href="references/Huxley1932.html">Huxley, J.S. (1932) <em>Problems of Relative Growth</em>. London: Dial Press.</a></li>
+          <li><a href="references/Hyatt1973.html">Hyatt, G.W. (1973) Physiological and behavioural studies of color vision in fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 90  (Urbana-Champaign: University of Illinois).</a></li>
+          <li><a href="references/Hyatt1975.html">Hyatt, G.W. (1975) Physiological and behavioral evidence for color discrimination by fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 333-365 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, South Carolina: University of South Carolina Press.</a></li>
+          <li><a href="references/Hyman1920.1.html">Hyman, O.W. (1920) Adventures in the life of a fiddler crab. <em>Annual Report of the Smithsonian Institution for 1920</em> 1920:443-459.</a></li>
+          <li><a href="references/Hyman1920.2.html">Hyman, O.W. (1920) The development of <em>Gelasimus</em> after hatching. <em>Journal of Morphology</em> 33(2):485-501.</a></li>
+          <li><a href="references/Kerwin1971.html">Kerwin, J.A. (1971) Distribution of the fiddler crab (<em>Uca minax</em>) in relation to marsh plants within a Virginia estuary. <em>Chesapeake Science</em> 12(3):180-183.</a></li>
+          <li><a href="references/Kingsley1878.html">Kingsley, J.S. (1878) List of Decapod Crustacea of the Atlantic coast, whose range embraces Fort Macon. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 30(2):316-330.</a></li>
+          <li><a href="references/Kingsley1879.html">Kingsley, J.S. (1879) On a collection of Crustacea from Virginia, North Carolina, and Florida, with a review of the genera <em>Crangonidæ</em> and <em>Palæmonidæ</em>. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 31(3):383-427.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Kingsley1880.2.html">Kingsley, J.S. (1880) On a collection of Crustacea from Virginia, North Carolina, and Florida, with a revision of the genera of Crangonidæ and Palæmonidæ. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1879:383-427.</a></li>
+          <li><a href="references/Kraus1982.html">Kraus, D.B. (1982) The burrow as a resource for reproduction and molting in the fiddler crab <em>Uca minax</em>. <em>American Zoologist</em> 22(4):869.</a></li>
+          <li><a href="references/Kurata1970.html">Kurata, H. (1970) <em>Studies on the life histories of decapod Crustacea of Georgia</em>: University of Georgia, Marine Inst. Publ. Sapelo Island.</a></li>
+          <li><a href="references/LeConte1855.html">Le Conte, J. (1855) On a new species of <em>Gelasimus</em>. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 7:402-403.</a></li>
+          <li><a href="references/Lee1982.html">Lee, R.F., J.W. Conner, D.S. Page, L.E. Ray, and C.S. Giam (1982) Cytochrome P-450 dependent mixed-function oxygenase systems in marsh crabs. Pp. 145-159 in <em>Physiological Mechanisms of Marine Pollutant Toxicity</em>, W.B. Vernberg, A. Calabrese, F.P. Thurnberg and F.J. Vernberg, eds. New York: Academic Press.</a></li>
+          <li><a href="references/Leidy1855.html">Leidy, J. (1855) Contributions toward a knowledge of the marine invertebrate fauna of the coasts of Rhode Island and New Jersey. <em>Journal of the Academy of Natural Sciences in Philadelphia (Series 2)</em> 3:135-152.</a></li>
+          <li><a href="references/Lesser1976.html">Lesser, C.R., F.J. Murphey, and R.W. Lake (1976) Some effects of grid system mosquito control ditching on a salt marsh biota in Deleware. <em>Mosquito News</em> 36(1):69-77.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Mangum1993.2.html">Mangum, C.P. (1993) Structural polymorphisms of fiddler crab hemocyanins. <em>American Zoologist</em> 33(5):64A.</a></li>
+          <li><a href="references/Mayer1905.html">Mayer, A.G. (1905) <em>Sea-Shore Life: The Invertebrates of the New York Coast and the Adjacent Coast Region</em>. New York: New York Zoological Society.</a></li>
+          <li><a href="references/McCarty1985.html">McCarty, N.A., R.D. Roer, and R.B. Humm (1985) Salinity preference behavior of the fiddler crab, <em>Uca minax</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
+          <li><a href="references/McFaddon2003.html">McFadden, A., and C.L. Thurman, II (2003) Osmoregulation by fiddler crabs (genus <em>Uca</em>) from California and South Florida. <em>Integrative and Comparative Biology</em> 43(6):1044.</a></li>
+          <li><a href="references/Miller1961.html">Miller, D.C. (1961) The feeding mechanism of fiddler crabs, with ecological considerations of feeding adaptations. <em>Zoologica NY</em> 46:89-100.</a></li>
+          <li><a href="references/Miller1967.html">Miller, D.C., and F.J. Vernberg (1967) Some thermal requirements of temperate and tropical zone fiddler crabs influencing geographic distribution. <em>American Zoologist</em> 7(4):766.</a></li>
+          <li><a href="references/Miller1968.html">Miller, D.C., and F.J. Vernberg (1968) Some thermal requirements of fiddler crabs of the temperate and tropical zones and their influence on geographic distribution. <em>American Zoologist</em> 8(3):459-469.</a></li>
+          <li><a href="references/Miller1973.2.html">Miller, K.G., and D. Maurer (1973) Distribution of the fiddler crabs, <em>Uca pugnax </em>and <em>Uca minax</em>, in relation to salinity in Delaware rivers. <em>Chesapeake Science</em> 14(3):219-221.</a></li>
+          <li><a href="references/Mraz2005.html">Mraz, J., C.L. Thurman, II, C. Bennett, and R.J. Brodie (2005) Osmotic tolerance in meglopal and adult crabs of <em>U. minax</em>: Can early life stages withstand the same regimes as adults? <em>Integrative and Comparative Biology</em> 45(6):1169.</a></li>
+          <li><a href="references/Nimmo1971.html">Nimmo, D.R., P.D. Wilson, R.R. Blackman, and A.J. Wilson, Jr. (1971) Polychlorinated biphenyl absorbed from sediments by fiddler crabs and pink shrimp. <em>Nature</em> 231(5297):50-52.</a></li>
+          <li><a href="references/Nobili1901.3.html">Nobili, G. (1901) Viaggio del Dr. Enrico Festa nella Repubblica dell'Ecuador e regioni vicine. XXIII. Decapodi e Stomatopodi. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(415):1-58.</a></li>
+          <li><a href="references/Odum1957.html">Odum, H.T. (1957) Biochemical deposition of strontium. <em>Publications of the Institute of Marine Science</em> 4(2):38-114.</a></li>
+          <li><a href="references/Passano1960.html">Passano, L.M. (1960) Low temperature blockage of molting in <em>Uca pugnax</em>. <em>Biological Bulletin</em> 118(1):129-136.</a></li>
+          <li><a href="references/Paulmier1905.html">Paulmier, F.C. (1905) Higher Crustacea of New York City. <em>New York State Museum Bulletin</em>(91):117-189.</a></li>
+          <li><a href="references/Pearse1928.html">Pearse, A.S. (1928) The ecology of certain estuarine crabs at Beaufort, N.C. <em>Journal of the Elisha Mitchell Scientific Society</em> 44(2):230-237.</a></li>
+          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
+          <li><a href="references/Rathbun1905.html">Rathbun, M.J. (1905) Fauna of New England. <em>Occasional Papers of the Boston Society of Natural History</em> 7(Part 2, No. 5):1-117.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1884.html">Rathbun, R. (1884) Crustaceans. Pp. 763-830 in <em>The Fisheries and Fishery Industry of the United States</em>, G.B. Goode, ed., Volume 1. Washington, D.C.: Government Printing Office.</a></li>
+          <li><a href="references/Ringold1978.html">Ringold, P.L. (1978) Distribution of fiddler crabs in relation to the root content of the substrate. <em>American Zoologist</em> 18(3):599.</a></li>
+          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123-150.</a></li>
+          <li><a href="references/Salmon1966.html">Salmon, M. (1966) Courtship behavior and distribution of fiddler crabs in Florida (Motion Picture). <em>American Zoologist</em> 6(4):515.</a></li>
+          <li><a href="references/Salmon1967.html">Salmon, M. (1967) Coastal distribution, display and sound production by Florida fiddler crabs (genus <em>Uca</em>). <em>Animal Behaviour</em> 15(4):449-459.</a></li>
+          <li><a href="references/Salmon1973.html">Salmon, M., and K.W. Horch (1973) Vibration reception by the fiddler crab, <em>Uca minax</em>. <em>Comparative Biochemistry and Physiology</em> 44A(2):527-541.</a></li>
+          <li><a href="references/Salmon1976.html">Salmon, M., and K.W. Horch (1976) Acoustic interneurons of fiddler and ghost crabs. <em>Physiological Zoology</em> 49(2):214-226.</a></li>
+          <li><a href="references/Salmon1977.html">Salmon, M., K.W. Horch, and G.W. Hyatt (1977) Barth's myochordotonal organ as a receptor for auditory and vibrational stimuli in fiddler crabs (<em>Uca pugilator</em> and <em>U. minax</em>). <em>Marine Behaviour and Physiology</em> 4(3):187-194.</a></li>
+          <li><a href="references/Salmon1988.2.html">Salmon, M., and N. Zucker (1988) Interpreting differences in the reproductive behaviour of fiddler crabs (genus <em>Uca</em>). Pp. 387-407 in <em>Behavioral Adaptation to Intertidal Life</em>, G. Chelazzi and M. Vannini, eds. New York: Plenum Press.</a></li>
+          <li><a href="references/Sanborn1973.html">Sanborn, J.R., and C.-C. Yu (1973) The fate of dieldrin in a model ecosystem. <em>Bulletin of Environmental Contamination and Toxicology</em> 10(6):340-346.</a></li>
+          <li><a href="references/Sandifer1975.html">Sandifer, P.A. (1975) The role of pelagic larvae in recruitment to populations of adult decapod crustaceans in the York River estuary and adjacent lower Chesapeake Bay, Virginia. <em>Estuarine and Coastal Marine Science</em> 3(3):269-279.</a></li>
+          <li><a href="references/Schwartz1915.2.html">Schwartz, B., and S.R. Safir (1915) The natural history and behavior of the fiddler crab. <em>Cold Spring Harbor Monographs</em> VIII:1-24.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
+          <li><a href="references/Sullivan1909.html">Sullivan, W.E. (1909) Notes on the crabs found in Narragansett Bay. <em>Annual Report of the Commissioners of Inland Fisheries</em> 39:56-78.</a></li>
+          <li><a href="references/Sumner1911.html">Sumner, F.B., R.C. Osburn, and L.J. Cole (1911) A biological survey of the waters of Woods Hole and vicinity. Section III.--A catalogue of the marine fauna of Woods Hole and vicinity. <em>Fishery Bulletin</em> 31(2):549-794.</a></li>
+          <li><a href="references/Teal1958.html">Teal, J.M. (1958) Distribution of fiddler crabs in Georgia salt marshes. <em>Ecology</em> 39(2):185-193.</a></li>
+          <li><a href="references/Teal1959.html">Teal, J.M. (1959) Respiration of crabs in Georgia salt marshes and its relation to their ecology. <em>Physiological Zoology</em> 32(1):1-14.</a></li>
+          <li><a href="references/Teal1962.html">Teal, J.M. (1962) Energy flow in the salt marsh ecosystem of Georgia. <em>Ecology</em> 43(4):614-624.</a></li>
+          <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
+          <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
+          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
+          <li><a href="references/Tomkins1965.html">Tomkins, I.R. (1965) The willets of Georgia and South Carolina. <em>Wilson Bulletin</em> 77(2):151-167.</a></li>
+          <li><a href="references/Vernberg1956.html">Vernberg, F.J. (1956) Study of the oxygen consumption of excised tissues of certain marine decapod Crustacea in relation to habitat. <em>Physiological Zoology</em> 29(3):227-234.</a></li>
+          <li><a href="references/Vernberg1959.2.html">Vernberg, F.J. (1959) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. II. Oxygen consumption of whole organisms. <em>Biological Bulletin</em> 117(1):163-184.</a></li>
+          <li><a href="references/Vernberg1962.html">Vernberg, F.J. (1962) The role of tissue metabolism in the seasonal distribution of decapod crustaceans. <em>American Zoologist</em> 2(3):455.</a></li>
+          <li><a href="references/Vernberg1969.2.html">Vernberg, F.J. (1969) Acclimation of intertidal crabs. <em>American Zoologist</em> 9(2):333-341.</a></li>
+          <li><a href="references/Vernberg1966.2.html">Vernberg, F.J., and J.D. Costlow, Jr. (1966) Studies on the physiological variation between tropical and temperate-zone fiddler crabs of the genus <em>Uca</em>. IV. Oxygen consumption of larvae and young crabs reared in the laboratory. <em>Physiological Zoology</em> 39(1):36-52.</a></li>
+          <li><a href="references/Vernberg1959.1.html">Vernberg, F.J., and R.E. Tashian (1959) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. I. Thermal death limits. <em>Ecology</em> 40(4):589-593.</a></li>
+          <li><a href="references/Vernberg1964.html">Vernberg, F.J., and W.B. Vernberg (1964) Metabolic adaptation of animals from different latitudes. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 9(1):476-487.</a></li>
+          <li><a href="references/Vernberg1975.html">Vernberg, F.J., and W.B. Vernberg (1975) Adaptations to extreme environments. Pp. 165-180 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, South Carolina: University of South Carolina Press.</a></li>
+          <li><a href="references/Verrill1873.html">Verrill, A.E. (1873) Report upon the invertebrate animals of Vineyard Sound and the adjacent waters, with an account of the physical characters of the region. Pp. 295-747 in <em>The report of Professor S. F. Baird, Commissioner of Fish and Fisheries, on the conditions of the sea-fisheries of the south coast of New England in 1871 and 1872</em>. Washington, D.C.: Govt. Printing Office.</a></li>
+          <li><a href="references/Verrill1874.html">Verrill, A.E., and S.I. Smith (1874) <em>Report upon the Invertebrate Animals of Vineyard Sound and Adjacent Waters, with an Account of the Physical Features of the Region</em>. Washington D.C.: Government Printing Office.</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/Wass1955.html">Wass, M.L. (1955) The decapod crustaceans of Alligator Harbor and adjacent inshore areas of northwestern Florida. <em>Quarterly Journal of the Florida Academy of Sciences</em> 18(3):129-176.</a></li>
+          <li><a href="references/Wass1961.html">Wass, M.L. (1961) A revised preliminary check list of the invertebrate fauna of marine and brackish waters of Virginia. <em>VIMS Special Report</em> 24:68.</a></li>
+          <li><a href="references/Wass1963.html">Wass, M.L. (1963) Check list of the marine invertebrates of Virginia. <em>VIMS Special Report</em> 24 (revised):1-56.</a></li>
+          <li><a href="references/Wass1965.html">Wass, M.L. (1965) Check list of the marine invertebrates of Virginia. <em>VIMS Special Report</em> 24 (third revision):1-58.</a></li>
+          <li><a href="references/Weatherly1976.html">Weatherly, W.P. (1976) Visual Interneurons in the Fiddler Crab. Pp. 153  (New Haven, Connecticut: Yale University).</a></li>
+          <li><a href="references/Weis1979.1.html">Weis, J.S., and P. Weis (1979) Effects of mercury, cadmium, and lead compounds on regeneration in estuarine fishes and crabs. Pp. 151-169 in <em>Marine Pollution: Functional Responses</em>, W.B. Vernberg, A. Calabrese, F.P. Thurberg and F.J. Vernberg, eds. New York: Academic Press.</a></li>
+          <li><a href="references/Whiting1974.html">Whiting, N.H., and G.A. Moshiri (1974) Certain organism-substrate relationships affecting the distribution of <em>Uca minax</em> (Crustacea: Decapoda). <em>Hydrobiologia</em> 44(4):481-493.</a></li>
+          <li><a href="references/Whitten1950.html">Whitten, H.L., H.F. Rosene, and J.W. Hedgpeth (1950) The invertebrate fauna of Texas Coast jetties; a preliminary survey. <em>Publications of the Institute of Marine Science</em> 1(2):53-87.</a></li>
+          <li><a href="references/Williams1965.html">Williams, A.B. (1965) Marine Decapod Crustaceans of the Carolinas. <em>Fishery Bulletin</em> 65(1):1-298.</a></li>
+          <li><a href="references/Wolf1975.html">Wolf, P.L., S.F. Shanholtzer, and R.J. Reimold (1975) Population estimates for <em>Uca pugnax</em> (Smith, 1870) on the Duplin estuary marsh, Georgia, U.S.A. (Decapoda, Brachyura, Ocypodidae). <em>Crustaceana</em> 29(1):79-91.</a></li>
+          <li><a href="references/Woods1958.html">Woods, K.R., E.C. Paulsen, R.L. Engle, Jr., and J.H. Pert (1958) Starch gel electrophoresis of some invertebrate sera. <em>Science</em> 127(3297):519-520.</a></li>
+          <li><a href="references/Wright1983.html">Wright, D.A., I.P. Zanders, and M.J. Martelo (1983) Modifications of intra cellular ion concentrations in the gills of fiddler crabs <em>Uca minax</em> acclimated to diverse salinities. <em>American Zoologist</em> 23(4):947.</a></li>
+          <li><a href="references/Yerkes1901.html">Yerkes, R.M. (1901) A study of variation in the fiddler crab <em>Gelasimus pugilator </em>Latr. <em>Proceedings of the American Academy of Arts and Sciences</em> 36:417-442.</a></li>
+          <li><a href="references/Yu1975.html">Yu, C.-C., G.M. Booth, and J.R. Larsen (1975) Fate of triazine herbicide cyanazine in a model ecosystem. <em>Journal of Agricultural and Food Chemistry</em> 23(5):1014-1015.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

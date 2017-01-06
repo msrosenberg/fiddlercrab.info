@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca spinicarpa / Spiny-wristed Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_spinicarpa.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca spinicarpa</h1>
+      <h2>Spiny-wristed Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca spinicarpa</em></dt>
+        <dd>Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Spiny-wristed Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_tetragonon_var_spinicarpa.html"><em class="species">Gelasimus tetragonon </em> var. <em class="species"> spinicarpa</em></a>, <a href="names/Uca_Celuca__crenulata__speciosa_spinicarpa.html"><em class="species">Uca (Celuca) [crenulata] speciosa spinicarpa</em></a>, <a href="names/Uca_Leptuca_spinicarpa.html"><em class="species">Uca (Leptuca) spinicarpa</em></a>, <a href="names/Uca_Minuca_spinicarpa.html"><em class="species">Uca (Minuca) spinicarpa</em></a>, <a href="names/Uca_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Western Atlantic: USA (Northwest Florida) to Mexico</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Hopkins2010.2.html">Hopkins & Thurman (2010)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/3118962/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_spinicarpa">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/84928">iNaturalist</a></dd>
+         <dd><a href="http://www.gbif.org/species/2221539">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_spinicarpa01.html"><picture><img src="photos/U_spinicarpa01tn.jpg" alt="Uca spinicarpa" title="Uca spinicarpa" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_speciosa_spinicarpa1.html"><picture><img src="art/Crane_Uca_speciosa_spinicarpa1_tn.png" alt="Uca speciosa spinicarpa" title="Uca speciosa spinicarpa" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1-258.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
+          <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
+          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
+          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52-53.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275-290.</a></li>
+          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623-639.</a></li>
+          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60-96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
+          <li><a href="references/Thurman1994.html">Thurman, C.L., II (1994) Evaporative water loss and corporal temperature in sympatric fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 34(5):31A.</a></li>
+          <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
+          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234-1235.</a></li>
+          <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
+          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

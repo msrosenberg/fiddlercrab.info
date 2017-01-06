@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca urvillei / d'Urville's Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_urvillei.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca urvillei</h1>
+      <h2>d'Urville's Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Gelasimus urvillei</em></dt>
+        <dd>Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109-166.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>d'Urville's Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_Urvillei.html"><em class="species">Gelasimus Urvillei</em></a>, <a href="names/Tubuca_urvillei.html"><em class="species">Tubuca urvillei</em></a>, <a href="names/Uca_Deltuca__coarctata__urvillei.html"><em class="species">Uca (Deltuca) [coarctata] urvillei</em></a>, <a href="names/Uca_Tubuca_urvillei.html"><em class="species">Uca (Tubuca) urvillei</em></a>, <a href="names/Uca_Uca_urvillei.html"><em class="species">Uca (Uca) urvillei</em></a>, <a href="names/Uca_urvillei.html"><em class="species">Uca urvillei</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Indo-West Pacific: South Africa to Tanzania, Saudi Arabia (Red Sea), Western India, Thailand</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Emmerson1994.html">Emmerson (1994)</a>; <a href="references/Frith1977.3.html">Frith & Frith (1977)</a>; <a href="references/Frith1978.html">Frith & Frith (1978)</a>; <a href="references/Hartnoll1975.html">Hartnoll (1975)</a>; <a href="references/Hogarth1986.html">Hogarth (1986)</a>; <a href="references/Jones1994.html">Jones & Morton (1994)</a>; <a href="references/Price1987.html">Price <em>et al.</em> (1987)</a>; <a href="references/Skov2001.html">Skov & Hartnoll (2001)</a>; <a href="references/Vannini1981.html">Vannini & Valmori (1981)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/2981562/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_urvillei">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67480">iNaturalist</a></dd>
+         <dd><a href="http://www.gbif.org/species/4382584">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei01.html"><picture><img src="photos/U_urvillei01tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei02.html"><picture><img src="photos/U_urvillei02tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei03.html"><picture><img src="photos/U_urvillei03tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei04.html"><picture><img src="photos/U_urvillei04tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei05.html"><picture><img src="photos/U_urvillei05tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei06.html"><picture><img src="photos/U_urvillei06tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei07.html"><picture><img src="photos/U_urvillei07tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_urvillei08.html"><picture><img src="photos/U_urvillei08tn.jpg" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Hilgendorf_Gelasimus_Dussumieri.html"><picture><img src="art/Hilgendorf_Gelasimus_Dussumieri_tn.jpg" alt="Gelasimus Dussumieri" title="Gelasimus Dussumieri" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_urvillei.html"><picture><img src="art/Barnard_Uca_urvillei_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_urvillei2.html"><picture><img src="art/Barnard_Uca_urvillei2_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_urvillei3.html"><picture><img src="art/Barnard_Uca_urvillei3_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_urvillei1.html"><picture><img src="art/Crosnier_Uca_urvillei1_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_urvillei2.html"><picture><img src="art/Crosnier_Uca_urvillei2_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_urvillei3.html"><picture><img src="art/Crosnier_Uca_urvillei3_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Bott_Tubuca_urvillei.html"><picture><img src="art/Bott_Tubuca_urvillei_tn.png" alt="Tubuca urvillei" title="Tubuca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei1.html"><picture><img src="art/Crane_Uca_urvillei1_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei2.html"><picture><img src="art/Crane_Uca_urvillei2_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei3.html"><picture><img src="art/Crane_Uca_urvillei3_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei4.html"><picture><img src="art/Crane_Uca_urvillei4_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei5.html"><picture><img src="art/Crane_Uca_urvillei5_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei6.html"><picture><img src="art/Crane_Uca_urvillei6_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei7.html"><picture><img src="art/Crane_Uca_urvillei7_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei8.html"><picture><img src="art/Crane_Uca_urvillei8_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei9.html"><picture><img src="art/Crane_Uca_urvillei9_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_urvillei10.html"><picture><img src="art/Crane_Uca_urvillei10_tn.png" alt="Uca urvillei" title="Uca urvillei" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279-456.</a></li>
+          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1-837.</a></li>
+          <li><a href="references/Chandy1973.html">Chandy, M. (1973) New records of Brachyuran decapods from the Gulf of Kutch. <em>Journal of the Bombay Natural History Society</em> 70(2):401-402.</a></li>
+          <li><a href="references/Chhapgar1957.html">Chhapgar, B.F. (1957) On the marine crabs (Decapoda: Brachyura) of Bombay State. Part II. <em>Journal of the Bombay Natural History Society</em> 54(3):503-549.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
+          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1-143.</a></li>
+          <li><a href="references/Day1969.html">Day, J.H. (1969) <em>A Guide to Marine Life on South African Shores</em>. Cape Town: A. A. Balkema.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
+          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71-91.</a></li>
+          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79-85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
+          <li><a href="references/Frith1977.2.html">Frith, D.W., and C.B. Frith (1977) Observations on fiddler crabs (Ocypodidae: genus <em>Uca</em>) on Surin Island, Western Peninsular Thailand, with particular reference to <em>Uca tetragonon</em> (Herbst). <em>Phuket Marine Biological Center Research Bulletin</em> 18:1-14.</a></li>
+          <li><a href="references/Frith1977.3.html">Frith, D.W., and C.B. Frith (1977) Range extensions of fiddler crabs (Decapoda, Brachyura, Ocypodidae) in the north-western Malay Peninsula area. <em>Crustaceana</em> 32(1):100-102.</a></li>
+          <li><a href="references/Frith1976.html">Frith, D.W., R. Tantanasiriwong, and O. Bhatia (1976) Zonation and abundance of macrofauna on a mangrove shore, Phuket Island. <em>Phuket Marine Biological Center Research Bulletin</em> 10:1-37.</a></li>
+          <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
+          <li><a href="references/Ghory2006.html">Ghory, F.S., and F.A. Siddiqui (2006) A comparative study of the first zoeal stage of <em>Uca urvillei</em> and <em>Uca annulipes </em>(Crustacea. Brachyura. Ocypodidae) reared in the laboratory. <em>Turkish Journal of Zoology</em> 30(2):161-166.</a></li>
+          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3-4):238-241.</a></li>
+          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305-328.</a></li>
+          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69-116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Krauss1843.html">Krauss, F. (1843) <em>Die Süd-Afrikanische Crustaceen. Eine Zusammenstellung aller bekannten Malacostraca . . . E. schweizerbart'sche Verlagsbuchhandlung</em>. Stuttgart.</a></li>
+          <li><a href="references/Lehmann1974.html">Lehmann, U., D. Neumann, and H. Kaiser (1974) Gezeitenrhythmische und spontane Aktivitätsmuster von Winkerkrabben. I. Ein neuer Ansatz zur quantitativen Analyse von Lokomotionsrhythmen. <em>Journal of Comparative Physiology</em> 91(2):187-221.</a></li>
+          <li><a href="references/Lenz1910.html">Lenz, H. (1910) Crustaceen von Madagaskar, Ostafrika und Ceylon. Pp. 539-576 in <em>Reise in Ostafrkia in den Jahren 1903-1905</em>, A. Voeltzkow, ed., Volume 2. Stuttgart</a></li>
+          <li><a href="references/Lenz1881.html">Lenz, H., and F. Richters (1881) Beitrag zur Krustaceenfauna von Madagascar. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 12:421-428.</a></li>
+          <li><a href="references/Lundoer1974.html">Lundoer, S. (1974) A checklist of the Brachyura in the reference collection at PMBC, Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 4:1-11.</a></li>
+          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1-25.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73-270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19-34.</a></li>
+          <li><a href="references/MilneEdwards1868.html">Milne-Edwards, A. (1868) Description de quelques crustaces nouveaux provenant des voyages de M. Alfred Grandidier a Zanzibar et a Madagascar. <em>Nouvelles Archives de Muséum d'Historie Naturelle de Paris</em> 4:69-92.</a></li>
+          <li><a href="references/Ortmann1894.2.html">Ortmann, A.E. (1894) Crustaceen. Pp. 1-80 in <em>Zoologische Forschungsreisen in Australien und dem malayischen Archipel</em>, R. Semon, ed., Volume V: Denkschr. med.-naturw. Ges. Jena.</a></li>
+          <li><a href="references/Pearse1912.1.html">Pearse, A.S. (1912) A new Philippine fiddler-crab. <em>Philippine Journal of Science</em> 7D:91-95.</a></li>
+          <li><a href="references/Pfeffer1889.html">Pfeffer, G. (1889) Uebersicht der von Herrn Dr. F. Stuhlmann in Aegypten, auf Sansibar und dem gegenüberliegenden Festlande gesammelten Reptilien, Amphibien, Fische, Mollusken und Krebse. Crustacea. <em>Mitteilungen aus dem Naturhistorischen Museum in Hamburg</em> 6:1-36 (28-36)?</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119-161.</a></li>
+          <li><a href="references/Stebbing1905.html">Stebbing, T.R.R. (1905) South African Crustacea. Part III. Pp. 21-123 in <em>Marine Investigations in South Africa</em>, Volume IV. Cape Town: Department of Agriculture.</a></li>
+          <li><a href="references/Stebbing1910.html">Stebbing, T.R.R. (1910) General catalogue of South African Crustacea (Part V. of S.A. Crustacea, for the Marine Investigations in South Africa). <em>Annals of the South African Museum</em> 6:281-593.</a></li>
+          <li><a href="references/Stebbing1917.html">Stebbing, T.R.R. (1917) The Malacostraca of Natal. <em>Annals of the Durban Museum</em> 2:1-33.</a></li>
+          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1-148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
+          <li><a href="references/Vatova1943.html">Vatova, A. (1943) I Decapodi della Somalia. <em>Thalassia</em> 6(2):1-37.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

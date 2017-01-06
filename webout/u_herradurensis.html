@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca herradurensis / La Herradura Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_herradurensis.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca herradurensis</h1>
+      <h2>La Herradura Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca galapagensis herradurensis</em></dt>
+        <dd>Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>La Herradura Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Minuca_herradurensis.html"><em class="species">Minuca herradurensis</em></a>, <a href="names/Uca_Minuca__galapagensis__galapagensis_herradurensis.html"><em class="species">Uca (Minuca) [galapagensis] galapagensis herradurensis</em></a>, <a href="names/Uca_Minuca_galapagensis_herradurensis.html"><em class="species">Uca (Minuca) galapagensis herradurensis</em></a>, <a href="names/Uca_Minuca_glabromana_herradurensis.html"><em class="species">Uca (Minuca) glabromana herradurensis</em></a>, <a href="names/Uca_Minuca_herradurensis.html"><em class="species">Uca (Minuca) herradurensis</em></a>, <a href="names/Uca_Minuca_macrodactyla_glabromana.html"><em class="species">Uca (Minuca) macrodactyla glabromana</em></a>, <a href="names/Uca_galapagensis_herradurensis.html"><em class="species">Uca galapagensis herradurensis</em></a>, <a href="names/Uca_herradurensis.html"><em class="species">Uca herradurensis</em></a>, <a href="names/Uca_macrodactyla_glabromana.html"><em class="species">Uca macrodactyla glabromana</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Eastern Pacific: El Salvador to Panama (possibly Mexico)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Brusca1980.html">Brusca (1980)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Hendrickx1979.html">Hendrickx (1979)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/3118975/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_herradurensis">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67550">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=659863">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/4382562">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_herradurensis01.html"><picture><img src="photos/U_herradurensis01tn.jpg" alt="Uca herradurensis" title="Uca herradurensis" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <dl class="vidlist">
+            <dt><a class="vidlink" href="webout/video/u_herradurensis01.html">Male <em class="species">Uca herradurensis</em> waving, partly blocked by grass</a></dt>
+              <dd>1:19 min., 352 x 240, MP4</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_macrodactyla.html"><picture><img src="art/Crane_Uca_macrodactyla_tn.png" alt="Uca macrodactyla" title="Uca macrodactyla" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_galapagensis_herradurensis1.html"><picture><img src="art/Crane_Uca_galapagensis_herradurensis1_tn.png" alt="Uca galapagensis herradurensis" title="Uca galapagensis herradurensis" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Barnwell1968.1.html">Barnwell, F.H. (1968) Comparative aspects of the chromatophoric responses to light and temperature in fiddler crabs of the genus <em>Uca</em>. <em>Biological Bulletin</em> 134(2):221-234.</a></li>
+          <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9-32.</a></li>
+          <li><a href="references/Boone1929.html">Boone, L. (1929) A collection of Brachyuran Crustacea from the Bay of Panama and the fresh waters of the canal zone. <em>Bulletin of the American Museum of Natural History</em> 58:561-583.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
+          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214-218.</a></li>
+          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425-500.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

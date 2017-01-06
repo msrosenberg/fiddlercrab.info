@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca coloradensis / Painted Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_coloradensis.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca coloradensis</h1>
+      <h2>Painted Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Gelasimus coloradensis</em></dt>
+        <dd>Rathbun, M.J. (1893) Descriptions of new genera and species of crabs from the west coast of North America and the Sandwich Islands. <em>Proceedings of the United States National Museum</em> 16(933):223-260.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Painted Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Gelasimus_coloradensis.html"><em class="species">Gelasimus coloradensis</em></a>, <a href="names/Leptuca_coloradensis.html"><em class="species">Leptuca coloradensis</em></a>, <a href="names/Uca_Celuca__crenulata__crenulata_coloradensis.html"><em class="species">Uca (Celuca) [crenulata] crenulata coloradensis</em></a>, <a href="names/Uca_Leptuca_coloradensis.html"><em class="species">Uca (Leptuca) coloradensis</em></a>, <a href="names/Uca_Minuca_coloradensis.html"><em class="species">Uca (Minuca) coloradensis</em></a>, <a href="names/Uca_coloradensis.html"><em class="species">Uca coloradensis</em></a>, <a href="names/Uca_crenulata_coloradensis.html"><em class="species">Uca crenulata coloradensis</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Eastern Pacific: Gulf of California, Mexico (Bahia San Felipe to Guaymas)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Brusca1980.html">Brusca (1980)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Garth1980.html">Garth & Abbott (1980)</a>; <a href="references/Green1980.html">Green (1980)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/3118945/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_coloradensis">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/84910">iNaturalist</a></dd>
+         <dd><a href="http://www.gbif.org/species/4382551">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <p>
+        <em>No pictures available at this time.</em>
+      </p>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_crenulata_coloradensis1.html"><picture><img src="art/Crane_Uca_crenulata_coloradensis1_tn.png" alt="Uca crenulata coloradensis" title="Uca crenulata coloradensis" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
+          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</a></li>
+          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105-123.</a></li>
+          <li><a href="references/Green1980.html">Green, C.J.R. (1980) Behavioral taxonomy resolves differences between Gulf of California <em>Uca</em> species (Brachyura, Ocypodidae). <em>American Zoologist</em> 20(4):957.</a></li>
+          <li><a href="references/Holmes1900.html">Holmes, S.J. (1900) Synopsis of California stalk-eyes Crustacea. <em>Occasional Papers of the California Academy of Sciences</em> 7:1-262.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Mangum1993.2.html">Mangum, C.P. (1993) Structural polymorphisms of fiddler crab hemocyanins. <em>American Zoologist</em> 33(5):64A.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Rathbun1893.html">Rathbun, M.J. (1893) Descriptions of new genera and species of crabs from the west coast of North America and the Sandwich Islands. <em>Proceedings of the United States National Museum</em> 16(933):223-260.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1935.1.html">Rathbun, M.J. (1935) Preliminary description of six new species of crabs from the Pacific coast of America. <em>Proceedings of the Biological Society of Washington</em> 48:49-52.</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

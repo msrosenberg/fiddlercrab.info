@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca longisignalis / Gulf Marsh Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_longisignalis.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca longisignalis</h1>
+      <h2>Gulf Marsh Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca longisignalis</em></dt>
+        <dd>Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275-290.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Gulf Marsh Fiddler Crab, tou-la-lou</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Uca_Minuca__galapagensis__rapax_longisignalis.html"><em class="species">Uca (Minuca) [galapagensis] rapax longisignalis</em></a>, <a href="names/Uca_Minuca_longisignalis.html"><em class="species">Uca (Minuca) longisignalis</em></a>, <a href="names/Uca_longisignalis.html"><em class="species">Uca longisignalis</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Western Atlantic: Gulf of Mexico - USA (Yankeetown, Florida to Boca Chica, Texas)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Hopkins2010.2.html">Hopkins & Thurman (2010)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/342852/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_longisignalis">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67494">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=504419">NCBI Taxonomy Browser/Genbank</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_longisignalis01.html"><picture><img src="photos/U_longisignalis01tn.jpg" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_longisignalis02.html"><picture><img src="photos/U_longisignalis02tn.jpg" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis1.html"><picture><img src="art/Salmon_Uca_longisignalis1_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis2.html"><picture><img src="art/Salmon_Uca_longisignalis2_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis3.html"><picture><img src="art/Salmon_Uca_longisignalis3_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis4.html"><picture><img src="art/Salmon_Uca_longisignalis4_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis5.html"><picture><img src="art/Salmon_Uca_longisignalis5_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis6.html"><picture><img src="art/Salmon_Uca_longisignalis6_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Salmon_Uca_longisignalis7.html"><picture><img src="art/Salmon_Uca_longisignalis7_tn.png" alt="Uca longisignalis" title="Uca longisignalis" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
+          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569-583.</a></li>
+          <li><a href="references/Croll2000.2.html">Croll, G.A., and J.B. McClintock (2000) An evaluation of lekking behavior in the fiddler crab <em>Uca</em> spp. <em>Journal of Experimental Marine Biology and Ecology</em> 254(1):109-121.</a></li>
+          <li><a href="references/Croll2000.1.html">Croll, G.A., and J.B. McClintock (2000) Sexual dimorphism, cheliped assymetry and selection pressure in <em>Uca</em> spp. <em>American Zoologist</em> 40(6):984.</a></li>
+          <li><a href="references/Fingerman1958.html">Fingerman, M., M.E. Lowe, and W.C. Mobberley, Jr. (1958) Environmental factors involved in setting the phases of tidal rhythm of color change in the fiddler crabs <em>Uca pugilator</em> and <em>Uca minax</em>. <em>Limnology and Oceanography</em> 3(3):271-282.</a></li>
+          <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
+          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
+          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52-53.</a></li>
+          <li><a href="references/Heard1983.html">Heard, R.W., Jr., and R.M. Overstreet (1983) Taxonomy and life histories of two North American species of &quot;Carneophallus&quot; (=<em>Microphallus</em>) (Digenea: Microphallidae). <em>Proceedings of the Helminthological Society of Washington</em> 50(1):170-174.</a></li>
+          <li><a href="references/Herrick1887.html">Herrick, C.L. (1887) Contribution to the fauna of the Gulf of Mexico and the South. List of the freshwater and marine Crustacea of Alabama. <em>Memoirs of the Denison Scientific Association</em> 1(1):1-56.</a></li>
+          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
+          <li><a href="references/Powers1975.1.html">Powers, L.W. (1975) Fiddler crabs in a nontidal environment. <em>Contributions in Marine Science</em> 19:67-78.</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Salmon1966.html">Salmon, M. (1966) Courtship behavior and distribution of fiddler crabs in Florida (Motion Picture). <em>American Zoologist</em> 6(4):515.</a></li>
+          <li><a href="references/Salmon1967.html">Salmon, M. (1967) Coastal distribution, display and sound production by Florida fiddler crabs (genus <em>Uca</em>). <em>Animal Behaviour</em> 15(4):449-459.</a></li>
+          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275-290.</a></li>
+          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623-639.</a></li>
+          <li><a href="references/Selander1971.html">Selander, R.K., W.E. Johnson, and J.C. Avise (1971) Biochemical population genetics of fiddler crabs (<em>Uca</em>). <em>Biological Bulletin</em> 141(2):402.</a></li>
+          <li><a href="references/Subrahmanyam1976.html">Subrahmanyam, C.B., W.L. Kruczynski, and S.H. Drake (1976) Studies on the animal communities in 2 north Florida USA salt marshes Part 2. Macro invertebrate communities. <em>Bulletin of Marine Science</em> 26(2):172-195.</a></li>
+          <li><a href="references/Thurman1984.2.html">Thurman, C.L., II (1984) Patterns of chromatophore activity in fiddler crabs genus <em>Uca</em> from coastal South Texas USA. <em>American Zoologist</em> 24(3):40A.</a></li>
+          <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
+          <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
+          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234-1235.</a></li>
+          <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
+          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

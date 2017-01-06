@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca burgersi / Burger's Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_burgersi.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca burgersi</h1>
+      <h2>Burger's Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca burgersi</em></dt>
+        <dd>Holthuis, L.B. (1967) On a new species of <em>Uca</em> from the West Indian region (Crustacea, Brachyura, Ocypodidae). <em>Zoologische Mededelingen</em> 42(6):51-54.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Burger's Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Minuca_burgersi.html"><em class="species">Minuca burgersi</em></a>, <a href="names/Uca__burgersi.html"><em class="species">Uca  burgersi</em></a>, <a href="names/Uca_Minuca_burgersi.html"><em class="species">Uca (Minuca) burgersi</em></a>, <a href="names/Uca_burgersi.html"><em class="species">Uca burgersi</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Western Atlantic: Mexico to Venezuela, Brazil, Caribbean &amp; West Indies, USA (southern Florida)</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Abele1986.html">Abele & Kim (1986)</a>; <a href="references/Barnwell1984.1.html">Barnwell & Thurman (1984)</a>; <a href="references/Barnwell1986.1.html">Barnwell (1986)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Powers1977.html">Powers (1977)</a>; <a href="references/Thurman1987.1.html">Thurman (1987)</a>; <a href="references/Thurman2013.1.html">Thurman <em>et al.</em> (2013)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/343854/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_burgersi">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/67451">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=659860">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/2221541">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi01.html"><picture><img src="photos/U_burgersi01tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi02.html"><picture><img src="photos/U_burgersi02tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi03.html"><picture><img src="photos/U_burgersi03tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi04.html"><picture><img src="photos/U_burgersi04tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi05.html"><picture><img src="photos/U_burgersi05tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_burgersi06.html"><picture><img src="photos/U_burgersi06tn.jpg" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Chace_Uca_burgersi1.html"><picture><img src="art/Chace_Uca_burgersi1_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Chace_Uca_burgersi2.html"><picture><img src="art/Chace_Uca_burgersi2_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_burgersi1.html"><picture><img src="art/Crane_Uca_burgersi1_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_burgersi2.html"><picture><img src="art/Crane_Uca_burgersi2_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_burgersi3.html"><picture><img src="art/Crane_Uca_burgersi3_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Thurman_Uca_burgersi1.html"><picture><img src="art/Thurman_Uca_burgersi1_tn.png" alt="Uca burgersi" title="Uca burgersi" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Buitendijk1950.html">Buitendijk, A.M. (1950) Note on a collection of Decapoda Brachyura from the coasts of Mexico, including the description of a new genus and species. <em>Zoologische Mededelingen</em> 30(17):269–282.</a></li>
+          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1-258.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/Fontaine1988.html">Fontaine, L.J., and F.H. Barnwell (1988) Parasitic feminization of fiddler crabs (<em>Uca</em>)<em> </em>from the Caribbean coast of Costa Rica. <em>American Zoologist</em> 28(4):92A.</a></li>
+          <li><a href="references/Gerlach1958.2.html">Gerlach, S.A. (1958) Die Mangroveregion tropischer Küsten als Lebensraum. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(6):636-730.</a></li>
+          <li><a href="references/Gibbs1974.html">Gibbs, P.E. (1974) Notes on <em>Uca burgersi</em> Holthuis (Decapoda, Ocypodidae) from Barbuda, Leeward Islands. <em>Crustaceana</em> 27(1):84-91.</a></li>
+          <li><a href="references/Gibbs1972.html">Gibbs, P.E., and G.W. Bryan (1972) A study of strontium, magnesium and calcium in the environment and exoskeleton of decapod crustaceans with special reference to <em>Uca burgersi</em> on Barbuda, West Indies. <em>Journal of Experimental Marine Biology and Ecology</em> 9(1):97-110.</a></li>
+          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
+          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1-296.</a></li>
+          <li><a href="references/Jones1968.html">Jones, H.G. (1968) Preliminary studies on the brachyuran Crustacea of Barbados. II. <em>Journal of the Barbados Museum and Historical Society</em> 32:187-189.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214-218.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/McFaddon2003.html">McFadden, A., and C.L. Thurman, II (2003) Osmoregulation by fiddler crabs (genus <em>Uca</em>) from California and South Florida. <em>Integrative and Comparative Biology</em> 43(6):1044.</a></li>
+          <li><a href="references/Mertens1940.html">Mertens, R. (1940) Zoologische Reisen auf der Insel Hispaniola. 5. An der Samana-Bucht. <em>Natur und Volk</em> 70(4):192-201.</a></li>
+          <li><a href="references/Miller1968.html">Miller, D.C., and F.J. Vernberg (1968) Some thermal requirements of fiddler crabs of the temperate and tropical zones and their influence on geographic distribution. <em>American Zoologist</em> 8(3):459-469.</a></li>
+          <li><a href="references/Nutting1919.html">Nutting, C.C. (1919) Barbados-Antigua Expedition. Narrative and preliminary report of a zoological expedition from the University of Iowa to the Lesser Antilles under the auspices of the Graduate College. <em>University of Iowa Studies in Natural History</em> 8(3):1-274.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Pearse1916.html">Pearse, A.S. (1916) An account of the Crustacea collected by the Walker Expedition to Santa Marta, Colombia. <em>Proceedings of the United States National Museum</em> 49(2123):531-556.</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
+          <li><a href="references/Rathbun1897.2.html">Rathbun, M.J. (1897) List of the decapod Crustacea of Jamaica. <em>Annals of the Institute of Jamaica</em> 1(1):1-49.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Rathbun1921.4.html">Rathbun, M.J. (1921) Report on the Brachyura collected by the Barbados-Antigua expedition from the University of Iowa in 1918. <em>University of Iowa Studies in Natural History</em> 9(5):65-90.</a></li>
+          <li><a href="references/Salmon1967.html">Salmon, M. (1967) Coastal distribution, display and sound production by Florida fiddler crabs (genus <em>Uca</em>). <em>Animal Behaviour</em> 15(4):449-459.</a></li>
+          <li><a href="references/Streets1872.html">Streets, T.H. (1872) Notice of some Crustacea from the island of St. Martin, W. I., collected by Dr. van Rijgersma. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 24:131-134.</a></li>
+          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177-178.</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361-413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238-253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300-316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
+          <li><a href="references/Warner1977.html">Warner, G.F. (1977) <em>The Biology of Crabs</em>. New York: Van Nostrand Reinhold Company.</a></li>
+          <li><a href="references/Weis1977.1.html">Weis, J.S. (1977) Limb regneration in fiddler crabs: Species differences and effects of methylmercury. <em>Biological Bulletin</em> 152(2):263-274.</a></li>
+          <li><a href="references/Weygoldt1977.html">Weygoldt, P. (1977) Communication in crustaceans and arachnids. Pp. 303-333 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

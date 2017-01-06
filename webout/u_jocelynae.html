@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca jocelynae / Jocelyn's Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_jocelynae.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca jocelynae</h1>
+      <h2>Jocelyn's Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca jocelynae</em></dt>
+        <dd>Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47-62.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Jocelyn's Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Uca_jocelynae.html"><em class="species">Uca jocelynae</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Indo-West Pacific: Pacific islands west of Fiji, including Japan (Ryukyus), Taiwan, the Philippines, Indonesia, Papua New Guinea, and Vanuatu</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/19662272/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_jocelynae">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/84903">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=696540">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/5863492">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae01.html"><picture><img src="photos/U_jocelynae01tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae02.html"><picture><img src="photos/U_jocelynae02tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae03.html"><picture><img src="photos/U_jocelynae03tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae04.html"><picture><img src="photos/U_jocelynae04tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae05.html"><picture><img src="photos/U_jocelynae05tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae06.html"><picture><img src="photos/U_jocelynae06tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae07.html"><picture><img src="photos/U_jocelynae07tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae08.html"><picture><img src="photos/U_jocelynae08tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae09.html"><picture><img src="photos/U_jocelynae09tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae10.html"><picture><img src="photos/U_jocelynae10tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae11.html"><picture><img src="photos/U_jocelynae11tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae12.html"><picture><img src="photos/U_jocelynae12tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae13.html"><picture><img src="photos/U_jocelynae13tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_jocelynae14.html"><picture><img src="photos/U_jocelynae14tn.jpg" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Shih_Uca_jocelynae1.html"><picture><img src="art/Shih_Uca_jocelynae1_tn.png" alt="Uca jocelynae" title="Uca jocelynae" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Barnwell1984.3.html">Barnwell, F.H. (1984) Tidal rhythms of locomotor activity in the fiddler crab <em>Uca vocans</em> from shores with semi-diurnal and predominantly diurnal. <em>American Zoologist</em> 24(3):68A.</a></li>
+          <li><a href="references/deMan1887.1.html">De Man, J.G. (1887) Bericht über die im indischen Archipel von Dr. J. Brock gesammelten Decapoden u. Stomatopoden. <em>Archiv für Naturgeschicthe</em> 53(1):215-600.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
+          <li><a href="references/deMan1902.html">De Man, J.G. (1902) Die von Herrn Professor Kükenthal im Indischen Archipel gesammelten Dekapoden und Stomatopoden. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 25:467-929.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Miers1880.html">Miers, E.J. (1880) On a collection of Crustacea from the Malaysian Region.--Part II. Telphusidea, Catometopa, and Oxystomata. <em>Annals and Magazine of Natural History, Series V</em> 5:304-317.</a></li>
+          <li><a href="references/Miers1886.html">Miers, E.J. (1886) Report on the Brachyura collected by H.M.S. Challenger during the years 1873-76. Pp. 1-362 in <em>H.M.S. Challenger Reports</em>, Volume XVII. London</a></li>
+          <li><a href="references/Nobili1899.2.html">Nobili, G. (1899) Contribuzioni alla conoscenza della fauna carcinologica della Papuasia, delle Molucche e dell' Australia. <em>Annali del Museo Civico di Storia Naturale di Genova (Serie 2a, Vol. XX)</em> 40:230-282.</a></li>
+          <li><a href="references/Pesta1913.html">Pesta, O. (1913) Decapoda Brachyura aus Samoa. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 88:36-65.</a></li>
+          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47-62.</a></li>
+          <li><a href="references/Takeda1973.html">Takeda, M., and T. Yamaguchi (1973) Occurences of abnormal males in a fiddler crab, <em>Uca marionis</em> (Desmarest), with notes on asymmetry of chelipeds. <em>Proceedings of the Japanese Society of Systematic Zoology</em> 9:13-20. {武田正倫 and 山口隆男} {ヒメシオマネキ (incomplete)}</a></li>
+          <li><a href="references/Thallwitz1891.html">Thallwitz, J. (1891) Decapoden-Studien, insbesondere basirt auf A. B. Meyer's Sammlungen im ostindischen Archipel, nebst einer Aufzählung der Decapoden und Stomatopoden des Dresdener Museums. <em>Abhandlungen und Berichte des Koeniglichen Zoologischen und Anthropologisch- Ethnographischen Museums zu Dresden</em> 3(3):1-55.</a></li>
+          <li><a href="references/Yamaghuchi1973.2.html">Yamaguchi, T., and M. Takeda (1973) Dimorphism of chelipeds and systematic status of a fiddler crab, <em>Uca marionis</em> (Desmarest). <em>Proceedings of the Japanese Society of Systematic Zoology</em> 9:7-12. {山口隆男 and 武田正倫} {ヒメシオマネキ (incomplete)}</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

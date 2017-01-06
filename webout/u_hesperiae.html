@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca hesperiae / Western Calling Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
+    <link rel="stylesheet" href="uca_style.css" />
+    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
+        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_hesperiae.kmz",{suppressInfoWindows: true});
+        ctaLayer.setMap(map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html">Fiddler Crabs</a>
+    </div>
+    <header>
+      <h1 class="species">Uca hesperiae</h1>
+      <h2>Western Calling Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2><a name="type">Type Description</a></h2>
+      <dl>
+        <dt><em class="species">Uca vocans hesperiae</em></dt>
+        <dd>Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Western Calling Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+         <dd><em class="species"><a href="names/Uca_Gelasimus_hesperiae.html"><em class="species">Uca (Gelasimus) hesperiae</em></a>, <a href="names/Uca_Thalassuca_vocans_hesperiae.html"><em class="species">Uca (Thalassuca) vocans hesperiae</em></a>, <a href="names/Uca_hesperiae.html"><em class="species">Uca hesperiae</em></a></em></dd>
+       <dt>Geographic Range</dt>
+         <dd>Indo-West Pacific: South Africa to Somalia, Southern India, Burma, Thailand, Western Indonesia, Western Malaysia</dd>
+         <dd>
+           <div id="map_canvas_sp"></div>
+         </dd>
+         <dd class="map_data">
+           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Frith1978.html">Frith & Frith (1978)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://eol.org/pages/3118939/overview">Encyclopedia of Life</a></dd>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_hesperiae">Wikipedia</a></dd>
+         <dd><a href="http://www.inaturalist.org/taxa/84902">iNaturalist</a></dd>
+         <dd><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=696548">NCBI Taxonomy Browser/Genbank</a></dd>
+         <dd><a href="http://www.gbif.org/species/4382544">GBIF</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae01.html"><picture><img src="photos/U_hesperiae01tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae02.html"><picture><img src="photos/U_hesperiae02tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae03.html"><picture><img src="photos/U_hesperiae03tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae04.html"><picture><img src="photos/U_hesperiae04tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae05.html"><picture><img src="photos/U_hesperiae05tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/photos/u_hesperiae06.html"><picture><img src="photos/U_hesperiae06tn.jpg" alt="Uca hesperiae" title="Uca hesperiae" /></picture></a>
+      </figure>
+
+    <section class="spsection">
+      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <figure class="sppic">
+        <a href="webout/art/Gravely_Uca_marionis_var_nitidus.html"><picture><img src="art/Gravely_Uca_marionis_var_nitidus_tn.png" alt="Uca marionis var. nitidus" title="Uca marionis var. nitidus" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_marionis.html"><picture><img src="art/Barnard_Uca_marionis_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_marionis2.html"><picture><img src="art/Barnard_Uca_marionis2_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Barnard_Uca_marionis3.html"><picture><img src="art/Barnard_Uca_marionis3_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Chhapgar_Gelasimus_marionis_nitidus.html"><picture><img src="art/Chhapgar_Gelasimus_marionis_nitidus_tn.jpg" alt="Gelasimus marionis nitidus" title="Gelasimus marionis nitidus" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_marionis1.html"><picture><img src="art/Crosnier_Uca_marionis1_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_marionis2.html"><picture><img src="art/Crosnier_Uca_marionis2_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_marionis3.html"><picture><img src="art/Crosnier_Uca_marionis3_tn.png" alt="Uca marionis" title="Uca marionis" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crosnier_Uca_marionis_excisa.html"><picture><img src="art/Crosnier_Uca_marionis_excisa_tn.png" alt="Uca marionis forme excisa" title="Uca marionis forme excisa" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_vocans_hesperiae1.html"><picture><img src="art/Crane_Uca_vocans_hesperiae1_tn.png" alt="Uca vocans hesperiae" title="Uca vocans hesperiae" /></picture></a>
+      </figure>
+      <figure class="sppic">
+        <a href="webout/art/Crane_Uca_vocans_hesperiae2.html"><picture><img src="art/Crane_Uca_vocans_hesperiae2_tn.png" alt="Uca vocans hesperiae" title="Uca vocans hesperiae" /></picture></a>
+      </figure>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
+      <div id="citation">
+        <ul>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279-456.</a></li>
+          <li><a href="references/Altevogt1955.2.html">Altevogt, R. (1955) Beobachtungen und Untersuchungen an indischen Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(6):501-522.</a></li>
+          <li><a href="references/Altevogt1955.1.html">Altevogt, R. (1955) Some studies on two species of Indian fiddler crabs, <em>Uca marionis nitidus</em> (Dana) and <em>U. annulipes</em> (Latr.). <em>Journal of the Bombay Natural History Society</em> 52:702-716.</a></li>
+          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1-110.</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
+          <li><a href="references/Aurivillius1893.html">Aurivillius, C.W.S. (1893) Die Beziehungen der Sinnesorgane amphibischer Decapoden zur Lebensweise und Athmung. <em>Nova Acta Regiæ Societatis Scientiarum Upsaliensis. Seriei 3</em> 16(9):1-48.</a></li>
+          <li><a href="references/Barnard1925.html">Barnard, K.H. (1925) Report on a collection of Crustacea from Portuguese South Africa. <em>Transactions of the Royal Society of South Africa</em> 13(2):119-129.</a></li>
+          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1-837.</a></li>
+          <li><a href="references/Chace1942.html">Chace, F.A., Jr. (1942) Scientific results of a fourth expedition to forested areas in Eastern Africa. III. Decapod Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 91(3):185-233.</a></li>
+          <li><a href="references/Chhapgar1957.html">Chhapgar, B.F. (1957) On the marine crabs (Decapoda: Brachyura) of Bombay State. Part II. <em>Journal of the Bombay Natural History Society</em> 54(3):503-549.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1-143.</a></li>
+          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177-195.</a></li>
+          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71-91.</a></li>
+          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79-85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
+          <li><a href="references/Farrow1971.html">Farrow, G.E. (1971) Back-reef and lagoonal environments of Aldabra Atoll distinguished by their crustacean burrows. <em>Symposia of the Zoological Society of London</em> 28:455-500.</a></li>
+          <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
+          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3-4):238-241.</a></li>
+          <li><a href="references/Gravely1927.html">Gravely, F.H. (1927) The Littoral Fauna of Krusadai Island in the Gulf of Manaar: Orders Decapoda (except Paguridea) and Stomatopoda. <em>Bulletin of the Madras Government Museum</em> 1(1):135-155.</a></li>
+          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305-328.</a></li>
+          <li><a href="references/Herklots1861.html">Herklots, J.A. (1861) Symbolae Carcinologicae. I. Catalogue des Crustacés qui ont servi de base au système Carcinologique de M. W. de Haan, rédigé d'après la collection du Musée des PayBas et les Crustacés de la Faune du Japon. <em>Tijdschrift voor entomologie</em> 4:116-156.</a></li>
+          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69-116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
+          <li><a href="references/Hoffmann1874.html">Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Kossmann1877.html">Kossmann, R. (1877) <em>Zoologische Ergebnisse einer Reise in die Küstengegenden des Roten Meeres III. Crustacea</em>. Leipzig: Wilhelm Engelmann.</a></li>
+          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407-475.</a></li>
+          <li><a href="references/Lenz1910.html">Lenz, H. (1910) Crustaceen von Madagaskar, Ostafrika und Ceylon. Pp. 539-576 in <em>Reise in Ostafrkia in den Jahren 1903-1905</em>, A. Voeltzkow, ed., Volume 2. Stuttgart</a></li>
+          <li><a href="references/Lenz1881.html">Lenz, H., and F. Richters (1881) Beitrag zur Krustaceenfauna von Madagascar. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 12:421-428.</a></li>
+          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45-84.</a></li>
+          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1-25.</a></li>
+          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19-34.</a></li>
+          <li><a href="references/Miers1879.2.html">Miers, E.J. (1879) An account of the Petrological, Botanical, and Zoological collections made in Kerguelen's Land and Rodriguez during the Transit of Venus Expeditions, carried out by order of Her Majesty's Government in the years 1874-75. Crustacea. <em>Philosophical Transactions of the Royal Society of London</em> 168:485-496.</a></li>
+          <li><a href="references/MilneEdwards1868.html">Milne-Edwards, A. (1868) Description de quelques crustaces nouveaux provenant des voyages de M. Alfred Grandidier a Zanzibar et a Madagascar. <em>Nouvelles Archives de Muséum d'Historie Naturelle de Paris</em> 4:69-92.</a></li>
+          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1-39: Leipzig).</a></li>
+          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1-347.</a></li>
+          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683-772.</a></li>
+          <li><a href="references/Richters1880.html">Richters, E. (1880) Decapoda. Pp. 139-178 in <em>Beitrage zur Meeresfauna der Insel Mauritius und der Seychellen</em>, K. Mobius, E. Richters and E. von Martens, eds. Berlin: Gutmannschen.</a></li>
+          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47-62.</a></li>
+          <li><a href="references/Stebbing1921.html">Stebbing, T.R.R. (1921) Some Crustacea of Natal. <em>Annals of the Durban Museum</em> 3:12-26.</a></li>
+          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139-146.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
