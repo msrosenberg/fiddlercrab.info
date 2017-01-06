@@ -231,6 +231,11 @@ dd {
   padding-left: 5px;
  }
 
+.fossil-img {
+  xfont-weight: bold;
+  font-style: normal;
+ }
+
 .spsection table {
   width: 100%;
   border-top: 2px solid black;
