@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_insignis.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_insignis_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca insignis</h1>
-      <h2>Distinguished Fiddler Crab</h2>
+    <header id="u_insignis.html">
+      <h1 class="species bookmark2">Uca insignis</h1>
+      <h2 class="nobookmark">Distinguished Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Acanthoplax insignis</em></dt>
-        <dd>Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109-166.</dd>
+        <dd>Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Distinguished Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Acanthoplax_excellens.html"><em class="species">Acanthoplax excellens</em></a>, <a href="names/Acanthoplax_insignis.html"><em class="species">Acanthoplax insignis</em></a>, <a href="names/Gelasimus_Acanthoplax_excellens.html"><em class="species">Gelasimus (Acanthoplax) excellens</em></a>, <a href="names/Gelasimus_armatus.html"><em class="species">Gelasimus armatus</em></a>, <a href="names/Gelasimus_insignis.html"><em class="species">Gelasimus insignis</em></a>, <a href="names/Uca_Uca_insignis.html"><em class="species">Uca (Uca) insignis</em></a>, <a href="names/Uca_Uca_maracoani_insignis.html"><em class="species">Uca (Uca) maracoani insignis</em></a>, <a href="names/Uca_insignis.html"><em class="species">Uca insignis</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to northern Peru</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_insignis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/vonPrahl1982.html">von Prahl (1982)</a>
@@ -99,50 +102,69 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <p>
         <em>No pictures available at this time.</em>
       </p>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Bott_Gelasimus_insignis.html"><picture><img src="art/Bott_Gelasimus_insignis_tn.png" alt="Gelasimus insignis" title="Gelasimus insignis" /></picture></a>
+        <a href="art/Bott_Gelasimus_insignis.html"><img class="thumbnail" src="art/Bott_Gelasimus_insignis_tn.png" alt="Gelasimus insignis thumbnail" title="Gelasimus insignis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_maracoani_insignis1.html"><picture><img src="art/Crane_Uca_maracoani_insignis1_tn.png" alt="Uca maracoani insignis" title="Uca maracoani insignis" /></picture></a>
+        <a href="art/Crane_Uca_maracoani_insignis1.html"><img class="thumbnail" src="art/Crane_Uca_maracoani_insignis1_tn.png" alt="Uca maracoani insignis thumbnail" title="Uca maracoani insignis" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238-249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
-          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214-218.</a></li>
-          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109-166.</a></li>
+          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
+          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238&ndash;249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Cano1889.2.html">Cano, G. (1889) Viaggio della R. Corvetta Vettor Pisani attorno al globo. — Crostácei Brachiuri ed Anomuri. <em>Bollettino della Società di Naturalisti in Napoli</em> 3(2):169&ndash;268.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663&ndash;676.</a></li>
+          <li><a href="references/Garth1957.html">Garth, J.S. (1957) Reports of the Lund University Chile expedition 1948-1949. No. 29. The Crustacea Decapoda Brachyura of Chile. <em>Lunds Universitets Årsskrift</em> 53(7):1&ndash;128.</a></li>
+          <li><a href="references/Gerstaecker1856.html">Gerstaecker, A. (1856) Carcinologische Beiträge. <em>Archiv für Naturgeschichte</em> 22(1):101&ndash;162.</a></li>
+          <li><a href="references/Holthuis1954.2.html">Holthuis, L.B. (1954) Observaciones sobre los crustaceos decapodos de la Republica de El Salvador. <em>Comunicaciones Universidad de El Salvador. Instituto Tropical de Investigaciones Cientificas</em> 3(4):159&ndash;166.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214&ndash;218.</a></li>
+          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
           <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Porter1913.html">Porter, C.E. (1913) Sinopsis de los Ocypodidae de Chile. <em>Boletin del Museo Nacional de Chile</em> 5(2):313-318.</a></li>
-          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531-620.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/MilneEdwards1854.1.html">Milne Edwards, H. (1854) Notes sur quelques crustacés nouveaux ou peu connus conservés dans la collection du muséum d'histoire naturelle. <em>Archives du Museum d'Histoire Naturelle</em> 7:145&ndash;192.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
+          <li><a href="references/Porter1913.html">Porter, C.E. (1913) Sinopsis de los Ocypodidae de Chile. <em>Boletin del Museo Nacional de Chile</em> 5(2):313&ndash;318.</a></li>
+          <li><a href="references/Porter1917.html">Porter, C.E. (1917) Materiales para la fauna carcinológica de Chile. XIV. La familia Ocypodidae. <em>Revista Chilena de Historia Natural</em> 21(1&ndash;2):152&ndash;160.</a></li>
+          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531&ndash;620.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Smith1871.html">Smith, S.I. (1871) List of the Crustacea collected by J. A. McNiel in Central America. <em>Annual Reports of the Trustees of the Peabody Academy of Science</em> 1869:87&ndash;98.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1969.html">von Hagen, H.-O. (1969) Stärlinge und Kärpflinge als Eiräuber bei der Winkerkrabbe <em>Uca vocator</em> (Herbst). <em>Zeitschrift für Tierpsychologie</em> 26(1):1&ndash;6. {Starlings and carps (birds and fish) as egg robbers of the fiddler crab <em>Uca vocator</em> (Herbst)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/vonHagen1976.html">von Hagen, H.-O. (1976) (Book Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Crustaceana</em> 31(2):221&ndash;224.</a></li>
+          <li><a href="references/Young1900.html">Young, C.G. (1900) <em>The stalk-eyed Crustacea of British Guiana, West Indies and Bermuda</em>. London: J. M. Watkins.</a></li>
         </ul>
       </div>
     </section>
@@ -151,7 +173,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

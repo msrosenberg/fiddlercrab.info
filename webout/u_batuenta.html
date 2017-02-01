@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_batuenta.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_batuenta_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca batuenta</h1>
-      <h2>Beating Fiddler Crab</h2>
+    <header id="u_batuenta.html">
+      <h1 class="species bookmark2">Uca batuenta</h1>
+      <h2 class="nobookmark">Beating Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca batuenta</em></dt>
-        <dd>Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</dd>
+        <dd>Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Beating Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Celuca__crenulata__batuenta.html"><em class="species">Uca (Celuca) [crenulata] batuenta</em></a>, <a href="names/Uca_Leptuca_batuenta.html"><em class="species">Uca (Leptuca) batuenta</em></a>, <a href="names/Uca_Minuca_saltitanta_batuenta.html"><em class="species">Uca (Minuca) saltitanta batuenta</em></a>, <a href="names/Uca_batuenta.html"><em class="species">Uca batuenta</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to northern Peru</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_batuenta_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>
@@ -98,66 +101,73 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_batuenta01.html"><picture><img src="photos/U_batuenta01tn.jpg" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="photos/photo_u_batuenta01.html"><img class="thumbnail" src="photos/U_batuenta01tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_batuenta02.html"><picture><img src="photos/U_batuenta02tn.jpg" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="photos/photo_u_batuenta02.html"><img class="thumbnail" src="photos/U_batuenta02tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_oerstedi_batuenta_saltitanta_inaequalis01.html"><picture><img src="photos/U_oerstedi_batuenta_saltitanta_inaequalis01tn.jpg" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="photos/photo_u_oerstedi_batuenta_saltitanta_inaequalis01.html"><img class="thumbnail" src="photos/U_oerstedi_batuenta_saltitanta_inaequalis01tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <dl class="vidlist">
-            <dt><a class="vidlink" href="webout/video/u_batuenta01.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta01.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
               <dd>17 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_batuenta02.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta02.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
               <dd>29 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_batuenta03.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta03.html">Male <em class="species">Uca batuenta</em> feeding</a></dt>
               <dd>10 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_batuenta04.html">Male <em class="species">Uca batuenta</em> waving (surrounded by miscellaneous other species)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta04.html">Male <em class="species">Uca batuenta</em> waving (surrounded by miscellaneous other species)</a></dt>
               <dd>26 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_batuenta05.html">Male <em class="species">Uca batuenta</em> waving</a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta05.html">Male <em class="species">Uca batuenta</em> waving</a></dt>
               <dd>12 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_batuenta_saltitanta01.html">Interspecific agression between male <em class="species">Uca batuenta</em> (on right) and male <em class="species">Uca saltitanta</em> (on left) </a></dt>
+            <dt><a class="vidlink" href="video/video_u_batuenta_saltitanta01.html">Interspecific agression between male <em class="species">Uca batuenta</em> (on right) and male <em class="species">Uca saltitanta</em> (on left) </a></dt>
               <dd>23 sec., 352 x 240, MP4</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_batuenta1.html"><picture><img src="art/Crane_Uca_batuenta1_tn.png" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="art/Crane_Uca_batuenta1.html"><img class="thumbnail" src="art/Crane_Uca_batuenta1_tn.png" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_batuenta2.html"><picture><img src="art/Crane_Uca_batuenta2_tn.png" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="art/Crane_Uca_batuenta2.html"><img class="thumbnail" src="art/Crane_Uca_batuenta2_tn.png" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_batuenta3.html"><picture><img src="art/Crane_Uca_batuenta3_tn.png" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="art/Crane_Uca_batuenta3.html"><img class="thumbnail" src="art/Crane_Uca_batuenta3_tn.png" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_batuenta4.html"><picture><img src="art/Crane_Uca_batuenta4_tn.png" alt="Uca batuenta" title="Uca batuenta" /></picture></a>
+        <a href="art/Crane_Uca_batuenta4.html"><img class="thumbnail" src="art/Crane_Uca_batuenta4_tn.png" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
+          <li><a href="references/Altevogt1959.1.html">Altevogt, R. (1959) Ökologische und ethologische Studien an Europas einziger Winkerkrabbe <em>Uca tangeri</em> Eydoux. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 48(2):123&ndash;146.</a></li>
+          <li><a href="references/Altevogt1962.html">Altevogt, R. (1962) Akustische Epiphänomene im Sozialverhalten von <em>Uca tangeri</em> in Südspanien. <em>Verhandlungen der Deutschen Zoologischen Gesellschaft</em> 26:309&ndash;315.</a></li>
+          <li><a href="references/Altevogt1970.html">Altevogt, R. (1970) Form und Funktion der vibratorischen Signale von <em>Uca tangeri</em> und <em>Uca inaequalis</em> (Crustacea, Ocypodidae). <em>forma et functio</em> 2:178&ndash;187. {Form and function of vibrational signals in <em>Uca tangeri</em> and <em>Uca inaequalis</em> (Crustacea, Ocypodidae)}</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
           <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Burkenroad1947.html">Burkenroad, M.D. (1947) Production of sound by the fiddler crab, <em>Uca pugilator</em> Bosc, with remarks on its nocturnal mating behaviour. <em>Ecology</em> 28(4):458&ndash;462.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
           <li><a href="references/Green1961.html">Green, J. (1961) <em>A Biology of Crustacea</em>. Chicago, IL: Quadrangle Books.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
         </ul>
       </div>
     </section>
@@ -166,7 +176,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

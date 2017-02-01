@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_argillicola.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_argillicola_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca argillicola</h1>
-      <h2>Clay Fiddler Crab</h2>
+    <header id="u_argillicola.html">
+      <h1 class="species bookmark2">Uca argillicola</h1>
+      <h2 class="nobookmark">Clay Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca argillicola</em></dt>
-        <dd>Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</dd>
+        <dd>Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Clay Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Celuca_argillicola.html"><em class="species">Uca (Celuca) argillicola</em></a>, <a href="names/Uca_Minuca_argillicola.html"><em class="species">Uca (Minuca) argillicola</em></a>, <a href="names/Uca_argillicola.html"><em class="species">Uca argillicola</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Costa Rica (Gulf of Dulce) to Colombia (Buenaventura)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_argillicola_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/vonPrahl1982.html">von Prahl (1982)</a>
@@ -99,44 +102,46 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_argillicola01.html"><picture><img src="photos/U_argillicola01tn.jpg" alt="Uca argillicola" title="Uca argillicola" /></picture></a>
+        <a href="photos/photo_u_argillicola01.html"><img class="thumbnail" src="photos/U_argillicola01tn.jpg" alt="Uca argillicola thumbnail" title="Uca argillicola" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <dl class="vidlist">
-            <dt><a class="vidlink" href="webout/video/u_argillicola01.html">Male <em class="species">Uca argillicola</em> feeding outside of burrow</a></dt>
+            <dt><a class="vidlink" href="video/video_u_argillicola01.html">Male <em class="species">Uca argillicola</em> feeding outside of burrow</a></dt>
               <dd>37 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_argillicola02.html">Male <em class="species">Uca argillicola</em> retreating into burrow</a></dt>
+            <dt><a class="vidlink" href="video/video_u_argillicola02.html">Male <em class="species">Uca argillicola</em> retreating into burrow</a></dt>
               <dd>14 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_argillicola03.html">Male <em class="species">Uca argillicola</em> feeding outside of burrow</a></dt>
+            <dt><a class="vidlink" href="video/video_u_argillicola03.html">Male <em class="species">Uca argillicola</em> feeding outside of burrow</a></dt>
               <dd>25 sec., 352 x 240, MP4</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_argillicola.html"><picture><img src="art/Crane_Uca_argillicola_tn.png" alt="Uca argillicola" title="Uca argillicola" /></picture></a>
+        <a href="art/Crane_Uca_argillicola.html"><img class="thumbnail" src="art/Crane_Uca_argillicola_tn.png" alt="Uca argillicola thumbnail" title="Uca argillicola" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_argillicola2.html"><picture><img src="art/Crane_Uca_argillicola2_tn.png" alt="Uca argillicola" title="Uca argillicola" /></picture></a>
+        <a href="art/Crane_Uca_argillicola2.html"><img class="thumbnail" src="art/Crane_Uca_argillicola2_tn.png" alt="Uca argillicola thumbnail" title="Uca argillicola" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
           <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
-          <li><a href="references/Garth1948.html">Garth, J.S. (1948) The Brachyura of the &quot;Askoy&quot; expedition. With remarks on carcinological collecting in the Panama Bight. <em>Bulletin of the American Museum of Natural History</em> 92(1):1-66.</a></li>
-          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214-218.</a></li>
-          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81-94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Garth1948.html">Garth, J.S. (1948) The Brachyura of the &quot;Askoy&quot; expedition. With remarks on carcinological collecting in the Panama Bight. <em>Bulletin of the American Museum of Natural History</em> 92(1):1&ndash;66.</a></li>
+          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214&ndash;218.</a></li>
+          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
         </ul>
       </div>
     </section>
@@ -145,7 +150,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

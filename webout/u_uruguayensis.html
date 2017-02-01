@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_uruguayensis.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_uruguayensis_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca uruguayensis</h1>
-      <h2>Uruguayan Fiddler Crab</h2>
+    <header id="u_uruguayensis.html">
+      <h1 class="species bookmark2">Uca uruguayensis</h1>
+      <h2 class="nobookmark">Uruguayan Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca uruguayensis</em></dt>
-        <dd>Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1-16.</dd>
+        <dd>Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1&ndash;16.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Uruguayan Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Planuca_uruguayensis.html"><em class="species">Planuca uruguayensis</em></a>, <a href="names/Uca_Celuca__crenulata__uruguayensis.html"><em class="species">Uca (Celuca) [crenulata] uruguayensis</em></a>, <a href="names/Uca_Leptuca_uruguayensis.html"><em class="species">Uca (Leptuca) uruguayensis</em></a>, <a href="names/Uca_Minuca_olympioi.html"><em class="species">Uca (Minuca) olympioi</em></a>, <a href="names/Uca_Minuca_uruguayensis.html"><em class="species">Uca (Minuca) uruguayensis</em></a>, <a href="names/Uca_olympioi.html"><em class="species">Uca olympioi</em></a>, <a href="names/Uca_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Brazil (Cabo Frio) to Argentina (Mar Chiquita)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_uruguayensis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Thurman2013.1.html">Thurman <em>et al.</em> (2013)</a>
@@ -99,72 +102,82 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis01.html"><picture><img src="photos/U_uruguayensis01tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis01.html"><img class="thumbnail" src="photos/U_uruguayensis01tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis02.html"><picture><img src="photos/U_uruguayensis02tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis02.html"><img class="thumbnail" src="photos/U_uruguayensis02tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis03.html"><picture><img src="photos/U_uruguayensis03tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis03.html"><img class="thumbnail" src="photos/U_uruguayensis03tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis04.html"><picture><img src="photos/U_uruguayensis04tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis04.html"><img class="thumbnail" src="photos/U_uruguayensis04tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis05.html"><picture><img src="photos/U_uruguayensis05tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis05.html"><img class="thumbnail" src="photos/U_uruguayensis05tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_uruguayensis06.html"><picture><img src="photos/U_uruguayensis06tn.jpg" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="photos/photo_u_uruguayensis06.html"><img class="thumbnail" src="photos/U_uruguayensis06tn.jpg" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Oliveira_Uca_olympioi.html"><picture><img src="art/Oliveira_Uca_olympioi_tn.png" alt="Uca olympioi" title="Uca olympioi" /></picture></a>
+        <a href="art/Oliveira_Uca_olympioi.html"><img class="thumbnail" src="art/Oliveira_Uca_olympioi_tn.png" alt="Uca olympioi thumbnail" title="Uca olympioi" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Oliveira_Uca_uruguayensis.html"><picture><img src="art/Oliveira_Uca_uruguayensis_tn.png" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="art/Oliveira_Uca_uruguayensis.html"><img class="thumbnail" src="art/Oliveira_Uca_uruguayensis_tn.png" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_uruguayensis1.html"><picture><img src="art/Crane_Uca_uruguayensis1_tn.png" alt="Uca uruguayensis" title="Uca uruguayensis" /></picture></a>
+        <a href="art/Crane_Uca_uruguayensis1.html"><img class="thumbnail" src="art/Crane_Uca_uruguayensis1_tn.png" alt="Uca uruguayensis thumbnail" title="Uca uruguayensis" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
-          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133-236.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Dansereau1947.html">Dansereau, P. (1947) Zonation et succession sur la restinga de Rio de Janeiro. I. Halosère. <em>Revue Canadienne de Biologie</em> 6:448-477.</a></li>
-          <li><a href="references/Fimpel1975.html">Fimpel, E. (1975) Phänomene der Landadaptation bei terrestrischen und semiterrestrischen Brachyura der brasilianischen Küste (Malacostraca, Decapoda). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 102(2):173-214. {On the landadaptation of terrestrial and semiterrestrial brachyura from the Brasilian coast}</a></li>
-          <li><a href="references/Hartnoll1988.2.html">Hartnoll, R.G. (1988) Evolution, systematics, and geographical distribution. Pp. 6-54 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133&ndash;236.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Dansereau1947.html">Dansereau, P. (1947) Zonation et succession sur la restinga de Rio de Janeiro. I. Halosère. <em>Revue Canadienne de Biologie</em> 6:448&ndash;477.</a></li>
+          <li><a href="references/Fimpel1975.html">Fimpel, E. (1975) Phänomene der Landadaptation bei terrestrischen und semiterrestrischen Brachyura der brasilianischen Küste (Malacostraca, Decapoda). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 102(2):173&ndash;214. {On the landadaptation of terrestrial and semiterrestrial brachyura from the Brasilian coast}</a></li>
+          <li><a href="references/Hartnoll1988.2.html">Hartnoll, R.G. (1988) Evolution, systematics, and geographical distribution. Pp. 6&ndash;54 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
           <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Lacerda1976.html">Lacerda, T.P. (1976) Hormone pédunculaire et rythme pigmentaire chez <em>Uca olympioi</em> et <em>Uca pugnax</em>. <em>Acta Biológica Paranaense</em> 5(1-2):49-61.</a></li>
-          <li><a href="references/Luederwaldt1919.2.html">Luederwaldt, H. (1919) Lista dos Crustaceos superiores (Thoracostraca) do Museu Paulista que foram encontrados no Estado de S. Paulo. <em>Revista do Museu Paulista</em> 11:429-435.</a></li>
-          <li><a href="references/Luederwaldt1919.1.html">Luederwaldt, H. (1919) Os manguesaes de Santos. <em>Revista do Museu Paulista</em> 11:311-408.</a></li>
-          <li><a href="references/Luederwaldt1929.html">Luederwaldt, H. (1929) Resultados de uma excursão scientifica á Ilha de São Sebastião no littoral do Estado de São Paulo e em 1925. <em>Revista do Museu Paulista</em> 16:1-79.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
-          <li><a href="references/Nobili1901.2.html">Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1-16.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Oliveira1953.html">Oliveira, L.P.H.d., and L. Krau (1953) Levantamento biogeográfico da Baía de Guanabara II--Crescimento do manguezal na Ilha do Pinheiro. <em>Memórias do Instituto Oswaldo Cruz</em> 51:503-544.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
+          <li><a href="references/Lacerda1976.html">Lacerda, T.P. (1976) Hormone pédunculaire et rythme pigmentaire chez <em>Uca olympioi</em> et <em>Uca pugnax</em>. <em>Acta Biológica Paranaense</em> 5(1&ndash;2):49&ndash;61.</a></li>
+          <li><a href="references/Luederwaldt1919.2.html">Luederwaldt, H. (1919) Lista dos Crustaceos superiores (Thoracostraca) do Museu Paulista que foram encontrados no Estado de S. Paulo. <em>Revista do Museu Paulista</em> 11:429&ndash;435.</a></li>
+          <li><a href="references/Luederwaldt1919.1.html">Luederwaldt, H. (1919) Os manguesaes de Santos. <em>Revista do Museu Paulista</em> 11:311&ndash;408.</a></li>
+          <li><a href="references/Luederwaldt1929.html">Luederwaldt, H. (1929) Resultados de uma excursão scientifica á Ilha de São Sebastião no littoral do Estado de São Paulo e em 1925. <em>Revista do Museu Paulista</em> 16:1&ndash;79.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/Martins1959.html">Martins, T., W. Ladosky, and B.M. Castro (1959) A regulação do tempo biológico inversão experimental do rítmo diurno dos cromatóforos de <em>Uca olimpioi</em> (Nota prévia). <em>Anais Da Academia Brasileira De Ciencias</em> 31:87&ndash;90.</a></li>
+          <li><a href="references/Nobili1901.2.html">Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1&ndash;16.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Oliveira1939.3.html">Oliveira, L.P.H.d. (1939) Observações sobre a biologia dos adultos do genero <em>Uca</em> Leach, 1814. Pp. 490&ndash;497 in <em>&quot;Livro de homenagem&quot; aos professores Alvaro e Miguel Ozorio de Almeida</em>, A.O.d. Almeida and M.O.d. Almeida, eds. Rio de Janeiro: Instituto Oswaldo Cruz.</a></li>
+          <li><a href="references/Oliveira1953.html">Oliveira, L.P.H.d., and L. Krau (1953) Levantamento biogeográfico da Baía de Guanabara II--Crescimento do manguezal na Ilha do Pinheiro. <em>Memórias do Instituto Oswaldo Cruz</em> 51:503&ndash;544.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
           <li><a href="references/Vernberg1966.7.html">Vernberg, F.J., and W.B. Vernberg (1966) Comparative metabolic studies on northern and southern hemisphere fiddler crabs. <em>American Zoologist</em> 6(3):327.</a></li>
-          <li><a href="references/Vernberg1966.5.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--VII. Metabolic-temperature acclimation responses in southern hemisphere crabs. <em>Comparative Biochemistry and Physiology</em> 19(3):489-524.</a></li>
-          <li><a href="references/Vernberg1967.1.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal lethal limits of southern hemisphere <em>Uca</em> crabs. Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. IX. <em>Oikos</em> 18(1):118-123.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/Vernberg1966.5.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--VII. Metabolic-temperature acclimation responses in southern hemisphere crabs. <em>Comparative Biochemistry and Physiology</em> 19(3):489&ndash;524.</a></li>
+          <li><a href="references/Vernberg1967.1.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal lethal limits of southern hemisphere <em>Uca</em> crabs. Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. IX. <em>Oikos</em> 18(1):118&ndash;123.</a></li>
+          <li><a href="references/Vernberg1969.1.html">Vernberg, F.J., and W.B. Vernberg (1969) Thermal influence on invertebrate respiration. <em>Chesapeake Science</em> 10(3&ndash;4):234&ndash;240.</a></li>
+          <li><a href="references/Vernberg1970.html">Vernberg, F.J., and W.B. Vernberg (1970) <em>The Animal and the Environment</em>: Holt, Rinehard and Winston.</a></li>
+          <li><a href="references/Vernberg1972.4.html">Vernberg, W.B., and F.J. Vernberg (1972) <em>Environmental Physiology of Marine Animals</em>. New York: Springer-Verlag.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
+          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
         </ul>
       </div>
     </section>
@@ -173,7 +186,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

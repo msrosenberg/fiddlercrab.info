@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_subcylindrica.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_subcylindrica_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca subcylindrica</h1>
-      <h2>Laguna Madre Fiddler Crab</h2>
+    <header id="u_subcylindrica.html">
+      <h1 class="species bookmark2">Uca subcylindrica</h1>
+      <h2 class="nobookmark">Laguna Madre Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus subcylindricus</em></dt>
-        <dd>Stimpson, W. (1859) Notes on North American Crustacea, No. 1. <em>Annals of the Lyceum of Natural History of New York</em> 7:49-93.</dd>
+        <dd>Stimpson, W. (1859) Notes on North American Crustacea, No. 1. <em>Annals of the Lyceum of Natural History of New York</em> 7:49&ndash;93.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Laguna Madre Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_sub-cylindricus.html"><em class="species">Gelasimus sub-cylindricus</em></a>, <a href="names/Gelasimus_subcylindricus.html"><em class="species">Gelasimus subcylindricus</em></a>, <a href="names/Uca_Leptuca_subcylindrica.html"><em class="species">Uca (Leptuca) subcylindrica</em></a>, <a href="names/Uca_Minuca_subcylindrica.html"><em class="species">Uca (Minuca) subcylindrica</em></a>, <a href="names/Uca_sub-cylindrica.html"><em class="species">Uca sub-cylindrica</em></a>, <a href="names/Uca_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Gulf of Mexico - Texas (including a few scattered inland populations) to Northern Mexico</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_subcylindrica_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Barnwell1984.1.html">Barnwell & Thurman (1984)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Neck1987.html">Neck (1987)</a>; Thurman (personal communication); <a href="references/Thurman1987.1.html">Thurman (1987)</a>
+           Map data derived from: <a href="references/Barnwell1984.1.html">Barnwell &amp; Thurman (1984)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Neck1987.html">Neck (1987)</a>; Thurman (personal communication); <a href="references/Thurman1987.1.html">Thurman (1987)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/343568/overview">Encyclopedia of Life</a></dd>
@@ -98,55 +101,61 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_subcylindrica01.html"><picture><img src="photos/U_subcylindrica01tn.jpg" alt="Uca subcylindrica" title="Uca subcylindrica" /></picture></a>
+        <a href="photos/photo_u_subcylindrica01.html"><img class="thumbnail" src="photos/U_subcylindrica01tn.jpg" alt="Uca subcylindrica thumbnail" title="Uca subcylindrica" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_subcylindrica1.html"><picture><img src="art/Crane_Uca_subcylindrica1_tn.png" alt="Uca subcylindrica" title="Uca subcylindrica" /></picture></a>
+        <a href="art/Crane_Uca_subcylindrica1.html"><img class="thumbnail" src="art/Crane_Uca_subcylindrica1_tn.png" alt="Uca subcylindrica thumbnail" title="Uca subcylindrica" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bright1972.html">Bright, D.B., and C.L. Hogue (1972) A synopsis of the burrowing land crabs of the world and list of their arthropod symbionts and burrow associates. <em>Contributions in Science. Natural History Museum of Los Angeles County</em> 220:1&ndash;58.</a></li>
           <li><a href="references/Borghammer1996.html">Broghammer, A.M., and C.L. Thurman, II (1996) The locomotor activity of the fiddler crab <em>Uca subcylindrica</em> under artificial lighting. <em>American Zoologist</em> 36(5):108A.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
           <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
-          <li><a href="references/Gilchrist1988.html">Gilchrist, S.L. (1988) Natural histories of selected terrestrial crabs. Pp. 382-390 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
+          <li><a href="references/Gilchrist1988.html">Gilchrist, S.L. (1988) Natural histories of selected terrestrial crabs. Pp. 382&ndash;390 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
           <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
           <li><a href="references/Rabalais1984.html">Rabalais, N.N. (1984) Reproductive ecology of semi-arid zone fiddler crabs <em>Uca subcylindrica</em>. <em>American Zoologist</em> 24(3):42A.</a></li>
           <li><a href="references/Rabalais1981.html">Rabalais, N.N., and J.N. Cameron (1981) Larval development of <em>Uca subcylindrica</em>. <em>American Zoologist</em> 21(4):990.</a></li>
           <li><a href="references/Rabalais1982.html">Rabalais, N.N., and J.N. Cameron (1982) The effects of temperature, salinity and nutrition on the larval development of <em>Uca subcylindrica</em>. <em>American Zoologist</em> 22(4):920.</a></li>
-          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60-96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
-          <li><a href="references/Stimpson1859.html">Stimpson, W. (1859) Notes on North American Crustacea, No. 1. <em>Annals of the Lyceum of Natural History of New York</em> 7:49-93.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583&ndash;592.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Rathbun1935.3.html">Rathbun, M.J. (1935) <em>Fossil Crustacea of the Atlantic and Gulf Coastal Plain</em>, Volume 2.</a></li>
+          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60&ndash;96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Sendler1912.html">Sendler, A. (1912) Zehnfusskrebse aus dem Wiesbadener Naturhistorischen Museum. <em>Jahrbuch des Nassauischen Vereins für Naturkunde</em> 65(2):189&ndash;207.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Stimpson1859.html">Stimpson, W. (1859) Notes on North American Crustacea, No. 1. <em>Annals of the Lyceum of Natural History of New York</em> 7:49&ndash;93.</a></li>
           <li><a href="references/Thurman1984.2.html">Thurman, C.L., II (1984) Patterns of chromatophore activity in fiddler crabs genus <em>Uca</em> from coastal South Texas USA. <em>American Zoologist</em> 24(3):40A.</a></li>
           <li><a href="references/Thurman1994.html">Thurman, C.L., II (1994) Evaporative water loss and corporal temperature in sympatric fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 34(5):31A.</a></li>
           <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
           <li><a href="references/Thurman1998.3.html">Thurman, C.L., II (1998) A search for tidal rhythms in the ambulatory behavior of the fiddler crab <em>Uca subcylindrica</em>. <em>American Zoologist</em> 38(5):193A.</a></li>
-          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234-1235.</a></li>
+          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234&ndash;1235.</a></li>
           <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
           <li><a href="references/Thurman1977.2.html">Thurman, C.L., II, and F.H. Barnwell (1977) Locomotor rhythms in the fiddler crab <em>Uca subcylindrica</em>. <em>American Zoologist</em> 17(4):942.</a></li>
           <li><a href="references/Thurman1981.2.html">Thurman, C.L., II, and J.R. Thurman (1981) Development and population structure of <em>Uca subcylindrica</em>. <em>American Zoologist</em> 21(4):990.</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
-          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81-94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
         </ul>
       </div>
     </section>
@@ -155,7 +164,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

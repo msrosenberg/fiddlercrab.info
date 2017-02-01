@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_stylifera.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_stylifera_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca stylifera</h1>
-      <h2>Styled Fiddler Crab</h2>
+    <header id="u_stylifera.html">
+      <h1 class="species bookmark2">Uca stylifera</h1>
+      <h2 class="nobookmark">Styled Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus styliferus</em></dt>
-        <dd>Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109-166.</dd>
+        <dd>Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Styled Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_heterophthalmus.html"><em class="species">Gelasimus heterophthalmus</em></a>, <a href="names/Gelasimus_styliferus.html"><em class="species">Gelasimus styliferus</em></a>, <a href="names/Gelasius_heterophthalmus.html"><em class="species">Gelasius heterophthalmus</em></a>, <a href="names/Uca_Gelasimus_stylifera.html"><em class="species">Uca (Gelasimus) stylifera</em></a>, <a href="names/Uca_Uca_stylifera.html"><em class="species">Uca (Uca) stylifera</em></a>, <a href="names/Uca_platydactyla_var_stylifera.html"><em class="species">Uca platydactyla </em> var. <em class="species"> stylifera</em></a>, <a href="names/Uca_stylifera.html"><em class="species">Uca stylifera</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to northern Peru</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_stylifera_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/vonPrahl1982.html">von Prahl (1982)</a>
@@ -99,69 +102,89 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_stylifera01.html"><picture><img src="photos/U_stylifera01tn.jpg" alt="Uca stylifera" title="Uca stylifera" /></picture></a>
+        <a href="photos/photo_u_stylifera01.html"><img class="thumbnail" src="photos/U_stylifera01tn.jpg" alt="Uca stylifera thumbnail" title="Uca stylifera" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_stylifera02.html"><picture><img src="photos/U_stylifera02tn.jpg" alt="Uca stylifera" title="Uca stylifera" /></picture></a>
+        <a href="photos/photo_u_stylifera02.html"><img class="thumbnail" src="photos/U_stylifera02tn.jpg" alt="Uca stylifera thumbnail" title="Uca stylifera" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_stylifera03.html"><picture><img src="photos/U_stylifera03tn.jpg" alt="Uca stylifera" title="Uca stylifera" /></picture></a>
+        <a href="photos/photo_u_stylifera03.html"><img class="thumbnail" src="photos/U_stylifera03tn.jpg" alt="Uca stylifera thumbnail" title="Uca stylifera" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <dl class="vidlist">
-            <dt><a class="vidlink" href="webout/video/u_stylifera05.html">Female <em class="species">Uca stylifera</em> feeding (with <em class="species">Uca beebei</em> in fore- and background)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera05.html">Female <em class="species">Uca stylifera</em> feeding (with <em class="species">Uca beebei</em> in fore- and background)</a></dt>
               <dd>19 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera01.html">Male <em class="species">Uca stylifera</em> waving</a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera01.html">Male <em class="species">Uca stylifera</em> waving</a></dt>
               <dd>29 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera06.html">Male <em class="species">Uca stylifera</em> waving</a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera06.html">Male <em class="species">Uca stylifera</em> waving</a></dt>
               <dd>40 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera03.html">Male <em class="species">Uca stylifera</em> fighting</a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera03.html">Male <em class="species">Uca stylifera</em> fighting</a></dt>
               <dd>40 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera04.html">Male <em class="species">Uca stylifera</em> waving and fighting</a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera04.html">Male <em class="species">Uca stylifera</em> waving and fighting</a></dt>
               <dd>2:27 min., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera02.html">Surface mating in <em class="species">Uca stylifera</em></a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera02.html">Surface mating in <em class="species">Uca stylifera</em></a></dt>
               <dd>1:42 min., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_stylifera07.html">Surface mating in <em class="species">Uca stylifera</em></a></dt>
+            <dt><a class="vidlink" href="video/video_u_stylifera07.html">Surface mating in <em class="species">Uca stylifera</em></a></dt>
               <dd>2:03 min., 352 x 240, MP4</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_stylifera1.html"><picture><img src="art/Crane_Uca_stylifera1_tn.png" alt="Uca stylifera" title="Uca stylifera" /></picture></a>
+        <a href="art/Crane_Uca_stylifera1.html"><img class="thumbnail" src="art/Crane_Uca_stylifera1_tn.png" alt="Uca stylifera thumbnail" title="Uca stylifera" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238-249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
-          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569-583.</a></li>
+          <li><a href="references/Altevogt1955.2.html">Altevogt, R. (1955) Beobachtungen und Untersuchungen an indischen Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(6):501&ndash;522.</a></li>
+          <li><a href="references/Altevogt1955.1.html">Altevogt, R. (1955) Some studies on two species of Indian fiddler crabs, <em>Uca marionis nitidus</em> (Dana) and <em>U. annulipes</em> (Latr.). <em>Journal of the Bombay Natural History Society</em> 52:702&ndash;716.</a></li>
+          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
+          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238&ndash;249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
+          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569&ndash;583.</a></li>
           <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69-95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
+          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663&ndash;676.</a></li>
+          <li><a href="references/Fingerman1988.html">Fingerman, M. (1988) Comparative strategies of pigmentary regulation in invertebrates. Pp. 393&ndash;405 in <em>Advances in Pigment Cell Research</em>, J.T. Bagnara, ed. New York: Alan R. Liss.</a></li>
+          <li><a href="references/Holthuis1954.2.html">Holthuis, L.B. (1954) Observaciones sobre los crustaceos decapodos de la Republica de El Salvador. <em>Comunicaciones Universidad de El Salvador. Instituto Tropical de Investigaciones Cientificas</em> 3(4):159&ndash;166.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
           <li><a href="references/MilneEdwards1837.1.html">Milne Edwards, H. (1837) Les Crustaces. Pp. 278 in <em>Le Regne animal distribue d'apres son organisation</em>, G. Cuvier, ed., Volume XVII. Paris</a></li>
-          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109-166.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
           <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Pesta1931.html">Pesta, O. (1931) Ergebnisse der Österreichischen biologischen Costa-Rica-Expedition 1930. I. Crustacea Decapoda aus Costa-Rica. <em>Annalen des Naturhistorischen Museums in Wien</em> 45:173-181.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Pesta1931.html">Pesta, O. (1931) Ergebnisse der Österreichischen biologischen Costa-Rica-Expedition 1930. I. Crustacea Decapoda aus Costa-Rica. <em>Annalen des Naturhistorischen Museums in Wien</em> 45:173&ndash;181.</a></li>
+          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
+          <li><a href="references/Rao1985.2.html">Rao, K.R. (1985) Pigmentary effectors. Pp. 395&ndash;462 in <em>The Biology of Crustacea, Volume 9: Integument, Pigments, and Hormonal Processes</em>, D.E. Bliss and L.H. Mantel, eds., Volume 9. Orlando, FL: Academic Press.</a></li>
+          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531&ndash;620.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60&ndash;96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Smith1871.html">Smith, S.I. (1871) List of the Crustacea collected by J. A. McNiel in Central America. <em>Annual Reports of the Trustees of the Peabody Academy of Science</em> 1869:87&ndash;98.</a></li>
+          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/vonHagen1976.html">von Hagen, H.-O. (1976) (Book Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Crustaceana</em> 31(2):221&ndash;224.</a></li>
+          <li><a href="references/vonPrahl1985.html">von Prahl, H., and N. Toro (1985) <em>Uca</em> (<em>Uca</em>) <em>intermedia</em> (Crustacea: Brachyura: Ocypodidae) A new fiddler crab of the Pacific coast of Columbia. <em>Zoologischer Anzeiger</em> 215(5&ndash;6):274&ndash;278.</a></li>
         </ul>
       </div>
     </section>
@@ -170,7 +193,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

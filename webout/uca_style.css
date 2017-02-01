@@ -1,0 +1,599 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Merienda+One);
+
+body { 
+  background-color: white;
+  background-color: white;
+  font-family: "Lora", "Georgia", serif;
+  font-size: medium;
+ }
+
+a,
+a:visited {
+  color: blue;
+  text-decoration: none;
+ }
+
+h2 a,
+h3 a {
+  color: black;
+ }
+
+h3 {
+  clear: both;
+  }
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+figure {
+  max-width: 100%;
+}
+  
+#home {
+  font-family: "Merienda One", "Monotype Corsiva", cursive;
+  background: black;
+  margin-bottom: 5px;
+ }
+
+#home a {
+  background: black url(images/stylifera75.png) no-repeat 1px 50%;
+  color: yellow;
+  display: block;
+  font-size: 2em;
+  min-height: 75px;
+  padding-left: 120px;
+ }
+
+.indeximages {
+	text-align: center;
+}
+
+footer {
+  clear: both;
+  font-style: italic;
+  font-size: 0.75em;
+  background-color: seagreen;
+  color: #D4FEE7;
+  border: 3px #20613C inset;
+  padding-left: 0 20px;
+ }
+
+footer a,
+footer a:visited {
+  color: #AAFECF;
+}
+
+#footmap {
+	padding: 0;
+	margin: 2px;
+	float: right;
+ }
+
+footer figcaption {text-align: center}
+
+.reference_list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+
+.reference_list ul li {
+	padding-left: 25px;
+	padding-bottom: 1em;
+	text-indent: -25px;
+ }
+
+header {
+  background-color: seagreen;
+  color: #D4FEE7;
+  padding: 0 20px;
+  border: 5px #20613C solid;
+  border-radius: 20px;
+ }
+
+header h1 {
+  font-size: 200%;
+  padding-bottom: 20px 0;
+  margin-bottom: 0;
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+ }
+
+header h2 {
+  padding: 0 0 20px 0;
+  margin: 0;  
+}
+
+nav {
+  padding-bottom: 1em;
+  overflow: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+ }
+
+nav a,
+nav a:visited {
+  float: left;
+  display: block;
+  color: #20613C;
+  background: #AAFECF;
+  border-radius: 8px;
+  border: 1px #20613C solid;
+  padding: 4px 8px;
+  margin: 0 3px 0 0;
+ }
+
+#chart_div ,
+#chart2_div,
+#chart4_div,
+#chart5_div,
+#chart6_div,
+#namechart1_div,
+#namechart2_div,
+#namechart3_div,
+#namechart4_div,
+#namechart5_div {width: 100%}
+ 
+#subgenera_phylogeny {width: 100%}
+#species_phylogeny {width: 100%}
+
+.lcpic,
+.sppic {
+  margin: 10px;
+  text-align: center;
+ }
+
+.lcpic img,
+.sppic img {
+  border: 1px blue solid;
+ }
+
+.spsection {
+  clear : both;
+  border-top: 3px #D4FEE7 groove;
+ }
+ 
+.spsection figcaption {
+	font-style: italic;
+	font-size: 0.75em;
+	text-align: center;
+ }
+ 
+.topspsection {
+  clear : both;
+ }
+
+.species {
+  font-style: italic;
+ }
+
+.morphdesc {
+  padding: 0.5em;
+ } 
+ 
+.morphimg  {
+  padding-bottom: 1em;
+  } 
+  
+.morphimg figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+ }
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 0.5em;
+ }
+
+dd blockquote {
+  background: #D4FEE7;
+  color: #20613C;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 5em;
+ }
+
+dd {
+  padding-bottom: 10px;
+ }
+
+.common dt {
+  border-top: 3px #D4FEE7 groove;
+}
+
+.spsection blockquote {
+  border: 3px solid #20613C;
+  background: seagreen;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+ } 
+ 
+.fossilImg {
+  height: 1em;
+  padding-left: 5px;
+ }
+
+.fossil-img {
+  font-style: normal;
+ }
+
+.spsection table {
+  width: 100%;
+  border-top: 2px solid black;
+  padding-bottom: 1em;
+ }
+ 
+.spsection th {
+  border-bottom: 2px solid black;
+ }
+ 
+.spsection td {
+  border-bottom: 1px solid silver;
+ }
+ 
+.spsection tfoot {
+  font-size: 0.75em;
+  font-style: italic;
+ }
+ 
+.spsection tfoot td {
+  border-bottom: 0;
+ }
+
+#sp_point_map_canvas,
+#point_map_canvas,
+#sp_range_map_canvas,
+#range_map_canvas {
+	width: 300px;
+	height: 200px;
+}
+
+.map_download {
+	font-size: 0.75em;
+	clear: both;
+}
+ 
+.splist {
+   font-size: 1.25em;
+ }
+ 
+.splist li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 0.25em;
+ }
+
+.topphotosection {
+  clear: both;
+ }
+
+.photosection {
+  clear: both;
+  border-top: 3px #D4FEE7 groove;
+ }
+
+.topphotosection h2 a,
+.topphotosection h2 a:visited,
+.photosection h2 a,
+.photosection h2 a:visited {
+  color: black;
+ }
+ 
+.fullpic {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+ }
+ 
+.fullpic figcaption {
+  font-style: italic;
+ }
+
+ 
+.syspic {
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+ }
+
+.syspic figcaption {
+  text-align: center;
+}
+
+.classcol1 {
+  font-weight: bold;
+  padding-right: 1em;
+ }
+
+ .map_data {
+  font-size: 0.75em;
+  clear: both;
+ } 
+
+.namecol {
+  font-size: 1.25em;
+ }
+
+.namecol li {
+  padding-bottom: 0.25em;	
+}
+ 
+.citetable {
+    border-collapse: collapse;
+    border-spacing: 0;
+	font-size: 0.75em;
+}
+ 
+.citetable td {
+  padding: 0px 5px;
+ }
+
+.citetable tbody tr:nth-child(even)  td { background-color: #eee; }
+ 
+.citetable th{
+  border-bottom: 1px silver solid;
+}
+
+.rowspacer {
+  border-bottom: 1px silver solid;
+  font-size: 0.5em;
+ }
+
+a.vidlink,
+a:visited.vidlink {
+  padding-left:55px;
+  padding-bottom: 30px;
+  background: url(images/film.png) no-repeat;
+  font-weight: bold;
+  display: inline-block;
+ }
+ 
+.vidlist dd {
+  margin-top: -30px;
+  margin-left:55px;
+  padding-bottom: 20px;
+}
+
+.vidcaption {
+  font-style: italic;
+ }
+ 
+.viddetails {
+  font-size: 0.75em;
+ }
+ 
+.viddetails dd {
+  padding-bottom: 0;
+  margin-left: 15px;
+}
+ 
+.chron_div {
+	clear: both;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	xheight: 250px;
+	overflow: hidden;
+}
+ 
+.chron_div:after {
+	clear: both;
+}
+
+.chronchart_title_top,
+.chronchart_title_left {
+	font-weight: bold;
+}
+
+.chronchart_title_top {
+	padding: 0;
+	float: none;
+}
+
+.chronchart_title_left {
+	xheight: 250px;
+	width: 10%;
+	float: left;
+	xvertical-align: middle;
+	text-align: right;
+	padding-top: 80px;
+}
+
+.chronchart_left,
+.chronchart_top {
+	width: 85%;
+	height: 250px;	
+}
+
+.chronchart_top {
+	float: none;
+	text-align: center;
+}
+
+.chronchart_left {
+	float: left;
+}
+
+@media screen and (min-width: 600px) {
+	a:hover {
+	  color: red;
+	 }
+
+	h2 a:hover,
+	h3 a:hover {
+	  color: black;
+	 }
+
+	 #home a {
+	  font-size: 60px;
+	 }
+
+   .indeximages {
+		text-align: left;
+	}
+
+	footer {
+		text-align: center;
+		height: 95px;
+	}
+	
+	footer a:hover {
+		color: #AAFECF;
+	}
+	
+	header h1 {
+	  font-size: 300%;
+	}
+	
+	nav {
+	  xpadding-bottom: 40px;
+	}	
+	nav a:hover {
+	  color: black;
+	  background: #69D948;
+	  border: 1px black solid;
+	 } 
+
+	#chart_div,
+	#chart2_div,
+	#chart4_div,
+	#chart5_div {
+		width: 1500px; 
+		height: 500px;
+		}
+	#chart6_div {
+		width: 1000px; 
+		height: 500px;
+		}
+
+	#namechart1_div,
+	#namechart2_div,
+	#namechart3_div,
+	#namechart4_div {
+		width: 1500px; 
+		height: 500px;
+		}
+	#namechart5_div {
+		width: 1500px; 
+		height: 400px;
+		}
+
+	
+	#subgenera_phylogeny {
+		width: 600px;
+		height: 450px;
+	}
+	#species_phylogeny {
+		width: 600px;
+		height: 2500px;
+		}
+
+	.lcpic,
+	.sppic {
+	  float: left;
+	  text-align: left;
+	 }
+
+    .lcpic img,
+	.sppic img {
+		height: 200px;
+		}
+
+	.lcpic img:hover,
+	.sppic img:hover {
+	  border: 1px red solid;
+	 }
+
+	 .morphimg  {
+	  width: 500px;
+	  } 
+
+	.spsection table {
+	  width: 800px;
+	 }
+
+	#point_map_canvas,
+	#range_map_canvas {
+		width: 600px;
+		height: 400px;
+		float: left;
+	}
+
+	#sp_point_map_canvas,
+	#point_map_canvas {
+		margin-left: 1em;
+	}
+
+	#sp_point_map_canvas,
+	#sp_range_map_canvas {
+		width: 450px;
+		height: 350px;
+		float: left;
+	}
+
+	.splist {
+	  -moz-column-count: 3; /* Firefox */
+	  -webkit-column-count: 3; /* Safari and Chrome */
+	  column-count: 3;
+	  -moz-column-rule: 2px groove seagreen; /* Firefox */
+	  -webkit-column-rule: 2px groove seagreen; /* Safari and Chrome */
+	  column-rule: 2px groove seagreen;  
+	  -moz-column-gap: 1em; /* Firefox */
+	  -webkit-column-gap: 1em; /* Safari and Chrome */
+	  column-gap: 1em;
+      font-size: 1em;
+	 }
+
+ 
+	.splist li {
+	  padding-bottom: 0;
+	 }
+
+	.photosection h2 a:hover {
+	  color: red;
+	 }
+
+	.syspic img {
+	   height: 230px;
+	 }
+
+	.namecol {
+	  float: left;
+	  width: 40%;
+	  font-size: 1em;
+	 }
+ 
+	.namecol li {
+	  padding-bottom: 0;	
+	}
+
+	.citetable {
+		font-size: 1em;
+	}
+ 
+ 
+} 

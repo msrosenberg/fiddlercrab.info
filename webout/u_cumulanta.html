@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_cumulanta.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_cumulanta_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca cumulanta</h1>
-      <h2>Heaping Fiddler Crab</h2>
+    <header id="u_cumulanta.html">
+      <h1 class="species bookmark2">Uca cumulanta</h1>
+      <h2 class="nobookmark">Heaping Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca cumulanta</em></dt>
-        <dd>Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</dd>
+        <dd>Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Heaping Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Celuca__crenulata__cumulanta.html"><em class="species">Uca (Celuca) [crenulata] cumulanta</em></a>, <a href="names/Uca_Leptuca_cumulanta.html"><em class="species">Uca (Leptuca) cumulanta</em></a>, <a href="names/Uca_Minuca_cumulanta.html"><em class="species">Uca (Minuca) cumulanta</em></a>, <a href="names/Uca_cumulanta.html"><em class="species">Uca cumulanta</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Jamaica, Colombia to Brazil</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_cumulanta_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Thurman2013.1.html">Thurman <em>et al.</em> (2013)</a>
@@ -99,72 +102,84 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_cumulanta01.html"><picture><img src="photos/U_cumulanta01tn.jpg" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="photos/photo_u_cumulanta01.html"><img class="thumbnail" src="photos/U_cumulanta01tn.jpg" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_cumulanta.html"><picture><img src="art/Crane_Uca_cumulanta_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Crane_Uca_cumulanta.html"><img class="thumbnail" src="art/Crane_Uca_cumulanta_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Holthuis_Uca_cumulanta.html"><picture><img src="art/Holthuis_Uca_cumulanta_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Holthuis_Uca_cumulanta.html"><img class="thumbnail" src="art/Holthuis_Uca_cumulanta_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Chace_Uca_cumulanta.html"><picture><img src="art/Chace_Uca_cumulanta_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Chace_Uca_cumulanta.html"><img class="thumbnail" src="art/Chace_Uca_cumulanta_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_cumulanta2.html"><picture><img src="art/Crane_Uca_cumulanta2_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Crane_Uca_cumulanta2.html"><img class="thumbnail" src="art/Crane_Uca_cumulanta2_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_cumulanta3.html"><picture><img src="art/Crane_Uca_cumulanta3_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Crane_Uca_cumulanta3.html"><img class="thumbnail" src="art/Crane_Uca_cumulanta3_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_cumulanta4.html"><picture><img src="art/Crane_Uca_cumulanta4_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/Crane_Uca_cumulanta4.html"><img class="thumbnail" src="art/Crane_Uca_cumulanta4_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/vonHagen_Uca_cumulanta1.html"><picture><img src="art/vonHagen_Uca_cumulanta1_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/vonHagen_Uca_cumulanta1.html"><img class="thumbnail" src="art/vonHagen_Uca_cumulanta1_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/vonHagen_Uca_cumulanta2.html"><picture><img src="art/vonHagen_Uca_cumulanta2_tn.png" alt="Uca cumulanta" title="Uca cumulanta" /></picture></a>
+        <a href="art/vonHagen_Uca_cumulanta2.html"><img class="thumbnail" src="art/vonHagen_Uca_cumulanta2_tn.png" alt="Uca cumulanta thumbnail" title="Uca cumulanta" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Ahmed1976.1.html">Ahmed, M. (1976) A study of the normal and abberrant sexual types of the Venezuelan fiddler crabs <em>Uca cumulanta </em>and <em>U. rapax</em>. <em>Bulletin of Marine Science</em> 26(4):499-505.</a></li>
-          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238-249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
-          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1-258.</a></li>
-          <li><a href="references/Coelho1971.html">Coelho, P.A. (1971) A distribuiçāo dos crustáceos decápodos reptantes do norte do Brasil. <em>Trabalhos do Instituto Oceanográficos da Universidade Federal de Pernambuco</em> 9/11:223-238.</a></li>
-          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133-236.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161-168.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1-296.</a></li>
+          <li><a href="references/Ahmed1976.1.html">Ahmed, M. (1976) A study of the normal and abberrant sexual types of the Venezuelan fiddler crabs <em>Uca cumulanta </em>and <em>U. rapax</em>. <em>Bulletin of Marine Science</em> 26(4):499&ndash;505.</a></li>
+          <li><a href="references/Altevogt1959.1.html">Altevogt, R. (1959) Ökologische und ethologische Studien an Europas einziger Winkerkrabbe <em>Uca tangeri</em> Eydoux. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 48(2):123&ndash;146.</a></li>
+          <li><a href="references/Altevogt1962.html">Altevogt, R. (1962) Akustische Epiphänomene im Sozialverhalten von <em>Uca tangeri</em> in Südspanien. <em>Verhandlungen der Deutschen Zoologischen Gesellschaft</em> 26:309&ndash;315.</a></li>
+          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238&ndash;249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1&ndash;258.</a></li>
+          <li><a href="references/Coelho1971.html">Coelho, P.A. (1971) A distribuiçāo dos crustáceos decápodos reptantes do norte do Brasil. <em>Trabalhos do Instituto Oceanográficos da Universidade Federal de Pernambuco</em> 9/11:223&ndash;238.</a></li>
+          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133&ndash;236.</a></li>
+          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
+          <li><a href="references/Crane1943.3.html">Crane, J. (1943) Display, breeding and relationships of fiddler crabs (Brachyura, Genus <em>Uca</em>) in the Northeastern United States. <em>Zoologica NY</em> 28:217&ndash;223.</a></li>
+          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1&ndash;296.</a></li>
           <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Rathbun1924.3.html">Rathbun, M.J. (1924) Brachyuran crabs collected at Curaçao. <em>Bijdragen tot de Dierkunde</em> 23:13-21.</a></li>
-          <li><a href="references/Rodriguez1959.html">Rodriguez, G. (1959) The marine communities of Margarita Island, Venezuela. <em>Bulletin of Marine Science of the Gulf and Caribbean</em> 9(3):237-280.</a></li>
-          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177-178.</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361-413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238-253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
-          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13-57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300-316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Rathbun1924.3.html">Rathbun, M.J. (1924) Brachyuran crabs collected at Curaçao. <em>Bijdragen tot de Dierkunde</em> 23:13&ndash;21.</a></li>
+          <li><a href="references/Rodriguez1959.html">Rodriguez, G. (1959) The marine communities of Margarita Island, Venezuela. <em>Bulletin of Marine Science of the Gulf and Caribbean</em> 9(3):237&ndash;280.</a></li>
+          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
+          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
+          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
+          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177&ndash;178.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238&ndash;253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
         </ul>
       </div>
     </section>
@@ -173,7 +188,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

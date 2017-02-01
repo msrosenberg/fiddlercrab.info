@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_major.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_major_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca major</h1>
-      <h2>Greater Fiddler Crab</h2>
+    <header id="u_major.html">
+      <h1 class="species bookmark2">Uca major</h1>
+      <h2 class="nobookmark">Greater Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Cancer vocans major</em></dt>
         <dd>Herbst, J.F.W. (1782) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 1, no. 1. Zurich: J. C. Fuessly.</dd>
@@ -73,7 +73,7 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Greater Fiddler Crab, Major Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Cancer_vocans_major.html"><em class="species">Cancer vocans major</em></a>, <a href="names/Gelasimus_grangeri.html"><em class="species">Gelasimus grangeri</em></a>, <a href="names/Gelasimus_heterocheles.html"><em class="species">Gelasimus heterocheles</em></a>, <a href="names/Gelasimus_heterochelos.html"><em class="species">Gelasimus heterochelos</em></a>, <a href="names/Gelasimus_platydactylus.html"><em class="species">Gelasimus platydactylus</em></a>, <a href="names/Ocypoda_heterochelos.html"><em class="species">Ocypoda heterochelos</em></a>, <a href="names/Ocypode_heterochelos.html"><em class="species">Ocypode heterochelos</em></a>, <a href="names/Uca_Uca__major__major.html"><em class="species">Uca (Uca) [major] major</em></a>, <a href="names/Uca_Uca_major.html"><em class="species">Uca (Uca) major</em></a>, <a href="names/Uca_heterochela.html"><em class="species">Uca heterochela</em></a>, <a href="names/Uca_heterochelos.html"><em class="species">Uca heterochelos</em></a>, <a href="names/Uca_major.html"><em class="species">Uca major</em></a>, <a href="names/Uca_platydactyla.html"><em class="species">Uca platydactyla</em></a>, <a href="names/Uca_Tangeri_var_platydactylus.html"><em class="species">Uca Tangeri </em> var. <em class="species"> platydactylus</em></a>, <a href="names/Uca_una.html"><em class="species">Uca una</em></a>, <a href="names/Uka_una.html"><em class="species">Uka una</em></a>, <a href="names/U_c_a_una.html"><em class="species">Uça una</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Panama to Venezuela, Caribbean, southern Mexico (Veracruz to Tabasco)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_major_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: Barnwell1984; <a href="references/Barnwell1986.1.html">Barnwell (1986)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; Thurman (personal communication); Thurman1987; <a href="references/UtreraLopez2013.html">Utrera-López & Capistrán-Barradas (2013)</a>
+           Map data derived from: Barnwell1984; <a href="references/Barnwell1986.1.html">Barnwell (1986)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; Thurman (personal communication); Thurman1987; <a href="references/UtreraLopez2013.html">Utrera-López &amp; Capistrán-Barradas (2013)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3119007/overview">Encyclopedia of Life</a></dd>
@@ -98,59 +101,71 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <p>
         <em>No pictures available at this time.</em>
       </p>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Chace_Uca_major1.html"><picture><img src="art/Chace_Uca_major1_tn.png" alt="Uca major" title="Uca major" /></picture></a>
+        <a href="art/Chace_Uca_major1.html"><img class="thumbnail" src="art/Chace_Uca_major1_tn.png" alt="Uca major thumbnail" title="Uca major" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Chace_Uca_major2.html"><picture><img src="art/Chace_Uca_major2_tn.png" alt="Uca major" title="Uca major" /></picture></a>
+        <a href="art/Chace_Uca_major2.html"><img class="thumbnail" src="art/Chace_Uca_major2_tn.png" alt="Uca major thumbnail" title="Uca major" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Gelasimus_platydactylus.html"><picture><img src="art/Bott_Gelasimus_platydactylus_tn.png" alt="Gelasimus platydactylus" title="Gelasimus platydactylus" /></picture></a>
+        <a href="art/Bott_Gelasimus_platydactylus.html"><img class="thumbnail" src="art/Bott_Gelasimus_platydactylus_tn.png" alt="Gelasimus platydactylus thumbnail" title="Gelasimus platydactylus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_major1.html"><picture><img src="art/Crane_Uca_major1_tn.png" alt="Uca major" title="Uca major" /></picture></a>
+        <a href="art/Crane_Uca_major1.html"><img class="thumbnail" src="art/Crane_Uca_major1_tn.png" alt="Uca major thumbnail" title="Uca major" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1-258.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/Bott1973.1.html">Bott, R. (1973) Die Typus-Art der Gattung <em>Uca</em> Leach 1814 (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):311&ndash;314.</a></li>
+          <li><a href="references/Burgers1958.html">Burgers, A.C.J. (1958) The reactions of the melanophores of the fiddler crab, <em>Uca rapax,</em> to crustacean eyestalk extracts and to vertebrate melanophorotropic hormones. <em>Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen</em> 61C:579&ndash;589.</a></li>
+          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1&ndash;258.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
           <li><a href="references/Curran2005.html">Curran, H.A. (2005) Habitat partitioning and tiering in tropical intertidal callianassid mounds: An example from the Bahamas. <em>Abstracts with Programs</em> 37(7):404.</a></li>
-          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663&ndash;676.</a></li>
           <li><a href="references/Dunlop1990.html">Dunlop, K.J., and F.H. Barnwell (1990) Substrate-related variation in mouthpart morphometry of fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 30(4):111A.</a></li>
           <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Herbst1782.html">Herbst, J.F.W. (1782) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 1, no. 1. Zurich: J. C. Fuessly.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
           <li><a href="references/MilneEdwards1837.2.html">Milne Edwards, H. (1837) <em>Historie naturelle des crustaces comprenant l-anatomie, la physiologie et las classification des ces animaux</em>, Volume 2. Paris.</a></li>
-          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1-39: Leipzig).</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Rathbun1924.2.html">Rathbun, M.J. (1924) Brachyuran crabs collected by the Williams Galapagos Expedition, 1923. <em>Zoologica NY</em> 5(14):153-159.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
+          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
+          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1&ndash;39: Leipzig).</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Rathbun1924.2.html">Rathbun, M.J. (1924) Brachyuran crabs collected by the Williams Galapagos Expedition, 1923. <em>Zoologica NY</em> 5(14):153&ndash;159.</a></li>
+          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
           <li><a href="references/Schramm1867.html">Schramm, A. (1867) Crustaces de la Guadeloupe d'apres un manuscrit du Docteur Isis Desbonne compare avec les echantillons de crustaces de sa collection et les derniers purblications de MM. Henri de Saussure et William Stimpson. Premiere partie, brachyures. Pp. 60, I. Desbonne, ed. Basseterre: Impreimerie du gouvernement.</a></li>
           <li><a href="references/Sloane1725.html">Sloane, H. (1725) <em>A Voyage to the Islands Madera, Barbados, Nieves, St Christophers and Jamaica; with the Natural History of the Herbs and Trees, Four-Footed Beasts, Fishes, Birds, Insects, Reptiles, &amp;c. of the last of those Islands. To which is prefix'd, an Introduction, wherein is an Account of the Inhabitants, Air, Waters, Diseases, Trade, &amp;c. of that Place; with some Relations Concerning the Neighbouring Continent, and islands of America</em>, Volume 2. London: B.M.</a></li>
-          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177-178.</a></li>
-          <li><a href="references/vonHagen1967.2.html">von Hagen, H.-O. (1967) Nachweis einer kinästhetischen Orientierung bei <em>Uca rapax</em>. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 58(3):301-320.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361-413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300-316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
+          <li><a href="references/Smith1869.html">Smith, S.I. (1869) Notice of the Crustacea collected by Prof. C. F. Hartt on the coast of Brazil in 1867. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:1&ndash;42.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Stimpson1859.html">Stimpson, W. (1859) Notes on North American Crustacea, No. 1. <em>Annals of the Lyceum of Natural History of New York</em> 7:49&ndash;93.</a></li>
+          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177&ndash;178.</a></li>
+          <li><a href="references/vonHagen1967.2.html">von Hagen, H.-O. (1967) Nachweis einer kinästhetischen Orientierung bei <em>Uca rapax</em>. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 58(3):301&ndash;320.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
         </ul>
       </div>
     </section>
@@ -159,7 +174,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

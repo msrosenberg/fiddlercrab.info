@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_chlorophthalmus.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_chlorophthalmus_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca chlorophthalmus</h1>
-      <h2>Green-eyed Fiddler Crab</h2>
+    <header id="u_chlorophthalmus.html">
+      <h1 class="species bookmark2">Uca chlorophthalmus</h1>
+      <h2 class="nobookmark">Green-eyed Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus chlorophthalmus</em></dt>
         <dd>Milne Edwards, H. (1837) <em>Historie naturelle des crustaces comprenant l-anatomie, la physiologie et las classification des ces animaux</em>, Volume 2. Paris.</dd>
@@ -73,7 +73,7 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Paraleptuca"><em class="species">Paraleptuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Green-eyed Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_amazonensis.html"><em class="species">Gelasimus amazonensis</em></a>, <a href="names/Gelasimus_chlorophthalmus.html"><em class="species">Gelasimus chlorophthalmus</em></a>, <a href="names/Ocypode_Gelasimus_chlorophthalmus.html"><em class="species">Ocypode (Gelasimus) chlorophthalmus</em></a>, <a href="names/Paraleptuca_chlorophthalma.html"><em class="species">Paraleptuca chlorophthalma</em></a>, <a href="names/Uca_Amphiuca_chlorophthalmus_chlorophthalmus.html"><em class="species">Uca (Amphiuca) chlorophthalmus chlorophthalmus</em></a>, <a href="names/Uca_Paraleptuca_chlorophthalmus.html"><em class="species">Uca (Paraleptuca) chlorophthalmus</em></a>, <a href="names/Uca_amazonensis.html"><em class="species">Uca amazonensis</em></a>, <a href="names/Uca_chlorophthalma.html"><em class="species">Uca chlorophthalma</em></a>, <a href="names/Uca_chlorophthalmus.html"><em class="species">Uca chlorophthalmus</em></a>, <a href="names/Uca_chlorophthalmus_chlorophthalmus.html"><em class="species">Uca chlorophthalmus chlorophthalmus</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Eastern Africa - Kenya to South Africa, Madagascar</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_chlorophthalmus_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Cannici1999.html">Cannicci <em>et al.</em> (1999)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Icely1978.html">Icely & Jones (1978)</a>; <a href="references/Krishnan1992.1.html">Krishnan (1992)</a>
+           Map data derived from: <a href="references/Cannici1999.html">Cannicci <em>et al.</em> (1999)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Icely1978.html">Icely &amp; Jones (1978)</a>; <a href="references/Krishnan1992.1.html">Krishnan (1992)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/2981563/overview">Encyclopedia of Life</a></dd>
@@ -99,114 +102,142 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus01.html"><picture><img src="photos/U_chlorophthalmus01tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus01.html"><img class="thumbnail" src="photos/U_chlorophthalmus01tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus02.html"><picture><img src="photos/U_chlorophthalmus02tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus02.html"><img class="thumbnail" src="photos/U_chlorophthalmus02tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus03.html"><picture><img src="photos/U_chlorophthalmus03tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus03.html"><img class="thumbnail" src="photos/U_chlorophthalmus03tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus04.html"><picture><img src="photos/U_chlorophthalmus04tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus04.html"><img class="thumbnail" src="photos/U_chlorophthalmus04tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus05.html"><picture><img src="photos/U_chlorophthalmus05tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus05.html"><img class="thumbnail" src="photos/U_chlorophthalmus05tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_chlorophthalmus06.html"><picture><img src="photos/U_chlorophthalmus06tn.jpg" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="photos/photo_u_chlorophthalmus06.html"><img class="thumbnail" src="photos/U_chlorophthalmus06tn.jpg" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Latreille_Gelasimus_chlorophthalmus.html"><picture><img src="art/Latreille_Gelasimus_chlorophthalmus_tn.jpg" alt="Gelasimus chlorophthalmus" title="Gelasimus chlorophthalmus" /></picture></a>
+        <a href="art/Latreille_Gelasimus_chlorophthalmus.html"><img class="thumbnail" src="art/Latreille_Gelasimus_chlorophthalmus_tn.jpg" alt="Gelasimus chlorophthalmus thumbnail" title="Gelasimus chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Barnard_Uca_chlorophthalmus.html"><picture><img src="art/Barnard_Uca_chlorophthalmus_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Barnard_Uca_chlorophthalmus.html"><img class="thumbnail" src="art/Barnard_Uca_chlorophthalmus_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Barnard_Uca_chlorophthalmus2.html"><picture><img src="art/Barnard_Uca_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Barnard_Uca_chlorophthalmus2.html"><img class="thumbnail" src="art/Barnard_Uca_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Barnard_Uca_chlorophthalmus3.html"><picture><img src="art/Barnard_Uca_chlorophthalmus3_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Barnard_Uca_chlorophthalmus3.html"><img class="thumbnail" src="art/Barnard_Uca_chlorophthalmus3_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Forest_Uca_chlorophthalmus2.html"><picture><img src="art/Forest_Uca_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Forest_Uca_chlorophthalmus2.html"><img class="thumbnail" src="art/Forest_Uca_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Forest_Uca_chlorophthalmus.html"><picture><img src="art/Forest_Uca_chlorophthalmus_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Forest_Uca_chlorophthalmus.html"><img class="thumbnail" src="art/Forest_Uca_chlorophthalmus_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Forest_Uca_chlorophthalmus3.html"><picture><img src="art/Forest_Uca_chlorophthalmus3_tn.png" alt="Uca chlorophthalmus" title="Uca chlorophthalmus" /></picture></a>
+        <a href="art/Forest_Uca_chlorophthalmus3.html"><img class="thumbnail" src="art/Forest_Uca_chlorophthalmus3_tn.png" alt="Uca chlorophthalmus thumbnail" title="Uca chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_gaimardi1.html"><picture><img src="art/Crosnier_Uca_gaimardi1_tn.png" alt="Uca gaimardi" title="Uca gaimardi" /></picture></a>
+        <a href="art/Crosnier_Uca_gaimardi1.html"><img class="thumbnail" src="art/Crosnier_Uca_gaimardi1_tn.png" alt="Uca gaimardi thumbnail" title="Uca gaimardi" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_gaimardi2.html"><picture><img src="art/Crosnier_Uca_gaimardi2_tn.png" alt="Uca gaimardi" title="Uca gaimardi" /></picture></a>
+        <a href="art/Crosnier_Uca_gaimardi2.html"><img class="thumbnail" src="art/Crosnier_Uca_gaimardi2_tn.png" alt="Uca gaimardi thumbnail" title="Uca gaimardi" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_gaimardi3.html"><picture><img src="art/Crosnier_Uca_gaimardi3_tn.png" alt="Uca gaimardi" title="Uca gaimardi" /></picture></a>
+        <a href="art/Crosnier_Uca_gaimardi3.html"><img class="thumbnail" src="art/Crosnier_Uca_gaimardi3_tn.png" alt="Uca gaimardi thumbnail" title="Uca gaimardi" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Paraleptuca_chlorophthalmus.html"><picture><img src="art/Bott_Paraleptuca_chlorophthalmus_tn.png" alt="Paraleptuca chlorophtalma" title="Paraleptuca chlorophtalma" /></picture></a>
+        <a href="art/Bott_Paraleptuca_chlorophthalmus.html"><img class="thumbnail" src="art/Bott_Paraleptuca_chlorophthalmus_tn.png" alt="Paraleptuca chlorophtalma thumbnail" title="Paraleptuca chlorophtalma" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_chlorophthalmus_chlorophthalmus1.html"><picture><img src="art/Crane_Uca_chlorophthalmus_chlorophthalmus1_tn.png" alt="Uca chlorophthalmus chlorophthalmus" title="Uca chlorophthalmus chlorophthalmus" /></picture></a>
+        <a href="art/Crane_Uca_chlorophthalmus_chlorophthalmus1.html"><img class="thumbnail" src="art/Crane_Uca_chlorophthalmus_chlorophthalmus1_tn.png" alt="Uca chlorophthalmus chlorophthalmus thumbnail" title="Uca chlorophthalmus chlorophthalmus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_chlorophthalmus_chlorophthalmus2.html"><picture><img src="art/Crane_Uca_chlorophthalmus_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus chlorophthalmus" title="Uca chlorophthalmus chlorophthalmus" /></picture></a>
+        <a href="art/Crane_Uca_chlorophthalmus_chlorophthalmus2.html"><img class="thumbnail" src="art/Crane_Uca_chlorophthalmus_chlorophthalmus2_tn.png" alt="Uca chlorophthalmus chlorophthalmus thumbnail" title="Uca chlorophthalmus chlorophthalmus" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1-837.</a></li>
-          <li><a href="references/Bouvier1915.html">Bouvier, E.-L. (1915) Décapodes marcheurs (<em>Reptantia</em>) et stomatopodes recueillis à l'île Mauarice par M. Paul Carié. <em>Bulletin Biologique de la France et de la Belgique</em> 48:178-318.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1-143.</a></li>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
+          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1&ndash;837.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Boone1934.html">Boone, L. (1934) Scientific results of the world cruise of the yacht &quot;Alva&quot;, 1931, William K. VanderbiltPesta, Commanding. Crustacea: Stomatopoda and Brachyura. <em>Bulletin of the Vanderbilt Marine Museum</em> 5:1&ndash;210.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Bouvier1915.html">Bouvier, E.-L. (1915) Décapodes marcheurs (<em>Reptantia</em>) et stomatopodes recueillis à l'île Mauarice par M. Paul Carié. <em>Bulletin Biologique de la France et de la Belgique</em> 48:178&ndash;318.</a></li>
+          <li><a href="references/Cano1889.2.html">Cano, G. (1889) Viaggio della R. Corvetta Vettor Pisani attorno al globo. — Crostácei Brachiuri ed Anomuri. <em>Bollettino della Società di Naturalisti in Napoli</em> 3(2):169&ndash;268.</a></li>
+          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1&ndash;143.</a></li>
           <li><a href="references/Day1969.html">Day, J.H. (1969) <em>A Guide to Marine Life on South African Shores</em>. Cape Town: A. A. Balkema.</a></li>
-          <li><a href="references/deMan1888.html">De Man, J.G. (1887-1888) Report on the Podophthalmous Crustacea of the Mergui Archipelago, collected for the trustees of the Indian Museum, Calcutta, by Dr. John Anderson, F.R.S., superintendant of the museum. <em>Journal of the Linnean Society. Zoology</em> 22:1-305.</a></li>
-          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177-195.</a></li>
-          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71-91.</a></li>
-          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79-85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
+          <li><a href="references/deMan1888.html">De Man, J.G. (1887&ndash;1888) Report on the Podophthalmous Crustacea of the Mergui Archipelago, collected for the trustees of the Indian Museum, Calcutta, by Dr. John Anderson, F.R.S., superintendant of the museum. <em>Journal of the Linnean Society. Zoology</em> 22:1&ndash;305.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/deMan1902.html">De Man, J.G. (1902) Die von Herrn Professor Kükenthal im Indischen Archipel gesammelten Dekapoden und Stomatopoden. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 25:467&ndash;929.</a></li>
+          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177&ndash;195.</a></li>
+          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71&ndash;91.</a></li>
+          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79&ndash;85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
           <li><a href="references/Forest1961.html">Forest, J., and D. Guinot (1961) <em>Crustacés Décapodes Brachyoures de Tahiti et des Tuamotu</em>. Paris: Éditions de La Fondation Singer-Polignac.</a></li>
-          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3-4):238-241.</a></li>
-          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305-328.</a></li>
+          <li><a href="references/Fourmanoir1953.html">Fourmanoir, P. (1953) Notes sur la faune de la mangrove dans la région de Manjunga. Crabes, crevettes, poissons. <em>Naturaliste malgache</em> 5(1):87&ndash;92.</a></li>
+          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3&ndash;4):238&ndash;241.</a></li>
+          <li><a href="references/Gordon1934.html">Gordon, I. (1934) Crustacea Brachyura. Pp. 1&ndash;78 in <em>Résultats scientifique du voyage aux Indes Orientales Néerl. de la Prince Léopold de Belgique</em>, Volume III (15)</a></li>
+          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305&ndash;328.</a></li>
           <li><a href="references/Herklots1851.html">Herklots, J.A. (1851) <em>Additamenta ad Faunam Carcinologicam Africae Occidentalis</em>: J.W. Van Leeuwen.</a></li>
-          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69-116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
-          <li><a href="references/Hilgendorf1878.html">Hilgendorf, F. (1878) Die von Hrn. W. Peters in Moçambique gesammelten Crustaceen. <em>Monatsberichte der Königlichen Preussische Akademie des Wissenschaften zu Berlin</em> 1878:782-851.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
+          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69&ndash;116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
+          <li><a href="references/Hilgendorf1878.html">Hilgendorf, F. (1878) Die von Hrn. W. Peters in Moçambique gesammelten Crustaceen. <em>Monatsberichte der Königlichen Preussische Akademie des Wissenschaften zu Berlin</em> 1878:782&ndash;851.</a></li>
+          <li><a href="references/Hoffmann1874.html">Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</a></li>
+          <li><a href="references/Jansen1970.html">Jansen, P. (1970) Phsyiologisch-ökologische Untersuchungen zum &quot;Posen&quot; von <em>Uca tangeri</em>. <em>forma et functio</em> 2:58&ndash;100. {Eco-physiological studies on the &quot;posing&quot; behavior of <em>Uca tangeri</em>}</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
           <li><a href="references/Krauss1843.html">Krauss, F. (1843) <em>Die Süd-Afrikanische Crustaceen. Eine Zusammenstellung aller bekannten Malacostraca . . . E. schweizerbart'sche Verlagsbuchhandlung</em>. Stuttgart.</a></li>
           <li><a href="references/Latreille1837.html">Latreille, P.A. (1837) Molusca-Annelides-Crustacea-Arachnides and Insecta. Pp. 472 in <em>The Animal Kingdom Arranged According to Its Organization</em>, B. Cuvier, ed., Volume 3 (Plates). London: G. Henderson.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
-          <li><a href="references/MacLeay1838.html">MacLeay, W.S. (1838) On the brachyurous decapod Crustacea brought from the Cape by Dr. Smith. Pp. 53-71 in <em>Illustrations of the zoology of South Africa, consisting chiefly of figures and descriptions of the objects of natural history collected during an expedition into the interior of South Africa, in the years 1834, 1835, and 1836; fitted out by &quot;The Cape of Good Hope association for exploring Central Africa&quot;: together with a summary of African zoology, and an inquiry into the geographical ranges of species in that quarter of the globe</em>, A. Smith, ed., Volume 5. London: Smith, Elder, and Co.</a></li>
-          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1-25.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73-270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19-34.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/MacLeay1838.html">MacLeay, W.S. (1838) On the brachyurous decapod Crustacea brought from the Cape by Dr. Smith. Pp. 53&ndash;71 in <em>Illustrations of the zoology of South Africa, consisting chiefly of figures and descriptions of the objects of natural history collected during an expedition into the interior of South Africa, in the years 1834, 1835, and 1836; fitted out by &quot;The Cape of Good Hope association for exploring Central Africa&quot;: together with a summary of African zoology, and an inquiry into the geographical ranges of species in that quarter of the globe</em>, A. Smith, ed., Volume 5. London: Smith, Elder, and Co.</a></li>
+          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1&ndash;25.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19&ndash;34.</a></li>
           <li><a href="references/MilneEdwards1837.2.html">Milne Edwards, H. (1837) <em>Historie naturelle des crustaces comprenant l-anatomie, la physiologie et las classification des ces animaux</em>, Volume 2. Paris.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
+          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
+          <li><a href="references/MilneEdwards1862.html">Milne-Edwards, A. (1862) Faune carcinologique de l’île de la Réunion. Pp. 1&ndash;16 in <em>Notes sur l’île de la Réunion</em>, L. Maillard, ed., Volume Annexe F. Paris</a></li>
           <li><a href="references/Mohrherr1984.html">Mohrherr, C.J. (1984) The influence of cheliped autotomy sexual difference and eyestalk ablation upon limb regeneration in the East African fiddler crabs <em>Uca lactea annulipes</em> and <em>Uca chlorophthalmus chlorophthalmus</em>. <em>American Zoologist</em> 24(3):68A.</a></li>
-          <li><a href="references/Nobili1899.2.html">Nobili, G. (1899) Contribuzioni alla conoscenza della fauna carcinologica della Papuasia, delle Molucche e dell' Australia. <em>Annali del Museo Civico di Storia Naturale di Genova (Serie 2a, Vol. XX)</em> 40:230-282.</a></li>
-          <li><a href="references/Stebbing1910.html">Stebbing, T.R.R. (1910) General catalogue of South African Crustacea (Part V. of S.A. Crustacea, for the Marine Investigations in South Africa). <em>Annals of the South African Museum</em> 6:281-593.</a></li>
-          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1-148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
-          <li><a href="references/Vatova1943.html">Vatova, A. (1943) I Decapodi della Somalia. <em>Thalassia</em> 6(2):1-37.</a></li>
-          <li><a href="references/Ward1942.html">Ward, M. (1942) Notes on the Crustacea of the Desjardins Museum, Mauritius Institute with descriptions of new genera and species. <em>Mauritius Institute Bulletin</em> 2(2):49-113.</a></li>
+          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
+          <li><a href="references/Nobili1899.2.html">Nobili, G. (1899) Contribuzioni alla conoscenza della fauna carcinologica della Papuasia, delle Molucche e dell' Australia. <em>Annali del Museo Civico di Storia Naturale di Genova (Serie 2a, Vol. XX)</em> 40:230&ndash;282.</a></li>
+          <li><a href="references/Nobili1907.html">Nobili, G. (1907) Ricerche sui crostacei della Polinesia. Decapodi, stomatopodi, anisopodi, e isopodi. <em>Memorie della reale Accademia delle scienze di Torino, ser 2</em> 57:351&ndash;430.</a></li>
+          <li><a href="references/Ortmann1894.2.html">Ortmann, A.E. (1894) Crustaceen. Pp. 1&ndash;80 in <em>Zoologische Forschungsreisen in Australien und dem malayischen Archipel</em>, R. Semon, ed., Volume V: Denkschr. med.-naturw. Ges. Jena.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Pocock1903.html">Pocock, R.I. (1903) Crustacea: Malacostraca. Pp. 211&ndash;232 in <em>The Natural History of Sokotra and Abd-el-Kuri, Being the Report upon the Results of the Conjoint xpedition to these Islands in 1898-9, by Mr. W. R. Ogilvie-Grant, of the British Museum, and Dr. H. O. Forbes, of the Liverpool Museums, together with information from other available sources forming A Monograph of the Islands</em>, H.O. Forbes, ed.: Bull. Lpool. Mus.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Schone1963.html">Schöne, H., and H. Schöne (1963) Balz und andere Verhaltensweisen der Mangrovekrabbe <em>Goniopsis cruentata</em> Latr. und das Winkverhalten der eulitoralen Brachyuren. <em>Zeitschrift für Tierpsychologie</em> 20(6):641&ndash;656.</a></li>
+          <li><a href="references/Stebbing1910.html">Stebbing, T.R.R. (1910) General catalogue of South African Crustacea (Part V. of S.A. Crustacea, for the Marine Investigations in South Africa). <em>Annals of the South African Museum</em> 6:281&ndash;593.</a></li>
+          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1&ndash;148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
+          <li><a href="references/Tweedie1950.2.html">Tweedie, M.W.F. (1950) The fauna of the Cocos-Keeling Islands, Brachyura and Stomatopoda. <em>Bulletin of the Raffles Museum</em> 22:105&ndash;148.</a></li>
+          <li><a href="references/Vatova1943.html">Vatova, A. (1943) I Decapodi della Somalia. <em>Thalassia</em> 6(2):1&ndash;37.</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/Ward1942.html">Ward, M. (1942) Notes on the Crustacea of the Desjardins Museum, Mauritius Institute with descriptions of new genera and species. <em>Mauritius Institute Bulletin</em> 2(2):49&ndash;113.</a></li>
+          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
           <li><a href="references/White1847.1.html">White, A. (1847) <em>List of the specimens of Crustacea in the collection of the British Museum</em>. London: Edward Newman.</a></li>
-          <li><a href="references/Zehntner1894.html">Zehntner, L. (1894) Crustacés de l'Archipel malais. <em>Revue suisse de Zoologie</em> 2(1):135-214.</a></li>
+          <li><a href="references/Wilkens1965.html">Wilkens, J.L., and M. Fingerman (1965) Heat tolerance and temperature relationships of the fiddler crab, <em>Uca pugilator</em>, with reference to body coloration. <em>Biological Bulletin</em> 128(1):133&ndash;141.</a></li>
+          <li><a href="references/Zehntner1894.html">Zehntner, L. (1894) Crustacés de l'Archipel malais. <em>Revue suisse de Zoologie</em> 2(1):135&ndash;214.</a></li>
         </ul>
       </div>
     </section>
@@ -215,7 +246,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

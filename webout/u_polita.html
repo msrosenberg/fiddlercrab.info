@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_polita.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_polita_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca polita</h1>
-      <h2>Polished Fiddler Crab</h2>
+    <header id="u_polita.html">
+      <h1 class="species bookmark2">Uca polita</h1>
+      <h2 class="nobookmark">Polished Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca polita</em></dt>
         <dd>Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</dd>
@@ -73,7 +73,7 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Australuca"><em class="species">Australuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Polished Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Australuca_polita.html"><em class="species">Uca (Australuca) polita</em></a>, <a href="names/Uca_polita.html"><em class="species">Uca polita</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Australia (Northwest coast through Northeast coast)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_polita_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/George1982.html">George & Jones (1982)</a>; <a href="references/vonHagen1989.html">von Hagen & Jones (1989)</a>
+           Map data derived from: <a href="references/George1982.html">George &amp; Jones (1982)</a>; <a href="references/vonHagen1989.html">von Hagen &amp; Jones (1989)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3118934/overview">Encyclopedia of Life</a></dd>
@@ -99,53 +102,55 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_polita01.html"><picture><img src="photos/U_polita01tn.jpg" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="photos/photo_u_polita01.html"><img class="thumbnail" src="photos/U_polita01tn.jpg" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita1.html"><picture><img src="art/Crane_Uca_polita1_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita1.html"><img class="thumbnail" src="art/Crane_Uca_polita1_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita2.html"><picture><img src="art/Crane_Uca_polita2_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita2.html"><img class="thumbnail" src="art/Crane_Uca_polita2_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita3.html"><picture><img src="art/Crane_Uca_polita3_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita3.html"><img class="thumbnail" src="art/Crane_Uca_polita3_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita4.html"><picture><img src="art/Crane_Uca_polita4_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita4.html"><img class="thumbnail" src="art/Crane_Uca_polita4_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita5.html"><picture><img src="art/Crane_Uca_polita5_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita5.html"><img class="thumbnail" src="art/Crane_Uca_polita5_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita6.html"><picture><img src="art/Crane_Uca_polita6_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita6.html"><img class="thumbnail" src="art/Crane_Uca_polita6_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_polita7.html"><picture><img src="art/Crane_Uca_polita7_tn.png" alt="Uca polita" title="Uca polita" /></picture></a>
+        <a href="art/Crane_Uca_polita7.html"><img class="thumbnail" src="art/Crane_Uca_polita7_tn.png" alt="Uca polita thumbnail" title="Uca polita" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
           <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1-99.</a></li>
-          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67-104.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73-270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
+          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67&ndash;104.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
           <li><a href="references/SavilleKent1897.html">Saville-Kent, W. (1897) <em>The Naturalist in Australia</em>. London: Chapman and Hall.</a></li>
+          <li><a href="references/vonHagen1976.html">von Hagen, H.-O. (1976) (Book Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Crustaceana</em> 31(2):221&ndash;224.</a></li>
         </ul>
       </div>
     </section>
@@ -154,7 +159,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

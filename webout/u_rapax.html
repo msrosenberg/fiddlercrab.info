@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rapax.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rapax_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca rapax</h1>
-      <h2>Mudflat Fiddler Crab</h2>
+    <header id="u_rapax.html">
+      <h1 class="species bookmark2">Uca rapax</h1>
+      <h2 class="nobookmark">Mudflat Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus rapax</em></dt>
-        <dd>Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</dd>
+        <dd>Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Mudflat Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_rapax.html"><em class="species">Gelasimus rapax</em></a>, <a href="names/Minuca_rapax.html"><em class="species">Minuca rapax</em></a>, <a href="names/Uca_Minuca__galapagensis__rapax_rapax.html"><em class="species">Uca (Minuca) [galapagensis] rapax rapax</em></a>, <a href="names/Uca_Minuca_brasiliensis.html"><em class="species">Uca (Minuca) brasiliensis</em></a>, <a href="names/Uca_Minuca_rapax.html"><em class="species">Uca (Minuca) rapax</em></a>, <a href="names/Uca_Minuca_salsisitus.html"><em class="species">Uca (Minuca) salsisitus</em></a>, <a href="names/Uca_pugnax_brasiliensis.html"><em class="species">Uca pugnax brasiliensis</em></a>, <a href="names/Uca_pugnax_rapax.html"><em class="species">Uca pugnax rapax</em></a>, <a href="names/Uca_pugnax_var_brasiliensis.html"><em class="species">Uca pugnax </em> var. <em class="species"> brasiliensis</em></a>, <a href="names/Uca_rapax.html"><em class="species">Uca rapax</em></a>, <a href="names/Uca_salsisitus.html"><em class="species">Uca salsisitus</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (southern Florida, Texas) to Brazil, West Indies &amp; Caribbean</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_rapax_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Abele1986.html">Abele & Kim (1986)</a>; <a href="references/Barnwell1984.1.html">Barnwell & Thurman (1984)</a>; <a href="references/Barnwell1986.1.html">Barnwell (1986)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Salmon1987.2.html">Salmon & Kettler (1987)</a>; <a href="references/Thurman1984.1.html">Thurman (1984)</a>; Thurman1987; <a href="references/Thurman2013.1.html">Thurman <em>et al.</em> (2013)</a>
+           Map data derived from: <a href="references/Abele1986.html">Abele &amp; Kim (1986)</a>; <a href="references/Barnwell1984.1.html">Barnwell &amp; Thurman (1984)</a>; <a href="references/Barnwell1986.1.html">Barnwell (1986)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Salmon1987.2.html">Salmon &amp; Kettler (1987)</a>; <a href="references/Thurman1984.1.html">Thurman (1984)</a>; Thurman1987; <a href="references/Thurman2013.1.html">Thurman <em>et al.</em> (2013)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/1037648/overview">Encyclopedia of Life</a></dd>
@@ -99,172 +102,233 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_rapax01.html"><picture><img src="photos/U_rapax01tn.jpg" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="photos/photo_u_rapax01.html"><img class="thumbnail" src="photos/U_rapax01tn.jpg" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_rapax02.html"><picture><img src="photos/U_rapax02tn.jpg" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="photos/photo_u_rapax02.html"><img class="thumbnail" src="photos/U_rapax02tn.jpg" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_rapax03.html"><picture><img src="photos/U_rapax03tn.jpg" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="photos/photo_u_rapax03.html"><img class="thumbnail" src="photos/U_rapax03tn.jpg" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_rapax10.html"><picture><img src="photos/U_rapax10tn.jpg" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="photos/photo_u_rapax10.html"><img class="thumbnail" src="photos/U_rapax10tn.jpg" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_rapax11.html"><picture><img src="photos/U_rapax11tn.jpg" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="photos/photo_u_rapax11.html"><img class="thumbnail" src="photos/U_rapax11tn.jpg" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Oliveira_Uca_pugnax_brasiliensis.html"><picture><img src="art/Oliveira_Uca_pugnax_brasiliensis_tn.png" alt="Uca pugnax brasiliensis" title="Uca pugnax brasiliensis" /></picture></a>
+        <a href="art/Oliveira_Uca_pugnax_brasiliensis.html"><img class="thumbnail" src="art/Oliveira_Uca_pugnax_brasiliensis_tn.png" alt="Uca pugnax brasiliensis thumbnail" title="Uca pugnax brasiliensis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Oliveira_Uca_pugnax_rapax.html"><picture><img src="art/Oliveira_Uca_pugnax_rapax_tn.png" alt="Uca pugnax rapax" title="Uca pugnax rapax" /></picture></a>
+        <a href="art/Oliveira_Uca_pugnax_rapax.html"><img class="thumbnail" src="art/Oliveira_Uca_pugnax_rapax_tn.png" alt="Uca pugnax rapax thumbnail" title="Uca pugnax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Oliveira_Uca_salsisitus.html"><picture><img src="art/Oliveira_Uca_salsisitus_tn.png" alt="Uca salsisitus" title="Uca salsisitus" /></picture></a>
+        <a href="art/Oliveira_Uca_salsisitus.html"><img class="thumbnail" src="art/Oliveira_Uca_salsisitus_tn.png" alt="Uca salsisitus thumbnail" title="Uca salsisitus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_pugnax_rapax.html"><picture><img src="art/Crane_Uca_pugnax_rapax_tn.png" alt="Uca pugnax rapax" title="Uca pugnax rapax" /></picture></a>
+        <a href="art/Crane_Uca_pugnax_rapax.html"><img class="thumbnail" src="art/Crane_Uca_pugnax_rapax_tn.png" alt="Uca pugnax rapax thumbnail" title="Uca pugnax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Holthuis_Uca_rapax.html"><picture><img src="art/Holthuis_Uca_rapax_tn.png" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="art/Holthuis_Uca_rapax.html"><img class="thumbnail" src="art/Holthuis_Uca_rapax_tn.png" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Chace_Uca_rapax.html"><picture><img src="art/Chace_Uca_rapax_tn.png" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="art/Chace_Uca_rapax.html"><img class="thumbnail" src="art/Chace_Uca_rapax_tn.png" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Minuca_rapax.html"><picture><img src="art/Bott_Minuca_rapax_tn.png" alt="Minuca rapax" title="Minuca rapax" /></picture></a>
+        <a href="art/Bott_Minuca_rapax.html"><img class="thumbnail" src="art/Bott_Minuca_rapax_tn.png" alt="Minuca rapax thumbnail" title="Minuca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rapax_rapax1.html"><picture><img src="art/Crane_Uca_rapax_rapax1_tn.png" alt="Uca rapax rapax" title="Uca rapax rapax" /></picture></a>
+        <a href="art/Crane_Uca_rapax_rapax1.html"><img class="thumbnail" src="art/Crane_Uca_rapax_rapax1_tn.png" alt="Uca rapax rapax thumbnail" title="Uca rapax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rapax_rapax2.html"><picture><img src="art/Crane_Uca_rapax_rapax2_tn.png" alt="Uca rapax rapax" title="Uca rapax rapax" /></picture></a>
+        <a href="art/Crane_Uca_rapax_rapax2.html"><img class="thumbnail" src="art/Crane_Uca_rapax_rapax2_tn.png" alt="Uca rapax rapax thumbnail" title="Uca rapax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rapax_rapax3.html"><picture><img src="art/Crane_Uca_rapax_rapax3_tn.png" alt="Uca rapax rapax" title="Uca rapax rapax" /></picture></a>
+        <a href="art/Crane_Uca_rapax_rapax3.html"><img class="thumbnail" src="art/Crane_Uca_rapax_rapax3_tn.png" alt="Uca rapax rapax thumbnail" title="Uca rapax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rapax_rapax4.html"><picture><img src="art/Crane_Uca_rapax_rapax4_tn.png" alt="Uca rapax rapax" title="Uca rapax rapax" /></picture></a>
+        <a href="art/Crane_Uca_rapax_rapax4.html"><img class="thumbnail" src="art/Crane_Uca_rapax_rapax4_tn.png" alt="Uca rapax rapax thumbnail" title="Uca rapax rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Thurman_Uca_rapax1.html"><picture><img src="art/Thurman_Uca_rapax1_tn.png" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="art/Thurman_Uca_rapax1.html"><img class="thumbnail" src="art/Thurman_Uca_rapax1_tn.png" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/vonHagen_Uca_rapax1.html"><picture><img src="art/vonHagen_Uca_rapax1_tn.png" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="art/vonHagen_Uca_rapax1.html"><img class="thumbnail" src="art/vonHagen_Uca_rapax1_tn.png" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/vonHagen_Uca_rapax2.html"><picture><img src="art/vonHagen_Uca_rapax2_tn.png" alt="Uca rapax" title="Uca rapax" /></picture></a>
+        <a href="art/vonHagen_Uca_rapax2.html"><img class="thumbnail" src="art/vonHagen_Uca_rapax2_tn.png" alt="Uca rapax thumbnail" title="Uca rapax" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Abreu1975.html">Abreu, V. (1975) Fiddlers on the shorelines. <em>Of Sea and Shore</em> 6(3):139-140.</a></li>
-          <li><a href="references/Ahmed1976.1.html">Ahmed, M. (1976) A study of the normal and abberrant sexual types of the Venezuelan fiddler crabs <em>Uca cumulanta </em>and <em>U. rapax</em>. <em>Bulletin of Marine Science</em> 26(4):499-505.</a></li>
-          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238-249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456-467.</a></li>
+          <li><a href="references/Abreu1975.html">Abreu, V. (1975) Fiddlers on the shorelines. <em>Of Sea and Shore</em> 6(3):139&ndash;140.</a></li>
+          <li><a href="references/Ahmed1976.1.html">Ahmed, M. (1976) A study of the normal and abberrant sexual types of the Venezuelan fiddler crabs <em>Uca cumulanta </em>and <em>U. rapax</em>. <em>Bulletin of Marine Science</em> 26(4):499&ndash;505.</a></li>
+          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238&ndash;249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
+          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
           <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
-          <li><a href="references/Barnwell1963.2.html">Barnwell, F.H. (1963) Observations on daily and tidal rhythms in some fiddler crabs from Equatorial Brazil. <em>Biological Bulletin</em> 125(3):399-415.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3-4):155-180.</a></li>
-          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1-258.</a></li>
-          <li><a href="references/Coelho1967.html">Coelho, P.A. (1967) Os crustáceos decápodos de alguns manguezais pernambucanos. <em>Trabalhos do Instituto Oceanográficos da Universidade Federal de Pernambuco</em> 7/8:71-90.</a></li>
-          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133-236.</a></li>
-          <li><a href="references/Coward1970.html">Coward, S.J., H.C. Gerhardt, and D.T. Crockett (1970) Behavioral variation in natural populations of two species of fiddler crabs (<em>Uca</em>) and some preliminary observations on directed modifications. <em>Journal of Biological Psychology</em> 12(1):24-31.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33-44.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/Dansereau1947.html">Dansereau, P. (1947) Zonation et succession sur la restinga de Rio de Janeiro. I. Halosère. <em>Revue Canadienne de Biologie</em> 6:448-477.</a></li>
+          <li><a href="references/Baldwin1976.3.html">Baldwin, G.F., and L.B. Kirschener (1976) Sodium and chloride regulation in <em>Uca</em> adapted to 10% sea water. <em>Physiological Zoology</em> 49(2):172&ndash;180.</a></li>
+          <li><a href="references/Barlow1977.html">Barlow, G.W. (1977) Modal action patterns. Pp. 98&ndash;134 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
+          <li><a href="references/Barnwell1963.2.html">Barnwell, F.H. (1963) Observations on daily and tidal rhythms in some fiddler crabs from Equatorial Brazil. <em>Biological Bulletin</em> 125(3):399&ndash;415.</a></li>
+          <li><a href="references/Barnwell1968.1.html">Barnwell, F.H. (1968) Comparative aspects of the chromatophoric responses to light and temperature in fiddler crabs of the genus <em>Uca</em>. <em>Biological Bulletin</em> 134(2):221&ndash;234.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Burgers1958.html">Burgers, A.C.J. (1958) The reactions of the melanophores of the fiddler crab, <em>Uca rapax,</em> to crustacean eyestalk extracts and to vertebrate melanophorotropic hormones. <em>Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen</em> 61C:579&ndash;589.</a></li>
+          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1&ndash;258.</a></li>
+          <li><a href="references/Coelho1967.html">Coelho, P.A. (1967) Os crustáceos decápodos de alguns manguezais pernambucanos. <em>Trabalhos do Instituto Oceanográficos da Universidade Federal de Pernambuco</em> 7/8:71&ndash;90.</a></li>
+          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133&ndash;236.</a></li>
+          <li><a href="references/Coward1970.html">Coward, S.J., H.C. Gerhardt, and D.T. Crockett (1970) Behavioral variation in natural populations of two species of fiddler crabs (<em>Uca</em>) and some preliminary observations on directed modifications. <em>Journal of Biological Psychology</em> 12(1):24&ndash;31.</a></li>
+          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Dansereau1947.html">Dansereau, P. (1947) Zonation et succession sur la restinga de Rio de Janeiro. I. Halosère. <em>Revue Canadienne de Biologie</em> 6:448&ndash;477.</a></li>
+          <li><a href="references/Dunham1988.html">Dunham, D.W., and S.L. Gilchrist (1988) Behavior. Pp. 97&ndash;138 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Faria2014.html">Faria, S.C., C.L. Thurman, II, and J.C. McNamara (2014) Variation in osmoregulatory ability among ten species of fiddler crabs (Crustacea, Brachyura) from the Atlantic coast of Brazil. <em>Integrative and Comparative Biology</em> 54:E272.</a></li>
+          <li><a href="references/Feest1969.html">Feest, J. (1969) Morphophysiologische Untersuchungen zur Ontogenese und Fortpflanzungsbiologie von <em>Uca annulipes</em> und <em>Uca triangularis</em> mit Vergleichsbefunden an <em>Ilyoplax gangetica</em>. <em>forma et functio</em> 1:159&ndash;225.</a></li>
           <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
-          <li><a href="references/Gerlach1958.2.html">Gerlach, S.A. (1958) Die Mangroveregion tropischer Küsten als Lebensraum. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(6):636-730.</a></li>
-          <li><a href="references/Gmitter1953.html">Gmitter, T.E., and R.M. Wotton (1953) Crabs from the island of St. Thomas. <em>Proceedings of the Pennsylvania Academy of Science</em> 27:261-272.</a></li>
+          <li><a href="references/Gerlach1958.2.html">Gerlach, S.A. (1958) Die Mangroveregion tropischer Küsten als Lebensraum. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(6):636&ndash;730.</a></li>
+          <li><a href="references/Gibbs1974.html">Gibbs, P.E. (1974) Notes on <em>Uca burgersi</em> Holthuis (Decapoda, Ocypodidae) from Barbuda, Leeward Islands. <em>Crustaceana</em> 27(1):84&ndash;91.</a></li>
+          <li><a href="references/Gmitter1953.html">Gmitter, T.E., and R.M. Wotton (1953) Crabs from the island of St. Thomas. <em>Proceedings of the Pennsylvania Academy of Science</em> 27:261&ndash;272.</a></li>
           <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/Hannan1973.html">Hannan, J.V., and D.H. Evans (1973) Water permeability in some euryhaline decapods and <em>Limulus polyphemus</em>. <em>Comparative Biochemistry and Physiology</em> 44A(4):1199-1213.</a></li>
-          <li><a href="references/Heard1970.html">Heard, R.W., Jr. (1970) Parasites of the clapper rail, <em>Rallus longirostris</em> Boddaert. II. Some trematodes and cestodes from <em>Spartina </em>marshes of the eastern United States. <em>Proceedings of the Helminthological Society of Washington</em> 37(2):147-153.</a></li>
+          <li><a href="references/Hailman1977.html">Hailman, J.P. (1977) Communication by reflected light. Pp. 184&ndash;210 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
+          <li><a href="references/Hannan1973.html">Hannan, J.V., and D.H. Evans (1973) Water permeability in some euryhaline decapods and <em>Limulus polyphemus</em>. <em>Comparative Biochemistry and Physiology</em> 44A(4):1199&ndash;1213.</a></li>
+          <li><a href="references/Hartnoll1982.html">Hartnoll, R.G. (1982) Growth. Pp. 111&ndash;196 in <em>The Biology of Crustacea, Volume 2: Embryology, Morphology, and Genetics</em>, L.G. Abele, ed., Volume 2. New York: Academic Press.</a></li>
+          <li><a href="references/Hartnoll1988.3.html">Hartnoll, R.G. (1988) Growth and molting. Pp. 186&ndash;210 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Hazlett1972.html">Hazlett, B. (1972) Ritualization in marine crustacea. Pp. 97&ndash;125 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Heard1970.html">Heard, R.W., Jr. (1970) Parasites of the clapper rail, <em>Rallus longirostris</em> Boddaert. II. Some trematodes and cestodes from <em>Spartina </em>marshes of the eastern United States. <em>Proceedings of the Helminthological Society of Washington</em> 37(2):147&ndash;153.</a></li>
           <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Herrnkind1968.html">Herrnkind, W.F., D.C. Miller, J.S. Pearse, W. Wieser, F.J. Vernberg, J.D. Costlow, Jr., C. Mason, W. Dall, J.R. Redmond, R. Hartenstein, L.H. Mantel, M. Kerr, J.L. Roberts, F. Little, J.M. Augenfield, W.B. Vernberg, and C.F. Bailey (1968) Session III: Discusion. Temperature, respiration, and circulation. <em>American Zoologist</em> 8(3):491-494.</a></li>
-          <li><a href="references/Hoffert1975.html">Hoffert, J.R., D.A. Baeyens, and P.O. Fromm (1975) <em>In vivo </em>oxygen toxicity in invertebrates and vertebrates. <em>Comparative Biochemistry and Physiology</em> 52A(2):351-353.</a></li>
-          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1-296.</a></li>
-          <li><a href="references/Kingsley1878.html">Kingsley, J.S. (1878) List of Decapod Crustacea of the Atlantic coast, whose range embraces Fort Macon. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 30(2):316-330.</a></li>
-          <li><a href="references/Lacerda1976.html">Lacerda, T.P. (1976) Hormone pédunculaire et rythme pigmentaire chez <em>Uca olympioi</em> et <em>Uca pugnax</em>. <em>Acta Biológica Paranaense</em> 5(1-2):49-61.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52&ndash;53.</a></li>
+          <li><a href="references/Herrnkind1972.html">Herrnkind, W.F. (1972) Orientation in shore-living arthropods, especially the sand fiddler crab. Pp. 1&ndash;59 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Herrnkind1983.html">Herrnkind, W.F. (1983) Movement patterns and orientation. Pp. 41&ndash;105 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
+          <li><a href="references/Herrnkind1968.html">Herrnkind, W.F., D.C. Miller, J.S. Pearse, W. Wieser, F.J. Vernberg, J.D. Costlow, Jr., C. Mason, W. Dall, J.R. Redmond, R. Hartenstein, L.H. Mantel, M. Kerr, J.L. Roberts, F. Little, J.M. Augenfield, W.B. Vernberg, and C.F. Bailey (1968) Session III: Discusion. Temperature, respiration, and circulation. <em>American Zoologist</em> 8(3):491&ndash;494.</a></li>
+          <li><a href="references/Hockett1972.html">Hockett, J.C., and H. Kritzler (1972) Capture-recapture methods with <em>Uca</em>. <em>Biological Bulletin</em> 142(1):49&ndash;56.</a></li>
+          <li><a href="references/Hoffert1975.html">Hoffert, J.R., D.A. Baeyens, and P.O. Fromm (1975) <em>In vivo </em>oxygen toxicity in invertebrates and vertebrates. <em>Comparative Biochemistry and Physiology</em> 52A(2):351&ndash;353.</a></li>
+          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1&ndash;296.</a></li>
+          <li><a href="references/Kingsley1878.html">Kingsley, J.S. (1878) List of Decapod Crustacea of the Atlantic coast, whose range embraces Fort Macon. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 30(2):316&ndash;330.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Lacerda1976.html">Lacerda, T.P. (1976) Hormone pédunculaire et rythme pigmentaire chez <em>Uca olympioi</em> et <em>Uca pugnax</em>. <em>Acta Biológica Paranaense</em> 5(1&ndash;2):49&ndash;61.</a></li>
+          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214&ndash;218.</a></li>
+          <li><a href="references/Lockwood1967.html">Lockwood, A.P.M. (1967) <em>Aspects of the Physiology of Crustacea</em>. San Francisco, CA: W. H. Freeman and Company.</a></li>
+          <li><a href="references/Luederwaldt1919.1.html">Luederwaldt, H. (1919) Os manguesaes de Santos. <em>Revista do Museu Paulista</em> 11:311&ndash;408.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
           <li><a href="references/McFaddon2003.html">McFadden, A., and C.L. Thurman, II (2003) Osmoregulation by fiddler crabs (genus <em>Uca</em>) from California and South Florida. <em>Integrative and Comparative Biology</em> 43(6):1044.</a></li>
           <li><a href="references/McKenney1996.html">McKenney, C.L., Jr., P.S. Harris, M.A. Shirley, and R.H. Pierce (1996) Altered lipid composition in the hepatopancreas of fiddler crabs in relation to mosquito-control pesticide residues. <em>American Zoologist</em> 36(5):109A.</a></li>
-          <li><a href="references/Menzies1972.html">Menzies, R.J., and R.Y. George (1972) Temperature effects on behavior and survival of marine invertebrates exposed to variations in hydrostatic pressure. <em>Marine Biology</em> 13(2):155-159.</a></li>
+          <li><a href="references/Menzies1972.html">Menzies, R.J., and R.Y. George (1972) Temperature effects on behavior and survival of marine invertebrates exposed to variations in hydrostatic pressure. <em>Marine Biology</em> 13(2):155&ndash;159.</a></li>
           <li><a href="references/Miller1967.html">Miller, D.C., and F.J. Vernberg (1967) Some thermal requirements of temperate and tropical zone fiddler crabs influencing geographic distribution. <em>American Zoologist</em> 7(4):766.</a></li>
-          <li><a href="references/Miller1968.html">Miller, D.C., and F.J. Vernberg (1968) Some thermal requirements of fiddler crabs of the temperate and tropical zones and their influence on geographic distribution. <em>American Zoologist</em> 8(3):459-469.</a></li>
-          <li><a href="references/Nobili1897.html">Nobili, G. (1897) Decapodi e Stomatopodi raccolti dal Dr. Enrico Festa nel Darien, a Curaçâo, La Guayra, Porto Cabello, Colon, Panama, ecc. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 12(280):1-8.</a></li>
-          <li><a href="references/Oliveira1939.2.html">Oliveira, L.P.H.d. (1939) Alguns factores que limitam o habitat de varias especies de carangueijos do genero <em>Uca</em> Leach (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(4):519-526. {Observations on the habitat of the genus <em>Uca</em> fiddler-crabs (Decapoda: Ocypodidae)}</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Oliveira1953.html">Oliveira, L.P.H.d., and L. Krau (1953) Levantamento biogeográfico da Baía de Guanabara II--Crescimento do manguezal na Ilha do Pinheiro. <em>Memórias do Instituto Oswaldo Cruz</em> 51:503-544.</a></li>
-          <li><a href="references/Oliveira1940.html">Oliveira, L.P.H.d., and C.A. Moreira (1940) Estudos sobre os elementos figurados do sangue do crustaceo <em>Uca pugnax</em> (Smith) var. <em>brasiliensis</em> Oliviera (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 35(2):317-325.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
-          <li><a href="references/Rathbun1897.2.html">Rathbun, M.J. (1897) List of the decapod Crustacea of Jamaica. <em>Annals of the Institute of Jamaica</em> 1(1):1-49.</a></li>
-          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583-592.</a></li>
-          <li><a href="references/Rathbun1902.1.html">Rathbun, M.J. (1902) The Brachyura and Macrura of Porto Rico. <em>Bulletin of the United States Fish Commission</em> 20(2):1-127.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1-461.</a></li>
-          <li><a href="references/Rathbun1920.html">Rathbun, M.J. (1920) Stalk-eyed crustaceans of the Dutch West Indies. Pp. 317-349 in <em>Rapport betreffende een voorloopig onderzoek naar den toestand van de Visscherij en de Industrie van Zeeproducten in de Kolonie Curaçao ingevolge het Ministerieel Besluit van 22 November 1904</em>, J.D. Boeke, ed., Volume 2. Netherlands</a></li>
-          <li><a href="references/Rathbun1924.3.html">Rathbun, M.J. (1924) Brachyuran crabs collected at Curaçao. <em>Bijdragen tot de Dierkunde</em> 23:13-21.</a></li>
-          <li><a href="references/Rodriguez1959.html">Rodriguez, G. (1959) The marine communities of Margarita Island, Venezuela. <em>Bulletin of Marine Science of the Gulf and Caribbean</em> 9(3):237-280.</a></li>
-          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123-150.</a></li>
+          <li><a href="references/Miller1968.html">Miller, D.C., and F.J. Vernberg (1968) Some thermal requirements of fiddler crabs of the temperate and tropical zones and their influence on geographic distribution. <em>American Zoologist</em> 8(3):459&ndash;469.</a></li>
+          <li><a href="references/Nobili1897.html">Nobili, G. (1897) Decapodi e Stomatopodi raccolti dal Dr. Enrico Festa nel Darien, a Curaçâo, La Guayra, Porto Cabello, Colon, Panama, ecc. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 12(280):1&ndash;8.</a></li>
+          <li><a href="references/Novak1974.html">Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313&ndash;326.</a></li>
+          <li><a href="references/Oliveira1939.2.html">Oliveira, L.P.H.d. (1939) Alguns factores que limitam o habitat de varias especies de carangueijos do genero <em>Uca</em> Leach (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(4):519&ndash;526. {Observations on the habitat of the genus <em>Uca</em> fiddler-crabs (Decapoda: Ocypodidae)}</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Oliveira1939.3.html">Oliveira, L.P.H.d. (1939) Observações sobre a biologia dos adultos do genero <em>Uca</em> Leach, 1814. Pp. 490&ndash;497 in <em>&quot;Livro de homenagem&quot; aos professores Alvaro e Miguel Ozorio de Almeida</em>, A.O.d. Almeida and M.O.d. Almeida, eds. Rio de Janeiro: Instituto Oswaldo Cruz.</a></li>
+          <li><a href="references/Oliveira1953.html">Oliveira, L.P.H.d., and L. Krau (1953) Levantamento biogeográfico da Baía de Guanabara II--Crescimento do manguezal na Ilha do Pinheiro. <em>Memórias do Instituto Oswaldo Cruz</em> 51:503&ndash;544.</a></li>
+          <li><a href="references/Oliveira1940.html">Oliveira, L.P.H.d., and C.A. Moreira (1940) Estudos sobre os elementos figurados do sangue do crustaceo <em>Uca pugnax</em> (Smith) var. <em>brasiliensis</em> Oliviera (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 35(2):317&ndash;325.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Palmer1973.html">Palmer, J.D. (1973) Tidal rhythms: The clock control of the rhythmic physiology of marine organisms. <em>Biological Reviews</em> 48(3):377&ndash;418.</a></li>
+          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
+          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
+          <li><a href="references/Powers1983.html">Powers, L.W., and D.E. Bliss (1983) Terrestrial adaptations. Pp. 271&ndash;333 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
+          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
+          <li><a href="references/Rathbun1897.2.html">Rathbun, M.J. (1897) List of the decapod Crustacea of Jamaica. <em>Annals of the Institute of Jamaica</em> 1(1):1&ndash;49.</a></li>
+          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583&ndash;592.</a></li>
+          <li><a href="references/Rathbun1902.1.html">Rathbun, M.J. (1902) The Brachyura and Macrura of Porto Rico. <em>Bulletin of the United States Fish Commission</em> 20(2):1&ndash;127.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Rathbun1920.html">Rathbun, M.J. (1920) Stalk-eyed crustaceans of the Dutch West Indies. Pp. 317&ndash;349 in <em>Rapport betreffende een voorloopig onderzoek naar den toestand van de Visscherij en de Industrie van Zeeproducten in de Kolonie Curaçao ingevolge het Ministerieel Besluit van 22 November 1904</em>, J.D. Boeke, ed., Volume 2. Netherlands</a></li>
+          <li><a href="references/Rathbun1924.3.html">Rathbun, M.J. (1924) Brachyuran crabs collected at Curaçao. <em>Bijdragen tot de Dierkunde</em> 23:13&ndash;21.</a></li>
+          <li><a href="references/Rathbun1933.html">Rathbun, M.J. (1933) Brachyuran crabs of Porto Rico and the Virgin Islands. <em>Scientific Survey of Porto Rico and the Virgin Islands</em> 15(1):1&ndash;121.</a></li>
+          <li><a href="references/Rodriguez1959.html">Rodriguez, G. (1959) The marine communities of Margarita Island, Venezuela. <em>Bulletin of Marine Science of the Gulf and Caribbean</em> 9(3):237&ndash;280.</a></li>
+          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123&ndash;150.</a></li>
           <li><a href="references/Salmon1966.html">Salmon, M. (1966) Courtship behavior and distribution of fiddler crabs in Florida (Motion Picture). <em>American Zoologist</em> 6(4):515.</a></li>
-          <li><a href="references/Salmon1967.html">Salmon, M. (1967) Coastal distribution, display and sound production by Florida fiddler crabs (genus <em>Uca</em>). <em>Animal Behaviour</em> 15(4):449-459.</a></li>
-          <li><a href="references/Salmon1971.html">Salmon, M. (1971) Signal characteristics and acoustic detection by the fiddler crabs, <em>Uca rapax</em> and <em>Uca pugilator</em>. <em>Physiological Zoology</em> 44(4):210-224.</a></li>
-          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275-290.</a></li>
-          <li><a href="references/SchmidtNielsen1968.html">Schmidt-Nielsen, B., K.H. Gertz, and L.E. Davis (1968) Excretion and ultrastructure of the antennal gland of the fiddler crab <em>Uca mordax</em>. <em>Journal of Morphology</em> 125(4):473-495.</a></li>
-          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465-520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
-          <li><a href="references/Smith1973.html">Smith, W.K., and P.C. Miller (1973) The thermal ecology of two south Florida fiddler crabs<em>: Uca rapax</em> Smith and <em>U. pugilator </em>Bosc. <em>Physiological Zoology</em> 46(3):186-207.</a></li>
-          <li><a href="references/Tabb1961.html">Tabb, D.C., and R.B. Manning (1961) A checlist of the flora and fauna of northern Florida Bay and adjacent brackish water of the Florida mainland collected during the period July, 1957 through September, 1960. <em>Bulletin of Marine Science</em> 11(4):552-649.</a></li>
-          <li><a href="references/Tashian1956.html">Tashian, R.E. (1956) Geographic variation in the respiratory metabolism and temperature coefficient in tropical and temperate forms of the fiddler crab, <em>Uca pugnax</em>. <em>Zoologica NY</em> 41(6):39-47.</a></li>
-          <li><a href="references/Tashian1958.html">Tashian, R.E., and F.J. Vernberg (1958) The specific distinctness of the fiddler crabs <em>Uca pugnax</em> (Smith) and <em>Uca rapax</em> (Smith) at their time of overlap in northeastern Florida. <em>Zoologica NY</em> 43:89-92.</a></li>
+          <li><a href="references/Salmon1967.html">Salmon, M. (1967) Coastal distribution, display and sound production by Florida fiddler crabs (genus <em>Uca</em>). <em>Animal Behaviour</em> 15(4):449&ndash;459.</a></li>
+          <li><a href="references/Salmon1971.html">Salmon, M. (1971) Signal characteristics and acoustic detection by the fiddler crabs, <em>Uca rapax</em> and <em>Uca pugilator</em>. <em>Physiological Zoology</em> 44(4):210&ndash;224.</a></li>
+          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275&ndash;290.</a></li>
+          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
+          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60&ndash;96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
+          <li><a href="references/Salmon1973.html">Salmon, M., and K.W. Horch (1973) Vibration reception by the fiddler crab, <em>Uca minax</em>. <em>Comparative Biochemistry and Physiology</em> 44A(2):527&ndash;541.</a></li>
+          <li><a href="references/Salmon1983.2.html">Salmon, M., and G.W. Hyatt (1983) Communication. Pp. 1&ndash;40 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
+          <li><a href="references/Salmon1988.2.html">Salmon, M., and N. Zucker (1988) Interpreting differences in the reproductive behaviour of fiddler crabs (genus <em>Uca</em>). Pp. 387&ndash;407 in <em>Behavioral Adaptation to Intertidal Life</em>, G. Chelazzi and M. Vannini, eds. New York: Plenum Press.</a></li>
+          <li><a href="references/SchmidtNielsen1968.html">Schmidt-Nielsen, B., K.H. Gertz, and L.E. Davis (1968) Excretion and ultrastructure of the antennal gland of the fiddler crab <em>Uca mordax</em>. <em>Journal of Morphology</em> 125(4):473&ndash;495.</a></li>
+          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Smith1973.html">Smith, W.K., and P.C. Miller (1973) The thermal ecology of two south Florida fiddler crabs<em>: Uca rapax</em> Smith and <em>U. pugilator </em>Bosc. <em>Physiological Zoology</em> 46(3):186&ndash;207.</a></li>
+          <li><a href="references/Tabb1961.html">Tabb, D.C., and R.B. Manning (1961) A checlist of the flora and fauna of northern Florida Bay and adjacent brackish water of the Florida mainland collected during the period July, 1957 through September, 1960. <em>Bulletin of Marine Science</em> 11(4):552&ndash;649.</a></li>
+          <li><a href="references/Tashian1956.html">Tashian, R.E. (1956) Geographic variation in the respiratory metabolism and temperature coefficient in tropical and temperate forms of the fiddler crab, <em>Uca pugnax</em>. <em>Zoologica NY</em> 41(6):39&ndash;47.</a></li>
+          <li><a href="references/Tashian1958.html">Tashian, R.E., and F.J. Vernberg (1958) The specific distinctness of the fiddler crabs <em>Uca pugnax</em> (Smith) and <em>Uca rapax</em> (Smith) at their time of overlap in northeastern Florida. <em>Zoologica NY</em> 43:89&ndash;92.</a></li>
+          <li><a href="references/Teal1959.html">Teal, J.M. (1959) Respiration of crabs in Georgia salt marshes and its relation to their ecology. <em>Physiological Zoology</em> 32(1):1&ndash;14.</a></li>
+          <li><a href="references/Thurman1981.1.html">Thurman, C.L., II (1981) <em>Uca marguerita</em>, a new species of fiddler crab (Brachyura: Ocypodidae) from eastern Mexico. <em>Proceedings of the Biological Society of Washington</em> 94(1):169&ndash;180.</a></li>
           <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
           <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
-          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234-1235.</a></li>
+          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234&ndash;1235.</a></li>
           <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
-          <li><a href="references/Velez1967.html">Vélez, M.J., Jr. (1967) Checklist of the terrestrial and freshwater Decapoda of Puerto Rico. <em>Caribbean Journal of Science</em> 7(1-2):41-44.</a></li>
+          <li><a href="references/Velez1967.html">Vélez, M.J., Jr. (1967) Checklist of the terrestrial and freshwater Decapoda of Puerto Rico. <em>Caribbean Journal of Science</em> 7(1&ndash;2):41&ndash;44.</a></li>
+          <li><a href="references/Vernberg1959.2.html">Vernberg, F.J. (1959) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. II. Oxygen consumption of whole organisms. <em>Biological Bulletin</em> 117(1):163&ndash;184.</a></li>
+          <li><a href="references/Vernberg1959.3.html">Vernberg, F.J. (1959) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. III. The influence of temperature acclimation on oxygen consumption of whole organisms. <em>Biological Bulletin</em> 117(3):582&ndash;593.</a></li>
           <li><a href="references/Vernberg1960.html">Vernberg, F.J. (1960) The influence of temperature on the tissue metabolism of fiddler crabs from the temperate and tropical zones. <em>Anatomical Record</em> 137(3):399.</a></li>
-          <li><a href="references/Vernberg1969.2.html">Vernberg, F.J. (1969) Acclimation of intertidal crabs. <em>American Zoologist</em> 9(2):333-341.</a></li>
-          <li><a href="references/Vernberg1983.2.html">Vernberg, F.J. (1983) Respiratory adaptations. Pp. 1-42 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
-          <li><a href="references/Vernberg1966.1.html">Vernberg, F.J., and J.D. Costlow, Jr. (1966) Handedness in fiddler crabs. <em>Crustaceana</em> 11(1):61-64.</a></li>
-          <li><a href="references/Vernberg1966.2.html">Vernberg, F.J., and J.D. Costlow, Jr. (1966) Studies on the physiological variation between tropical and temperate-zone fiddler crabs of the genus <em>Uca</em>. IV. Oxygen consumption of larvae and young crabs reared in the laboratory. <em>Physiological Zoology</em> 39(1):36-52.</a></li>
-          <li><a href="references/Vernberg1964.html">Vernberg, F.J., and W.B. Vernberg (1964) Metabolic adaptation of animals from different latitudes. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 9(1):476-487.</a></li>
+          <li><a href="references/Vernberg1963.html">Vernberg, F.J. (1963) Temperature effects of invertebrate animals. Pp. 135&ndash;141 in <em>Temperature: Its Measurement and Control in Science and Industry</em>, J.D. Hardy, ed., Volume 3, part 3. New York: Reinhold.</a></li>
+          <li><a href="references/Vernberg1969.2.html">Vernberg, F.J. (1969) Acclimation of intertidal crabs. <em>American Zoologist</em> 9(2):333&ndash;341.</a></li>
+          <li><a href="references/Vernberg1983.2.html">Vernberg, F.J. (1983) Respiratory adaptations. Pp. 1&ndash;42 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
+          <li><a href="references/Vernberg1966.1.html">Vernberg, F.J., and J.D. Costlow, Jr. (1966) Handedness in fiddler crabs. <em>Crustaceana</em> 11(1):61&ndash;64.</a></li>
+          <li><a href="references/Vernberg1966.2.html">Vernberg, F.J., and J.D. Costlow, Jr. (1966) Studies on the physiological variation between tropical and temperate-zone fiddler crabs of the genus <em>Uca</em>. IV. Oxygen consumption of larvae and young crabs reared in the laboratory. <em>Physiological Zoology</em> 39(1):36&ndash;52.</a></li>
+          <li><a href="references/Vernberg1959.1.html">Vernberg, F.J., and R.E. Tashian (1959) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. I. Thermal death limits. <em>Ecology</em> 40(4):589&ndash;593.</a></li>
+          <li><a href="references/Vernberg1964.html">Vernberg, F.J., and W.B. Vernberg (1964) Metabolic adaptation of animals from different latitudes. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 9(1):476&ndash;487.</a></li>
           <li><a href="references/Vernberg1966.7.html">Vernberg, F.J., and W.B. Vernberg (1966) Comparative metabolic studies on northern and southern hemisphere fiddler crabs. <em>American Zoologist</em> 6(3):327.</a></li>
-          <li><a href="references/Vernberg1966.4.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. VI. The rate of metabolic adaptation to temperature in tissues. <em>Journal of the Elisha Mitchell Scientific Society</em> 82(1):30-34.</a></li>
-          <li><a href="references/Vernberg1966.5.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--VII. Metabolic-temperature acclimation responses in southern hemisphere crabs. <em>Comparative Biochemistry and Physiology</em> 19(3):489-524.</a></li>
+          <li><a href="references/Vernberg1966.4.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. VI. The rate of metabolic adaptation to temperature in tissues. <em>Journal of the Elisha Mitchell Scientific Society</em> 82(1):30&ndash;34.</a></li>
+          <li><a href="references/Vernberg1966.5.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--VII. Metabolic-temperature acclimation responses in southern hemisphere crabs. <em>Comparative Biochemistry and Physiology</em> 19(3):489&ndash;524.</a></li>
           <li><a href="references/Vernberg1967.2.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal acclimation and cytochrome <em>c</em> oxidase activity in tissues of temperate and tropical zone fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 7(2):194.</a></li>
-          <li><a href="references/Vernberg1967.1.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal lethal limits of southern hemisphere <em>Uca</em> crabs. Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. IX. <em>Oikos</em> 18(1):118-123.</a></li>
-          <li><a href="references/Vernberg1975.html">Vernberg, F.J., and W.B. Vernberg (1975) Adaptations to extreme environments. Pp. 165-180 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, South Carolina: University of South Carolina Press.</a></li>
-          <li><a href="references/Vernberg1966.6.html">Vernberg, W.B., and F.J. Vernberg (1966) Rate of temperature acclimation in fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 6(3):326-327.</a></li>
-          <li><a href="references/Vernberg1966.3.html">Vernberg, W.B., and F.J. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--V. Effect of temperature on tissue respiration. <em>Comparative Biochemistry and Physiology</em> 17(2):363-374.</a></li>
-          <li><a href="references/Vernberg1968.1.html">Vernberg, W.B., and F.J. Vernberg (1968) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. VIII. The rate of metabolic adaptation to temperature in tissues of <em>Uca rapax</em> from the northern and southern hemispheres. <em>Journal of Experimental Marine Biology and Ecology</em> 2(2):113-123.</a></li>
-          <li><a href="references/Vernberg1968.2.html">Vernberg, W.B., and F.J. Vernberg (1968) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--X. The influence of temperature on cytochrome-<em>C</em> oxidase activity. <em>Comparative Biochemistry and Physiology</em> 26(2):499-508.</a></li>
-          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177-178.</a></li>
-          <li><a href="references/vonHagen1967.2.html">von Hagen, H.-O. (1967) Nachweis einer kinästhetischen Orientierung bei <em>Uca rapax</em>. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 58(3):301-320.</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361-413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238-253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300-316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1968.1.html">von Hagen, H.-O., and L.B. Holthuis (1968) <em>Gelasimus macrodactylus</em> H. Milne-Edwards &amp; Lucas, 1843 (Crustacea, Decapoda): Proposed suppresion under the plenary powers Z.N.(S.) 1835. <em>Bulletin of Zoological Nomenclature</em> 25(1):60-61.</a></li>
-          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379-389.</a></li>
+          <li><a href="references/Vernberg1967.1.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal lethal limits of southern hemisphere <em>Uca</em> crabs. Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. IX. <em>Oikos</em> 18(1):118&ndash;123.</a></li>
+          <li><a href="references/Vernberg1969.1.html">Vernberg, F.J., and W.B. Vernberg (1969) Thermal influence on invertebrate respiration. <em>Chesapeake Science</em> 10(3&ndash;4):234&ndash;240.</a></li>
+          <li><a href="references/Vernberg1970.html">Vernberg, F.J., and W.B. Vernberg (1970) <em>The Animal and the Environment</em>: Holt, Rinehard and Winston.</a></li>
+          <li><a href="references/Vernberg1975.html">Vernberg, F.J., and W.B. Vernberg (1975) Adaptations to extreme environments. Pp. 165&ndash;180 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, SC: University of South Carolina Press.</a></li>
+          <li><a href="references/Vernberg1975.2.html">Vernberg, W.B. (1975) Multiple factor effects on animals. Pp. 521&ndash;537 in <em>Physiological Adaptation to the Environment</em>, F.J. Vernberg, ed. New York: Intext Educational Publishers.</a></li>
+          <li><a href="references/Vernberg1983.html">Vernberg, W.B. (1983) Responses to estuarine stress. Pp. 43&ndash;63 in <em>Estuaries and Enclosed Seas</em>, B.H. Ketchum, ed., Volume 26. Amsterdam: Elsevier.</a></li>
+          <li><a href="references/Vernberg1966.6.html">Vernberg, W.B., and F.J. Vernberg (1966) Rate of temperature acclimation in fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 6(3):326&ndash;327.</a></li>
+          <li><a href="references/Vernberg1966.3.html">Vernberg, W.B., and F.J. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--V. Effect of temperature on tissue respiration. <em>Comparative Biochemistry and Physiology</em> 17(2):363&ndash;374.</a></li>
+          <li><a href="references/Vernberg1968.1.html">Vernberg, W.B., and F.J. Vernberg (1968) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. VIII. The rate of metabolic adaptation to temperature in tissues of <em>Uca rapax</em> from the northern and southern hemispheres. <em>Journal of Experimental Marine Biology and Ecology</em> 2(2):113&ndash;123.</a></li>
+          <li><a href="references/Vernberg1968.2.html">Vernberg, W.B., and F.J. Vernberg (1968) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--X. The influence of temperature on cytochrome-<em>C</em> oxidase activity. <em>Comparative Biochemistry and Physiology</em> 26(2):499&ndash;508.</a></li>
+          <li><a href="references/Vernberg1972.4.html">Vernberg, W.B., and F.J. Vernberg (1972) <em>Environmental Physiology of Marine Animals</em>. New York: Springer-Verlag.</a></li>
+          <li><a href="references/Vernberg1974.3.html">Vernberg, W.B., and F.J. Vernberg (1974) Metabolic pattern of a trematode and its host: A study in the evolution of physiological responses. Pp. 161&ndash;172 in <em>Symbiosis in the Sea</em>, W.B. Vernberg, ed. Columbia, SC: University of South Carolina Press.</a></li>
+          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
+          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177&ndash;178.</a></li>
+          <li><a href="references/vonHagen1967.2.html">von Hagen, H.-O. (1967) Nachweis einer kinästhetischen Orientierung bei <em>Uca rapax</em>. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 58(3):301&ndash;320.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238&ndash;253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
+          <li><a href="references/vonHagen1976.html">von Hagen, H.-O. (1976) (Book Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Crustaceana</em> 31(2):221&ndash;224.</a></li>
+          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
+          <li><a href="references/vonHagen1968.1.html">von Hagen, H.-O., and L.B. Holthuis (1968) <em>Gelasimus macrodactylus</em> H. Milne-Edwards &amp; Lucas, 1843 (Crustacea, Decapoda): Proposed suppresion under the plenary powers Z.N.(S.) 1835. <em>Bulletin of Zoological Nomenclature</em> 25(1):60&ndash;61.</a></li>
+          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139&ndash;146.</a></li>
+          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
           <li><a href="references/Warner1977.html">Warner, G.F. (1977) <em>The Biology of Crabs</em>. New York: Van Nostrand Reinhold Company.</a></li>
-          <li><a href="references/Wass1955.html">Wass, M.L. (1955) The decapod crustaceans of Alligator Harbor and adjacent inshore areas of northwestern Florida. <em>Quarterly Journal of the Florida Academy of Sciences</em> 18(3):129-176.</a></li>
-          <li><a href="references/Weis1977.1.html">Weis, J.S. (1977) Limb regneration in fiddler crabs: Species differences and effects of methylmercury. <em>Biological Bulletin</em> 152(2):263-274.</a></li>
+          <li><a href="references/Wass1955.html">Wass, M.L. (1955) The decapod crustaceans of Alligator Harbor and adjacent inshore areas of northwestern Florida. <em>Quarterly Journal of the Florida Academy of Sciences</em> 18(3):129&ndash;176.</a></li>
+          <li><a href="references/Weis1977.1.html">Weis, J.S. (1977) Limb regneration in fiddler crabs: Species differences and effects of methylmercury. <em>Biological Bulletin</em> 152(2):263&ndash;274.</a></li>
+          <li><a href="references/Weygoldt1977.html">Weygoldt, P. (1977) Communication in crustaceans and arachnids. Pp. 303&ndash;333 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
+          <li><a href="references/Williams1965.html">Williams, A.B. (1965) Marine Decapod Crustaceans of the Carolinas. <em>Fishery Bulletin</em> 65(1):1&ndash;298.</a></li>
+          <li><a href="references/Yamaguchi1977.html">Yamaguchi, T. (1977) Studies on the handedness of the fiddler crab, <em>Uca lactea</em>. <em>Biological Bulletin</em> 152(3):424&ndash;436.</a></li>
+          <li><a href="references/Young1900.html">Young, C.G. (1900) <em>The stalk-eyed Crustacea of British Guiana, West Indies and Bermuda</em>. London: J. M. Watkins.</a></li>
+          <li><a href="references/Zucker1977.html">Zucker, N. (1977) Neighbor dislodgement and burrow filling activities by male <em>Uca musica terpsichores</em>: A spacing mechanism. <em>Marine Biology</em> 41(3):281&ndash;286.</a></li>
         </ul>
       </div>
     </section>
@@ -273,7 +337,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tetragonon.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tetragonon_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca tetragonon</h1>
-      <h2>Tetragonal Fiddler Crab</h2>
+    <header id="u_tetragonon.html">
+      <h1 class="species bookmark2">Uca tetragonon</h1>
+      <h2 class="nobookmark">Tetragonal Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Cancer tetragonon</em></dt>
         <dd>Herbst, J.F.W. (1790) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 1, no. 8. Zurich: J. C. Fuessly.</dd>
@@ -73,21 +73,24 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
        <dt>Common Names</dt>
          <dd>Tetragonal Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Cancer_tetragonon.html"><em class="species">Cancer tetragonon</em></a>, <a href="names/Cancer_tetragonus.html"><em class="species">Cancer tetragonus</em></a>, <a href="names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a>, <a href="names/Gelasimus_desjardinii.html"><em class="species">Gelasimus desjardinii</em></a>, <a href="names/Gelasimus_Duperreyi.html"><em class="species">Gelasimus Duperreyi</em></a>, <a href="names/Gelasimus_tetragonon.html"><em class="species">Gelasimus tetragonon</em></a>, <a href="names/Gelasimus_tetragonum.html"><em class="species">Gelasimus tetragonum</em></a>, <a href="names/Gelasimus_variatus.html"><em class="species">Gelasimus variatus</em></a>, <a href="names/Mesuca_Mesuca_tetragonon.html"><em class="species">Mesuca (Mesuca) tetragonon</em></a>, <a href="names/Ocypoda_tetragona.html"><em class="species">Ocypoda tetragona</em></a>, <a href="names/Ocypode_Gelasimus_tetragonus.html"><em class="species">Ocypode (Gelasimus) tetragonus</em></a>, <a href="names/Ocypode_tetragona.html"><em class="species">Ocypode tetragona</em></a>, <a href="names/Uca_Gelasimus_tetragonon.html"><em class="species">Uca (Gelasimus) tetragonon</em></a>, <a href="names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a>, <a href="names/Uca_Uca_tetragona.html"><em class="species">Uca (Uca) tetragona</em></a>, <a href="names/Uca_Uca_tetragonon.html"><em class="species">Uca (Uca) tetragonon</em></a>, <a href="names/Uca_affinis.html"><em class="species">Uca affinis</em></a>, <a href="names/Uca_duperryi.html"><em class="species">Uca duperryi</em></a>, <a href="names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a>, <a href="names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a>, <a href="names/Uca_tetragonum.html"><em class="species">Uca tetragonum</em></a></em></dd>
-       <dt>Geographic Range</dt>
+         <dd><em class="species"><a href="names/Cancer_tetragonon.html"><em class="species">Cancer tetragonon</em></a>, <a href="names/Cancer_tetragonus.html"><em class="species">Cancer tetragonus</em></a>, <a href="names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a>, <a href="names/Gelasimus_desjardinii.html"><em class="species">Gelasimus desjardinii</em></a>, <a href="names/Gelasimus_Duperreyi.html"><em class="species">Gelasimus Duperreyi</em></a>, <a href="names/Gelasimus_tetragonon.html"><em class="species">Gelasimus tetragonon</em></a>, <a href="names/Gelasimus_tetragonum.html"><em class="species">Gelasimus tetragonum</em></a>, <a href="names/Gelasimus_variatus.html"><em class="species">Gelasimus variatus</em></a>, <a href="names/Mesuca_Mesuca_tetragonon.html"><em class="species">Mesuca (Mesuca) tetragonon</em></a>, <a href="names/Ocypoda_tetragona.html"><em class="species">Ocypoda tetragona</em></a>, <a href="names/Ocypode_Gelasimus_tetragonus.html"><em class="species">Ocypode (Gelasimus) tetragonus</em></a>, <a href="names/Ocypode_tetragona.html"><em class="species">Ocypode tetragona</em></a>, <a href="names/Uca_Gelasimus_tetragonon.html"><em class="species">Uca (Gelasimus) tetragonon</em></a>, <a href="names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a>, <a href="names/Uca_Uca_tetragona.html"><em class="species">Uca (Uca) tetragona</em></a>, <a href="names/Uca_Uca_tetragonon.html"><em class="species">Uca (Uca) tetragonon</em></a>, <a href="names/Uca_affinis.html"><em class="species">Uca affinis</em></a>, <a href="names/Uca_duperryi.html"><em class="species">Uca duperryi</em></a>, <a href="names/Uca_tetragnon.html"><em class="species">Uca tetragnon</em></a>, <a href="names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a>, <a href="names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a>, <a href="names/Uca_tetragonum.html"><em class="species">Uca tetragonum</em></a></em></dd>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: South Africa to Iran, Madagascar, Thailand, Malaysia, Australia, Indonesia, Philippines, Papa New Guinea, Taiwan, Micronesia, Melanesia</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_tetragonon_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Barnes2010.html">Barnes (2010)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/George1982.html">George & Jones (1982)</a>; <a href="references/Jones1994.html">Jones & Morton (1994)</a>; <a href="references/vonHagen1989.html">von Hagen & Jones (1989)</a>
+           Map data derived from: <a href="references/Barnes2010.html">Barnes (2010)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/George1982.html">George &amp; Jones (1982)</a>; <a href="references/Jones1994.html">Jones &amp; Morton (1994)</a>; <a href="references/vonHagen1989.html">von Hagen &amp; Jones (1989)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/2981566/overview">Encyclopedia of Life</a></dd>
@@ -99,186 +102,218 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon05.html"><picture><img src="photos/U_tetragonon05tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon05.html"><img class="thumbnail" src="photos/U_tetragonon05tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon06.html"><picture><img src="photos/U_tetragonon06tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon06.html"><img class="thumbnail" src="photos/U_tetragonon06tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon08.html"><picture><img src="photos/U_tetragonon08tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon08.html"><img class="thumbnail" src="photos/U_tetragonon08tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon09.html"><picture><img src="photos/U_tetragonon09tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon09.html"><img class="thumbnail" src="photos/U_tetragonon09tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon10.html"><picture><img src="photos/U_tetragonon10tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon10.html"><img class="thumbnail" src="photos/U_tetragonon10tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon11.html"><picture><img src="photos/U_tetragonon11tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon11.html"><img class="thumbnail" src="photos/U_tetragonon11tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon12.html"><picture><img src="photos/U_tetragonon12tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon12.html"><img class="thumbnail" src="photos/U_tetragonon12tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon13.html"><picture><img src="photos/U_tetragonon13tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon13.html"><img class="thumbnail" src="photos/U_tetragonon13tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon14.html"><picture><img src="photos/U_tetragonon14tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon14.html"><img class="thumbnail" src="photos/U_tetragonon14tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon15.html"><picture><img src="photos/U_tetragonon15tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon15.html"><img class="thumbnail" src="photos/U_tetragonon15tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon16.html"><picture><img src="photos/U_tetragonon16tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon16.html"><img class="thumbnail" src="photos/U_tetragonon16tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon17.html"><picture><img src="photos/U_tetragonon17tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon17.html"><img class="thumbnail" src="photos/U_tetragonon17tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon18.html"><picture><img src="photos/U_tetragonon18tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon18.html"><img class="thumbnail" src="photos/U_tetragonon18tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_tetragonon19.html"><picture><img src="photos/U_tetragonon19tn.jpg" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="photos/photo_u_tetragonon19.html"><img class="thumbnail" src="photos/U_tetragonon19tn.jpg" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Herbst_Cancer_tetragonon.html"><picture><img src="art/Herbst_Cancer_tetragonon_tn.jpg" alt="Cancer tetragonon" title="Cancer tetragonon" /></picture></a>
+        <a href="art/Herbst_Cancer_tetragonon.html"><img class="thumbnail" src="art/Herbst_Cancer_tetragonon_tn.jpg" alt="Cancer tetragonon thumbnail" title="Cancer tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/GuerinMeneville_Gelasimus_duperreyi.html"><picture><img src="art/GuerinMeneville_Gelasimus_duperreyi_tn.jpg" alt="Gelasimus Duperreyi" title="Gelasimus Duperreyi" /></picture></a>
+        <a href="art/GuerinMeneville_Gelasimus_duperreyi.html"><img class="thumbnail" src="art/GuerinMeneville_Gelasimus_duperreyi_tn.jpg" alt="Gelasimus Duperreyi thumbnail" title="Gelasimus Duperreyi" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/deMan_Gelasimus_tetragonon.html"><picture><img src="art/deMan_Gelasimus_tetragonon_tn.png" alt="Gelasimus tetragonon" title="Gelasimus tetragonon" /></picture></a>
+        <a href="art/deMan_Gelasimus_tetragonon.html"><img class="thumbnail" src="art/deMan_Gelasimus_tetragonon_tn.png" alt="Gelasimus tetragonon thumbnail" title="Gelasimus tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_tetragonon1.html"><picture><img src="art/Crosnier_Uca_tetragonon1_tn.png" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="art/Crosnier_Uca_tetragonon1.html"><img class="thumbnail" src="art/Crosnier_Uca_tetragonon1_tn.png" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_tetragonon2.html"><picture><img src="art/Crosnier_Uca_tetragonon2_tn.png" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="art/Crosnier_Uca_tetragonon2.html"><img class="thumbnail" src="art/Crosnier_Uca_tetragonon2_tn.png" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_tetragonon3.html"><picture><img src="art/Crosnier_Uca_tetragonon3_tn.png" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="art/Crosnier_Uca_tetragonon3.html"><img class="thumbnail" src="art/Crosnier_Uca_tetragonon3_tn.png" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Mesuca_tetragonon.html"><picture><img src="art/Bott_Mesuca_tetragonon_tn.png" alt="Mesuca tetragonon" title="Mesuca tetragonon" /></picture></a>
+        <a href="art/Bott_Mesuca_tetragonon.html"><img class="thumbnail" src="art/Bott_Mesuca_tetragonon_tn.png" alt="Mesuca tetragonon thumbnail" title="Mesuca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_tetragonon1.html"><picture><img src="art/Crane_Uca_tetragonon1_tn.png" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="art/Crane_Uca_tetragonon1.html"><img class="thumbnail" src="art/Crane_Uca_tetragonon1_tn.png" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_tetragonon2.html"><picture><img src="art/Crane_Uca_tetragonon2_tn.png" alt="Uca tetragonon" title="Uca tetragonon" /></picture></a>
+        <a href="art/Crane_Uca_tetragonon2.html"><img class="thumbnail" src="art/Crane_Uca_tetragonon2_tn.png" alt="Uca tetragonon thumbnail" title="Uca tetragonon" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_Mauritius.html"><picture><img src="art/stamp_Mauritius_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_Mauritius.html"><img class="thumbnail" src="art/stamp_Mauritius_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_Palau.html"><picture><img src="art/stamp_Palau_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_Palau.html"><img class="thumbnail" src="art/stamp_Palau_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_PapuaNewGuinea.html"><picture><img src="art/stamp_PapuaNewGuinea_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_PapuaNewGuinea.html"><img class="thumbnail" src="art/stamp_PapuaNewGuinea_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_Seychelles.html"><picture><img src="art/stamp_Seychelles_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_Seychelles.html"><img class="thumbnail" src="art/stamp_Seychelles_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_SolomonIslands01.html"><picture><img src="art/stamp_SolomonIslands01_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_SolomonIslands01.html"><img class="thumbnail" src="art/stamp_SolomonIslands01_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_SolomonIslands02.html"><picture><img src="art/stamp_SolomonIslands02_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_SolomonIslands02.html"><img class="thumbnail" src="art/stamp_SolomonIslands02_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_SolomonIslands03.html"><picture><img src="art/stamp_SolomonIslands03_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_SolomonIslands03.html"><img class="thumbnail" src="art/stamp_SolomonIslands03_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279-456.</a></li>
-          <li><a href="references/Balss1924.html">Balss, H. (1924) Expedition S. M. Schiff &quot;Pola&quot; in das Rote Meer 1895/6-1897/8. Zool. Ergeb. XXXIV. Decapoden des Roten Meeres. III. Die Parthenopiden. Cylco- und Catometopen. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 99:1-18.</a></li>
-          <li><a href="references/Balss1938.html">Balss, H. (1938) Die Dekapoda Brachyura von Dr. Sixten Bocks' Pazifik-Expedition, 1917-1918. <em>Göteborgs Kungliga Vetenskaps-och Vitterhetssam-halles handlinger (5B)</em> 5(7):1-85.</a></li>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
+          <li><a href="references/Balss1924.html">Balss, H. (1924) Expedition S. M. Schiff &quot;Pola&quot; in das Rote Meer 1895/6-1897/8. Zool. Ergeb. XXXIV. Decapoden des Roten Meeres. III. Die Parthenopiden. Cylco- und Catometopen. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 99:1&ndash;18.</a></li>
+          <li><a href="references/Balss1938.html">Balss, H. (1938) Die Dekapoda Brachyura von Dr. Sixten Bocks' Pazifik-Expedition, 1917-1918. <em>Göteborgs Kungliga Vetenskaps-och Vitterhetssam-halles handlinger (5B)</em> 5(7):1&ndash;85.</a></li>
           <li><a href="references/Barnwell2002.html">Barnwell, F.H. (2002) Daily and tidal rhythms of locomotor activity in the fiddler crab <em>Uca tetragonon</em> in relation to the &quot;solar&quot; tide at Moorea, French Polynesia. <em>Integrative and Comparative Biology</em> 42(6):1191.</a></li>
-          <li><a href="references/Borradaile1907.html">Borradaile, L.A. (1907) Land and freshwater Decapoda. <em>Transactions of the Linnean Society of London. Second Series. Zoology</em> 12(1):63-68.</a></li>
-          <li><a href="references/Boutan1892.html">Boutan, L. (1892) Voyage dans la Mer Rouge (Chapitres I-III). <em>Revue biologique du nord de la France</em> 4(5):173-183.</a></li>
-          <li><a href="references/Bouvier1915.html">Bouvier, E.-L. (1915) Décapodes marcheurs (<em>Reptantia</em>) et stomatopodes recueillis à l'île Mauarice par M. Paul Carié. <em>Bulletin Biologique de la France et de la Belgique</em> 48:178-318.</a></li>
-          <li><a href="references/Calman1900.html">Calman, W.T. (1900) On a collection of Brachyura from Torres Straits. <em>Transactions of the Linnean Society of London. Second Series. Zoology</em> 8(1):1-50.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1-143.</a></li>
-          <li><a href="references/Dana1851.html">Dana, J.D. (1851) Conspectus Crustaceorum quæ in Orbis Terrarum circumnavigatione, Carolo Wilkes e Classe Reipublicæ Foederatæ Duce, lexit et descripsit. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 5:247-254.</a></li>
-          <li><a href="references/Dana1852.html">Dana, J.D. (1852) Crustacea. Pp. 1-685 in <em>Untied States Exploring Expedition. During the years 1838, 1839, 1840, 1841, 1842. Under the Command of Charles Wilkes, U.S.N.</em>, Volume 13. Philadelphia: C. Sherman.</a></li>
-          <li><a href="references/deMan1887.1.html">De Man, J.G. (1887) Bericht über die im indischen Archipel von Dr. J. Brock gesammelten Decapoden u. Stomatopoden. <em>Archiv für Naturgeschicthe</em> 53(1):215-600.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
-          <li><a href="references/DelPrato1896.html">Del Prato, A. (1896) I Crostacei délia collezione Eritrea Bottego. <em>Atti della Società italiana di scienze naturali e del Museo civico di storia naturale di Milano</em> 36:181-186.</a></li>
-          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177-195.</a></li>
-          <li><a href="references/Edmondson1925.html">Edmondson, C.H. (1925) Marine zoology of tropical central Pancific: Crustacea. <em>Bulletin of the Bernice P Bishop Museum</em> 24:3-62.</a></li>
-          <li><a href="references/Edmondson1933.html">Edmondson, C.H. (1933) Reef and shore fauna of Hawaii. <em>Bernice P. Bishop Museum Special Publication</em> 22:1-381.</a></li>
-          <li><a href="references/Edmondson1946.html">Edmondson, C.H. (1946) Reef and shore fauna of Hawaii. Revised edition. <em>Bernice P. Bishop Museum Special Publication</em> 22:1-381.</a></li>
-          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465-559.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100-103.</a></li>
-          <li><a href="references/Fishelson1971.html">Fishelson, L. (1971) Ecology and distribution of the benthic fauna in the shallow waters of the Red Sea. <em>Marine Biology</em> 10(2):113-133.</a></li>
-          <li><a href="references/Frith1977.1.html">Frith, D.W. (1977) A preliminary list of macrofauna from a mangrove forest and adjacent biotopes at Surin Island, Western Peninsular Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 17:1-14.</a></li>
-          <li><a href="references/Frith1977.2.html">Frith, D.W., and C.B. Frith (1977) Observations on fiddler crabs (Ocypodidae: genus <em>Uca</em>) on Surin Island, Western Peninsular Thailand, with particular reference to <em>Uca tetragonon</em> (Herbst). <em>Phuket Marine Biological Center Research Bulletin</em> 18:1-14.</a></li>
-          <li><a href="references/Frith1977.3.html">Frith, D.W., and C.B. Frith (1977) Range extensions of fiddler crabs (Decapoda, Brachyura, Ocypodidae) in the north-western Malay Peninsula area. <em>Crustaceana</em> 32(1):100-102.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1-99.</a></li>
-          <li><a href="references/Gravier1920.html">Gravier, C. (1920) Sur une collection de Crustacés recueillis à Madagascar par M. le Lieutenant Decary. <em>Bulletin du Muséum National d'Histoire Naturelle</em> 26(6):465-472.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Borradaile1907.html">Borradaile, L.A. (1907) Land and freshwater Decapoda. <em>Transactions of the Linnean Society of London. Second Series. Zoology</em> 12(1):63&ndash;68.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Boutan1892.html">Boutan, L. (1892) Voyage dans la Mer Rouge (Chapitres I-III). <em>Revue biologique du nord de la France</em> 4(5):173&ndash;183.</a></li>
+          <li><a href="references/Bouvier1915.html">Bouvier, E.-L. (1915) Décapodes marcheurs (<em>Reptantia</em>) et stomatopodes recueillis à l'île Mauarice par M. Paul Carié. <em>Bulletin Biologique de la France et de la Belgique</em> 48:178&ndash;318.</a></li>
+          <li><a href="references/Calman1900.html">Calman, W.T. (1900) On a collection of Brachyura from Torres Straits. <em>Transactions of the Linnean Society of London. Second Series. Zoology</em> 8(1):1&ndash;50.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1&ndash;143.</a></li>
+          <li><a href="references/Dana1851.html">Dana, J.D. (1851) Conspectus Crustaceorum quæ in Orbis Terrarum circumnavigatione, Carolo Wilkes e Classe Reipublicæ Foederatæ Duce, lexit et descripsit. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 5:247&ndash;254.</a></li>
+          <li><a href="references/Dana1852.html">Dana, J.D. (1852) Crustacea. Pp. 1&ndash;685 in <em>Untied States Exploring Expedition. During the years 1838, 1839, 1840, 1841, 1842. Under the Command of Charles Wilkes, U.S.N.</em>, Volume 13. Philadelphia: C. Sherman.</a></li>
+          <li><a href="references/deHaan1835.html">de Haan, W. (1833&ndash;1850) Crustacea. Pp. 1&ndash;243 in <em>Fauna Japonica sive Descriptio animalium, quae in itinere per Japoniam, jussu et auspiciis superiorum, qui summum in India Batava Imperium tenent, suscepto, annis 1823-1830 collegit, notis, observationibus et adumbrationibus illustravit</em>, P.F. von Siebold, ed. Amsterdam: Lugduni Batavorum.</a></li>
+          <li><a href="references/deMan1887.1.html">De Man, J.G. (1887) Bericht über die im indischen Archipel von Dr. J. Brock gesammelten Decapoden u. Stomatopoden. <em>Archiv für Naturgeschicthe</em> 53(1):215&ndash;600.</a></li>
+          <li><a href="references/deMan1887.2.html">De Man, J.G. (1887) Uebersicht der indo-pacifischen Arten der Gattung <em>Sesarma</em> Say, nebst einer Kritik der von W. Hess und E. Nauck in den Jahren 1865 und 1880 beschriebenen Decapoden. <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Thiere</em> 2(3&ndash;4):639&ndash;722.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/DelPrato1896.html">Del Prato, A. (1896) I Crostacei délia collezione Eritrea Bottego. <em>Atti della Società italiana di scienze naturali e del Museo civico di storia naturale di Milano</em> 36:181&ndash;186.</a></li>
+          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177&ndash;195.</a></li>
+          <li><a href="references/Edmondson1923.html">Edmondson, C.H. (1923) Crustacea from Palmyra and Fanning Islands. <em>Bernice P. Bishop Museum Bulletin</em> 5:1&ndash;43, Pl 1–2.</a></li>
+          <li><a href="references/Edmondson1925.html">Edmondson, C.H. (1925) Marine zoology of tropical central Pancific: Crustacea. <em>Bulletin of the Bernice P Bishop Museum</em> 24:3&ndash;62.</a></li>
+          <li><a href="references/Edmondson1933.html">Edmondson, C.H. (1933) Reef and shore fauna of Hawaii. <em>Bernice P. Bishop Museum Special Publication</em> 22:1&ndash;381.</a></li>
+          <li><a href="references/Edmondson1946.html">Edmondson, C.H. (1946) Reef and shore fauna of Hawaii. Revised edition. <em>Bernice P. Bishop Museum Special Publication</em> 22:1&ndash;381.</a></li>
+          <li><a href="references/Edmondson1962.html">Edmondson, C.H. (1962) Hawaiian Crustacea: Gonoplacidae, Pinnotheridae, Cymopoliidae, Ocypodidae, and Gecarcinidae. <em>Occasional Papers Bernice P. Bishop Museum</em> 23:1&ndash;27.</a></li>
+          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
+          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
+          <li><a href="references/Eydoux1835.html">Eydoux, F. (1835) Nouvelle espèce de Gélasime. <em>Magasin de Zoologie</em> 5(7):29&ndash;32.</a></li>
+          <li><a href="references/Fishelson1971.html">Fishelson, L. (1971) Ecology and distribution of the benthic fauna in the shallow waters of the Red Sea. <em>Marine Biology</em> 10(2):113&ndash;133.</a></li>
+          <li><a href="references/Frith1977.1.html">Frith, D.W. (1977) A preliminary list of macrofauna from a mangrove forest and adjacent biotopes at Surin Island, Western Peninsular Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 17:1&ndash;14.</a></li>
+          <li><a href="references/Frith1977.2.html">Frith, D.W., and C.B. Frith (1977) Observations on fiddler crabs (Ocypodidae: genus <em>Uca</em>) on Surin Island, Western Peninsular Thailand, with particular reference to <em>Uca tetragonon</em> (Herbst). <em>Phuket Marine Biological Center Research Bulletin</em> 18:1&ndash;14.</a></li>
+          <li><a href="references/Frith1977.3.html">Frith, D.W., and C.B. Frith (1977) Range extensions of fiddler crabs (Decapoda, Brachyura, Ocypodidae) in the north-western Malay Peninsula area. <em>Crustaceana</em> 32(1):100&ndash;102.</a></li>
+          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
+          <li><a href="references/Gravier1920.html">Gravier, C. (1920) Sur une collection de Crustacés recueillis à Madagascar par M. le Lieutenant Decary. <em>Bulletin du Muséum National d'Histoire Naturelle</em> 26(6):465&ndash;472.</a></li>
           <li><a href="references/GuerinMeneville1829.1.html">Guérin-Méneville, F.-E. (1829) Atlas: Zoologie: Crustacés. Insectes. Zoophytes. Pp. in <em>Voyage Autour du Monde, Execué par Ordre du Roi, Sur la Corvette de Sa Majesté, La Coquille, pendant les années 1822, 1823, 1824 et 1825</em>, L.I. Dupereey, ed., Volume 5. Paris: Arthus Bertrand.</a></li>
+          <li><a href="references/GuerinMeneville1830.html">Guérin-Méneville, F.-E. (1830) Crustacés, arachnides et insectes. Pp. 1&ndash;319 in <em>Voyage autour du monde, execué par ordre du Roi, sur la corvette de sa Majesté, la 'Coquille,' pendant les années 1822, 1823, 1824 et 1825</em>, Volume Zoologie. Volume 2. Part 2. Paris: L. I. Duperrey.</a></li>
           <li><a href="references/GuerinMeneville_nd.html">Guérin-Méneville, F.-E. (?) Museum label.</a></li>
-          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305-328.</a></li>
+          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305&ndash;328.</a></li>
+          <li><a href="references/Hartnoll1988.3.html">Hartnoll, R.G. (1988) Growth and molting. Pp. 186&ndash;210 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
           <li><a href="references/Haswell1882.html">Haswell, W.A. (1882) <em>Catalogue of the Australian stalk-eyed and sessile-eyed Crustacea</em>. Sydney.</a></li>
-          <li><a href="references/Heller1865.html">Heller, C. (1865) Die Crustaceen. Pp. 1-280 in <em>Reise der österreichischen Fregatte &quot;Novara&quot; um die Erde in den Jahren 1857-1859 unter den Befehlen des Commodore B. von Wüllerstorf-Urbair. Zoology</em>, Volume 2. Vienna</a></li>
+          <li><a href="references/Heller1861.html">Heller, C. (1861) Synopsis der im rothen Meere vorkommenden Crustaceen. <em>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien</em> 11:3&ndash;32.</a></li>
+          <li><a href="references/Heller1865.html">Heller, C. (1865) Die Crustaceen. Pp. 1&ndash;280 in <em>Reise der österreichischen Fregatte &quot;Novara&quot; um die Erde in den Jahren 1857-1859 unter den Befehlen des Commodore B. von Wüllerstorf-Urbair. Zoology</em>, Volume 2. Vienna</a></li>
           <li><a href="references/Herbst1790.html">Herbst, J.F.W. (1790) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 1, no. 8. Zurich: J. C. Fuessly.</a></li>
-          <li><a href="references/Herklots1861.html">Herklots, J.A. (1861) Symbolae Carcinologicae. I. Catalogue des Crustacés qui ont servi de base au système Carcinologique de M. W. de Haan, rédigé d'après la collection du Musée des PayBas et les Crustacés de la Faune du Japon. <em>Tijdschrift voor entomologie</em> 4:116-156.</a></li>
-          <li><a href="references/Hess1865.html">Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127-173.</a></li>
-          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69-116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
+          <li><a href="references/Herbst1790.2.html">Herbst, J.F.W. (1790) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume Atlas. Zurich: J. C. Fuessly.</a></li>
+          <li><a href="references/Herbst1799.html">Herbst, J.F.W. (1799) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 3, no. 1. Zurich: J. C. Fuessly.</a></li>
+          <li><a href="references/Herklots1861.html">Herklots, J.A. (1861) Symbolae Carcinologicae. I. Catalogue des Crustacés qui ont servi de base au système Carcinologique de M. W. de Haan, rédigé d'après la collection du Musée des PayBas et les Crustacés de la Faune du Japon. <em>Tijdschrift voor entomologie</em> 4:116&ndash;156.</a></li>
+          <li><a href="references/Hess1865.html">Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127&ndash;173.</a></li>
+          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69&ndash;116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
           <li><a href="references/Hoffmann1874.html">Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
-          <li><a href="references/Lanchester1900.1.html">Lanchester, W.F. (1900) On a collection of crustaceans made at Singapore and Malacca.--Part I. Crustacea Brachyura. <em>Proceedings of the Zoological Society of London</em> 1900(3):719-770.</a></li>
-          <li><a href="references/Lanchester1902.html">Lanchester, W.F. (1902) On the Crustacea collected during the &quot;Skeat&quot; expedition to the Malay Peninsula, together with a note on the genus <em>Actaeopsis.</em> Part 1. Brachyura, Stomatopoda, and Macrura. <em>Proceedings of the Zoological Society of London</em> 1901(2):534-574.</a></li>
+          <li><a href="references/Holthuis1958.html">Holthuis, L.B. (1958) Contributions to the knowledge of the Red Sea. No. 9. Crustacea Decapoda from the northern Red Sea (Gulf of Aqaba and Sinai Peninsula). II. Hippidea and Brachyura (Dromiacea, Oxystomata, and Grapsoidea). <em>Bulletin of the Sea Fisheries Research Station of Israel</em> 17(9):41&ndash;54.</a></li>
+          <li><a href="references/Holthuis1967.html">Holthuis, L.B. (1967) On a new species of <em>Uca</em> from the West Indian region (Crustacea, Brachyura, Ocypodidae). <em>Zoologische Mededelingen</em> 42(6):51&ndash;54.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Kossmann1877.html">Kossmann, R. (1877) <em>Zoologische Ergebnisse einer Reise in die Küstengegenden des Roten Meeres III. Crustacea</em>. Leipzig: Wilhelm Engelmann.</a></li>
+          <li><a href="references/Lanchester1900.1.html">Lanchester, W.F. (1900) On a collection of crustaceans made at Singapore and Malacca.--Part I. Crustacea Brachyura. <em>Proceedings of the Zoological Society of London</em> 1900(3):719&ndash;770.</a></li>
+          <li><a href="references/Lanchester1902.html">Lanchester, W.F. (1902) On the Crustacea collected during the &quot;Skeat&quot; expedition to the Malay Peninsula, together with a note on the genus <em>Actaeopsis.</em> Part 1. Brachyura, Stomatopoda, and Macrura. <em>Proceedings of the Zoological Society of London</em> 1901(2):534&ndash;574.</a></li>
           <li><a href="references/Latreille_nd.html">Latreille, P.A. (?) Museum label.</a></li>
-          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407-475.</a></li>
-          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45-84.</a></li>
-          <li><a href="references/Lundoer1974.html">Lundoer, S. (1974) A checklist of the Brachyura in the reference collection at PMBC, Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 4:1-11.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
-          <li><a href="references/McNeill1920.html">McNeill, F.A. (1920) Studies in Australian carcinology. No. 1. <em>Records of the Australian Museum</em> 13:105-109.</a></li>
-          <li><a href="references/Miers1886.html">Miers, E.J. (1886) Report on the Brachyura collected by H.M.S. Challenger during the years 1873-76. Pp. 1-362 in <em>H.M.S. Challenger Reports</em>, Volume XVII. London</a></li>
-          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1-39: Leipzig).</a></li>
-          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1-347.</a></li>
-          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13-159.</a></li>
-          <li><a href="references/Nobili1907.html">Nobili, G. (1907) Ricerche sui crostacei della Polinesia. Decapodi, stomatopodi, anisopodi, e isopodi. <em>Memorie della reale Accademia delle scienze di Torino, ser 2</em> 57:351-430.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683-772.</a></li>
+          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407&ndash;475.</a></li>
+          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45&ndash;84.</a></li>
+          <li><a href="references/Lundoer1974.html">Lundoer, S. (1974) A checklist of the Brachyura in the reference collection at PMBC, Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 4:1&ndash;11.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/McNeill1920.html">McNeill, F.A. (1920) Studies in Australian carcinology. No. 1. <em>Records of the Australian Museum</em> 13:105&ndash;109.</a></li>
+          <li><a href="references/McNeil1968.html">McNeill, F.A. (1968) Crustacea, Decapoda &amp; Stomatopoda. <em>Great Barrier Reef Expedition 1928–29 Scientific Reports</em> 7(1):1&ndash;98.</a></li>
+          <li><a href="references/Miers1886.html">Miers, E.J. (1886) Report on the Brachyura collected by H.M.S. Challenger during the years 1873-76. Pp. 1&ndash;362 in <em>H.M.S. Challenger Reports</em>, Volume XVII. London</a></li>
+          <li><a href="references/MilneEdwards1837.2.html">Milne Edwards, H. (1837) <em>Historie naturelle des crustaces comprenant l-anatomie, la physiologie et las classification des ces animaux</em>, Volume 2. Paris.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
+          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
+          <li><a href="references/MilneEdwards1862.html">Milne-Edwards, A. (1862) Faune carcinologique de l’île de la Réunion. Pp. 1&ndash;16 in <em>Notes sur l’île de la Réunion</em>, L. Maillard, ed., Volume Annexe F. Paris</a></li>
+          <li><a href="references/MilneEdwards1873.html">Milne-Edwards, A. (1873) Recherches sur la faune carcinologique de la Nouvelle-Caledonie. <em>Nouvelles Archives de Muséum d'Historie Naturelle de Paris</em> 9(2):156&ndash;332.</a></li>
+          <li><a href="references/Miyake1939.html">Miyake, S. (1939) Notes on Crustacea Brachyura colleced by Professor Teiso Esaki's Micronesia Expeditions 1937-1938 together with a check list of Micronesian Brachyura. <em>Records of Oceanographic Works in Japan</em> 10(2):168&ndash;247.</a></li>
+          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1&ndash;39: Leipzig).</a></li>
+          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1&ndash;347.</a></li>
+          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13&ndash;159.</a></li>
+          <li><a href="references/Nobili1907.html">Nobili, G. (1907) Ricerche sui crostacei della Polinesia. Decapodi, stomatopodi, anisopodi, e isopodi. <em>Memorie della reale Accademia delle scienze di Torino, ser 2</em> 57:351&ndash;430.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Owen1839.html">Owen, R. (1839) Crustaces. Pp. 77&ndash;92 in <em>The zoology of Captain Beechey's voyage; compiled from the collections and notes made by Captain Beechey, the officers and naturalist of the expedition during a voyage to the Pacific and Behrin's Straits performed in his Majesty's ship 'Blossom,' under the command of Capt. E. W. Beechey, R.N., F.R.Sl, &amp;c. in the years 1825, 26, 27 and 28</em>. London</a></li>
           <li><a href="references/Paulson1875.html">Paul'son, O. (1875) <em>Studies on Crustacea of the Red Sea</em>. Kiev: S.V. Kul'zhenko. {О. Паульсона} {Изслѣдованія Ракообразныхъ Краснаго Моря}</a></li>
-          <li><a href="references/Por1977.html">Por, F.D., I. Dor, and A. Amir (1977) The mangal of Sinai: Limits of an ecosystem. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 30:295-314.</a></li>
-          <li><a href="references/Rathbun1902.2.html">Rathbun, M.J. (1902) Crabs from the Maldive Islands. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 39(5):123-138.</a></li>
-          <li><a href="references/Rathbun1907.html">Rathbun, M.J. (1907) Reports on the scietific results of the expedition to the tropical Pacific in charge of Alexander Agassiz, by the U.S. Fish Commission steamer &quot;Albatross,&quot; from August 1899 to March 1900, Commander Jefferson F. Moser, U.S.N., commanding. IX. Reports on the scientific results of the expedition to the Eastern tropical Pacific, in charge of Alexander Agassiz, by the U.S. Fish Commission steamer &quot;Albatross,&quot; from October, 1904, to March, 1905, Lieut.-Commander L.M. Garret, U.S.N., commanding. X. The Brachyura. <em>Memoirs of the Museum of Comparative Zoology of Harvard College</em> 35(2):21-74,91.</a></li>
+          <li><a href="references/Por1986.html">Por, F.D. (1986) Crustacean biogeography of the Late Middle Miocene Middle Eastern landbridge. Pp. 69&ndash;84 in <em>Crustacean Issues 4: Crustacean Biogeography</em>, R.H. Gore and K.L. Heck, eds. Rotterdam: Balkema.</a></li>
+          <li><a href="references/Por1977.html">Por, F.D., I. Dor, and A. Amir (1977) The mangal of Sinai: Limits of an ecosystem. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 30:295&ndash;314.</a></li>
+          <li><a href="references/Rathbun1902.2.html">Rathbun, M.J. (1902) Crabs from the Maldive Islands. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 39(5):123&ndash;138.</a></li>
+          <li><a href="references/Rathbun1906.html">Rathbun, M.J. (1906) The Brachyura and Macrura of the Hawaiian islands. <em>Bulletin of the Bureau of Fisheries</em> 23(3):827&ndash;930.</a></li>
+          <li><a href="references/Rathbun1907.html">Rathbun, M.J. (1907) Reports on the scietific results of the expedition to the tropical Pacific in charge of Alexander Agassiz, by the U.S. Fish Commission steamer &quot;Albatross,&quot; from August 1899 to March 1900, Commander Jefferson F. Moser, U.S.N., commanding. IX. Reports on the scientific results of the expedition to the Eastern tropical Pacific, in charge of Alexander Agassiz, by the U.S. Fish Commission steamer &quot;Albatross,&quot; from October, 1904, to March, 1905, Lieut.-Commander L.M. Garret, U.S.N., commanding. X. The Brachyura. <em>Memoirs of the Museum of Comparative Zoology of Harvard College</em> 35(2):21&ndash;74,91.</a></li>
+          <li><a href="references/Rathbun1910.2.html">Rathbun, M.J. (1910) Decapod crustaceans collected in Dutch East India and elsewhere by Mr. Thomas Barbour in 1906-1907. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 52(16):305&ndash;317.</a></li>
           <li><a href="references/Ruppell1830.html">Rüppell, E. (1830) <em>Beschreibung und Abbildung von 24 Arten kurzschwänziger Krabben, als Beitrag zur Naturgeschichte des rothen Meeres</em>. Frankfurt am Main: Bronner.</a></li>
-          <li><a href="references/Sakai1976.2.html">Sakai, T. (1976) Notes from the carcinological fauna of Japan (6). <em>Researches on Crustacea</em> 7:29-40.</a></li>
+          <li><a href="references/Ruppell1831.html">Rüppell, E. (1831) Description et figures de 24 espèces de crabes, pour servir de matériaux à l'histoire naturelle de la Mer-Rouge. <em>Bulletin des Sciences Naturelles et de Géologie</em> 24:100&ndash;104.</a></li>
+          <li><a href="references/Sakai1976.2.html">Sakai, T. (1976) Notes from the carcinological fauna of Japan (6). <em>Researches on Crustacea</em> 7:29&ndash;40.</a></li>
+          <li><a href="references/Schnee1904.html">Schnee, P., and F. Doflein (1904) Die Landfauna der Maschall-Inseln. I. Krebse. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 20(4):406&ndash;407.</a></li>
           <li><a href="references/Seba1758.html">Seba, A. (1758) <em>Locupletissimi Rerum Naturalium Thesauri Accurata Descriptio et Iconibus Artificiosissimis Expressio per Universam Physices Historiam</em>, Volume 3. Amsterdam: Janssonio-Waesbergios. {Cabinet of Natural Curiosities}</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119-161.</a></li>
-          <li><a href="references/Sewell1913.html">Sewell, R.B. (1913) Notes on the biological work of the R. I. M. S. S. &quot;Investigator&quot; during survey seasons 1910-1911 and 1911-1912. <em>Journal and Proceedings of the Asiatic Society of Bengal</em> 9:329-390.</a></li>
-          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47-62.</a></li>
-          <li><a href="references/Stephenson1931.html">Stephenson, T.A., A. Stephenson, G. Tandy, and M. Spender (1931) The structure and ecology of low isles and other reefs. <em>Scientific Reports of the Great Barrier Reef Expedition 1928-1929</em> 3(2):17-112.</a></li>
-          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1-148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139-146.</a></li>
-          <li><a href="references/Ward1939.html">Ward, M. (1939) The Brachyura of the second Templeton Crocker-American Museum expedition to the Pacific Ocean. <em>American Museum Novitates</em> 1049:1-15.</a></li>
-          <li><a href="references/Ward1942.html">Ward, M. (1942) Notes on the Crustacea of the Desjardins Museum, Mauritius Institute with descriptions of new genera and species. <em>Mauritius Institute Bulletin</em> 2(2):49-113.</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
+          <li><a href="references/Sewell1913.html">Sewell, R.B. (1913) Notes on the biological work of the R. I. M. S. S. &quot;Investigator&quot; during survey seasons 1910-1911 and 1911-1912. <em>Journal and Proceedings of the Asiatic Society of Bengal</em> 9:329&ndash;390.</a></li>
+          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
+          <li><a href="references/Stella1953.html">Stella, E. (1953) Spedizione subacquea Italiana nel Mar Rosso. Ricerche Zoologiche III. Crostacei Decapodi e Stomatopodi. <em>Rivista di Biologia Coloniale</em> 13:51&ndash;70.</a></li>
+          <li><a href="references/Stephenson1931.html">Stephenson, T.A., A. Stephenson, G. Tandy, and M. Spender (1931) The structure and ecology of low isles and other reefs. <em>Scientific Reports of the Great Barrier Reef Expedition 1928-1929</em> 3(2):17&ndash;112.</a></li>
+          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1&ndash;148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139&ndash;146.</a></li>
+          <li><a href="references/Ward1939.html">Ward, M. (1939) The Brachyura of the second Templeton Crocker-American Museum expedition to the Pacific Ocean. <em>American Museum Novitates</em> 1049:1&ndash;15.</a></li>
+          <li><a href="references/Ward1942.html">Ward, M. (1942) Notes on the Crustacea of the Desjardins Museum, Mauritius Institute with descriptions of new genera and species. <em>Mauritius Institute Bulletin</em> 2(2):49&ndash;113.</a></li>
           <li><a href="references/White1847.1.html">White, A. (1847) <em>List of the specimens of Crustacea in the collection of the British Museum</em>. London: Edward Newman.</a></li>
-          <li><a href="references/Whitelegge1898.html">Whitelegge, T. (1898) The Crustacea of Funafuti. The Atoll of Funafuit. Pt. 2. <em>Memoirs: Australian Museum</em> 3(2):127-151.</a></li>
+          <li><a href="references/Whitelegge1898.html">Whitelegge, T. (1898) The Crustacea of Funafuti. The Atoll of Funafuit. Pt. 2. <em>Memoirs: Australian Museum</em> 3(2):127&ndash;151.</a></li>
         </ul>
       </div>
     </section>
@@ -287,7 +322,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

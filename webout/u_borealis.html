@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_borealis.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_borealis_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca borealis</h1>
-      <h2>Northern Calling Fiddler Crab</h2>
+    <header id="u_borealis.html">
+      <h1 class="species bookmark2">Uca borealis</h1>
+      <h2 class="nobookmark">Northern Calling Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca vocans borealis</em></dt>
         <dd>Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</dd>
@@ -73,7 +73,7 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Northern Calling Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Gelasimus_borealis.html"><em class="species">Uca (Gelasimus) borealis</em></a>, <a href="names/Uca_Thalassuca_vocans_borealis.html"><em class="species">Uca (Thalassuca) vocans borealis</em></a>, <a href="names/Uca_borealis.html"><em class="species">Uca borealis</em></a>, <a href="names/Uca_vocans_borealis.html"><em class="species">Uca vocans borealis</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Taiwan</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_borealis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Dai1986.html">Dai <em>et al.</em> (1986)</a>; <a href="references/Fukui1989.html">Fukui <em>et al.</em> (1989)</a>; <a href="references/Huang1989.html">Huang <em>et al.</em> (1989)</a>; <a href="references/Jones1994.html">Jones & Morton (1994)</a>
+           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Dai1986.html">Dai <em>et al.</em> (1986)</a>; <a href="references/Fukui1989.html">Fukui <em>et al.</em> (1989)</a>; <a href="references/Huang1989.html">Huang <em>et al.</em> (1989)</a>; <a href="references/Jones1994.html">Jones &amp; Morton (1994)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3118937/overview">Encyclopedia of Life</a></dd>
@@ -99,74 +102,80 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis01.html"><picture><img src="photos/U_borealis01tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis01.html"><img class="thumbnail" src="photos/U_borealis01tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis02.html"><picture><img src="photos/U_borealis02tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis02.html"><img class="thumbnail" src="photos/U_borealis02tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis03.html"><picture><img src="photos/U_borealis03tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis03.html"><img class="thumbnail" src="photos/U_borealis03tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis04.html"><picture><img src="photos/U_borealis04tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis04.html"><img class="thumbnail" src="photos/U_borealis04tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis05.html"><picture><img src="photos/U_borealis05tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis05.html"><img class="thumbnail" src="photos/U_borealis05tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis06.html"><picture><img src="photos/U_borealis06tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis06.html"><img class="thumbnail" src="photos/U_borealis06tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis07.html"><picture><img src="photos/U_borealis07tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis07.html"><img class="thumbnail" src="photos/U_borealis07tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis09.html"><picture><img src="photos/U_borealis09tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis09.html"><img class="thumbnail" src="photos/U_borealis09tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis10.html"><picture><img src="photos/U_borealis10tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis10.html"><img class="thumbnail" src="photos/U_borealis10tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis11.html"><picture><img src="photos/U_borealis11tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis11.html"><img class="thumbnail" src="photos/U_borealis11tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis12.html"><picture><img src="photos/U_borealis12tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis12.html"><img class="thumbnail" src="photos/U_borealis12tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_borealis13.html"><picture><img src="photos/U_borealis13tn.jpg" alt="Uca borealis" title="Uca borealis" /></picture></a>
+        <a href="photos/photo_u_borealis13.html"><img class="thumbnail" src="photos/U_borealis13tn.jpg" alt="Uca borealis thumbnail" title="Uca borealis" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_vocans_borealis1.html"><picture><img src="art/Crane_Uca_vocans_borealis1_tn.png" alt="Uca vocans borealis" title="Uca vocans borealis" /></picture></a>
+        <a href="art/Crane_Uca_vocans_borealis1.html"><img class="thumbnail" src="art/Crane_Uca_vocans_borealis1_tn.png" alt="Uca vocans borealis thumbnail" title="Uca vocans borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_vocans_borealis2.html"><picture><img src="art/Crane_Uca_vocans_borealis2_tn.png" alt="Uca vocans borealis" title="Uca vocans borealis" /></picture></a>
+        <a href="art/Crane_Uca_vocans_borealis2.html"><img class="thumbnail" src="art/Crane_Uca_vocans_borealis2_tn.png" alt="Uca vocans borealis thumbnail" title="Uca vocans borealis" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/stamp_Taiwan03.html"><picture><img src="art/stamp_Taiwan03_tn.jpg" alt="Postage Stamp" title="Postage Stamp" /></picture></a>
+        <a href="art/stamp_Taiwan03.html"><img class="thumbnail" src="art/stamp_Taiwan03_tn.jpg" alt="Postage Stamp thumbnail" title="Postage Stamp" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Chhapgar1957.html">Chhapgar, B.F. (1957) On the marine crabs (Decapoda: Brachyura) of Bombay State. Part II. <em>Journal of the Bombay Natural History Society</em> 54(3):503&ndash;549.</a></li>
           <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Gee1925.html">Gee, N.G. (1925) Tentative list of Chinese decapod Crustacea, Including those Represented in the Collections of the United States National Museum (Marked with an *) with Localities at which Collected. <em>Lingnan Agricultural Review</em> 3(2):156-166.</a></li>
-          <li><a href="references/Gordon1931.html">Gordon, I. (1931) Brachyura from the coasts of China. <em>Journal of the Linnean Society. Zoology</em> 37(254):525-558.</a></li>
-          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47-62.</a></li>
-          <li><a href="references/Yun2015.html">Yun, C.T., C.Z. Bo, and L.X. Zhu (2015) Feng shui of fiddler crabs' home:  The effecct of soil texture on fiddler crabs' burrow morphologyh in intertidal mudflat. Pp. 275-279 in <em>The 6th Conference on Taiwan Wetland Ecology</em>. {陳彤昀, 陳章波 and 林幸助} {招潮蟹居家風水：潮間帶泥灘土壤質地對招潮蟹洞穴形態之影響}</a></li>
+          <li><a href="references/Gee1925.html">Gee, N.G. (1925) Tentative list of Chinese decapod Crustacea, Including those Represented in the Collections of the United States National Museum (Marked with an *) with Localities at which Collected. <em>Lingnan Agricultural Review</em> 3(2):156&ndash;166.</a></li>
+          <li><a href="references/Gordon1931.html">Gordon, I. (1931) Brachyura from the coasts of China. <em>Journal of the Linnean Society. Zoology</em> 37(254):525&ndash;558.</a></li>
+          <li><a href="references/Shen1940.1.html">Shen, C.-J. (1940) The brachyuran fauna of Hong Kong. <em>Journal of the Hong Kong Fisheries Research Station</em> 1(2):211&ndash;242.</a></li>
+          <li><a href="references/Shen1940.2.html">Shen, C.-J. (1940) On the collections of crabs of South China. <em>Bulletin of the Fan Memorial Institute of Biology</em> 10(2):69&ndash;104.</a></li>
+          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
+          <li><a href="references/Takahasi1934.2.html">Takahasi, S. (1934) The ecology of the Ocypodidae near the mouth of Tamsui. <em>Dobutsugaku Zasshi (Zoological Magazine)</em> 46:73&ndash;74.</a></li>
+          <li><a href="references/Yamaghuchi1973.2.html">Yamaguchi, T., and M. Takeda (1973) Dimorphism of chelipeds and systematic status of a fiddler crab, <em>Uca marionis</em> (Desmarest). <em>Proceedings of the Japanese Society of Systematic Zoology</em> 9:7&ndash;12. {山口隆男 and 武田正倫} {ヒメシオマネキ (incomplete)}</a></li>
+          <li><a href="references/Yun2015.html">Yun, C.T., C.Z. Bo, and L.X. Zhu (2015) Feng shui of fiddler crabs' home:  The effecct of soil texture on fiddler crabs' burrow morphologyh in intertidal mudflat. Pp. 275&ndash;279 in <em>The 6th Conference on Taiwan Wetland Ecology</em>. {陳彤昀, 陳章波 and 林幸助} {招潮蟹居家風水：潮間帶泥灘土壤質地對招潮蟹洞穴形態之影響}</a></li>
         </ul>
       </div>
     </section>
@@ -175,7 +184,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rosea.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rosea_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca rosea</h1>
-      <h2>Rose Fiddler Crab</h2>
+    <header id="u_rosea.html">
+      <h1 class="species bookmark2">Uca rosea</h1>
+      <h2 class="nobookmark">Rose Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,34 +58,37 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus roseus</em></dt>
-        <dd>Tweedie, M.W.F. (1937) On the crabs of the family Ocypodidae in the collection of the Raffles Museum. <em>Bulletin of the Raffles Museum</em> 13:140-170.</dd>
+        <dd>Tweedie, M.W.F. (1937) On the crabs of the family Ocypodidae in the collection of the Raffles Museum. <em>Bulletin of the Raffles Museum</em> 13:140&ndash;170.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Rose Fiddler Crab</dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Western India to Malaysia, Western Indonesia</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_rosea_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Bairagi1988.html">Bairagi & Misra (1988)</a>; <a href="references/Bouillon2002.html">Bouillon <em>et al.</em> (2002)</a>; <a href="references/Chakraborty1992.html">Chakraborty & Choudhury (1992)</a>; <a href="references/Crane1975.html">Crane (1975)</a>
+           Map data derived from: <a href="references/Bairagi1988.html">Bairagi &amp; Misra (1988)</a>; <a href="references/Bouillon2002.html">Bouillon <em>et al.</em> (2002)</a>; <a href="references/Chakraborty1992.html">Chakraborty &amp; Choudhury (1992)</a>; <a href="references/Crane1975.html">Crane (1975)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3119002/overview">Encyclopedia of Life</a></dd>
@@ -96,57 +99,64 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_rosea01.html"><picture><img src="photos/U_rosea01tn.jpg" alt="Uca rosea" title="Uca rosea" /></picture></a>
+        <a href="photos/photo_u_rosea01.html"><img class="thumbnail" src="photos/U_rosea01tn.jpg" alt="Uca rosea thumbnail" title="Uca rosea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_rosea02.html"><picture><img src="photos/U_rosea02tn.jpg" alt="Uca rosea" title="Uca rosea" /></picture></a>
+        <a href="photos/photo_u_rosea02.html"><img class="thumbnail" src="photos/U_rosea02tn.jpg" alt="Uca rosea thumbnail" title="Uca rosea" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Tweedie_Gelasimus_roseus.html"><picture><img src="art/Tweedie_Gelasimus_roseus_tn.png" alt="Gelasimus roseus" title="Gelasimus roseus" /></picture></a>
+        <a href="art/Tweedie_Gelasimus_roseus.html"><img class="thumbnail" src="art/Tweedie_Gelasimus_roseus_tn.png" alt="Gelasimus roseus thumbnail" title="Gelasimus roseus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Tweedie_Gelasimus_roseus2.html"><picture><img src="art/Tweedie_Gelasimus_roseus2_tn.png" alt="Gelasimus roseus" title="Gelasimus roseus" /></picture></a>
+        <a href="art/Tweedie_Gelasimus_roseus2.html"><img class="thumbnail" src="art/Tweedie_Gelasimus_roseus2_tn.png" alt="Gelasimus roseus thumbnail" title="Gelasimus roseus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Mesuca_rosea.html"><picture><img src="art/Bott_Mesuca_rosea_tn.png" alt="Mesuca rosea" title="Mesuca rosea" /></picture></a>
+        <a href="art/Bott_Mesuca_rosea.html"><img class="thumbnail" src="art/Bott_Mesuca_rosea_tn.png" alt="Mesuca rosea thumbnail" title="Mesuca rosea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rosea1.html"><picture><img src="art/Crane_Uca_rosea1_tn.png" alt="Uca rosea" title="Uca rosea" /></picture></a>
+        <a href="art/Crane_Uca_rosea1.html"><img class="thumbnail" src="art/Crane_Uca_rosea1_tn.png" alt="Uca rosea thumbnail" title="Uca rosea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_rosea2.html"><picture><img src="art/Crane_Uca_rosea2_tn.png" alt="Uca rosea" title="Uca rosea" /></picture></a>
+        <a href="art/Crane_Uca_rosea2.html"><img class="thumbnail" src="art/Crane_Uca_rosea2_tn.png" alt="Uca rosea thumbnail" title="Uca rosea" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Chopra1937.html">Chopra, B., and K.N. Das (1937) Further notes on Crustacea Decapoda in the Indian Museum. <em>Records of the Indian Museum</em> 39:377-434.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/deMan1888.html">De Man, J.G. (1887-1888) Report on the Podophthalmous Crustacea of the Mergui Archipelago, collected for the trustees of the Indian Museum, Calcutta, by Dr. John Anderson, F.R.S., superintendant of the museum. <em>Journal of the Linnean Society. Zoology</em> 22:1-305.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
-          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485-609.</a></li>
-          <li><a href="references/Lanchester1900.1.html">Lanchester, W.F. (1900) On a collection of crustaceans made at Singapore and Malacca.--Part I. Crustacea Brachyura. <em>Proceedings of the Zoological Society of London</em> 1900(3):719-770.</a></li>
-          <li><a href="references/Pearse1932.html">Pearse, A.S. (1932) Observations on the ecology of certain fishes and crustaceans along the bank of the Malta River at Port Canning. <em>Records of the Indian Museum</em> 34(3):289-298.</a></li>
-          <li><a href="references/Pearse1936.html">Pearse, A.S. (1936) The Ganges Delta. <em>Scientific Monthly</em> 42(4):349-354.</a></li>
-          <li><a href="references/Sasekumar1974.html">Sasekumar, A. (1974) Distribution of macrofauna on a Malayan mangrove shore. <em>Journal of Animal Ecology</em> 41(1):51-69.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119-161.</a></li>
-          <li><a href="references/Tweedie1937.html">Tweedie, M.W.F. (1937) On the crabs of the family Ocypodidae in the collection of the Raffles Museum. <em>Bulletin of the Raffles Museum</em> 13:140-170.</a></li>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Chopra1937.html">Chopra, B., and K.N. Das (1937) Further notes on Crustacea Decapoda in the Indian Museum. <em>Records of the Indian Museum</em> 39:377&ndash;434.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/deMan1888.html">De Man, J.G. (1887&ndash;1888) Report on the Podophthalmous Crustacea of the Mergui Archipelago, collected for the trustees of the Indian Museum, Calcutta, by Dr. John Anderson, F.R.S., superintendant of the museum. <em>Journal of the Linnean Society. Zoology</em> 22:1&ndash;305.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485&ndash;609.</a></li>
+          <li><a href="references/Lanchester1900.1.html">Lanchester, W.F. (1900) On a collection of crustaceans made at Singapore and Malacca.--Part I. Crustacea Brachyura. <em>Proceedings of the Zoological Society of London</em> 1900(3):719&ndash;770.</a></li>
+          <li><a href="references/Pearse1932.html">Pearse, A.S. (1932) Observations on the ecology of certain fishes and crustaceans along the bank of the Malta River at Port Canning. <em>Records of the Indian Museum</em> 34(3):289&ndash;298.</a></li>
+          <li><a href="references/Pearse1936.html">Pearse, A.S. (1936) The Ganges Delta. <em>Scientific Monthly</em> 42(4):349&ndash;354.</a></li>
+          <li><a href="references/Sasekumar1974.html">Sasekumar, A. (1974) Distribution of macrofauna on a Malayan mangrove shore. <em>Journal of Animal Ecology</em> 41(1):51&ndash;69.</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
+          <li><a href="references/Shen1940.1.html">Shen, C.-J. (1940) The brachyuran fauna of Hong Kong. <em>Journal of the Hong Kong Fisheries Research Station</em> 1(2):211&ndash;242.</a></li>
+          <li><a href="references/Shen1940.2.html">Shen, C.-J. (1940) On the collections of crabs of South China. <em>Bulletin of the Fan Memorial Institute of Biology</em> 10(2):69&ndash;104.</a></li>
+          <li><a href="references/Tweedie1937.html">Tweedie, M.W.F. (1937) On the crabs of the family Ocypodidae in the collection of the Raffles Museum. <em>Bulletin of the Raffles Museum</em> 13:140&ndash;170.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
         </ul>
       </div>
     </section>
@@ -155,7 +165,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

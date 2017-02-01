@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_panacea.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_panacea_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca panacea</h1>
-      <h2>Gulf Coast Fiddler Crab</h2>
+    <header id="u_panacea.html">
+      <h1 class="species bookmark2">Uca panacea</h1>
+      <h2 class="nobookmark">Gulf Coast Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca panacea</em></dt>
-        <dd>Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313-326.</dd>
+        <dd>Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313&ndash;326.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Gulf Coast Fiddler Crab, Gulf Sand Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Leptuca_panacea.html"><em class="species">Uca (Leptuca) panacea</em></a>, <a href="names/Uca_panacea.html"><em class="species">Uca panacea</em></a>, <a href="names/Uca_panaceae.html"><em class="species">Uca panaceae</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (Northwest Florida) to Mexico</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_panacea_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Hopkins2010.2.html">Hopkins & Thurman (2010)</a>
+           Map data derived from: <a href="references/Hopkins2010.2.html">Hopkins &amp; Thurman (2010)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/1039932/overview">Encyclopedia of Life</a></dd>
@@ -99,105 +102,110 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_panacea01.html"><picture><img src="photos/U_panacea01tn.jpg" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="photos/photo_u_panacea01.html"><img class="thumbnail" src="photos/U_panacea01tn.jpg" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_panacea02.html"><picture><img src="photos/U_panacea02tn.jpg" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="photos/photo_u_panacea02.html"><img class="thumbnail" src="photos/U_panacea02tn.jpg" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea1.html"><picture><img src="art/Novak_Uca_panacea1_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea1.html"><img class="thumbnail" src="art/Novak_Uca_panacea1_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea2.html"><picture><img src="art/Novak_Uca_panacea2_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea2.html"><img class="thumbnail" src="art/Novak_Uca_panacea2_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea3.html"><picture><img src="art/Novak_Uca_panacea3_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea3.html"><img class="thumbnail" src="art/Novak_Uca_panacea3_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea4.html"><picture><img src="art/Novak_Uca_panacea4_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea4.html"><img class="thumbnail" src="art/Novak_Uca_panacea4_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea5.html"><picture><img src="art/Novak_Uca_panacea5_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea5.html"><img class="thumbnail" src="art/Novak_Uca_panacea5_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea6.html"><picture><img src="art/Novak_Uca_panacea6_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea6.html"><img class="thumbnail" src="art/Novak_Uca_panacea6_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea7.html"><picture><img src="art/Novak_Uca_panacea7_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea7.html"><img class="thumbnail" src="art/Novak_Uca_panacea7_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea8.html"><picture><img src="art/Novak_Uca_panacea8_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea8.html"><img class="thumbnail" src="art/Novak_Uca_panacea8_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea9.html"><picture><img src="art/Novak_Uca_panacea9_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea9.html"><img class="thumbnail" src="art/Novak_Uca_panacea9_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea10.html"><picture><img src="art/Novak_Uca_panacea10_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea10.html"><img class="thumbnail" src="art/Novak_Uca_panacea10_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea11.html"><picture><img src="art/Novak_Uca_panacea11_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea11.html"><img class="thumbnail" src="art/Novak_Uca_panacea11_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea12.html"><picture><img src="art/Novak_Uca_panacea12_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea12.html"><img class="thumbnail" src="art/Novak_Uca_panacea12_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Novak_Uca_panacea13.html"><picture><img src="art/Novak_Uca_panacea13_tn.png" alt="Uca panacea" title="Uca panacea" /></picture></a>
+        <a href="art/Novak_Uca_panacea13.html"><img class="thumbnail" src="art/Novak_Uca_panacea13_tn.png" alt="Uca panacea thumbnail" title="Uca panacea" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
           <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
           <li><a href="references/Barnwell1987.html">Barnwell, F.H., M.C. Vanzwol, and K.C. Zinnel (1987) Geographic variation in allometry of the buccal cavity in the fiddler crabs <em>Uca pugilator</em> and <em>Uca panacea</em>. <em>American Zoologist</em> 27(4):141A.</a></li>
-          <li><a href="references/Behre1950.html">Behre, E.H. (1950) Annotated list of the fauna of the Grand Isle region. <em>Occasional Papers of the Marine Lab of Louisiana State University</em> 6:1-66.</a></li>
+          <li><a href="references/Behre1950.html">Behre, E.H. (1950) Annotated list of the fauna of the Grand Isle region. <em>Occasional Papers of the Marine Lab of Louisiana State University</em> 6:1&ndash;66.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
           <li><a href="references/Butler1983.html">Butler, T.A., and M. Fingerman (1983) Concentrations of neuro-transmitters in the central nervous systems of <em>Uca panacea</em> and <em>Callinectes sapidus</em>. <em>American Zoologist</em> 23(4):954.</a></li>
-          <li><a href="references/Fielder1971.1.html">Fielder, D.R., K.R. Rao, and M. Fingerman (1971) A female-limited lipoprotein and the diversity of hemocyanin components in the dimorphic variants of the fiddler crab, <em>Uca pugilator</em>, as revealed by disc electrophoresis. <em>Comparative Biochemistry and Physiology</em> 39B(2):291-297.</a></li>
+          <li><a href="references/Darnell2012.2.html">Darnell, M.Z., K.K. Fowler, and P. Munguia (2012) Carapace coloration affects body temperature and limits activity in the fiddler crab <em>Uca panacea</em>. <em>Integrative and Comparative Biology</em> 52:e42.</a></li>
+          <li><a href="references/Fielder1971.1.html">Fielder, D.R., K.R. Rao, and M. Fingerman (1971) A female-limited lipoprotein and the diversity of hemocyanin components in the dimorphic variants of the fiddler crab, <em>Uca pugilator</em>, as revealed by disc electrophoresis. <em>Comparative Biochemistry and Physiology</em> 39B(2):291&ndash;297.</a></li>
           <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
+          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
           <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52-53.</a></li>
-          <li><a href="references/Hedgpeth1950.html">Hedgpeth, J.W. (1950) Notes on the marine invertebrate fauna of salt fiat areas in Aransas National Wildlife Refuge, Texas. <em>Publications of the Institute of Marine Science</em> 1(2):103-119.</a></li>
-          <li><a href="references/Herman1975.2.html">Herman, W.S., and S.H. Dallmann (1975) <em>Limulus</em> chromatophorotropin: Action on isolated <em>Uca </em>legs and in various crustaceans. <em>Experientia</em> 31(8):918-919.</a></li>
-          <li><a href="references/Herrnkind1983.html">Herrnkind, W.F. (1983) Movement patterns and orientation. Pp. 41-105 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
+          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52&ndash;53.</a></li>
+          <li><a href="references/Hedgpeth1950.html">Hedgpeth, J.W. (1950) Notes on the marine invertebrate fauna of salt fiat areas in Aransas National Wildlife Refuge, Texas. <em>Publications of the Institute of Marine Science</em> 1(2):103&ndash;119.</a></li>
+          <li><a href="references/Herman1975.2.html">Herman, W.S., and S.H. Dallmann (1975) <em>Limulus</em> chromatophorotropin: Action on isolated <em>Uca </em>legs and in various crustaceans. <em>Experientia</em> 31(8):918&ndash;919.</a></li>
+          <li><a href="references/Herrnkind1983.html">Herrnkind, W.F. (1983) Movement patterns and orientation. Pp. 41&ndash;105 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
           <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
+          <li><a href="references/Krebs1976.html">Krebs, C.T. (1976) Population dynamics and energetics of the fiddler crab <em>Uca pugnax</em> and the effect of contamination with chlorinated hydrocarbons from sewage. Pp. 154: Boston University).</a></li>
           <li><a href="references/Neiman1997.html">Neiman, M., and F.H. Barnwell (1997) Morphometric differences in small claws of the deposit-feeding fiddler crabs (<em>Uca</em> spp.). <em>American Zoologist</em> 37(5):47A.</a></li>
-          <li><a href="references/Novak1974.html">Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313-326.</a></li>
+          <li><a href="references/Novak1974.html">Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313&ndash;326.</a></li>
           <li><a href="references/Pawlik1980.html">Pawlik, J., R. Lewis, and F.H. Barnwell (1980) Different mechanisms of sound production in two closely related species of fiddler crabs. <em>American Zoologist</em> 20(4):957.</a></li>
           <li><a href="references/Powers1973.html">Powers, L.W. (1973) Ecological aspects of burrows and fiddler crab behavior. <em>American Zoologist</em> 13(4):1271.</a></li>
           <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1975.1.html">Powers, L.W. (1975) Fiddler crabs in a nontidal environment. <em>Contributions in Marine Science</em> 19:67-78.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1-190.</a></li>
-          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141-157.</a></li>
+          <li><a href="references/Powers1975.1.html">Powers, L.W. (1975) Fiddler crabs in a nontidal environment. <em>Contributions in Marine Science</em> 19:67&ndash;78.</a></li>
+          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
+          <li><a href="references/Powers1983.html">Powers, L.W., and D.E. Bliss (1983) Terrestrial adaptations. Pp. 271&ndash;333 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
+          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
           <li><a href="references/Rao1977.html">Rao, K.R. (1977) A comparative study of the effects of ergot alkaloids on hormone mediated color changes in the fiddler crab <em>Uca panacea</em>. <em>Yale Journal of Biology and Medicine</em> 50(5):576.</a></li>
-          <li><a href="references/Rao1967.1.html">Rao, K.R., M. Fingerman, and C.K. Bartell (1967) Physiology of the white chromatophores in the fiddler crab, <em>Uca pugilator</em>. <em>Biological Bulletin</em> 133(3):606-617.</a></li>
-          <li><a href="references/Rao1975.html">Rao, K.R., and F. Milton (1975) Color changes induced by certain indole alkaloids in the fiddler crab, <em>Uca</em>. <em>Comparative Biochemistry and Physiology</em> 51C(1):59-62.</a></li>
+          <li><a href="references/Rao1967.1.html">Rao, K.R., M. Fingerman, and C.K. Bartell (1967) Physiology of the white chromatophores in the fiddler crab, <em>Uca pugilator</em>. <em>Biological Bulletin</em> 133(3):606&ndash;617.</a></li>
+          <li><a href="references/Rao1975.html">Rao, K.R., and F. Milton (1975) Color changes induced by certain indole alkaloids in the fiddler crab, <em>Uca</em>. <em>Comparative Biochemistry and Physiology</em> 51C(1):59&ndash;62.</a></li>
           <li><a href="references/Selander1971.html">Selander, R.K., W.E. Johnson, and J.C. Avise (1971) Biochemical population genetics of fiddler crabs (<em>Uca</em>). <em>Biological Bulletin</em> 141(2):402.</a></li>
-          <li><a href="references/Simmons1957.html">Simmons, E.G. (1957) An ecological survey of the Upper Laguna Madre of Texas. <em>Publications of the Institute of Marine Science</em> 4(2):156-200.</a></li>
+          <li><a href="references/Simmons1957.html">Simmons, E.G. (1957) An ecological survey of the Upper Laguna Madre of Texas. <em>Publications of the Institute of Marine Science</em> 4(2):156&ndash;200.</a></li>
           <li><a href="references/Thurman1984.2.html">Thurman, C.L., II (1984) Patterns of chromatophore activity in fiddler crabs genus <em>Uca</em> from coastal South Texas USA. <em>American Zoologist</em> 24(3):40A.</a></li>
           <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
           <li><a href="references/Thurman1994.html">Thurman, C.L., II (1994) Evaporative water loss and corporal temperature in sympatric fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 34(5):31A.</a></li>
           <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
-          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234-1235.</a></li>
+          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234&ndash;1235.</a></li>
           <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
           <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
           <li><a href="references/Tuberty2001.html">Tuberty, S.R. (2001) Effects of the insect juvenile hormone agonist, methoprene, on female growth and reproduction in the Gulf Sand Fiddler Crab, <em>Uca panacea</em>. <em>American Zoologist</em> 41(6):1611.</a></li>
           <li><a href="references/Tuberty2000.html">Tuberty, S.R., S.F. Nates, and C.L. McKenney, Jr. (2000) Polyclonal antisera against estuarine crustacean vitellins: A molecular approach to reproductive endocrinology and toxicology. <em>American Zoologist</em> 40(6):1239.</a></li>
           <li><a href="references/Vacca1973.html">Vacca, L.L. (1973) The role of the blood in dopamine metabolism, the formation of protein carriers, and melanin synthesis during sclerotinization in the fiddler crab, <em>Uca pugilator</em>. Pp. 267: Tulane University).</a></li>
-          <li><a href="references/Whitten1950.html">Whitten, H.L., H.F. Rosene, and J.W. Hedgpeth (1950) The invertebrate fauna of Texas Coast jetties; a preliminary survey. <em>Publications of the Institute of Marine Science</em> 1(2):53-87.</a></li>
+          <li><a href="references/Whitten1950.html">Whitten, H.L., H.F. Rosene, and J.W. Hedgpeth (1950) The invertebrate fauna of Texas Coast jetties; a preliminary survey. <em>Publications of the Institute of Marine Science</em> 1(2):53&ndash;87.</a></li>
         </ul>
       </div>
     </section>
@@ -206,7 +214,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

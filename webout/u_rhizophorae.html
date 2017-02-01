@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rhizophorae.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rhizophorae_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca rhizophorae</h1>
-      <h2>Asian Mangrove Fiddler Crab</h2>
+    <header id="u_rhizophorae.html">
+      <h1 class="species bookmark2">Uca rhizophorae</h1>
+      <h2 class="nobookmark">Asian Mangrove Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca rhizophorae</em></dt>
-        <dd>Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338-369.</dd>
+        <dd>Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Asian Mangrove Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Mesuca_Mesuca_rhizophorae.html"><em class="species">Mesuca (Mesuca) rhizophorae</em></a>, <a href="names/Uca_Deltuca__acuta__acuta_rhizophorae.html"><em class="species">Uca (Deltuca) [acuta] acuta rhizophorae</em></a>, <a href="names/Uca_Tubuca_rhizophorae.html"><em class="species">Uca (Tubuca) rhizophorae</em></a>, <a href="names/Uca_Uca_rhizophorae.html"><em class="species">Uca (Uca) rhizophorae</em></a>, <a href="names/Uca_rhizophorae.html"><em class="species">Uca rhizophorae</em></a>, <a href="names/Uca_rizophorae.html"><em class="species">Uca rizophorae</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Singapore, Malaysia (Sarawak)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_rhizophorae_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Beinlich1990.html">Beinlich (1990)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Suzawa1993.html">Suzawa <em>et al.</em> (1993)</a>
@@ -98,47 +101,54 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <p>
         <em>No pictures available at this time.</em>
       </p>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Tweedie_Uca_rhizophorae.html"><picture><img src="art/Tweedie_Uca_rhizophorae_tn.png" alt="Uca rhizophorae" title="Uca rhizophorae" /></picture></a>
+        <a href="art/Tweedie_Uca_rhizophorae.html"><img class="thumbnail" src="art/Tweedie_Uca_rhizophorae_tn.png" alt="Uca rhizophorae thumbnail" title="Uca rhizophorae" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Tweedie_Uca_rhizophorae2.html"><picture><img src="art/Tweedie_Uca_rhizophorae2_tn.png" alt="Uca rhizophorae" title="Uca rhizophorae" /></picture></a>
+        <a href="art/Tweedie_Uca_rhizophorae2.html"><img class="thumbnail" src="art/Tweedie_Uca_rhizophorae2_tn.png" alt="Uca rhizophorae thumbnail" title="Uca rhizophorae" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Mesuca_rhizophorae.html"><picture><img src="art/Bott_Mesuca_rhizophorae_tn.png" alt="Mesuca rhizophorae" title="Mesuca rhizophorae" /></picture></a>
+        <a href="art/Bott_Mesuca_rhizophorae.html"><img class="thumbnail" src="art/Bott_Mesuca_rhizophorae_tn.png" alt="Mesuca rhizophorae thumbnail" title="Mesuca rhizophorae" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_acuta_rhizophorae1.html"><picture><img src="art/Crane_Uca_acuta_rhizophorae1_tn.png" alt="Uca acuta rhizophorae" title="Uca acuta rhizophorae" /></picture></a>
+        <a href="art/Crane_Uca_acuta_rhizophorae1.html"><img class="thumbnail" src="art/Crane_Uca_acuta_rhizophorae1_tn.png" alt="Uca acuta rhizophorae thumbnail" title="Uca acuta rhizophorae" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_acuta_rhizophorae2.html"><picture><img src="art/Crane_Uca_acuta_rhizophorae2_tn.png" alt="Uca acuta rhizophorae" title="Uca acuta rhizophorae" /></picture></a>
+        <a href="art/Crane_Uca_acuta_rhizophorae2.html"><img class="thumbnail" src="art/Crane_Uca_acuta_rhizophorae2_tn.png" alt="Uca acuta rhizophorae thumbnail" title="Uca acuta rhizophorae" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73-270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119-161.</a></li>
-          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338-369.</a></li>
-          <li><a href="references/Tweedie1954.html">Tweedie, M.W.F. (1954) Notes on grapsoid crabs from the Raffles Museum, Nos. 3, 4, and 5. <em>Bulletin of the Raffles Museum</em> 25:118-127.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123&ndash;150.</a></li>
+          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
+          <li><a href="references/Schone1963.html">Schöne, H., and H. Schöne (1963) Balz und andere Verhaltensweisen der Mangrovekrabbe <em>Goniopsis cruentata</em> Latr. und das Winkverhalten der eulitoralen Brachyuren. <em>Zeitschrift für Tierpsychologie</em> 20(6):641&ndash;656.</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
+          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</a></li>
+          <li><a href="references/Tweedie1954.html">Tweedie, M.W.F. (1954) Notes on grapsoid crabs from the Raffles Museum, Nos. 3, 4, and 5. <em>Bulletin of the Raffles Museum</em> 25:118&ndash;127.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
         </ul>
       </div>
     </section>
@@ -147,7 +157,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

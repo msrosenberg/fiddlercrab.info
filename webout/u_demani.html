@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_demani.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_demani_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca demani</h1>
-      <h2>Demanding Fiddler Crab</h2>
+    <header id="u_demani.html">
+      <h1 class="species bookmark2">Uca demani</h1>
+      <h2 class="nobookmark">Demanding Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,33 +58,36 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca demani</em></dt>
-        <dd>Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258-372.</dd>
+        <dd>Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Demanding Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Gelasimus_demani.html"><em class="species">Gelasimus demani</em></a>, <a href="names/Uca_Deltuca_demani_demani.html"><em class="species">Uca (Deltuca) demani demani</em></a>, <a href="names/Uca_Minuca_zanboangana.html"><em class="species">Uca (Minuca) zanboangana</em></a>, <a href="names/Uca_Tubuca_demani.html"><em class="species">Uca (Tubuca) demani</em></a>, <a href="names/Uca_demani.html"><em class="species">Uca demani</em></a>, <a href="names/Uca_zamboangana.html"><em class="species">Uca zamboangana</em></a>, <a href="names/Uca_zambocuga.html"><em class="species">Uca zambocuga</em></a></em></dd>
-       <dt>Geographic Range</dt>
+         <dd><em class="species"><a href="names/Gelasimus_demani.html"><em class="species">Gelasimus demani</em></a>, <a href="names/Uca_Deltuca_demani_australiae.html"><em class="species">Uca (Deltuca) demani australiae</em></a>, <a href="names/Uca_Deltuca_demani_demani.html"><em class="species">Uca (Deltuca) demani demani</em></a>, <a href="names/Uca_Minuca_zanboangana.html"><em class="species">Uca (Minuca) zanboangana</em></a>, <a href="names/Uca_Tubuca_demani.html"><em class="species">Uca (Tubuca) demani</em></a>, <a href="names/Uca_australiae.html"><em class="species">Uca australiae</em></a>, <a href="names/Uca_demani.html"><em class="species">Uca demani</em></a>, <a href="names/Uca_zamboangana.html"><em class="species">Uca zamboangana</em></a>, <a href="names/Uca_zambocuga.html"><em class="species">Uca zambocuga</em></a></em></dd>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Indonesia, Southern Philippines</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_demani_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Barnes2010.html">Barnes (2010)</a>; <a href="references/Crane1975.html">Crane (1975)</a>
@@ -98,52 +101,59 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_demani01.html"><picture><img src="photos/U_demani01tn.jpg" alt="Uca demani" title="Uca demani" /></picture></a>
+        <a href="photos/photo_u_demani01.html"><img class="thumbnail" src="photos/U_demani01tn.jpg" alt="Uca demani thumbnail" title="Uca demani" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_demani02.html"><picture><img src="photos/U_demani02tn.jpg" alt="Uca demani" title="Uca demani" /></picture></a>
+        <a href="photos/photo_u_demani02.html"><img class="thumbnail" src="photos/U_demani02tn.jpg" alt="Uca demani thumbnail" title="Uca demani" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_demani03.html"><picture><img src="photos/U_demani03tn.jpg" alt="Uca demani" title="Uca demani" /></picture></a>
+        <a href="photos/photo_u_demani03.html"><img class="thumbnail" src="photos/U_demani03tn.jpg" alt="Uca demani thumbnail" title="Uca demani" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_demani04.html"><picture><img src="photos/U_demani04tn.jpg" alt="Uca demani" title="Uca demani" /></picture></a>
+        <a href="photos/photo_u_demani04.html"><img class="thumbnail" src="photos/U_demani04tn.jpg" alt="Uca demani thumbnail" title="Uca demani" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_demani_demani1.html"><picture><img src="art/Crane_Uca_demani_demani1_tn.png" alt="Uca demani demani" title="Uca demani demani" /></picture></a>
+        <a href="art/Crane_Uca_demani_demani1.html"><img class="thumbnail" src="art/Crane_Uca_demani_demani1_tn.png" alt="Uca demani demani thumbnail" title="Uca demani demani" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_demani_demani2.html"><picture><img src="art/Crane_Uca_demani_demani2_tn.png" alt="Uca demani demani" title="Uca demani demani" /></picture></a>
+        <a href="art/Crane_Uca_demani_demani2.html"><img class="thumbnail" src="art/Crane_Uca_demani_demani2_tn.png" alt="Uca demani demani thumbnail" title="Uca demani demani" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459-472.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
-          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265-527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
-          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485-609.</a></li>
-          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465-559.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100-103.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115-148.</a></li>
-          <li><a href="references/Rathbun1913.html">Rathbun, M.J. (1913) Descriptions of new species of crabs of the family Ocypodidæ. <em>Proceedings of the United States National Museum</em> 44(1971):615-620.</a></li>
-          <li><a href="references/Ward1941.html">Ward, M. (1941) New Brachyura from the Gulf of Davao, Mindanao, Philippine Islands. <em>American Museum Novitates</em> 1104:1-15.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265&ndash;527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
+          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485&ndash;609.</a></li>
+          <li><a href="references/deMan1902.html">De Man, J.G. (1902) Die von Herrn Professor Kükenthal im Indischen Archipel gesammelten Dekapoden und Stomatopoden. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 25:467&ndash;929.</a></li>
+          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
+          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
+          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
+          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Rathbun1913.html">Rathbun, M.J. (1913) Descriptions of new species of crabs of the family Ocypodidæ. <em>Proceedings of the United States National Museum</em> 44(1971):615&ndash;620.</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
+          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1&ndash;148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
+          <li><a href="references/Ward1941.html">Ward, M. (1941) New Brachyura from the Gulf of Davao, Mindanao, Philippine Islands. <em>American Museum Novitates</em> 1104:1&ndash;15.</a></li>
         </ul>
       </div>
     </section>
@@ -152,7 +162,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

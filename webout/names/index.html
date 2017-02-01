@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="../uca_style.css" />
-    <link rel="stylesheet" href="../images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
   </head>
 
@@ -26,8 +26,8 @@
     <div id="home">
       <a href="../index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1>Name Index</h1>
+    <header id="name_index">
+      <h1 class="bookmark1">Name Index</h1>
       <nav>
         <ul>
           <li><a href="name_graphs.html"><span class="fa fa-line-chart"></span> Name Summary</a></li>
@@ -45,9 +45,8 @@
       For the specific names, only the primary spelling is listed below, but all alternate spellings and inclusive binomials are included on the linked page, as well as general information on the status of each specific name.
     </p>
     <div class="namecol">
-      <h3>Binomials (and other Compound Names)</h3>
-      <ul>
-
+      <h3 id="binomials" class="bookmark2">Binomials (and other Compound Names)</h3>
+      <ul class="namelist">
         <li><a href="Acanthoplax_excellens.html"><em class="species">Acanthoplax excellens</em></a></li>
         <li><a href="Acanthoplax_insignis.html"><em class="species">Acanthoplax insignis</em></a></li>
         <li><a href="Afruca.html"><em class="species">Afruca</em></a></li>
@@ -124,6 +123,7 @@
         <li><a href="Gelasimus_coarctatus.html"><em class="species">Gelasimus coarctatus</em></a></li>
         <li><a href="Gelasimus_coloradensis.html"><em class="species">Gelasimus coloradensis</em></a></li>
         <li><a href="Gelasimus_cordiformis.html"><em class="species">Gelasimus cordiformis</em></a></li>
+        <li><a href="Gelasimus_cordimana.html"><em class="species">Gelasimus cordimana</em></a></li>
         <li><a href="Gelasimus_crassipes.html"><em class="species">Gelasimus crassipes</em></a></li>
         <li><a href="Gelasimus_crenulatus.html"><em class="species">Gelasimus crenulatus</em></a></li>
         <li><a href="Gelasimus_cultrimanus.html"><em class="species">Gelasimus cultrimanus</em></a></li>
@@ -417,6 +417,7 @@
         <li><a href="Uca_Leptuca_festae.html"><em class="species">Uca (Leptuca) festae</em></a></li>
         <li><a href="Uca_Leptuca_helleri.html"><em class="species">Uca (Leptuca) helleri</em></a></li>
         <li><a href="Uca_Leptuca_inaequalis.html"><em class="species">Uca (Leptuca) inaequalis</em></a></li>
+        <li><a href="Uca_Leptuca_lactea.html"><em class="species">Uca (Leptuca) lactea</em></a></li>
         <li><a href="Uca_Leptuca_latimanus.html"><em class="species">Uca (Leptuca) latimanus</em></a></li>
         <li><a href="Uca_Leptuca_leptodactyla.html"><em class="species">Uca (Leptuca) leptodactyla</em></a></li>
         <li><a href="Uca_Leptuca_limicola.html"><em class="species">Uca (Leptuca) limicola</em></a></li>
@@ -728,6 +729,7 @@
         <li><a href="Uca_minax.html"><em class="species">Uca minax</em></a></li>
         <li><a href="Uca_minor.html"><em class="species">Uca minor</em></a></li>
         <li><a href="Uca_mjobergi.html"><em class="species">Uca mjobergi</em></a></li>
+        <li><a href="Uca_mjoebergi.html"><em class="species">Uca mjoebergi</em></a></li>
         <li><a href="Uca_mj_o_bergi.html"><em class="species">Uca mjöbergi</em></a></li>
         <li><a href="Uca_molinifera.html"><em class="species">Uca molinifera</em></a></li>
         <li><a href="Uca_monilfera.html"><em class="species">Uca monilfera</em></a></li>
@@ -816,6 +818,7 @@
         <li><a href="Uca_tangieri.html"><em class="species">Uca tangieri</em></a></li>
         <li><a href="Uca_tenuipedis.html"><em class="species">Uca tenuipedis</em></a></li>
         <li><a href="Uca_terpsichores.html"><em class="species">Uca terpsichores</em></a></li>
+        <li><a href="Uca_tetragnon.html"><em class="species">Uca tetragnon</em></a></li>
         <li><a href="Uca_tetragona.html"><em class="species">Uca tetragona</em></a></li>
         <li><a href="Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a></li>
         <li><a href="Uca_tetragonum.html"><em class="species">Uca tetragonum</em></a></li>
@@ -854,10 +857,9 @@
         <li><a href="U_c_a_una.html"><em class="species">Uça una</em></a></li>
       </ul>
     </div>
-    <div class="namecol">
-      <h3>Specific Names</h3>
-      <ul>
-
+    <div class="namecol pagebreak">
+      <h3 id="specificnames" class="bookmark2">Specific Names</h3>
+      <ul class="spnamelist">
         <li><a href="sn_acuta.html"><em class="species">acuta</em></a></li>
         <li><a href="sn_affinis.html"><em class="species">affinis</em></a></li>
         <li><a href="sn_africana.html"><em class="species">africana</em></a></li>
@@ -1065,7 +1067,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

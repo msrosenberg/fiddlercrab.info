@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_iranica.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_iranica_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca iranica</h1>
-      <h2>Iranian Fiddler Crab</h2>
+    <header id="u_iranica.html">
+      <h1 class="species bookmark2">Uca iranica</h1>
+      <h2 class="nobookmark">Iranian Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca annulipes iranica</em></dt>
-        <dd>Pretzmann, G. (1971) Ergebnisse einiger Sammelreisen nach Vorderasien. 2. Teil: Marine Brachyura. <em>Annalen des Naturhistorischen Museums in Wien</em> 75:477-487.</dd>
+        <dd>Pretzmann, G. (1971) Ergebnisse einiger Sammelreisen nach Vorderasien. 2. Teil: Marine Brachyura. <em>Annalen des Naturhistorischen Museums in Wien</em> 75:477&ndash;487.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Austruca"><em class="species">Austruca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Iranian Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Austruca_iranica.html"><em class="species">Uca (Austruca) iranica</em></a>, <a href="names/Uca_annulipes_iranica.html"><em class="species">Uca annulipes iranica</em></a>, <a href="names/Uca_iranica.html"><em class="species">Uca iranica</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Persian Gulf and Gulf of Oman</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_iranica_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>; <a href="references/Naderloo2012.html">Naderloo & Türkay (2012)</a>; <a href="references/Shih2009.html">Shih <em>et al.</em> (2009)</a>
+           Map data derived from: <a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>; <a href="references/Naderloo2012.html">Naderloo &amp; Türkay (2012)</a>; <a href="references/Shih2009.html">Shih <em>et al.</em> (2009)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/12020268/overview">Encyclopedia of Life</a></dd>
@@ -99,54 +102,56 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_iranica01.html"><picture><img src="photos/U_iranica01tn.jpg" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="photos/photo_u_iranica01.html"><img class="thumbnail" src="photos/U_iranica01tn.jpg" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_iranica02.html"><picture><img src="photos/U_iranica02tn.jpg" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="photos/photo_u_iranica02.html"><img class="thumbnail" src="photos/U_iranica02tn.jpg" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_iranica03.html"><picture><img src="photos/U_iranica03tn.jpg" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="photos/photo_u_iranica03.html"><img class="thumbnail" src="photos/U_iranica03tn.jpg" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_iranica04.html"><picture><img src="photos/U_iranica04tn.jpg" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="photos/photo_u_iranica04.html"><img class="thumbnail" src="photos/U_iranica04tn.jpg" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_iranica1.html"><picture><img src="art/Naderloo_Uca_iranica1_tn.png" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="art/Naderloo_Uca_iranica1.html"><img class="thumbnail" src="art/Naderloo_Uca_iranica1_tn.png" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_iranica2.html"><picture><img src="art/Naderloo_Uca_iranica2_tn.png" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="art/Naderloo_Uca_iranica2.html"><img class="thumbnail" src="art/Naderloo_Uca_iranica2_tn.png" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_iranica3.html"><picture><img src="art/Naderloo_Uca_iranica3_tn.png" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="art/Naderloo_Uca_iranica3.html"><img class="thumbnail" src="art/Naderloo_Uca_iranica3_tn.png" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_iranica4.html"><picture><img src="art/Naderloo_Uca_iranica4_tn.png" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="art/Naderloo_Uca_iranica4.html"><img class="thumbnail" src="art/Naderloo_Uca_iranica4_tn.png" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_iranica5.html"><picture><img src="art/Naderloo_Uca_iranica5_tn.png" alt="Uca iranica" title="Uca iranica" /></picture></a>
+        <a href="art/Naderloo_Uca_iranica5.html"><img class="thumbnail" src="art/Naderloo_Uca_iranica5_tn.png" alt="Uca iranica thumbnail" title="Uca iranica" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
-          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13-159.</a></li>
-          <li><a href="references/Pretzmann1971.html">Pretzmann, G. (1971) Ergebnisse einiger Sammelreisen nach Vorderasien. 2. Teil: Marine Brachyura. <em>Annalen des Naturhistorischen Museums in Wien</em> 75:477-487.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
+          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13&ndash;159.</a></li>
+          <li><a href="references/Pretzmann1971.html">Pretzmann, G. (1971) Ergebnisse einiger Sammelreisen nach Vorderasien. 2. Teil: Marine Brachyura. <em>Annalen des Naturhistorischen Museums in Wien</em> 75:477&ndash;487.</a></li>
+          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
         </ul>
       </div>
     </section>
@@ -155,7 +160,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

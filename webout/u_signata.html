@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_signata.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_signata_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca signata</h1>
-      <h2>Signaling Fiddler Crab</h2>
+    <header id="u_signata.html">
+      <h1 class="species bookmark2">Uca signata</h1>
+      <h2 class="nobookmark">Signaling Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,36 +58,39 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus signatus</em></dt>
-        <dd>Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127-173.</dd>
+        <dd>Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127&ndash;173.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Australuca"><em class="species">Australuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Signaling Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Gelasimus_signatus.html"><em class="species">Gelasimus signatus</em></a>, <a href="names/Uca_Australuca_bellator_signata.html"><em class="species">Uca (Australuca) bellator signata</em></a>, <a href="names/Uca_Australuca_signata.html"><em class="species">Uca (Australuca) signata</em></a>, <a href="names/Uca_signata.html"><em class="species">Uca signata</em></a>, <a href="names/Uca_signatus.html"><em class="species">Uca signatus</em></a></em></dd>
-       <dt>Geographic Range</dt>
+         <dd><em class="species"><a href="names/Gelasimus_signatus.html"><em class="species">Gelasimus signatus</em></a>, <a href="names/Uca_Australuca_bellator_minima.html"><em class="species">Uca (Australuca) bellator minima</em></a>, <a href="names/Uca_Australuca_bellator_signata.html"><em class="species">Uca (Australuca) bellator signata</em></a>, <a href="names/Uca_Australuca_signata.html"><em class="species">Uca (Australuca) signata</em></a>, <a href="names/Uca_signata.html"><em class="species">Uca signata</em></a>, <a href="names/Uca_signatus.html"><em class="species">Uca signatus</em></a></em></dd>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Australia (Northwest coast through Northeast coast)</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_signata_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/George1982.html">George & Jones (1982)</a>; <a href="references/vonHagen1989.html">von Hagen & Jones (1989)</a>
+           Map data derived from: <a href="references/George1982.html">George &amp; Jones (1982)</a>; <a href="references/vonHagen1989.html">von Hagen &amp; Jones (1989)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3118936/overview">Encyclopedia of Life</a></dd>
@@ -99,65 +102,74 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_signata01.html"><picture><img src="photos/U_signata01tn.jpg" alt="Uca signata" title="Uca signata" /></picture></a>
+        <a href="photos/photo_u_signata01.html"><img class="thumbnail" src="photos/U_signata01tn.jpg" alt="Uca signata thumbnail" title="Uca signata" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/deMan_Gelasimus_signatus.html"><picture><img src="art/deMan_Gelasimus_signatus_tn.png" alt="Gelasimus signatus" title="Gelasimus signatus" /></picture></a>
+        <a href="art/deMan_Gelasimus_signatus.html"><img class="thumbnail" src="art/deMan_Gelasimus_signatus_tn.png" alt="Gelasimus signatus thumbnail" title="Gelasimus signatus" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima1.html"><picture><img src="art/Crane_Uca_bellator_minima1_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima1.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima1_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima2.html"><picture><img src="art/Crane_Uca_bellator_minima2_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima2.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima2_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima3.html"><picture><img src="art/Crane_Uca_bellator_minima3_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima3.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima3_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima4.html"><picture><img src="art/Crane_Uca_bellator_minima4_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima4.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima4_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima5.html"><picture><img src="art/Crane_Uca_bellator_minima5_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima5.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima5_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_minima6.html"><picture><img src="art/Crane_Uca_bellator_minima6_tn.png" alt="Uca bellator minima" title="Uca bellator minima" /></picture></a>
+        <a href="art/Crane_Uca_bellator_minima6.html"><img class="thumbnail" src="art/Crane_Uca_bellator_minima6_tn.png" alt="Uca bellator minima thumbnail" title="Uca bellator minima" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_signata1.html"><picture><img src="art/Crane_Uca_bellator_signata1_tn.png" alt="Uca bellator signata" title="Uca bellator signata" /></picture></a>
+        <a href="art/Crane_Uca_bellator_signata1.html"><img class="thumbnail" src="art/Crane_Uca_bellator_signata1_tn.png" alt="Uca bellator signata thumbnail" title="Uca bellator signata" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
           <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
-          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265-527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1-99.</a></li>
+          <li><a href="references/deMan1887.2.html">De Man, J.G. (1887) Uebersicht der indo-pacifischen Arten der Gattung <em>Sesarma</em> Say, nebst einer Kritik der von W. Hess und E. Nauck in den Jahren 1865 und 1880 beschriebenen Decapoden. <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Thiere</em> 2(3&ndash;4):639&ndash;722.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265&ndash;527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
+          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
+          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
+          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
+          <li><a href="references/Gordon1934.html">Gordon, I. (1934) Crustacea Brachyura. Pp. 1&ndash;78 in <em>Résultats scientifique du voyage aux Indes Orientales Néerl. de la Prince Léopold de Belgique</em>, Volume III (15)</a></li>
           <li><a href="references/Haswell1882.html">Haswell, W.A. (1882) <em>Catalogue of the Australian stalk-eyed and sessile-eyed Crustacea</em>. Sydney.</a></li>
-          <li><a href="references/Hess1865.html">Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127-173.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
-          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67-104.</a></li>
-          <li><a href="references/Macnae1967.html">Macnae, W. (1967) Zonation within mangroves associated with estuaries in North Queensland. Pp. 432-441 in <em>Estuaries</em>, G.H. Lauff, ed., Volume 83. Washington, D.C.: AAAS Publication.</a></li>
-          <li><a href="references/McNeill1920.html">McNeill, F.A. (1920) Studies in Australian carcinology. No. 1. <em>Records of the Australian Museum</em> 13:105-109.</a></li>
-          <li><a href="references/Miers1884.1.html">Miers, E.J. (1884) The Collections from Melanesia: Crustacea. Pp. 178-322 in <em>Report of the zoological collections made in the Indo-Pacific Ocean during the voyage of the H.M.S. 'Alert,' 1881-1882</em>. London</a></li>
-          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683-772.</a></li>
-          <li><a href="references/Schafer1954.html">Schäfer, W. (1954) Form und Funktion der Brachyuren-Schere. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 489:1-65.</a></li>
+          <li><a href="references/Hess1865.html">Hess, W. (1865) Beiträge zur Kenntniss der Decapoden-Krebse ost-Australiens. <em>Archiv für Naturgescicthe</em> 31(1):127&ndash;173.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67&ndash;104.</a></li>
+          <li><a href="references/Macnae1967.html">Macnae, W. (1967) Zonation within mangroves associated with estuaries in North Queensland. Pp. 432&ndash;441 in <em>Estuaries</em>, G.H. Lauff, ed., Volume 83. Washington, D.C.: AAAS Publication.</a></li>
+          <li><a href="references/McNeill1920.html">McNeill, F.A. (1920) Studies in Australian carcinology. No. 1. <em>Records of the Australian Museum</em> 13:105&ndash;109.</a></li>
+          <li><a href="references/Miers1884.1.html">Miers, E.J. (1884) The Collections from Melanesia: Crustacea. Pp. 178&ndash;322 in <em>Report of the zoological collections made in the Indo-Pacific Ocean during the voyage of the H.M.S. 'Alert,' 1881-1882</em>. London</a></li>
+          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Schafer1954.html">Schäfer, W. (1954) Form und Funktion der Brachyuren-Schere. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 489:1&ndash;65.</a></li>
+          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</a></li>
         </ul>
       </div>
     </section>
@@ -166,7 +178,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

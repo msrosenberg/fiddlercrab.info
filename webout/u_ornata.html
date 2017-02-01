@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_ornata.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_ornata_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca ornata</h1>
-      <h2>Ornate Fiddler Crab</h2>
+    <header id="u_ornata.html">
+      <h1 class="species bookmark2">Uca ornata</h1>
+      <h2 class="nobookmark">Ornate Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus ornatus</em></dt>
-        <dd>Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</dd>
+        <dd>Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Uca"><em class="species">Uca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Ornate Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_ornatus.html"><em class="species">Gelasimus ornatus</em></a>, <a href="names/Uca_Uca_ornata.html"><em class="species">Uca (Uca) ornata</em></a>, <a href="names/Uca_ornata.html"><em class="species">Uca ornata</em></a>, <a href="names/Uca_pizarri.html"><em class="species">Uca pizarri</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to Northern Peru</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_ornata_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>
@@ -98,69 +101,79 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_ornata01.html"><picture><img src="photos/U_ornata01tn.jpg" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="photos/photo_u_ornata01.html"><img class="thumbnail" src="photos/U_ornata01tn.jpg" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_ornata02.html"><picture><img src="photos/U_ornata02tn.jpg" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="photos/photo_u_ornata02.html"><img class="thumbnail" src="photos/U_ornata02tn.jpg" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_ornata03.html"><picture><img src="photos/U_ornata03tn.jpg" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="photos/photo_u_ornata03.html"><img class="thumbnail" src="photos/U_ornata03tn.jpg" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_ornata04.html"><picture><img src="photos/U_ornata04tn.jpg" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="photos/photo_u_ornata04.html"><img class="thumbnail" src="photos/U_ornata04tn.jpg" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <dl class="vidlist">
-            <dt><a class="vidlink" href="webout/video/u_ornata01.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_ornata01.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
               <dd>42 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_ornata02.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_ornata02.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
               <dd>1:23 min., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_ornata03.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_ornata03.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
               <dd>1:04 min., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_ornata04.html">Male <em class="species">Uca ornata</em> waving, despite missing his major cheliped</a></dt>
+            <dt><a class="vidlink" href="video/video_u_ornata04.html">Male <em class="species">Uca ornata</em> waving, despite missing his major cheliped</a></dt>
               <dd>52 sec., 352 x 240, MP4</dd>
-            <dt><a class="vidlink" href="webout/video/u_ornata05.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
+            <dt><a class="vidlink" href="video/video_u_ornata05.html">Male <em class="species">Uca ornata</em> waving (<em class="species">Uca beebei</em> in background)</a></dt>
               <dd>6:15 min., 352 x 240, MP4</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_ornata1.html"><picture><img src="art/Crane_Uca_ornata1_tn.png" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="art/Crane_Uca_ornata1.html"><img class="thumbnail" src="art/Crane_Uca_ornata1_tn.png" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_ornata2.html"><picture><img src="art/Crane_Uca_ornata2_tn.png" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="art/Crane_Uca_ornata2.html"><img class="thumbnail" src="art/Crane_Uca_ornata2_tn.png" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_ornata3.html"><picture><img src="art/Crane_Uca_ornata3_tn.png" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="art/Crane_Uca_ornata3.html"><img class="thumbnail" src="art/Crane_Uca_ornata3_tn.png" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_ornata4.html"><picture><img src="art/Crane_Uca_ornata4_tn.png" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="art/Crane_Uca_ornata4.html"><img class="thumbnail" src="art/Crane_Uca_ornata4_tn.png" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_ornata5.html"><picture><img src="art/Crane_Uca_ornata5_tn.png" alt="Uca ornata" title="Uca ornata" /></picture></a>
+        <a href="art/Crane_Uca_ornata5.html"><img class="thumbnail" src="art/Crane_Uca_ornata5_tn.png" alt="Uca ornata thumbnail" title="Uca ornata" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
           <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145-208.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663-676.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663&ndash;676.</a></li>
+          <li><a href="references/Garth1957.html">Garth, J.S. (1957) Reports of the Lund University Chile expedition 1948-1949. No. 29. The Crustacea Decapoda Brachyura of Chile. <em>Lunds Universitets Årsskrift</em> 53(7):1&ndash;128.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
           <li><a href="references/Luque2015.html">Luque, J., A.J.W. Hendy, M.S. Rosenberg, R.W. Portell, and A.R. Palmer (2015) Cenozoic inter-tidal, supra-tidal, and freshwater crabs from tropical America. <em>Abstracts with Programs</em> 47(7):423.</a></li>
           <li><a href="references/Portell2012.html">Portell, R.W., J. Luque, A.J.W. Hendy, and J.H. Christy (2012) Fidelity of marine invertebrate death and fossil assemblages in a coastal marine ecosystem, Bahia Bique, Panama. <em>Abstracts with Programs</em> 44(7):268.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113-176.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395-468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217-235.</a></li>
+          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531&ndash;620.</a></li>
+          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
+          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
+          <li><a href="references/Smith1871.html">Smith, S.I. (1871) List of the Crustacea collected by J. A. McNiel in Central America. <em>Annual Reports of the Trustees of the Peabody Academy of Science</em> 1869:87&ndash;98.</a></li>
+          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
+          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
         </ul>
       </div>
     </section>
@@ -169,7 +182,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

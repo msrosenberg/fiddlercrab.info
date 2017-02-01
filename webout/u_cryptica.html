@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_cryptica.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_cryptica_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca cryptica</h1>
-      <h2>Cryptic Fiddler Crab</h2>
+    <header id="u_cryptica.html">
+      <h1 class="species bookmark2">Uca cryptica</h1>
+      <h2 class="nobookmark">Cryptic Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Uca cryptica</em></dt>
-        <dd>Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1-38.</dd>
+        <dd>Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Austruca"><em class="species">Austruca</em></a></dd>
@@ -81,10 +81,13 @@
          <dd>Cryptic Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Uca_Austruca_cryptica.html"><em class="species">Uca (Austruca) cryptica</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Indonesia, Philippines</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_cryptica_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
            Map data derived from: <a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>
@@ -99,68 +102,68 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica01.html"><picture><img src="photos/U_cryptica01tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica01.html"><img class="thumbnail" src="photos/U_cryptica01tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica02.html"><picture><img src="photos/U_cryptica02tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica02.html"><img class="thumbnail" src="photos/U_cryptica02tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica03.html"><picture><img src="photos/U_cryptica03tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica03.html"><img class="thumbnail" src="photos/U_cryptica03tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica04.html"><picture><img src="photos/U_cryptica04tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica04.html"><img class="thumbnail" src="photos/U_cryptica04tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica05.html"><picture><img src="photos/U_cryptica05tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica05.html"><img class="thumbnail" src="photos/U_cryptica05tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica06.html"><picture><img src="photos/U_cryptica06tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica06.html"><img class="thumbnail" src="photos/U_cryptica06tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica07.html"><picture><img src="photos/U_cryptica07tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica07.html"><img class="thumbnail" src="photos/U_cryptica07tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica08.html"><picture><img src="photos/U_cryptica08tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica08.html"><img class="thumbnail" src="photos/U_cryptica08tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica09.html"><picture><img src="photos/U_cryptica09tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica09.html"><img class="thumbnail" src="photos/U_cryptica09tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_cryptica10.html"><picture><img src="photos/U_cryptica10tn.jpg" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="photos/photo_u_cryptica10.html"><img class="thumbnail" src="photos/U_cryptica10tn.jpg" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_cryptica1.html"><picture><img src="art/Naderloo_Uca_cryptica1_tn.png" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="art/Naderloo_Uca_cryptica1.html"><img class="thumbnail" src="art/Naderloo_Uca_cryptica1_tn.png" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_cryptica2.html"><picture><img src="art/Naderloo_Uca_cryptica2_tn.png" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="art/Naderloo_Uca_cryptica2.html"><img class="thumbnail" src="art/Naderloo_Uca_cryptica2_tn.png" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_cryptica3.html"><picture><img src="art/Naderloo_Uca_cryptica3_tn.png" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="art/Naderloo_Uca_cryptica3.html"><img class="thumbnail" src="art/Naderloo_Uca_cryptica3_tn.png" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Naderloo_Uca_cryptica4.html"><picture><img src="art/Naderloo_Uca_cryptica4_tn.png" alt="Uca cryptica" title="Uca cryptica" /></picture></a>
+        <a href="art/Naderloo_Uca_cryptica4.html"><img class="thumbnail" src="art/Naderloo_Uca_cryptica4_tn.png" alt="Uca cryptica thumbnail" title="Uca cryptica" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
           <li><a href="references/Barnwell1980.html">Barnwell, F.H. (1980) Taxonomic differentiation within the <em>lactea</em>-complex of fiddler crabs in the Sunda Shelf region. <em>American Zoologist</em> 20(4):957.</a></li>
-          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1-38.</a></li>
+          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
         </ul>
       </div>
     </section>
@@ -169,7 +172,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

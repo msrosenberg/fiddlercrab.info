@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_bellator.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_bellator_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca bellator</h1>
-      <h2>Belligerent Fiddler Crab</h2>
+    <header id="u_bellator.html">
+      <h1 class="species bookmark2">Uca bellator</h1>
+      <h2 class="nobookmark">Belligerent Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,22 +58,22 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus bellator</em></dt>
-        <dd>Adams, A., and A. White (1848) Crustacea. Pp. 1-66 in <em>The zoology of the voyage of H.M.S. &quot;Samarang&quot;; under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846</em>, A. Adams, ed., Volume 8. London: Reeve, Benham, &amp; Reeve.</dd>
+        <dd>Adams, A., and A. White (1848) Crustacea. Pp. 1&ndash;66 in <em>The zoology of the voyage of H.M.S. &quot;Samarang&quot;; under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846</em>, A. Adams, ed., Volume 8. London: Reeve, Benham, &amp; Reeve.</dd>
       </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Australuca"><em class="species">Australuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Belligerent Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Gelasimus_bellator.html"><em class="species">Gelasimus bellator</em></a>, <a href="names/Gelasimus_signatus_var_angustifrons.html"><em class="species">Gelasimus signatus </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_Australuca_bellator.html"><em class="species">Uca (Australuca) bellator</em></a>, <a href="names/Uca_Australuca_bellator_bellator.html"><em class="species">Uca (Australuca) bellator bellator</em></a>, <a href="names/Uca_Uca_angustifrons.html"><em class="species">Uca (Uca) angustifrons</em></a>, <a href="names/Uca_angustifrons.html"><em class="species">Uca angustifrons</em></a>, <a href="names/Uca_bellator.html"><em class="species">Uca bellator</em></a>, <a href="names/Uca_forceps_var_angustifrons.html"><em class="species">Uca forceps </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_signata_var_angustifrons.html"><em class="species">Uca signata </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_signatus_var_angustifrons.html"><em class="species">Uca signatus </em> var. <em class="species"> angustifrons</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Philippines, Malaysia, Indonesia</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_bellator_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Krishnan1992.1.html">Krishnan (1992)</a>; <a href="references/vonHagen1989.html">von Hagen & Jones (1989)</a>
+           Map data derived from: <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Krishnan1992.1.html">Krishnan (1992)</a>; <a href="references/vonHagen1989.html">von Hagen &amp; Jones (1989)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/3118930/overview">Encyclopedia of Life</a></dd>
@@ -98,56 +101,73 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <p>
         <em>No pictures available at this time.</em>
       </p>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_bellator1.html"><picture><img src="art/Crane_Uca_bellator_bellator1_tn.png" alt="Uca bellator bellator" title="Uca bellator bellator" /></picture></a>
+        <a href="art/Crane_Uca_bellator_bellator1.html"><img class="thumbnail" src="art/Crane_Uca_bellator_bellator1_tn.png" alt="Uca bellator bellator thumbnail" title="Uca bellator bellator" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_bellator2.html"><picture><img src="art/Crane_Uca_bellator_bellator2_tn.png" alt="Uca bellator bellator" title="Uca bellator bellator" /></picture></a>
+        <a href="art/Crane_Uca_bellator_bellator2.html"><img class="thumbnail" src="art/Crane_Uca_bellator_bellator2_tn.png" alt="Uca bellator bellator thumbnail" title="Uca bellator bellator" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_bellator_bellator3.html"><picture><img src="art/Crane_Uca_bellator_bellator3_tn.png" alt="Uca bellator bellator" title="Uca bellator bellator" /></picture></a>
+        <a href="art/Crane_Uca_bellator_bellator3.html"><img class="thumbnail" src="art/Crane_Uca_bellator_bellator3_tn.png" alt="Uca bellator bellator thumbnail" title="Uca bellator bellator" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Shih_Uca_bellator1.html"><picture><img src="art/Shih_Uca_bellator1_tn.png" alt="Uca bellator" title="Uca bellator" /></picture></a>
+        <a href="art/Shih_Uca_bellator1.html"><img class="thumbnail" src="art/Shih_Uca_bellator1_tn.png" alt="Uca bellator thumbnail" title="Uca bellator" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Adams1848.html">Adams, A., and A. White (1848) Crustacea. Pp. 1-66 in <em>The zoology of the voyage of H.M.S. &quot;Samarang&quot;; under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846</em>, A. Adams, ed., Volume 8. London: Reeve, Benham, &amp; Reeve.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69-82.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1-61.</a></li>
-          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465-559.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100-103.</a></li>
-          <li><a href="references/Gordon1934.html">Gordon, I. (1934) Crustacea Brachyura. Pp. 1-78 in <em>Résultats scientifique du voyage aux Indes Orientales Néerl. de la Prince Léopold de Belgique</em>, Volume III (15)</a></li>
+          <li><a href="references/Adams1848.html">Adams, A., and A. White (1848) Crustacea. Pp. 1&ndash;66 in <em>The zoology of the voyage of H.M.S. &quot;Samarang&quot;; under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846</em>, A. Adams, ed., Volume 8. London: Reeve, Benham, &amp; Reeve.</a></li>
+          <li><a href="references/Altevogt1955.2.html">Altevogt, R. (1955) Beobachtungen und Untersuchungen an indischen Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(6):501&ndash;522.</a></li>
+          <li><a href="references/Altevogt1955.1.html">Altevogt, R. (1955) Some studies on two species of Indian fiddler crabs, <em>Uca marionis nitidus</em> (Dana) and <em>U. annulipes</em> (Latr.). <em>Journal of the Bombay Natural History Society</em> 52:702&ndash;716.</a></li>
+          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
+          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/Edney1960.html">Edney, E.B. (1960) Terrestrial adaptations. Pp. 367&ndash;393 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume I. New York: Academic Press.</a></li>
+          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71&ndash;91.</a></li>
+          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
+          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
+          <li><a href="references/Feest1969.html">Feest, J. (1969) Morphophysiologische Untersuchungen zur Ontogenese und Fortpflanzungsbiologie von <em>Uca annulipes</em> und <em>Uca triangularis</em> mit Vergleichsbefunden an <em>Ilyoplax gangetica</em>. <em>forma et functio</em> 1:159&ndash;225.</a></li>
+          <li><a href="references/Gordon1934.html">Gordon, I. (1934) Crustacea Brachyura. Pp. 1&ndash;78 in <em>Résultats scientifique du voyage aux Indes Orientales Néerl. de la Prince Léopold de Belgique</em>, Volume III (15)</a></li>
           <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/Marshall1960.html">Marshall, S.M., and A.P. Orr (1960) Feeding and nutrition. Pp. 227&ndash;258 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume I. New York: Academic Press.</a></li>
+          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
+          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
           <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
           <li><a href="references/Roux1917.html">Roux, J. (1917) <em>Resultats de l'expedition scientifique nnerlandaise a la Nouvelle Guinea. Crustaces (Expedition de 1903): Nova Guinea</em>, Volume 5. Paris.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119-161.</a></li>
-          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338-369.</a></li>
-          <li><a href="references/Tweedie1954.html">Tweedie, M.W.F. (1954) Notes on grapsoid crabs from the Raffles Museum, Nos. 3, 4, and 5. <em>Bulletin of the Raffles Museum</em> 25:118-127.</a></li>
-          <li><a href="references/Verwey1930.html">Verwey, J. (1930) Einges über die Biologie Ost-Indischer Mangrovekrabben. <em>Treubia</em> 12:167-261.</a></li>
+          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
+          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</a></li>
+          <li><a href="references/Tweedie1954.html">Tweedie, M.W.F. (1954) Notes on grapsoid crabs from the Raffles Museum, Nos. 3, 4, and 5. <em>Bulletin of the Raffles Museum</em> 25:118&ndash;127.</a></li>
+          <li><a href="references/Verwey1930.html">Verwey, J. (1930) Einges über die Biologie Ost-Indischer Mangrovekrabben. <em>Treubia</em> 12:167&ndash;261.</a></li>
+          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
+          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
           <li><a href="references/White1847.1.html">White, A. (1847) <em>List of the specimens of Crustacea in the collection of the British Museum</em>. London: Edward Newman.</a></li>
+          <li><a href="references/White1847.2.html">White, A. (1847) Short descriptions of some new species of Crustacea in the collection of the British Museum. <em>Proceedings of the Zoological Society of London</em> 15:84&ndash;86.</a></li>
         </ul>
       </div>
     </section>
@@ -156,7 +176,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

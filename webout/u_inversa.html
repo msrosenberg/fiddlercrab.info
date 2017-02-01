@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
-    <link rel="stylesheet" href="images/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,9 +37,9 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var map = new google.maps.Map(document.getElementById("map_canvas_sp"),mapOptions);
-        var ctaLayer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_inversa.kmz",{suppressInfoWindows: true});
-        ctaLayer.setMap(map);
+        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_inversa_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
       }
     </script>
   </head>
@@ -48,9 +48,9 @@
     <div id="home">
       <a href="index.html">Fiddler Crabs</a>
     </div>
-    <header>
-      <h1 class="species">Uca inversa</h1>
-      <h2>Inversed Fiddler Crab</h2>
+    <header id="u_inversa.html">
+      <h1 class="species bookmark2">Uca inversa</h1>
+      <h2 class="nobookmark">Inversed Fiddler Crab</h2>
       <nav>
         <ul>
           <li><a href="#type">Type</a></li>
@@ -58,14 +58,14 @@
           <li><a href="#pics"><span class="fa fa-camera"></span> Photos</a></li>
           <li><a href="#video"><span class="fa fa-video-camera"></span> Video</a></li>
           <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
-          <li><a href="#refs"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
           <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="topspsection">
-      <h2><a name="type">Type Description</a></h2>
+      <h2 id="type" class="nobookmark">Type Description</h2>
       <dl>
         <dt><em class="species">Gelasimus inversus</em></dt>
         <dd>Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</dd>
@@ -73,7 +73,7 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="info"><span class="fa fa-info-circle"></span> Information</a></h2>
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
       <dl>
        <dt>Subgenus</dt>
          <dd><a href="uca_systematics.html#Cranuca"><em class="species">Cranuca</em></a></dd>
@@ -81,13 +81,16 @@
          <dd>Inversed Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
          <dd><em class="species"><a href="names/Austruca_inversa.html"><em class="species">Austruca inversa</em></a>, <a href="names/Gelasimus_inversus.html"><em class="species">Gelasimus inversus</em></a>, <a href="names/Gelasimus_smithii.html"><em class="species">Gelasimus smithii</em></a>, <a href="names/Uca_Amphiuca_inversa_inversa.html"><em class="species">Uca (Amphiuca) inversa inversa</em></a>, <a href="names/Uca_Celuca_inversa_inversa.html"><em class="species">Uca (Celuca) inversa inversa</em></a>, <a href="names/Uca_Cranuca_inversa.html"><em class="species">Uca (Cranuca) inversa</em></a>, <a href="names/Uca_Minuca_inversa.html"><em class="species">Uca (Minuca) inversa</em></a>, <a href="names/Uca_inversa.html"><em class="species">Uca inversa</em></a>, <a href="names/Uca_inversus.html"><em class="species">Uca inversus</em></a>, <a href="names/Uca_universa.html"><em class="species">Uca universa</em></a></em></dd>
-       <dt>Geographic Range</dt>
+       <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Western Indian Ocean: Madagasca, South Africa to Red Sea, Gulf of Aden, southern Oman (Dhofar), Persian Gulf, Gulf of Oman</dd>
          <dd>
-           <div id="map_canvas_sp"></div>
+           <div id="sp_range_map_canvas"></div>
+           <div class="map_download">
+             <a href="maps/u_inversa_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+           </div>
          </dd>
          <dd class="map_data">
-           Map data derived from: <a href="references/Collins1984.html">Collins <em>et al.</em> (1984)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Naderloo2012.html">Naderloo & Türkay (2012)</a>; <a href="references/Price1987.html">Price <em>et al.</em> (1987)</a>
+           Map data derived from: <a href="references/Collins1984.html">Collins <em>et al.</em> (1984)</a>; <a href="references/Crane1975.html">Crane (1975)</a>; <a href="references/Naderloo2012.html">Naderloo &amp; Türkay (2012)</a>; <a href="references/Price1987.html">Price <em>et al.</em> (1987)</a>
          </dd>
        <dt>External Links</dt>
          <dd><a href="http://eol.org/pages/2981561/overview">Encyclopedia of Life</a></dd>
@@ -99,92 +102,111 @@
     </section>
 
     <section class="spsection">
-      <h2><a name="pics"><span class="fa fa-camera"></span> Photos</a></h2>
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera"></span> Photos</h2>
       <figure class="sppic">
-        <a href="webout/photos/u_inversa01.html"><picture><img src="photos/U_inversa01tn.jpg" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="photos/photo_u_inversa01.html"><img class="thumbnail" src="photos/U_inversa01tn.jpg" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_inversa02.html"><picture><img src="photos/U_inversa02tn.jpg" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="photos/photo_u_inversa02.html"><img class="thumbnail" src="photos/U_inversa02tn.jpg" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_inversa03.html"><picture><img src="photos/U_inversa03tn.jpg" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="photos/photo_u_inversa03.html"><img class="thumbnail" src="photos/U_inversa03tn.jpg" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/photos/u_inversa04.html"><picture><img src="photos/U_inversa04tn.jpg" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="photos/photo_u_inversa04.html"><img class="thumbnail" src="photos/U_inversa04tn.jpg" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
+    </section>
 
     <section class="spsection">
-      <h2><a name="video"><span class="fa fa-video-camera"></span> Video</a></h2>
+      <h2 id="video" class="nobookmark"><span class="fa fa-video-camera"></span> Video</h2>
       <p>
         <em>No videos available at this time.</em>
       </p>
     </section>
 
     <section class="spsection">
-      <h2><a name="art"><span class="fa fa-paint-brush"></span> Art</a></h2>
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
       <figure class="sppic">
-        <a href="webout/art/Barnard_Uca_inversa.html"><picture><img src="art/Barnard_Uca_inversa_tn.png" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="art/Barnard_Uca_inversa.html"><img class="thumbnail" src="art/Barnard_Uca_inversa_tn.png" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_inversa1.html"><picture><img src="art/Crosnier_Uca_inversa1_tn.png" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="art/Crosnier_Uca_inversa1.html"><img class="thumbnail" src="art/Crosnier_Uca_inversa1_tn.png" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_inversa2.html"><picture><img src="art/Crosnier_Uca_inversa2_tn.png" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="art/Crosnier_Uca_inversa2.html"><img class="thumbnail" src="art/Crosnier_Uca_inversa2_tn.png" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crosnier_Uca_inversa3.html"><picture><img src="art/Crosnier_Uca_inversa3_tn.png" alt="Uca inversa" title="Uca inversa" /></picture></a>
+        <a href="art/Crosnier_Uca_inversa3.html"><img class="thumbnail" src="art/Crosnier_Uca_inversa3_tn.png" alt="Uca inversa thumbnail" title="Uca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Bott_Austruca_inversa.html"><picture><img src="art/Bott_Austruca_inversa_tn.png" alt="Austruca inversa" title="Austruca inversa" /></picture></a>
+        <a href="art/Bott_Austruca_inversa.html"><img class="thumbnail" src="art/Bott_Austruca_inversa_tn.png" alt="Austruca inversa thumbnail" title="Austruca inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_inversa_inversa1.html"><picture><img src="art/Crane_Uca_inversa_inversa1_tn.png" alt="Uca inversa inversa" title="Uca inversa inversa" /></picture></a>
+        <a href="art/Crane_Uca_inversa_inversa1.html"><img class="thumbnail" src="art/Crane_Uca_inversa_inversa1_tn.png" alt="Uca inversa inversa thumbnail" title="Uca inversa inversa" /></a>
       </figure>
       <figure class="sppic">
-        <a href="webout/art/Crane_Uca_inversa_inversa2.html"><picture><img src="art/Crane_Uca_inversa_inversa2_tn.png" alt="Uca inversa inversa" title="Uca inversa inversa" /></picture></a>
+        <a href="art/Crane_Uca_inversa_inversa2.html"><img class="thumbnail" src="art/Crane_Uca_inversa_inversa2_tn.png" alt="Uca inversa inversa thumbnail" title="Uca inversa inversa" /></a>
       </figure>
-      </dl>
     </section>
 
     <section class="spsection">
-      <h2><a name="refs"><span class="fa fa-book"></span> References</a></h2>
-      <div id="citation">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <div class="reference_list">
         <ul>
-          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279-456.</a></li>
-          <li><a href="references/Balss1924.html">Balss, H. (1924) Expedition S. M. Schiff &quot;Pola&quot; in das Rote Meer 1895/6-1897/8. Zool. Ergeb. XXXIV. Decapoden des Roten Meeres. III. Die Parthenopiden. Cylco- und Catometopen. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 99:1-18.</a></li>
-          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1-837.</a></li>
-          <li><a href="references/Chace1942.html">Chace, F.A., Jr. (1942) Scientific results of a fourth expedition to forested areas in Eastern Africa. III. Decapod Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 91(3):185-233.</a></li>
-          <li><a href="references/Colosi1924.html">Colosi, G. (1924) Crostacei raccolti nella Somalia dalla Missione della R. Società geografica. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 39(32):1-4.</a></li>
-          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113-130.</a></li>
-          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49-77.</a></li>
-          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1-143.</a></li>
-          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71-91.</a></li>
-          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79-85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
-          <li><a href="references/Fishelson1971.html">Fishelson, L. (1971) Ecology and distribution of the benthic fauna in the shallow waters of the Red Sea. <em>Marine Biology</em> 10(2):113-133.</a></li>
+          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
+          <li><a href="references/Balss1924.html">Balss, H. (1924) Expedition S. M. Schiff &quot;Pola&quot; in das Rote Meer 1895/6-1897/8. Zool. Ergeb. XXXIV. Decapoden des Roten Meeres. III. Die Parthenopiden. Cylco- und Catometopen. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 99:1&ndash;18.</a></li>
+          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1&ndash;837.</a></li>
+          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
+          <li><a href="references/Bliss1968.1.html">Bliss, D.E. (1968) Transition from water to land in decapod crustaceans. <em>American Zoologist</em> 8(3):355&ndash;392.</a></li>
+          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
+          <li><a href="references/Chace1942.html">Chace, F.A., Jr. (1942) Scientific results of a fourth expedition to forested areas in Eastern Africa. III. Decapod Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 91(3):185&ndash;233.</a></li>
+          <li><a href="references/Colosi1924.html">Colosi, G. (1924) Crostacei raccolti nella Somalia dalla Missione della R. Società geografica. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 39(32):1&ndash;4.</a></li>
+          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
+          <li><a href="references/Crane1967.html">Crane, J. (1967) Combat and its ritualization in fiddler crabs (Ocypodidae) with special reference to <em>Uca rapax</em> (Smith). <em>Zoologica NY</em> 52:49&ndash;77.</a></li>
+          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
+          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1&ndash;143.</a></li>
+          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
+          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71&ndash;91.</a></li>
+          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79&ndash;85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
+          <li><a href="references/Fishelson1971.html">Fishelson, L. (1971) Ecology and distribution of the benthic fauna in the shallow waters of the Red Sea. <em>Marine Biology</em> 10(2):113&ndash;133.</a></li>
+          <li><a href="references/Fourmanoir1953.html">Fourmanoir, P. (1953) Notes sur la faune de la mangrove dans la région de Manjunga. Crabes, crevettes, poissons. <em>Naturaliste malgache</em> 5(1):87&ndash;92.</a></li>
           <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
-          <li><a href="references/Gilchrist1988.html">Gilchrist, S.L. (1988) Natural histories of selected terrestrial crabs. Pp. 382-390 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3-4):238-241.</a></li>
-          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305-328.</a></li>
-          <li><a href="references/Heller1862.1.html">Heller, C. (1862) Neue Crustaceen, gesammelt während der Weltumseglung der k. k. Fregatte Novara. Zweiter vorläufiger Bericht. <em>Verhandlungen der Kaiserlich-Königlichen Zoologisch-Botanischen Gesellschaft in Wien</em> 12:519-528.</a></li>
-          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69-116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
+          <li><a href="references/Gilchrist1988.html">Gilchrist, S.L. (1988) Natural histories of selected terrestrial crabs. Pp. 382&ndash;390 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3&ndash;4):238&ndash;241.</a></li>
+          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305&ndash;328.</a></li>
+          <li><a href="references/Hartnoll1988.1.html">Hartnoll, R.G. (1988) Eco-ethology of mangroves. Pp. 477&ndash;489 in <em>Behavioral Adaptation to Intertidal Life</em>, G. Chelazzi and M. Vannini, eds. New York: Plenum Press.</a></li>
+          <li><a href="references/Hartnoll1988.2.html">Hartnoll, R.G. (1988) Evolution, systematics, and geographical distribution. Pp. 6&ndash;54 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
+          <li><a href="references/Heller1862.1.html">Heller, C. (1862) Neue Crustaceen, gesammelt während der Weltumseglung der k. k. Fregatte Novara. Zweiter vorläufiger Bericht. <em>Verhandlungen der Kaiserlich-Königlichen Zoologisch-Botanischen Gesellschaft in Wien</em> 12:519&ndash;528.</a></li>
+          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69&ndash;116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
           <li><a href="references/Hoffmann1874.html">Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135-155.</a></li>
-          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407-475.</a></li>
-          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45-84.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1-52.</a></li>
-          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1-25.</a></li>
-          <li><a href="references/Macnae1967.html">Macnae, W. (1967) Zonation within mangroves associated with estuaries in North Queensland. Pp. 432-441 in <em>Estuaries</em>, G.H. Lauff, ed., Volume 83. Washington, D.C.: AAAS Publication.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73-270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19-34.</a></li>
-          <li><a href="references/Nemec1939.html">Nemec, C. (1939) Carcinological notes. <em>Field Museum of Natural History. Zoological Series</em> 24(9):105-108.</a></li>
-          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1-347.</a></li>
-          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13-159.</a></li>
-          <li><a href="references/Ortmann1894.2.html">Ortmann, A.E. (1894) Crustaceen. Pp. 1-80 in <em>Zoologische Forschungsreisen in Australien und dem malayischen Archipel</em>, R. Semon, ed., Volume V: Denkschr. med.-naturw. Ges. Jena.</a></li>
-          <li><a href="references/Pocock1903.html">Pocock, R.I. (1903) Crustacea: Malacostraca. Pp. 211-232 in <em>The Natural History of Sokotra and Abd-el-Kuri, Being the Report upon the Results of the Conjoint xpedition to these Islands in 1898-9, by Mr. W. R. Ogilvie-Grant, of the British Museum, and Dr. H. O. Forbes, of the Liverpool Museums, together with information from other available sources forming A Monograph of the Islands</em>, H.O. Forbes, ed.: Bull. Lpool. Mus.</a></li>
-          <li><a href="references/Por1977.html">Por, F.D., I. Dor, and A. Amir (1977) The mangal of Sinai: Limits of an ecosystem. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 30:295-314.</a></li>
-          <li><a href="references/Rathbun1935.2.html">Rathbun, M.J. (1935) Scientific results of an expedition to rain forest regions in Eastern Africa. II. Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 79(2):23-28.</a></li>
-          <li><a href="references/Spaargaren1977.html">Spaargaren, D.H. (1977) On the water and salt economy of some decapod crustaceans from the Gulf of Aqaba (Red Sea). <em>Netherlands Journal of Sea Research</em> 11(1):99-106.</a></li>
-          <li><a href="references/Stebbing1910.html">Stebbing, T.R.R. (1910) General catalogue of South African Crustacea (Part V. of S.A. Crustacea, for the Marine Investigations in South Africa). <em>Annals of the South African Museum</em> 6:281-593.</a></li>
+          <li><a href="references/Holthuis1958.html">Holthuis, L.B. (1958) Contributions to the knowledge of the Red Sea. No. 9. Crustacea Decapoda from the northern Red Sea (Gulf of Aqaba and Sinai Peninsula). II. Hippidea and Brachyura (Dromiacea, Oxystomata, and Grapsoidea). <em>Bulletin of the Sea Fisheries Research Station of Israel</em> 17(9):41&ndash;54.</a></li>
+          <li><a href="references/Jansen1970.html">Jansen, P. (1970) Phsyiologisch-ökologische Untersuchungen zum &quot;Posen&quot; von <em>Uca tangeri</em>. <em>forma et functio</em> 2:58&ndash;100. {Eco-physiological studies on the &quot;posing&quot; behavior of <em>Uca tangeri</em>}</a></li>
+          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
+          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407&ndash;475.</a></li>
+          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45&ndash;84.</a></li>
+          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
+          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1&ndash;25.</a></li>
+          <li><a href="references/Macnae1967.html">Macnae, W. (1967) Zonation within mangroves associated with estuaries in North Queensland. Pp. 432&ndash;441 in <em>Estuaries</em>, G.H. Lauff, ed., Volume 83. Washington, D.C.: AAAS Publication.</a></li>
+          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
+          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19&ndash;34.</a></li>
+          <li><a href="references/Mantel1983.html">Mantel, L.H., and L.L. Farmer (1983) Osmotic and ionic regulation. Pp. 54&ndash;161 in <em>The Biology of Crustacea, Volume 5: Internal Anatomy and Physiological Regulation</em>, L.H. Mantel, ed., Volume 5. New York: Academic Press.</a></li>
+          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
+          <li><a href="references/Nemec1939.html">Nemec, C. (1939) Carcinological notes. <em>Field Museum of Natural History. Zoological Series</em> 24(9):105&ndash;108.</a></li>
+          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1&ndash;347.</a></li>
+          <li><a href="references/Nobili1906.2.html">Nobili, G. (1906) Mission J. Bonnier et Ch. Pérez (Golfe Persique 1901). Crustacés décapodes et stomatopodes. <em>Bulletin Scientifique de la France et de la Belgique</em> 40:13&ndash;159.</a></li>
+          <li><a href="references/Ortmann1894.2.html">Ortmann, A.E. (1894) Crustaceen. Pp. 1&ndash;80 in <em>Zoologische Forschungsreisen in Australien und dem malayischen Archipel</em>, R. Semon, ed., Volume V: Denkschr. med.-naturw. Ges. Jena.</a></li>
+          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
+          <li><a href="references/Pocock1903.html">Pocock, R.I. (1903) Crustacea: Malacostraca. Pp. 211&ndash;232 in <em>The Natural History of Sokotra and Abd-el-Kuri, Being the Report upon the Results of the Conjoint xpedition to these Islands in 1898-9, by Mr. W. R. Ogilvie-Grant, of the British Museum, and Dr. H. O. Forbes, of the Liverpool Museums, together with information from other available sources forming A Monograph of the Islands</em>, H.O. Forbes, ed.: Bull. Lpool. Mus.</a></li>
+          <li><a href="references/Por1986.html">Por, F.D. (1986) Crustacean biogeography of the Late Middle Miocene Middle Eastern landbridge. Pp. 69&ndash;84 in <em>Crustacean Issues 4: Crustacean Biogeography</em>, R.H. Gore and K.L. Heck, eds. Rotterdam: Balkema.</a></li>
+          <li><a href="references/Por1977.html">Por, F.D., I. Dor, and A. Amir (1977) The mangal of Sinai: Limits of an ecosystem. <em>Helgoländer wissenschaftliche Meeresuntersuchungen</em> 30:295&ndash;314.</a></li>
+          <li><a href="references/Rathbun1935.2.html">Rathbun, M.J. (1935) Scientific results of an expedition to rain forest regions in Eastern Africa. II. Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 79(2):23&ndash;28.</a></li>
+          <li><a href="references/Spaargaren1977.html">Spaargaren, D.H. (1977) On the water and salt economy of some decapod crustaceans from the Gulf of Aqaba (Red Sea). <em>Netherlands Journal of Sea Research</em> 11(1):99&ndash;106.</a></li>
+          <li><a href="references/Stebbing1910.html">Stebbing, T.R.R. (1910) General catalogue of South African Crustacea (Part V. of S.A. Crustacea, for the Marine Investigations in South Africa). <em>Annals of the South African Museum</em> 6:281&ndash;593.</a></li>
+          <li><a href="references/Stella1953.html">Stella, E. (1953) Spedizione subacquea Italiana nel Mar Rosso. Ricerche Zoologiche III. Crostacei Decapodi e Stomatopodi. <em>Rivista di Biologia Coloniale</em> 13:51&ndash;70.</a></li>
+          <li><a href="references/Vatova1943.html">Vatova, A. (1943) I Decapodi della Somalia. <em>Thalassia</em> 6(2):1&ndash;37.</a></li>
+          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
+          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
+          <li><a href="references/Warner1977.html">Warner, G.F. (1977) <em>The Biology of Crabs</em>. New York: Van Nostrand Reinhold Company.</a></li>
         </ul>
       </div>
     </section>
@@ -193,7 +215,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>
