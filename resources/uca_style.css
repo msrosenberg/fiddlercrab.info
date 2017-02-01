@@ -73,13 +73,13 @@ footer a:visited {
 
 footer figcaption {text-align: center}
 
-#citation ul {
+.reference_list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
  }
 
-#citation ul li {
+.reference_list ul li {
 	padding-left: 25px;
 	padding-bottom: 1em;
 	text-indent: -25px;
@@ -150,11 +150,13 @@ nav a:visited {
 #subgenera_phylogeny {width: 100%}
 #species_phylogeny {width: 100%}
 
+.lcpic,
 .sppic {
   margin: 10px;
   text-align: center;
  }
 
+.lcpic img,
 .sppic img {
   border: 1px blue solid;
  }
@@ -232,7 +234,6 @@ dd {
  }
 
 .fossil-img {
-  xfont-weight: bold;
   font-style: normal;
  }
 
@@ -259,17 +260,24 @@ dd {
   border-bottom: 0;
  }
 
-#map_canvas_sp,
-#map_canvas {
+#sp_point_map_canvas,
+#point_map_canvas,
+#sp_range_map_canvas,
+#range_map_canvas {
 	width: 300px;
 	height: 200px;
 }
+
+.map_download {
+	font-size: 0.75em;
+	clear: both;
+}
  
-#splist {
+.splist {
    font-size: 1.25em;
  }
  
-#splist li {
+.splist li {
   list-style-type: none;
   padding-left: 20px;
   padding-bottom: 0.25em;
@@ -323,6 +331,7 @@ dd {
 
  .map_data {
   font-size: 0.75em;
+  clear: both;
  } 
 
 .namecol {
@@ -336,7 +345,6 @@ dd {
 .citetable {
     border-collapse: collapse;
     border-spacing: 0;
-    xborder: 1px solid #bbb;	
 	font-size: 0.75em;
 }
  
@@ -382,10 +390,54 @@ a:visited.vidlink {
   padding-bottom: 0;
   margin-left: 15px;
 }
-
-
  
+.chron_div {
+	clear: both;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	xheight: 250px;
+	overflow: hidden;
+}
  
+.chron_div:after {
+	clear: both;
+}
+
+.chronchart_title_top,
+.chronchart_title_left {
+	font-weight: bold;
+}
+
+.chronchart_title_top {
+	padding: 0;
+	float: none;
+}
+
+.chronchart_title_left {
+	xheight: 250px;
+	width: 10%;
+	float: left;
+	xvertical-align: middle;
+	text-align: right;
+	padding-top: 80px;
+}
+
+.chronchart_left,
+.chronchart_top {
+	width: 85%;
+	height: 250px;	
+}
+
+.chronchart_top {
+	float: none;
+	text-align: center;
+}
+
+.chronchart_left {
+	float: left;
+}
+
 @media screen and (min-width: 600px) {
 	a:hover {
 	  color: red;
@@ -460,15 +512,18 @@ a:visited.vidlink {
 		height: 2500px;
 		}
 
+	.lcpic,
 	.sppic {
 	  float: left;
 	  text-align: left;
 	 }
 
-	 .sppic img {
+    .lcpic img,
+	.sppic img {
 		height: 200px;
 		}
 
+	.lcpic img:hover,
 	.sppic img:hover {
 	  border: 1px red solid;
 	 }
@@ -481,17 +536,26 @@ a:visited.vidlink {
 	  width: 800px;
 	 }
 
-	#map_canvas {
+	#point_map_canvas,
+	#range_map_canvas {
 		width: 600px;
 		height: 400px;
+		float: left;
 	}
 
-	#map_canvas_sp {
+	#sp_point_map_canvas,
+	#point_map_canvas {
+		margin-left: 1em;
+	}
+
+	#sp_point_map_canvas,
+	#sp_range_map_canvas {
 		width: 450px;
 		height: 350px;
+		float: left;
 	}
 
-	#splist {
+	.splist {
 	  -moz-column-count: 3; /* Firefox */
 	  -webkit-column-count: 3; /* Safari and Chrome */
 	  column-count: 3;
@@ -505,7 +569,7 @@ a:visited.vidlink {
 	 }
 
  
-	#splist li {
+	.splist li {
 	  padding-bottom: 0;
 	 }
 
