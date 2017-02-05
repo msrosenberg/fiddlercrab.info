@@ -121,7 +121,6 @@ img {
 	page-break-after: always;
 }
 
-
  
 #table_of_contents ul a::after {
 	content: leader('.') target-counter(attr(href), page);
@@ -131,6 +130,8 @@ img {
 	text-align: center;
 	font-size: 24pt;
 	font-weight: bold;
+	padding-top: 2in;
+	font-variant: small-caps;
 	}
 	
 .book_subtitle {
@@ -140,6 +141,29 @@ img {
 	font-style: italic;
 	}
 
+.book_author {
+	text-align: center;
+	padding-top: 1in;
+	padding-bottom: 2in;
+	font-size: 16pt;
+}
+.title_image {
+		text-align: center;
+		width: 100%;
+		background-color: black;
+}
+.publisher {
+		text-align: center;
+}
+
+#copyright_page {
+	padding-top: 2in;
+}
+
+.copy_cite {
+	padding-top: 1in;
+}
+	
 .spsection {
   box-decoration-break: slice;
  }
