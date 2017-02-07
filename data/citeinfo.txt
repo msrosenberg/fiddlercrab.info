@@ -333,7 +333,7 @@ Latreille1829	3	Cancer vocans	crabes appelants	text p. 45	n/a	.	.	vocans	<	.	.
 Latreille1829	4	Cancer uca	.	text p. 49	n/a	.	.	>Ucides cordatus	.	.	.
 GuerinMeneville1829.1	1	Gelasimus Duperreyi	Gélasime de Duperrey	plate 1: figure 2	specimen	Bora Bora	.	tetragonon	Crane1975	He uses different name on the plates and figures than he does in the text	.
 GuerinMeneville1829.1	2	Gelasimus affinis	Gélasime semblable	plate 1: figure 3	specimen	Bora Bora	.	tetragonon	Crane1975	He uses different name on the plates and figures than he does in the text	.
-GuerinMeneville1829.2	1	Gelasimus chlorophthalmus	Gelasime chlorophtalme	text p. 7; plate 4: figure 3	citation	Latreille1828	0	>chlorophthalmus	<	.	.
+GuerinMeneville1829.2	1	Gelasimus chlorophthalmus	Gelasime chlorophtalme	text p. 7; plate 4: figure 3	citation	Latreille1828	0	chlorophthalmus	<	.	.
 GuerinMeneville1829.2	2	.	.	text p. 7	citation	Eydoux1835	1	tangeri	>MSR:geography	He doesn't give a specific name for this cited crab, but mentions he's seen a specimen of the same species from Senegal.	.
 GuerinMeneville1829.2	3.1	Uca una	.	text p. 8; plate 5: figure 3	citation	Latreille1828	4	=	=	.	.
 GuerinMeneville1829.2	3.2	Uca una	.	text p. 8; plate 5: figure 3	citation	Marcgrave1648	4	=	=	.	.
@@ -3872,7 +3872,7 @@ Rathbun1918.2	11.21	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figur
 Rathbun1918.2	11.22	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Pernambuco, Brazil	.	mordax	<	.	.
 Rathbun1918.2	11.23	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Itabapoana, Rio de Janeiro, Brazil	.	mordax	<	.	.
 Rathbun1918.2	11.24	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Rio de Janeiro, Brazil	.	mordax	<	.	.
-Rathbun1918.2	11.25	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Liberia	.	burgersi	Crane1975	incorrect location	.
+Rathbun1918.2	11.25	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Liberia <!>	.	burgersi	Crane1975	incorrect location	.
 Rathbun1918.2	11.26	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	San Blas, Nayarit, Mexico	.	ecuadoriensis	Crane1975	.	.
 Rathbun1918.2	11.27	Uca mordax	.	text p. 13, 376, 391-393, 395; plate 134: figures 3-4	specimen	Acapulco, Mexico	.	ecuadoriensis	Crane1975	.	.
 Rathbun1918.2	12.01	Uca brevifrons	.	text p. 377, 393-395; plate 138	citation	Stimpson1860	1	=	=	.	.
@@ -13909,6 +13909,8 @@ Rao1984	1	Uca pugilator	.	text p. 412	n/a	.	.	pugilator	<	.	.
 Thurman1984.2	1	Uca panacea	.	text p. 40A	location	Southern Texas, USA	.	panacea	<	.	.
 Thurman1984.2	2	Uca longisignalis	.	text p. 40A	location	Southern Texas, USA	.	longisignalis	<	.	.
 Thurman1984.2	3	Uca subcylindrica	.	text p. 40A	location	Southern Texas, USA	.	subcylindrica	<	.	.
+Zwarts1984	1	Uca tangeri	.	text p. 36	location	Guinea-Bissau	.	tangeri	<	.	.
+Semmes1984	1	Uca	.	text p. 53A	n/a	.	.	>Uca	<	.	.
 Mace1985	1.1	Uca minax	.	text p. 148	location	Pleasure Island, Port Arthur, Texas, USA	.	.	.	.	.
 Mace1985	1.2	Uca minax	.	text p. 148	citation	Rathbun1918.2	10	=	=	.	.
 Mace1985	1.3	Uca minax	.	text p. 148	citation	Whitten1950	1	=	=	.	.
@@ -14159,6 +14161,11 @@ Thurman1987.2	5	Uca minax	.	text p. 162A	location	Gulf of Mexico	.	minax	<	.	.
 Thurman1987.2	6	Celuca	.	text p. 162A	n/a	.	.	>Leptuca	<	.	.
 Thurman1987.2	7	Minuca	.	text p. 162A	n/a	.	.	>Minuca	<	.	.
 Weinstein1987	1	Uca pugilator	.	text p. 31A	location	North Carolina, USA	.	pugilator	<	.	.
+KrippeitDrews1987	1	Uca tangeri	.	text p. R34	n/a	.	.	tangeri	<	.	.
+Murai1987.2	1	Uca (Celuca) lactea	.	text p. 639	location	Japan	.	lactea	<	.	.
+Murai1987.2	2	Uca	.	text p. 639	citation	Crane1957	0	>Uca	<	.	.
+Murai1987.2	3	Uca (Celuca) triangularis	.	text p. 639	n/a	.	.	triangularis	<	.	.
+Murai1987.2	4	Celuca	.	text p. 639	citation	Crane1975	71	>Leptuca	<	.	.
 Rao1988.2	1.1	Uca pugilator	.	text p. 410-413	citation	Fingerman1973.1	1	=	=	.	.
 Rao1988.2	1.2	Uca pugilator	.	text p. 410-413	citation	Rao1973	1	=	=	.	.
 Rao1988.2	1.3	Uca pugilator	.	text p. 410-413	citation	Kulkarni1986.2	.	=	=	.	.
@@ -14517,6 +14524,8 @@ Salmon1988.2	29	Uca longidigita	.	text p. 400	location	Australia	.	longidigitum	
 Salmon1988.2	30	Uca deichmanni	.	text p. 400	citation	Zucker1983	.	=	=	.	.
 deVries1988	1	Uca pugilator	.	text p. 63A	location	North Carolina, USA	.	pugilator	<	.	.
 Bonomelli1988	1	Uca	.	text p. 117A	n/a	.	.	>Uca	<	.	.
+McCallum1988	1	Uca	.	text p. 117A	n/a	.	.	>Uca	<	.	.
+Weinstein1988	1	Uca pugilator	.	text p. 125A	n/a	.	.	pugilator	<	.	.
 Kerstitch1989	1	Uca princeps	Princely Fiddler Crab	text p. 90	location	Gulf of California, Mexico	.	princeps	<	.	.
 Gaus1989	1	Uca pugilator	.	text p. 261	n/a	.	.	pugilator	<	.	.
 Hinsch1989	1	Uca	.	text p. 108A	n/a	.	.	>Uca	<	.	.
@@ -14525,6 +14534,7 @@ Hopkins1989.3	1	Uca pugilator	.	text p. 248-249	n/a	.	.	pugilator	<	.	.
 Maloney1989	1	Uca princeps	.	text p. 104A	n/a	.	.	princeps	<	.	.
 OConnor1989	1	.	fiddler crabs	text p. 87A	location	North Carolina, USA	.	>Uca	<	.	.
 Wenner1989	1	Uca spp.	.	text p. 87A	location	South Carolina, USA	.	>Uca	<	.	.
+McCallum1989	1	Uca	.	text p. 48A	n/a	.	.	>Uca	<	.	.
 Barnwell1990	1.1	Uca princeps	.	text p. 138A	location	Puntarenas, Costa Rica	.	princeps	<	.	.
 Barnwell1990	1.2	Uca princeps	.	text p. 138A	location	Manzanillo, Colima, Mexico	.	princeps	<	.	.
 Barnwell1990	1.3	Uca princeps	.	text p. 138A	location	La Paz, Baja California Sur, Mexico	.	princeps	<	.	.
@@ -14539,6 +14549,8 @@ Peery1990	1	Uca sp.	.	text p. 248	location	York River, Virginia, USA	.	>Uca	<	Co
 McMahon1990	1	Uca pugilator	.	text p. 61A	n/a	.	.	pugilator	<	.	.
 Underwood1990	1	Uca sp.	.	text p. 114A	n/a	.	.	>Uca	<	.	.
 deVries1990	1	Uca pugilator	.	text p. 128A	location	North Carolina, USA	.	pugilator	<	.	.
+Sears1990	1	Uca pugilator	.	text p. 638	location	North Carolina, USA	.	pugilator	<	.	.
+Mohrherr1990	1	Uca pugilator	.	text p. 28A	n/a	.	.	pugilator	<	.	.
 Callicott1991	1	Uca pugilator	.	text p. 72A	n/a	.	.	pugilator	<	.	.
 deVries1991.4	1	Uca pugilator	.	text p. 43A	n/a	.	.	pugilator	<	.	.
 Moore1991	1	Uca pugilator	.	text p. 143A	location	North Carolina, USA	.	pugilator	<	.	.
@@ -14603,6 +14615,8 @@ Mangum1993.2	2	Uca crenulata coloradensis	.	text p. 64A	n/a	.	.	coloradensis	<	.
 Mangum1993.2	3.1	Uca minax	.	text p. 64A	n/a	Atlantic coast of United States	.	minax	<	.	.
 Mangum1993.2	3.2	Uca minax	.	text p. 64A	n/a	Gulf of Mexico	.	minax	<	.	.
 Mangum1993.2	4	Uca princeps monilifera	.	text p. 64A	n/a	.	.	monilifera	<	.	.
+Tankersley1993	1	Uca spp.	.	text p. 118A	n/a	.	.	>Uca	<	.	.
+Weissburg1993.2	1	.	fiddler crabs	text p. 648	n/a	.	.	>Uca	<	.	.
 Thurman1994	1	Uca	.	text p. 31A	location	Southern Texas, USA	.	>Uca	<	Mentions there were 5 species studied, but only specifies 3	.
 Thurman1994	2	Uca subcylindrica	.	text p. 31A	location	Southern Texas, USA	.	subcylindrica	<	.	.
 Thurman1994	3	Uca panacea	.	text p. 31A	location	Southern Texas, USA	.	panacea	<	.	.
@@ -14617,6 +14631,8 @@ Duval1994	1	Uca pugilator	.	text p. 100A	location	Beaufort, North Carolina, USA	
 Croll1994	1	Uca pugnax	.	text p. 53A	location	Hunting Island, South Carolina, USA	.	pugnax	<	.	.
 Croll1994	2	Uca pugilator	.	text p. 53A	location	Hunting Island, South Carolina, USA	.	pugilator	<	.	.
 Fingerman1994.1	1	Uca pugilator	.	text p. 74	n/a	.	.	pugilator	<	.	.
+Weissburg1994.1	1	Uca pugnax	.	text p. 572	location	Georgia, USA	.	pugnax	<	.	.
+Weissburg1994.1	2	Uca pugilator	.	text p. 572	location	Georgia, USA	.	pugilator	<	.	.
 Reinsel1995.1	1	Uca pugilator	.	text p. 139A	location	Beaufort, North Carolina, USA	.	pugilator	<	.	.
 Chung1995	1	Uca pugilator	.	text p. 92A	n/a	.	.	pugilator	<	.	.
 Duval1995	1	Uca pugilator	.	text p. 110A	location	Beaufort, North Carolina, USA	.	pugilator	<	.	.
@@ -14630,6 +14646,11 @@ Oyenekan1995	4.2	Uca	fiddler crabs	text p. 534, 544	citation	Gibbs1974	0	>Uca	<	
 Oyenekan1995	5	Uca burgersi	.	text p. 534	citation	Gibbs1974	1	=	=	.	.
 Oyenekan1995	6	Uca vocans	.	text p. 534	citation	Williams1981	.	=	=	.	.
 Durica1995	1	Uca pugilator	.	text p. 338	n/a	.	.	pugilator	<	.	.
+Rittschof1995	1.1	Uca pugilator	.	text p. 766	citation	Rittschof1989	.	=	=	.	.
+Rittschof1995	1.2	Uca pugilator	.	text p. 766	citation	Robertson1981	.	=	=	.	.
+Rittschof1995	1.3	Uca pugilator	.	text p. 766	location	Beaufort, North Carolina, USA	.	pugilator	<	.	.
+Trott1995	1	Uca minax	.	text p. 794	location	Woods Hole, Massachusetts, USA	.	minax	<	.	.
+Trott1995	2	Uca	.	text p. 794	n/a	.	.	>Uca	<	.	.
 Thurman1996	1	Uca panacea	.	text p. 67A	location	Southern Texas, USA	.	panacea	<	.	.
 Thurman1996	2	Uca rapax	.	text p. 67A	location	Southern Texas, USA	.	rapax	<	.	.
 Thurman1996	3	Uca spinicarpa	.	text p. 67A	location	Southern Texas, USA	.	spinicarpa	<	.	.
@@ -14642,6 +14663,7 @@ Hopkins1996	1	Uca pugilator	.	text p. 109A	n/a	.	.	pugilator	<	.	.
 Christy1996	1	Uca musica	.	text p. 93A	location	Pacific entrance of Panama Canal, Panama	.	terpsichores	>MSR:geography	.	.
 Tsu1996	1.1	Uca pugilator	.	text p. 11563-11570	location	Panacea, Florida, USA	.	?	.	Could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
 Tsu1996	1.2	Uca pugilator	,	text p. 11563-11570	citation	Eisen1973	1.2	=	=	.	.
+OConnor1996	1	Uca pugnax	.	text p. 330	n/a	.	.	pugnax	<	.	.
 Balbort1997	1	Uca longisignalis	.	text p. 186A	location	Southern Texas, USA	.	longisignalis	<	.	.
 Balbort1997	2	Uca panacea	.	text p. 186A	location	Southern Texas, USA	.	panacea	<	.	.
 Balbort1997	3	Uca rapax	.	text p. 186A	location	Southern Texas, USA	.	rapax	<	.	.
@@ -14663,6 +14685,7 @@ Harris1998	1.2	Uca musica	.	text p. 102A	location	Manzanillo, Colima, Mexico	.	m
 Harris1998	2	Uca terpsichores	.	text p. 102A	n/a	.	.	terpsichores	<	.	.
 Thurman1998.3	1	Uca subcylindrica	.	text p. 103A	n/a	.	.	subcylindrica	<	.	.
 Zou1998	1	Uca pugilator	.	text p. 207A	n/a	.	.	pugilator	<	.	.
+Wainwright1998	1	.	fiddler crabs	text p. 199A	n/a	.	.	>Uca	<	.	.
 Croll1999	1	Uca sp.	.	text p. 113A	n/a	.	.	>Uca	<	.	.
 Zou1999.6	1	Uca pugilator	.	text p. 137A	n/a	.	.	pugilator	<	.	.
 Wu1999	1	Uca pugilator	.	text p. 27A	n/a	.	.	pugilator	<	.	.
@@ -14755,6 +14778,7 @@ Zou2003.3	1	Uca pugilator	.	text p. 1051	n/a	.	.	pugilator	<	.	.
 Hopkins2003.1	1	Uca pugilator	.	text p. 3-A	n/a	.	.	pugilator	<	.	.
 Schreiner2003.2	1	Uca pugnax	.	text p. 606.9	n/a	.	.	pugnax	<	.	.
 Smith2003	1	Uca pugnax	.	text p. N-228	n/a	.	.	pugnax	<	.	.
+Hyun2003	1	Uca pugnax	mud fiddler crab	text p. N-170	location	Skidaway Island, Georgia, USA	.	pugnax	<	.	.
 Brodie2004.2	1	Uca pugilator	.	text p. 64	location	Southeastern United States	.	pugilator	<	.	.
 Brodie2004.2	2	Uca pugnax	.	text p. 64	location	Southeastern United States	.	pugnax	<	.	.
 Brodie2004.2	3	Uca minax	.	text p. 64	location	Southeastern United States	.	minax	<	.	.
@@ -14800,6 +14824,7 @@ Mraz2005	1	Uca minax	.	text p. 1169	location	South Carolina, USA	.	minax	<	.	.
 Muramatsu2005	1	Uca lactea	.	n/a	location	Japan	.	lactea	<	.	.
 Muramatsu2005	2	Uca	.	n/a	n/a	.	.	>Uca	<	.	.
 Zou2005.2	1	Uca pugilator	.	text p. 1214	location	Panacea, Florida, USA	.	?	>MSR	Could be either <em class="species">Uca pugilator</em> or <em class="species">U. panacea.</em>	.
+Kim2005.2	1	Uca lactea	.	text p. 1025	location	South Korea	.	lactea	<	.	.
 Beinlich2006	1	Australuca	.	text p. 9, 11, 13-15, 21, 23-25, 27, 30	citation	Crane1975	17	=	=	.	.
 Beinlich2006	2.1	Cranuca	.	text p. 9, 11, 13-17, 19, 25-26	n/a	.	.	>Cranuca	.	Proposed as a subgenus, with <em class="species">Uca inversa</em> as the type.	.
 Beinlich2006	2.2	Cranuca	.	text p. 9, 11, 13-17, 19, 25-26	citation	Crane1975	33	=	=	in part; split <em class="species">Uca inversa</em> into it's own subgenus.	.
@@ -14986,6 +15011,13 @@ Christy2006.2	1	.	fiddler crabs	text p. e25	n/a	.	.	>Uca	<	.	.
 Christy2006.2	2	Uca beebei	.	text p. e25	location	Pacific entrance of Panama Canal, Panama	.	beebei	<	.	.
 Christy2006.2	3	Uca terpsichores	.	text p. e25	location	Pacific entrance of Panama Canal, Panama	.	terpsichores	<	.	.
 Eidietis2006	1	.	fiddler crabs	text p. e191	n/a	.	.	>Uca	<	.	.
+Kim2006	1	Uca	fiddler crabs	text p. e74	n/a	.	.	>Uca	<	.	.
+Kim2006	2	Uca beebei	.	text p. e74	location	Pacific entrance of Panama Canal, Panama	.	beebei	<	.	.
+Kim2006	3	Uca terpsichores	.	text p. e74	location	Pacific entrance of Panama Canal, Panama	.	terpsichores	<	.	.
+Winstead2006	1.1	Uca pugilator	.	text p. e267	location	Atlantic coast of United States	.	pugilator	<	.	.
+Winstead2006	1.2	Uca pugilator	.	text p. e267	location	Northeastern Gulf of Mexico	.	pugilator	<	.	.
+Winstead2006	2.1	Uca minax	.	text p. e267	location	Atlantic coast of United States	.	minax	<	.	.
+Winstead2006	2.2	Uca minax	.	text p. e267	location	Northeastern Gulf of Mexico	.	minax	<	.	.
 Otani2007	1	Uca lactea	.	text p. 199	location	Japan	.	lactea	<	.	.
 Borgianini2007.2	1	Uca minax	red-jointed fiddler crab	text p. e11	location	South Carolina, USA	.	minax	<	.	.
 Borgianini2007.1	1	Uca minax	red-jointed fiddler crab	text p. e161	location	South Carolina, USA	.	minax	<	.	.
@@ -14995,6 +15027,19 @@ Hopkins2007.2	1	Uca	fiddler crabs	text p. e51	location	Atlantic coast of the Ame
 Hopkins2007.1	1	Uca pugilator	.	text p. e51	n/a	.	.	pugilator	<	.	.
 Toups2007	1	Uca pugilator	.	text p. e235	n/a	.	.	pugilator	<	.	.
 Zou2007	1	Uca pugilator	.	text p. e248	location	Panacea, Florida, USA	.	?	>MSR	Specimens obtained from this source are not distinguished correctly between closely related species	.
+Thurman2007	1	Uca	fiddler crabs	text p. e234	location	Caribbean Sea	.	>Uca	<	.	.
+Thurman2007	2	Uca mordax	.	text p. e234	location	Caribbean Sea	.	mordax	<	.	.
+Thurman2007	3	Uca burgersi	.	text p. e234	location	Caribbean Sea	.	burgersi	<	.	.
+Thurman2007	4	Uca vocator	.	text p. e234	location	Caribbean Sea	.	vocator	<	.	.
+Thurman2007	5	Uca rapax	.	text p. e234	location	Caribbean Sea	.	rapax	<	.	.
+Thurman2007	6	Uca thayeri	.	text p. e234	location	Caribbean Sea	.	thayeri	<	.	.
+Thurman2007	7	Uca cumulanta	.	text p. e234	location	Caribbean Sea	.	cumulanta	<	.	.
+Thurman2007	8	Uca major	.	text p. e234	location	Caribbean Sea	.	major	<	.	.
+Thurman2007	9	Uca speciosa	.	text p. e234	location	Caribbean Sea	.	speciosa	<	.	.
+Thurman2007	10	Uca leptodactyla	.	text p. e234	location	Caribbean Sea	.	leptodactyla	<	.	.
+Thurman2007	11	Minuca	.	text p. e234	location	Caribbean Sea	.	>Minuca	<	.	.
+Thurman2007	12	Leptuca	.	text p. e234	location	Caribbean Sea	.	>Leptuca	<	.	.
+Meng2007	1	Uca pugilator	.	text p. e208	n/a	.	.	pugilator	<	.	.
 DominguezAlonso2008	1	Uca (Uca) marinae	.	?	specimen	Honduras [Plio-Pleistocene]	.	marinae	.	fossil; type description	.
 DominguezAlonso2008	2	Uca (Uca) ornata	.	?	location	El Salvador to Peru	.	ornata	<	.	.
 DominguezAlonso2008	3.1	Uca (Uca) maracoani	.	?	location	Venezuela to Brazil	.	maracoani	<	.	.
@@ -15024,6 +15069,7 @@ DominguezAlonso2008	16.4	Uca (Afruca) tangeri	.	?	citation	Sturmbauer1996	.	=	=	
 DominguezAlonso2008	17	Uca (Celuca) beebei	.	?	n/a	.	.	beebei	<	.	.
 DominguezAlonso2008	18	Uca (Celuca) stenodactylus	.	?	n/a	.	.	stenodactylus	<	.	.
 Martin2008	1	Uca spp.	.	text p. 15	location	St. Catherines Island, Georgia, USA	.	>Uca	<	.	.
+Meng2009.3	1	Uca pugilator	.	text p. e114	n/a	.	.	pugilator	<	.	.
 Aoki2009	1.1	Uca arcuata	.	text p. 10-13	location	Japan	.	arcuata	<	.	.
 Aoki2009	1.2	Uca arcuata	.	text p. 10-13	citation	Ono1965	2	=	=	.	.
 Aoki2009	1.3	Uca arcuata	.	text p. 10-13	citation	Crane1975	12	=	=	.	.
@@ -15039,6 +15085,11 @@ Bier2009	1	Uca	fiddler crabs	text p. e201	n/a	.	.	>Uca	<	.	.
 Bier2009	2	Uca pugilator	.	text p. e201	n/a	.	.	pugilator	<	Collection location was unclear	.
 Durica2009	1	Uca pugilator	.	text p. e223	n/a	.	.	pugilator	<	.	.
 Das2009	1	Uca pugilator	.	text p. e43	n/a	.	.	pugilator	<	.	.
+LopezDuarte2009.1	1	Uca pugilator	.	text p. e102	location	Florida, USA	.	pugilator	<	.	.
+Warwick2009	1.1	Uca minax	.	text p. e179	location	Atlantic coast of United States	.	minax	<	.	.
+Warwick2009	1.2	Uca minax	.	text p. e179	location	Northeastern Gulf of Mexico	.	minax	<	.	.
+Warwick2009	2	Uca longisignalis	.	text p. e179	n/a	.	.	longisignalis	<	.	.
+Warwick2009	3	Uca pugnax	.	text p. e179	n/a	.	.	pugnax	<	.	.
 Landstorfer2010	1.1	Uca vocator	.	text p. 213-218	citation	Crane1975	57	=	=	.	.
 Landstorfer2010	1.2	Uca vocator	.	text p. 213-218	specimen	Trinidad	.	vocator	<	.	.
 Landstorfer2010	2.1	Uca ecuadoriensis	.	text p. 213-218	citation	Crane1975	58	=	=	.	.
@@ -15346,9 +15397,18 @@ Das2010	1	Uca pugilator	.	text p. e221	n/a	.	.	pugilator	<	.	.
 Christy2010	1	.	fiddler crabs	text p. e28	n/a	.	.	>Uca	<	.	.
 Bywater2010.2	1	Uca vomeris	two-toned fiddler crab	text p. e211	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
 Bywater2010.1	1	Uca vomeris	two-toned fiddler crab	text p. e22	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
+Anderson2010	1	Uca	fiddler crabs	text p. e4	n/a	.	.	>Uca	<	.	.
+Kerr2010	1	Uca	fiddler crabs	text p. e89	n/a	.	.	>Uca	<	.	.
+Kerr2010	2	Uca terpsichores	.	text p. e89	location	Pacific entrance of Panama Canal, Panama	.	terpsichores	<	.	.
+Kerr2010	3	Uca deichmanni	.	text p. e89	location	Pacific entrance of Panama Canal, Panama	.	deichmanni	<	.	.
+Levinton2010	1	Uca	fiddler crabs	text p. e100	n/a	.	.	>Uca	<	.	.
+McDermott2010	1	Uca crenulata	.	text p. e266	location	Sonora, Mexico	.	crenulata	<	.	.
+Pope2010	1	Uca musica	.	text p. e138	location	Sonora, Mexico	.	musica	<	.	.
+Pope2010	2	.	fiddler crabs	text p. e138	n/a	.	.	>Uca	<	.	.
 Imamura2011	1	Uca tetragonon	.	text p. 45	citation	Koga1995	.	=	=	.	.
 Bywater2011	1	Uca vomeris	.	text p. e19	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
 Das2011	1	Uca pugilator	.	text p. e181	n/a	.	.	pugilator	<	.	.
+Khambadakone2011	1	Uca pugilator	.	text p. e212	n/a	.	.	pugilator	<	.	.
 Bailey2012	1	Uca beebei	.	Figure 1C	n/a	.	.	beebei	<	.	.
 Bailey2012	2	Uca terpsichores	.	text p. 563	citation	Kim2007	.	terpsichores	<	.	.
 Portell2012	1	Uca ornata	.	text p. 268	location	Bahia Bique, Panama	.	ornata	<	fossils	.
@@ -15357,6 +15417,8 @@ Portell2012	3	Uca oerstedi	.	text p. 268	location	Bahia Bique, Panama	.	oerstedi
 Portell2012	4	Uca festae	.	text p. 268	location	Bahia Bique, Panama	.	festae	<	.	.
 Darnell2012.2	1	Uca panacea	.	text p. e42	location	Texas, USA	.	panacea	<	.	.
 Bywater2012.2	1	Uca vomeris	.	text p. e23	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
+Kaini2012	1	Uca minax	.	text p. e279	n/a	.	.	minax	<	.	.
+Kim2012	1	.	fiddler crabs	text p. e275	n/a	.	.	>Uca	<	.	.
 Smith2013	1	Uca pugnax	.	text p. 66	location	Cape Cod, Massachusetts, USA	.	pugnax	<	.	.
 Giblock2013	1.1	Uca pugilator	.	text p. 1-8	location	Beaufort, South Carolina, USA	.	pugilator	<	.	.
 Giblock2013	1.2	Uca pugilator	.	text p. 1-8	citation	Wilkens1965	1	=	=	.	.
@@ -15385,6 +15447,7 @@ Donovan2014	1	Uca pugilator	.	text p. e267	n/a	.	.	pugilator	<	.	.
 Faria2014	1	Uca	fiddler crabs	text p. e272	location	Brazil	.	>Uca	<	.	.
 Faria2014	2	Uca rapax	.	text p. e272	location	Brazil	.	rapax	<	.	.
 Faria2014	3	Uca victoriana	.	text p. e272	location	Brazil	.	victoriana	<	.	.
+Das2014	1	Uca pugilator	.	text p. e261	n/a	.	.	pugilator	<	.	.
 Luque2015	1	Uca ornata	.	text p. 423	location	Panama	.	ornata	<	fossils	.
 Hung2015	1	Uca formosensis	.	text p. 161-163	location	Taiwan	.	formosensis	<	.	.
 Lin2015	1	Uca lactea	清白招潮蟹	text p. 157-158	location	Taiwan	.	lactea	<	.	.
@@ -15403,5 +15466,8 @@ Burton2015	4	Uca (Australuca) hirsutimanus	.	text p. 232	citation	Mengersen2013	
 Burton2015	5	Uca (Leptuca) lactea	.	text p. 232	citation	Mengersen2013	.	=	=	.	.
 Burton2015	6	Uca (Gelasimus) vocans	.	text p. 232	citation	Mengersen2013	.	=	=	.	.
 Burton2015	7	Uca (Gelasimus) vomeris	.	text p. 232	citation	Mengersen2013	.	=	=	.	.
+Ringold2015	1	Uca	.	text p. e152	citation	Ringold1980	0	>Uca	<	.	.
+Roberts2015	1	Uca pugnax	.	text p. e321	location	Atlantic coast of United States	.	pugnax	<	.	.
+Schulz2015	1	Uca pugilator	.	text p. e326	n/a	.	.	pugilator	<	.	.
 Durica2016	1	Uca pugilator	.	text p. E59	n/a	.	.	pugilator	<	.	.
 Shyamal2016	1	Uca pugilator	.	text p. E202	n/a	.	.	pugilator	<	.	.
