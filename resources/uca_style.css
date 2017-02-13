@@ -438,6 +438,10 @@ a:visited.vidlink {
 	float: left;
 }
 
+.flag-icon {
+	box-shadow: 0 0 1px lightgray;
+}
+
 @media screen and (min-width: 600px) {
 	a:hover {
 	  color: red;
