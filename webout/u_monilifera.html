@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_monilifera_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Northern Gulf of California</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_monilifera_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -123,36 +124,33 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Agassiz_nd.html">Agassiz, L. (?) Museum label.</a></li>
-          <li><a href="references/Barnwell1990.html">Barnwell, F.H., and J.H. Stillman (1990) Differences in daily and tidal rhythms in populations of the fiddler crabs <em>Uca princeps</em> and <em>U. monilifera</em>. <em>American Zoologist</em> 30(4):138A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/DominguezAlonso2008.html">Dominguez Alonso, P. (2008) A new fiddler crab (genus <em>Uca</em>, Ocypodidae) from the Plio-Pleistocene from the Pacific coast of Honduras. <em>Ameghiniana</em> 45(4):663&ndash;676.</a></li>
-          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105&ndash;123.</a></li>
-          <li><a href="references/Haney2007.html">Haney, B.R., and D.S. Pope (2007) Assessing the potential for sexual conflict in the fiddler crab <em>Uca princeps Integrative and Comparative Biology</em> 47(Supplement):e46.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Mangum1993.2.html">Mangum, C.P. (1993) Structural polymorphisms of fiddler crab hemocyanins. <em>American Zoologist</em> 33(5):64A.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Rathbun1915.html">Rathbun, M.J. (1915) New genera and species of American Brachyrhynchous crabs. <em>Proceedings of the United States National Museum</em> 47(2047):117&ndash;129.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Rathbun1926.1.html">Rathbun, M.J. (1926) The fossil stalk-eyed Crustacea of the Pacific slope of North America. <em>United States National Museum Bulletin</em> 138:1&ndash;155.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Agassiz_nd.html">Agassiz (?)</a>, 
+<a href="references/Barnwell1990.html">Barnwell &amp; Stillman (1990)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Brusca1973.html">Brusca (1973)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/DominguezAlonso2008.html">Dominguez Alonso (2008)</a>, 
+<a href="references/Garth1960.html">Garth (1960)</a>, 
+<a href="references/Haney2007.html">Haney &amp; Pope (2007)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Mangum1993.2.html">Mangum (1993)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Rathbun1915.html">Rathbun (1915)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rathbun1926.1.html">Rathbun (1926)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.3.html">von Hagen (1970)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

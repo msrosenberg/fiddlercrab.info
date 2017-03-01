@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_spinicarpa_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (Northwest Florida) to Mexico</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_spinicarpa_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -123,43 +124,40 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1&ndash;258.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
-          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52&ndash;53.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
-          <li><a href="references/Rathbun1900.3.html">Rathbun, M.J. (1900) Results of the Branner-Agassiz expedition to Brazil. I. The decapod and stomatopod Crustacea. <em>Proceedings of the Washington Academy of Sciences</em> 2:133&ndash;156.</a></li>
-          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583&ndash;592.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275&ndash;290.</a></li>
-          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
-          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60&ndash;96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
-          <li><a href="references/Thurman1981.1.html">Thurman, C.L., II (1981) <em>Uca marguerita</em>, a new species of fiddler crab (Brachyura: Ocypodidae) from eastern Mexico. <em>Proceedings of the Biological Society of Washington</em> 94(1):169&ndash;180.</a></li>
-          <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
-          <li><a href="references/Thurman1994.html">Thurman, C.L., II (1994) Evaporative water loss and corporal temperature in sympatric fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 34(5):31A.</a></li>
-          <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
-          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234&ndash;1235.</a></li>
-          <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
-          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
-          <li><a href="references/Weygoldt1977.html">Weygoldt, P. (1977) Communication in crustaceans and arachnids. Pp. 303&ndash;333 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Balbort1997.html">Balbort &amp; Thurman (1997)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Chace1969.html">Chace &amp; Hobbs (1969)</a>, 
+<a href="references/Crane1944.html">Crane (1944)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Fotheringham1975.html">Fotheringham &amp; Brunenmeister (1975)</a>, 
+<a href="references/Heard1976.html">Heard (1976)</a>, 
+<a href="references/Heard1977.html">Heard (1977)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Powers1977.html">Powers (1977)</a>, 
+<a href="references/Rathbun1900.3.html">Rathbun (1900)</a>, 
+<a href="references/Rathbun1900.2.html">Rathbun (1900)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Salmon1968.1.html">Salmon &amp; Atsaides (1968)</a>, 
+<a href="references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a>, 
+<a href="references/Salmon1972.html">Salmon &amp; Horch (1972)</a>, 
+<a href="references/Thurman1981.1.html">Thurman (1981)</a>, 
+<a href="references/Thurman1987.2.html">Thurman (1987)</a>, 
+<a href="references/Thurman1994.html">Thurman (1994)</a>, 
+<a href="references/Thurman1996.html">Thurman (1996)</a>, 
+<a href="references/Thurman2000.html">Thurman (2000)</a>, 
+<a href="references/Thurman2001.1.html">Thurman (2001)</a>, 
+<a href="references/Thurman2004.2.html">Thurman (2004)</a>, 
+<a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="references/Weygoldt1977.html">Weygoldt (1977)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

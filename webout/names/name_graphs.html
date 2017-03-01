@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="../uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data1 = google.visualization.arrayToDataTable([
+        var cumulative_biname_data = google.visualization.arrayToDataTable([
           ['Year', 'Cumulative Unique Binomial/Compound Names'],
           ['1758', 3],
           ['1759', 3],
@@ -208,7 +209,7 @@
           ['1936', 321],
           ['1937', 330],
           ['1938', 330],
-          ['1939', 344],
+          ['1939', 346],
           ['1940', 348],
           ['1941', 361],
           ['1942', 361],
@@ -256,40 +257,40 @@
           ['1984', 678],
           ['1985', 681],
           ['1986', 681],
-          ['1987', 682],
-          ['1988', 683],
-          ['1989', 683],
-          ['1990', 683],
-          ['1991', 683],
-          ['1992', 683],
-          ['1993', 684],
-          ['1994', 684],
-          ['1995', 684],
-          ['1996', 684],
-          ['1997', 685],
-          ['1998', 685],
-          ['1999', 685],
-          ['2000', 686],
-          ['2001', 686],
-          ['2002', 686],
-          ['2003', 686],
-          ['2004', 687],
-          ['2005', 688],
-          ['2006', 766],
-          ['2007', 766],
-          ['2008', 771],
-          ['2009', 771],
-          ['2010', 786],
-          ['2011', 786],
-          ['2012', 786],
-          ['2013', 786],
-          ['2014', 786],
-          ['2015', 788],
-          ['2016', 788],
-          ['2017', 788],
+          ['1987', 684],
+          ['1988', 685],
+          ['1989', 685],
+          ['1990', 685],
+          ['1991', 685],
+          ['1992', 685],
+          ['1993', 686],
+          ['1994', 686],
+          ['1995', 686],
+          ['1996', 686],
+          ['1997', 687],
+          ['1998', 687],
+          ['1999', 687],
+          ['2000', 688],
+          ['2001', 688],
+          ['2002', 688],
+          ['2003', 688],
+          ['2004', 689],
+          ['2005', 690],
+          ['2006', 768],
+          ['2007', 768],
+          ['2008', 773],
+          ['2009', 773],
+          ['2010', 788],
+          ['2011', 788],
+          ['2012', 788],
+          ['2013', 793],
+          ['2014', 793],
+          ['2015', 795],
+          ['2016', 795],
+          ['2017', 796],
         ]);
 
-        var data2 = google.visualization.arrayToDataTable([
+        var biname_data = google.visualization.arrayToDataTable([
           ['Year', 'New Unique Binomial/Compound Names'],
           ['1758', 3],
           ['1759', 0],
@@ -472,8 +473,8 @@
           ['1936', 1],
           ['1937', 9],
           ['1938', 0],
-          ['1939', 14],
-          ['1940', 4],
+          ['1939', 16],
+          ['1940', 2],
           ['1941', 13],
           ['1942', 0],
           ['1943', 4],
@@ -520,7 +521,7 @@
           ['1984', 1],
           ['1985', 3],
           ['1986', 0],
-          ['1987', 1],
+          ['1987', 3],
           ['1988', 1],
           ['1989', 0],
           ['1990', 0],
@@ -546,14 +547,14 @@
           ['2010', 15],
           ['2011', 0],
           ['2012', 0],
-          ['2013', 0],
+          ['2013', 5],
           ['2014', 0],
           ['2015', 2],
           ['2016', 0],
-          ['2017', 0],
+          ['2017', 1],
         ]);
 
-        var data3 = google.visualization.arrayToDataTable([
+        var cumulative_spname_data = google.visualization.arrayToDataTable([
           ['Year', 'Cumulative Unique Specific Names'],
           ['1758', 1],
           ['1759', 1],
@@ -817,7 +818,7 @@
           ['2017', 193],
         ]);
 
-        var data4 = google.visualization.arrayToDataTable([
+        var spname_data = google.visualization.arrayToDataTable([
           ['Year', 'New Unique Specific Names'],
           ['1758', 1],
           ['1759', 0],
@@ -1081,156 +1082,165 @@
           ['2017', 0],
         ]);
 
-        var data5 = google.visualization.arrayToDataTable([
+        var spcnt_data1 = google.visualization.arrayToDataTable([
           ['Species', 'Referring References'],
           ['acuta', 35],
-          ['albimana', 17],
-          ['annulipes', 180],
+          ['albimana', 18],
+          ['annulipes', 183],
           ['antiqua', 3],
-          ['arcuata', 74],
+          ['arcuata', 77],
           ['argillicola', 8],
           ['batuenta', 17],
-          ['beebei', 35],
+          ['beebei', 36],
           ['bellator', 34],
-          ['bengali', 28],
-          ['boninensis', 0],
-          ['borealis', 11],
+          ['bengali', 29],
+          ['boninensis', 9],
+          ['borealis', 13],
           ['brevifrons', 35],
-          ['burgersi', 60],
+          ['burgersi', 62],
           ['capricornis', 3],
-          ['chlorophthalmus', 61],
-          ['coarctata', 60],
+          ['chlorophthalmus', 69],
+          ['coarctata', 62],
           ['coloradensis', 20],
-          ['crassipes', 65],
-          ['crenulata', 73],
+          ['crassipes', 68],
+          ['crenulata', 75],
           ['cryptica', 2],
-          ['cumulanta', 33],
-          ['dampieri', 7],
-          ['deichmanni', 17],
+          ['cumulanta', 36],
+          ['dampieri', 8],
+          ['deichmanni', 18],
           ['demani', 17],
           ['dorotheae', 4],
-          ['dussumieri', 78],
+          ['dussumieri', 79],
           ['ecuadoriensis', 22],
           ['elegans', 3],
-          ['excisa', 42],
+          ['excisa', 44],
           ['festae', 23],
           ['flammula', 9],
           ['forcipata', 35],
-          ['formosensis', 13],
+          ['formosensis', 15],
           ['galapagensis', 34],
           ['hamlini', 4],
           ['helleri', 11],
           ['herradurensis', 24],
-          ['hesperiae', 74],
+          ['hesperiae', 78],
           ['heteropleura', 20],
           ['hirsutimanus', 2],
           ['inaequalis', 25],
           ['insignis', 36],
           ['intermedia', 3],
-          ['inversa', 54],
+          ['inversa', 58],
           ['iranica', 5],
-          ['jocelynae', 19],
-          ['lactea', 88],
+          ['jocelynae', 20],
+          ['lactea', 94],
           ['latimanus', 34],
-          ['leptodactyla', 65],
+          ['leptodactyla', 67],
           ['limicola', 12],
           ['longidigitum', 19],
-          ['longisignalis', 41],
-          ['major', 32],
-          ['maracoani', 119],
+          ['longisignalis', 42],
+          ['major', 33],
+          ['maracoani', 120],
           ['marguerita', 4],
           ['marinae', 1],
-          ['minax', 213],
+          ['minax', 218],
           ['miocenica', 0],
-          ['mjoebergi', 10],
+          ['mjoebergi', 12],
+        ]);
+        var spcnt_data2 = google.visualization.arrayToDataTable([
+          ['Species', 'Referring References'],
           ['monilifera', 19],
-          ['mordax', 57],
-          ['musica', 30],
-          ['occidentalis', 64],
+          ['mordax', 59],
+          ['musica', 31],
+          ['occidentalis', 68],
           ['oerstedi', 17],
           ['oldroydi', 4],
           ['ornata', 19],
           ['osa', 1],
-          ['panacea', 41],
+          ['panacea', 42],
           ['panamensis', 31],
           ['paradussumieri', 31],
           ['perplexa', 50],
           ['polita', 7],
           ['princeps', 41],
-          ['pugilator', 677],
-          ['pugnax', 454],
+          ['pugilator', 693],
+          ['pugnax', 464],
           ['pygmaea', 5],
-          ['rapax', 152],
+          ['rapax', 156],
           ['rhizophorae', 12],
           ['rosea', 19],
           ['saltitanta', 20],
           ['seismella', 4],
           ['signata', 23],
-          ['sindensis', 10],
-          ['speciosa', 42],
+          ['sindensis', 11],
+          ['speciosa', 43],
           ['spinicarpa', 26],
-          ['splendida', 8],
+          ['splendida', 10],
           ['stenodactylus', 55],
           ['stylifera', 40],
           ['subcylindrica', 31],
           ['tallanica', 4],
-          ['tangeri', 213],
+          ['tangeri', 218],
           ['tenuipedis', 6],
-          ['terpsichores', 44],
+          ['terpsichores', 46],
           ['tetragonon', 104],
-          ['thayeri', 77],
+          ['thayeri', 78],
           ['tomentosa', 12],
-          ['triangularis', 37],
+          ['triangularis', 39],
           ['typhoni', 3],
           ['umbratila', 12],
-          ['uruguayensis', 31],
-          ['urvillei', 65],
+          ['uruguayensis', 32],
+          ['urvillei', 69],
           ['victoriana', 4],
           ['virens', 28],
-          ['vocans', 200],
-          ['vocator', 64],
-          ['vomeris', 23],
+          ['vocans', 204],
+          ['vocator', 66],
+          ['vomeris', 24],
           ['zacae', 16],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
+          ['', 0],
         ]);
 
-        var options1 = {
-          title: "Cumulative Unique Binomial/Compound Names by Year", 
-          legend: { position: 'none' }
-        };
-
-        var options2 = {
-          title: "Unique Binomial/Compound Names by Year", 
+        var line_name_options = {
           legend: { position: 'none' },
-          bar: { groupWidth: '80%' }
+          chartArea: { height: '75%', top: 10 }
         };
 
-        var options3 = {
-          title: "Cumulative Unique Specific Names by Year", 
-          legend: { position: 'none' }
-        };
-
-        var options4 = {
-          title: "Unique Specific Names by Year", 
+        var bar_name_options = {
           legend: { position: 'none' },
-          bar: { groupWidth: '80%' }
+          bar: { groupWidth: '80%' },
+          chartArea: { height: '75%', top: 10 }
         };
 
-        var options5 = {
-          title: "Number of References Referring to Accepted Species", 
+        var spcnt_options = {
           legend: { position: 'none' },
-          bar: { groupWidth: '80%' }
+          vAxis: { maxValue: 693, minValue: 0 },
+          hAxis: { slantedTextAngle: 90,
+                   textStyle: { italic: true, fontSize: 12 }},
+          bar: { groupWidth: '80%' },
+          chartArea: { height: '50%', top: 10 }
         };
 
-        var chart1 = new google.visualization.LineChart(document.getElementById('namechart1_div'));
-        chart1.draw(data1, options1);
-        var chart2 = new google.visualization.ColumnChart(document.getElementById('namechart2_div'));
-        chart2.draw(data2, options2);
-        var chart3 = new google.visualization.LineChart(document.getElementById('namechart3_div'));
-        chart3.draw(data3, options3);
-        var chart4 = new google.visualization.ColumnChart(document.getElementById('namechart4_div'));
-        chart4.draw(data4, options4);
-        var chart5 = new google.visualization.ColumnChart(document.getElementById('namechart5_div'));
-        chart5.draw(data5, options5);
+        var cumulative_biname_chart = new google.visualization.LineChart(document.getElementById('cumulative_biname_chart_div'));
+        cumulative_biname_chart.draw(cumulative_biname_data, line_name_options);
+        var biname_chart = new google.visualization.ColumnChart(document.getElementById('biname_chart_div'));
+        biname_chart.draw(biname_data, bar_name_options);
+        var cumulative_spname_chart = new google.visualization.LineChart(document.getElementById('cumulative_spname_chart_div'));
+        cumulative_spname_chart.draw(cumulative_spname_data, line_name_options);
+        var spname_chart = new google.visualization.ColumnChart(document.getElementById('spname_chart_div'));
+        spname_chart.draw(spname_data, bar_name_options);
+        var spcnt_chart1 = new google.visualization.ColumnChart(document.getElementById('spcnt_chart1_div'));
+        spcnt_chart1.draw(spcnt_data1, spcnt_options);
+        var spcnt_chart2 = new google.visualization.ColumnChart(document.getElementById('spcnt_chart2_div'));
+        spcnt_chart2.draw(spcnt_data2, spcnt_options);
       }
     </script>
   </head>
@@ -1250,20 +1260,26 @@
     </header>
 
     <p>
-      A summary of the names in the database (last updated 2017-02-01).
+      A summary of the names in the database (last updated 2017-03-01).
       Most of these data are only based on <a href="../uca_refsummary.html">references whose citation data is already included in the database</a>.
     </p>
-    <div id="namechart1_div"></div>
-    <div id="namechart2_div"></div>
-    <div id="namechart3_div"></div>
-    <div id="namechart4_div"></div>
-    <div id="namechart5_div"></div>
+    <h3 class="nobookmark">Cumulative Unique Binomial/Compound Names by Year</h3>
+    <div id="cumulative_biname_chart_div" class="name_chart"></div>
+    <h3 class="nobookmark">Unique Binomial/Compound Names by Year</h3>
+    <div id="biname_chart_div" class="name_chart"></div>
+    <h3 class="nobookmark">Cumulative Unique Specific Names by Year</h3>
+    <div id="cumulative_spname_chart_div" class="name_chart"></div>
+    <h3 class="nobookmark">Unique Specific Names by Year</h3>
+    <div id="spname_chart_div" class="name_chart"></div>
+    <h3 class="nobookmark pagebreak">Number of References Referring to Accepted Species</h3>
+    <div id="spcnt_chart1_div" class="name_bar_chart"></div>
+    <div id="spcnt_chart2_div" class="name_bar_chart"></div>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

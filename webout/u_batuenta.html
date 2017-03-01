@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_batuenta_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to northern Peru</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_batuenta_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -107,6 +108,24 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_batuenta02.html"><img class="thumbnail" src="photos/U_batuenta02tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta03.html"><img class="thumbnail" src="photos/U_batuenta03tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta04.html"><img class="thumbnail" src="photos/U_batuenta04tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta05.html"><img class="thumbnail" src="photos/U_batuenta05tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta06.html"><img class="thumbnail" src="photos/U_batuenta06tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta07.html"><img class="thumbnail" src="photos/U_batuenta07tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_batuenta08.html"><img class="thumbnail" src="photos/U_batuenta08tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_oerstedi_batuenta_saltitanta_inaequalis01.html"><img class="thumbnail" src="photos/U_oerstedi_batuenta_saltitanta_inaequalis01tn.jpg" alt="Uca batuenta thumbnail" title="Uca batuenta" /></a>
@@ -149,34 +168,31 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1959.1.html">Altevogt, R. (1959) Ökologische und ethologische Studien an Europas einziger Winkerkrabbe <em>Uca tangeri</em> Eydoux. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 48(2):123&ndash;146.</a></li>
-          <li><a href="references/Altevogt1962.html">Altevogt, R. (1962) Akustische Epiphänomene im Sozialverhalten von <em>Uca tangeri</em> in Südspanien. <em>Verhandlungen der Deutschen Zoologischen Gesellschaft</em> 26:309&ndash;315.</a></li>
-          <li><a href="references/Altevogt1970.html">Altevogt, R. (1970) Form und Funktion der vibratorischen Signale von <em>Uca tangeri</em> und <em>Uca inaequalis</em> (Crustacea, Ocypodidae). <em>forma et functio</em> 2:178&ndash;187. {Form and function of vibrational signals in <em>Uca tangeri</em> and <em>Uca inaequalis</em> (Crustacea, Ocypodidae)}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
-          <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Burkenroad1947.html">Burkenroad, M.D. (1947) Production of sound by the fiddler crab, <em>Uca pugilator</em> Bosc, with remarks on its nocturnal mating behaviour. <em>Ecology</em> 28(4):458&ndash;462.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Green1961.html">Green, J. (1961) <em>A Biology of Crustacea</em>. Chicago, IL: Quadrangle Books.</a></li>
-          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1959.1.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1962.html">Altevogt (1962)</a>, 
+<a href="references/Altevogt1970.html">Altevogt (1970)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Burkenroad1947.html">Burkenroad (1947)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1943.2.html">Crane (1943)</a>, 
+<a href="references/Crane1944.html">Crane (1944)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Green1961.html">Green (1961)</a>, 
+<a href="references/Peters1955.html">Peters (1955)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

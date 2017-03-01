@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_formosensis_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Taiwan</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_formosensis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -162,30 +163,29 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Hung2015.html">Hung, K.-J., and H.-C. Lin (2015) Genetic variability and population genetic structure of <em>Uca formosensis</em> populations in Taiwan west coast. Pp. 161&ndash;163 in <em>The 6th Conference on Taiwan Wetland Ecology</em>.</a></li>
-          <li><a href="references/Lin1949.html">Lin, C.a.-C.i. (1949) A catalogue of brachyurous Crustacea of Taiwan. <em>Quarterly Journal of the Taiwan Museum</em> 2(1):10&ndash;33.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Rathbun1921.2.html">Rathbun, M.J. (1921) New species of crabs from Formosa. <em>Proceedings of the Biological Society of Washington</em> 34:155&ndash;156.</a></li>
-          <li><a href="references/Sakai1940.html">Sakai, T. (1940) Bio-geographic review on the distribution of crabs in Japanese waters. <em>Records of Oceanographic Works in Japan</em> 11(1):27&ndash;63.</a></li>
-          <li><a href="references/Sato1936.1.html">Sato, H. (1936) The collections of the littoral animals of Formosa (4). <em>植物及動物 : 理論・應用 [Botany and Zoology]</em> 4:1951&ndash;1957.</a></li>
-          <li><a href="references/Takahasi1934.1.html">Takahasi, S. (1934) An ecological study of the littoral animals near the mouth of Tamsui. <em>Transactions of the Natural History Society of Formosa</em> 24(130):1&ndash;14. {高橋定衛} {淡水河口附近の地域と沿岸動物}</a></li>
-          <li><a href="references/Takahasi1934.2.html">Takahasi, S. (1934) The ecology of the Ocypodidae near the mouth of Tamsui. <em>Dobutsugaku Zasshi (Zoological Magazine)</em> 46:73&ndash;74.</a></li>
-          <li><a href="references/Takahasi1935.html">Takahasi, S. (1935) Ecological notes on the ocypodian crabs (Ocypodidæ) in Formosa, Japan. <em>Annotationes Zoologicae Japonenses</em> 15(1):78&ndash;87.</a></li>
-          <li><a href="references/Wu1962.html">Wu, Y.C., C.M. Ling, J. Shief, and Y.H.M. Wang (1962) Preliminary studies on the crabs found in the Tansui and the Keelung Rivers and the adjacent areas. <em>Quarterly Journal of the Taiwan Museum</em> 15(3&ndash;4):193&ndash;210.</a></li>
-          <li><a href="references/Yun2015.html">Yun, C.T., C.Z. Bo, and L.X. Zhu (2015) Feng shui of fiddler crabs' home:  The effecct of soil texture on fiddler crabs' burrow morphologyh in intertidal mudflat. Pp. 275&ndash;279 in <em>The 6th Conference on Taiwan Wetland Ecology</em>. {陳彤昀, 陳章波 and 林幸助} {招潮蟹居家風水：潮間帶泥灘土壤質地對招潮蟹洞穴形態之影響}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Hung2015.html">Hung &amp; Lin (2015)</a>, 
+<a href="references/Lin1949.html">Lin (1949)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Rathbun1921.2.html">Rathbun (1921)</a>, 
+<a href="references/Sakai1939.html">Sakai (1939)</a>, 
+<a href="references/Sakai1940.html">Sakai (1940)</a>, 
+<a href="references/Sato1936.1.html">Sato (1936)</a>, 
+<a href="references/Takahasi1934.1.html">Takahasi (1934)</a>, 
+<a href="references/Takahasi1934.2.html">Takahasi (1934)</a>, 
+<a href="references/Takahasi1935.html">Takahasi (1935)</a>, 
+<a href="references/vonHagen1970.3.html">von Hagen (1970)</a>, 
+<a href="references/Wu1962.html">Wu <em>et al.</em> (1962)</a>, 
+<a href="references/Yun2015.html">Yun <em>et al.</em> (2015)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

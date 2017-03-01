@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_splendida_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -80,11 +81,11 @@
        <dt>Common Names</dt>
          <dd>Splendid Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Gelasimus_splendidus.html"><em class="species">Gelasimus splendidus</em></a>, <a href="names/Uca_splendida.html"><em class="species">Uca splendida</em></a></em></dd>
+         <dd><em class="species"><a href="names/Gelasimus_splendidus.html"><em class="species">Gelasimus splendidus</em></a>, <a href="names/Uca_Paraleptuca_splendida.html"><em class="species">Uca (Paraleptuca) splendida</em></a>, <a href="names/Uca_splendida.html"><em class="species">Uca splendida</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Vietnam, Taiwan</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_splendida_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -156,25 +157,24 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Forest1961.html">Forest, J., and D. Guinot (1961) <em>Crustacés Décapodes Brachyoures de Tahiti et des Tuamotu</em>. Paris: Éditions de La Fondation Singer-Polignac.</a></li>
-          <li><a href="references/Gee1925.html">Gee, N.G. (1925) Tentative list of Chinese decapod Crustacea, Including those Represented in the Collections of the United States National Museum (Marked with an *) with Localities at which Collected. <em>Lingnan Agricultural Review</em> 3(2):156&ndash;166.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Miers1886.html">Miers, E.J. (1886) Report on the Brachyura collected by H.M.S. Challenger during the years 1873-76. Pp. 1&ndash;362 in <em>H.M.S. Challenger Reports</em>, Volume XVII. London</a></li>
-          <li><a href="references/Stimpson1858.html">Stimpson, W. (1858) Prodromus descriptionis animalium evertebratorum quæ in Expeditione ad Oceanum Pacificum Septentrionalem, a Republica Federata missa, Cadwaladaro Ringgold et Johanne Rodgers Ducibus, observavit et descripsit. Pars. V. Crustacea Ocypodoidea. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 10:93&ndash;110.</a></li>
-          <li><a href="references/Stimpson1907.html">Stimpson, W. (1907) Report on the Crustacea (Brachyura and Anomura) collected by the North Pacific Exploring Expedition, 1853-1856 (with introductory note, and edited by Mary J. Rathbun). <em>Smithsonian Miscellaneous Collections</em> 49(1717):1&ndash;240.</a></li>
-          <li><a href="references/TargioniTozzetti1877.html">Targioni Tozzetti, A. (1877) <em>Zoología del viaggio intorno al globo della R. Pirocorvetta Magenta durante gli anni 1865–68. Crostacei Brachiuri e Anomuri</em>, Volume 1(24). Firenze: Reale Istituti di Studi Superiori, Sezione di Scienza Fisiche e Naturali.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Forest1961.html">Forest &amp; Guinot (1961)</a>, 
+<a href="references/Gee1925.html">Gee (1925)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Miers1886.html">Miers (1886)</a>, 
+<a href="references/Sakai1939.html">Sakai (1939)</a>, 
+<a href="references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="references/Stimpson1858.html">Stimpson (1858)</a>, 
+<a href="references/Stimpson1907.html">Stimpson (1907)</a>, 
+<a href="references/TargioniTozzetti1877.html">Targioni Tozzetti (1877)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

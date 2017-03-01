@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_flammula_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Australia (Northwest Coast to North Coast), New Guinea (Western)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_flammula_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -113,6 +114,51 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_flammula04.html"><img class="thumbnail" src="photos/U_flammula04tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula05.html"><img class="thumbnail" src="photos/U_flammula05tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula06.html"><img class="thumbnail" src="photos/U_flammula06tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula07.html"><img class="thumbnail" src="photos/U_flammula07tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula08.html"><img class="thumbnail" src="photos/U_flammula08tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula09.html"><img class="thumbnail" src="photos/U_flammula09tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula10.html"><img class="thumbnail" src="photos/U_flammula10tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula11.html"><img class="thumbnail" src="photos/U_flammula11tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula12.html"><img class="thumbnail" src="photos/U_flammula12tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula13.html"><img class="thumbnail" src="photos/U_flammula13tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula14.html"><img class="thumbnail" src="photos/U_flammula14tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula15.html"><img class="thumbnail" src="photos/U_flammula15tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula16.html"><img class="thumbnail" src="photos/U_flammula16tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula17.html"><img class="thumbnail" src="photos/U_flammula17tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula18.html"><img class="thumbnail" src="photos/U_flammula18tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_flammula19.html"><img class="thumbnail" src="photos/U_flammula19tn.jpg" alt="Uca flammula thumbnail" title="Uca flammula" /></a>
       </figure>
     </section>
 
@@ -153,26 +199,23 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
-          <li><a href="references/Haswell1882.html">Haswell, W.A. (1882) <em>Catalogue of the Australian stalk-eyed and sessile-eyed Crustacea</em>. Sydney.</a></li>
-          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67&ndash;104.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Rathbun1914.html">Rathbun, M.J. (1914) Stalk-eyed Crustaceans collected at the Monte Bello Islands. <em>Proceedings of the Zoological Society of London</em> 1914(3):653&ndash;664.</a></li>
-          <li><a href="references/Rathbun1924.1.html">Rathbun, M.J. (1924) Results of Dr. E. Mjöberg's Swedish scientific expeditions to Australia 1910-1913. 37. Brachyura, Albuneidae and Porcellanidae. <em>Arkiv för Zoologi</em> 16(23):1&ndash;33.</a></li>
-          <li><a href="references/SavilleKent1897.html">Saville-Kent, W. (1897) <em>The Naturalist in Australia</em>. London: Chapman and Hall.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/George1982.html">George &amp; Jones (1982)</a>, 
+<a href="references/Haswell1882.html">Haswell (1882)</a>, 
+<a href="references/Macnae1966.html">Macnae (1966)</a>, 
+<a href="references/Macnae1968.html">Macnae (1968)</a>, 
+<a href="references/Rathbun1914.html">Rathbun (1914)</a>, 
+<a href="references/Rathbun1924.1.html">Rathbun (1924)</a>, 
+<a href="references/SavilleKent1897.html">Saville-Kent (1897)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_musica_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Gulf of California, Mexico (Nayarit to Baja California)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_musica_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -126,47 +127,45 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1970.html">Altevogt, R. (1970) Form und Funktion der vibratorischen Signale von <em>Uca tangeri</em> und <em>Uca inaequalis</em> (Crustacea, Ocypodidae). <em>forma et functio</em> 2:178&ndash;187. {Form and function of vibrational signals in <em>Uca tangeri</em> and <em>Uca inaequalis</em> (Crustacea, Ocypodidae)}</a></li>
-          <li><a href="references/Balss1921.html">Balss, H. (1921) Über Stridulations Organe bei dekapoden Crustaceen. Eine zusammenfassende Übersicht. <em>Naturwissenschaftliche Wochenschrift</em> 20:697&ndash;701.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Burkenroad1947.html">Burkenroad, M.D. (1947) Production of sound by the fiddler crab, <em>Uca pugilator</em> Bosc, with remarks on its nocturnal mating behaviour. <em>Ecology</em> 28(4):458&ndash;462.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Dumortier1963.html">Dumortier, B. (1963) Morphology of sound emission apparatus in Arthropoda. Pp. 277&ndash;345 in <em>Acoustic Behaviour of Animals</em>, R.-G. Busnel, ed. Amsterdam: Elsevier.</a></li>
-          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105&ndash;123.</a></li>
-          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/GuinotDumortier1960.html">Guinot-Dumortier, D., and B. Dumortier (1960) La stridulation chez les crabes. <em>Crustaceana</em> 1(2):117&ndash;155.</a></li>
-          <li><a href="references/Harris1998.html">Harris, S.E., D.M. Woodward, J.L. Fontaine, and F.H. Barnwell (1998) Visual and acoustic signalling in the musical fiddler crab (<em>Uca musica</em>) from western Mexico. <em>American Zoologist</em> 38(5):102A.</a></li>
-          <li><a href="references/Headstrom1979.html">Headstrom, R. (1979) <em>Lobsters, Crabs, Shrimps, and Their Relatives</em>. London: A.S. Barnes.</a></li>
-          <li><a href="references/Johnson1927.html">Johnson, M.E., and H.J. Snook (1927) <em>Seashore Animals of the Pacific Coast</em>. New York: Macmillan.</a></li>
-          <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
-          <li><a href="references/Naiditch2001.html">Naiditch, S.E., J.M. Neuffer, D. Woodward, and S.C. Harris Cotner (2001) Interspecific aggression in fiddler crabs, genus <em>Uca</em>: Part 2: Fight elements. <em>American Zoologist</em> 41(6):1535.</a></li>
-          <li><a href="references/Neiman1997.html">Neiman, M., and F.H. Barnwell (1997) Morphometric differences in small claws of the deposit-feeding fiddler crabs (<em>Uca</em> spp.). <em>American Zoologist</em> 37(5):47A.</a></li>
-          <li><a href="references/Neuffer2001.html">Neuffer, J.M., S.E. Naiditch, S.C. Harris Cotner, and D. Woodward (2001) Aggression in fiddler crabs, genus <em>Uca</em>: Part 1. <em>American Zoologist</em> 41(6):1538.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Rathbun1899.html">Rathbun, M.J. (1899) The Brachyura collected by the U. S. Fish Commission steamer Albatross on the voyage from Norfolk, Virginia, to San Francisco, California, 1887-1888. <em>Proceedings of the United States National Museum</em> 21(1162):567&ndash;616.</a></li>
-          <li><a href="references/Rathbun1915.html">Rathbun, M.J. (1915) New genera and species of American Brachyrhynchous crabs. <em>Proceedings of the United States National Museum</em> 47(2047):117&ndash;129.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Rathbun1924.4.html">Rathbun, M.J. (1924) Expedition of the California Academy of Sciences to the Gulf of California in 1921. Crustacea (Brachyura). <em>Proceedings of the California Academy of Sciences. Fourth Series</em> 13(23):373&ndash;379.</a></li>
-          <li><a href="references/Salmon1962.2.html">Salmon, M., and J.F. Stout (1962) Sexual discrimination and sound production in <em>Uca pugilator</em> Bosc. <em>Zoologica NY</em> 47:15&ndash;20.</a></li>
-          <li><a href="references/Schmitt1921.html">Schmitt, W.L. (1921) <em>The Marine Decapod Crustacea of California</em>, Volume 23. Berkeley, CA: University of California Press.</a></li>
-          <li><a href="references/Streets1877.html">Streets, T.H. (1877) Contributions to the natural history of the Hawaiian and Fanning Islands and Lower California. <em>United States National Museum Bulletin</em> 7:1&ndash;172.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1970.html">Altevogt (1970)</a>, 
+<a href="references/Balss1921.html">Balss (1921)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Burkenroad1947.html">Burkenroad (1947)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1966.1.html">Crane (1966)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Dumortier1963.html">Dumortier (1963)</a>, 
+<a href="references/Garth1960.html">Garth (1960)</a>, 
+<a href="references/Greenspan1975.html">Greenspan (1975)</a>, 
+<a href="references/GuinotDumortier1960.html">Guinot-Dumortier &amp; Dumortier (1960)</a>, 
+<a href="references/Harris1998.html">Harris <em>et al.</em> (1998)</a>, 
+<a href="references/Headstrom1979.html">Headstrom (1979)</a>, 
+<a href="references/Johnson1927.html">Johnson &amp; Snook (1927)</a>, 
+<a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
+<a href="references/Lockington1877.2.html">Lockington (1877)</a>, 
+<a href="references/Naiditch2001.html">Naiditch <em>et al.</em> (2001)</a>, 
+<a href="references/Neiman1997.html">Neiman &amp; Barnwell (1997)</a>, 
+<a href="references/Neuffer2001.html">Neuffer <em>et al.</em> (2001)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Pope2010.html">Pope &amp; Chang (2010)</a>, 
+<a href="references/Rathbun1899.html">Rathbun (1899)</a>, 
+<a href="references/Rathbun1915.html">Rathbun (1915)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rathbun1924.4.html">Rathbun (1924)</a>, 
+<a href="references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a>, 
+<a href="references/Schmitt1921.html">Schmitt (1921)</a>, 
+<a href="references/Streets1877.html">Streets (1877)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1975.html">von Hagen (1975)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

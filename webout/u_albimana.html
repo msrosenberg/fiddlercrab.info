@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_albimana_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Red Sea, Gulf of Aden, Socotra, Arabian Sea, Oman (Dhofar), south Gulf of Oman, southeastern Persian Gulf, SW part of Persian Gulf, W part of Gulf of Oman</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_albimana_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -148,34 +149,32 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Balss1924.html">Balss, H. (1924) Expedition S. M. Schiff &quot;Pola&quot; in das Rote Meer 1895/6-1897/8. Zool. Ergeb. XXXIV. Decapoden des Roten Meeres. III. Die Parthenopiden. Cylco- und Catometopen. <em>Denkschriften der Kaiserlichen Akademie der Wissenschaften</em> 99:1&ndash;18.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Fishelson1971.html">Fishelson, L. (1971) Ecology and distribution of the benthic fauna in the shallow waters of the Red Sea. <em>Marine Biology</em> 10(2):113&ndash;133.</a></li>
-          <li><a href="references/Ismail1993.html">Ismail, N.S., and M.A.E. Ahmed (1993) Macrobenthic invertebrates of mangrove, <em>Avicennia marina</em> (Forskal), and of intertidal flats of Khor Kalba, U.A.E., Gulf of Oman. Pp. 155&ndash;161 in <em>Towards the Rational Use of High Salinity Tolerant Plants, Vol. 1: Deliberations about High Salinity Tolerant Plants and Ecosystems</em>, H. Lieth and A.A. Al Masoom, eds. Dordrecht: Kluwer.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Kossmann1877.html">Kossmann, R. (1877) <em>Zoologische Ergebnisse einer Reise in die Küstengegenden des Roten Meeres III. Crustacea</em>. Leipzig: Wilhelm Engelmann.</a></li>
-          <li><a href="references/Kossmann1878.html">Kossmann, R. (1878) Kurze Notizen über einige neue Crustaceen. <em>Archiv für Naturgeschicthe</em> 44(1):251&ndash;258.</a></li>
-          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407&ndash;475.</a></li>
-          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45&ndash;84.</a></li>
-          <li><a href="references/Miers1880.html">Miers, E.J. (1880) On a collection of Crustacea from the Malaysian Region.--Part II. Telphusidea, Catometopa, and Oxystomata. <em>Annals and Magazine of Natural History, Series V</em> 5:304&ndash;317.</a></li>
-          <li><a href="references/Miers1884.2.html">Miers, E.J. (1884) Collections from the Western Indian Ocean: Crustacea. Pp. 513&ndash;575 in <em>Report of the zoological collections made in the Indo-Pacific Ocean during the voyage of the H.M.S. 'Alert,' 1881-1882</em>. London</a></li>
-          <li><a href="references/Miers1886.html">Miers, E.J. (1886) Report on the Brachyura collected by H.M.S. Challenger during the years 1873-76. Pp. 1&ndash;362 in <em>H.M.S. Challenger Reports</em>, Volume XVII. London</a></li>
-          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
-          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1&ndash;347.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Balss1924.html">Balss (1924)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Fishelson1971.html">Fishelson (1971)</a>, 
+<a href="references/Ismail1993.html">Ismail &amp; Ahmed (1993)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Kossmann1877.html">Kossmann (1877)</a>, 
+<a href="references/Kossmann1878.html">Kossmann (1878)</a>, 
+<a href="references/Laurie1915.html">Laurie (1915)</a>, 
+<a href="references/Lewinsohn1977.html">Lewinsohn (1977)</a>, 
+<a href="references/Miers1880.html">Miers (1880)</a>, 
+<a href="references/Miers1884.2.html">Miers (1884)</a>, 
+<a href="references/Miers1886.html">Miers (1886)</a>, 
+<a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>, 
+<a href="references/Nobili1906.3.html">Nobili (1906)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_demani_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Indonesia, Southern Philippines</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_demani_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -135,34 +136,31 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
-          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265&ndash;527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
-          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485&ndash;609.</a></li>
-          <li><a href="references/deMan1902.html">De Man, J.G. (1902) Die von Herrn Professor Kükenthal im Indischen Archipel gesammelten Dekapoden und Stomatopoden. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 25:467&ndash;929.</a></li>
-          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Rathbun1913.html">Rathbun, M.J. (1913) Descriptions of new species of crabs of the family Ocypodidæ. <em>Proceedings of the United States National Museum</em> 44(1971):615&ndash;620.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
-          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1&ndash;148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
-          <li><a href="references/Ward1941.html">Ward, M. (1941) New Brachyura from the Gulf of Davao, Mindanao, Philippine Islands. <em>American Museum Novitates</em> 1104:1&ndash;15.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1966.1.html">Crane (1966)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/deMan1891.html">De Man (1891)</a>, 
+<a href="references/deMan1892.html">De Man (1892)</a>, 
+<a href="references/deMan1895.html">De Man (1895)</a>, 
+<a href="references/deMan1902.html">De Man (1902)</a>, 
+<a href="references/Estampador1937.html">Estampador (1937)</a>, 
+<a href="references/Estampador1959.html">Estampador (1959)</a>, 
+<a href="references/George1982.html">George &amp; Jones (1982)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Rathbun1913.html">Rathbun (1913)</a>, 
+<a href="references/Serene1973.3.html">Serène (1973)</a>, 
+<a href="references/Tesch1918.html">Tesch (1918)</a>, 
+<a href="references/Ward1941.html">Ward (1941)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

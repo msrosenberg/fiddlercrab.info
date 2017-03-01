@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_vomeris_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Australia (east coast), Papa New Guinea, Melanesia</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_vomeris_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -108,6 +109,51 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_vomeris02.html"><img class="thumbnail" src="photos/U_vomeris02tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris03.html"><img class="thumbnail" src="photos/U_vomeris03tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris04.html"><img class="thumbnail" src="photos/U_vomeris04tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris05.html"><img class="thumbnail" src="photos/U_vomeris05tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris06.html"><img class="thumbnail" src="photos/U_vomeris06tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris07.html"><img class="thumbnail" src="photos/U_vomeris07tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris08.html"><img class="thumbnail" src="photos/U_vomeris08tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris09.html"><img class="thumbnail" src="photos/U_vomeris09tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris10.html"><img class="thumbnail" src="photos/U_vomeris10tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris11.html"><img class="thumbnail" src="photos/U_vomeris11tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris12.html"><img class="thumbnail" src="photos/U_vomeris12tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris13.html"><img class="thumbnail" src="photos/U_vomeris13tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris14.html"><img class="thumbnail" src="photos/U_vomeris14tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris15.html"><img class="thumbnail" src="photos/U_vomeris15tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris16.html"><img class="thumbnail" src="photos/U_vomeris16tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_vomeris17.html"><img class="thumbnail" src="photos/U_vomeris17tn.jpg" alt="Uca vomeris thumbnail" title="Uca vomeris" /></a>
       </figure>
     </section>
 
@@ -139,40 +185,38 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bywater2009.html">Bywater, C.L., C.R. White, and R.S. Wilson (2009) Geographic variation in weapon size, strength and colouration among populations of the two-toned fiddler crab (<em>Uca vomeris</em>). <em>Integrative and Comparative Biology</em> 49:e25.</a></li>
-          <li><a href="references/Bywater2011.html">Bywater, C.L., C.R. White, and R.S. Wilson (2011) The physiological basis of dishonest signals of strength in males of the fiddler crab <em>Uca vomeris</em>. <em>Integrative and Comparative Biology</em> 51:e19.</a></li>
-          <li><a href="references/Bywater2012.2.html">Bywater, C.L., C.R. White, and R.S. Wilson (2012) It’s costly to be honest: the metabolic expense of maintaining a reliable signal of strength for crustaceans <em>Integrative and Comparative Biology</em> 52(Supplement):e23.</a></li>
-          <li><a href="references/Bywater2010.2.html">Bywater, C.L., and R.S. Wilson (2010) Competition drives the reliability of signalling in the two-toned fiddler crab (<em>Uca vomeris</em>). <em>Integrative and Comparative Biology</em> 50:e211.</a></li>
-          <li><a href="references/Bywater2010.1.html">Bywater, C.L., and R.S. Wilson (2010) Costs and benefits of unreliable signalling in males of the two-toned fiddler crab (<em>Uca vomeris</em>). <em>Integrative and Comparative Biology</em> 50:e22.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Dakin1952.html">Dakin, W.J. (1952) <em>Australian Seashores</em>. Sydney: Angus and Robertson.</a></li>
-          <li><a href="references/Frith1976.html">Frith, D.W., R. Tantanasiriwong, and O. Bhatia (1976) Zonation and abundance of macrofauna on a mangrove shore, Phuket Island. <em>Phuket Marine Biological Center Research Bulletin</em> 10:1&ndash;37.</a></li>
-          <li><a href="references/George1982.html">George, R.W., and D.S. Jones (1982) A revision of the fiddler crabs of Australia (Ocypodinae<em>: Uca</em>). <em>Record of the Western Australian Museum Supplement</em> 14:1&ndash;99.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Macnae1966.html">Macnae, W. (1966) Mangroves in eastern and southern Australia. <em>Australian Journal of Botany</em> 14(1):67&ndash;104.</a></li>
-          <li><a href="references/Macnae1967.html">Macnae, W. (1967) Zonation within mangroves associated with estuaries in North Queensland. Pp. 432&ndash;441 in <em>Estuaries</em>, G.H. Lauff, ed., Volume 83. Washington, D.C.: AAAS Publication.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/McNeill1920.html">McNeill, F.A. (1920) Studies in Australian carcinology. No. 1. <em>Records of the Australian Museum</em> 13:105&ndash;109.</a></li>
-          <li><a href="references/McNeill1962.html">McNeill, F.A. (1962) Crabs of the Sydney foreshore. <em>Australian Natural History</em> 14(2):37&ndash;43.</a></li>
-          <li><a href="references/Musgrave1929.html">Musgrave, A. (1929) Life in a mangrove swamp. <em>Australian Museum Magazine</em> 3(10):341&ndash;347.</a></li>
-          <li><a href="references/Rathbun1926.2.html">Rathbun, M.J. (1926) Brachyuran crabs from Australia and New Guinea. <em>Records of the Australian Museum</em> 15:177&ndash;182.</a></li>
-          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
-          <li><a href="references/Snelling1959.html">Snelling, B. (1959) The distribution of intertidal crabs in the Brisbane river. <em>Australian Journal of Marine and Freshwater Research</em> 10(1):67&ndash;83.</a></li>
-          <li><a href="references/Veitch1978.html">Veitch, L.G. (1978) Size, shape and allometry in <em>Uca;</em> A multivariate approach. <em>The Mathematical Scientist</em> 3(1):35&ndash;45.</a></li>
-          <li><a href="references/Ward1928.html">Ward, M. (1928) The habits of our common shore crabs. <em>Australian Museum Magazine</em> 3(7):242&ndash;247.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bywater2009.html">Bywater <em>et al.</em> (2009)</a>, 
+<a href="references/Bywater2011.html">Bywater <em>et al.</em> (2011)</a>, 
+<a href="references/Bywater2012.2.html">Bywater <em>et al.</em> (2012)</a>, 
+<a href="references/Bywater2010.2.html">Bywater &amp; Wilson (2010)</a>, 
+<a href="references/Bywater2010.1.html">Bywater &amp; Wilson (2010)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Dakin1952.html">Dakin (1952)</a>, 
+<a href="references/Frith1976.html">Frith <em>et al.</em> (1976)</a>, 
+<a href="references/George1982.html">George &amp; Jones (1982)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Macnae1966.html">Macnae (1966)</a>, 
+<a href="references/Macnae1967.html">Macnae (1967)</a>, 
+<a href="references/Macnae1968.html">Macnae (1968)</a>, 
+<a href="references/McNeill1920.html">McNeill (1920)</a>, 
+<a href="references/McNeill1962.html">McNeill (1962)</a>, 
+<a href="references/Musgrave1929.html">Musgrave (1929)</a>, 
+<a href="references/Rathbun1926.2.html">Rathbun (1926)</a>, 
+<a href="references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
+<a href="references/Snelling1959.html">Snelling (1959)</a>, 
+<a href="references/Veitch1978.html">Veitch (1978)</a>, 
+<a href="references/Ward1928.html">Ward (1928)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

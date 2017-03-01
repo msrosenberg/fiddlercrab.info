@@ -136,16 +136,13 @@ nav a:visited {
   margin: 0 3px 0 0;
  }
 
+.name_bar_chart,
+.name_chart,
 #chart_div ,
 #chart2_div,
 #chart4_div,
 #chart5_div,
-#chart6_div,
-#namechart1_div,
-#namechart2_div,
-#namechart3_div,
-#namechart4_div,
-#namechart5_div {width: 100%}
+#chart6_div {width: 100%}
  
 #subgenera_phylogeny {width: 100%}
 #species_phylogeny {width: 100%}
@@ -260,9 +257,9 @@ dd {
   border-bottom: 0;
  }
 
-#sp_point_map_canvas,
+#xxxsp_point_map_canvas,
 #point_map_canvas,
-#sp_range_map_canvas,
+#xxxsp_range_map_canvas,
 #range_map_canvas {
 	width: 300px;
 	height: 200px;
@@ -438,6 +435,10 @@ a:visited.vidlink {
 	float: left;
 }
 
+.flag-icon {
+	box-shadow: 0 0 1px lightgray;
+}
+
 @media screen and (min-width: 600px) {
 	a:hover {
 	  color: red;
@@ -490,16 +491,13 @@ a:visited.vidlink {
 		height: 500px;
 		}
 
-	#namechart1_div,
-	#namechart2_div,
-	#namechart3_div,
-	#namechart4_div {
+	.name_chart {
 		width: 1500px; 
-		height: 500px;
+		height: 350px;
 		}
-	#namechart5_div {
+	.name_bar_chart {
 		width: 1500px; 
-		height: 400px;
+		height: 300px;
 		}
 
 	
@@ -543,13 +541,14 @@ a:visited.vidlink {
 		float: left;
 	}
 
-	#sp_point_map_canvas,
+	#xxxsp_point_map_canvas,
 	#point_map_canvas {
 		margin-left: 1em;
 	}
-
-	#sp_point_map_canvas,
-	#sp_range_map_canvas {
+	
+	.sp_map,
+	#xxxsp_point_map_canvas,
+	#xxxsp_range_map_canvas {
 		width: 450px;
 		height: 350px;
 		float: left;

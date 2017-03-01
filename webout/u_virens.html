@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_virens_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Mississippi to Vera Cruz, Mexico</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_virens_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -140,45 +141,42 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Avent1974.html">Avent, R.M., Jr. (1974) The effects of hydrostatic pressure on living aquatic organisms. VIII. Behavioral and metabolic responses of <em>Uca pugilator</em> to variations in hydrostatic pressure and temperature. <em>Internationale Revue der gesamten Hydrobiologie</em> 59(2):219&ndash;238.</a></li>
-          <li><a href="references/Barlow1977.html">Barlow, G.W. (1977) Modal action patterns. Pp. 98&ndash;134 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
-          <li><a href="references/Behre1950.html">Behre, E.H. (1950) Annotated list of the fauna of the Grand Isle region. <em>Occasional Papers of the Marine Lab of Louisiana State University</em> 6:1&ndash;66.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/Hazlett1972.html">Hazlett, B. (1972) Ritualization in marine crustacea. Pp. 97&ndash;125 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
-          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52&ndash;53.</a></li>
-          <li><a href="references/Hedgpeth1950.html">Hedgpeth, J.W. (1950) Notes on the marine invertebrate fauna of salt fiat areas in Aransas National Wildlife Refuge, Texas. <em>Publications of the Institute of Marine Science</em> 1(2):103&ndash;119.</a></li>
-          <li><a href="references/Herrnkind1983.html">Herrnkind, W.F. (1983) Movement patterns and orientation. Pp. 41&ndash;105 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
-          <li><a href="references/Novak1974.html">Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313&ndash;326.</a></li>
-          <li><a href="references/Powers1973.html">Powers, L.W. (1973) Ecological aspects of burrows and fiddler crab behavior. <em>American Zoologist</em> 13(4):1271.</a></li>
-          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1975.1.html">Powers, L.W. (1975) Fiddler crabs in a nontidal environment. <em>Contributions in Marine Science</em> 19:67&ndash;78.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
-          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
-          <li><a href="references/Salmon1966.html">Salmon, M. (1966) Courtship behavior and distribution of fiddler crabs in Florida (Motion Picture). <em>American Zoologist</em> 6(4):515.</a></li>
-          <li><a href="references/Salmon1968.1.html">Salmon, M., and S.P. Atsaides (1968) Behavioral, morphological and ecological evidence for two new species of fiddler crabs (genus <em>Uca</em>) from the Gulf Coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 81:275&ndash;290.</a></li>
-          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
-          <li><a href="references/Salmon1972.html">Salmon, M., and K.W. Horch (1972) Acoustic signalling and detection by semiterrestrial crabs of the family Ocypodidae. Pp. 60&ndash;96 in <em>Behavior of Marine Animals Volume 1: Invertebrates</em>, H.E. Winn and B.L. Olla, eds., Volume 1. New York: Plenum Press.</a></li>
-          <li><a href="references/Selander1971.html">Selander, R.K., W.E. Johnson, and J.C. Avise (1971) Biochemical population genetics of fiddler crabs (<em>Uca</em>). <em>Biological Bulletin</em> 141(2):402.</a></li>
-          <li><a href="references/Thurman1981.1.html">Thurman, C.L., II (1981) <em>Uca marguerita</em>, a new species of fiddler crab (Brachyura: Ocypodidae) from eastern Mexico. <em>Proceedings of the Biological Society of Washington</em> 94(1):169&ndash;180.</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1976.html">von Hagen, H.-O. (1976) (Book Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Crustaceana</em> 31(2):221&ndash;224.</a></li>
-          <li><a href="references/Weygoldt1977.html">Weygoldt, P. (1977) Communication in crustaceans and arachnids. Pp. 303&ndash;333 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Avent1974.html">Avent (1974)</a>, 
+<a href="references/Barlow1977.html">Barlow (1977)</a>, 
+<a href="references/Behre1950.html">Behre (1950)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Greenspan1975.html">Greenspan (1975)</a>, 
+<a href="references/Hazlett1972.html">Hazlett (1972)</a>, 
+<a href="references/Heard1976.html">Heard (1976)</a>, 
+<a href="references/Heard1977.html">Heard (1977)</a>, 
+<a href="references/Hedgpeth1950.html">Hedgpeth (1950)</a>, 
+<a href="references/Herrnkind1983.html">Herrnkind (1983)</a>, 
+<a href="references/Novak1974.html">Novak &amp; Salmon (1974)</a>, 
+<a href="references/Powers1973.html">Powers (1973)</a>, 
+<a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Powers1975.1.html">Powers (1975)</a>, 
+<a href="references/Powers1977.html">Powers (1977)</a>, 
+<a href="references/Powers1976.html">Powers &amp; Cole (1976)</a>, 
+<a href="references/Salmon1966.html">Salmon (1966)</a>, 
+<a href="references/Salmon1968.1.html">Salmon &amp; Atsaides (1968)</a>, 
+<a href="references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a>, 
+<a href="references/Salmon1972.html">Salmon &amp; Horch (1972)</a>, 
+<a href="references/Selander1971.html">Selander <em>et al.</em> (1971)</a>, 
+<a href="references/Thurman1981.1.html">Thurman (1981)</a>, 
+<a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1975.html">von Hagen (1975)</a>, 
+<a href="references/vonHagen1976.html">von Hagen (1976)</a>, 
+<a href="references/Weygoldt1977.html">Weygoldt (1977)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

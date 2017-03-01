@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_rhizophorae_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Singapore, Malaysia (Sarawak)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_rhizophorae_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -135,29 +136,26 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123&ndash;150.</a></li>
-          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
-          <li><a href="references/Schone1963.html">Schöne, H., and H. Schöne (1963) Balz und andere Verhaltensweisen der Mangrovekrabbe <em>Goniopsis cruentata</em> Latr. und das Winkverhalten der eulitoralen Brachyuren. <em>Zeitschrift für Tierpsychologie</em> 20(6):641&ndash;656.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
-          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</a></li>
-          <li><a href="references/Tweedie1954.html">Tweedie, M.W.F. (1954) Notes on grapsoid crabs from the Raffles Museum, Nos. 3, 4, and 5. <em>Bulletin of the Raffles Museum</em> 25:118&ndash;127.</a></li>
-          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Macnae1968.html">Macnae (1968)</a>, 
+<a href="references/Salmon1965.html">Salmon (1965)</a>, 
+<a href="references/Schone1961.html">Schöne (1961)</a>, 
+<a href="references/Schone1963.html">Schöne &amp; Schöne (1963)</a>, 
+<a href="references/Serene1973.3.html">Serène (1973)</a>, 
+<a href="references/Tweedie1950.1.html">Tweedie (1950)</a>, 
+<a href="references/Tweedie1954.html">Tweedie (1954)</a>, 
+<a href="references/vonHagen1970.3.html">von Hagen (1970)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_hesperiae_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -80,11 +81,11 @@
        <dt>Common Names</dt>
          <dd>Western Calling Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Uca_Gelasimus_hesperiae.html"><em class="species">Uca (Gelasimus) hesperiae</em></a>, <a href="names/Uca_Thalassuca_vocans_hesperiae.html"><em class="species">Uca (Thalassuca) vocans hesperiae</em></a>, <a href="names/Uca_hesperiae.html"><em class="species">Uca hesperiae</em></a></em></dd>
+         <dd><em class="species"><a href="names/Uca_Gelasimus_hesperiae.html"><em class="species">Uca (Gelasimus) hesperiae</em></a>, <a href="names/Uca_Thalassuca_vocans_hesperiae.html"><em class="species">Uca (Thalassuca) vocans hesperiae</em></a>, <a href="names/Uca_hesperiae.html"><em class="species">Uca hesperiae</em></a>, <a href="names/Uca_vocans_hesperiae.html"><em class="species">Uca vocans hesperiae</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: South Africa to Somalia, Southern India, Burma, Thailand, Western Indonesia, Western Malaysia</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_hesperiae_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -169,91 +170,92 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
-          <li><a href="references/Altevogt1955.2.html">Altevogt, R. (1955) Beobachtungen und Untersuchungen an indischen Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(6):501&ndash;522.</a></li>
-          <li><a href="references/Altevogt1955.1.html">Altevogt, R. (1955) Some studies on two species of Indian fiddler crabs, <em>Uca marionis nitidus</em> (Dana) and <em>U. annulipes</em> (Latr.). <em>Journal of the Bombay Natural History Society</em> 52:702&ndash;716.</a></li>
-          <li><a href="references/Altevogt1956.1.html">Altevogt, R. (1956) Der Mechanismus der Nahrungsaufnahme bei Winkerkrabben. <em>Naturwissenschaften</em> 43(4):92&ndash;93.</a></li>
-          <li><a href="references/Altevogt1957.2.html">Altevogt, R. (1957) Beiträge zur Biologie und Ethologie von <em>Dotilla blanfordi</em> Alcock und <em>Dotilla myctiroides</em> (Milne Edwards) (Crustacea Decapoda). <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(4):369&ndash;388.</a></li>
-          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
-          <li><a href="references/Altevogt1959.3.html">Altevogt, R. (1959) The love and life of fiddler crabs. <em>Journal of the Bombay Natural History Society</em> 56(1):1&ndash;7.</a></li>
-          <li><a href="references/Altevogt1959.1.html">Altevogt, R. (1959) Ökologische und ethologische Studien an Europas einziger Winkerkrabbe <em>Uca tangeri</em> Eydoux. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 48(2):123&ndash;146.</a></li>
-          <li><a href="references/Altevogt1963.1.html">Altevogt, R. (1963) Lernversuche bei <em>Uca tangeri</em>. <em>Zoologische Beiträge</em> 9:447&ndash;459.</a></li>
-          <li><a href="references/Altevogt1964.1.html">Altevogt, R. (1964) Ein antiphoner Klopfkode und eine neue Winkfunktion bei <em>Uca tangeri</em>. <em>Naturwissenschaften</em> 51(24):644&ndash;645.</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
-          <li><a href="references/Aurivillius1893.html">Aurivillius, C.W.S. (1893) Die Beziehungen der Sinnesorgane amphibischer Decapoden zur Lebensweise und Athmung. <em>Nova Acta Regiæ Societatis Scientiarum Upsaliensis. Seriei 3</em> 16(9):1&ndash;48.</a></li>
-          <li><a href="references/Barnard1925.html">Barnard, K.H. (1925) Report on a collection of Crustacea from Portuguese South Africa. <em>Transactions of the Royal Society of South Africa</em> 13(2):119&ndash;129.</a></li>
-          <li><a href="references/Barnard1950.html">Barnard, K.H. (1950) Descriptive catalogue of South African decapod Crustacea. <em>Annals of the South African Museum</em> 38:1&ndash;837.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bliss1968.1.html">Bliss, D.E. (1968) Transition from water to land in decapod crustaceans. <em>American Zoologist</em> 8(3):355&ndash;392.</a></li>
-          <li><a href="references/Chace1942.html">Chace, F.A., Jr. (1942) Scientific results of a fourth expedition to forested areas in Eastern Africa. III. Decapod Crustacea. <em>Bulletin of the Museum of Comparative Zoölogy at Harvard College</em> 91(3):185&ndash;233.</a></li>
-          <li><a href="references/Chhapgar1957.html">Chhapgar, B.F. (1957) On the marine crabs (Decapoda: Brachyura) of Bombay State. Part II. <em>Journal of the Bombay Natural History Society</em> 54(3):503&ndash;549.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Crosnier1965.html">Crosnier, A. (1965) Crustacés décapodes. Grapsidae et Ocypodidae. <em>Faune de Madagascar</em> 18:1&ndash;143.</a></li>
-          <li><a href="references/Doflein1899.html">Doflein, F. (1899) Amerikanische Dekapoden der k. bayerischen Staatssammlungen. <em>Sitzungsberichte der Königlichen Bayerischen Akademie der Wissenschaften zu München</em> 29:177&ndash;195.</a></li>
-          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71&ndash;91.</a></li>
-          <li><a href="references/Edney1962.html">Edney, E.B. (1962) Some aspects of temperature relations of fiddler crabs (<em>Uca</em> spp.). Pp. 79&ndash;85 in <em>Biometeorology</em>, S.W. Tromp, ed. New York: Pergamon Press.</a></li>
-          <li><a href="references/Farrow1971.html">Farrow, G.E. (1971) Back-reef and lagoonal environments of Aldabra Atoll distinguished by their crustacean burrows. <em>Symposia of the Zoological Society of London</em> 28:455&ndash;500.</a></li>
-          <li><a href="references/Feest1969.html">Feest, J. (1969) Morphophysiologische Untersuchungen zur Ontogenese und Fortpflanzungsbiologie von <em>Uca annulipes</em> und <em>Uca triangularis</em> mit Vergleichsbefunden an <em>Ilyoplax gangetica</em>. <em>forma et functio</em> 1:159&ndash;225.</a></li>
-          <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
-          <li><a href="references/Gordon1958.html">Gordon, H.R.S. (1958) Synchronous claw-waving of fiddler crabs. <em>Animal Behaviour</em> 6(3&ndash;4):238&ndash;241.</a></li>
-          <li><a href="references/Gravely1927.html">Gravely, F.H. (1927) The Littoral Fauna of Krusadai Island in the Gulf of Manaar: Orders Decapoda (except Paguridea) and Stomatopoda. <em>Bulletin of the Madras Government Museum</em> 1(1):135&ndash;155.</a></li>
-          <li><a href="references/Greenaway1988.html">Greenaway, P. (1988) Ion and water balance. Pp. 211&ndash;248 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Gunther1963.html">Günther, H.-J. (1963) Untersuchungen zur Verbreitung und Ökologie von <em>Uca tangeri</em> an der SW-Iberischen Küste. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 53(3):242&ndash;310.</a></li>
-          <li><a href="references/Hartnoll1975.html">Hartnoll, R.G. (1975) The Grapsidae and Ocypodidae (Decapoda: Brachyura) of Tanzania. <em>Journal of Zoology</em> 177(3):305&ndash;328.</a></li>
-          <li><a href="references/Heit1974.html">Heit, M. (1974) Hormonal control of salt and water balance in the semi-terrestrial fiddler crab, <em>Uca pugilator</em>. Pp. 121: Tulane University).</a></li>
-          <li><a href="references/Herklots1861.html">Herklots, J.A. (1861) Symbolae Carcinologicae. I. Catalogue des Crustacés qui ont servi de base au système Carcinologique de M. W. de Haan, rédigé d'après la collection du Musée des PayBas et les Crustacés de la Faune du Japon. <em>Tijdschrift voor entomologie</em> 4:116&ndash;156.</a></li>
-          <li><a href="references/Hilgendorf1869.html">Hilgendorf, F. (1869) Crustaceen. Pp. 69&ndash;116,147 in <em>Reisen in Ost-Afrika</em>, V.D. Decken, ed., Volume 3</a></li>
-          <li><a href="references/Hoffmann1874.html">Hoffmann, C.K. (1874) <em>Crustacea</em>, Volume Part 5, livr. 2. Leyden.</a></li>
-          <li><a href="references/Hyatt1973.html">Hyatt, G.W. (1973) Physiological and behavioural studies of color vision in fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 90  (Urbana-Champaign: University of Illinois).</a></li>
-          <li><a href="references/Hyatt1975.html">Hyatt, G.W. (1975) Physiological and behavioral evidence for color discrimination by fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 333&ndash;365 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Jansen1970.html">Jansen, P. (1970) Phsyiologisch-ökologische Untersuchungen zum &quot;Posen&quot; von <em>Uca tangeri</em>. <em>forma et functio</em> 2:58&ndash;100. {Eco-physiological studies on the &quot;posing&quot; behavior of <em>Uca tangeri</em>}</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Korte1966.html">Korte, R. (1966) Untersuchungen zum Sehvermögen einiger Dekapoden, insbesondere von <em>Uca tangeri</em>. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 58(1):1&ndash;37.</a></li>
-          <li><a href="references/Kossmann1877.html">Kossmann, R. (1877) <em>Zoologische Ergebnisse einer Reise in die Küstengegenden des Roten Meeres III. Crustacea</em>. Leipzig: Wilhelm Engelmann.</a></li>
-          <li><a href="references/Laurie1915.html">Laurie, R.D. (1915) Reports on the marine biology of the Sudanese Red Sea.—XXI. On the Brachyura. <em>Journal of the Linnean Society. Zoology</em> 31:407&ndash;475.</a></li>
-          <li><a href="references/Lenz1910.html">Lenz, H. (1910) Crustaceen von Madagaskar, Ostafrika und Ceylon. Pp. 539&ndash;576 in <em>Reise in Ostafrkia in den Jahren 1903-1905</em>, A. Voeltzkow, ed., Volume 2. Stuttgart</a></li>
-          <li><a href="references/Lenz1881.html">Lenz, H., and F. Richters (1881) Beitrag zur Krustaceenfauna von Madagascar. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 12:421&ndash;428.</a></li>
-          <li><a href="references/Lewinsohn1977.html">Lewinsohn, C. (1977) Die Ocypodidae des Roten Meeres (Crustacea Decapoda, Brachyura). <em>Zoologische Verhandelingen</em> 152:45&ndash;84.</a></li>
-          <li><a href="references/Macnae1963.html">Macnae, W. (1963) Mangrove swamps in South Africa. <em>Journal of Ecology</em> 51(1):1&ndash;25.</a></li>
-          <li><a href="references/Macnae1968.html">Macnae, W. (1968) A general account of the fauna and flora of mangrove swamps and forests in the Indo-West-Pacific region. Pp. 73&ndash;270 in <em>Advances in Marine Biology</em>, F.S. Russell and M. Yonge, eds., Volume 6. London: Academic Press.</a></li>
-          <li><a href="references/Macnae1962.html">Macnae, W., and M. Kalk (1962) The ecology of the mangrove swamps at Inhaca Island, Moçambique. <em>Journal of Ecology</em> 50(1):19&ndash;34.</a></li>
-          <li><a href="references/Miers1879.2.html">Miers, E.J. (1879) An account of the Petrological, Botanical, and Zoological collections made in Kerguelen's Land and Rodriguez during the Transit of Venus Expeditions, carried out by order of Her Majesty's Government in the years 1874-75. Crustacea. <em>Philosophical Transactions of the Royal Society of London</em> 168:485&ndash;496.</a></li>
-          <li><a href="references/MilneEdwards1868.html">Milne-Edwards, A. (1868) Description de quelques crustaces nouveaux provenant des voyages de M. Alfred Grandidier a Zanzibar et a Madagascar. <em>Nouvelles Archives de Muséum d'Historie Naturelle de Paris</em> 4:69&ndash;92.</a></li>
-          <li><a href="references/Neumann1878.html">Neumann, R. (1878) Systematische Uebersicht der Gattungen der Oxyrhynchen. Catalog der podophthalmen Crustaceen des Heidelberger Museums. Beschreibung einiger neuer Arten. Pp. 1&ndash;39: Leipzig).</a></li>
-          <li><a href="references/Nobili1906.3.html">Nobili, G. (1906) Faune carcinologique de la Mer Rouge. Décapodes et Stomatopodes. <em>Annales des Sciences Naturelles. Zoologie (Série 9)</em> 4:1&ndash;347.</a></li>
-          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
-          <li><a href="references/Pillai1951.html">Pillai, N.K. (1951) Decapoda (<em>Brachyura</em>) from Travancore. <em>Bulletin of the Central Research Institute, University of Travancore, Trivandrum</em> 2, series C(1):1&ndash;46.</a></li>
-          <li><a href="references/Richters1880.html">Richters, E. (1880) Decapoda. Pp. 139&ndash;178 in <em>Beitrage zur Meeresfauna der Insel Mauritius und der Seychellen</em>, K. Mobius, E. Richters and E. von Martens, eds. Berlin: Gutmannschen.</a></li>
-          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123&ndash;150.</a></li>
-          <li><a href="references/Salmon1962.2.html">Salmon, M., and J.F. Stout (1962) Sexual discrimination and sound production in <em>Uca pugilator</em> Bosc. <em>Zoologica NY</em> 47:15&ndash;20.</a></li>
-          <li><a href="references/Sankarankutty1961.html">Sankarankutty, C. (1961) On Decapoda Brachyura from the Andaman and Nicobar Islands. 1. Families Portunidae, Ocypodidae, Grapsidae and Mictyridae. <em>Journal of the Marine Biological Association of India</em> 3(1&ndash;2):101&ndash;119.</a></li>
-          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
-          <li><a href="references/Schone1963.html">Schöne, H., and H. Schöne (1963) Balz und andere Verhaltensweisen der Mangrovekrabbe <em>Goniopsis cruentata</em> Latr. und das Winkverhalten der eulitoralen Brachyuren. <em>Zeitschrift für Tierpsychologie</em> 20(6):641&ndash;656.</a></li>
-          <li><a href="references/Shih2010.1.html">Shih, H.-T., T. Naruse, and P.K.L. Ng (2010) <em>Uca jocelynae</em> sp. nov., a new species of fiddler crab (Crustacea: Brachyura: Ocypodidae) from the Western Pacific. <em>Zootaxa</em> 2337:47&ndash;62.</a></li>
-          <li><a href="references/Stebbing1921.html">Stebbing, T.R.R. (1921) Some Crustacea of Natal. <em>Annals of the Durban Museum</em> 3:12&ndash;26.</a></li>
-          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
-          <li><a href="references/Vonk1960.html">Vonk, H.J. (1960) Digestion and metabolism. Pp. 291&ndash;316 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume I. New York: Academic Press.</a></li>
-          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139&ndash;146.</a></li>
-          <li><a href="references/Wilkens1965.html">Wilkens, J.L., and M. Fingerman (1965) Heat tolerance and temperature relationships of the fiddler crab, <em>Uca pugilator</em>, with reference to body coloration. <em>Biological Bulletin</em> 128(1):133&ndash;141.</a></li>
-          <li><a href="references/Yamaguchi1971.html">Yamaguchi, T. (1971) Courtship behavior of a fiddler crab, <em>Uca lactea</em>. <em>Kumamoto Journal of Science: Biology</em> 10(1):13&ndash;37.</a></li>
-          <li><a href="references/Yamaghuchi1973.2.html">Yamaguchi, T., and M. Takeda (1973) Dimorphism of chelipeds and systematic status of a fiddler crab, <em>Uca marionis</em> (Desmarest). <em>Proceedings of the Japanese Society of Systematic Zoology</em> 9:7&ndash;12. {山口隆男 and 武田正倫} {ヒメシオマネキ (incomplete)}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/Altevogt1955.2.html">Altevogt (1955)</a>, 
+<a href="references/Altevogt1955.1.html">Altevogt (1955)</a>, 
+<a href="references/Altevogt1956.1.html">Altevogt (1956)</a>, 
+<a href="references/Altevogt1957.2.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1959.3.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1959.1.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1963.1.html">Altevogt (1963)</a>, 
+<a href="references/Altevogt1964.1.html">Altevogt (1964)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Aurivillius1893.html">Aurivillius (1893)</a>, 
+<a href="references/Barnard1925.html">Barnard (1925)</a>, 
+<a href="references/Barnard1950.html">Barnard (1950)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bliss1968.1.html">Bliss (1968)</a>, 
+<a href="references/Chace1942.html">Chace (1942)</a>, 
+<a href="references/Chhapgar1957.html">Chhapgar (1957)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1958.html">Crane (1958)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Crosnier1965.html">Crosnier (1965)</a>, 
+<a href="references/Day1956.html">Day &amp; Morgans (1956)</a>, 
+<a href="references/Doflein1899.html">Doflein (1899)</a>, 
+<a href="references/Edney1961.html">Edney (1961)</a>, 
+<a href="references/Edney1962.html">Edney (1962)</a>, 
+<a href="references/Farrow1971.html">Farrow (1971)</a>, 
+<a href="references/Feest1969.html">Feest (1969)</a>, 
+<a href="references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a>, 
+<a href="references/Gordon1958.html">Gordon (1958)</a>, 
+<a href="references/Gravely1927.html">Gravely (1927)</a>, 
+<a href="references/Greenaway1988.html">Greenaway (1988)</a>, 
+<a href="references/Gunther1963.html">Günther (1963)</a>, 
+<a href="references/Hartnoll1975.html">Hartnoll (1975)</a>, 
+<a href="references/Heit1974.html">Heit (1974)</a>, 
+<a href="references/Herklots1861.html">Herklots (1861)</a>, 
+<a href="references/Hilgendorf1869.html">Hilgendorf (1869)</a>, 
+<a href="references/Hoffmann1874.html">Hoffmann (1874)</a>, 
+<a href="references/Hyatt1973.html">Hyatt (1973)</a>, 
+<a href="references/Hyatt1975.html">Hyatt (1975)</a>, 
+<a href="references/Jansen1970.html">Jansen (1970)</a>, 
+<a href="references/Kalik1958.2.html">Kalik (1958)</a>, 
+<a href="references/Kalik1958.1.html">Kalik (1958)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Korte1966.html">Korte (1966)</a>, 
+<a href="references/Kossmann1877.html">Kossmann (1877)</a>, 
+<a href="references/Laurie1915.html">Laurie (1915)</a>, 
+<a href="references/Lenz1910.html">Lenz (1910)</a>, 
+<a href="references/Lenz1881.html">Lenz &amp; Richters (1881)</a>, 
+<a href="references/Lewinsohn1977.html">Lewinsohn (1977)</a>, 
+<a href="references/Macnae1963.html">Macnae (1963)</a>, 
+<a href="references/Macnae1968.html">Macnae (1968)</a>, 
+<a href="references/Macnae1958.html">Macnae &amp; Kalk (1958)</a>, 
+<a href="references/Macnae1962.html">Macnae &amp; Kalk (1962)</a>, 
+<a href="references/Miers1879.2.html">Miers (1879)</a>, 
+<a href="references/MilneEdwards1868.html">Milne-Edwards (1868)</a>, 
+<a href="references/Neumann1878.html">Neumann (1878)</a>, 
+<a href="references/Nobili1906.3.html">Nobili (1906)</a>, 
+<a href="references/Ortmann1894.1.html">Ortmann (1894)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Peters1955.html">Peters (1955)</a>, 
+<a href="references/Pillai1951.html">Pillai (1951)</a>, 
+<a href="references/Richters1880.html">Richters (1880)</a>, 
+<a href="references/Salmon1965.html">Salmon (1965)</a>, 
+<a href="references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a>, 
+<a href="references/Sankarankutty1961.html">Sankarankutty (1961)</a>, 
+<a href="references/Schone1961.html">Schöne (1961)</a>, 
+<a href="references/Schone1963.html">Schöne &amp; Schöne (1963)</a>, 
+<a href="references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
+<a href="references/Stebbing1921.html">Stebbing (1921)</a>, 
+<a href="references/vonHagen1962.1.html">von Hagen (1962)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.3.html">von Hagen (1970)</a>, 
+<a href="references/Vonk1960.html">Vonk (1960)</a>, 
+<a href="references/Walker1972.html">Walker (1972)</a>, 
+<a href="references/Wilkens1965.html">Wilkens &amp; Fingerman (1965)</a>, 
+<a href="references/Yamaguchi1971.html">Yamaguchi (1971)</a>, 
+<a href="references/Yamaghuchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_vocator_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (Texas) to Brazil, West Indies</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_vocator_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -145,81 +146,80 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1969.html">Altevogt, R. (1969) Ein sexualethologischer Isolationsmechanismus bei sympatrischen <em>Uca</em>-Arten (Ocypodidae) des Ostpazifik. <em>forma et functio</em> 1:238&ndash;249. {An ethological reproductive isolation mechanism in sympatric species of <em>Uca</em> (Ocypodidae) of the Eastern Pacific}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
-          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569&ndash;583.</a></li>
-          <li><a href="references/Barnwell1988.html">Barnwell, F.H. (1988) Stereo-imaging of external genitalia in the neotropical <em>vocator</em>-complex of fiddler crabs. <em>American Zoologist</em> 28(4):133A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Bourdon1970.html">Bourdon, R., and T.E. Bowman (1970) Western Atlantic species of the parasitic genus <em>Leidya</em> (Epicaridea: Bopyridae). <em>Proceedings of the Biological Society of Washington</em> 83:409&ndash;424.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Chace1969.html">Chace, F.A., Jr., and H.H. Hobbs, Jr. (1969) The freshwater and terrestrial decapod crustaceans of the West Indies with special referece to Dominica. <em>United States National Museum Bulletin</em> 292:1&ndash;258.</a></li>
-          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133&ndash;236.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/deHaan1835.html">de Haan, W. (1833&ndash;1850) Crustacea. Pp. 1&ndash;243 in <em>Fauna Japonica sive Descriptio animalium, quae in itinere per Japoniam, jussu et auspiciis superiorum, qui summum in India Batava Imperium tenent, suscepto, annis 1823-1830 collegit, notis, observationibus et adumbrationibus illustravit</em>, P.F. von Siebold, ed. Amsterdam: Lugduni Batavorum.</a></li>
-          <li><a href="references/Fontaine1988.html">Fontaine, L.J., and F.H. Barnwell (1988) Parasitic feminization of fiddler crabs (<em>Uca</em>)<em> </em>from the Caribbean coast of Costa Rica. <em>American Zoologist</em> 28(4):92A.</a></li>
-          <li><a href="references/Fowler1912.html">Fowler, H.W. (1912) The Crustacea of New Jersey. Pp. 29&ndash;650 in <em>Annual Report of the New Jersey State Museum 1911</em>. Trenton, N.J.: MacCrellish &amp; Quigley.</a></li>
-          <li><a href="references/Gerstaeker1901.html">Gerstaecker, A., and A.E. Ortmann (1901) Crustacea: Malacostraca. Pp. 1319 in <em>Die Klassen und Ordnungen der Arthropoden wissenschaftlich dargestellt in Wort und Bild</em>, Volume 5, part 2. Leipzig: C.F. Winter'sche.</a></li>
-          <li><a href="references/Gundlach1887.html">Gundlach, J. (1887) Apuntes para la fauna Puerto-Riqueñia. VI. Crustáceos. <em>Anales de la Sociedad Española de Historia Natural</em> 16(1):115&ndash;199.</a></li>
-          <li><a href="references/Gunther1963.html">Günther, H.-J. (1963) Untersuchungen zur Verbreitung und Ökologie von <em>Uca tangeri</em> an der SW-Iberischen Küste. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 53(3):242&ndash;310.</a></li>
-          <li><a href="references/Herbst1804.html">Herbst, J.F.W. (1804) <em>Versuch einer Naturgeschichte der Krabben und Krebse. Nebst einer systematischen Beschreibung ihrer verschiedenen Arten</em>, Volume 3, no. 4. Zurich: J. C. Fuessly.</a></li>
-          <li><a href="references/Herklots1861.html">Herklots, J.A. (1861) Symbolae Carcinologicae. I. Catalogue des Crustacés qui ont servi de base au système Carcinologique de M. W. de Haan, rédigé d'après la collection du Musée des PayBas et les Crustacés de la Faune du Japon. <em>Tijdschrift voor entomologie</em> 4:116&ndash;156.</a></li>
-          <li><a href="references/Holmes1904.html">Holmes, S.J. (1904) On some new or imperfectly known species of West American Crustacea. <em>Proceedings of the California Academy of Sciences. Third Series. Zoology</em> 3(12):307&ndash;331.</a></li>
-          <li><a href="references/Holthuis1959.1.html">Holthuis, L.B. (1959) The crustacea Decapoda of Suriname (Dutch Guiana). <em>Zoologische Verhandelingen</em> 44(2):1&ndash;296.</a></li>
-          <li><a href="references/Ives1891.html">Ives, J.E. (1891) Crustacea from the northern coast of Yucatan, the harbor of Vera Cruz, the west coast of Florida and the Bermuda Islands. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 43:176&ndash;207.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Lamarck1838.html">Lamarck, J.B.P.A.d. (1838) <em>Histoire Naturelle des Animaux sans Vertèbres</em>. Tenth edition Edition, Volume V. Paris: J. B. Baillière.</a></li>
-          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214&ndash;218.</a></li>
-          <li><a href="references/Latreille1817.2.html">Latreille, P.A. (1817) Gélasime, <em>Gelasimus</em> (Buffon). Pp. 517&ndash;520 in <em>Nouveau dictionnaire d'histoire naturelle, appliquée aux arts, à l'Agriculture, à l'économie rurale et domestique, à l'médecine, etc. Par une société de naturalistes et d'agriculteurs</em>, Volume XII. Paris: Deterville.</a></li>
-          <li><a href="references/Luederwaldt1919.2.html">Luederwaldt, H. (1919) Lista dos Crustaceos superiores (Thoracostraca) do Museu Paulista que foram encontrados no Estado de S. Paulo. <em>Revista do Museu Paulista</em> 11:429&ndash;435.</a></li>
-          <li><a href="references/Luederwaldt1919.1.html">Luederwaldt, H. (1919) Os manguesaes de Santos. <em>Revista do Museu Paulista</em> 11:311&ndash;408.</a></li>
-          <li><a href="references/Luederwaldt1929.html">Luederwaldt, H. (1929) Resultados de uma excursão scientifica á Ilha de São Sebastião no littoral do Estado de São Paulo e em 1925. <em>Revista do Museu Paulista</em> 16:1&ndash;79.</a></li>
-          <li><a href="references/MilneEdwards1837.2.html">Milne Edwards, H. (1837) <em>Historie naturelle des crustaces comprenant l-anatomie, la physiologie et las classification des ces animaux</em>, Volume 2. Paris.</a></li>
-          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
-          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
-          <li><a href="references/Moreira1901.html">Moreira, C. (1901) Contribuições para o conhecimento da fauna Brazileira. Crustaceos do Brazil. <em>Archivos do Museu Nacional do Rio de Janeiro</em> 11:1&ndash;153.</a></li>
-          <li><a href="references/Nobili1901.2.html">Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1&ndash;16.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Oliveira1939.3.html">Oliveira, L.P.H.d. (1939) Observações sobre a biologia dos adultos do genero <em>Uca</em> Leach, 1814. Pp. 490&ndash;497 in <em>&quot;Livro de homenagem&quot; aos professores Alvaro e Miguel Ozorio de Almeida</em>, A.O.d. Almeida and M.O.d. Almeida, eds. Rio de Janeiro: Instituto Oswaldo Cruz.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
-          <li><a href="references/Rankin1898.html">Rankin, W.M. (1898) The Northrop collection of Crustacea from the Bahamas. <em>Annals of the New York Academy of Sciences</em> 11(12):225&ndash;258.</a></li>
-          <li><a href="references/Rathbun1897.2.html">Rathbun, M.J. (1897) List of the decapod Crustacea of Jamaica. <em>Annals of the Institute of Jamaica</em> 1(1):1&ndash;49.</a></li>
-          <li><a href="references/Rathbun1899.html">Rathbun, M.J. (1899) The Brachyura collected by the U. S. Fish Commission steamer Albatross on the voyage from Norfolk, Virginia, to San Francisco, California, 1887-1888. <em>Proceedings of the United States National Museum</em> 21(1162):567&ndash;616.</a></li>
-          <li><a href="references/Rathbun1902.1.html">Rathbun, M.J. (1902) The Brachyura and Macrura of Porto Rico. <em>Bulletin of the United States Fish Commission</em> 20(2):1&ndash;127.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Rodriguez1959.html">Rodriguez, G. (1959) The marine communities of Margarita Island, Venezuela. <em>Bulletin of Marine Science of the Gulf and Caribbean</em> 9(3):237&ndash;280.</a></li>
-          <li><a href="references/Salmon1968.2.html">Salmon, M., and S.P. Atsaides (1968) Visual and acoustical signalling during courtship by fiddler crabs (genus <em>Uca</em>). <em>American Zoologist</em> 8(3):623&ndash;639.</a></li>
-          <li><a href="references/Salmon1988.2.html">Salmon, M., and N. Zucker (1988) Interpreting differences in the reproductive behaviour of fiddler crabs (genus <em>Uca</em>). Pp. 387&ndash;407 in <em>Behavioral Adaptation to Intertidal Life</em>, G. Chelazzi and M. Vannini, eds. New York: Plenum Press.</a></li>
-          <li><a href="references/Schafer1954.html">Schäfer, W. (1954) Form und Funktion der Brachyuren-Schere. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 489:1&ndash;65.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
-          <li><a href="references/Thurman1981.1.html">Thurman, C.L., II (1981) <em>Uca marguerita</em>, a new species of fiddler crab (Brachyura: Ocypodidae) from eastern Mexico. <em>Proceedings of the Biological Society of Washington</em> 94(1):169&ndash;180.</a></li>
-          <li><a href="references/vonHagen1967.1.html">von Hagen, H.-O. (1967) Klopfsignale auch bei Grapsiden (Decapoda Brachyura). <em>Naturwissenschaften</em> 54(7):177&ndash;178.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1969.html">von Hagen, H.-O. (1969) Stärlinge und Kärpflinge als Eiräuber bei der Winkerkrabbe <em>Uca vocator</em> (Herbst). <em>Zeitschrift für Tierpsychologie</em> 26(1):1&ndash;6. {Starlings and carps (birds and fish) as egg robbers of the fiddler crab <em>Uca vocator</em> (Herbst)}</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1970.2.html">von Hagen, H.-O. (1970) Die Balz von <em>Uca vocator</em> (Herbst) als ökologisches Problem. <em>forma et functio</em> 2:238&ndash;253. {Relations of courtship behaviour and habitat in <em>Uca vocator</em> (Herbst)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
-          <li><a href="references/vonHagen1970.3.html">von Hagen, H.-O. (1970) Zur Deutung langstielger und gehörnter Augen bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:13&ndash;57. {On the significance of elongated and horned eyes in Ocypodid crabs}</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
-          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
-          <li><a href="references/vonMartens1869.html">von Martens, E. (1869) Sudbrasilische Süss-und Brackwasser-Crustaceen nach den Sammlungen des Dr. Reinh. Henesel. <em>Archiv für Naturgeschicthe</em> 35(1):1&ndash;37.</a></li>
-          <li><a href="references/vonMartens1872.html">von Martens, E. (1872) Ueber Cubanische Crustaceen nach den Sammlungen Dr. J. Gudlach's. <em>Archiv für Naturgeschicthe</em> 38(1):77&ndash;147.</a></li>
-          <li><a href="references/Weygoldt1977.html">Weygoldt, P. (1977) Communication in crustaceans and arachnids. Pp. 303&ndash;333 in <em>How Animals Communicate</em>, T.A. Sebeok, ed. Bloomington, Indiana: Indiana University Press.</a></li>
-          <li><a href="references/White1847.1.html">White, A. (1847) <em>List of the specimens of Crustacea in the collection of the British Museum</em>. London: Edward Newman.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1969.html">Altevogt (1969)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Barnwell1968.2.html">Barnwell (1968)</a>, 
+<a href="references/Barnwell1988.html">Barnwell (1988)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Bourdon1970.html">Bourdon &amp; Bowman (1970)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Chace1969.html">Chace &amp; Hobbs (1969)</a>, 
+<a href="references/Coelho1972.2.html">Coelho &amp; Ramos (1972)</a>, 
+<a href="references/Crane1943.2.html">Crane (1943)</a>, 
+<a href="references/Crane1966.1.html">Crane (1966)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/deHaan1835.html">de Haan (1833-1850)</a>, 
+<a href="references/Fontaine1988.html">Fontaine &amp; Barnwell (1988)</a>, 
+<a href="references/Fowler1912.html">Fowler (1912)</a>, 
+<a href="references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a>, 
+<a href="references/Gundlach1887.html">Gundlach (1887)</a>, 
+<a href="references/Gunther1963.html">Günther (1963)</a>, 
+<a href="references/Herbst1804.html">Herbst (1804)</a>, 
+<a href="references/Herklots1861.html">Herklots (1861)</a>, 
+<a href="references/Holmes1904.html">Holmes (1904)</a>, 
+<a href="references/Holthuis1959.1.html">Holthuis (1959)</a>, 
+<a href="references/Ives1891.html">Ives (1891)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Lamarck1838.html">Lamarck (1838)</a>, 
+<a href="references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a>, 
+<a href="references/Latreille1817.2.html">Latreille (1817)</a>, 
+<a href="references/Luederwaldt1919.2.html">Luederwaldt (1919)</a>, 
+<a href="references/Luederwaldt1919.1.html">Luederwaldt (1919)</a>, 
+<a href="references/Luederwaldt1929.html">Luederwaldt (1929)</a>, 
+<a href="references/MilneEdwards1837.2.html">Milne Edwards (1837)</a>, 
+<a href="references/MilneEdwards1852.html">Milne Edwards (1852)</a>, 
+<a href="references/MilneEdwards1854.2.html">Milne Edwards (1854)</a>, 
+<a href="references/MilneEdwards1923.html">Milne-Edwards &amp; Bouvier (1923)</a>, 
+<a href="references/Moreira1901.html">Moreira (1901)</a>, 
+<a href="references/Nobili1901.2.html">Nobili (1901)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Oliveira1939.3.html">Oliveira (1939)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Powers1977.html">Powers (1977)</a>, 
+<a href="references/Rankin1898.html">Rankin (1898)</a>, 
+<a href="references/Rathbun1897.2.html">Rathbun (1897)</a>, 
+<a href="references/Rathbun1899.html">Rathbun (1899)</a>, 
+<a href="references/Rathbun1902.1.html">Rathbun (1902)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rodriguez1959.html">Rodriguez (1959)</a>, 
+<a href="references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a>, 
+<a href="references/Salmon1988.2.html">Salmon &amp; Zucker (1988)</a>, 
+<a href="references/Schafer1954.html">Schäfer (1954)</a>, 
+<a href="references/Smith1870.2.html">Smith (1870)</a>, 
+<a href="references/Thurman1981.1.html">Thurman (1981)</a>, 
+<a href="references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a>, 
+<a href="references/vonHagen1967.1.html">von Hagen (1967)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1969.html">von Hagen (1969)</a>, 
+<a href="references/vonHagen1970.4.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1970.2.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1970.3.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1975.html">von Hagen (1975)</a>, 
+<a href="references/vonHagen1987.1.html">von Hagen (1987)</a>, 
+<a href="references/vonMartens1869.html">von Martens (1869)</a>, 
+<a href="references/vonMartens1872.html">von Martens (1872)</a>, 
+<a href="references/Weygoldt1977.html">Weygoldt (1977)</a>, 
+<a href="references/White1847.1.html">White (1847)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

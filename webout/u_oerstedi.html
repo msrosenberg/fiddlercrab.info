@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_oerstedi_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to Panama</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_oerstedi_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -107,6 +108,21 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_oerstedi02.html"><img class="thumbnail" src="photos/U_oerstedi02tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_oerstedi03.html"><img class="thumbnail" src="photos/U_oerstedi03tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_oerstedi04.html"><img class="thumbnail" src="photos/U_oerstedi04tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_oerstedi05.html"><img class="thumbnail" src="photos/U_oerstedi05tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_oerstedi06.html"><img class="thumbnail" src="photos/U_oerstedi06tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_oerstedi07.html"><img class="thumbnail" src="photos/U_oerstedi07tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_oerstedi_batuenta_saltitanta_inaequalis01.html"><img class="thumbnail" src="photos/U_oerstedi_batuenta_saltitanta_inaequalis01tn.jpg" alt="Uca oerstedi thumbnail" title="Uca oerstedi" /></a>
@@ -141,34 +157,31 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1943.3.html">Crane, J. (1943) Display, breeding and relationships of fiddler crabs (Brachyura, Genus <em>Uca</em>) in the Northeastern United States. <em>Zoologica NY</em> 28:217&ndash;223.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Green1961.html">Green, J. (1961) <em>A Biology of Crustacea</em>. Chicago, IL: Quadrangle Books.</a></li>
-          <li><a href="references/Neiman1997.html">Neiman, M., and F.H. Barnwell (1997) Morphometric differences in small claws of the deposit-feeding fiddler crabs (<em>Uca</em> spp.). <em>American Zoologist</em> 37(5):47A.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Portell2012.html">Portell, R.W., J. Luque, A.J.W. Hendy, and J.H. Christy (2012) Fidelity of marine invertebrate death and fossil assemblages in a coastal marine ecosystem, Bahia Bique, Panama. <em>Abstracts with Programs</em> 44(7):268.</a></li>
-          <li><a href="references/Rathbun1904.1.html">Rathbun, M.J. (1904) Descriptions of three new species of American crabs. <em>Proceedings of the Biological Society of Washington</em> 17:161&ndash;162.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1943.3.html">Crane (1943)</a>, 
+<a href="references/Crane1944.html">Crane (1944)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1966.1.html">Crane (1966)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Green1961.html">Green (1961)</a>, 
+<a href="references/Neiman1997.html">Neiman &amp; Barnwell (1997)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Portell2012.html">Portell <em>et al.</em> (2012)</a>, 
+<a href="references/Rathbun1904.1.html">Rathbun (1904)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

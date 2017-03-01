@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_terpsichores_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Nicaragua to northern Peru</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_terpsichores_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -111,6 +112,45 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_terpsichores03.html"><img class="thumbnail" src="photos/U_terpsichores03tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores04.html"><img class="thumbnail" src="photos/U_terpsichores04tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores05.html"><img class="thumbnail" src="photos/U_terpsichores05tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores06.html"><img class="thumbnail" src="photos/U_terpsichores06tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores07.html"><img class="thumbnail" src="photos/U_terpsichores07tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores08.html"><img class="thumbnail" src="photos/U_terpsichores08tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores09.html"><img class="thumbnail" src="photos/U_terpsichores09tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores10.html"><img class="thumbnail" src="photos/U_terpsichores10tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores11.html"><img class="thumbnail" src="photos/U_terpsichores11tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores12.html"><img class="thumbnail" src="photos/U_terpsichores12tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores13.html"><img class="thumbnail" src="photos/U_terpsichores13tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores14.html"><img class="thumbnail" src="photos/U_terpsichores14tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores15.html"><img class="thumbnail" src="photos/U_terpsichores15tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_terpsichores16.html"><img class="thumbnail" src="photos/U_terpsichores16tn.jpg" alt="Uca terpsichores thumbnail" title="Uca terpsichores" /></a>
       </figure>
     </section>
 
@@ -162,61 +202,60 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1957.2.html">Altevogt, R. (1957) Beiträge zur Biologie und Ethologie von <em>Dotilla blanfordi</em> Alcock und <em>Dotilla myctiroides</em> (Milne Edwards) (Crustacea Decapoda). <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(4):369&ndash;388.</a></li>
-          <li><a href="references/Altevogt1970.html">Altevogt, R. (1970) Form und Funktion der vibratorischen Signale von <em>Uca tangeri</em> und <em>Uca inaequalis</em> (Crustacea, Ocypodidae). <em>forma et functio</em> 2:178&ndash;187. {Form and function of vibrational signals in <em>Uca tangeri</em> and <em>Uca inaequalis</em> (Crustacea, Ocypodidae)}</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
-          <li><a href="references/Bailey2012.html">Bailey, N.W. (2012) Evolutionary models of extended phenotypes. <em>Trends in Ecology &amp; Evolution</em> 27(10):561&ndash;569.</a></li>
-          <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Christy2006.2.html">Christy, J.H., and S. Dennenmoser (2006) Fiddler crab claws are both beautiful and powerful weapons: a paradox resolved. <em>Integrative and Comparative Biology</em> 46(Supplement):e25.</a></li>
-          <li><a href="references/Christy1996.html">Christy, J.H., S. Goshima, and T.J. Kreuter (1996) Incidental mate choice in the tropical fiddler crab <em>Uca musica</em>. <em>American Zoologist</em> 36(5):93A.</a></li>
-          <li><a href="references/Christy2005.html">Christy, J.H., J.R. Rissanen, and P.R.Y. Backwell (2005) A one-day pause in the biweekly courtship cycle of a tropical fiddler crab allows females to avoid releasing larvae during twilight. <em>Integrative and Comparative Biology</em> 45(6):977.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1966.1.html">Crane, J. (1966) Combat, display and ritualization in fiddler crabs (Ocypodidae, genus <em>Uca</em>). <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 251:459&ndash;472.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Dumortier1963.html">Dumortier, B. (1963) Morphology of sound emission apparatus in Arthropoda. Pp. 277&ndash;345 in <em>Acoustic Behaviour of Animals</em>, R.-G. Busnel, ed. Amsterdam: Elsevier.</a></li>
-          <li><a href="references/Dunham1988.html">Dunham, D.W., and S.L. Gilchrist (1988) Behavior. Pp. 97&ndash;138 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/GuinotDumortier1960.html">Guinot-Dumortier, D., and B. Dumortier (1960) La stridulation chez les crabes. <em>Crustaceana</em> 1(2):117&ndash;155.</a></li>
-          <li><a href="references/Harris1998.html">Harris, S.E., D.M. Woodward, J.L. Fontaine, and F.H. Barnwell (1998) Visual and acoustic signalling in the musical fiddler crab (<em>Uca musica</em>) from western Mexico. <em>American Zoologist</em> 38(5):102A.</a></li>
-          <li><a href="references/Hyatt1973.html">Hyatt, G.W. (1973) Physiological and behavioural studies of color vision in fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 90  (Urbana-Champaign: University of Illinois).</a></li>
-          <li><a href="references/Hyatt1975.html">Hyatt, G.W. (1975) Physiological and behavioral evidence for color discrimination by fiddler crabs (Brachyura, Ocypodidae, genus <em>Uca</em>). Pp. 333&ndash;365 in <em>Physiological Ecology of Estuarine Organisms</em>, F.J. Vernberg, ed. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Kim2004.2.html">Kim, T.W., R. Rissanen, P. Rebeiro, J.H. Christy, and J.C. Choe (2004) Sexual differences in the affects of supplimental food on the semilunar reproductive rhythms of an intertidal crab. <em>Integrative and Comparative Biology</em> 44(6):583.</a></li>
-          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
-          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1983.html">Powers, L.W., and D.E. Bliss (1983) Terrestrial adaptations. Pp. 271&ndash;333 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
-          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
-          <li><a href="references/Salmon1983.2.html">Salmon, M., and G.W. Hyatt (1983) Communication. Pp. 1&ndash;40 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
-          <li><a href="references/Sastry1983.html">Sastry, A.N. (1983) Ecological aspects of reproduction. Pp. 179&ndash;270 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
-          <li><a href="references/Schone1961.html">Schöne, H. (1961) Complex behavior. Pp. 465&ndash;520 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume 2. New York: Academic Press.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
-          <li><a href="references/vonHagen1975.html">von Hagen, H.-O. (1975) Klassifikation und phylogenetische Einordnung der Lautäußerungen von Ocypodiden und Grapsiden (Crustacea, Brachyura). <em>Zeitschrift fur zoologische Systematik und Evolutionsforschung</em> 13(4):300&ndash;316. {Classification and evolution of sound production in Ocypodid and Grapsid crabs (Crustacea, Brachyura)}</a></li>
-          <li><a href="references/Zucker1972.html">Zucker, N. (1972) Shelter building by the tropical fiddler crab <em>Uca terpsichores</em>. <em>American Zoologist</em> 12(4):655.</a></li>
-          <li><a href="references/Zucker1973.html">Zucker, N. (1973) Social behavior in the tropical fiddler crab <em>Uca terpsichores</em>. Pp. 150  (Champagne-Urbana: University of Illinois).</a></li>
-          <li><a href="references/Zucker1974.html">Zucker, N. (1974) Shelter building as a means of reducing territory size in the fiddler crab, <em>Uca terpsichores</em> (Crustacea: Ocypodidae). <em>American Midland Naturalist</em> 91(1):224&ndash;236.</a></li>
-          <li><a href="references/Zucker1976.html">Zucker, N. (1976) Behavioral rhythms in the fiddler crab <em>Uca terpsichores</em>. Pp. 145&ndash;159 in <em>Biological Rhythms in the Marine Environment</em>, P.J. DeCoursey, ed., Volume 4. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Zucker1977.html">Zucker, N. (1977) Neighbor dislodgement and burrow filling activities by male <em>Uca musica terpsichores</em>: A spacing mechanism. <em>Marine Biology</em> 41(3):281&ndash;286.</a></li>
-          <li><a href="references/Zucker1980.html">Zucker, N. (1980) Social inhibition of courtship in neotropical fiddler crabs <em>Uca musica</em>. <em>American Zoologist</em> 20(4):727.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1957.2.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1970.html">Altevogt (1970)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Bailey2012.html">Bailey (2012)</a>, 
+<a href="references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Christy2006.2.html">Christy &amp; Dennenmoser (2006)</a>, 
+<a href="references/Christy1996.html">Christy <em>et al.</em> (1996)</a>, 
+<a href="references/Christy2005.html">Christy <em>et al.</em> (2005)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1943.2.html">Crane (1943)</a>, 
+<a href="references/Crane1944.html">Crane (1944)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1966.1.html">Crane (1966)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Dumortier1963.html">Dumortier (1963)</a>, 
+<a href="references/Dunham1988.html">Dunham &amp; Gilchrist (1988)</a>, 
+<a href="references/Greenspan1975.html">Greenspan (1975)</a>, 
+<a href="references/GuinotDumortier1960.html">Guinot-Dumortier &amp; Dumortier (1960)</a>, 
+<a href="references/Harris1998.html">Harris <em>et al.</em> (1998)</a>, 
+<a href="references/Hyatt1973.html">Hyatt (1973)</a>, 
+<a href="references/Hyatt1975.html">Hyatt (1975)</a>, 
+<a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
+<a href="references/Kerr2010.html">Kerr <em>et al.</em> (2010)</a>, 
+<a href="references/Kim2006.html">Kim <em>et al.</em> (2006)</a>, 
+<a href="references/Kim2004.2.html">Kim <em>et al.</em> (2004)</a>, 
+<a href="references/Peters1955.html">Peters (1955)</a>, 
+<a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Powers1983.html">Powers &amp; Bliss (1983)</a>, 
+<a href="references/Powers1976.html">Powers &amp; Cole (1976)</a>, 
+<a href="references/Salmon1983.2.html">Salmon &amp; Hyatt (1983)</a>, 
+<a href="references/Sastry1983.html">Sastry (1983)</a>, 
+<a href="references/Schone1961.html">Schöne (1961)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1975.html">von Hagen (1975)</a>, 
+<a href="references/Zucker1972.html">Zucker (1972)</a>, 
+<a href="references/Zucker1973.html">Zucker (1973)</a>, 
+<a href="references/Zucker1974.html">Zucker (1974)</a>, 
+<a href="references/Zucker1976.html">Zucker (1976)</a>, 
+<a href="references/Zucker1977.html">Zucker (1977)</a>, 
+<a href="references/Zucker1980.html">Zucker (1980)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

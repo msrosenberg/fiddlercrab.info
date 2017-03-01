@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_uruguayensis_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Brazil (Cabo Frio) to Argentina (Mar Chiquita)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_uruguayensis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -145,48 +146,46 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Coelho1972.2.html">Coelho, P.A., and M.d.A. Ramos (1972) A constituiçāo e a distribuiçāo da fauna de decápodos do litoral leste da América do Sul entre en latitudes de 5° N e 39° S. <em>Trabalhos Oceanográficos da Universidade Federal de Pernambuco</em> 13:133&ndash;236.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Dansereau1947.html">Dansereau, P. (1947) Zonation et succession sur la restinga de Rio de Janeiro. I. Halosère. <em>Revue Canadienne de Biologie</em> 6:448&ndash;477.</a></li>
-          <li><a href="references/Fimpel1975.html">Fimpel, E. (1975) Phänomene der Landadaptation bei terrestrischen und semiterrestrischen Brachyura der brasilianischen Küste (Malacostraca, Decapoda). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 102(2):173&ndash;214. {On the landadaptation of terrestrial and semiterrestrial brachyura from the Brasilian coast}</a></li>
-          <li><a href="references/Hartnoll1988.2.html">Hartnoll, R.G. (1988) Evolution, systematics, and geographical distribution. Pp. 6&ndash;54 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Lacerda1976.html">Lacerda, T.P. (1976) Hormone pédunculaire et rythme pigmentaire chez <em>Uca olympioi</em> et <em>Uca pugnax</em>. <em>Acta Biológica Paranaense</em> 5(1&ndash;2):49&ndash;61.</a></li>
-          <li><a href="references/Luederwaldt1919.2.html">Luederwaldt, H. (1919) Lista dos Crustaceos superiores (Thoracostraca) do Museu Paulista que foram encontrados no Estado de S. Paulo. <em>Revista do Museu Paulista</em> 11:429&ndash;435.</a></li>
-          <li><a href="references/Luederwaldt1919.1.html">Luederwaldt, H. (1919) Os manguesaes de Santos. <em>Revista do Museu Paulista</em> 11:311&ndash;408.</a></li>
-          <li><a href="references/Luederwaldt1929.html">Luederwaldt, H. (1929) Resultados de uma excursão scientifica á Ilha de São Sebastião no littoral do Estado de São Paulo e em 1925. <em>Revista do Museu Paulista</em> 16:1&ndash;79.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Martins1959.html">Martins, T., W. Ladosky, and B.M. Castro (1959) A regulação do tempo biológico inversão experimental do rítmo diurno dos cromatóforos de <em>Uca olimpioi</em> (Nota prévia). <em>Anais Da Academia Brasileira De Ciencias</em> 31:87&ndash;90.</a></li>
-          <li><a href="references/Nobili1901.2.html">Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1&ndash;16.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Oliveira1939.3.html">Oliveira, L.P.H.d. (1939) Observações sobre a biologia dos adultos do genero <em>Uca</em> Leach, 1814. Pp. 490&ndash;497 in <em>&quot;Livro de homenagem&quot; aos professores Alvaro e Miguel Ozorio de Almeida</em>, A.O.d. Almeida and M.O.d. Almeida, eds. Rio de Janeiro: Instituto Oswaldo Cruz.</a></li>
-          <li><a href="references/Oliveira1953.html">Oliveira, L.P.H.d., and L. Krau (1953) Levantamento biogeográfico da Baía de Guanabara II--Crescimento do manguezal na Ilha do Pinheiro. <em>Memórias do Instituto Oswaldo Cruz</em> 51:503&ndash;544.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Vernberg1966.7.html">Vernberg, F.J., and W.B. Vernberg (1966) Comparative metabolic studies on northern and southern hemisphere fiddler crabs. <em>American Zoologist</em> 6(3):327.</a></li>
-          <li><a href="references/Vernberg1966.5.html">Vernberg, F.J., and W.B. Vernberg (1966) Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>--VII. Metabolic-temperature acclimation responses in southern hemisphere crabs. <em>Comparative Biochemistry and Physiology</em> 19(3):489&ndash;524.</a></li>
-          <li><a href="references/Vernberg1967.1.html">Vernberg, F.J., and W.B. Vernberg (1967) Thermal lethal limits of southern hemisphere <em>Uca</em> crabs. Studies on the physiological variation between tropical and temperate zone fiddler crabs of the genus <em>Uca</em>. IX. <em>Oikos</em> 18(1):118&ndash;123.</a></li>
-          <li><a href="references/Vernberg1969.1.html">Vernberg, F.J., and W.B. Vernberg (1969) Thermal influence on invertebrate respiration. <em>Chesapeake Science</em> 10(3&ndash;4):234&ndash;240.</a></li>
-          <li><a href="references/Vernberg1970.html">Vernberg, F.J., and W.B. Vernberg (1970) <em>The Animal and the Environment</em>: Holt, Rinehard and Winston.</a></li>
-          <li><a href="references/Vernberg1972.4.html">Vernberg, W.B., and F.J. Vernberg (1972) <em>Environmental Physiology of Marine Animals</em>. New York: Springer-Verlag.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.1.html">von Hagen, H.-O. (1970) Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung <em>Uca</em>). <em>Zoologische Mededelingen</em> 44(15):217&ndash;235.</a></li>
-          <li><a href="references/vonHagen1987.1.html">von Hagen, H.-O. (1987) Morphologie und Winkbalz einer neuen <em>Uca</em>-Art (Crustacea, Brachyura) aus dem Staat Espirito Santo (Brasilien). <em>Mitteilungen aus dem hamburgischen zoologischen Museum und Institut</em> 84:81&ndash;94. {Morphology and waving display of a new species of <em>Uca</em> (Crustacea, Brachyura) from the state of Espirito Santo (Brazil)}</a></li>
-          <li><a href="references/Warner1969.html">Warner, G.F. (1969) The occurrence and distribution of crabs in a Jamaican mangrove swamp. <em>Journal of Animal Ecology</em> 38(2):379&ndash;389.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Coelho1972.2.html">Coelho &amp; Ramos (1972)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Dansereau1947.html">Dansereau (1947)</a>, 
+<a href="references/Fimpel1975.html">Fimpel (1975)</a>, 
+<a href="references/Hartnoll1988.2.html">Hartnoll (1988)</a>, 
+<a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
+<a href="references/Lacerda1976.html">Lacerda (1976)</a>, 
+<a href="references/Luederwaldt1919.2.html">Luederwaldt (1919)</a>, 
+<a href="references/Luederwaldt1919.1.html">Luederwaldt (1919)</a>, 
+<a href="references/Luederwaldt1929.html">Luederwaldt (1929)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Martins1959.html">Martins <em>et al.</em> (1959)</a>, 
+<a href="references/Nobili1901.2.html">Nobili (1901)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Oliveira1939.3.html">Oliveira (1939)</a>, 
+<a href="references/Oliveira1953.html">Oliveira &amp; Krau (1953)</a>, 
+<a href="references/Olivier1972.html">Olivier <em>et al.</em> (1972)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Vernberg1966.7.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="references/Vernberg1966.5.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="references/Vernberg1967.1.html">Vernberg &amp; Vernberg (1967)</a>, 
+<a href="references/Vernberg1969.1.html">Vernberg &amp; Vernberg (1969)</a>, 
+<a href="references/Vernberg1970.html">Vernberg &amp; Vernberg (1970)</a>, 
+<a href="references/Vernberg1972.4.html">Vernberg &amp; Vernberg (1972)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="references/vonHagen1987.1.html">von Hagen (1987)</a>, 
+<a href="references/Warner1969.html">Warner (1969)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_crenulata_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: USA (rarely as far north as Santa Barbara) to Mexico (Nayarit)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_crenulata_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -156,90 +157,89 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Allen1976.html">Allen, R.K. (1976) <em>Common Intertidal Invertebrates of Southern California</em>. Revised Edition. Palo Alto, CA: Peek Publications.</a></li>
-          <li><a href="references/Baldwin1976.3.html">Baldwin, G.F., and L.B. Kirschener (1976) Sodium and chloride regulation in <em>Uca</em> adapted to 10% sea water. <em>Physiological Zoology</em> 49(2):172&ndash;180.</a></li>
-          <li><a href="references/Baldwin1976.2.html">Baldwin, G.F., and L.B. Kirschener (1976) Sodium and chloride regulation in <em>Uca</em> adapted to 175% sea water. <em>Physiological Zoology</em> 49(2):158&ndash;171.</a></li>
-          <li><a href="references/Barnwell1976.html">Barnwell, F.H. (1976) Variation in the form of the tide and some problems it poses for biological timing systems. Pp. 161&ndash;187 in <em>Biological Rhythms in the Marine Environment</em>, P.J. DeCoursey, ed., Volume 4. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Bayley1972.html">Bayley, I.A.E. (1972) Salinity tolerance and osmotic behavior of animals in athalassic saline and marine hypersaline waters. <em>Annual Review of Ecology and Systematics</em> 3:233&ndash;268.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bliss1968.1.html">Bliss, D.E. (1968) Transition from water to land in decapod crustaceans. <em>American Zoologist</em> 8(3):355&ndash;392.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/DeCoursey1983.html">DeCoursey, P.J. (1983) Biological timing. Pp. 107&ndash;162 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
-          <li><a href="references/Edney1961.html">Edney, E.B. (1961) The water and heat relationships of fiddler crabs (<em>Uca</em> spp.). <em>Transactions of the Royal Society of South Africa</em> 36(2):71&ndash;91.</a></li>
-          <li><a href="references/Faxon1895.html">Faxon, W. (1895) Reports on an exploration off the west coasts of Mexico, Central and South America, and off the Galapagos Islands, in charge of Alexander Agassiz, by the U.S. Fish Commission steamer “Albatross,” during 1891, Lieut.-Commander Z.L. Tanner, U.S.N. commanding. XV. The stalk-eyed Crustacea. <em>Memoirs of the Museum of Comparative Zoölogy at Harvard College</em> 18:1&ndash;292.</a></li>
-          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105&ndash;123.</a></li>
-          <li><a href="references/Green1980.html">Green, C.J.R. (1980) Behavioral taxonomy resolves differences between Gulf of California <em>Uca</em> species (Brachyura, Ocypodidae). <em>American Zoologist</em> 20(4):957.</a></li>
-          <li><a href="references/Green1959.html">Green, J.W., M. Harsch, L. Barr, and C.L. Prosser (1959) The regulation of water and salt by the fiddler crabs, <em>Uca pugnax</em> and <em>Uca pugilator</em>. <em>Biological Bulletin</em> 116(1):70&ndash;87.</a></li>
-          <li><a href="references/Greenaway1988.html">Greenaway, P. (1988) Ion and water balance. Pp. 211&ndash;248 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Gross1955.html">Gross, W.J. (1955) Aspects of osmotic regulation in crabs showing the terrestrial habit. <em>American Naturalist</em> 89(847):205&ndash;222.</a></li>
-          <li><a href="references/Gross1957.1.html">Gross, W.J. (1957) An analysis of response to osmotic stress in selected decapod crustacea. <em>Biological Bulletin</em> 112(1):43&ndash;62.</a></li>
-          <li><a href="references/Gross1961.html">Gross, W.J. (1961) Osmotic tolerance and regulation in crabs from a hypersaline lagoon. <em>Biological Bulletin</em> 121(2):290&ndash;301.</a></li>
-          <li><a href="references/Gross1964.html">Gross, W.J. (1964) Trends in water and salt regulation among aquatic and amphibious crabs. <em>Biological Bulletin</em> 127(3):447&ndash;466.</a></li>
-          <li><a href="references/Headstrom1979.html">Headstrom, R. (1979) <em>Lobsters, Crabs, Shrimps, and Their Relatives</em>. London: A.S. Barnes.</a></li>
-          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Hinton1969.html">Hinton, S. (1969) <em>Seashore Life of Southern California</em>. Berkeley: University of California Press.</a></li>
-          <li><a href="references/Holmes1900.html">Holmes, S.J. (1900) Synopsis of California stalk-eyes Crustacea. <em>Occasional Papers of the California Academy of Sciences</em> 7:1&ndash;262.</a></li>
-          <li><a href="references/Holmes1904.html">Holmes, S.J. (1904) On some new or imperfectly known species of West American Crustacea. <em>Proceedings of the California Academy of Sciences. Third Series. Zoology</em> 3(12):307&ndash;331.</a></li>
-          <li><a href="references/Honegger1973.2.html">Honegger, H.-W. (1973) Rhythmic activity responses of the fiddler crab <em>Uca crenulata</em> to artifical tides and artificial light. <em>Marine Biology</em> 21(3):196&ndash;202.</a></li>
-          <li><a href="references/Honegger1973.1.html">Honegger, H.-W. (1973) Rhythmic motor activity responses of the California fiddler crab <em>Uca crenulata</em> to artifical light conditions. <em>Marine Biology</em> 18(1):19&ndash;31.</a></li>
-          <li><a href="references/Honegger1976.html">Honegger, H.-W. (1976) Locomotor activity in <em>Uca crenulata</em>, and the response to two Zeitgebers, light-dark and tides. Pp. 93&ndash;102 in <em>Biological Rhythms in the Marine Environment</em>, P.J. DeCoursey, ed., Volume 4. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Jansen1970.html">Jansen, P. (1970) Phsyiologisch-ökologische Untersuchungen zum &quot;Posen&quot; von <em>Uca tangeri</em>. <em>forma et functio</em> 2:58&ndash;100. {Eco-physiological studies on the &quot;posing&quot; behavior of <em>Uca tangeri</em>}</a></li>
-          <li><a href="references/Johnson1927.html">Johnson, M.E., and H.J. Snook (1927) <em>Seashore Animals of the Pacific Coast</em>. New York: Macmillan.</a></li>
-          <li><a href="references/Jones1941.html">Jones, L.L. (1941) Osmotic regulation in several crabs of the Pacific coast of North America. <em>Journal of Cellular and Comparative Physiology</em> 18(1):79&ndash;92.</a></li>
-          <li><a href="references/Kaiser1975.html">Kaiser, H., and U. Lehmann (1975) Tidal and spontaneous activity patterns in fiddler crabs. II. Stochastic models and simulations. <em>Journal of Comparative Physiology</em> 96(1):1&ndash;26.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Kinne1963.html">Kinne, O. (1963) Adaptation, a primary mechanism of evolution. Pp. 27&ndash;50 in <em>Phylogeny and Evolution of Crustacea</em>, H.B. Whittington and W.D.I. Rolfe, eds. Cambridge, MA: Museum of Comparative Zoology.</a></li>
-          <li><a href="references/Lehmann1976.html">Lehmann, U. (1976) Interpretation of entrained and free-running locomotor activity patterns of <em>Uca</em>. Pp. 77&ndash;91 in <em>Biological Rhythms in the Marine Environment</em>, P.J. DeCoursey, ed., Volume 4. Columbia, SC: University of South Carolina Press.</a></li>
-          <li><a href="references/Lehmann1974.html">Lehmann, U., D. Neumann, and H. Kaiser (1974) Gezeitenrhythmische und spontane Aktivitätsmuster von Winkerkrabben. I. Ein neuer Ansatz zur quantitativen Analyse von Lokomotionsrhythmen. <em>Journal of Comparative Physiology</em> 91(2):187&ndash;221.</a></li>
-          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
-          <li><a href="references/Lockwood1962.html">Lockwood, A.P.M. (1962) The osmoregulation of Crustacea. <em>Biological Reviews</em> 37(2):257&ndash;305.</a></li>
-          <li><a href="references/Lockwood1967.html">Lockwood, A.P.M. (1967) <em>Aspects of the Physiology of Crustacea</em>. San Francisco, CA: W. H. Freeman and Company.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Mantel1983.html">Mantel, L.H., and L.L. Farmer (1983) Osmotic and ionic regulation. Pp. 54&ndash;161 in <em>The Biology of Crustacea, Volume 5: Internal Anatomy and Physiological Regulation</em>, L.H. Mantel, ed., Volume 5. New York: Academic Press.</a></li>
-          <li><a href="references/McFaddon2003.html">McFadden, A., and C.L. Thurman, II (2003) Osmoregulation by fiddler crabs (genus <em>Uca</em>) from California and South Florida. <em>Integrative and Comparative Biology</em> 43(6):1044.</a></li>
-          <li><a href="references/Naiditch2001.html">Naiditch, S.E., J.M. Neuffer, D. Woodward, and S.C. Harris Cotner (2001) Interspecific aggression in fiddler crabs, genus <em>Uca</em>: Part 2: Fight elements. <em>American Zoologist</em> 41(6):1535.</a></li>
-          <li><a href="references/Neuffer2001.html">Neuffer, J.M., S.E. Naiditch, S.C. Harris Cotner, and D. Woodward (2001) Aggression in fiddler crabs, genus <em>Uca</em>: Part 1. <em>American Zoologist</em> 41(6):1538.</a></li>
-          <li><a href="references/Nobili1899.1.html">Nobili, G. (1899) Intorno ad alcuni Crostacei Decapodi del Brasile. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 14(355):1&ndash;6.</a></li>
-          <li><a href="references/Nobili1901.3.html">Nobili, G. (1901) Viaggio del Dr. Enrico Festa nella Repubblica dell'Ecuador e regioni vicine. XXIII. Decapodi e Stomatopodi. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(415):1&ndash;58.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Potts1964.html">Potts, W.F.W., and G. Parry (1964) <em>Osmotic and Ionic Regulation in Animals</em>. New York: Pergamon Press.</a></li>
-          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
-          <li><a href="references/Przibram1905.html">Przibram, H. (1905) Die &quot;Heterochelie&quot; bei decapoden Crustaceen (zugleich: Experimentelle Studien über Regeneration. Dritte Mitteilung). <em>Archiv für Entwicklungsmechanik der Organismen</em> 19(2):181&ndash;247.</a></li>
-          <li><a href="references/Rathbun1893.html">Rathbun, M.J. (1893) Descriptions of new genera and species of crabs from the west coast of North America and the Sandwich Islands. <em>Proceedings of the United States National Museum</em> 16(933):223&ndash;260.</a></li>
-          <li><a href="references/Rathbun1899.html">Rathbun, M.J. (1899) The Brachyura collected by the U. S. Fish Commission steamer Albatross on the voyage from Norfolk, Virginia, to San Francisco, California, 1887-1888. <em>Proceedings of the United States National Museum</em> 21(1162):567&ndash;616.</a></li>
-          <li><a href="references/Rathbun1900.2.html">Rathbun, M.J. (1900) Synopses of North-American invertebrates. XI. The Catometopous or Grapsoid crabs of North America. <em>American Naturalist</em> 34(403):583&ndash;592.</a></li>
-          <li><a href="references/Rathbun1904.2.html">Rathbun, M.J. (1904) Decapod crustaceans of the northwest coast of North America. Pp. 1&ndash;210 in <em>Harriman Alaska Expedition with cooperation of Washington Academy of Sciences. Alaska</em>, M.J. Rathbun, H. Richardson, S.J. Holmes and L.J. Cole, eds., Volume 10. New York: Doubleday, Page &amp; Co.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Rathbun1923.html">Rathbun, M.J. (1923) The Brachyuran crabs collected by the U.S. Fisheries steamer 'Albatross' in 1911, chiefly on the west coast of Mexico. <em>Bulletin of the American Museum of Natural History</em> 48(8):619&ndash;637.</a></li>
-          <li><a href="references/Rathbun1924.4.html">Rathbun, M.J. (1924) Expedition of the California Academy of Sciences to the Gulf of California in 1921. Crustacea (Brachyura). <em>Proceedings of the California Academy of Sciences. Fourth Series</em> 13(23):373&ndash;379.</a></li>
-          <li><a href="references/Ricketts1968.html">Ricketts, E.F., J. Calvin, and J.W. Hedgpeth (1968) <em>Between Pacific Tides</em>. Fourth Edition. Stanford, CA: Stanford University Press.</a></li>
-          <li><a href="references/Robertson1960.2.html">Robertson, J.D. (1960) Osmotic and ionic regulation. Pp. 317&ndash;339 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume I. New York: Academic Press.</a></li>
-          <li><a href="references/Sarkisian1957.html">Sarkisian, L.N. (1957) <em>Maritrema uca</em>, a new species (Trematoda: Microphallidae) from the fiddler crab, <em>Uca crenulata</em> (Lockington). <em>Wasmann Journal of Biology</em> 15:35&ndash;48.</a></li>
-          <li><a href="references/Schmitt1921.html">Schmitt, W.L. (1921) <em>The Marine Decapod Crustacea of California</em>, Volume 23. Berkeley, CA: University of California Press.</a></li>
-          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
-          <li><a href="references/Vernberg1970.html">Vernberg, F.J., and W.B. Vernberg (1970) <em>The Animal and the Environment</em>: Holt, Rinehard and Winston.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/Wolvekamp1960.html">Wolvekamp, H.P., and T.H. Waterman (1960) Respiration. Pp. 35&ndash;100 in <em>The Physiology of Crustacea</em>, T.H. Waterman, ed., Volume I. New York: Academic Press.</a></li>
-          <li><a href="references/Young1900.html">Young, C.G. (1900) <em>The stalk-eyed Crustacea of British Guiana, West Indies and Bermuda</em>. London: J. M. Watkins.</a></li>
-          <li><a href="references/Zucker1973.html">Zucker, N. (1973) Social behavior in the tropical fiddler crab <em>Uca terpsichores</em>. Pp. 150  (Champagne-Urbana: University of Illinois).</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Allen1976.html">Allen (1976)</a>, 
+<a href="references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a>, 
+<a href="references/Baldwin1976.2.html">Baldwin &amp; Kirschener (1976)</a>, 
+<a href="references/Barnwell1976.html">Barnwell (1976)</a>, 
+<a href="references/Bayley1972.html">Bayley (1972)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bliss1968.1.html">Bliss (1968)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Brusca1973.html">Brusca (1973)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/DeCoursey1983.html">DeCoursey (1983)</a>, 
+<a href="references/Edney1961.html">Edney (1961)</a>, 
+<a href="references/Faxon1895.html">Faxon (1895)</a>, 
+<a href="references/Garth1960.html">Garth (1960)</a>, 
+<a href="references/Green1980.html">Green (1980)</a>, 
+<a href="references/Green1959.html">Green <em>et al.</em> (1959)</a>, 
+<a href="references/Greenaway1988.html">Greenaway (1988)</a>, 
+<a href="references/Gross1955.html">Gross (1955)</a>, 
+<a href="references/Gross1957.1.html">Gross (1957)</a>, 
+<a href="references/Gross1961.html">Gross (1961)</a>, 
+<a href="references/Gross1964.html">Gross (1964)</a>, 
+<a href="references/Headstrom1979.html">Headstrom (1979)</a>, 
+<a href="references/Heard1976.html">Heard (1976)</a>, 
+<a href="references/Hinton1969.html">Hinton (1969)</a>, 
+<a href="references/Holmes1900.html">Holmes (1900)</a>, 
+<a href="references/Holmes1904.html">Holmes (1904)</a>, 
+<a href="references/Honegger1973.2.html">Honegger (1973)</a>, 
+<a href="references/Honegger1973.1.html">Honegger (1973)</a>, 
+<a href="references/Honegger1976.html">Honegger (1976)</a>, 
+<a href="references/Jansen1970.html">Jansen (1970)</a>, 
+<a href="references/Johnson1927.html">Johnson &amp; Snook (1927)</a>, 
+<a href="references/Jones1941.html">Jones (1941)</a>, 
+<a href="references/Kaiser1975.html">Kaiser &amp; Lehmann (1975)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Kinne1963.html">Kinne (1963)</a>, 
+<a href="references/Lehmann1976.html">Lehmann (1976)</a>, 
+<a href="references/Lehmann1974.html">Lehmann <em>et al.</em> (1974)</a>, 
+<a href="references/Lockington1877.2.html">Lockington (1877)</a>, 
+<a href="references/Lockwood1962.html">Lockwood (1962)</a>, 
+<a href="references/Lockwood1967.html">Lockwood (1967)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Mantel1983.html">Mantel &amp; Farmer (1983)</a>, 
+<a href="references/McDermott2010.html">McDermott &amp; Pope (2010)</a>, 
+<a href="references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a>, 
+<a href="references/Naiditch2001.html">Naiditch <em>et al.</em> (2001)</a>, 
+<a href="references/Neuffer2001.html">Neuffer <em>et al.</em> (2001)</a>, 
+<a href="references/Nicou1959.html">Nicou (1959)</a>, 
+<a href="references/Nobili1899.1.html">Nobili (1899)</a>, 
+<a href="references/Nobili1901.3.html">Nobili (1901)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Potts1964.html">Potts &amp; Parry (1964)</a>, 
+<a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Powers1976.html">Powers &amp; Cole (1976)</a>, 
+<a href="references/Przibram1905.html">Przibram (1905)</a>, 
+<a href="references/Rathbun1893.html">Rathbun (1893)</a>, 
+<a href="references/Rathbun1899.html">Rathbun (1899)</a>, 
+<a href="references/Rathbun1900.2.html">Rathbun (1900)</a>, 
+<a href="references/Rathbun1904.2.html">Rathbun (1904)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rathbun1923.html">Rathbun (1923)</a>, 
+<a href="references/Rathbun1924.4.html">Rathbun (1924)</a>, 
+<a href="references/Ricketts1968.html">Ricketts <em>et al.</em> (1968)</a>, 
+<a href="references/Robertson1960.2.html">Robertson (1960)</a>, 
+<a href="references/Sarkisian1957.html">Sarkisian (1957)</a>, 
+<a href="references/Schmitt1921.html">Schmitt (1921)</a>, 
+<a href="references/Thurman2004.2.html">Thurman (2004)</a>, 
+<a href="references/Vernberg1970.html">Vernberg &amp; Vernberg (1970)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/Wolvekamp1960.html">Wolvekamp &amp; Waterman (1960)</a>, 
+<a href="references/Young1900.html">Young (1900)</a>, 
+<a href="references/Zucker1973.html">Zucker (1973)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

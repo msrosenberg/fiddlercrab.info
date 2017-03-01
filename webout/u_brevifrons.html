@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_brevifrons_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Panama to Mexico (southern Gulf of California)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_brevifrons_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -139,52 +140,49 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
-          <li><a href="references/Barnwell1985.html">Barnwell, F.H., and W.A. Szelistowski (1985) Twenty-one species of fiddler crabs (genus <em>Uca</em>) from a small tidal river on the Pacific coast of Costa Rica. <em>American Zoologist</em> 25(4):86A.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Buitendijk1950.html">Buitendijk, A.M. (1950) Note on a collection of Decapoda Brachyura from the coasts of Mexico, including the description of a new genus and species. <em>Zoologische Mededelingen</em> 30(17):269&ndash;282.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
-          <li><a href="references/Crane1943.3.html">Crane, J. (1943) Display, breeding and relationships of fiddler crabs (Brachyura, Genus <em>Uca</em>) in the Northeastern United States. <em>Zoologica NY</em> 28:217&ndash;223.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Garth1948.html">Garth, J.S. (1948) The Brachyura of the &quot;Askoy&quot; expedition. With remarks on carcinological collecting in the Panama Bight. <em>Bulletin of the American Museum of Natural History</em> 92(1):1&ndash;66.</a></li>
-          <li><a href="references/Garth1960.html">Garth, J.S. (1960) Distribution and affinities of the brachyuran Crustacea. <em>Systematic Zoology</em> 9(3):105&ndash;123.</a></li>
-          <li><a href="references/Holmes1900.html">Holmes, S.J. (1900) Synopsis of California stalk-eyes Crustacea. <em>Occasional Papers of the California Academy of Sciences</em> 7:1&ndash;262.</a></li>
-          <li><a href="references/Holmes1904.html">Holmes, S.J. (1904) On some new or imperfectly known species of West American Crustacea. <em>Proceedings of the California Academy of Sciences. Third Series. Zoology</em> 3(12):307&ndash;331.</a></li>
-          <li><a href="references/Holthuis1954.2.html">Holthuis, L.B. (1954) Observaciones sobre los crustaceos decapodos de la Republica de El Salvador. <em>Comunicaciones Universidad de El Salvador. Instituto Tropical de Investigaciones Cientificas</em> 3(4):159&ndash;166.</a></li>
-          <li><a href="references/Holthuis1954.1.html">Holthuis, L.B. (1954) On a collection of decapod Crustacea from the republic of El Salvador (Central America). <em>Zoologische Verhandelingen</em> 23:1&ndash;43.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Landstorfer2010.html">Landstorfer, R.B., and C.D. Schubart (2010) A phylogeny of Pacific fiddler crabs of the subgenus <em>Minuca</em> (Crustacea, Brachyura, Ocypodidae: <em>Uca</em>) with the description of a new species from a tropical gulf in Pacific Costa Rica. <em>Journal of Zoological Systematics and Evolutionary Research</em> 48(3):214&ndash;218.</a></li>
-          <li><a href="references/Lockington1877.2.html">Lockington, W.N. (1877) Remarks on the Crustacea of the west coast of North America, with a catalogue of the species in the museum of the California Academy of Sciences. <em>Proceedings of the California Academy of Sciences</em> 7(1):145&ndash;156.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/McMahon1988.html">McMahon, B.R., and W.W. Burggren (1988) Respiration. Pp. 249&ndash;297 in <em>Biology of the Land Crabs</em>, W.W. Burggren and B.R. McMahon, eds. Cambridge: Cambridge University Press.</a></li>
-          <li><a href="references/Nobili1897.html">Nobili, G. (1897) Decapodi e Stomatopodi raccolti dal Dr. Enrico Festa nel Darien, a Curaçâo, La Guayra, Porto Cabello, Colon, Panama, ecc. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 12(280):1&ndash;8.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Ortmann1897.html">Ortmann, A.E. (1897) Carcinologische Studien. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 10(3):258&ndash;372.</a></li>
-          <li><a href="references/Pesta1931.html">Pesta, O. (1931) Ergebnisse der Österreichischen biologischen Costa-Rica-Expedition 1930. I. Crustacea Decapoda aus Costa-Rica. <em>Annalen des Naturhistorischen Museums in Wien</em> 45:173&ndash;181.</a></li>
-          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531&ndash;620.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/Smith1870.2.html">Smith, S.I. (1870) Notes on American Crustacea. No. 1. Ocypodoidea. <em>Transactions of the Connecticut Academy of Arts and Science</em> 2:113&ndash;176.</a></li>
-          <li><a href="references/Stimpson1860.html">Stimpson, W. (1860) Notes on North American Crustacea, in the museum of the Smithsonian Institution. No. II. <em>Annals of the Lyceum of Natural History of New York</em> 7:176&ndash;246.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/Young1900.html">Young, C.G. (1900) <em>The stalk-eyed Crustacea of British Guiana, West Indies and Bermuda</em>. London: J. M. Watkins.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Brusca1973.html">Brusca (1973)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Buitendijk1950.html">Buitendijk (1950)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1943.2.html">Crane (1943)</a>, 
+<a href="references/Crane1943.3.html">Crane (1943)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Garth1948.html">Garth (1948)</a>, 
+<a href="references/Garth1960.html">Garth (1960)</a>, 
+<a href="references/Holmes1900.html">Holmes (1900)</a>, 
+<a href="references/Holmes1904.html">Holmes (1904)</a>, 
+<a href="references/Holthuis1954.2.html">Holthuis (1954)</a>, 
+<a href="references/Holthuis1954.1.html">Holthuis (1954)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a>, 
+<a href="references/Lockington1877.2.html">Lockington (1877)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/McMahon1988.html">McMahon &amp; Burggren (1988)</a>, 
+<a href="references/Nobili1897.html">Nobili (1897)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
+<a href="references/Pesta1931.html">Pesta (1931)</a>, 
+<a href="references/Rathbun1911.html">Rathbun (1911)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Smith1870.2.html">Smith (1870)</a>, 
+<a href="references/Stimpson1860.html">Stimpson (1860)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.4.html">von Hagen (1970)</a>, 
+<a href="references/Young1900.html">Young (1900)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

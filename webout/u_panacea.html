@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_panacea_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (Northwest Florida) to Mexico</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_panacea_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -163,58 +164,56 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Balbort1997.html">Balbort, L., and C.L. Thurman, II (1997) Comparison of locomotor rhythms in sympatric <em>Uca</em> from the western Gulf of Mexico. <em>American Zoologist</em> 37(5):186A.</a></li>
-          <li><a href="references/Barnwell1987.html">Barnwell, F.H., M.C. Vanzwol, and K.C. Zinnel (1987) Geographic variation in allometry of the buccal cavity in the fiddler crabs <em>Uca pugilator</em> and <em>Uca panacea</em>. <em>American Zoologist</em> 27(4):141A.</a></li>
-          <li><a href="references/Behre1950.html">Behre, E.H. (1950) Annotated list of the fauna of the Grand Isle region. <em>Occasional Papers of the Marine Lab of Louisiana State University</em> 6:1&ndash;66.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Butler1983.html">Butler, T.A., and M. Fingerman (1983) Concentrations of neuro-transmitters in the central nervous systems of <em>Uca panacea</em> and <em>Callinectes sapidus</em>. <em>American Zoologist</em> 23(4):954.</a></li>
-          <li><a href="references/Darnell2012.2.html">Darnell, M.Z., K.K. Fowler, and P. Munguia (2012) Carapace coloration affects body temperature and limits activity in the fiddler crab <em>Uca panacea</em>. <em>Integrative and Comparative Biology</em> 52:e42.</a></li>
-          <li><a href="references/Fielder1971.1.html">Fielder, D.R., K.R. Rao, and M. Fingerman (1971) A female-limited lipoprotein and the diversity of hemocyanin components in the dimorphic variants of the fiddler crab, <em>Uca pugilator</em>, as revealed by disc electrophoresis. <em>Comparative Biochemistry and Physiology</em> 39B(2):291&ndash;297.</a></li>
-          <li><a href="references/Fotheringham1975.html">Fotheringham, N., and S.L. Brunenmeister (1975) <em>Common Marine Invertebrates of the Northwestern Gulf Coast</em>. Houston, TX: Gulf Publishing Company.</a></li>
-          <li><a href="references/Greenspan1975.html">Greenspan, B.N. (1975) Male reproductive strategy in the communal courtship system of the fiddler crab, <em>Uca rapax</em>. Pp. 196: Rockefeller University).</a></li>
-          <li><a href="references/Heard1976.html">Heard, R.W., Jr. (1976) Microphallid trematode metacercariae in fiddler crabs of the genus <em>Uca</em> Leach 1814 from the northern Gulf of Mexico. Pp. 189: University of Southern Mississippi).</a></li>
-          <li><a href="references/Heard1977.html">Heard, R.W., Jr. (1977) (Review) Jocelyn Crane, Fiddler Crabs of the World. Ocypodidae: Genus <em>Uca</em>. <em>Northeast Gulf Science</em> 1(1):52&ndash;53.</a></li>
-          <li><a href="references/Hedgpeth1950.html">Hedgpeth, J.W. (1950) Notes on the marine invertebrate fauna of salt fiat areas in Aransas National Wildlife Refuge, Texas. <em>Publications of the Institute of Marine Science</em> 1(2):103&ndash;119.</a></li>
-          <li><a href="references/Herman1975.2.html">Herman, W.S., and S.H. Dallmann (1975) <em>Limulus</em> chromatophorotropin: Action on isolated <em>Uca </em>legs and in various crustaceans. <em>Experientia</em> 31(8):918&ndash;919.</a></li>
-          <li><a href="references/Herrnkind1983.html">Herrnkind, W.F. (1983) Movement patterns and orientation. Pp. 41&ndash;105 in <em>The Biology of Crustacea, Volume 7: Behavior and Ecology</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 7. New York: Academic Press.</a></li>
-          <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Krebs1976.html">Krebs, C.T. (1976) Population dynamics and energetics of the fiddler crab <em>Uca pugnax</em> and the effect of contamination with chlorinated hydrocarbons from sewage. Pp. 154: Boston University).</a></li>
-          <li><a href="references/Neiman1997.html">Neiman, M., and F.H. Barnwell (1997) Morphometric differences in small claws of the deposit-feeding fiddler crabs (<em>Uca</em> spp.). <em>American Zoologist</em> 37(5):47A.</a></li>
-          <li><a href="references/Novak1974.html">Novak, A., and M. Salmon (1974) <em>Uca panacea</em>, a new species of fiddler crab from the Gulf coast of the United States. <em>Proceedings of the Biological Society of Washington</em> 87(28):313&ndash;326.</a></li>
-          <li><a href="references/Pawlik1980.html">Pawlik, J., R. Lewis, and F.H. Barnwell (1980) Different mechanisms of sound production in two closely related species of fiddler crabs. <em>American Zoologist</em> 20(4):957.</a></li>
-          <li><a href="references/Powers1973.html">Powers, L.W. (1973) Ecological aspects of burrows and fiddler crab behavior. <em>American Zoologist</em> 13(4):1271.</a></li>
-          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1975.1.html">Powers, L.W. (1975) Fiddler crabs in a nontidal environment. <em>Contributions in Marine Science</em> 19:67&ndash;78.</a></li>
-          <li><a href="references/Powers1977.html">Powers, L.W. (1977) A catalogue and bibliography to the crabs (Brachyura) of the Gulf of Mexico. <em>Contributions in Marine Science</em> 20(Supplement):1&ndash;190.</a></li>
-          <li><a href="references/Powers1983.html">Powers, L.W., and D.E. Bliss (1983) Terrestrial adaptations. Pp. 271&ndash;333 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
-          <li><a href="references/Powers1976.html">Powers, L.W., and J.F. Cole (1976) Temperature variation in fiddler crab microhabitats. <em>Journal of Experimental Marine Biology and Ecology</em> 21(2):141&ndash;157.</a></li>
-          <li><a href="references/Rao1977.html">Rao, K.R. (1977) A comparative study of the effects of ergot alkaloids on hormone mediated color changes in the fiddler crab <em>Uca panacea</em>. <em>Yale Journal of Biology and Medicine</em> 50(5):576.</a></li>
-          <li><a href="references/Rao1967.1.html">Rao, K.R., M. Fingerman, and C.K. Bartell (1967) Physiology of the white chromatophores in the fiddler crab, <em>Uca pugilator</em>. <em>Biological Bulletin</em> 133(3):606&ndash;617.</a></li>
-          <li><a href="references/Rao1975.html">Rao, K.R., and F. Milton (1975) Color changes induced by certain indole alkaloids in the fiddler crab, <em>Uca</em>. <em>Comparative Biochemistry and Physiology</em> 51C(1):59&ndash;62.</a></li>
-          <li><a href="references/Selander1971.html">Selander, R.K., W.E. Johnson, and J.C. Avise (1971) Biochemical population genetics of fiddler crabs (<em>Uca</em>). <em>Biological Bulletin</em> 141(2):402.</a></li>
-          <li><a href="references/Simmons1957.html">Simmons, E.G. (1957) An ecological survey of the Upper Laguna Madre of Texas. <em>Publications of the Institute of Marine Science</em> 4(2):156&ndash;200.</a></li>
-          <li><a href="references/Thurman1984.2.html">Thurman, C.L., II (1984) Patterns of chromatophore activity in fiddler crabs genus <em>Uca</em> from coastal South Texas USA. <em>American Zoologist</em> 24(3):40A.</a></li>
-          <li><a href="references/Thurman1987.2.html">Thurman, C.L., II (1987) Intrageneric allometric variation and egg production in fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 27(4):162A.</a></li>
-          <li><a href="references/Thurman1994.html">Thurman, C.L., II (1994) Evaporative water loss and corporal temperature in sympatric fiddler crabs (<em>Uca</em>). <em>American Zoologist</em> 34(5):31A.</a></li>
-          <li><a href="references/Thurman1996.html">Thurman, C.L., II (1996) Integumental water permeability of <em>Uca</em> from south Texas. <em>American Zoologist</em> 36(5):67A.</a></li>
-          <li><a href="references/Thurman2000.html">Thurman, C.L., II (2000) Variance in osmoregulation among sympatric fiddler crabs, genus <em>Uca</em>, from Texas. <em>American Zoologist</em> 40(6):1234&ndash;1235.</a></li>
-          <li><a href="references/Thurman2001.1.html">Thurman, C.L., II (2001) Osmoregulation by <em>Uca</em> from the temperate coasts of eastern North America. <em>American Zoologist</em> 41(6):1607.</a></li>
-          <li><a href="references/Thurman2004.2.html">Thurman, C.L., II (2004) Osmoregulation in fiddler crabs: A review. <em>Integrative and Comparative Biology</em> 44(6):652.</a></li>
-          <li><a href="references/Tuberty2001.html">Tuberty, S.R. (2001) Effects of the insect juvenile hormone agonist, methoprene, on female growth and reproduction in the Gulf Sand Fiddler Crab, <em>Uca panacea</em>. <em>American Zoologist</em> 41(6):1611.</a></li>
-          <li><a href="references/Tuberty2000.html">Tuberty, S.R., S.F. Nates, and C.L. McKenney, Jr. (2000) Polyclonal antisera against estuarine crustacean vitellins: A molecular approach to reproductive endocrinology and toxicology. <em>American Zoologist</em> 40(6):1239.</a></li>
-          <li><a href="references/Vacca1973.html">Vacca, L.L. (1973) The role of the blood in dopamine metabolism, the formation of protein carriers, and melanin synthesis during sclerotinization in the fiddler crab, <em>Uca pugilator</em>. Pp. 267: Tulane University).</a></li>
-          <li><a href="references/Whitten1950.html">Whitten, H.L., H.F. Rosene, and J.W. Hedgpeth (1950) The invertebrate fauna of Texas Coast jetties; a preliminary survey. <em>Publications of the Institute of Marine Science</em> 1(2):53&ndash;87.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Balbort1997.html">Balbort &amp; Thurman (1997)</a>, 
+<a href="references/Barnwell1987.html">Barnwell <em>et al.</em> (1987)</a>, 
+<a href="references/Behre1950.html">Behre (1950)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Butler1983.html">Butler &amp; Fingerman (1983)</a>, 
+<a href="references/Darnell2012.2.html">Darnell <em>et al.</em> (2012)</a>, 
+<a href="references/Felder1985.html">Felder <em>et al.</em> (1985)</a>, 
+<a href="references/Fielder1971.1.html">Fielder <em>et al.</em> (1971)</a>, 
+<a href="references/Fotheringham1975.html">Fotheringham &amp; Brunenmeister (1975)</a>, 
+<a href="references/Greenspan1975.html">Greenspan (1975)</a>, 
+<a href="references/Heard1976.html">Heard (1976)</a>, 
+<a href="references/Heard1977.html">Heard (1977)</a>, 
+<a href="references/Hedgpeth1950.html">Hedgpeth (1950)</a>, 
+<a href="references/Herman1975.2.html">Herman &amp; Dallmann (1975)</a>, 
+<a href="references/Herrnkind1983.html">Herrnkind (1983)</a>, 
+<a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
+<a href="references/Krebs1976.html">Krebs (1976)</a>, 
+<a href="references/Neiman1997.html">Neiman &amp; Barnwell (1997)</a>, 
+<a href="references/Novak1974.html">Novak &amp; Salmon (1974)</a>, 
+<a href="references/Pawlik1980.html">Pawlik <em>et al.</em> (1980)</a>, 
+<a href="references/Powers1973.html">Powers (1973)</a>, 
+<a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Powers1975.1.html">Powers (1975)</a>, 
+<a href="references/Powers1977.html">Powers (1977)</a>, 
+<a href="references/Powers1983.html">Powers &amp; Bliss (1983)</a>, 
+<a href="references/Powers1976.html">Powers &amp; Cole (1976)</a>, 
+<a href="references/Rao1977.html">Rao (1977)</a>, 
+<a href="references/Rao1967.1.html">Rao <em>et al.</em> (1967)</a>, 
+<a href="references/Rao1975.html">Rao &amp; Milton (1975)</a>, 
+<a href="references/Selander1971.html">Selander <em>et al.</em> (1971)</a>, 
+<a href="references/Simmons1957.html">Simmons (1957)</a>, 
+<a href="references/Thurman1984.2.html">Thurman (1984)</a>, 
+<a href="references/Thurman1987.2.html">Thurman (1987)</a>, 
+<a href="references/Thurman1994.html">Thurman (1994)</a>, 
+<a href="references/Thurman1996.html">Thurman (1996)</a>, 
+<a href="references/Thurman2000.html">Thurman (2000)</a>, 
+<a href="references/Thurman2001.1.html">Thurman (2001)</a>, 
+<a href="references/Thurman2004.2.html">Thurman (2004)</a>, 
+<a href="references/Tuberty2001.html">Tuberty (2001)</a>, 
+<a href="references/Tuberty2000.html">Tuberty <em>et al.</em> (2000)</a>, 
+<a href="references/Vacca1973.html">Vacca (1973)</a>, 
+<a href="references/Whitten1950.html">Whitten <em>et al.</em> (1950)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

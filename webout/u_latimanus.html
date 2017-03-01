@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_latimanus_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Mexico (Baja California) to Ecuador</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_latimanus_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -135,51 +136,48 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Altevogt1957.2.html">Altevogt, R. (1957) Beiträge zur Biologie und Ethologie von <em>Dotilla blanfordi</em> Alcock und <em>Dotilla myctiroides</em> (Milne Edwards) (Crustacea Decapoda). <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(4):369&ndash;388.</a></li>
-          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
-          <li><a href="references/Barnwell1968.2.html">Barnwell, F.H. (1968) The role of rhythmic systems in the adaptation of fiddler crabs to the intertidal zone. <em>American Zoologist</em> 8(3):569&ndash;583.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1954.html">Bott, R. (1954) Dekapoden (Crustacea) aus El Salvador. 1. Winkerkrabben (<em>Uca</em>). <em>Senckenbergiana biologica</em> 35(3&ndash;4):155&ndash;180.</a></li>
-          <li><a href="references/Brusca1973.html">Brusca, R.C. (1973) <em>A Handbook to the Common Intertidal Invertebrates of the Gulf of California</em>. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Brusca1980.html">Brusca, R.C. (1980) <em>Common Intertidal Invertebrates of the Gulf of California</em>. Second Edition. Tucson, Arizona: University of Arizona Press.</a></li>
-          <li><a href="references/Crane1941.html">Crane, J. (1941) Eastern Pacific Expeditions of the New York Zoological Society. XXVI. Crabs of the genus <em>Uca</em> from the west coast of Central America. <em>Zoologica NY</em> 26:145&ndash;208.</a></li>
-          <li><a href="references/Crane1943.2.html">Crane, J. (1943) Crabs of the genus <em>Uca</em> from Venezuela. <em>Zoologica NY</em> 28:33&ndash;44.</a></li>
-          <li><a href="references/Crane1944.html">Crane, J. (1944) On the color changes of fiddler crabs (genus <em>Uca</em>) in the field. <em>Zoologica NY</em> 29:161&ndash;168.</a></li>
-          <li><a href="references/Crane1947.html">Crane, J. (1947) Eastern Pacific expeditions of the New York Zoological Society. XXXVIII. Intertidal brachygnathous crabs from the west coast of tropical America with special reference to ecology. <em>Zoologica</em> 32(2):69&ndash;95.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1958.html">Crane, J. (1958) Aspects of social behavior in fiddler crabs, with special reference to <em>Uca maracoani</em> (Latreille). <em>Zoologica NY</em> 43:113&ndash;130.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/Garth1948.html">Garth, J.S. (1948) The Brachyura of the &quot;Askoy&quot; expedition. With remarks on carcinological collecting in the Panama Bight. <em>Bulletin of the American Museum of Natural History</em> 92(1):1&ndash;66.</a></li>
-          <li><a href="references/Gerlach1958.1.html">Gerlach, S.A. (1958) Beobachtungen über das Verhalten von Winkerkrabben (<em>Uca leptodactyla</em>). <em>Zeitschrift für Tierpsychologie</em> 15(1):50&ndash;53.</a></li>
-          <li><a href="references/Hartnoll1988.1.html">Hartnoll, R.G. (1988) Eco-ethology of mangroves. Pp. 477&ndash;489 in <em>Behavioral Adaptation to Intertidal Life</em>, G. Chelazzi and M. Vannini, eds. New York: Plenum Press.</a></li>
-          <li><a href="references/Kaufmann1985.html">Kaufmann, R.S., and F.H. Barnwell (1985) Morphology of putative sound-producing structures in fiddler crabs of subgenus <em>Celuca</em>. <em>American Zoologist</em> 25(4):37A.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Naiditch2001.html">Naiditch, S.E., J.M. Neuffer, D. Woodward, and S.C. Harris Cotner (2001) Interspecific aggression in fiddler crabs, genus <em>Uca</em>: Part 2: Fight elements. <em>American Zoologist</em> 41(6):1535.</a></li>
-          <li><a href="references/Neuffer2001.html">Neuffer, J.M., S.E. Naiditch, S.C. Harris Cotner, and D. Woodward (2001) Aggression in fiddler crabs, genus <em>Uca</em>: Part 1. <em>American Zoologist</em> 41(6):1538.</a></li>
-          <li><a href="references/Nobili1901.2.html">Nobili, G. (1901) Decapodi raccolti dal Dr. Filippo Silvestri nell'America meridionale. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(402):1&ndash;16.</a></li>
-          <li><a href="references/Nobili1901.3.html">Nobili, G. (1901) Viaggio del Dr. Enrico Festa nella Repubblica dell'Ecuador e regioni vicine. XXIII. Decapodi e Stomatopodi. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 16(415):1&ndash;58.</a></li>
-          <li><a href="references/Oliveira1939.1.html">Oliveira, L.P.H.d. (1939) Contribuição ao conhecimento dos crustaceos do Rio de Janeiro. Genero <em>Uca</em> (Decapoda: Ocypodidae). <em>Memórias do Instituto Oswaldo Cruz</em> 34(1):115&ndash;148.</a></li>
-          <li><a href="references/Peters1955.html">Peters, H.M. (1955) Die Winkgebärde von <em>Uca</em> and <em>Minuca</em> (Brachyura) in vergleichend-ethologischer, -ökologischer und -morphologisch-anatomischer Betrachtung. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 43(5):425&ndash;500.</a></li>
-          <li><a href="references/Powers1975.2.html">Powers, L.W. (1975) The Fiddler Crab Burrow: A Study in Behavioral Ecology. Pp. 213  (Austin, Texas: University of Texas at Austin).</a></li>
-          <li><a href="references/Powers1983.html">Powers, L.W., and D.E. Bliss (1983) Terrestrial adaptations. Pp. 271&ndash;333 in <em>The Biology of Crustacea, Volume 8: Environmental Adaptations</em>, F.J. Vernberg and W.B. Vernberg, eds., Volume 8. New York: Academic Press.</a></li>
-          <li><a href="references/Rao1985.2.html">Rao, K.R. (1985) Pigmentary effectors. Pp. 395&ndash;462 in <em>The Biology of Crustacea, Volume 9: Integument, Pigments, and Hormonal Processes</em>, D.E. Bliss and L.H. Mantel, eds., Volume 9. Orlando, FL: Academic Press.</a></li>
-          <li><a href="references/Rathbun1893.html">Rathbun, M.J. (1893) Descriptions of new genera and species of crabs from the west coast of North America and the Sandwich Islands. <em>Proceedings of the United States National Museum</em> 16(933):223&ndash;260.</a></li>
-          <li><a href="references/Rathbun1911.html">Rathbun, M.J. (1911) The stalk-eyed Crustacea of Peru and the adjacent coast. <em>Proceedings of the United States National Museum</em> 38(1766):531&ndash;620.</a></li>
-          <li><a href="references/Rathbun1918.2.html">Rathbun, M.J. (1918) The grapsoid crabs of America. <em>United States National Museum Bulletin</em> 97:1&ndash;461.</a></li>
-          <li><a href="references/vonHagen1962.1.html">von Hagen, H.-O. (1962) Freilandstudien zur Sexual- und Fortpflanzungsbiologie von <em>Uca tangeri</em> in Andalusien. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 51(6):611&ndash;725.</a></li>
-          <li><a href="references/vonHagen1968.2.html">von Hagen, H.-O. (1968) Studien an peruanischen Winkerkrabben (<em>Uca</em>). <em>Zoologische Jahrbücher. Abteilung für Systematik, Ökologie und Geographie der Tiere</em> 95(2):395&ndash;468. {Studies of Peruvian fiddler-crabs (<em>Uca</em>)}</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Altevogt1957.2.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Barnwell1968.2.html">Barnwell (1968)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1954.html">Bott (1954)</a>, 
+<a href="references/Brusca1973.html">Brusca (1973)</a>, 
+<a href="references/Brusca1980.html">Brusca (1980)</a>, 
+<a href="references/Crane1941.html">Crane (1941)</a>, 
+<a href="references/Crane1943.2.html">Crane (1943)</a>, 
+<a href="references/Crane1944.html">Crane (1944)</a>, 
+<a href="references/Crane1947.html">Crane (1947)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1958.html">Crane (1958)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Garth1948.html">Garth (1948)</a>, 
+<a href="references/Gerlach1958.1.html">Gerlach (1958)</a>, 
+<a href="references/Hartnoll1988.1.html">Hartnoll (1988)</a>, 
+<a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Naiditch2001.html">Naiditch <em>et al.</em> (2001)</a>, 
+<a href="references/Neuffer2001.html">Neuffer <em>et al.</em> (2001)</a>, 
+<a href="references/Nobili1901.2.html">Nobili (1901)</a>, 
+<a href="references/Nobili1901.3.html">Nobili (1901)</a>, 
+<a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
+<a href="references/Peters1955.html">Peters (1955)</a>, 
+<a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Powers1983.html">Powers &amp; Bliss (1983)</a>, 
+<a href="references/Rao1985.2.html">Rao (1985)</a>, 
+<a href="references/Rathbun1893.html">Rathbun (1893)</a>, 
+<a href="references/Rathbun1911.html">Rathbun (1911)</a>, 
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/vonHagen1962.1.html">von Hagen (1962)</a>, 
+<a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="references/vonHagen1970.4.html">von Hagen (1970)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

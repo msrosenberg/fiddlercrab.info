@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_forcipata_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -84,7 +85,7 @@
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Thailand, Malaysia, Western Indonesia</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_forcipata_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -110,6 +111,27 @@
       </figure>
       <figure class="sppic">
         <a href="photos/photo_u_forcipata03.html"><img class="thumbnail" src="photos/U_forcipata03tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata04.html"><img class="thumbnail" src="photos/U_forcipata04tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata05.html"><img class="thumbnail" src="photos/U_forcipata05tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata06.html"><img class="thumbnail" src="photos/U_forcipata06tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata07.html"><img class="thumbnail" src="photos/U_forcipata07tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata08.html"><img class="thumbnail" src="photos/U_forcipata08tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata09.html"><img class="thumbnail" src="photos/U_forcipata09tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_forcipata_triangularis01.html"><img class="thumbnail" src="photos/U_forcipata_triangularis01tn.jpg" alt="Uca forcipata thumbnail" title="Uca forcipata" /></a>
       </figure>
     </section>
 
@@ -150,52 +172,49 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Adams1848.html">Adams, A., and A. White (1848) Crustacea. Pp. 1&ndash;66 in <em>The zoology of the voyage of H.M.S. &quot;Samarang&quot;; under the command of Captain Sir Edward Belcher, C.B., F.R.A.S., F.G.S., during the years 1843-1846</em>, A. Adams, ed., Volume 8. London: Reeve, Benham, &amp; Reeve.</a></li>
-          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
-          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Bott1973.2.html">Bott, R. (1973) Die verwandtschaftlichen Beziehungen der <em>Uca</em>-Arten (Decapoda: Ocypodidae). <em>Senckenbergiana biologica</em> 54(4&ndash;6):315&ndash;325.</a></li>
-          <li><a href="references/Crane1957.html">Crane, J. (1957) Basic patterns of display in fiddler crabs (Ocypodidae, Genus <em>Uca</em>). <em>Zoologica NY</em> 42:69&ndash;82.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/deMan1891.html">De Man, J.G. (1891) Carcinological studies in the Leyden Museum. No. 5. <em>Notes from the Leyden Museum</em> 13(1):1&ndash;61.</a></li>
-          <li><a href="references/deMan1892.html">De Man, J.G. (1892) Decapoda des indischen Archipels. Pp. 265&ndash;527 in <em>Zoologische Ergebnisse einer Reise in Niederlandisch Ost-Indien</em>, M. Weber, ed., Volume 2. Leiden: Brill.</a></li>
-          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485&ndash;609.</a></li>
-          <li><a href="references/deMan1902.html">De Man, J.G. (1902) Die von Herrn Professor Kükenthal im Indischen Archipel gesammelten Dekapoden und Stomatopoden. <em>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</em> 25:467&ndash;929.</a></li>
-          <li><a href="references/Estampador1937.html">Estampador, E.P. (1937) A check list of Philippine crustacean decapods. <em>Philippine Journal of Science</em> 62(4):465&ndash;559.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
-          <li><a href="references/Frith1977.3.html">Frith, D.W., and C.B. Frith (1977) Range extensions of fiddler crabs (Decapoda, Brachyura, Ocypodidae) in the north-western Malay Peninsula area. <em>Crustaceana</em> 32(1):100&ndash;102.</a></li>
-          <li><a href="references/Frith1976.html">Frith, D.W., R. Tantanasiriwong, and O. Bhatia (1976) Zonation and abundance of macrofauna on a mangrove shore, Phuket Island. <em>Phuket Marine Biological Center Research Bulletin</em> 10:1&ndash;37.</a></li>
-          <li><a href="references/Kingsley1880.html">Kingsley, J.S. (1880) Carcinological notes, No. II.-Revision of the Gelasimi. <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 1880(1):135&ndash;155.</a></li>
-          <li><a href="references/Lanchester1900.1.html">Lanchester, W.F. (1900) On a collection of crustaceans made at Singapore and Malacca.--Part I. Crustacea Brachyura. <em>Proceedings of the Zoological Society of London</em> 1900(3):719&ndash;770.</a></li>
-          <li><a href="references/Lundoer1974.html">Lundoer, S. (1974) A checklist of the Brachyura in the reference collection at PMBC, Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 4:1&ndash;11.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Miers1879.1.html">Miers, E.J. (1879) On a collection of Crustacea made by Capt. H. C. St. John, R. N., in the Corean and Japanese Seas. <em>Proceedings of the Zoological Society of London</em> 1879(1):18&ndash;61.</a></li>
-          <li><a href="references/Miers1880.html">Miers, E.J. (1880) On a collection of Crustacea from the Malaysian Region.--Part II. Telphusidea, Catometopa, and Oxystomata. <em>Annals and Magazine of Natural History, Series V</em> 5:304&ndash;317.</a></li>
-          <li><a href="references/MilneEdwards1852.html">Milne Edwards, H. (1852) Observations sur les affinités zoologiques et la classification naturelle des crustacés. <em>Annales des Sciences Naturelles. Zoologie (Série 3)</em> 18:109&ndash;166.</a></li>
-          <li><a href="references/MilneEdwards1854.2.html">Milne Edwards, H. (1854) <em>Mélanges carcinologiques</em>. Paris: L. Martinet.</a></li>
-          <li><a href="references/Nobili1903.1.html">Nobili, G. (1903) Contributo alla fauna carcinologica di Borneo. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 18(447):1&ndash;32.</a></li>
-          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
-          <li><a href="references/Rathbun1910.1.html">Rathbun, M.J. (1910) The Danish expedition to Siam 1899-1900. V. Brachyura. <em>Kongelige Danske Videnskabernes Selskeab Biologiske Skrifter</em> 7 Raekke 5(4):303&ndash;367.</a></li>
-          <li><a href="references/Rathbun1914.html">Rathbun, M.J. (1914) Stalk-eyed Crustaceans collected at the Monte Bello Islands. <em>Proceedings of the Zoological Society of London</em> 1914(3):653&ndash;664.</a></li>
-          <li><a href="references/Sasekumar1974.html">Sasekumar, A. (1974) Distribution of macrofauna on a Malayan mangrove shore. <em>Journal of Animal Ecology</em> 41(1):51&ndash;69.</a></li>
-          <li><a href="references/Serene1973.3.html">Serène, R. (1973) Notes sur quelques especes de brachyoures de Nouvelle-Caledonie. <em>Cahiers du Pacifique</em> 17:119&ndash;161.</a></li>
-          <li><a href="references/Shen1940.2.html">Shen, C.-J. (1940) On the collections of crabs of South China. <em>Bulletin of the Fan Memorial Institute of Biology</em> 10(2):69&ndash;104.</a></li>
-          <li><a href="references/Stimpson1907.html">Stimpson, W. (1907) Report on the Crustacea (Brachyura and Anomura) collected by the North Pacific Exploring Expedition, 1853-1856 (with introductory note, and edited by Mary J. Rathbun). <em>Smithsonian Miscellaneous Collections</em> 49(1717):1&ndash;240.</a></li>
-          <li><a href="references/Tesch1918.html">Tesch, J.J. (1918) Decapoda F. Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae. Pp. 1&ndash;148 in <em>Siboga Expeditie</em>, Volume 82, Monograph 39c. Leiden: E. J. Brill.</a></li>
-          <li><a href="references/Tweedie1937.html">Tweedie, M.W.F. (1937) On the crabs of the family Ocypodidae in the collection of the Raffles Museum. <em>Bulletin of the Raffles Museum</em> 13:140&ndash;170.</a></li>
-          <li><a href="references/Tweedie1948.html">Tweedie, M.W.F. (1948) Shore crabs. <em>Malayan Nature Journal</em> 3(3):102&ndash;108.</a></li>
-          <li><a href="references/Tweedie1950.1.html">Tweedie, M.W.F. (1950) Grapsoid crabs from Labuan and Sarawak. <em>Sarawak Museum Journal</em> 5(2):338&ndash;369.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Adams1848.html">Adams &amp; White (1848)</a>, 
+<a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bott1973.2.html">Bott (1973)</a>, 
+<a href="references/Crane1957.html">Crane (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/deMan1891.html">De Man (1891)</a>, 
+<a href="references/deMan1892.html">De Man (1892)</a>, 
+<a href="references/deMan1895.html">De Man (1895)</a>, 
+<a href="references/deMan1902.html">De Man (1902)</a>, 
+<a href="references/Estampador1937.html">Estampador (1937)</a>, 
+<a href="references/Estampador1959.html">Estampador (1959)</a>, 
+<a href="references/Frith1977.3.html">Frith &amp; Frith (1977)</a>, 
+<a href="references/Frith1976.html">Frith <em>et al.</em> (1976)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Lanchester1900.1.html">Lanchester (1900)</a>, 
+<a href="references/Lundoer1974.html">Lundoer (1974)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Miers1879.1.html">Miers (1879)</a>, 
+<a href="references/Miers1880.html">Miers (1880)</a>, 
+<a href="references/MilneEdwards1852.html">Milne Edwards (1852)</a>, 
+<a href="references/MilneEdwards1854.2.html">Milne Edwards (1854)</a>, 
+<a href="references/Nobili1903.1.html">Nobili (1903)</a>, 
+<a href="references/Ortmann1894.1.html">Ortmann (1894)</a>, 
+<a href="references/Rathbun1910.1.html">Rathbun (1910)</a>, 
+<a href="references/Rathbun1914.html">Rathbun (1914)</a>, 
+<a href="references/Sasekumar1974.html">Sasekumar (1974)</a>, 
+<a href="references/Serene1973.3.html">Serène (1973)</a>, 
+<a href="references/Shen1940.2.html">Shen (1940)</a>, 
+<a href="references/Stimpson1907.html">Stimpson (1907)</a>, 
+<a href="references/Tesch1918.html">Tesch (1918)</a>, 
+<a href="references/Tweedie1937.html">Tweedie (1937)</a>, 
+<a href="references/Tweedie1948.html">Tweedie (1948)</a>, 
+<a href="references/Tweedie1950.1.html">Tweedie (1950)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

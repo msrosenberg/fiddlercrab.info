@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="uca_style.css" />
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
@@ -37,7 +38,7 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("sp_range_map_canvas"),mapOptions);
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_bengali_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
       }
@@ -80,11 +81,11 @@
        <dt>Common Names</dt>
          <dd>Bengal Fiddler Crab</dd>
        <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Uca_Celuca_triangularis_bengali.html"><em class="species">Uca (Celuca) triangularis bengali</em></a>, <a href="names/Uca_Paraleptuca_bengali.html"><em class="species">Uca (Paraleptuca) bengali</em></a>, <a href="names/Uca_bengali.html"><em class="species">Uca bengali</em></a>, <a href="names/Uca_triangularis_bengali.html"><em class="species">Uca triangularis bengali</em></a></em></dd>
+         <dd><em class="species"><a href="names/Uca_Austruca_bengali.html"><em class="species">Uca (Austruca) bengali</em></a>, <a href="names/Uca_Celuca_triangularis_bengali.html"><em class="species">Uca (Celuca) triangularis bengali</em></a>, <a href="names/Uca_Paraleptuca_bengali.html"><em class="species">Uca (Paraleptuca) bengali</em></a>, <a href="names/Uca_bengali.html"><em class="species">Uca bengali</em></a>, <a href="names/Uca_triangularis_bengali.html"><em class="species">Uca triangularis bengali</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Eastern India, Burma, Thailand, Western Malaysia, Indonesia (Sumatra)</dd>
          <dd>
-           <div id="sp_range_map_canvas"></div>
+           <div id="range_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_bengali_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
            </div>
@@ -124,45 +125,43 @@
 
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
-      <div class="reference_list">
-        <ul>
-          <li><a href="references/Alcock1900.html">Alcock, A. (1900) Materials for a carcinological fauna of India No. 6. The Brachyura Catometopa, or Grapsoidea. <em>Journal of the Asiatic Society of Bengal</em> 64(3. Part 2):279&ndash;456.</a></li>
-          <li><a href="references/Altevogt1957.1.html">Altevogt, R. (1957) Untersuchungen zur Biologie, Ökologie und Physiologie Indischer Winkerkrabben. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 46(1):1&ndash;110.</a></li>
-          <li><a href="references/Altevogt1959.3.html">Altevogt, R. (1959) The love and life of fiddler crabs. <em>Journal of the Bombay Natural History Society</em> 56(1):1&ndash;7.</a></li>
-          <li><a href="references/Altevogt1959.1.html">Altevogt, R. (1959) Ökologische und ethologische Studien an Europas einziger Winkerkrabbe <em>Uca tangeri</em> Eydoux. <em>Zeitschrift für Morphologie und Ökologie der Tiere</em> 48(2):123&ndash;146.</a></li>
-          <li><a href="references/Altevogt1964.1.html">Altevogt, R. (1964) Ein antiphoner Klopfkode und eine neue Winkfunktion bei <em>Uca tangeri</em>. <em>Naturwissenschaften</em> 51(24):644&ndash;645.</a></li>
-          <li><a href="references/Altevogt1972.html">Altevogt, R. (1972) Physiological inter-relations of display and locomotion in fiddler crabs: An evolutionary aspect. <em>Journal of the Marine Biological Association of India</em> 14(2):456&ndash;467.</a></li>
-          <li><a href="references/Beinlich2006.html">Beinlich, B., and H.-O. von Hagen (2006) Materials for a more stable subdivision of the genus <em>Uca</em> Leach. <em>Zoologische Mededelingen</em> 80(4):9&ndash;32.</a></li>
-          <li><a href="references/Chopra1937.html">Chopra, B., and K.N. Das (1937) Further notes on Crustacea Decapoda in the Indian Museum. <em>Records of the Indian Museum</em> 39:377&ndash;434.</a></li>
-          <li><a href="references/Crane1975.html">Crane, J. (1975) <em>Fiddler Crabs of the World: Ocypodidae: Genus Uca</em>. Princeton, NJ: Princeton University Press.</a></li>
-          <li><a href="references/deMan1888.html">De Man, J.G. (1887&ndash;1888) Report on the Podophthalmous Crustacea of the Mergui Archipelago, collected for the trustees of the Indian Museum, Calcutta, by Dr. John Anderson, F.R.S., superintendant of the museum. <em>Journal of the Linnean Society. Zoology</em> 22:1&ndash;305.</a></li>
-          <li><a href="references/deMan1895.html">De Man, J.G. (1895) Bericht über die von Herrn Schiffscapitän Storm zu Atjeh, an den westlichen Küsten von Malakka, Borneo und Celebes sowie in der Java-See gesammelten Decapoden und Stomatopoden. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 8(4):485&ndash;609.</a></li>
-          <li><a href="references/Estampador1959.html">Estampador, E.P. (1959) Revised check list of Philippine crustacean decapods. <em>Natural &amp; Applied Sci. Bull. Coll. Liberal Arts, Univ. of Philippines</em> 17(1):100&ndash;103.</a></li>
-          <li><a href="references/Feest1969.html">Feest, J. (1969) Morphophysiologische Untersuchungen zur Ontogenese und Fortpflanzungsbiologie von <em>Uca annulipes</em> und <em>Uca triangularis</em> mit Vergleichsbefunden an <em>Ilyoplax gangetica</em>. <em>forma et functio</em> 1:159&ndash;225.</a></li>
-          <li><a href="references/Frith1977.3.html">Frith, D.W., and C.B. Frith (1977) Range extensions of fiddler crabs (Decapoda, Brachyura, Ocypodidae) in the north-western Malay Peninsula area. <em>Crustaceana</em> 32(1):100&ndash;102.</a></li>
-          <li><a href="references/Frith1976.html">Frith, D.W., R. Tantanasiriwong, and O. Bhatia (1976) Zonation and abundance of macrofauna on a mangrove shore, Phuket Island. <em>Phuket Marine Biological Center Research Bulletin</em> 10:1&ndash;37.</a></li>
-          <li><a href="references/Heller1865.html">Heller, C. (1865) Die Crustaceen. Pp. 1&ndash;280 in <em>Reise der österreichischen Fregatte &quot;Novara&quot; um die Erde in den Jahren 1857-1859 unter den Befehlen des Commodore B. von Wüllerstorf-Urbair. Zoology</em>, Volume 2. Vienna</a></li>
-          <li><a href="references/Henderson1893.html">Henderson, J.R. (1893) A contribution to Indian carcinology. <em>Transactions of the Linnean Society of London. Second Series. Zoology</em> 5(10):325&ndash;458.</a></li>
-          <li><a href="references/Jansen1970.html">Jansen, P. (1970) Phsyiologisch-ökologische Untersuchungen zum &quot;Posen&quot; von <em>Uca tangeri</em>. <em>forma et functio</em> 2:58&ndash;100. {Eco-physiological studies on the &quot;posing&quot; behavior of <em>Uca tangeri</em>}</a></li>
-          <li><a href="references/Lundoer1974.html">Lundoer, S. (1974) A checklist of the Brachyura in the reference collection at PMBC, Thailand. <em>Phuket Marine Biological Center Research Bulletin</em> 4:1&ndash;11.</a></li>
-          <li><a href="references/Maccagno1928.html">Maccagno, T. (1928) Crostacei Decapodi. Le specie del genere <em>Uca</em> Leach conservate nel Regio Museo Zoologico di Torino. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 41(11):1&ndash;52.</a></li>
-          <li><a href="references/Naderloo2010.html">Naderloo, R., M. Türkay, and H.-L. Chen (2010) Taxonomic revision of the wide-front fiddler crabs of the <em>Uca lactea </em>group (Crustacea: Decapoda: Brachyura: Ocypodidae) in the Indo-West Pacific. <em>Zootaxa</em> 2500:1&ndash;38.</a></li>
-          <li><a href="references/Nobili1903.2.html">Nobili, G. (1903) Crostacei di Pondichéry, Mahé, Bombay etc. <em>Bollettino dei Musei di Zoologia ed Anatomia comparata della R. Università di Torino</em> 18(452):1&ndash;24.</a></li>
-          <li><a href="references/Ortmann1894.1.html">Ortmann, A.E. (1894) Die Decapoden-Krebse des Strassburger Museums, mit besonderer Berücksichtigung der von Herrn Dr. Döderlein bei Japan und bei den Liu-Kiu-Inseln gesammelten und zur Zeit im Strassburger Museum aufbewahrten Formen. VIII. Abtheilung: Brachyura (Brachyura genuina Boas) III. Unterabtheilung: Cancroidea, 2. Section: Canerinea, 2. Gruppe: Catametopa. <em>Zoologische Jahrbücher. Abtheilung für Systematik, Geographie und Biologie der Thiere</em> 7(5):683&ndash;772.</a></li>
-          <li><a href="references/Panikkar1937.html">Panikkar, N.K., and R.G. Aiyar (1937) The brackish-water fauna of Madras. <em>Proceedings of the Indian Academy of Sciences</em> 6B(5):284&ndash;337.</a></li>
-          <li><a href="references/Salmon1965.html">Salmon, M. (1965) Waving display and sound production in the courtship behavior of <em>Uca pugilator</em>, with comparisons to <em>U. minax</em> and <em>U. pugnax</em>. <em>Zoologica NY</em> 50:123&ndash;150.</a></li>
-          <li><a href="references/Sarojini1966.html">Sarojini, S. (1966) Biometrical comparison of <em>Uca annulepis</em> and <em>Uca triangularis</em>. <em>Proceedings of the All-India Congress of Zoology</em> 1962(2):274&ndash;275.</a></li>
-          <li><a href="references/vonHagen1970.4.html">von Hagen, H.-O. (1970) Anpassungen an das spezielle Gezeitenzonen-Niveau bei Ocypodiden (Decapoda, Brachyura). <em>forma et functio</em> 2:361&ndash;413. {Adaptations to the special intertidal level of habitat in Ocypodid crabs (Decapoda, Brachyura)}</a></li>
-          <li><a href="references/Walker1972.html">Walker, I. (1972) Habituation to disturbance in the fiddler crab (<em>Uca annulipes</em>) in its natural environment. <em>Animal Behaviour</em> 20(1):139&ndash;146.</a></li>
-        </ul>
-      </div>
+      <p>
+<a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1959.3.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1959.1.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1964.1.html">Altevogt (1964)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Chopra1937.html">Chopra &amp; Das (1937)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/deMan1888.html">De Man (1887-1888)</a>, 
+<a href="references/deMan1895.html">De Man (1895)</a>, 
+<a href="references/Estampador1959.html">Estampador (1959)</a>, 
+<a href="references/Feest1969.html">Feest (1969)</a>, 
+<a href="references/Frith1977.3.html">Frith &amp; Frith (1977)</a>, 
+<a href="references/Frith1976.html">Frith <em>et al.</em> (1976)</a>, 
+<a href="references/Heller1865.html">Heller (1865)</a>, 
+<a href="references/Henderson1893.html">Henderson (1893)</a>, 
+<a href="references/Jansen1970.html">Jansen (1970)</a>, 
+<a href="references/Lundoer1974.html">Lundoer (1974)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>, 
+<a href="references/Nobili1903.2.html">Nobili (1903)</a>, 
+<a href="references/Ortmann1894.1.html">Ortmann (1894)</a>, 
+<a href="references/Panikkar1937.html">Panikkar &amp; Aiyar (1937)</a>, 
+<a href="references/Salmon1965.html">Salmon (1965)</a>, 
+<a href="references/Sarojini1966.html">Sarojini (1966)</a>, 
+<a href="references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="references/vonHagen1970.4.html">von Hagen (1970)</a>, 
+<a href="references/Walker1972.html">Walker (1972)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.02.01.12.41 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.03.01.14.02 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>
