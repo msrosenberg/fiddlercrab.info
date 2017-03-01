@@ -20,14 +20,14 @@ Cameroon	4.051828	9.767382	Using Douala	Cameroon	.	.	.	.	.	.	.
 Canada	48.428197	-123.466956	Using Vancouver Island	Canada	.	.	X	.	.	.	.	
 Caribbean Sea	19.067361	-72.798457	Using Haiti	Caribbean Sea	.	.	.	.	.	.	.	
 Chagos Archipelago	-5.998410	71.503033	.	Chagos Archipelago	.	.	.	.	.	.	.	
-Chile	-25.335191	-70.505536	Used point a bit N of central W coast	Chile	.	.	.	.	.	.	.	
+Chile	-25.335191	-70.505536	Used point a bit N of central W coast	Chile	.	.	.	-16.7000	-66.5	-56.0	-78.0	
 Chile & Peru	-18.345423	-70.376421	.	Chile & Peru	.	.	.	.	.	.	.	
 China	29.817896	121.868542	.	China	.	.	.	.	.	.	.	
 Cocos (Keeling) Islands	-12.116667	96.900000	.	Cocos (Keeling) Islands	.	.	.	.	.	.	.	
-Colombia	7.738336	-77.312599	Using spot near Panama, midway between oceans	Colombia	.	.	.	.	.	.	.	
+Colombia	7.738336	-77.312599	Using spot near Panama, midway between oceans	Colombia	.	.	.	14.5	-67.0	-5.0	-80.0	
 Costa Rica	9.907572	-83.925784	.	Costa Rica	.	.	.	.	.	.	.	
 Cuba	22.064379	-79.476363	.	Cuba	.	.	.	23.6	-73.0	19.5	-86.0	
-Curaçao	12.183333	-69.000000	.	Curaçao	.	.	.	.	.	.	.	
+Curaçao	12.183333	-69.000000	.	Curaçao	.	.	.	12.5	-68.7	12.0	-69.3	
 Democratic Republic of the Congo	-6.028319	12.459611	Using Parc marin des mangroves	Democratic Republic of the Congo	.	.	.	6.5	32.5	-14.0	10.0	
 Djibouti	11.588333	43.145000	.	Djibouti	.	.	.	12.5	43.6	11.0	41.5	
 Dominica	15.429909	-61.338679	.	Dominica	.	.	.	.	.	.	.	
@@ -35,7 +35,7 @@ Dominican Republic	19.051527	-70.452794	.	Dominican Republic	.	.	.	20.5	-68.0	17
 East Indies	1.000000	103.000000	.	East Indies	.	.	.	.	.	.	.	
 Eastern Africa	-6.800000	39.283333	Using Dar es Salaam	Eastern Africa	.	.	.	.	.	.	.	
 Eastern Seas	-2.933333	107.916667	Arbitrary term; using Malay Archipelago	Eastern Seas	.	.	.	.	.	.	.	
-Ecuador	-0.967795	-80.707970	Using Manta	Ecuador	.	.	.	.	.	.	.	
+Ecuador	-0.967795	-80.707970	Using Manta	Ecuador	.	.	.	2.5	-75.0	-5.0	-81.5	
 Egypt	25.967297	34.357588	.	Egypt	.	.	.	32.0	37.5	22.0	24.5	
 El Salvador	13.355678	-89.036220	.	El Salvador	.	.	.	.	.	.	.	
 England	51.541388	0.580856	.	England	.	.	X	.	.	.	.	
@@ -43,10 +43,10 @@ Equatorial Guinea	1.853792	9.778701	Using Bata	Equatorial Guinea	.	.	.	2.5	11.5	
 Eritrea	15.609722	39.450000	Includes Ethiopia. Using Massawa	Eritrea	.	.	.	18.0	44.0	12.5	36.0	
 Europe	36.022659	-5.607196	Using Andalusia, Spain	Europe	.	.	.	.	.	.	.	
 Fiji	-18.000000	179.000000	.	Fiji	.	.	.	.	.	.	.	
-French Guiana	5.198095	-52.694248	.	French Guiana	.	.	.	.	.	.	.	
+French Guiana	5.198095	-52.694248	.	French Guiana	.	.	.	6.2	-51.0	1.8	-55.0	
 French Polynesia	-17.533333	-149.566667	.	French Polynesia	.	.	.	.	.	.	.	
 Gabon	0.416894	9.473080	Using Libreville	Gabon	.	.	.	3.0	15.0	-4.0	8.0	
-Galápagos Islands	-0.666667	-90.550000	.	Galápagos Islands	.	.	.	.	.	.	.	
+Galápagos Islands	-0.666667	-90.550000	.	Galápagos Islands	.	.	.	1.2	-88.7	-2.0	-93.0	
 Ghana	5.203376	-1.074352	"Gold Coast"	Ghana	Gold Coast	.	.	12.0	2.0	4.0	-4.0	
 Guadeloupe	16.245455	-61.548555	.	Guadeloupe	.	.	.	.	.	.	.	
 Guam	13.451944	144.765478	.	Guam	.	.	.	.	.	.	.	
@@ -54,7 +54,7 @@ Guatemala	14.023968	-91.335411	Using Pacific coast	Guatemala	.	.	.	.	.	.	.
 Guinea	9.509167	-13.712222	Using Conakry	Guinea	.	.	.	13.0	-7.0	6.0	-16.0	
 Guinea-Bissau	11.850000	-15.566667	Using Bissau	Guinea-Bissau	.	.	.	13.0	-13.0	10.5	-17.0	
 Gulf of Aden	12.565854	47.752915	Using center of gulf	Gulf of Aden	.	.	.	.	.	.	.	
-Guyana	6.843086	-58.147570	"British Guiana"	Guyana	British Guiana	.	.	.	.	.	.	
+Guyana	6.843086	-58.147570	"British Guiana"	Guyana	British Guiana	.	.	8.8	-56.2	0.6	-61.6	
 Haiti	19.067361	-72.798457	.	Haiti	.	.	.	20.3	-71.5	17.7	-75.0	
 Hispaniola	18.956123	-71.345057	.	Hispaniola	.	.	.	20.5	-68.0	17.4	-75.0	
 Honduras	15.793274	-80.770428	Used mid-Atlantic coast	Honduras	.	.	.	.	.	.	.	
@@ -97,13 +97,13 @@ Nigeria	4.712213	5.651727	Using Niger Delta	Nigeria	.	.	.	14.5	15.5	3.0	2.0
 Northern Africa	35.766667	-5.800000	Using Tangier	Northern Africa	.	.	.	.	.	.	.	
 Pacific coast of the Americas	11.125208	-85.805854	Nicaragua/Costa Rica border	Pacific coast of the Americas	.	.	.	.	.	.	.	
 Pakistan	24.826332	66.995130	Using Karachi	Pakistan	.	.	.	.	.	.	.	
-Palau	7.500000	134.616667	"Babelthaob"	Palau	Babelthaob	.	.	.	.	.	.	
+Palau	7.500000	134.616667	"Babelthaob", Palao	Palau	Babelthaob	.	.	.	.	.	.	
 Palmyra Atoll	5.883333	-162.083333	.	Palmyra Atoll	.	.	.	.	.	.	.	
 Panama	9.125915	-79.882527	Middle of country	Panama	.	.	.	.	.	.	.	
 Papua New Guinea	-6.138347	144.020254	.	Papua New Guinea	.	.	.	.	.	.	.	
 Penrhyn Atoll	-9.005556	-157.969444	.	Penrhyn Atoll	.	.	.	.	.	.	.	
 Persian Gulf	27.082272	51.398815	Using center of gulf	Persian Gulf	.	.	.	.	.	.	.	
-Peru	-12.065965	-77.160180	Using Lima	Peru	.	.	.	.	.	.	.	
+Peru	-12.065965	-77.160180	Using Lima	Peru	.	.	.	1.5	-68.0	-18.5	-82.0	
 Philippines	12.054183	123.139648	.	Philippines	.	.	.	.	.	.	.	
 Portugal	37.116667	-7.650000	Using Tavira	Portugal	.	.	.	43.0	-5.5	36.0	-10.0	
 Puerto Rico	18.240439	-66.499657	.	Puerto Rico	.	.	.	.	.	.	.	
@@ -127,9 +127,9 @@ Southeastern Africa	-25.983333	32.700000	Using Maputo Bay	Southeastern Africa	.	
 Spain	36.529167	-6.191944	Using Puerto Real	Spain	.	.	.	45.0	4.0	35.0	-11.0	
 Sri Lanka	6.922942	79.846627	"Ceylon". Using Colombo	Sri Lanka	Ceylon	.	.	.	.	.	.	
 Sudan	19.606495	37.228945	Using Port Sudan	Sudan	.	.	.	22.0	39.0	9.5	21.5	
-Suriname	5.899834	-55.203948	Using Paramaribo	Suriname	.	.	.	.	.	.	.	
+Suriname	5.899834	-55.203948	Using Paramaribo	Suriname	.	.	.	6.6	-53.3	1.2	-58.5	
 Tahiti	-17.666667	-149.416667	.	Tahiti	.	.	.	.	.	.	.	
-Taiwan	23.830101	120.891862	"Formosa"	Taiwan	Formosa	.	.	.	.	.	.	
+Taiwan	23.830101	120.891862	"Formosa"	Taiwan	Formosa	.	.	25.6	122.2	21.7	119.0	
 Tanzania	-6.800000	39.283333	Also known as Zanzibar; using Dar es Salaam	Tanzania	Zanzibar	.	.	-0.5	40.5	-12.0	28.5	
 Thailand	8.362382	99.291912	Middle of peninsular region	Thailand	.	.	.	.	.	.	.	
 The Bahamas	24.689207	-76.376733	.	The Bahamas	.	.	.	.	.	.	.	
@@ -163,7 +163,7 @@ Barbuda, Antigua and Barbuda	17.615555	-61.791627	.	Barbuda	.	Antigua and Barbud
 Kobroor Island, Aru Islands, Indonesia	-5.500000	134.583333	"Manoembaai"	Kobroor Island	Manoembaai	Aru Islands, Indonesia	.	.	.	.	.	
 Alabama, USA to Mexico	27.813063	-97.393187	Using Corpus Christi	Alabama, USA to Mexico	.	Atlantic coast of North America	.	.	.	.	.	
 Eastern Yucatan Peninsula, Mexico to Guatemala	17.190845	-88.318569	Using Belize	Eastern Yucatan Peninsula, Mexico to Guatemala	.	Atlantic coast of North America	.	.	.	.	.	
-Gulf of Mexico	25.956996	-97.146196	.	Gulf of Mexico	.	Atlantic coast of North America	.	.	.	.	.	
+Gulf of Mexico	25.398015	-90.076438	.	Gulf of Mexico	.	Atlantic coast of North America	.	.	.	.	.	
 Mississippi, USA, to Mexico	27.813063	-97.393187	Using Corpus Christi	Mississippi, USA, to Mexico	.	Atlantic coast of North America	.	.	.	.	.	
 Northeastern coast of Mexico to Guatemala	18.754732	-95.817282	Using Veracruz	Northeastern coast of Mexico to Guatemala	.	Atlantic coast of North America	.	.	.	.	.	
 Texas, USA to Mexico	25.956996	-97.146196	Using Texas/Mexico border	Texas, USA to Mexico	.	Atlantic coast of North America	.	.	.	.	.	
@@ -175,7 +175,7 @@ Atlantic coast of North America	36.549839	-75.915700	Point near Virginia/North C
 Atlantic coast of South America	4.937222	-52.492778	.	Atlantic coast of South America	.	Atlantic coast of the Americas	.	.	.	.	.	
 Belize to Guyana	10.415675	-75.493653	.	Belize to Guyana	.	Atlantic coast of the Americas	.	.	.	.	.	
 Eastern Australia	-23.850531	151.262747	Using middle eastern coast Queensland	Eastern Australia	.	Australia	.	.	.	.	.	
-Gulf of Carpentaria, Australia	14.000000	139.000000	.	Gulf of Carpentaria	.	Australia	.	.	.	.	.	
+Gulf of Carpentaria, Australia	-14.000000	139.000000	.	Gulf of Carpentaria	.	Australia	.	.	.	.	.	
 Northern and Western Australia	-17.961944	122.236111	Using Broome	Northern and Western Australia	.	Australia	.	.	.	.	.	
 Northern Australia	-12.450000	130.833333	Using Darwin	Northern Australia	.	Australia	.	.	.	.	.	
 Northern Territory, Australia	-12.450000	130.833333	Using Darwin	Northern Territory	.	Australia	.	.	.	.	.	
@@ -204,11 +204,11 @@ San Felipe Bay, Baja California, Mexico	31.020937	-114.832990	Gulf of California
 San Felipe, Baja California, Mexico	32.021234	-113.834964	.	San Felipe	.	Baja California, Mexico	.	.	.	.	.	
 La Boca, Balboa, Panama City, Panama	8.947882	-79.566969	Pacific Coast	La Boca	.	Balboa, Panama City, Panama	.	.	.	.	.	
 Sundarbans, Bangladesh	21.949722	89.183330	"Sunderbunds"	Sundarbans	Sunderbunds	Bangladesh	.	.	.	.	.	
-Chulliyachi, Bay of Sechura, Peru	-5.614322	-80.861335	.	Chulliyachi	.	Bay of Sechura, Peru	.	.	.	.	.	
+Chulliyachi, Bay of Sechura, Peru	-5.614322	-80.861335	.	Chulliyachi	.	Bay of Sechura, Peru	.	-5.0	-80.0	-6.5	-81.5	
 Pivers Island, Beaufort, North Carolina, USA	34.716991	-76.671251	.	Pivers Island	.	Beaufort, North Carolina, USA	.	.	.	.	.	
 Neches River, Beaumont, Texas, USA	30.024649	-94.027343	.	Neches River	.	Beaumont, Texas, USA	.	.	.	.	.	
 Panglao, Bohol, Philippines	9.583333	123.750000	.	Panglao	.	Bohol, Philippines	.	.	.	.	.	
-Chichijima, Bonin Islands, Japan	27.066667	142.208333	.	Chichijima	.	Bonin Islands, Japan	.	.	.	.	.	
+Chichijima, Ogasawara Islands, Japan	27.066667	142.208333	.	Chichijima	.	Ogasawara Islands, Japan	.	.	.	.	.	
 Northwestern Borneo	3.181282	113.038717	Using Bintulu	Northwestern Borneo	.	Borneo	.	.	.	.	.	
 Pontianak, Borneo, Indonesia	-0.005549	109.318355	.	Pontianak	.	Borneo, Indonesia	.	.	.	.	.	
 Samarinda, Borneo, Indonesia	-0.501399	117.134707	.	Samarinda	.	Borneo, Indonesia	.	.	.	.	.	
@@ -244,8 +244,8 @@ Yap, Caroline Islands, Micronesia	9.533333	138.116667	.	Yap	.	Caroline Islands, 
 Cebu Province, Cebu, Philippines	10.299490	123.912316	.	Cebu Province	.	Cebu, Philippines	.	.	.	.	.	
 Diego Garcia, Chagos Archipelago	-7.313333	72.411111	.	Diego Garcia	.	Chagos Archipelago	.	.	.	.	.	
 Ennore, Chennai, India	13.217500	80.321550	.	Ennore	.	Chennai, India	.	.	.	.	.	
-Quintero, Chile	-32.765640	-71.535805	.	Quintero	.	Chile	.	.	.	.	.	
-Valparaíso, Chile	-33.042430	-71.611624	.	Valparaíso	.	Chile	.	.	.	.	.	
+Quintero, Chile	-32.765640	-71.535805	.	Quintero	.	Chile	.	-16.7000	-66.5	-35.0	-74.0	
+Valparaíso, Chile	-33.042430	-71.611624	.	Valparaíso	.	Chile	.	-16.7000	-66.5	-35.0	-74.0	
 "Chin Bey", China	24.442150	118.315963	Close to "Amoy" = Xiamen	"Chin Bey"	.	China	.	.	.	.	.	
 "Cumsingmoon", China	22.344864	113.597491	aka "Jinxing Men", it was between Zhuhai and Qi'ao Island	Cumsingmoon	Jinxing Men	China	.	.	.	.	.	
 Fujian, China	25.289279	118.969131	.	Fujian	.	China	.	.	.	.	.	
@@ -261,16 +261,16 @@ Galeta Island, Coco Solo, Panama	9.402333	-79.872167	Atlantic coast	Galeta Islan
 US Naval Station, Coco Solo, Panama	9.372620	-79.881200	Atlantic coast	US Naval Station	.	Coco Solo, Panama	.	.	.	.	.	
 Cuyutlán, Colima, Mexico	18.913283	-104.064562	Pacific coast	Cuyutlán	.	Colima, Mexico	.	.	.	.	.	
 Manzanillo, Colima, Mexico	19.098943	-104.351562	Pacific coast	Manzanillo	.	Colima, Mexico	.	.	.	.	.	
-Bahia de Buenaventura, Colombia	3.856434	-77.120451	Pacific coast	Bahia de Buenaventura	.	Colombia	.	.	.	.	.	
-Bahia de Humboldt, Colombia	7.090928	-77.869682	"Humboldt Bay", Pacific coast, near Panama border	Bahia de Humboldt	Humboldt Bay	Colombia	.	.	.	.	.	
-Baranquilla, Colombia	11.021367	-74.793653	Atlantic coast	Baranquilla	.	Colombia	.	.	.	.	.	
-Cartagena, Colombia	10.415675	-75.493653	Atlantic coast	Cartagena	.	Colombia	.	.	.	.	.	
-Cupica Bay, Colombia	6.690131	-77.475002	.	Cupica Bay	.	Colombia	.	.	.	.	.	
-Gorgona Island, Colombia	2.967500	-78.180278	.	Gorgona Island	.	Colombia	.	.	.	.	.	
-Isla de Providencia, Colombia	13.348889	-81.374722	"Old Providence"	Isla de Providencia	Old Providence	Colombia	.	.	.	.	.	
-Sabanilla, Colombia	11.031667	-74.922500	Atlantic coast	Sabanilla	.	Colombia	.	.	.	.	.	
-Santa Marta, Colombia	11.241944	-74.205278	Atlantic coast	Santa Marta	.	Colombia	.	.	.	.	.	
-Tumaco, Colombia	1.796322	-78.800515	Pacific coast, near Ecuador	Tumaco	.	Colombia	.	.	.	.	.	
+Bahia de Buenaventura, Colombia	3.856434	-77.120451	Pacific coast	Bahia de Buenaventura	.	Colombia	.	4.1	-76.9	3.6	-77.3	
+Bahia de Humboldt, Colombia	7.090928	-77.869682	"Humboldt Bay", Pacific coast, near Panama border	Bahia de Humboldt	Humboldt Bay	Colombia	.	7.4	-77.4	6.6	-78.3	
+Baranquilla, Colombia	11.021367	-74.793653	Atlantic coast	Baranquilla	.	Colombia	.	12.0	-73.0	9.2	-76.5	
+Cartagena, Colombia	10.415675	-75.493653	Atlantic coast	Cartagena	.	Colombia	.	11.6	-73.7	8.3	-77.0	
+Cupica Bay, Colombia	6.690131	-77.475002	.	Cupica Bay	.	Colombia	.	7.4	-76.9	6.0	-78.0	
+Gorgona Island, Colombia	2.967500	-78.180278	.	Gorgona Island	.	Colombia	.	3.2	-77.7	2.5	-78.6	
+Isla de Providencia, Colombia	13.348889	-81.374722	"Old Providence"	Isla de Providencia	Old Providence	Colombia	.	14.7	-79.8	9.2	-83.7	
+Sabanilla, Colombia	11.031667	-74.922500	Atlantic coast	Sabanilla	.	Colombia	.	12.0	-73.0	9.2	-76.5	
+Santa Marta, Colombia	11.241944	-74.205278	Atlantic coast	Santa Marta	.	Colombia	.	12.0	-73.0	9.2	-76.5	
+Tumaco, Colombia	1.796322	-78.800515	Pacific coast, near Ecuador	Tumaco	.	Colombia	.	3.0	-77.7	0.7	-80.0	
 East Haven, Connecticut, USA	41.259257	-72.852607	.	East Haven	.	Connecticut, USA	.	.	.	.	.	
 New Haven, Connecticut, USA	41.297313	-72.914577	.	New Haven	.	Connecticut, USA	.	.	.	.	.	
 Endeavour River Estuary, Cooktown, Queensland, Australia	-15.457401	145.213824	.	Endeavour River Estuary	.	Cooktown, Queensland, Australia	.	.	.	.	.	
@@ -297,21 +297,21 @@ Río Lagarto, Costa Rica	10.056101	-84.941826	Pacific coast	Río Lagarto	.	Costa
 Santo Domingo, Costa Rica	8.563990	-83.249920	Pacific coast, using Golfo Dolce	Santo Domingo (Costa Rica)	.	Costa Rica	.	.	.	.	.	
 Uvita Bay, Costa Rica	9.146996	-83.746911	Pacific coast	Uvita Bay	.	Costa Rica	.	.	.	.	.	
 Marianao Playa, Cuba	23.103008	-82.449751	.	Marianao Playa	.	Cuba	.	.	.	.	.	
-Limon Bay, Cupica Bay, Colombia	6.682790	-77.462324	Pacific coast, near Panama	Limon Bay	.	Cupica Bay, Colombia	.	.	.	.	.	
-Piscaderabaai, Curaçao	12.132549	-68.968917	.	Piscaderabaai	Piscadera Bay	Curaçao	.	.	.	.	.	
+Limon Bay, Cupica Bay, Colombia	6.682790	-77.462324	Pacific coast, near Panama	Limon Bay	.	Cupica Bay, Colombia	.	7.4	-76.9	6.0	-78.0	
+Piscaderabaai, Curaçao	12.132549	-68.968917	.	Piscaderabaai	Piscadera Bay	Curaçao	.	12.5	-68.7	12.0	-69.3	
 Lewes, Delaware, USA	38.791235	-75.162618	.	Lewes	.	Delaware, USA	.	.	.	.	.	
 Sussex County, Delaware, USA	38.694225	-75.152342	.	Sussex County	.	Delaware, USA	.	.	.	.	.	
 Obock, Djibouti	11.966667	43.283333	.	Obock	.	Djibouti	.	.	.	.	.	
 Sanchez, Dominican Republic	19.225539	-69.612179	.	Sanchez	.	Dominican Republic	.	.	.	.	.	
 Santo Domingo, Dominican Republic	18.466667	-69.950000	.	Santo Domingo (Dominican Republic)	.	Dominican Republic	.	.	.	.	.	
 Umgeni River, Durban, South Africa	-29.811787	31.039456	.	Umgeni River	.	Durban, South Africa	.	.	.	.	.	
-Esmeraldas, Ecuador	0.950000	-79.666667	.	Esmeraldas	.	Ecuador	.	.	.	.	.	
-Guayaquil, Ecuador	-2.183333	-79.883333	.	Guayaquil	.	Ecuador	.	.	.	.	.	
-Guayas, Ecuador	-2.183333	-79.883333	Using Guayaquil	Guayas	.	Ecuador	.	.	.	.	.	
-Puerto El Morro, Ecuador	-2.636569	-80.279288	.	Puerto El Morro	.	Ecuador	.	.	.	.	.	
-Puná Island, Ecuador	-2.833333	-80.133333	.	Puná Island	.	Ecuador	.	.	.	.	.	
-Puntilla, Ecuador	-2.183333	-79.883333	Using Guayaquil	Puntilla	.	Ecuador	.	.	.	.	.	
-Rio Daule Inferiore, Ecuador	-2.183333	-79.883333	Using Guayaquil	Rio Daule Inferiore	.	Ecuador	.	.	.	.	.	
+Esmeraldas, Ecuador	0.950000	-79.666667	.	Esmeraldas	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Guayaquil, Ecuador	-2.183333	-79.883333	.	Guayaquil	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Guayas, Ecuador	-2.183333	-79.883333	Using Guayaquil	Guayas	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Puerto El Morro, Ecuador	-2.636569	-80.279288	.	Puerto El Morro	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Puná Island, Ecuador	-2.833333	-80.133333	.	Puná Island	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Puntilla, Ecuador	-2.183333	-79.883333	Using Guayaquil	Puntilla	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
+Rio Daule Inferiore, Ecuador	-2.183333	-79.883333	Using Guayaquil	Rio Daule Inferiore	.	Ecuador	.	2.5	-75.0	-5.0	-81.5	
 El-Monqatea, Egypt	28.208651	34.420970	.	El-Monqatea	Shora el Monqata	Egypt	.	.	.	.	.	
 El-Tor, Egypt	-28.241667	33.622222	.	El-Tor	.	Egypt	.	.	.	.	.	
 Gulf of Suez, Egypt	28.750000	33.000000	.	Gulf of Suez	.	Egypt	.	.	.	.	.	
@@ -392,8 +392,8 @@ Vaca Key, Florida, USA	24.718462	-81.073469	.	Vaca Key	.	Florida, USA	.	.	.	.	.
 Wakulla County, Florida, USA	30.104727	-84.262464	.	Wakulla County	.	Florida, USA	.	.	.	.	.	
 West coast of Florida, USA	27.747929	-82.629124	Using St. Petersburg	West coast of Florida	.	Florida, USA	.	.	.	.	.	
 Yankeetown, Florida, USA	29.030117	-82.750054	.	Yankeetown	.	Florida, USA	.	.	.	.	.	
-Cayenne, French Guiana	4.937222	-52.492778	.	Cayenne	.	French Guiana	.	.	.	.	.	
-Gatavaké, French Polynesia 	-23.117222	-134.981111	.	Gatavaké	.	French Polynesia	.	.	.	.	.	
+Cayenne, French Guiana	4.937222	-52.492778	.	Cayenne	.	French Guiana	.	6.2	-51.0	1.8	-55.0	
+Gatavaké, French Polynesia	-23.117222	-134.981111	.	Gatavaké	.	French Polynesia	.	.	.	.	.	
 Mangareva, French Polynesia	-23.107065	-134.968270	.	Mangareva	.	French Polynesia	.	.	.	.	.	
 Mo'orea, French Polynesia	-17.536902	-148.834630	.	Mo'orea	.	French Polynesia	.	.	.	.	.	
 Guantouzhen, Fujian, China	26.130809	119.569216	"Guantao"	Guantouzhen	Guantao	Fujian, China	.	.	.	.	.	
@@ -404,14 +404,14 @@ Ningde, Fujian, China	26.662456	119.553223	"Ningteh, Fukien"	Ningde	Ningteh	Fuji
 Sandu'ao, Fujian, China	26.614915	119.709955	"Santuao, Fukien"	Sandu'ao	Santuao	Fujian, China	.	.	.	.	.	
 Xiamen, Fujian, China	24.479836	118.089417	"Amoy"	Xiamen	Amoy	Fujian, China	.	.	.	.	.	
 Hakata Bay, Fukuoka, Kyūshū, Japan	33.618000	130.333000	.	Hakata Bay	.	Fukuoka, Kyūshū, Japan	.	.	.	.	.	
-Baltra Island, Galápagos Islands	-0.453667	-90.271467	Also known as South Seymour Island	Baltra Island	South Seymour Island	Galápagos Islands	.	.	.	.	.	
-Eden Island, Galápagos Islands	-0.545252	-90.542567	Tiny island W of Santa Cruz Island	Eden Island	.	Galápagos Islands	.	.	.	.	.	
-Fernandina Island, Galápagos Islands	-0.366667	-91.550000	Also known as Narborough Island	Fernandina Island	Narborough Island	Galápagos Islands	.	.	.	.	.	
-Floreana Island, Galápagos Islands	-1.306627	-90.437753	Also known as Charles Island and Santa Maria Island	Floreana Island	Charles Island;Santa Maria Island	Galápagos Islands	.	.	.	.	.	
-Genovesa Island, Galápagos Islands	0.316667	-89.950000	Also known as Tower Island	Genovesa Island	Tower Island	Galápagos Islands	.	.	.	.	.	
-Isabela Island, Galápagos Islands	-0.500000	-91.066667	Also known as Albemarle Island	Isabela Island	Albemarle Island	Galápagos Islands	.	.	.	.	.	
-Santa Cruz Island, Galápagos Islands	-0.640968	-90.337425	Also known as Indefatigable Island	Santa Cruz Island	Indefatigable Island	Galápagos Islands	.	.	.	.	.	
-Santiago Island, Galápagos Islands	-0.260292	-90.715158	Also known as James Island and San Salvador Island	Santiago Island	James Island;San Salvador Island	Galápagos Islands	.	.	.	.	.	
+Baltra Island, Galápagos Islands	-0.453667	-90.271467	Also known as South Seymour Island	Baltra Island	South Seymour Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Eden Island, Galápagos Islands	-0.545252	-90.542567	Tiny island W of Santa Cruz Island	Eden Island	.	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Fernandina Island, Galápagos Islands	-0.366667	-91.550000	Also known as Narborough Island	Fernandina Island	Narborough Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Floreana Island, Galápagos Islands	-1.306627	-90.437753	Also known as Charles Island and Santa Maria Island	Floreana Island	Charles Island;Santa Maria Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Genovesa Island, Galápagos Islands	0.316667	-89.950000	Also known as Tower Island	Genovesa Island	Tower Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Isabela Island, Galápagos Islands	-0.500000	-91.066667	Also known as Albemarle Island	Isabela Island	Albemarle Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Santa Cruz Island, Galápagos Islands	-0.640968	-90.337425	Also known as Indefatigable Island	Santa Cruz Island	Indefatigable Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
+Santiago Island, Galápagos Islands	-0.260292	-90.715158	Also known as James Island and San Salvador Island	Santiago Island	James Island;San Salvador Island	Galápagos Islands	.	1.2	-88.7	-2.0	-93.0	
 Sapelo Island, Georgia, USA	31.477500	-81.241667	.	Sapelo Island	.	Georgia, USA	.	.	.	.	.	
 Savannah, Georgia, USA	32.016667	-81.116667	.	Savannah	.	Georgia, USA	.	.	.	.	.	
 St. Catherines Island, Georgia, USA	31.630556	-81.160139	.	St. Catherines Island	.	Georgia, USA	.	.	.	.	.	
@@ -428,7 +428,7 @@ Northwestern Gulf of Mexico	27.813063	-97.393187	Using Corpus Christi	Northweste
 Southern Texas, USA to Northeastern Mexico	25.956996	-97.146196	Gulf of Mexico	Southern Texas, USA to Northeastern Mexico	.	Gulf of Mexico	.	.	.	.	.	
 Western Gulf of Mexico	25.956996	-97.146196	.	Western Gulf of Mexico	.	Gulf of Mexico	.	.	.	.	.	
 Suez Canal, Gulf of Suez, Egypt	29.939920	32.567924	.	Suez Canal	.	Gulf of Suez, Egypt	.	.	.	.	.	
-Berbice River, Guyana	6.271936	-57.327460	.	Berbice River	.	Guyana	.	.	.	.	.	
+Berbice River, Guyana	6.271936	-57.327460	.	Berbice River	.	Guyana	.	8.8	-56.2	0.6	-61.6	
 Sanya, Hainan Island, China	18.253333	109.503611	.	Sanya	.	Hainan Island, China	.	.	.	.	.	
 Xincun Harbor, Hainan Island, China	18.412609	109.990601	"Newtown Harbor, Hainan Island"	Xincun Harbor	Newtown Harbor	Hainan Island, China	.	.	.	.	.	
 Jeremie, Haiti	18.674425	-74.134201	.	Jeremie	.	Haiti	.	.	.	.	.	
@@ -450,7 +450,7 @@ Gulf of Mannar, India	8.470000	79.020000	.	Gulf of Mannar	.	India	.	.	.	.	.
 Kannur, India	11.852296	75.367443	.	Kannur	.	India	.	.	.	.	.	
 Kerala, India	9.923079	76.249552	"Travancore", using Kochi	Kerala	Travancore	India	.	.	.	.	.	
 Mahé, India	11.702657	75.535604	.	Mahé (India)	.	India	.	.	.	.	.	
-Malabar coast, India	11.250000	77.770000	SW coast of India	Malabar coast	.	India	.	.	.	.	.	
+Malabar coast, India	11.949018	75.300201	SW coast of India	Malabar coast	.	India	.	.	.	.	.	
 Malta River, India	22.081670	88.639218	.	Malta River	.	India	.	.	.	.	.	
 Mumbai, India	18.975000	72.825833	"Bombay"	Mumbai	Bombay	India	.	.	.	.	.	
 Pamban, India	9.277137	79.205521	.	Pamban	.	India	.	.	.	.	.	
@@ -484,7 +484,7 @@ Tanimbar Islands, Indonesia	-7.500000	131.500000	"Timur Lant"	Tanimbar Islands	T
 Bandar Abbas, Iran	27.183333	56.266667	.	Bandar Abbas	.	Iran	.	.	.	.	.	
 Tenacatita Bay, Jalisco, Mexico	19.280694	-104.824033	Pacific coast	Tenacatita Bay	.	Jalisco, Mexico	.	.	.	.	.	
 Kingston Harbor, Jamaica	17.966745	76.817183	.	Kingston Harbor	.	Jamaica	.	.	.	.	.	
-Bonin Islands, Japan	26.998056	142.218056	.	Bonin Islands	.	Japan	.	.	.	.	.	
+Ogasawara Islands, Japan	26.998056	142.218056	.	Ogasawara Islands	Bonin Islands	Japan	.	.	.	.	.	
 Honshu, Japan	36.303378	138.472577	Center of Island	Honshu	.	Japan	.	.	.	.	.	
 Ise Bay, Japan	34.750000	136.750000	.	Ise Bay	.	Japan	.	.	.	.	.	
 Kii Peninsula, Japan	34.302778	135.955000	.	Kii Peninsula	.	Japan	.	.	.	.	.	
@@ -690,9 +690,9 @@ Rio Paraíba do Norte, Paraíba, Brazil	-7.052714	-34.863039	.	Rio Paraíba do N
 Isla San José, Pearl Islands, Panama	8.250000	-79.116667	Pacific Coast	Isla San José	.	Pearl Islands, Panama	.	.	.	.	.	
 Cocoanut Island, Pernambuco, Brazil	-8.055228	-34.863790	Supposed to be close to Recife	Cocoanut Island	.	Pernambuco, Brazil	.	.	.	.	.	
 Swan River, Perth, Western Australia, Australia	-32.073611	115.714444	.	Swan River	.	Perth, Western Australia, Australia	.	.	.	.	.	
-Bay of Sechura, Peru	-5.704917	-80.858087	.	Bay of Sechura	.	Peru	.	.	.	.	.	
-Paita, Peru	-5.082902	-81.093543	.	Paita	.	Peru	.	.	.	.	.	
-Rio Zarumilla, Peru	-3.427473	-80.280612	.	Rio Zarumilla	.	Peru	.	.	.	.	.	
+Bay of Sechura, Peru	-5.704917	-80.858087	.	Bay of Sechura	.	Peru	.	-5.0	-80.0	-6.5	-81.5	
+Paita, Peru	-5.082902	-81.093543	.	Paita	.	Peru	.	-4.8	-81.0	-5.3	-81.3	
+Rio Zarumilla, Peru	-3.427473	-80.280612	.	Rio Zarumilla	.	Peru	.	-3.3	-80.0	-3.6	-80.4	
 Bohol, Philippines	9.870209	124.216137	Center of Island	Bohol	.	Philippines	.	.	.	.	.	
 Camiguin, Philippines	9.166667	124.716667	.	Camiguin	.	Philippines	.	.	.	.	.	
 Cebu, Philippines	10.316667	123.750000	.	Cebu	.	Philippines	.	.	.	.	.	
@@ -788,11 +788,11 @@ Eastern Sumatra, Indonesia	-4.152042	105.842492	Eastern edge of island	Eastern S
 Sibolga, Sumatra, Indonesia	1.734940	98.780198	"Siboga"	Sibolga	Siboga	Sumatra, Indonesia	.	.	.	.	.	
 Simalur Island, Sumatra, Indonesia	2.625788	96.079054	Island SW of NW end; could not find current/modern name, but positiviely ID'd from old map	Simalur Island	.	Sumatra, Indonesia	.	.	.	.	.	
 Bay of Bima, Sumbawa, Indonesia	-8.460488	118.695828	.	Bay of Bima	.	Sumbawa, Indonesia	.	.	.	.	.	
-Paramaribo, Suriname	5.899834	-55.203948	.	Paramaribo	.	Suriname	.	.	.	.	.	
+Paramaribo, Suriname	5.899834	-55.203948	.	Paramaribo	.	Suriname	.	6.6	-53.3	1.2	-58.5	
 Rehoboth Beach, Sussex County, Delaware, USA	38.720403	-75.075686	.	Rehoboth Beach	.	Sussex County, Delaware, USA	.	.	.	.	.	
-Kaohsiung, Taiwan	22.607187	120.287631	"Takao"	Kaohsiung	Takao	Taiwan	.	.	.	.	.	
-Southern Taiwan	21.973132	120.743547	.	Southern Taiwan	.	Taiwan	.	.	.	.	.	
-Tamsui, Taiwan	25.172922	121.437792	.	Tamsui	.	Taiwan	.	.	.	.	.	
+Kaohsiung, Taiwan	22.607187	120.287631	"Takao"	Kaohsiung	Takao	Taiwan	.	25.6	122.2	21.7	119.0	
+Southern Taiwan	21.973132	120.743547	.	Southern Taiwan	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Tamsui, Taiwan	25.172922	121.437792	Tansui	Tamsui	.	Taiwan	.	25.6	122.2	21.7	119.0	
 Matamoros, Tamaulipas, Mexico	25.956996	-97.146196	.	Matamoros	.	Tamaulipas, Mexico	.	.	.	.	.	
 Tampico, Tamaulipas, Mexico	22.232511	-97.837843	Gulf of Mexico	Tampico	.	Tamaulipas, Mexico	.	.	.	.	.	
 Dar es Salaam, Tanzania	-6.800000	39.283333	.	Dar es Salaam	.	Tanzania	.	.	.	.	.	
@@ -864,12 +864,12 @@ Texas, USA	29.287694	-94.809340	Using Galveston	Texas	.	United States	.	.	.	.	.
 Virginia, USA	36.995833	-75.959444	Using Chesapeake Bay	Virginia	.	United States	.	.	.	.	.	
 Washington, USA	45.377827	-123.991418	.	Washington	.	United States	X	.	.	.	.	
 La Sierra, Uruguay	-34.883611	-56.181944	Using Montevideo	La Sierra	.	Uruguay	.	.	.	.	.	
-Isla Cotorra, Venezuela	10.039549	-62.261338	.	Isla Cotorra	.	Venezuela	.	.	.	.	.	
-Maracaibo, Venezuela	10.689372	-71.615845	.	Maracaibo	.	Venezuela	.	.	.	.	.	
-Margarita Island, Venezuela	10.971211	-64.006033	.	Margarita Island	.	Venezuela	.	.	.	.	.	
-Pedernales, Venezuela	9.944104	-62.014593	.	Pedernales	.	Venezuela	.	.	.	.	.	
-Puerto Cabello, Venezuela	10.481722	-68.004728	.	Puerto Cabello	.	Venezuela	.	.	.	.	.	
-San Juan River, Venezuela	10.139341	-62.617509	.	San Juan River	.	Venezuela	.	.	.	.	.	
+Isla Cotorra, Venezuela	10.039549	-62.261338	.	Isla Cotorra	.	Venezuela	.	10.9	-60.9	9.0	-63.6	
+Maracaibo, Venezuela	10.689372	-71.615845	.	Maracaibo	.	Venezuela	.	12.1	-69.5	8.6	-73.3	
+Margarita Island, Venezuela	10.971211	-64.006033	.	Margarita Island	.	Venezuela	.	11.5	-61.7	9.7	-65.7	
+Pedernales, Venezuela	9.944104	-62.014593	.	Pedernales	.	Venezuela	.	10.9	-60.9	9.0	-63.6	
+Puerto Cabello, Venezuela	10.481722	-68.004728	.	Puerto Cabello	.	Venezuela	.	11.5	-66.7	9.8	-69.3	
+San Juan River, Venezuela	10.139341	-62.617509	.	San Juan River	.	Venezuela	.	10.8	-62.1	9.9	-63.3	
 Boca del Rio, Veracruz, Mexico	19.108061	-96.101553	Gulf of Mexico	Boca del Rio	.	Veracruz, Mexico	.	.	.	.	.	
 Casitas, Veracruz, Mexico	20.257175	-96.797832	Gulf of Mexico	Casitas	.	Veracruz, Mexico	.	.	.	.	.	
 Nautla, Veracruz, Mexico	20.221387	-96.777044	Gulf of Mexico	Nautla	.	Veracruz, Mexico	.	.	.	.	.	
@@ -896,3 +896,34 @@ Wenzhou, Zhejiang, China	28.021397	120.674950	"Wenchow, Chekiang"	Wenzhou	Wencho
 Yanting, Zhejiang, China	27.431664	120.650947	.	Yanting	.	Zhejiang, China	.	.	.	.	.	
 South Korea	34.908948	128.083548	.	South Korea	.	.	.	.	.	.	.	
 Skidaway Island, Georgia, USA	31.9330	-81.0433	.	Skidaway Island	.	Georgia, USA	.	32.0	-80.9	31.8	-81.2	.
+Pointe-Noire, Republic of the Congo	-4.769496	11.862230	.	Pointe-Noire	.	Republic of the Congo	.	4.5	19.5	-5.0	10.0	
+Mar Chiquita, Argentina	-37.7667	-57.4500	Coords from paper	Mar Chiquita	.	Argentina	.	-34.4	-54.0	-38.9	-60.0	
+Argentina	-34.5913	-58.3664	Using Buenos Aires	Argentina	.	.	.	-21.5	-51.3	-55.6	-75.0	
+Mayotte	-12.8193	45.1579	.	Mayotte	.	.	.	-7.7	51.0	-17.3	37.0	
+Yilan, Taiwan	24.7149	121.7760	.	Yilan	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Lanyang River, Yilan, Taiwan	24.7149	121.7760	.	Lanyang River	.	Yilan, Taiwan	.	25.6	122.2	21.7	119.0	
+New Taipei City, Taiwan	25.1731	121.4203	.	New Taipei City	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Baoli, Pingtung, Taiwan	22.0606	120.7063	.	Baoli	.	Pingtung, Taiwan	.	25.6	122.2	21.7	119.0	
+Pingtung, Taiwan	22.4253	120.5040	.	Pingtung	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Penghu, Taiwan	23.5690	119.6192	.	Penghu	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Cingluo, Penghu, Taiwan	23.5690	119.6192	.	Cingluo	.	Penghu, Taiwan	.	25.6	122.2	21.7	119.0	
+Citou, Penghu, Taiwan	23.6491	119.6100	.	Citou	.	Penghu, Taiwan	.	25.6	122.2	21.7	119.0	
+Nha Trang, Vietnam	12.2612	109.1989	.	Nha Trang	.	Vietnam	.	16.6	111.7	7.7	102.3	
+Iriomote-jima, Japan	24.3345	13.8235	.	Iriomote-jima	.	Japan	.	.	.	.	.	
+Tainan, Taiwan	23.1340	120.0753	.	Tainan	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Kenting, Pingtung, Taiwan	21.9471	120.7799	.	Kenting	.	Pingtung, Taiwan	.	25.6	122.2	21.7	119.0	
+Taitung, Taiwan	22.7670	121.1728	.	Taitung	.	Taiwan	.	25.6	122.2	21.7	119.0	
+Shihcyuan, Penghu, Taiwan	23.5523	119.5910	.	Shihcyuan	.	Penghu, Taiwan	.	25.6	122.2	21.7	119.0	
+Dongsha Islands, Taiwan	20.7016	116.7249	.	Dongsha Islands	Pratas Islands	Taiwan	.	.	.	.	.	
+Sasa Bay, Guam	13.4500	144.6774	.	Sasa Bay	.	Guam	.	.	.	.	.	
+Ouano Bay, New Caledonia	-21.8425	165.8218	.	Ouano Bay	.	New Caledonia	.	.	.	.	.	
+Dumbea, New Caledonia	-22.1836	166.4208	.	Dumbea	.	New Caledonia	.	.	.	.	.	
+Pointe de Pam, New Caledonia	-20.2319	164.3029	.	Pointe de Pam	.	New Caledonia	.	.	.	.	.	
+Halalo, Wallis, Wallis and Futuna	-13.3436	-176.2186	.	Halalo	.	Wallis, Wallis and Futuna	.	.	.	.	.	
+Ha'apiti, Mo'orea, French Polynesia	-17.5643	-149.8712	.	Ha'apiti	.	Mo'orea, French Polynesia	.	.	.	.	.	
+Bahia Honda Key, Florida, USA	24.659576	-81.261578	.	Bahia Honda	.	Florida, USA	.	.	.	.	.	
+Cumana, Venezuela	10.435408	-64.198139	.	Cumana	.	Venezuela	.	11.7	-62.6	9.8	-65.3	
+Ariake Sea, Japan	33.0013	130.3366	.	Ariake Sea	.	Japan	.	33.9	131.6	31.5	128.9	
+Amakusa, Japan	32.4672	130.2057	.	Amakusa	.	Japan	.	.	.	.	.	
+Miyazaki, Japan	32.2613	131.5746	.	Miyazaki	.	Japan	.	.	.	.	.	
+Tosa Bay, Japan	33.4600	133.4783	.	Tosa Bay	.	Japan	.	.	.	.	.	
