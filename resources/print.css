@@ -26,6 +26,12 @@
 	size: letter landscape;
 }
 
+@page cover {
+    margin: 0;
+	@bottom-left {content: normal;}
+	@bottom-right {content: normal;}	
+}
+
 .synonym_page,
 .name_page,
 .ref_page {
@@ -113,7 +119,6 @@ img {
   max-height: 6in;
  }
  
-#cover_page, 
 #title_page,
 #copyright_page,
 #table_of_contents {
@@ -121,16 +126,134 @@ img {
 	page-break-after: always;
 }
 
+#cover_page {
+	page: cover;
+	page-break-after: always;
+	background: black;
+	color: white;
+	overflow: auto;
+	height: 11in;
+	width: 8.5in;
+}
+
+.cover_img {
+	height: 1.375in;
+	width: 2.125in;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+#cover_img1,
+#cover_img5,
+#cover_img9,
+#cover_img13,
+#cover_img15,
+#cover_img17,
+#cover_img21,
+#cover_img25 { left: 0}
+
+#cover_img2,
+#cover_img6,
+#cover_img10,
+#cover_img18,
+#cover_img22,
+#cover_img26 { left: 2.125in}
+
+#cover_img3,
+#cover_img7,
+#cover_img11,
+#cover_img19,
+#cover_img23,
+#cover_img27 { left: 4.25in}
+
+#cover_img4,
+#cover_img8,
+#cover_img12,
+#cover_img14,
+#cover_img16,
+#cover_img20,
+#cover_img24,
+#cover_img28 { left: 6.375in}
+
+#cover_img1,
+#cover_img2,
+#cover_img3,
+#cover_img4 { top: 0 }
+
+#cover_img5,
+#cover_img6,
+#cover_img7,
+#cover_img8 { top: 1.375in }
+
+#cover_img9,
+#cover_img10,
+#cover_img11,
+#cover_img12 { top: 2.75in }
+
+#cover_img13,
+#cover_img14 { top: 4.125in }
+
+#cover_img15,
+#cover_img16 { top: 5.5in }
+
+#cover_img17,
+#cover_img18,
+#cover_img19,
+#cover_img20 { top: 6.875in }
+
+#cover_img21,
+#cover_img22,
+#cover_img23,
+#cover_img24 { top: 8.25in }
  
+#cover_img25,
+#cover_img26,
+#cover_img27,
+#cover_img28 { top: 9.625in }
+
+.cover_title {
+   text-align: center;
+   font-size: 40pt;
+   font-weight: bold;
+   font-variant: small-caps;
+   position: absolute;
+   top: 4.5in;
+   width: 4.25in;
+   left: 2.125in;
+   margin: 0;
+   padding: 0; 
+}
+
+.cover_author {
+   text-align: center;
+   font-size: 24pt;
+   font-weight: bold;
+   position: absolute;
+   top: 5.75in;
+   width: 4.25in;
+   left: 2.125in;
+   margin: 0;
+   padding: 0; 
+}
+
 #table_of_contents ul a::after {
 	content: leader('.') target-counter(attr(href), page);
+}
+ 
+#title_page {
+	background-image: url(../media/art/Pearse_Uca_pugilator1.png);
+	background-repeat: no-repeat;
+	background-size: 4in;
+	background-position: 0 3in;
 }
  
 .book_title {
 	text-align: center;
 	font-size: 24pt;
 	font-weight: bold;
-	padding-top: 2in;
+	padding-top: 1.5in;
 	font-variant: small-caps;
 	}
 	
@@ -143,15 +266,18 @@ img {
 
 .book_author {
 	text-align: center;
-	padding-top: 1in;
-	padding-bottom: 2in;
+	padding-top: 1.5in;
+	padding-bottom: 2.5in;
+	padding-left: 2in;
 	font-size: 16pt;
 }
+
 .title_image {
 		text-align: center;
 		width: 100%;
 		background-color: black;
 }
+
 .book_address {
 		text-align: center;
 }

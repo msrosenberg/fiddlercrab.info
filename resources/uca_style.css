@@ -136,16 +136,13 @@ nav a:visited {
   margin: 0 3px 0 0;
  }
 
+.name_bar_chart,
+.name_chart,
 #chart_div ,
 #chart2_div,
 #chart4_div,
 #chart5_div,
-#chart6_div,
-#namechart1_div,
-#namechart2_div,
-#namechart3_div,
-#namechart4_div,
-#namechart5_div {width: 100%}
+#chart6_div {width: 100%}
  
 #subgenera_phylogeny {width: 100%}
 #species_phylogeny {width: 100%}
@@ -494,16 +491,13 @@ a:visited.vidlink {
 		height: 500px;
 		}
 
-	#namechart1_div,
-	#namechart2_div,
-	#namechart3_div,
-	#namechart4_div {
+	.name_chart {
 		width: 1500px; 
-		height: 500px;
+		height: 350px;
 		}
-	#namechart5_div {
+	.name_bar_chart {
 		width: 1500px; 
-		height: 400px;
+		height: 300px;
 		}
 
 	
