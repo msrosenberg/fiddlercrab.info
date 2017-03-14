@@ -38,14 +38,17 @@ figure {
  }
 
 #home a {
-  background: black url(images/stylifera75.png) no-repeat 1px 50%;
   color: yellow;
-  display: block;
-  font-size: 2em;
-  min-height: 75px;
+  xmin-height: 75px;
   padding-left: 120px;
  }
 
+.home-title {
+  background: black url(images/stylifera75.png) no-repeat 1px 50%;
+  display: block;
+  font-size: 2em;
+}
+ 
 .indeximages {
 	text-align: center;
 }
@@ -449,7 +452,7 @@ a:visited.vidlink {
 	  color: black;
 	 }
 
-	 #home a {
+	 .home-title {
 	  font-size: 60px;
 	 }
 
