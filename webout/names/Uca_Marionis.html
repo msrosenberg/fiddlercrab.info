@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca Marionis_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -394,7 +425,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -415,7 +446,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -436,7 +467,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Makassar, Sulawesi, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Makassar_-_Sulawesi_-_Indonesia.html">Makassar, Sulawesi, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -445,7 +476,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maluku Islands, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maluku_Islands_-_Indonesia.html">Maluku Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -457,7 +488,7 @@
       <td><a href="../references/Pearse1912.2.html">Pearse (1912)</a></td>
       <td>&nbsp;</td>
       <td>text p. 114-116</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -469,7 +500,7 @@
       <td><a href="../references/Pearse1914.1.html">Pearse (1914)</a></td>
       <td>&nbsp;</td>
       <td>text p. 416</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -493,7 +524,7 @@
       <td><a href="../references/Laurie1915.html">Laurie (1915)</a></td>
       <td>&nbsp;</td>
       <td>text p. 416</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -514,7 +545,7 @@
       <td><a href="../references/Vanhoffen1916.html">Vanhöffen (1916)</a></td>
       <td>&nbsp;</td>
       <td>text p. 212</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -553,7 +584,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Makassar, Sulawesi, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Makassar_-_Sulawesi_-_Indonesia.html">Makassar, Sulawesi, Indonesia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -562,7 +593,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Karakelong, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Karakelong_-_Indonesia.html">Karakelong, Indonesia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -673,7 +704,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Brisbane River, Queensland, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Brisbane_River_-_Queensland_-_Australia.html">Brisbane River, Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -682,7 +713,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Koolan Island, Western Australia, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Koolan_Island_-_Western_Australia_-_Australia.html">Koolan Island, Western Australia, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -691,7 +722,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Fiji</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Fiji.html">Fiji</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -700,7 +731,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Endeavour River Estuary, Cooktown, Queensland, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Endeavour_River_Estuary_-_Cooktown_-_Queensland_-_Australia.html">Endeavour River Estuary, Cooktown, Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -712,7 +743,7 @@
       <td><a href="../references/Gee1925.html">Gee (1925)</a></td>
       <td>&nbsp;</td>
       <td>text p. 165</td>
-      <td><span class="fa fa-map-marker"></span> location: Hong Kong, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hong_Kong_-_China.html">Hong Kong, China</a></td>
       <td><a href="../u_borealis.html"><em class="species">Uca borealis</em></a></td>
       <td><a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
@@ -721,7 +752,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: "Chin Bey", China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chin_Bey_-_China.html">"Chin Bey", China</a></td>
       <td><a href="../u_borealis.html"><em class="species">Uca borealis</em></a></td>
       <td><a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
@@ -778,7 +809,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -790,7 +821,7 @@
       <td><a href="../references/Ward1928.html">Ward (1928)</a></td>
       <td>&nbsp;</td>
       <td>text p. 243</td>
-      <td><span class="fa fa-map-marker"></span> location: Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Queensland_-_Australia.html">Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><a href="../references/George1982.html">George &amp; Jones (1982)</a></td>
       <td>&nbsp;</td>
@@ -802,7 +833,7 @@
       <td><a href="../references/Musgrave1929.html">Musgrave (1929)</a></td>
       <td>&nbsp;</td>
       <td>text p. 342-343</td>
-      <td><span class="fa fa-map-marker"></span> location: Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Queensland_-_Australia.html">Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><a href="../references/George1982.html">George &amp; Jones (1982)</a></td>
       <td>&nbsp;</td>
@@ -811,7 +842,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New South Wales, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_South_Wales_-_Australia.html">New South Wales, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><a href="../references/George1982.html">George &amp; Jones (1982)</a></td>
       <td>&nbsp;</td>
@@ -823,7 +854,7 @@
       <td><a href="../references/Verwey1930.html">Verwey (1930)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177-178</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Java_-_Indonesia.html">Eastern Java, Indonesia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern/Central Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern-Central_Java_-_Indonesia.html">Southern/Central Java, Indonesia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -844,7 +875,7 @@
       <td><a href="../references/Takahasi1934.2.html">Takahasi (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 73-74</td>
-      <td><span class="fa fa-map-marker"></span> location: Tamsui, Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tamsui_-_Taiwan.html">Tamsui, Taiwan</a></td>
       <td><a href="../u_borealis.html"><em class="species">Uca borealis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Could also be <em class="species">Uca jocelynae.</em></td>
@@ -874,7 +905,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -886,7 +917,7 @@
       <td><a href="../references/Ward1941.html">Ward (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. 3</td>
-      <td><span class="fa fa-map-marker"></span> location: Davao Gulf, Mindanao, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Davao_Gulf_-_Mindanao_-_Philippines.html">Davao Gulf, Mindanao, Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -898,7 +929,7 @@
       <td><a href="../references/Buitendijk1947.html">Buitendijk (1947)</a></td>
       <td>&nbsp;</td>
       <td>text p. 280</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Dickson, Negeri Sembilan, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Dickson_-_Negeri_Sembilan_-_Malaysia.html">Port Dickson, Negeri Sembilan, Malaysia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -1000,7 +1031,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1036,7 +1067,7 @@
       <td><a href="../references/Gordon1955.html">Gordon (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 356</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1060,7 +1091,7 @@
       <td><a href="../references/Day1956.html">Day &amp; Morgans (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 278, 305</td>
-      <td><span class="fa fa-map-marker"></span> location: Durban Bay, South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Durban_Bay_-_South_Africa.html">Durban Bay, South Africa</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1072,7 +1103,7 @@
       <td><a href="../references/Altevogt1957.1.html">Altevogt (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 2, 4-5, 7, 9-10, 12, 15-16, 18-19, 22, 24-27, 30, 38-41, 48, 50, 52-58, 60-76, 78, 84-93, 95, 97-99, 101-107; figures 1, 3, 6-7, 12-19, 26, 31, 33, 37-42, 44-45, 47, 59</td>
-      <td><span class="fa fa-map-marker"></span> location: Mumbai, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mumbai_-_India.html">Mumbai, India</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1105,7 +1136,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71, 73-77, 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Singapore</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -1114,7 +1145,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sarawak_-_Borneo_-_Malaysia.html">Sarawak, Borneo, Malaysia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -1123,7 +1154,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Australia.html">Eastern Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1132,7 +1163,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Australia.html">Northern Australia</a></td>
       <td><a href="../u_dampieri.html"><em class="species">Uca dampieri</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1141,7 +1172,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -1150,7 +1181,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Fiji</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fiji.html">Fiji</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1210,7 +1241,7 @@
       <td><a href="../references/Gordon1958.html">Gordon (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 238</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1222,7 +1253,7 @@
       <td><a href="../references/Macnae1958.html">Macnae &amp; Kalk (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 119, 125</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1234,7 +1265,7 @@
       <td><a href="../references/Kalik1958.1.html">Kalik (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 40-41</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1246,7 +1277,7 @@
       <td><a href="../references/Kalik1958.2.html">Kalik (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 67, 69, 81</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1276,7 +1307,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -1300,7 +1331,7 @@
       <td><a href="../references/Snelling1959.html">Snelling (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 70, 72-73, 76, 78; Plate 3</td>
-      <td><span class="fa fa-map-marker"></span> location: Brisbane River, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brisbane_River_-_Queensland_-_Australia.html">Brisbane River, Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1312,7 +1343,7 @@
       <td><a href="../references/Altevogt1959.3.html">Altevogt (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 2-5; Plate II: figure 3; Plate III: figure 6; Plate V: figures 9-10; Plate VI: figures 11-12</td>
-      <td><span class="fa fa-map-marker"></span> location: India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/India.html">India</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1345,7 +1376,7 @@
       <td><a href="../references/Edney1961.html">Edney (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71-74, 76-77, 83-85, 87</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1378,7 +1409,7 @@
       <td><a href="../references/Edney1962.html">Edney (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 80-83</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1411,7 +1442,7 @@
       <td><a href="../references/McNeill1962.html">McNeill (1962)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 39, 43</td>
-      <td><span class="fa fa-map-marker"></span> location: Sydney, New South Wales, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sydney_-_New_South_Wales_-_Australia.html">Sydney, New South Wales, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1435,7 +1466,7 @@
       <td><a href="../references/Macnae1962.html">Macnae &amp; Kalk (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 30, 32</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1480,7 +1511,7 @@
       <td><a href="../references/Macnae1963.html">Macnae (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 5, 9, 23</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1537,7 +1568,7 @@
       <td><a href="../references/Crosnier1965.html">Crosnier (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 106-109, 111, 114; figures 185, 188, 194</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1693,7 +1724,7 @@
       <td><a href="../references/Vohra1971.html">Vohra (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 692, 697, 708</td>
-      <td><span class="fa fa-map-marker"></span> location: Singapore</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1705,7 +1736,7 @@
       <td><a href="../references/Farrow1971.html">Farrow (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 459, 488-489, 494</td>
-      <td><span class="fa fa-map-marker"></span> location: Aldabra</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Aldabra.html">Aldabra</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1717,7 +1748,7 @@
       <td><a href="../references/Walker1972.html">Walker (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 140</td>
-      <td><span class="fa fa-map-marker"></span> location: Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanzania.html">Tanzania</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1753,7 +1784,7 @@
       <td><a href="../references/Takeda1973.html">Takeda &amp; Yamaguchi (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 13-19</td>
-      <td><span class="fa fa-map-marker"></span> location: Ryukyu Islands, Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ryukyu_Islands_-_Japan.html">Ryukyu Islands, Japan</a></td>
       <td><a href="../u_jocelynae.html"><em class="species">Uca jocelynae</em></a></td>
       <td><a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
@@ -1765,7 +1796,7 @@
       <td><a href="../references/Yamaghuchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7-11</td>
-      <td><span class="fa fa-map-marker"></span> location: Ryukyu Islands, Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ryukyu_Islands_-_Japan.html">Ryukyu Islands, Japan</a></td>
       <td><a href="../u_jocelynae.html"><em class="species">Uca jocelynae</em></a></td>
       <td><a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
@@ -2456,7 +2487,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

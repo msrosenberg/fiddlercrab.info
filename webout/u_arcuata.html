@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_arcuata_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_arcuata_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Bowed Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Gelasimus_arcuatus.html"><em class="species">Gelasimus arcuatus</em></a>, <a href="names/Gelasimus_brevipede.html"><em class="species">Gelasimus brevipede</em></a>, <a href="names/Gelasimus_brevipes.html"><em class="species">Gelasimus brevipes</em></a>, <a href="names/Mesuca_Mesuca_brevipes.html"><em class="species">Mesuca (Mesuca) brevipes</em></a>, <a href="names/Ocypode_Gelasimus_arcuata.html"><em class="species">Ocypode (Gelasimus) arcuata</em></a>, <a href="names/Uca_Deltuca__coarctata__arcuata.html"><em class="species">Uca (Deltuca) [coarctata] arcuata</em></a>, <a href="names/Uca_Tubuca_arcuata.html"><em class="species">Uca (Tubuca) arcuata</em></a>, <a href="names/Uca_Uca_arcuata.html"><em class="species">Uca (Uca) arcuata</em></a>, <a href="names/Uca_arcuata.html"><em class="species">Uca arcuata</em></a>, <a href="names/Uca_arcuatus.html"><em class="species">Uca arcuatus</em></a>, <a href="names/Uca_brevipes.html"><em class="species">Uca brevipes</em></a></em></dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_arcuata.html">Chronology</a>)</dt>
+         <dd><em class="species"><a href="names/Gelasimus_arcuatus.html"><em class="species">Gelasimus arcuatus</em></a>, <a href="names/Gelasimus_brevipede.html"><em class="species">Gelasimus brevipede</em></a>, <a href="names/Gelasimus_brevipes.html"><em class="species">Gelasimus brevipes</em></a>, <a href="names/Mesuca_Mesuca_brevipes.html"><em class="species">Mesuca (Mesuca) brevipes</em></a>, <a href="names/Ocypode_Gelasimus_arcuata.html"><em class="species">Ocypode (Gelasimus) arcuata</em></a>, <a href="names/Uca_Deltuca__coarctata__arcuata.html"><em class="species">Uca (Deltuca) [coarctata] arcuata</em></a>, <a href="names/Uca_Deltuca_arcuata.html"><em class="species">Uca (Deltuca) arcuata</em></a>, <a href="names/Uca_Tubuca_arcuata.html"><em class="species">Uca (Tubuca) arcuata</em></a>, <a href="names/Uca_Uca_arcuata.html"><em class="species">Uca (Uca) arcuata</em></a>, <a href="names/Uca_arcuata.html"><em class="species">Uca arcuata</em></a>, <a href="names/Uca_arcuatus.html"><em class="species">Uca arcuatus</em></a>, <a href="names/Uca_brevipes.html"><em class="species">Uca brevipes</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Taiwan, Korea, Japan</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_arcuata_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_arcuata_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -197,6 +202,7 @@
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
       <p>
+<a href="references/Aiyun1986.html">Aiyun &amp; Yuzhi (1986)</a>, 
 <a href="references/Aoki2009.html">Aoki <em>et al.</em> (2009)</a>, 
 <a href="references/Aurivillius1893.html">Aurivillius (1893)</a>, 
 <a href="references/Balss1922.1.html">Balss (1922)</a>, 
@@ -247,6 +253,7 @@
 <a href="references/Powers1983.html">Powers &amp; Bliss (1983)</a>, 
 <a href="references/Rathbun1913.html">Rathbun (1913)</a>, 
 <a href="references/Rathbun1931.html">Rathbun (1931)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Sakai1934.html">Sakai (1934)</a>, 
 <a href="references/Sakai1936.2.html">Sakai (1936 [1935])</a>, 
 <a href="references/Sakai1939.html">Sakai (1939)</a>, 
@@ -270,6 +277,7 @@
 <a href="references/vonHagen1970.3.html">von Hagen (1970)</a>, 
 <a href="references/White1847.1.html">White (1847)</a>, 
 <a href="references/Wu1962.html">Wu <em>et al.</em> (1962)</a>, 
+<a href="references/Xie2009.html">Xie &amp; Gao (2009)</a>, 
 <a href="references/Yamaguchi1993.1.html">Yamaguchi (1993)</a>, 
 <a href="references/Yamaguchi1993.3.html">Yamaguchi (1993)</a>, 
 <a href="references/Yamaguchi1993.2.html">Yamaguchi &amp; Baba (1993)</a>, 
@@ -281,7 +289,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca stenodactyla_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -454,7 +485,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Andros, The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Andros_-_The_Bahamas.html">Andros, The Bahamas</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -462,7 +493,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -539,7 +570,7 @@
     <tr>
       <td><a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a></td>
       <td>text p. 1276</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td>?</td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -547,7 +578,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -598,7 +629,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Chile</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chile.html">Chile</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -657,7 +688,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Valparaíso, Chile</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Valparaiso_-_Chile.html">Valparaíso, Chile</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -695,7 +726,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Corinto, Nicaragua</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Corinto_-_Nicaragua.html">Corinto, Nicaragua</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -703,7 +734,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahía de Santa Elena, Costa Rica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_de_Santa_Elena_-_Costa_Rica.html">Bahía de Santa Elena, Costa Rica</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -711,7 +742,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Golfito, Costa Rica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Golfito_-_Costa_Rica.html">Golfito, Costa Rica</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -719,7 +750,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: La Boca, Balboa, Panama City, Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/La_Boca_-_Balboa_-_Panama_City_-_Panama.html">La Boca, Balboa, Panama City, Panama</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -727,7 +758,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Panama City, Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Panama_City_-_Panama.html">Panama City, Panama</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -760,7 +791,7 @@
     <tr>
       <td><a href="../references/Crane1947.html">Crane (1947)</a></td>
       <td>text p. 90</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -823,7 +854,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 74, 76-77, 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_Costa_Rica.html">Pacific coast of Costa Rica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -831,7 +862,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Panama</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Panama.html">Panama</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -839,7 +870,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Ecuador</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ecuador.html">Ecuador</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -992,7 +1023,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

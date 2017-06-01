@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca cumulanta_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -248,7 +270,7 @@
           ['1975', 1, 1],
           ['1976', 1, 1],
           ['1977', 1, 1],
-          ['1978', 1, 1],
+          ['1978', 2, 2],
           ['1979', 0, 0],
           ['1980', null, null],
           ['1981', null, null],
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -347,7 +378,7 @@
     <tr>
       <td><a href="../references/Crane1943.2.html">Crane (1943)</a></td>
       <td>text p. 34-35, 37, 42-44; figure 1</td>
-      <td><span class="fa fa-flask"></span> specimen: Pedernales, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pedernales_-_Venezuela.html">Pedernales, Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>type description</td>
@@ -380,7 +411,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 74, 77-78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -388,7 +419,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -407,7 +438,7 @@
     <tr>
       <td><a href="../references/Crane1958.html">Crane (1958)</a></td>
       <td>text p. 113-114, 116-118, 127</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -437,7 +468,7 @@
     <tr>
       <td><a href="../references/Rodriguez1959.html">Rodriguez (1959)</a></td>
       <td>text p. 264-266, 272, 275</td>
-      <td><span class="fa fa-map-marker"></span> location: Margarita Island, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Margarita_Island_-_Venezuela.html">Margarita Island, Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
     <tr>
       <td><a href="../references/Crane1967.html">Crane (1967)</a></td>
       <td>text p. 51, 69-70</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -519,7 +550,7 @@
     <tr>
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -552,7 +583,7 @@
     <tr>
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>text p. 7, 15, 28, 33, 203, 210-212, 216; figure 71</td>
-      <td><span class="fa fa-map-marker"></span> location: Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -560,7 +591,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -568,7 +599,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Suriname</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Suriname.html">Suriname</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -633,7 +664,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -641,7 +672,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Panama.html">Panama</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -684,7 +715,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>text p. 366-369, 372-373, 375-378, 382-384, 386, 391-392, 395-397, 407-408; figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -703,7 +734,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.2.html">von Hagen (1970)</a></td>
       <td>text p. 248</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -714,7 +745,7 @@
     <tr>
       <td><a href="../references/Coelho1971.html">Coelho (1971)</a></td>
       <td>text p. 235</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Brazil.html">Northern Brazil</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -725,7 +756,7 @@
     <tr>
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>text p. 301, 303-304, 310-311</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -760,7 +791,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -782,9 +813,28 @@
     <tr>
       <td><a href="../references/Ahmed1978.1.html">Ahmed (1978)</a></td>
       <td>text p. 294-300</td>
-      <td><span class="fa fa-map-marker"></span> location: Cumana, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cumana_-_Venezuela.html">Cumana, Venezuela</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Ahmed1978.2.html">Ahmed &amp; Khan (1978)</a></td>
+      <td>text p. 50-51, 53</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ahmed1978.1.html">Ahmed (1978)</a> → <em class="species">Uca cumulanta</em></td>
+      <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ahmed1976.1.html">Ahmed (1976)</a> → <em class="species">Uca cumulanta</em></td>
+      <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -832,9 +882,28 @@
       <td class="rowspacer" colspan="6">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 843, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) [crenulata] cumulanta</em></td>
+      <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 137516]</td>
+      <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -847,7 +916,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_pugilator_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_pugilator_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Atlantic Sand Fiddler Crab; Fever Crab; Calico Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_pugilator.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Galasimus_pugilator.html"><em class="species">Galasimus pugilator</em></a>, <a href="names/Gelasima_pugillator.html"><em class="species">Gelasima pugillator</em></a>, <a href="names/Gelasimus_pugilator.html"><em class="species">Gelasimus pugilator</em></a>, <a href="names/Gelasimus_pugillator.html"><em class="species">Gelasimus pugillator</em></a>, <a href="names/Ocypoda_pugilator.html"><em class="species">Ocypoda pugilator</em></a>, <a href="names/Ocypode_Gelasimus_Pugilator.html"><em class="species">Ocypode (Gelasimus) Pugilator</em></a>, <a href="names/Ocypode_pugilator.html"><em class="species">Ocypode pugilator</em></a>, <a href="names/Planuca_pugilator.html"><em class="species">Planuca pugilator</em></a>, <a href="names/Uca_Celuca_pugilator.html"><em class="species">Uca (Celuca) pugilator</em></a>, <a href="names/Uca_Leptuca_pugilator.html"><em class="species">Uca (Leptuca) pugilator</em></a>, <a href="names/Uca_Minuca_pugilator.html"><em class="species">Uca (Minuca) pugilator</em></a>, <a href="names/Uca_pigilator.html"><em class="species">Uca pigilator</em></a>, <a href="names/Uca_pugilator.html"><em class="species">Uca pugilator</em></a>, <a href="names/Uca_pugilatus.html"><em class="species">Uca pugilatus</em></a>, <a href="names/Uca_puqilato.html"><em class="species">Uca puqilato</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: USA (Massachusetts to Mississippi, scattered in Texas), Bahamas</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_pugilator_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_pugilator_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -242,6 +247,7 @@
 <a href="references/Adiyodi1988.html">Adiyodi (1988)</a>, 
 <a href="references/Ahmed1976.1.html">Ahmed (1976)</a>, 
 <a href="references/Ahmed1978.1.html">Ahmed (1978)</a>, 
+<a href="references/Ahmed1978.2.html">Ahmed &amp; Khan (1978)</a>, 
 <a href="references/Aikawa1942.html">Aikawa (1942)</a>, 
 <a href="references/Allen2002.html">Allen &amp; Levinton (2002)</a>, 
 <a href="references/Allen1973.html">Allen &amp; Curran (1973)</a>, 
@@ -257,6 +263,7 @@
 <a href="references/Altevogt1970.html">Altevogt (1970)</a>, 
 <a href="references/Anilkumar2006.2.html">Anilkumar <em>et al.</em> (2006)</a>, 
 <a href="references/Aspey1971.html">Aspey (1971)</a>, 
+<a href="references/Aspey1978.html">Aspey (1978)</a>, 
 <a href="references/Atkinson1973.html">Atkinson &amp; Naylor (1973)</a>, 
 <a href="references/Avent1974.html">Avent (1974)</a>, 
 <a href="references/Avent1975.html">Avent (1975)</a>, 
@@ -266,6 +273,7 @@
 <a href="references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a>, 
 <a href="references/Baldwin1976.2.html">Baldwin &amp; Kirschener (1976)</a>, 
 <a href="references/BarclayTerwilliger1991.html">Barclay Terwilliger (1991)</a>, 
+<a href="references/Barden1983.html">Barden &amp; Koulish (1983)</a>, 
 <a href="references/Barnwell1963.2.html">Barnwell (1963)</a>, 
 <a href="references/Barnwell1966.html">Barnwell (1966)</a>, 
 <a href="references/Barnwell1968.1.html">Barnwell (1968)</a>, 
@@ -323,6 +331,7 @@
 <a href="references/Butler1984.html">Butler &amp; Fingerman (1984)</a>, 
 <a href="references/Butler1985.html">Butler &amp; Fingerman (1985)</a>, 
 <a href="references/Butler1986.html">Butler &amp; Fingerman (1986)</a>, 
+<a href="references/Cain2014.html">Cain &amp; Cohen (2014)</a>, 
 <a href="references/Callicott1991.html">Callicott &amp; Mangum (1991)</a>, 
 <a href="references/Cano1889.2.html">Cano (1889)</a>, 
 <a href="references/Carlson1935.html">Carlson (1935)</a>, 
@@ -354,6 +363,7 @@
 <a href="references/Coues1871.html">Coues (1871)</a>, 
 <a href="references/Coventry1944.html">Coventry (1944)</a>, 
 <a href="references/Coward1970.html">Coward <em>et al.</em> (1970)</a>, 
+<a href="references/Cowley1978.html">Cowley &amp; Frye (1978)</a>, 
 <a href="references/Crane1941.html">Crane (1941)</a>, 
 <a href="references/Crane1943.3.html">Crane (1943)</a>, 
 <a href="references/Crane1944.html">Crane (1944)</a>, 
@@ -454,6 +464,7 @@
 <a href="references/Fingerman1969.4.html">Fingerman <em>et al.</em> (1969)</a>, 
 <a href="references/Fingerman1994.1.html">Fingerman <em>et al.</em> (1994)</a>, 
 <a href="references/Fingerman1994.2.html">Fingerman <em>et al.</em> (1994)</a>, 
+<a href="references/Fingerman1978.1.html">Fingerman <em>et al.</em> (1978)</a>, 
 <a href="references/Fingerman1967.1.html">Fingerman &amp; Yamamoto (1967)</a>, 
 <a href="references/Fingerman1985.3.html">Fingerman (1985)</a>, 
 <a href="references/Fingerman1976.html">Fingerman &amp; Fingerman (1976)</a>, 
@@ -577,6 +588,7 @@
 <a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
 <a href="references/Keller1977.html">Keller (1977)</a>, 
 <a href="references/Keller1973.html">Keller &amp; Andrew (1973)</a>, 
+<a href="references/Keller1978.html">Keller &amp; Wunderer (1978)</a>, 
 <a href="references/Kerwin1971.html">Kerwin (1971)</a>, 
 <a href="references/Khambadakone2011.html">Khambadakone <em>et al.</em> (2011)</a>, 
 <a href="references/King1969.2.html">King &amp; Siddall (1969)</a>, 
@@ -606,6 +618,7 @@
 <a href="references/Krebs1976.html">Krebs (1976)</a>, 
 <a href="references/Krishnakumaran1968.html">Krishnakumaran &amp; Schneiderman (1968)</a>, 
 <a href="references/Krishnakumaran1970.html">Krishnakumaran &amp; Schneiderman (1970)</a>, 
+<a href="references/Kulkarni1987.2.html">Kulkarni &amp; Fingerman (1987)</a>, 
 <a href="references/Kurata1970.html">Kurata (1970)</a>, 
 <a href="references/Lacerda1976.html">Lacerda (1976)</a>, 
 <a href="references/Lamarck1838.html">Lamarck (1838)</a>, 
@@ -613,6 +626,7 @@
 <a href="references/Lambert1976.1.html">Lambert &amp; Crowe (1976)</a>, 
 <a href="references/Lambert1975.html">Lambert <em>et al.</em> (1975)</a>, 
 <a href="references/Lambert1976.2.html">Lambert &amp; Fingerman (1976)</a>, 
+<a href="references/Lambert1978.html">Lambert &amp; Fingerman (1978)</a>, 
 <a href="references/Land1994.html">Land &amp; Layne (1994)</a>, 
 <a href="references/Lane1958.html">Lane &amp; Dodge (1958)</a>, 
 <a href="references/Langdon1971.html">Langdon (1971)</a>, 
@@ -736,6 +750,7 @@
 <a href="references/Rittschof1995.html">Rittschof <em>et al.</em> (1995)</a>, 
 <a href="references/Robertson1960.html">Robertson (1960)</a>, 
 <a href="references/Robertson1980.2.html">Robertson (1980)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Salmon1962.1.html">Salmon (1962)</a>, 
 <a href="references/Salmon1965.html">Salmon (1965)</a>, 
 <a href="references/Salmon1966.html">Salmon (1966)</a>, 
@@ -755,6 +770,7 @@
 <a href="references/Sandeen1961.2.html">Sandeen &amp; Costlow (1961)</a>, 
 <a href="references/Sandeen1962.html">Sandeen &amp; Wheatley (1962)</a>, 
 <a href="references/Sandifer1975.html">Sandifer (1975)</a>, 
+<a href="references/Sarojini1995.1.html">Sarojini <em>et al.</em> (1995)</a>, 
 <a href="references/Sarojini1992.html">Sarojini <em>et al.</em> (1992)</a>, 
 <a href="references/Sastry1983.html">Sastry (1983)</a>, 
 <a href="references/Sastry1983.2.html">Sastry (1983)</a>, 
@@ -913,6 +929,7 @@
 <a href="references/Zahnow1985.html">Zahnow &amp; Rao (1985)</a>, 
 <a href="references/Zeleny1905.2.html">Zeleny (1905)</a>, 
 <a href="references/Zeleny1905.1.html">Zeleny (1905)</a>, 
+<a href="references/Zimmer1999.html">Zimmer <em>et al.</em> (1999)</a>, 
 <a href="references/Zou2003.1.html">Zou (2003)</a>, 
 <a href="references/Zou2003.3.html">Zou &amp; Bonvillain (2003)</a>, 
 <a href="references/Zou2004.2.html">Zou &amp; Bonvillain (2004)</a>, 
@@ -926,7 +943,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

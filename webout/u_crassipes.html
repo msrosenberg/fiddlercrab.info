@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_crassipes_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_crassipes_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Paraleptuca"><em class="species">Paraleptuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Thick-legged Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_crassipes.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Gelasimus_crassipes.html"><em class="species">Gelasimus crassipes</em></a>, <a href="names/Gelasimus_Gaimardi.html"><em class="species">Gelasimus Gaimardi</em></a>, <a href="names/Gelasimus_Gaimardii.html"><em class="species">Gelasimus Gaimardii</em></a>, <a href="names/Gelasimus_Latreilii.html"><em class="species">Gelasimus Latreilii</em></a>, <a href="names/Gelasimus_Latreillei.html"><em class="species">Gelasimus Latreillei</em></a>, <a href="names/Gelasimus_Latreilli.html"><em class="species">Gelasimus Latreilli</em></a>, <a href="names/Gelasimus_latreillii.html"><em class="species">Gelasimus latreillii</em></a>, <a href="names/Gelasimus_pulchellus.html"><em class="species">Gelasimus pulchellus</em></a>, <a href="names/Paraleptuca_gaimardi.html"><em class="species">Paraleptuca gaimardi</em></a>, <a href="names/Uca_Amphiuca_chlorophthalmus_crassipes.html"><em class="species">Uca (Amphiuca) chlorophthalmus crassipes</em></a>, <a href="names/Uca_Minuca_gaimardi.html"><em class="species">Uca (Minuca) gaimardi</em></a>, <a href="names/Uca_Paraleptuca_crassipes.html"><em class="species">Uca (Paraleptuca) crassipes</em></a>, <a href="names/Uca_crassipes.html"><em class="species">Uca crassipes</em></a>, <a href="names/Uca_gaimardi.html"><em class="species">Uca gaimardi</em></a>, <a href="names/Uca_latreillei.html"><em class="species">Uca latreillei</em></a>, <a href="names/Uca_novae-guineae.html"><em class="species">Uca novae-guineae</em></a>, <a href="names/Uca_novaeguineae.html"><em class="species">Uca novaeguineae</em></a>, <a href="names/Uca_novaguinae.html"><em class="species">Uca novaguinae</em></a>, <a href="names/Uca_nov_ae_gunie_ae_.html"><em class="species">Uca novægunieæ</em></a>, <a href="names/Uca_pulchella.html"><em class="species">Uca pulchella</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Japan, Philippines, Thailand, Indonesia, Papa New Guinea, Melanesia, Micronesia</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_crassipes_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_crassipes_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -313,6 +318,7 @@
 <a href="references/Rathbun1907.html">Rathbun (1907)</a>, 
 <a href="references/Rathbun1910.2.html">Rathbun (1910)</a>, 
 <a href="references/Rathbun1913.html">Rathbun (1913)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Sakai1936.html">Sakai (1936)</a>, 
 <a href="references/Sakai1939.html">Sakai (1939)</a>, 
 <a href="references/Sakai1940.html">Sakai (1940)</a>, 
@@ -340,7 +346,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

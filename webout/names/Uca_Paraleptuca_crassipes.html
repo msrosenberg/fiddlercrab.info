@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca (Paraleptuca) crassipes_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -382,7 +413,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Okinawa Island, Japan [NCHUZOOL 13466]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Okinawa_Island_-_Japan.html">Okinawa Island, Japan</a> [NCHUZOOL 13466]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -390,7 +421,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Miyako-jima, Japan [NCHUZOOL 13469]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Miyako-jima_-_Japan.html">Miyako-jima, Japan</a> [NCHUZOOL 13469]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -398,7 +429,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Iriomote-jima, Japan [NCHUZOOL 13465]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Iriomote-jima_-_Japan.html">Iriomote-jima, Japan</a> [NCHUZOOL 13465]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -406,7 +437,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tainan, Taiwan [NCHUZOOL 13470]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tainan_-_Taiwan.html">Tainan, Taiwan</a> [NCHUZOOL 13470]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -414,7 +445,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tainan, Taiwan [NCHUZOOL 13472]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tainan_-_Taiwan.html">Tainan, Taiwan</a> [NCHUZOOL 13472]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -422,7 +453,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kenting, Pingtung, Taiwan [NCHUZOOL 13454]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kenting_-_Pingtung_-_Taiwan.html">Kenting, Pingtung, Taiwan</a> [NCHUZOOL 13454]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -430,7 +461,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Taitung, Taiwan [NTOU]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Taitung_-_Taiwan.html">Taitung, Taiwan</a> [NTOU]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -438,7 +469,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Shihcyuan, Penghu, Taiwan [NCHUZOOL 13474]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Shihcyuan_-_Penghu_-_Taiwan.html">Shihcyuan, Penghu, Taiwan</a> [NCHUZOOL 13474]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -446,7 +477,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Dongsha Islands, Taiwan [NCHUZOOL 13455]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Dongsha_Islands_-_Taiwan.html">Dongsha Islands, Taiwan</a> [NCHUZOOL 13455]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Luzon, Philippines [ZRC JCEM 07-006]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Luzon_-_Philippines.html">Luzon, Philippines</a> [ZRC JCEM 07-006]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -462,7 +493,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bohol, Philippines [TMCD]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bohol_-_Philippines.html">Bohol, Philippines</a> [TMCD]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -470,7 +501,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Mindanao, Philippines [NCHUZOOL 13473]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Mindanao_-_Philippines.html">Mindanao, Philippines</a> [NCHUZOOL 13473]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -478,7 +509,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sasa Bay, Guam [ZRC 2000.0637]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sasa_Bay_-_Guam.html">Sasa Bay, Guam</a> [ZRC 2000.0637]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -486,7 +517,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Lombok, Indonesia [ZRC 2009.0933]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Lombok_-_Indonesia.html">Lombok, Indonesia</a> [ZRC 2009.0933]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -494,7 +525,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cocos (Keeling) Islands [ZRC]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cocos_-_Keeling_Islands.html">Cocos (Keeling) Islands</a> [ZRC]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -502,7 +533,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pointe de Pam, New Caledonia [QM W24284]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pointe_de_Pam_-_New_Caledonia.html">Pointe de Pam, New Caledonia</a> [QM W24284]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -510,7 +541,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Dumbea, New Caledonia [QM W24285]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Dumbea_-_New_Caledonia.html">Dumbea, New Caledonia</a> [QM W24285]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -518,7 +549,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ouano Bay, New Caledonia [NCHUZOOL 13476]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ouano_Bay_-_New_Caledonia.html">Ouano Bay, New Caledonia</a> [NCHUZOOL 13476]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -526,7 +557,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ouano Bay, New Caledonia [NCHUZOOL 13563]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ouano_Bay_-_New_Caledonia.html">Ouano Bay, New Caledonia</a> [NCHUZOOL 13563]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -534,7 +565,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Halalo, Wallis, Wallis and Futuna [MNHN]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Halalo_-_Wallis_-_Wallis_and_Futuna.html">Halalo, Wallis, Wallis and Futuna</a> [MNHN]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -542,7 +573,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ha'apiti, Mo'orea, French Polynesia [NCHUZOOL 13478]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Haapiti_-_Moorea_-_French_Polynesia.html">Ha'apiti, Mo'orea, French Polynesia</a> [NCHUZOOL 13478]</td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -571,7 +602,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

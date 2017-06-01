@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tetragonon_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tetragonon_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
        <dt>Common Names</dt>
          <dd>Tetragonal Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_tetragonon.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Cancer_tetragonon.html"><em class="species">Cancer tetragonon</em></a>, <a href="names/Cancer_tetragonus.html"><em class="species">Cancer tetragonus</em></a>, <a href="names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a>, <a href="names/Gelasimus_desjardinii.html"><em class="species">Gelasimus desjardinii</em></a>, <a href="names/Gelasimus_Duperreyi.html"><em class="species">Gelasimus Duperreyi</em></a>, <a href="names/Gelasimus_tetragonon.html"><em class="species">Gelasimus tetragonon</em></a>, <a href="names/Gelasimus_tetragonum.html"><em class="species">Gelasimus tetragonum</em></a>, <a href="names/Gelasimus_variatus.html"><em class="species">Gelasimus variatus</em></a>, <a href="names/Mesuca_Mesuca_tetragonon.html"><em class="species">Mesuca (Mesuca) tetragonon</em></a>, <a href="names/Ocypoda_tetragona.html"><em class="species">Ocypoda tetragona</em></a>, <a href="names/Ocypode_Gelasimus_tetragonus.html"><em class="species">Ocypode (Gelasimus) tetragonus</em></a>, <a href="names/Ocypode_tetragona.html"><em class="species">Ocypode tetragona</em></a>, <a href="names/Uca_Gelasimus_tetragonon.html"><em class="species">Uca (Gelasimus) tetragonon</em></a>, <a href="names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a>, <a href="names/Uca_Uca_tetragona.html"><em class="species">Uca (Uca) tetragona</em></a>, <a href="names/Uca_Uca_tetragonon.html"><em class="species">Uca (Uca) tetragonon</em></a>, <a href="names/Uca_affinis.html"><em class="species">Uca affinis</em></a>, <a href="names/Uca_duperryi.html"><em class="species">Uca duperryi</em></a>, <a href="names/Uca_tetragnon.html"><em class="species">Uca tetragnon</em></a>, <a href="names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a>, <a href="names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a>, <a href="names/Uca_tetragonum.html"><em class="species">Uca tetragonum</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: South Africa to Iran, Madagascar, Thailand, Malaysia, Australia, Indonesia, Philippines, Papa New Guinea, Taiwan, Micronesia, Melanesia</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_tetragonon_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_tetragonon_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -212,6 +217,7 @@
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
       <p>
+<a href="references/Adirwiryono1984.html">Adirwiryono <em>et al.</em> (1984)</a>, 
 <a href="references/Alcock1900.html">Alcock (1900)</a>, 
 <a href="references/Balss1924.html">Balss (1924)</a>, 
 <a href="references/Balss1938.html">Balss (1938)</a>, 
@@ -247,6 +253,7 @@
 <a href="references/Frith1977.2.html">Frith &amp; Frith (1977)</a>, 
 <a href="references/Frith1977.3.html">Frith &amp; Frith (1977)</a>, 
 <a href="references/George1982.html">George &amp; Jones (1982)</a>, 
+<a href="references/Gibbs1978.html">Gibbs (1978)</a>, 
 <a href="references/Gravier1920.html">Gravier (1920)</a>, 
 <a href="references/GuerinMeneville1829.1.html">Guérin-Méneville (1829)</a>, 
 <a href="references/GuerinMeneville1830.html">Guérin-Méneville (1830)</a>, 
@@ -298,6 +305,7 @@
 <a href="references/Rathbun1906.html">Rathbun (1906)</a>, 
 <a href="references/Rathbun1907.html">Rathbun (1907)</a>, 
 <a href="references/Rathbun1910.2.html">Rathbun (1910)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Ruppell1830.html">Rüppell (1830)</a>, 
 <a href="references/Ruppell1831.html">Rüppell (1831)</a>, 
 <a href="references/Sakai1976.2.html">Sakai (1976)</a>, 
@@ -322,7 +330,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

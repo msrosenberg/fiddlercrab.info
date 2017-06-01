@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca manii_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -207,9 +229,9 @@
           ['1934', null, null],
           ['1935', null, null],
           ['1936', null, null],
-          ['1937', null, null],
-          ['1938', null, null],
-          ['1939', null, null],
+          ['1937', 0, 0],
+          ['1938', 1, 1],
+          ['1939', 0, 0],
           ['1940', null, null],
           ['1941', null, null],
           ['1942', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -382,7 +413,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Koh Chang, Thailand</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Koh_Chang_-_Thailand.html">Koh Chang, Thailand</a></td>
       <td><a href="../u_forcipata.html"><em class="species">Uca forcipata</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -404,10 +435,21 @@
     <tr>
       <td><a href="../references/Gee1925.html">Gee (1925)</a></td>
       <td>text p. 165</td>
-      <td><span class="fa fa-map-marker"></span> location: "Chin Bey", China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chin_Bey_-_China.html">"Chin Bey", China</a></td>
       <td><a href="../u_acuta.html"><em class="species">Uca acuta</em></a></td>
       <td><a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Suvatti1938.html">Suvatti (1938)</a></td>
+      <td>text p. 74</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rathbun1910.1.html">Rathbun (1910)</a> → <em class="species">Uca manii</em></td>
+      <td><a href="../u_acuta.html"><em class="species">Uca acuta</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
     </tr>
     <tr>
       <td class="rowspacer" colspan="6">&nbsp;</td>
@@ -434,7 +476,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Labuan, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Labuan_-_Malaysia.html">Labuan, Malaysia</a></td>
       <td><a href="../u_forcipata.html"><em class="species">Uca forcipata</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -442,7 +484,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kuching, Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kuching_-_Sarawak_-_Borneo_-_Malaysia.html">Kuching, Sarawak, Borneo, Malaysia</a></td>
       <td><a href="../u_forcipata.html"><em class="species">Uca forcipata</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -464,7 +506,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 71-73, 76-77, 79-81</td>
-      <td><span class="fa fa-map-marker"></span> location: Singapore</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_forcipata.html"><em class="species">Uca forcipata</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -475,7 +517,7 @@
     <tr>
       <td><a href="../references/Macnae1968.html">Macnae (1968)</a></td>
       <td>text p. 105, 176</td>
-      <td><span class="fa fa-map-marker"></span> location: Western Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Western_Malaysia.html">Western Malaysia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -488,7 +530,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

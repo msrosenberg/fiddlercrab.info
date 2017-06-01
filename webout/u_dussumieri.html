@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_dussumieri_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_dussumieri_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Dussumier's Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_dussumieri.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Gelasimus_dubius.html"><em class="species">Gelasimus dubius</em></a>, <a href="names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a>, <a href="names/Gelsimus_Dussumieri.html"><em class="species">Gelsimus Dussumieri</em></a>, <a href="names/Mesuca_Latuca_dussumieri.html"><em class="species">Mesuca (Latuca) dussumieri</em></a>, <a href="names/Uca_Deltuca_dussumieri_dussumieri.html"><em class="species">Uca (Deltuca) dussumieri dussumieri</em></a>, <a href="names/Uca_Tubuca_dussumieri.html"><em class="species">Uca (Tubuca) dussumieri</em></a>, <a href="names/Uca_Uca_dussumieri.html"><em class="species">Uca (Uca) dussumieri</em></a>, <a href="names/Uca_dubia.html"><em class="species">Uca dubia</em></a>, <a href="names/Uca_dussumieri.html"><em class="species">Uca dussumieri</em></a>, <a href="names/Uca_dussumieri_dussumieri.html"><em class="species">Uca dussumieri dussumieri</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Taiwan, Thailand, Indonesia, Northwestern Australia, Papa New Guinea</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_dussumieri_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_dussumieri_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -196,6 +201,7 @@
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
       <p>
+<a href="references/Adirwiryono1984.html">Adirwiryono <em>et al.</em> (1984)</a>, 
 <a href="references/Alcock1900.html">Alcock (1900)</a>, 
 <a href="references/Aoki2009.html">Aoki <em>et al.</em> (2009)</a>, 
 <a href="references/Balss1935.html">Balss (1935)</a>, 
@@ -255,6 +261,7 @@
 <a href="references/Pfeffer1889.html">Pfeffer (1889)</a>, 
 <a href="references/Rathbun1910.2.html">Rathbun (1910)</a>, 
 <a href="references/Rathbun1924.1.html">Rathbun (1924)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Roux1917.html">Roux (1917)</a>, 
 <a href="references/Sakai1936.html">Sakai (1936)</a>, 
 <a href="references/Sakai1939.html">Sakai (1939)</a>, 
@@ -281,7 +288,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

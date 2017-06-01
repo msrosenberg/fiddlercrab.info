@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca leptodactyla_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -225,7 +247,7 @@
           ['1952', 0, 0],
           ['1953', 1, 1],
           ['1954', 0, 0],
-          ['1955', 0, 0],
+          ['1955', 1, 1],
           ['1956', 1, 1],
           ['1957', 2, 2],
           ['1958', 3, 3],
@@ -270,8 +292,8 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
           ['2002', 0, 0],
           ['2003', 1, 1],
           ['2004', 0, 0],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -367,7 +398,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nassau, The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nassau_-_The_Bahamas.html">Nassau, The Bahamas</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -400,7 +431,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cabedelo, Paraíba, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cabedelo_-_Paraiba_-_Brazil.html">Cabedelo, Paraíba, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -421,7 +452,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -469,7 +500,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: West coast of Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/West_coast_of_Florida_-_USA.html">West coast of Florida, USA</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -478,7 +509,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: The Bahamas</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -487,7 +518,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cuba</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -496,7 +527,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Jamaica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -505,7 +536,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Rico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -514,7 +545,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Amarração, Piauí , Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Amarracao_-_Piaui__-_Brazil.html">Amarração, Piauí , Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -523,7 +554,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio Paraíba do Norte, Paraíba, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_Paraiba_do_Norte_-_Paraiba_-_Brazil.html">Rio Paraíba do Norte, Paraíba, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -532,7 +563,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pernambuco, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -541,7 +572,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_-_Brazil.html">Bahia, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -550,7 +581,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Plataforma, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Plataforma_-_Bahia_-_Brazil.html">Plataforma, Bahia, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -559,7 +590,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Porto Seguro, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Porto_Seguro_-_Bahia_-_Brazil.html">Porto Seguro, Bahia, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -568,7 +599,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -577,7 +608,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maruim, Sergipe, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maruim_-_Sergipe_-_Brazil.html">Maruim, Sergipe, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -586,7 +617,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: São Paulo, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sao_Paulo_-_Brazil.html">São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -595,7 +626,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santos, São Paulo, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santos_-_Sao_Paulo_-_Brazil.html">Santos, São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -607,7 +638,7 @@
       <td><a href="../references/Luederwaldt1919.1.html">Luederwaldt (1919)</a></td>
       <td>&nbsp;</td>
       <td>text p. 372, 384, 398</td>
-      <td><span class="fa fa-map-marker"></span> location: Santos, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santos_-_Sao_Paulo_-_Brazil.html">Santos, São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -619,7 +650,7 @@
       <td><a href="../references/Luederwaldt1919.2.html">Luederwaldt (1919)</a></td>
       <td>&nbsp;</td>
       <td>text p. 435</td>
-      <td><span class="fa fa-map-marker"></span> location: Santos, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santos_-_Sao_Paulo_-_Brazil.html">Santos, São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -640,7 +671,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -697,7 +728,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Chile</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Chile.html">Chile</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -706,7 +737,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_-_Brazil.html">Bahia, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -715,7 +746,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: São Sebastião, São Paulo, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sao_Sebastiao_-_Sao_Paulo_-_Brazil.html">São Sebastião, São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -727,7 +758,7 @@
       <td><a href="../references/Luederwaldt1929.html">Luederwaldt (1929)</a></td>
       <td>&nbsp;</td>
       <td>text p. 54</td>
-      <td><span class="fa fa-map-marker"></span> location: São Sebastião, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sao_Sebastiao_-_Sao_Paulo_-_Brazil.html">São Sebastião, São Paulo, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -739,7 +770,7 @@
       <td><a href="../references/Matthews1930.html">Matthews (1930)</a></td>
       <td>&nbsp;</td>
       <td>text p. 659-663</td>
-      <td><span class="fa fa-map-marker"></span> location: Cocoanut Island, Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cocoanut_Island_-_Pernambuco_-_Brazil.html">Cocoanut Island, Pernambuco, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -751,7 +782,7 @@
       <td><a href="../references/Rathbun1933.html">Rathbun (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 97-98</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -889,7 +920,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -901,7 +932,7 @@
       <td><a href="../references/Oliveira1939.2.html">Oliveira (1939)</a></td>
       <td>&nbsp;</td>
       <td>text p. 519, 521, 523, 526</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -922,7 +953,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -931,7 +962,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -967,9 +998,21 @@
       <td><a href="../references/Oliveira1953.html">Oliveira &amp; Krau (1953)</a></td>
       <td>chama-maré</td>
       <td>text p. 504, 512, 522</td>
-      <td><span class="fa fa-map-marker"></span> location: Guanabara Bay, Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guanabara_Bay_-_Rio_de_Janeiro_-_Brazil.html">Guanabara Bay, Rio de Janeiro, Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Welsh1955.html">Welsh (1955)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 289</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bimini_-_The_Bahamas.html">Bimini, The Bahamas</a></td>
+      <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -979,7 +1022,7 @@
       <td><a href="../references/Tashian1956.html">Tashian (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 40, 43, 45</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1003,7 +1046,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 74, 76-78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1012,7 +1055,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1024,7 +1067,7 @@
       <td><a href="../references/Gerlach1958.1.html">Gerlach (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 50-53</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1069,7 +1112,7 @@
       <td><a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 589, 591</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1081,7 +1124,7 @@
       <td><a href="../references/Vernberg1959.2.html">Vernberg (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 165-166, 169-172, 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1093,7 +1136,7 @@
       <td><a href="../references/Rodriguez1959.html">Rodriguez (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 272</td>
-      <td><span class="fa fa-map-marker"></span> location: Maracaibo, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Maracaibo_-_Venezuela.html">Maracaibo, Venezuela</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1162,7 +1205,7 @@
       <td><a href="../references/Vernberg1964.html">Vernberg &amp; Vernberg (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 478</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1174,7 +1217,7 @@
       <td><a href="../references/Velez1967.html">Vélez (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 43</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1234,7 +1277,7 @@
       <td><a href="../references/vonHagen1967.2.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 303, 307-308, 310, 317</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1246,7 +1289,7 @@
       <td><a href="../references/Coelho1967.html">Coelho (1967)</a></td>
       <td>xié</td>
       <td>text p. 81-82, 84, 86-87</td>
-      <td><span class="fa fa-map-marker"></span> location: Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1258,7 +1301,7 @@
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1282,7 +1325,7 @@
       <td><a href="../references/vonHagen1968.2.html">von Hagen (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 428, 448-449</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1330,7 +1373,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1339,7 +1382,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1351,7 +1394,7 @@
       <td><a href="../references/Warner1969.html">Warner (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 383</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1375,7 +1418,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 222, 227-228, 231, 233</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1402,7 +1445,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1435,7 +1478,7 @@
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 366-369, 373-378, 382-384, 391, 393, 395-396, 404, 406-408; figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1459,7 +1502,7 @@
       <td><a href="../references/Coelho1971.html">Coelho (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 235</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Brazil.html">Northern Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1519,7 +1562,7 @@
       <td><a href="../references/Greenspan1975.html">Greenspan (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 69, 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1543,7 +1586,7 @@
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301, 311</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1555,7 +1598,7 @@
       <td><a href="../references/Fimpel1975.html">Fimpel (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 173, 177, 180-182</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1588,7 +1631,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Boca Raton, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Boca_Raton_-_Florida_-_USA.html">Boca Raton, Florida, USA</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1672,7 +1715,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1681,7 +1724,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Florida_-_USA.html">West coast of Florida, USA</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>reports as &ldquo;not recently&rdquo;</td>
@@ -1690,7 +1733,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Yucatan Peninsula, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Yucatan_Peninsula_-_Mexico.html">Eastern Yucatan Peninsula, Mexico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1699,7 +1742,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1708,7 +1751,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1717,7 +1760,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1726,7 +1769,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Saint Croix, U.S. Virgin Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Saint_Croix_-_U.S._Virgin_Islands.html">Saint Croix, U.S. Virgin Islands</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1735,7 +1778,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1744,7 +1787,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela to Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela_to_Brazil.html">Venezuela to Brazil</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1909,10 +1952,40 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 843-844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) [leptodactyla] leptodactyla</em></td>
+      <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138568]</td>
+      <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Leptuca leptodactyla</em></td>
+      <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1924,7 +1997,7 @@
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>&nbsp;</td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1937,7 +2010,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

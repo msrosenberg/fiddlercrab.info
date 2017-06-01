@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Pacific_entrance_of_Panama_Canal_-_Panama_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Pacific_entrance_of_Panama_Canal_-_Panama_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(10.4, -76.7);
+        var swcorner = new google.maps.LatLng(6.0, -83.4);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,6 +77,8 @@
     <ul class="splist">
       <li><a href="../u_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../u_deichmanni.html"><em class="species">Uca deichmanni</em></a></li>
+      <li><a href="../u_inaequalis.html"><em class="species">Uca inaequalis</em></a></li>
+      <li><a href="../u_panamensis.html"><em class="species">Uca panamensis</em></a></li>
       <li><a href="../u_terpsichores.html"><em class="species">Uca terpsichores</em></a></li>
     </ul>
   </section>
@@ -81,8 +87,10 @@
     <ul class="splist">
       <li><a href="../names/Uca_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../names/Uca_deichmanni.html"><em class="species">Uca deichmanni</em></a></li>
+      <li><a href="../names/Uca_inaequalis.html"><em class="species">Uca inaequalis</em></a></li>
       <li><a href="../names/Uca_musica.html"><em class="species">Uca musica</em></a></li>
       <li><a href="../names/Uca_musica_terpsichores.html"><em class="species">Uca musica terpsichores</em></a></li>
+      <li><a href="../names/Uca_panamensis.html"><em class="species">Uca panamensis</em></a></li>
       <li><a href="../names/Uca_terpsichores.html"><em class="species">Uca terpsichores</em></a></li>
     </ul>
   </section>
@@ -91,7 +99,9 @@
     <ul class="splist">
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a></li>
       <li><a href="../names/sn_deichmanni.html"><em class="species">deichmanni</em></a></li>
+      <li><a href="../names/sn_inaequalis.html"><em class="species">inaequalis</em></a></li>
       <li><a href="../names/sn_musica.html"><em class="species">musica</em></a></li>
+      <li><a href="../names/sn_panamensis.html"><em class="species">panamensis</em></a></li>
       <li><a href="../names/sn_terpsichores.html"><em class="species">terpsichores</em></a></li>
     </ul>
   </section>
@@ -100,7 +110,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

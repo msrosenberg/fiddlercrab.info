@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus Latreillei_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -347,7 +378,7 @@
     <tr>
       <td><a href="../references/MilneEdwards1852.html">Milne Edwards (1852)</a></td>
       <td>text p. 150-151; plate 4: figure 20</td>
-      <td><span class="fa fa-flask"></span> specimen: Bora Bora</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bora_Bora_-_French_Polynesia.html">Bora Bora, French Polynesia</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -358,7 +389,7 @@
     <tr>
       <td><a href="../references/MilneEdwards1854.2.html">Milne Edwards (1854)</a></td>
       <td>text p. 114-115; plate 4: figure 20</td>
-      <td><span class="fa fa-flask"></span> specimen: Bora Bora</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bora_Bora_-_French_Polynesia.html">Bora Bora, French Polynesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -369,7 +400,7 @@
     <tr>
       <td><a href="../references/MilneEdwards1873.html">Milne-Edwards (1873)</a></td>
       <td>text p. 274</td>
-      <td><span class="fa fa-map-marker"></span> location: New Caledonia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Caledonia.html">New Caledonia</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -426,7 +457,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -434,7 +465,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Bora Bora</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bora_Bora_-_French_Polynesia.html">Bora Bora, French Polynesia</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -442,7 +473,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New Caledonia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Caledonia.html">New Caledonia</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -469,7 +500,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -480,7 +511,7 @@
     <tr>
       <td><a href="../references/Thompson1901.html">Thompson (1901)</a></td>
       <td>text p. 5</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -488,7 +519,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Japan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Japan.html">Japan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -510,7 +541,7 @@
     <tr>
       <td><a href="../references/Bouvier1915.html">Bouvier (1915)</a></td>
       <td>text p. 302-303; figure 37</td>
-      <td><span class="fa fa-map-marker"></span> location: Mauritius</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mauritius.html">Mauritius</a></td>
       <td><a href="../u_chlorophthalmus.html"><em class="species">Uca chlorophthalmus</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -537,7 +568,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kobroor Island, Aru Islands, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kobroor_Island_-_Aru_Islands_-_Indonesia.html">Kobroor Island, Aru Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -591,7 +622,7 @@
     <tr>
       <td><a href="../references/Sakai1940.html">Sakai (1940)</a></td>
       <td>text p. 47</td>
-      <td><span class="fa fa-map-marker"></span> location: Ryukyu Islands, Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ryukyu_Islands_-_Japan.html">Ryukyu Islands, Japan</a></td>
       <td><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -604,7 +635,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

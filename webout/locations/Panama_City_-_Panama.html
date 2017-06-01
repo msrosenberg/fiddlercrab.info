@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Panama_City_-_Panama_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Panama_City_-_Panama_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(10.4, -76.7);
+        var swcorner = new google.maps.LatLng(6.0, -83.4);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -72,14 +76,18 @@
     <h3 class="nobookmark">Includes Subareas</h3>
     <ul class="splist">
     <li><a href="Balboa_-_Panama_City_-_Panama.html">Balboa</a></li>
+    <li><a href="Diablo_-_Panama_City_-_Panama.html">Diablo</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
     <ul class="splist">
+      <li><a href="../u_argillicola.html"><em class="species">Uca argillicola</em></a></li>
       <li><a href="../u_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../u_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../u_deichmanni.html"><em class="species">Uca deichmanni</em></a></li>
+      <li><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></li>
+      <li><a href="../u_herradurensis.html"><em class="species">Uca herradurensis</em></a></li>
       <li><a href="../u_heteropleura.html"><em class="species">Uca heteropleura</em></a></li>
       <li><a href="../u_inaequalis.html"><em class="species">Uca inaequalis</em></a></li>
       <li><a href="../u_latimanus.html"><em class="species">Uca latimanus</em></a></li>
@@ -128,9 +136,12 @@
       <li><a href="../names/Uca_Uca_princeps.html"><em class="species">Uca (Uca) princeps</em></a></li>
       <li><a href="../names/Uca_Uca_princeps_princeps.html"><em class="species">Uca (Uca) princeps princeps</em></a></li>
       <li><a href="../names/Uca_Uca_stylifera.html"><em class="species">Uca (Uca) stylifera</em></a></li>
+      <li><a href="../names/Uca_argillicola.html"><em class="species">Uca argillicola</em></a></li>
       <li><a href="../names/Uca_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../names/Uca_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../names/Uca_deichmanni.html"><em class="species">Uca deichmanni</em></a></li>
+      <li><a href="../names/Uca_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></li>
+      <li><a href="../names/Uca_herradurensis.html"><em class="species">Uca herradurensis</em></a></li>
       <li><a href="../names/Uca_heteropleura.html"><em class="species">Uca heteropleura</em></a></li>
       <li><a href="../names/Uca_inaequalis.html"><em class="species">Uca inaequalis</em></a></li>
       <li><a href="../names/Uca_insignis.html"><em class="species">Uca insignis</em></a></li>
@@ -150,9 +161,12 @@
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
     <ul class="splist">
+      <li><a href="../names/sn_argillicola.html"><em class="species">argillicola</em></a></li>
       <li><a href="../names/sn_batuenta.html"><em class="species">batuenta</em></a></li>
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a></li>
       <li><a href="../names/sn_deichmanni.html"><em class="species">deichmanni</em></a></li>
+      <li><a href="../names/sn_ecuadoriensis.html"><em class="species">ecuadoriensis</em></a></li>
+      <li><a href="../names/sn_herradurensis.html"><em class="species">herradurensis</em></a></li>
       <li><a href="../names/sn_heteropleura.html"><em class="species">heteropleura</em></a></li>
       <li><a href="../names/sn_inaequalis.html"><em class="species">inaequalis</em></a></li>
       <li><a href="../names/sn_insignis.html"><em class="species">insignis</em></a></li>
@@ -173,7 +187,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

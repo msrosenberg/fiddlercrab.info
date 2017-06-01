@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_pugnax_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_pugnax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Atlantic Mud Fiddler Crab, Atlantic Marsh Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_pugnax.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Gelasimus_pugnax.html"><em class="species">Gelasimus pugnax</em></a>, <a href="names/Ocypoda_pusilla.html"><em class="species">Ocypoda pusilla</em></a>, <a href="names/Uca_Minuca__galapagensis__pugnax_pugnax.html"><em class="species">Uca (Minuca) [galapagensis] pugnax pugnax</em></a>, <a href="names/Uca_Minuca_pugnax.html"><em class="species">Uca (Minuca) pugnax</em></a>, <a href="names/Uca_pugnas.html"><em class="species">Uca pugnas</em></a>, <a href="names/Uca_pugnax.html"><em class="species">Uca pugnax</em></a>, <a href="names/Uca_pugnax_pugnax.html"><em class="species">Uca pugnax pugnax</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Western Atlantic: Massachusetts to Northwest Florida</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_pugnax_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_pugnax_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -193,10 +198,13 @@
 <a href="references/Altevogt1964.2.html">Altevogt &amp; von Hagen (1964)</a>, 
 <a href="references/Aschoff1965.html">Aschoff (1965)</a>, 
 <a href="references/Aspey1971.html">Aspey (1971)</a>, 
+<a href="references/Aspey1978.html">Aspey (1978)</a>, 
 <a href="references/Avent1974.html">Avent (1974)</a>, 
 <a href="references/Ayers1938.html">Ayers (1938)</a>, 
+<a href="references/Balci2014.html">Balci <em>et al.</em> (2014)</a>, 
 <a href="references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a>, 
 <a href="references/Baldwin1976.2.html">Baldwin &amp; Kirschener (1976)</a>, 
+<a href="references/Barden1983.html">Barden &amp; Koulish (1983)</a>, 
 <a href="references/Barlow1977.html">Barlow (1977)</a>, 
 <a href="references/Barnard2010.html">Barnard <em>et al.</em> (2010)</a>, 
 <a href="references/Barnes1975.1.html">Barnes (1975)</a>, 
@@ -210,6 +218,7 @@
 <a href="references/Basan1977.html">Basan &amp; Frey (1977)</a>, 
 <a href="references/Bayley1972.html">Bayley (1972)</a>, 
 <a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Bell1978.html">Bell <em>et al.</em> (1978)</a>, 
 <a href="references/Bennett1963.html">Bennett (1963)</a>, 
 <a href="references/Bennett1959.1.html">Bennett &amp; Brown (1959)</a>, 
 <a href="references/Bennett1959.2.html">Bennett &amp; Brown (1959)</a>, 
@@ -229,6 +238,7 @@
 <a href="references/Brown1960.2.html">Brown (1960)</a>, 
 <a href="references/Brown1961.html">Brown (1961)</a>, 
 <a href="references/Brown1954.1.html">Brown <em>et al.</em> (1954)</a>, 
+<a href="references/Brown1955.2.html">Brown <em>et al.</em> (1955)</a>, 
 <a href="references/Brown1953.2.html">Brown <em>et al.</em> (1953)</a>, 
 <a href="references/Brown1956.1.html">Brown <em>et al.</em> (1956)</a>, 
 <a href="references/Brown1953.1.html">Brown <em>et al.</em> (1953)</a>, 
@@ -255,11 +265,13 @@
 <a href="references/Burns1976.html">Burns (1976)</a>, 
 <a href="references/Bursey1982.html">Bursey (1982)</a>, 
 <a href="references/Burton2015.html">Burton (2015)</a>, 
+<a href="references/Cain2014.html">Cain &amp; Cohen (2014)</a>, 
 <a href="references/Cameron1983.html">Cameron &amp; Mangum (1983)</a>, 
 <a href="references/Carlson1935.html">Carlson (1935)</a>, 
 <a href="references/Carlson1936.html">Carlson (1936)</a>, 
 <a href="references/Claff1958.html">Claff <em>et al.</em> (1958)</a>, 
 <a href="references/Clark1935.html">Clark (1935)</a>, 
+<a href="references/Conan1985.html">Conan (1985)</a>, 
 <a href="references/Coohill1976.html">Coohill &amp; Fingerman (1976)</a>, 
 <a href="references/Coues1871.html">Coues (1871)</a>, 
 <a href="references/Coward1970.html">Coward <em>et al.</em> (1970)</a>, 
@@ -304,6 +316,7 @@
 <a href="references/Fingerman1967.1.html">Fingerman &amp; Yamamoto (1967)</a>, 
 <a href="references/Fish1925.html">Fish (1925)</a>, 
 <a href="references/Fisher1960.html">Fisher (1960)</a>, 
+<a href="references/Fleeger1980.html">Fleeger (1980)</a>, 
 <a href="references/Florkin1960.2.html">Florkin (1960)</a>, 
 <a href="references/Fowler1912.html">Fowler (1912)</a>, 
 <a href="references/Frankenberg1963.html">Frankenberg &amp; Burbanck (1963)</a>, 
@@ -487,6 +500,7 @@
 <a href="references/Ringold1978.html">Ringold (1978)</a>, 
 <a href="references/Ringold1979.2.html">Ringold (1979)</a>, 
 <a href="references/Roberts2015.html">Roberts <em>et al.</em> (2015)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Salmon1965.html">Salmon (1965)</a>, 
 <a href="references/Salmon1966.html">Salmon (1966)</a>, 
 <a href="references/Salmon1967.html">Salmon (1967)</a>, 
@@ -497,6 +511,7 @@
 <a href="references/Salmon1983.2.html">Salmon &amp; Hyatt (1983)</a>, 
 <a href="references/Sandeen1954.html">Sandeen <em>et al.</em> (1954)</a>, 
 <a href="references/Sandifer1975.html">Sandifer (1975)</a>, 
+<a href="references/Sarojini1993.html">Sarojini <em>et al.</em> (1993)</a>, 
 <a href="references/Sarojini1966.html">Sarojini (1966)</a>, 
 <a href="references/Sastry1983.2.html">Sastry (1983)</a>, 
 <a href="references/SchmidtNielsen1968.html">Schmidt-Nielsen <em>et al.</em> (1968)</a>, 
@@ -554,6 +569,7 @@
 <a href="references/Tomkins1965.html">Tomkins (1965)</a>, 
 <a href="references/Trager1957.html">Trager (1957)</a>, 
 <a href="references/Uhler1878.html">Uhler (1878)</a>, 
+<a href="references/Underwood2013.html">Underwood <em>et al.</em> (2013)</a>, 
 <a href="references/Unglaub1971.html">Unglaub (1971)</a>, 
 <a href="references/Vacca1973.html">Vacca (1973)</a>, 
 <a href="references/Valiela1974.html">Valiela <em>et al.</em> (1974)</a>, 
@@ -623,6 +639,7 @@
 <a href="references/Weissburg1994.1.html">Weissburg &amp; Derby (1994)</a>, 
 <a href="references/Welsh1961.html">Welsh (1961)</a>, 
 <a href="references/Weygoldt1977.html">Weygoldt (1977)</a>, 
+<a href="references/Wheeler1978.html">Wheeler (1978)</a>, 
 <a href="references/Whitten2014.html">Whitten &amp; Martin (2014)</a>, 
 <a href="references/Wilkens1965.html">Wilkens &amp; Fingerman (1965)</a>, 
 <a href="references/Williams1965.html">Williams (1965)</a>, 
@@ -643,7 +660,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

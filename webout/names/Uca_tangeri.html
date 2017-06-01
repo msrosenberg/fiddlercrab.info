@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca tangeri_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -254,25 +276,25 @@
           ['1981', 0, 0],
           ['1982', 1, 1],
           ['1983', 2, 2],
-          ['1984', 1, 1],
-          ['1985', 0, 0],
+          ['1984', 2, 2],
+          ['1985', 1, 1],
           ['1986', 0, 0],
           ['1987', 1, 1],
-          ['1988', 3, 3],
-          ['1989', 0, 0],
-          ['1990', null, null],
-          ['1991', null, null],
+          ['1988', 4, 4],
+          ['1989', 1, 1],
+          ['1990', 3, 3],
+          ['1991', 1, 1],
           ['1992', 0, 0],
           ['1993', 1, 1],
-          ['1994', 0, 0],
+          ['1994', 1, 1],
           ['1995', 1, 1],
           ['1996', 0, 0],
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', 0, 0],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -385,7 +416,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Africa.html">West coast of Africa</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -397,7 +428,7 @@
       <td><a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1273</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Africa.html">West coast of Africa</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Dakar, Senegal</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Dakar_-_Senegal.html">Dakar, Senegal</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -463,7 +494,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Liberia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Liberia.html">Liberia</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -472,7 +503,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ghana</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ghana.html">Ghana</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -481,7 +512,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cabinda, Angola</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cabinda_-_Angola.html">Cabinda, Angola</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -490,7 +521,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Luanda, Angola</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Luanda_-_Angola.html">Luanda, Angola</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -499,7 +530,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Congo River, Angola</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Congo_River_-_Angola.html">Congo River, Angola</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -511,7 +542,7 @@
       <td><a href="../references/Rathbun1921.3.html">Rathbun (1921)</a></td>
       <td>&nbsp;</td>
       <td>text p. 380-382, 465-466; plate 45: figure 3-4; plates 54, 60</td>
-      <td><span class="fa fa-flask"></span> specimen: Republic of the Congo</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Republic_of_the_Congo.html">Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -520,7 +551,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Democratic Republic of the Congo</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Democratic_Republic_of_the_Congo.html">Democratic Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -604,7 +635,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Africa.html">West coast of Africa</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -616,7 +647,7 @@
       <td><a href="../references/Roux1927.html">Roux (1927)</a></td>
       <td>&nbsp;</td>
       <td>text p. 238</td>
-      <td><span class="fa fa-map-marker"></span> location: Gabon</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gabon.html">Gabon</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -712,7 +743,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Republic of the Congo</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Republic_of_the_Congo.html">Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -721,7 +752,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bissau, Guinea-Bissau</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bissau_-_Guinea-Bissau.html">Bissau, Guinea-Bissau</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -751,7 +782,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nouadhibou, Mauritania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nouadhibou_-_Mauritania.html">Nouadhibou, Mauritania</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -844,7 +875,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -856,7 +887,7 @@
       <td><a href="../references/MirandayRivera1933.2.html">de Miranda y Rivera (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1, 4-9; figures 4-6</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1084,7 +1115,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nouadhibou, Mauritania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nouadhibou_-_Mauritania.html">Nouadhibou, Mauritania</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1105,7 +1136,7 @@
       <td><a href="../references/Hediger1933.html">Hediger (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 388-389</td>
-      <td><span class="fa fa-map-marker"></span> location: Rabat, Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rabat_-_Morocco.html">Rabat, Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1117,7 +1148,7 @@
       <td><a href="../references/Hediger1934.1.html">Hediger (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 251-259; figure 1; plates 7-8</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1129,7 +1160,7 @@
       <td><a href="../references/Hediger1934.2.html">Hediger (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 27-28</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1165,7 +1196,7 @@
       <td><a href="../references/Oliveira1939.3.html">Oliveira (1939)</a></td>
       <td>&nbsp;</td>
       <td>text p. 490</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Africa.html">West coast of Africa</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1177,7 +1208,7 @@
       <td><a href="../references/Bouvier1940.html">Bouvier (1940)</a></td>
       <td>&nbsp;</td>
       <td>text p. 280-284; figure 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Europe</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Europe.html">Europe</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1327,7 +1358,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Guinea-Bissau</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guinea-Bissau.html">Guinea-Bissau</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1339,7 +1370,7 @@
       <td><a href="../references/Capart1951.html">Capart (1951)</a></td>
       <td>&nbsp;</td>
       <td>text p. 179-181; Figure 69</td>
-      <td><span class="fa fa-map-marker"></span> location: Banana, Democratic Republic of the Congo</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Banana_-_Democratic_Republic_of_the_Congo.html">Banana, Democratic Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1348,7 +1379,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Lobito Bay, Angola</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lobito_Bay_-_Angola.html">Lobito Bay, Angola</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1957,7 +1988,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Senegal</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Senegal.html">Senegal</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1966,7 +1997,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sierra Leone</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sierra_Leone.html">Sierra Leone</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1975,7 +2006,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ivory Coast</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ivory_Coast.html">Ivory Coast</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1984,7 +2015,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Liberia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Liberia.html">Liberia</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1993,7 +2024,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ghana</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ghana.html">Ghana</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2002,7 +2033,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Nigeria</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Nigeria.html">Nigeria</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2011,7 +2042,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Angola</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Angola.html">Angola</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2056,7 +2087,7 @@
       <td><a href="../references/Dubois1957.html">Dubois (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7, 16; figure 23</td>
-      <td><span class="fa fa-map-marker"></span> location: Democratic Republic of the Congo</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Democratic_Republic_of_the_Congo.html">Democratic Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2068,7 +2099,7 @@
       <td><a href="../references/Rossignol1957.html">Rossignol (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 86-87, 119</td>
-      <td><span class="fa fa-map-marker"></span> location: Pointe-Noire, Republic of the Congo</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pointe-Noire_-_Republic_of_the_Congo.html">Pointe-Noire, Republic of the Congo</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2089,7 +2120,7 @@
       <td><a href="../references/Altevogt1959.1.html">Altevogt (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 123-145</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2176,7 +2207,7 @@
       <td><a href="../references/Altevogt1959.3.html">Altevogt (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 6-7</td>
-      <td><span class="fa fa-map-marker"></span> location: Guadalquivir, Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guadalquivir_-_Spain.html">Guadalquivir, Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2188,7 +2219,7 @@
       <td><a href="../references/Nicou1959.html">Nicou (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 693-696</td>
-      <td><span class="fa fa-map-marker"></span> location: Dakar, Senegal</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dakar_-_Senegal.html">Dakar, Senegal</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2200,7 +2231,7 @@
       <td><a href="../references/GuinotDumortier1960.html">Guinot-Dumortier &amp; Dumortier (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 136</td>
-      <td><span class="fa fa-map-marker"></span> location: Europe</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Europe.html">Europe</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2212,7 +2243,7 @@
       <td><a href="../references/Nicou1960.html">Nicou (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 135-156</td>
-      <td><span class="fa fa-map-marker"></span> location: Dakar, Senegal</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dakar_-_Senegal.html">Dakar, Senegal</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2224,7 +2255,7 @@
       <td><a href="../references/Green1961.html">Green (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 157</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2236,7 +2267,7 @@
       <td><a href="../references/vonHagen1961.html">von Hagen (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 140</td>
-      <td><span class="fa fa-map-marker"></span> location: Guadalquivir, Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guadalquivir_-_Spain.html">Guadalquivir, Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2257,7 +2288,7 @@
       <td><a href="../references/vonHagen1962.1.html">von Hagen (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 611-721</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2287,7 +2318,7 @@
       <td><a href="../references/vonHagen1962.2.html">von Hagen (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 424-432</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2299,7 +2330,7 @@
       <td><a href="../references/Altevogt1962.html">Altevogt (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 309-315</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2338,7 +2369,7 @@
       <td><a href="../references/Altevogt1963.1.html">Altevogt (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 447-458</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2359,7 +2390,7 @@
       <td><a href="../references/Gunther1963.html">Günther (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 242-245, 253-307</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2461,7 +2492,7 @@
       <td><a href="../references/Altevogt1964.1.html">Altevogt (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 644-645</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2470,7 +2501,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2500,7 +2531,7 @@
       <td><a href="../references/Altevogt1964.2.html">Altevogt &amp; von Hagen (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 636-639, 642-643, 645-654</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2509,7 +2540,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2578,7 +2609,7 @@
       <td><a href="../references/Altevogt1965.1.html">Altevogt (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 31-35</td>
-      <td><span class="fa fa-map-marker"></span> location: Tangier, Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tangier_-_Morocco.html">Tangier, Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2707,7 +2738,7 @@
       <td><a href="../references/Altevogt1965.2.html">Altevogt (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 641-654</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2764,7 +2795,7 @@
       <td><a href="../references/Korte1965.html">Korte (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 98</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2827,7 +2858,7 @@
       <td><a href="../references/Crane1966.1.html">Crane (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 466, 469</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Africa.html">West coast of Africa</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2839,7 +2870,7 @@
       <td><a href="../references/Korte1966.html">Korte (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1-34</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3037,7 +3068,7 @@
       <td><a href="../references/Alvarez1968.html">Alvarez (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 415, 419; figure 138</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3376,7 +3407,7 @@
       <td><a href="../references/Jansen1970.html">Jansen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 58-96</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3415,7 +3446,7 @@
       <td><a href="../references/Altevogt1970.html">Altevogt (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 178-182, 185</td>
-      <td><span class="fa fa-map-marker"></span> location: Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Spain.html">Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3424,7 +3455,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3910,7 +3941,7 @@
       <td><a href="../references/Warner1977.html">Warner (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 176</td>
-      <td><span class="fa fa-map-marker"></span> location: Portugal</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Portugal.html">Portugal</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3997,9 +4028,60 @@
       <td><a href="../references/Zwarts1984.html">Zwarts (1984)</a></td>
       <td>&nbsp;</td>
       <td>text p. 36</td>
-      <td><span class="fa fa-map-marker"></span> location: Guinea-Bissau</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guinea-Bissau.html">Guinea-Bissau</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Hendrickx1984.html">Hendrickx (1984)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 39</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Afruca) tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1985.html">Zwarts (1985)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 3-12</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guinea-Bissau.html">Guinea-Bissau</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Altevogt1959.1.html">Altevogt (1959)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Longhurst1958.html">Longhurst (1958)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Gunther1963.html">Günther (1963)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -4090,10 +4172,220 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Zwarts1988.html">Zwarts (1988)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 43-47, 50-52, 54-55</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guinea-Bissau.html">Guinea-Bissau</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1989.html">Zwarts &amp; Dirksen (1989)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 205-207</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Banc_dAguin_-_Mauritania.html">Banc d'Aguin, Mauritania</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1985.html">Zwarts (1985)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1990.2.html">Zwarts &amp; Blomert (1990)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 193-206</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Iouik_-_Mauritania.html">Iouik, Mauritania</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1990.3.html">Zwarts &amp; Dirksen (1990)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 258-259, 262-263, 267, 269-273, 275</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Banc_dAguin_-_Mauritania.html">Banc d'Aguin, Mauritania</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1990.2.html">Zwarts &amp; Blomert (1990)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1990.1.html">Zwarts (1990)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1990.1.html">Zwarts (1990)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 279-297, 299-300</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Banc_dAguin_-_Mauritania.html">Banc d'Aguin, Mauritania</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1985.html">Zwarts (1985)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1990.3.html">Zwarts &amp; Dirksen (1990)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1988.html">Zwarts (1988)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Altevogt1959.1.html">Altevogt (1959)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1962.1.html">von Hagen (1962)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Gunther1963.html">Günther (1963)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Biljlsma1991.html">Biljlsma &amp; de Roder (1991)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 25</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1985.html">Zwarts (1985)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Barnwell1993.html">Barnwell &amp; Martini (1993)</a></td>
       <td>&nbsp;</td>
       <td>text p. 91A</td>
-      <td><span class="fa fa-map-marker"></span> location: Guadalquivir, Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guadalquivir_-_Spain.html">Guadalquivir, Spain</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Mourente1994.html">Mourente <em>et al.</em> (1994)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 187-196</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1962.2.html">von Hagen (1962)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Muller1983.html">Müller (1983)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1987.2.html">von Hagen (1987)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wolfrath1992.1.html">Wolfrath (1992)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rodriguez1993.1.html">Rodríguez &amp; Jones (1993)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Pedro_River_-_Bay_of_Cadiz_-_Spain.html">San Pedro River, Bay of Cádiz, Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4105,7 +4397,7 @@
       <td><a href="../references/Oyenekan1995.html">Oyenekan (1995)</a></td>
       <td>&nbsp;</td>
       <td>text p. 533, 535-540, 544-545</td>
-      <td><span class="fa fa-map-marker"></span> location: Lagos, Nigeria</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lagos_-_Nigeria.html">Lagos, Nigeria</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4116,6 +4408,90 @@
       <td>&nbsp;</td>
       <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Eydoux1835.html">Eydoux (1835)</a> → <em class="species">Gelasimus Tangeri</em></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 840, 842, 844, 848-850, 853-854, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Holthuis1979.html">Holthuis (1979)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Manning1981.html">Manning &amp; Holthuis (1981)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Eydoux1835.html">Eydoux (1835)</a> → <em class="species">Gelasimus Tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/ICZN1983.html">ICZN (1983)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.1.html">Bott (1973)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Seba1758.html">Seba (1758)</a> → <em class="species">Uka una</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Afruca) tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mira_River_-_Portugal.html">Mira River, Portugal</a></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Uca marionis</em></td>
+      <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -4171,7 +4547,7 @@
       <td><a href="../references/Burton2015.html">Burton (2015)</a></td>
       <td>&nbsp;</td>
       <td>text p. 232</td>
-      <td><span class="fa fa-map-marker"></span> location: Isla Cristina, Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Isla_Cristina_-_Spain.html">Isla Cristina, Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4184,7 +4560,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

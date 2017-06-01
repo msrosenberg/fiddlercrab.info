@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus tetragonon_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -358,7 +389,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Massawa, Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massawa_-_Eritrea.html">Massawa, Eritrea</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
       <td><a href="../references/White1847.1.html">White (1847)</a></td>
       <td>&nbsp;</td>
       <td>text p. 36</td>
-      <td><span class="fa fa-flask"></span> specimen: Mauritius</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Mauritius.html">Mauritius</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -679,7 +710,7 @@
       <td><a href="../references/Tennent1861.html">Tennent (1861)</a></td>
       <td>Calling Crabs</td>
       <td>text & figure p. 477-478</td>
-      <td><span class="fa fa-map-marker"></span> location: Sri Lanka</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sri_Lanka.html">Sri Lanka</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -691,7 +722,7 @@
       <td><a href="../references/Heller1861.html">Heller (1861)</a></td>
       <td>&nbsp;</td>
       <td>text p. 17</td>
-      <td><span class="fa fa-map-marker"></span> location: Massawa, Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massawa_-_Eritrea.html">Massawa, Eritrea</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -757,7 +788,7 @@
       <td><a href="../references/Heller1862.2.html">Heller (1862)</a></td>
       <td>&nbsp;</td>
       <td>text p. 292</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -766,7 +797,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southeastern Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southeastern_Africa.html">Southeastern Africa</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -775,7 +806,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Indian Ocean</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Indian_Ocean.html">Indian Ocean</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -787,7 +818,7 @@
       <td><a href="../references/MilneEdwards1862.html">Milne-Edwards (1862)</a></td>
       <td>&nbsp;</td>
       <td>text p. 6</td>
-      <td><span class="fa fa-map-marker"></span> location: Reunion Island</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Reunion_Island.html">Reunion Island</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -835,7 +866,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nicobar Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nicobar_Islands.html">Nicobar Islands</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -844,7 +875,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tahiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tahiti.html">Tahiti</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -901,7 +932,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tanzania [Lot #3126]</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanzania.html">Tanzania</a> [Lot #3126]</td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -913,7 +944,7 @@
       <td><a href="../references/MilneEdwards1873.html">Milne-Edwards (1873)</a></td>
       <td>&nbsp;</td>
       <td>text p. 273</td>
-      <td><span class="fa fa-map-marker"></span> location: New Caledonia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Caledonia.html">New Caledonia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -970,7 +1001,7 @@
       <td><a href="../references/Hoffmann1874.html">Hoffmann (1874)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1, 16-17, 40</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1045,7 +1076,7 @@
       <td><a href="../references/Paulson1875.html">Paul'son (1875)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1204,7 +1235,7 @@
       <td><a href="../references/Neumann1878.html">Neumann (1878)</a></td>
       <td>&nbsp;</td>
       <td>text p. 26</td>
-      <td><span class="fa fa-flask"></span> specimen: Red Sea [Heidelberg Museum]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Red_Sea.html">Red Sea</a> [Heidelberg Museum]</td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1351,7 +1382,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Mauritius</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mauritius.html">Mauritius</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1360,7 +1391,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tonga</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tonga.html">Tonga</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1369,7 +1400,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tahiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tahiti.html">Tahiti</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1378,7 +1409,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Hawaii, USA <!></td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hawaii_-_USA.html">Hawaii, USA</a>!></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1387,7 +1418,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1396,7 +1427,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nicobar Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nicobar_Islands.html">Nicobar Islands</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1405,7 +1436,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanzania.html">Tanzania</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1414,7 +1445,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New Caledonia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Caledonia.html">New Caledonia</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1423,7 +1454,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Reunion Island</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Reunion_Island.html">Reunion Island</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1447,7 +1478,7 @@
       <td><a href="../references/Miers1886.html">Miers (1886)</a></td>
       <td>&nbsp;</td>
       <td>text p. xxvii, xxxi, xxxvii, xlviii, 243</td>
-      <td><span class="fa fa-map-marker"></span> location: Aru Islands, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Aru_Islands_-_Indonesia.html">Aru Islands, Indonesia</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1456,7 +1487,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tahiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tahiti.html">Tahiti</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1465,7 +1496,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: French Polynesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/French_Polynesia.html">French Polynesia</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1534,7 +1565,7 @@
       <td><a href="../references/deMan1888.html">De Man (1887-1888)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7</td>
-      <td><span class="fa fa-map-marker"></span> location: Singapore</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Singapore.html">Singapore</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1543,7 +1574,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Bay of Bengal</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bay_of_Bengal.html">Bay of Bengal</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1564,7 +1595,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Indonesia.html">Indonesia</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1603,7 +1634,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tahiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tahiti.html">Tahiti</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1612,7 +1643,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Samoa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Samoa.html">Samoa</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1624,7 +1655,7 @@
       <td><a href="../references/Boutan1892.html">Boutan (1892)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Suez Canal, Gulf of Suez, Egypt</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Suez_Canal_-_Gulf_of_Suez_-_Egypt.html">Suez Canal, Gulf of Suez, Egypt</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1681,7 +1712,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Phuket Island, Thailand</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Phuket_Island_-_Thailand.html">Phuket Island, Thailand</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1690,7 +1721,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tahiti</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tahiti.html">Tahiti</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1702,7 +1733,7 @@
       <td><a href="../references/DelPrato1896.html">Del Prato (1896)</a></td>
       <td>&nbsp;</td>
       <td>text p. 183</td>
-      <td><span class="fa fa-map-marker"></span> location: Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eritrea.html">Eritrea</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1723,7 +1754,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Funafuti, Tuvalu</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Funafuti_-_Tuvalu.html">Funafuti, Tuvalu</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1735,7 +1766,7 @@
       <td><a href="../references/Thompson1901.html">Thompson (1901)</a></td>
       <td>&nbsp;</td>
       <td>text p. 5</td>
-      <td><span class="fa fa-flask"></span> specimen: Massawa, Eritrea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Massawa_-_Eritrea.html">Massawa, Eritrea</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1744,7 +1775,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1753,7 +1784,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Torres Strait</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Torres_Strait.html">Torres Strait</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1765,7 +1796,7 @@
       <td><a href="../references/Bouvier1915.html">Bouvier (1915)</a></td>
       <td>&nbsp;</td>
       <td>text p. 303</td>
-      <td><span class="fa fa-map-marker"></span> location: Mauritius</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mauritius.html">Mauritius</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1786,7 +1817,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Madagascar</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1810,7 +1841,7 @@
       <td><a href="../references/Stephenson1931.html">Stephenson <em>et al.</em> (1931)</a></td>
       <td>&nbsp;</td>
       <td>text p. 53, 61</td>
-      <td><span class="fa fa-map-marker"></span> location: Low Isles, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Low_Isles_-_Queensland_-_Australia.html">Low Isles, Queensland, Australia</a></td>
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1823,7 +1854,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

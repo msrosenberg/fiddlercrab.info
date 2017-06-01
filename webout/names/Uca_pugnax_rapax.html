@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca pugnax rapax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -370,7 +401,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -427,7 +458,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Miami, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Miami_-_Florida_-_USA.html">Miami, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -436,7 +467,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Key West, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Key_West_-_Florida_-_USA.html">Key West, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -445,7 +476,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sarasota Bay, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sarasota_Bay_-_Florida_-_USA.html">Sarasota Bay, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Mobile, Alabama, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Mobile_-_Alabama_-_USA.html">Mobile, Alabama, USA</a></td>
       <td><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -463,7 +494,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Matagorda Bay, Texas, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Matagorda_Bay_-_Texas_-_USA.html">Matagorda Bay, Texas, USA</a></td>
       <td><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -472,7 +503,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cuba</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -481,7 +512,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Jamaica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -490,7 +521,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Haiti</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Haiti.html">Haiti</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -499,7 +530,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Rico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Saint Thomas, U.S. Virgin Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Saint_Thomas_-_U.S._Virgin_Islands.html">Saint Thomas, U.S. Virgin Islands</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -517,7 +548,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isla de Providencia, Colombia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isla_de_Providencia_-_Colombia.html">Isla de Providencia, Colombia</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -526,7 +557,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Colón, Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Colon_-_Panama.html">Colón, Panama</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -535,7 +566,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sabanilla, Colombia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sabanilla_-_Colombia.html">Sabanilla, Colombia</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -544,7 +575,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -553,7 +584,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Cabello, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Cabello_-_Venezuela.html">Puerto Cabello, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -562,7 +593,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -571,7 +602,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pernambuco, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -580,7 +611,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Plataforma, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Plataforma_-_Bahia_-_Brazil.html">Plataforma, Bahia, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -589,7 +620,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Caravelas, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Caravelas_-_Bahia_-_Brazil.html">Caravelas, Bahia, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -598,7 +629,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maruim, Sergipe, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maruim_-_Sergipe_-_Brazil.html">Maruim, Sergipe, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -607,7 +638,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Itabapoana, Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Itabapoana_-_Rio_de_Janeiro_-_Brazil.html">Itabapoana, Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -631,7 +662,7 @@
       <td><a href="../references/Rathbun1920.html">Rathbun (1920)</a></td>
       <td>&nbsp;</td>
       <td>text p. 342</td>
-      <td><span class="fa fa-map-marker"></span> location: Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -661,7 +692,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -727,7 +758,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -736,7 +767,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Cabello, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Cabello_-_Venezuela.html">Puerto Cabello, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -745,7 +776,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Antilles</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Antilles.html">Antilles</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -757,7 +788,7 @@
       <td><a href="../references/Rathbun1933.html">Rathbun (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 97-98; figure 93</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Rico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -922,7 +953,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -961,7 +992,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Juan River, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Juan_River_-_Venezuela.html">San Juan River, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -970,7 +1001,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isla Cotorra, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isla_Cotorra_-_Venezuela.html">Isla Cotorra, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -979,7 +1010,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maracaibo, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maracaibo_-_Venezuela.html">Maracaibo, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1003,7 +1034,7 @@
       <td><a href="../references/Gmitter1953.html">Gmitter &amp; Wotton (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 271-272; figures 16-18</td>
-      <td><span class="fa fa-map-marker"></span> location: Saint Thomas, U.S. Virgin Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Saint_Thomas_-_U.S._Virgin_Islands.html">Saint Thomas, U.S. Virgin Islands</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1060,7 +1091,7 @@
       <td><a href="../references/Wurtz1955.html">Wurtz &amp; Roback (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 190</td>
-      <td><span class="fa fa-map-marker"></span> location: Escambia River, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Escambia_River_-_Florida_-_USA.html">Escambia River, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1072,7 +1103,7 @@
       <td><a href="../references/Wass1955.html">Wass (1955)</a></td>
       <td>mud fiddler</td>
       <td>text p. 137, 166</td>
-      <td><span class="fa fa-map-marker"></span> location: Alligator Harbor, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Alligator_Harbor_-_Florida_-_USA.html">Alligator Harbor, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1084,7 +1115,7 @@
       <td><a href="../references/Tashian1956.html">Tashian (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 39-46</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1093,7 +1124,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Key Biscayne, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Key_Biscayne_-_Florida_-_USA.html">Key Biscayne, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1105,7 +1136,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 72, 74-75, 79; figure 3</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1114,7 +1145,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of Guatemala</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_Guatemala.html">Atlantic coast of Guatemala</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1123,7 +1154,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1132,7 +1163,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Colombia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Colombia.html">Colombia</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1141,7 +1172,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1150,7 +1181,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Guyana</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guyana.html">Guyana</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1159,7 +1190,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Suriname</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Suriname.html">Suriname</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1168,7 +1199,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1189,7 +1220,7 @@
       <td><a href="../references/Rodriguez1959.html">Rodriguez (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 264-265, 272, 275</td>
-      <td><span class="fa fa-map-marker"></span> location: Margarita Island, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Margarita_Island_-_Venezuela.html">Margarita Island, Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1201,7 +1232,7 @@
       <td><a href="../references/Velez1967.html">Vélez (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 43</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1249,7 +1280,7 @@
       <td><a href="../references/Abreu1975.html">Abreu (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 139</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1262,7 +1293,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

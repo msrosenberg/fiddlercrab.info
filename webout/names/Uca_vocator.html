@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca vocator_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -281,8 +303,8 @@
           ['2008', 0, 0],
           ['2009', 0, 0],
           ['2010', 1, 1],
-          ['2011', 0, 0],
-          ['2012', null, null],
+          ['2011', 1, 1],
+          ['2012', 0, 0],
           ['2013', null, null],
           ['2014', null, null],
           ['2015', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -363,7 +394,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -577,7 +608,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -585,7 +616,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -593,7 +624,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Haiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Haiti.html">Haiti</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -601,7 +632,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -612,7 +643,7 @@
     <tr>
       <td><a href="../references/Doflein1899.html">Doflein (1899)</a></td>
       <td>text p. 191</td>
-      <td><span class="fa fa-flask"></span> specimen: Cartagena, Colombia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cartagena_-_Colombia.html">Cartagena, Colombia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -620,7 +651,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Guayaquil, Ecuador</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Guayaquil_-_Ecuador.html">Guayaquil, Ecuador</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -642,7 +673,7 @@
     <tr>
       <td><a href="../references/Moreira1901.html">Moreira (1901)</a></td>
       <td>text p. 52</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -664,7 +695,7 @@
     <tr>
       <td><a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a></td>
       <td>text p. 1199, 1202, 1221, 1276</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -672,7 +703,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -680,7 +711,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -713,7 +744,7 @@
     <tr>
       <td><a href="../references/Lutz1912.html">Lutz (1912)</a></td>
       <td>text p. 18, 20</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -724,7 +755,7 @@
     <tr>
       <td><a href="../references/Luederwaldt1919.1.html">Luederwaldt (1919)</a></td>
       <td>text p. 368-372, 384, 398</td>
-      <td><span class="fa fa-map-marker"></span> location: Santos, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santos_-_Sao_Paulo_-_Brazil.html">Santos, São Paulo, Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -735,7 +766,7 @@
     <tr>
       <td><a href="../references/Luederwaldt1919.2.html">Luederwaldt (1919)</a></td>
       <td>text p. 435</td>
-      <td><span class="fa fa-map-marker"></span> location: Santos, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santos_-_Sao_Paulo_-_Brazil.html">Santos, São Paulo, Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -746,7 +777,7 @@
     <tr>
       <td><a href="../references/Luederwaldt1929.html">Luederwaldt (1929)</a></td>
       <td>text p. 54</td>
-      <td><span class="fa fa-map-marker"></span> location: São Sebastião, São Paulo, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sao_Sebastiao_-_Sao_Paulo_-_Brazil.html">São Sebastião, São Paulo, Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -773,7 +804,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear what species this is</td>
@@ -781,7 +812,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Palawan, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Palawan_-_Philippines.html">Palawan, Philippines</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear what species this is</td>
@@ -789,7 +820,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Mactan, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mactan_-_Philippines.html">Mactan, Philippines</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear what species this is</td>
@@ -838,7 +869,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -849,7 +880,7 @@
     <tr>
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -901,7 +932,7 @@
     <tr>
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>text p. 7, 15, 33, 203, 209, 215, 217-219; figure 73</td>
-      <td><span class="fa fa-map-marker"></span> location: Lesser Antilles</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lesser_Antilles.html">Lesser Antilles</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -909,7 +940,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of South America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_South_America.html">Atlantic coast of South America</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -944,7 +975,7 @@
     <tr>
       <td><a href="../references/vonHagen1969.html">von Hagen (1969)</a></td>
       <td>text p. 1-5; figure 1-2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -982,7 +1013,7 @@
     <tr>
       <td><a href="../references/Bourdon1970.html">Bourdon &amp; Bowman (1970)</a></td>
       <td>text p. 410, 413, 417-418, 421</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1012,7 +1043,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>text p. 221, 225, 228, 230-232</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1020,7 +1051,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1028,7 +1059,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Atlantic coast of Guatemala</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Atlantic_coast_of_Guatemala.html">Atlantic coast of Guatemala</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1036,7 +1067,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Panama.html">Panama</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1071,7 +1102,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>text p. 366-368, 372-374, 376-378, 380, 382-387, 389-392, 394, 396, 403, 407, 409; figures 2, 11-12</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1090,7 +1121,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.2.html">von Hagen (1970)</a></td>
       <td>text p. 238-252</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1136,7 +1167,7 @@
     <tr>
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>text p. 301, 303, 307, 310, 312</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1211,7 +1242,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern coast of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_coast_of_Mexico.html">Eastern coast of Mexico</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1219,7 +1250,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Belize to Guyana</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Belize_to_Guyana.html">Belize to Guyana</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1227,7 +1258,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1235,7 +1266,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Santo Domingo, Dominican Republic</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santo_Domingo_-_Dominican_Republic.html">Santo Domingo, Dominican Republic</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1243,7 +1274,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad and Tobago</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad_and_Tobago.html">Trinidad and Tobago</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1251,7 +1282,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Dominica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dominica.html">Dominica</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1259,7 +1290,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1327,7 +1358,7 @@
     <tr>
       <td><a href="../references/Barnwell1988.html">Barnwell (1988)</a></td>
       <td>text p. 133A</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_Costa_Rica.html">Atlantic coast of Costa Rica</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1338,7 +1369,7 @@
     <tr>
       <td><a href="../references/Fontaine1988.html">Fontaine &amp; Barnwell (1988)</a></td>
       <td>text p. 92A</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Limón, Limon, Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Limon_-_Limon_-_Costa_Rica.html">Puerto Limón, Limon, Costa Rica</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1366,9 +1397,36 @@
       <td class="rowspacer" colspan="6">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 842, 844, 849-850, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) vocator vocator</em></td>
+      <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 137753]</td>
+      <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Minuca murifecenta</em></td>
+      <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1387,7 +1445,42 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
+      <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Abrunhosa2011.html">Abrunhosa <em>et al.</em> (2011)</a></td>
+      <td>text p. 1269-1273, 1275-1276; figures 1-3</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rieger1998.html">Rieger (1998)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Melo1996.html">Melo (1996)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Diele2010.html">Diele <em>et al.</em> (2010)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caete_River_-_Para_-_Brazil.html">Caeté River, Pará, Brazil</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1400,7 +1493,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca monilifera_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -346,7 +377,7 @@
     <tr>
       <td><a href="../references/Rathbun1915.html">Rathbun (1915)</a></td>
       <td>text p. 126-127; plate 9</td>
-      <td><span class="fa fa-flask"></span> specimen: Guaymas, Sonora, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Guaymas_-_Sonora_-_Mexico.html">Guaymas, Sonora, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -377,14 +408,14 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isla Montague, Mouth of Colorado River, Gulf of California, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isla_Montague_-_Mouth_of_Colorado_River_-_Gulf_of_California_-_Mexico.html">Isla Montague, Mouth of Colorado River, Gulf of California, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Guaymas, Sonora, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Guaymas_-_Sonora_-_Mexico.html">Guaymas, Sonora, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -418,7 +449,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pacific coast of Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pacific_coast_of_Mexico.html">Pacific coast of Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -448,7 +479,7 @@
     <tr>
       <td><a href="../references/Garth1960.html">Garth (1960)</a></td>
       <td>text p. 113</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -478,7 +509,7 @@
     <tr>
       <td><a href="../references/Brusca1973.html">Brusca (1973)</a></td>
       <td>text p. 266; figure 7.61</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -488,9 +519,19 @@
     <tr>
       <td><a href="../references/Barnwell1990.html">Barnwell &amp; Stillman (1990)</a></td>
       <td>text p. 138A</td>
-      <td><span class="fa fa-map-marker"></span> location: San Felipe, Baja California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Felipe_-_Baja_California_-_Mexico.html">San Felipe, Baja California, Mexico</a></td>
       <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="5">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 842</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Uca) princeps monilifera</em></td>
+      <td><a href="../u_monilifera.html"><em class="species">Uca monilifera</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
     </tr>
     </table>
     <p>
@@ -500,7 +541,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca Festae_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -264,15 +286,15 @@
           ['1991', null, null],
           ['1992', null, null],
           ['1993', null, null],
-          ['1994', null, null],
-          ['1995', null, null],
-          ['1996', null, null],
+          ['1994', 0, 0],
+          ['1995', 1, 1],
+          ['1996', 0, 0],
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -346,7 +377,7 @@
     <tr>
       <td><a href="../references/Nobili1901.3.html">Nobili (1901)</a></td>
       <td>text p. 51-52</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio Daule Inferiore, Ecuador</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_Daule_Inferiore_-_Ecuador.html">Rio Daule Inferiore, Ecuador</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -373,7 +404,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Guayaquil, Ecuador</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Guayaquil_-_Ecuador.html">Guayaquil, Ecuador</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -427,14 +458,14 @@
     <tr>
       <td><a href="../references/Crane1947.html">Crane (1947)</a></td>
       <td>text p. 90-91</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Guayaquil, Ecuador</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guayaquil_-_Ecuador.html">Guayaquil, Ecuador</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -454,7 +485,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 77-78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Ecuador</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ecuador.html">Ecuador</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -484,7 +515,7 @@
     <tr>
       <td><a href="../references/vonHagen1968.2.html">von Hagen (1968)</a></td>
       <td>text p. 426</td>
-      <td><span class="fa fa-flask"></span> specimen: Ecuador</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ecuador.html">Ecuador</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -514,7 +545,7 @@
     <tr>
       <td><a href="../references/Altevogt1972.html">Altevogt (1972)</a></td>
       <td>text p. 463</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -524,7 +555,7 @@
     <tr>
       <td><a href="../references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a></td>
       <td>text p. 85A</td>
-      <td><span class="fa fa-map-marker"></span> location: Río Lagarto, Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_Lagarto_-_Costa_Rica.html">Río Lagarto, Costa Rica</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -532,9 +563,43 @@
       <td class="rowspacer" colspan="5">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Hendrickx1995.html">Hendrickx (1995)</a></td>
+      <td>text p. 142, 150</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) festae</em></td>
+      <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="5">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 843-844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) festae</em></td>
+      <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Base_Naval_Vasco_Nunez_de_Balboa_-_Panama.html">Base Naval Vasco Nuñez de Balboa, Panama</a></td>
+      <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Leptuca festae</em></td>
+      <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="5">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Portell2012.html">Portell <em>et al.</em> (2012)</a></td>
       <td>text p. 268</td>
-      <td><span class="fa fa-map-marker"></span> location: Bahia Bique, Panama</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bahia_Bique_-_Panama.html">Bahia Bique, Panama</a></td>
       <td><a href="../u_festae.html"><em class="species">Uca festae</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -546,7 +611,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

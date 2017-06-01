@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus pugnax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -349,7 +380,7 @@
       <td><a href="../references/Smith1870.2.html">Smith (1870)</a></td>
       <td>&nbsp;</td>
       <td>text p. 115, 130-138; plate 2: figure 1; plate 4: figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Type description</td>
@@ -358,7 +389,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -367,7 +398,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Haiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Haiti.html">Haiti</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -424,7 +455,7 @@
       <td><a href="../references/Coues1871.html">Coues (1871)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 121-122</td>
-      <td><span class="fa fa-map-marker"></span> location: Fort Macon, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fort_Macon_-_North_Carolina_-_USA.html">Fort Macon, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -448,7 +479,7 @@
       <td><a href="../references/Verrill1873.html">Verrill (1873)</a></td>
       <td>marsh fiddler-crab</td>
       <td>text p. 367, 377, 466-468, 471, 545-546</td>
-      <td><span class="fa fa-map-marker"></span> location: Vineyard Sound, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Vineyard_Sound_-_Massachusetts_-_USA.html">Vineyard Sound, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -487,7 +518,7 @@
       <td><a href="../references/Verrill1874.html">Verrill &amp; Smith (1874)</a></td>
       <td>marsh fiddler-crab</td>
       <td>text p. 73, 83, 172-174, 177, 251-252</td>
-      <td><span class="fa fa-map-marker"></span> location: Vineyard Sound, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Vineyard_Sound_-_Massachusetts_-_USA.html">Vineyard Sound, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -580,7 +611,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlanic and Gulf coasts of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlanic_and_Gulf_coasts_of_United_States.html">Atlanic and Gulf coasts of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -589,7 +620,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -601,7 +632,7 @@
       <td><a href="../references/Smith1878.html">Smith (1878)</a></td>
       <td>&nbsp;</td>
       <td>text p. 33, 124</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -610,7 +641,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Haiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Haiti.html">Haiti</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -622,7 +653,7 @@
       <td><a href="../references/Packard1881.html">Packard (1881)</a></td>
       <td>&nbsp;</td>
       <td>text p. 784-788</td>
-      <td><span class="fa fa-map-marker"></span> location: Fort Macon, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fort_Macon_-_North_Carolina_-_USA.html">Fort Macon, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -634,7 +665,7 @@
       <td><a href="../references/Rathbun1884.html">Rathbun (1884)</a></td>
       <td>Fiddler Crabs</td>
       <td>text p. 763-765</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -646,7 +677,7 @@
       <td><a href="../references/Leidy1888.html">Leidy (1888)</a></td>
       <td>&nbsp;</td>
       <td>text p. 333</td>
-      <td><span class="fa fa-map-marker"></span> location: Beach Haven, New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beach_Haven_-_New_Jersey_-_USA.html">Beach Haven, New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -658,7 +689,7 @@
       <td><a href="../references/Thallwitz1891.html">Thallwitz (1891)</a></td>
       <td>&nbsp;</td>
       <td>text p. 53</td>
-      <td><span class="fa fa-flask"></span> specimen: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -670,7 +701,7 @@
       <td><a href="../references/Benedict1892.html">Benedict (1892)</a></td>
       <td>&nbsp;</td>
       <td>text p. 77</td>
-      <td><span class="fa fa-map-marker"></span> location: Kingston Harbor, Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Kingston_Harbor_-_Jamaica.html">Kingston Harbor, Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -694,7 +725,7 @@
       <td><a href="../references/Faxon1895.html">Faxon (1895)</a></td>
       <td>&nbsp;</td>
       <td>text p. 236</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of North America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -706,7 +737,7 @@
       <td><a href="../references/Bumpus1898.html">Bumpus (1898)</a></td>
       <td>&nbsp;</td>
       <td>text p. 853</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -730,7 +761,7 @@
       <td><a href="../references/Thompson1901.html">Thompson (1901)</a></td>
       <td>&nbsp;</td>
       <td>text p. 5</td>
-      <td><span class="fa fa-flask"></span> specimen: New England, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/New_England_-_USA.html">New England, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -742,7 +773,7 @@
       <td><a href="../references/Yerkes1901.html">Yerkes (1901)</a></td>
       <td>&nbsp;</td>
       <td>text p. 418, 424-425</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -754,7 +785,7 @@
       <td><a href="../references/Paulmier1905.html">Paulmier (1905)</a></td>
       <td>fiddler crabs; soldier crabs</td>
       <td>text p. 147-148; figure 16</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -805,7 +836,7 @@
       <td><a href="../references/Przibram1908.html">Przibram (1908)</a></td>
       <td>&nbsp;</td>
       <td>text p. 288-289</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -826,7 +857,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -838,7 +869,7 @@
       <td><a href="../references/Przibram1917.html">Przibram (1917)</a></td>
       <td>&nbsp;</td>
       <td>text p. 47-56</td>
-      <td><span class="fa fa-map-marker"></span> location: Boston, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Boston_-_Massachusetts_-_USA.html">Boston, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -859,7 +890,7 @@
       <td><a href="../references/Hyman1920.2.html">Hyman (1920)</a></td>
       <td>&nbsp;</td>
       <td>text p. 485-501</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -872,7 +903,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca burgersi_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,8 +292,8 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
           ['2002', 0, 0],
           ['2003', 1, 1],
           ['2004', 0, 0],
@@ -279,7 +301,7 @@
           ['2006', 0, 0],
           ['2007', 1, 1],
           ['2008', 0, 0],
-          ['2009', 0, 0],
+          ['2009', 1, 1],
           ['2010', 1, 1],
           ['2011', 0, 0],
           ['2012', null, null],
@@ -333,6 +355,15 @@
         </ul>
       </nav>
     </header>
+
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
 
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
@@ -436,7 +467,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Barbados</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Barbados.html">Barbados</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -447,7 +478,7 @@
     <tr>
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>text p. 6, 14, 28, 33, 162, 182, 203, 207-211, 219; plate 2; figures 70-71</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -490,7 +521,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -498,7 +529,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Atlantic coast of Guatemala</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Atlantic_coast_of_Guatemala.html">Atlantic coast of Guatemala</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -506,7 +537,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Panama.html">Panama</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -557,7 +588,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>text p. 366-368, 373, 375-377, 382-385, 391-393, 407; figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -590,7 +621,7 @@
     <tr>
       <td><a href="../references/Gibbs1972.html">Gibbs &amp; Bryan (1972)</a></td>
       <td>text p. 97-101, 103-104, 106-109</td>
-      <td><span class="fa fa-map-marker"></span> location: Barbuda, Antigua and Barbuda</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Barbuda_-_Antigua_and_Barbuda.html">Barbuda, Antigua and Barbuda</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -617,7 +648,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Barbuda, Antigua and Barbuda</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Barbuda_-_Antigua_and_Barbuda.html">Barbuda, Antigua and Barbuda</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -636,7 +667,7 @@
     <tr>
       <td><a href="../references/Greenspan1975.html">Greenspan (1975)</a></td>
       <td>text p. 24</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -647,7 +678,7 @@
     <tr>
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>text p. 301, 305, 312, 314</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -677,7 +708,7 @@
     <tr>
       <td><a href="../references/Weis1977.1.html">Weis (1977)</a></td>
       <td>text p. 271</td>
-      <td><span class="fa fa-map-marker"></span> location: Boca Raton, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Boca_Raton_-_Florida_-_USA.html">Boca Raton, Florida, USA</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -792,7 +823,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -800,7 +831,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -808,7 +839,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern Yucatan Peninsula, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_Yucatan_Peninsula_-_Mexico.html">Northeastern Yucatan Peninsula, Mexico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -816,7 +847,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -824,7 +855,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Hispaniola</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hispaniola.html">Hispaniola</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -840,7 +871,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -848,7 +879,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Antilles</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Antilles.html">Antilles</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -856,7 +887,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Yucatan Peninsula, Mexico to Guatemala</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Yucatan_Peninsula_-_Mexico_to_Guatemala.html">Eastern Yucatan Peninsula, Mexico to Guatemala</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -864,7 +895,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of Panama</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_Panama.html">Atlantic coast of Panama</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -872,7 +903,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela to Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela_to_Brazil.html">Venezuela to Brazil</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -973,7 +1004,7 @@
     <tr>
       <td><a href="../references/Fontaine1988.html">Fontaine &amp; Barnwell (1988)</a></td>
       <td>text p. 92A</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Limón, Limon, Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Limon_-_Limon_-_Costa_Rica.html">Puerto Limón, Limon, Costa Rica</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1004,9 +1035,44 @@
       <td class="rowspacer" colspan="6">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 842, 844, 849-850, 852, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) burgersi</em></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 126959]</td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Minuca burgersi</em></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1017,9 +1083,36 @@
     <tr>
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>text p. 896, 899-900</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bahia_Bioluminiscente_-_Vieques_-_Puerto_Rico.html">Bahía Bioluminiscente, Vieques, Puerto Rico</a></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Blue_Beach_-_Laguna_Kiani_-_Vieques_-_Puerto_Rico.html">Blue Beach, Laguna Kiani, Vieques, Puerto Rico</a></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) burgersi</em></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -1036,7 +1129,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sanchez, Dominican Republic</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sanchez_-_Dominican_Republic.html">Sanchez, Dominican Republic</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1049,7 +1142,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

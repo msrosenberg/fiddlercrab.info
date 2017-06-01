@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -248,46 +270,46 @@
           ['1975', 4, 4],
           ['1976', 16, 16],
           ['1977', 14, 14],
-          ['1978', 4, 4],
+          ['1978', 8, 8],
           ['1979', 1, 1],
           ['1980', 1, 1],
           ['1981', 4, 4],
           ['1982', 5, 5],
           ['1983', 10, 10],
-          ['1984', 1, 1],
+          ['1984', 2, 2],
           ['1985', 9, 9],
           ['1986', 3, 3],
           ['1987', 2, 2],
           ['1988', 14, 14],
           ['1989', 2, 2],
-          ['1990', 2, 2],
+          ['1990', 4, 4],
           ['1991', 0, 0],
           ['1992', 1, 1],
           ['1993', 4, 4],
-          ['1994', 1, 1],
+          ['1994', 2, 2],
           ['1995', 2, 2],
-          ['1996', 0, 0],
-          ['1997', null, null],
+          ['1996', 1, 1],
+          ['1997', 0, 0],
           ['1998', null, null],
           ['1999', null, null],
           ['2000', 0, 0],
-          ['2001', 2, 2],
-          ['2002', 1, 1],
+          ['2001', 4, 4],
+          ['2002', 2, 2],
           ['2003', 1, 1],
           ['2004', 1, 1],
           ['2005', 1, 1],
-          ['2006', 2, 2],
+          ['2006', 3, 3],
           ['2007', 2, 2],
           ['2008', 0, 0],
-          ['2009', 1, 1],
+          ['2009', 3, 3],
           ['2010', 4, 4],
           ['2011', 0, 0],
           ['2012', 0, 0],
-          ['2013', 2, 2],
+          ['2013', 3, 3],
           ['2014', 2, 2],
           ['2015', 1, 1],
-          ['2016', 0, 0],
-          ['2017', null, null],
+          ['2016', 1, 1],
+          ['2017', 0, 0],
         ]);
 
         var options0 = {
@@ -331,6 +353,15 @@
         </ul>
       </nav>
     </header>
+
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
 
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
@@ -416,7 +447,7 @@
       <td><a href="../references/Doflein1899.html">Doflein (1899)</a></td>
       <td>&nbsp;</td>
       <td>text p. 191</td>
-      <td><span class="fa fa-flask"></span> specimen: Cartagena, Colombia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cartagena_-_Colombia.html">Cartagena, Colombia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>unidentified juvenile</td>
@@ -581,7 +612,7 @@
       <td><a href="../references/Kinghorn1924.html">Kinghorn (1924)</a></td>
       <td>fiddler crab</td>
       <td>text p. 31-32</td>
-      <td><span class="fa fa-map-marker"></span> location: Trial Bay, New South Wales, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trial_Bay_-_New_South_Wales_-_Australia.html">Trial Bay, New South Wales, Australia</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -617,7 +648,7 @@
       <td><a href="../references/Ward1928.html">Ward (1928)</a></td>
       <td>Fiddler Crabs</td>
       <td>text p. 243-246</td>
-      <td><span class="fa fa-map-marker"></span> location: Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Queensland_-_Australia.html">Queensland, Australia</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -680,7 +711,7 @@
       <td><a href="../references/Shen1932.html">Shen (1932)</a></td>
       <td>&nbsp;</td>
       <td>text p. 268, 273</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern coast of Shandong Peninsula, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_coast_of_Shandong_Peninsula_-_China.html">Southern coast of Shandong Peninsula, China</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -809,7 +840,7 @@
       <td><a href="../references/Abramowitz1936.1.html">Abramowitz (1936)</a></td>
       <td>&nbsp;</td>
       <td>text p. 522-523</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></td>
       <td><a href="../references/Abramowitz1938.2.html">Abramowitz (1938)</a></td>
       <td>&nbsp;</td>
@@ -818,7 +849,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><a href="../references/Abramowitz1938.2.html">Abramowitz (1938)</a></td>
       <td>&nbsp;</td>
@@ -893,7 +924,7 @@
       <td><a href="../references/Estampador1937.html">Estampador (1937)</a></td>
       <td>&nbsp;</td>
       <td>text p. 477, 542</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -917,7 +948,7 @@
       <td><a href="../references/Brown1940.3.html">Brown (1940)</a></td>
       <td>&nbsp;</td>
       <td>text p. 343-344, 346-352, 354-355</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1049,7 +1080,7 @@
       <td><a href="../references/Brown1948.2.html">Brown &amp; Webb (1948)</a></td>
       <td>&nbsp;</td>
       <td>text p. 371-380</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td>?</td>
       <td><a href="../references/Brown1954.4.html">Brown <em>et al.</em> (1954)</a></td>
       <td>They do not specify a species in this paper, but in later papers reference it sometimes as <em class="species">Uca pugilator</em> and others as <em class="species">U pugnax.</em></td>
@@ -1127,7 +1158,7 @@
       <td><a href="../references/Hedgpeth1953.html">Hedgpeth (1953)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 163</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1187,7 +1218,7 @@
       <td><a href="../references/Fourmanoir1953.html">Fourmanoir (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89</td>
-      <td><span class="fa fa-map-marker"></span> location: Majunga, Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Majunga_-_Madagascar.html">Majunga, Madagascar</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1199,7 +1230,7 @@
       <td><a href="../references/Stella1953.html">Stella (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 70</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1313,7 +1344,7 @@
       <td><a href="../references/Brown1956.1.html">Brown <em>et al.</em> (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 614</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><a href="../references/Brown1961.html">Brown (1961)</a></td>
       <td>&nbsp;</td>
@@ -1397,7 +1428,7 @@
       <td><a href="../references/Kalik1958.2.html">Kalik (1958)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 65, 67, 69</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1598,7 +1629,7 @@
       <td><a href="../references/Holthuis1959.2.html">Holthuis (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 76</td>
-      <td><span class="fa fa-map-marker"></span> location: Saint Martin</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Saint_Martin.html">Saint Martin</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Mentions there are 3 species in a collection which need to be studied, without specifying what they are.</td>
@@ -1838,7 +1869,7 @@
       <td><a href="../references/Altevogt1959.3.html">Altevogt (1959)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 1-7; Plate I: figure 2; Plate II: figure 4</td>
-      <td><span class="fa fa-map-marker"></span> location: Mumbai, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mumbai_-_India.html">Mumbai, India</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1883,7 +1914,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Chennai, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chennai_-_India.html">Chennai, India</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1892,7 +1923,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Rameswaram, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rameswaram_-_India.html">Rameswaram, India</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2468,7 +2499,7 @@
       <td><a href="../references/Harkema1962.html">Harkema &amp; Miller (1962)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 333</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Island, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Island_-_South_Carolina_-_USA.html">Cape Island, South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2804,7 +2835,7 @@
       <td><a href="../references/Altevogt1963.2.html">Altevogt (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 697</td>
-      <td><span class="fa fa-map-marker"></span> location: India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/India.html">India</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2813,7 +2844,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Spain</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Spain.html">Southern Spain</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td>MSR</td>
       <td>&nbsp;</td>
@@ -2822,7 +2853,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Morocco</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Morocco.html">Morocco</a></td>
       <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
       <td>MSR</td>
       <td>&nbsp;</td>
@@ -2846,7 +2877,7 @@
       <td><a href="../references/Tomkins1965.html">Tomkins (1965)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 156-157</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia and South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_and_South_Carolina_-_USA.html">Georgia and South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3248,7 +3279,7 @@
       <td><a href="../references/Malzone1966.html">Malzone <em>et al.</em> (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 511-518</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>There is no way to determine the species (multiple?) studied</td>
@@ -3308,7 +3339,7 @@
       <td><a href="../references/Hughes1966.html">Hughes (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 137-139, 141</td>
-      <td><span class="fa fa-map-marker"></span> location: Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mozambique.html">Mozambique</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4166,7 +4197,7 @@
       <td><a href="../references/Barnwell1970.html">Barnwell &amp; Matoyoshi (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 522</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>The abstract mentions a study of 40 species, but they are not specified.</td>
@@ -4253,7 +4284,7 @@
       <td><a href="../references/Fishelson1971.html">Fishelson (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 115, 117, 131</td>
-      <td><span class="fa fa-map-marker"></span> location: Dahlak Archipelago, Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dahlak_Archipelago_-_Eritrea.html">Dahlak Archipelago, Eritrea</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4262,7 +4293,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4274,7 +4305,7 @@
       <td><a href="../references/Farrow1971.html">Farrow (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 455, 460, 482, 487-490</td>
-      <td><span class="fa fa-map-marker"></span> location: Aldabra</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Aldabra.html">Aldabra</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4610,7 +4641,7 @@
       <td><a href="../references/Kinsella1974.html">Kinsella (1974)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 5</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4820,7 +4851,7 @@
       <td><a href="../references/Sasekumar1974.html">Sasekumar (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 54, 60, 63, 67-68</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Klang, Selangor, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Klang_-_Selangor_-_Malaysia.html">Port Klang, Selangor, Malaysia</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5354,7 +5385,7 @@
       <td><a href="../references/DeCoursey1976.html">DeCoursey (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 244</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5366,7 +5397,7 @@
       <td><a href="../references/Mantel1976.html">Mantel &amp; Olson (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 223</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6464,7 +6495,7 @@
       <td><a href="../references/Thurman1977.1.html">Thurman (1977)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 950</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of North America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6866,7 +6897,7 @@
       <td><a href="../references/Vernberg1977.3.html">Vernberg <em>et al.</em> (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 18, 45-46</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgetown, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgetown_-_South_Carolina_-_USA.html">Georgetown, South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7061,7 +7092,7 @@
       <td><a href="../references/Por1977.html">Por <em>et al.</em> (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 300, 305-306, 312-313</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Aqaba, Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Aqaba_-_Red_Sea.html">Gulf of Aqaba, Red Sea</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7145,6 +7176,207 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Aspey1978.html">Aspey (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 235-236, 241-242</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1941.html">Crane (1941)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zucker1972.html">Zucker (1972)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zucker1974.html">Zucker (1974)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ono1965.html">Ono (1965)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Yamaguchi1970.html">Yamaguchi (1970)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hockett1972.html">Hockett &amp; Kritzler (1972)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Krebs1974.html">Krebs <em>et al.</em> (1974)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1957.html">Crane (1957)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1958.html">Crane (1958)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1967.html">Salmon (1967)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Aspey1971.html">Aspey (1971)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Miller1961.html">Miller (1961)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Ahmed1978.2.html">Ahmed &amp; Khan (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 49-50, 52-53</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ahmed1976.1.html">Ahmed (1976)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Morgan1920.html">Morgan (1920)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Morgan1923.1.html">Morgan (1923)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Vernberg1966.1.html">Vernberg &amp; Costlow (1966)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyman1920.2.html">Hyman (1920)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Valiela1974.html">Valiela <em>et al.</em> (1974)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Wheeler1978.html">Wheeler (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 268</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Pretzmann1978.html">Pretzmann &amp; Radda (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 590</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Pizarro_-_Peru.html">Puerto Pizarro, Peru</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Dores1979.html">Dores (1979)</a></td>
       <td>&nbsp;</td>
       <td>text p. 917</td>
@@ -7172,7 +7404,7 @@
       <td><a href="../references/DeCoursey1981.html">DeCoursey (1981)</a></td>
       <td>&nbsp;</td>
       <td>text p. 263-264</td>
-      <td><span class="fa fa-map-marker"></span> location: North Inlet, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Inlet_-_South_Carolina_-_USA.html">North Inlet, South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Could be a mix of three species: <em class="species">Uca pugilator, U. pugnax,</em> and <em class="species">U. minax.</em></td>
@@ -7208,7 +7440,7 @@
       <td><a href="../references/Schwing1981.html">Schwing (1981)</a></td>
       <td>&nbsp;</td>
       <td>text p. 281</td>
-      <td><span class="fa fa-map-marker"></span> location: North Inlet, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Inlet_-_South_Carolina_-_USA.html">North Inlet, South Carolina, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Could be a mix of three species: <em class="species">Uca pugilator, U. pugnax,</em> and <em class="species">U. minax.</em></td>
@@ -7784,7 +8016,7 @@
       <td><a href="../references/Barnwell1983.2.html">Barnwell &amp; Thurman (1983)</a></td>
       <td>&nbsp;</td>
       <td>text p. 947</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8040,6 +8272,45 @@
       <td>&nbsp;</td>
       <td>text p. 53A</td>
       <td>&nbsp;</td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Hendrickx1984.html">Hendrickx (1984)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 33, 38, 44</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Estero_el_Verde_-_Sinaloa_-_Mexico.html">Estero el Verde, Sinaloa, Mexico</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Powers1975.1.html">Powers (1975)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hendrickx1979.html">Hendrickx (1979)</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9314,6 +9585,57 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Zwarts1990.2.html">Zwarts &amp; Blomert (1990)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 194</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1985.html">Zwarts (1985)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Colby1984.html">Colby &amp; Fonseca (1984)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zwarts1990.3.html">Zwarts &amp; Dirksen (1990)</a> → <em class="species">Uca tangeri</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Zwarts1990.3.html">Zwarts &amp; Dirksen (1990)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 270</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1959.html">Green <em>et al.</em> (1959)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Warner1977.html">Warner (1977)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Gleeson1992.html">Gleeson <em>et al.</em> (1992)</a></td>
       <td>&nbsp;</td>
       <td>text p. 405</td>
@@ -9449,10 +9771,31 @@
       <td><a href="../references/Thurman1994.html">Thurman (1994)</a></td>
       <td>&nbsp;</td>
       <td>text p. 31A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>Mentions there were 5 species studied, but only specifies 3</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Mourente1994.html">Mourente <em>et al.</em> (1994)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 188</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wolfrath1992.1.html">Wolfrath (1992)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td class="rowspacer" colspan="7">&nbsp;</td>
@@ -9491,6 +9834,36 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/AlGhais1996.html">Al-Ghais &amp; Cooper (1996)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 420</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Serene1973.2.html">Serène (1973)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Serene1973.3.html">Serène (1973)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hartnoll1975.html">Hartnoll (1975)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Naiditch2001.html">Naiditch <em>et al.</em> (2001)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 1535</td>
@@ -9515,10 +9888,1027 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Vannini2001.html">Vannini <em>et al.</em> (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 456</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mida_Creek_-_Kenya.html">Mida Creek, Kenya</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 839-854</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Christy1983.html">Christy (1983)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Christy1987.1.html">Christy (1987)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Backwell1999.html">Backwell <em>et al.</em> (1999)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1978.html">Salmon <em>et al.</em> (1978)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1979.2.html">Salmon <em>et al.</em> (1979)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1987.2.html">Salmon &amp; Kettler (1987)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1965.html">Salmon (1965)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyatt1977.2.html">Hyatt (1977)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1983.html">von Hagen (1983)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1984.html">von Hagen (1984)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1967.html">Crane (1967)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyatt1978.html">Hyatt &amp; Salmon (1978)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyatt1979.1.html">Hyatt &amp; Salmon (1979)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Jennions1996.html">Jennions &amp; Backwell (1996)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Miller1961.html">Miller (1961)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Weissburg1992.html">Weissburg (1992)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Weissburg1993.1.html">Weissburg (1993)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wolfrath1992.2.html">Wolfrath (1992)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Huxley1933.html">Huxley &amp; Callow (1933)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Yamaguchi1973.html">Yamaguchi (1973)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Takeda1993.html">Takeda &amp; Murai (1993)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Veitch1978.html">Veitch (1978)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1987.2.html">von Hagen (1987)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Weis1977.2.html">Weis (1977)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/TrinkausRandall1982.html">Trinkaus-Randall (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hopkins1999.2.html">Hopkins <em>et al.</em> (1999)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Levinton1993.html">Levinton &amp; Judge (1993)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Levinton1995.html">Levinton <em>et al.</em> (1995)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rosenberg1997.html">Rosenberg (1997)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1949.html">Brown &amp; Webb (1949)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1951.html">Brown &amp; Stephens (1951)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1954.2.html">Brown <em>et al.</em> (1954)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Palmer1964.html">Palmer (1964)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Palmer1988.html">Palmer (1988)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Palmer1989.1.html">Palmer (1989)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Palmer1991.html">Palmer (1991)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1966.html">Barnwell (1966)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1968.2.html">Barnwell (1968)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Coohill1970.html">Coohill <em>et al.</em> (1970)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Fingerman1977.1.html">Fingerman &amp; Fingerman (1977)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hanumante1981.1.html">Hanumante &amp; Fingerman (1981)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Vernberg1968.2.html">Vernberg &amp; Vernberg (1968)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Vernberg1972.2.html">Vernberg &amp; O'Hara (1972)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Land1995.1.html">Land &amp; Layne (1995)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Land1995.2.html">Land &amp; Layne (1995)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zeil1996.html">Zeil &amp; Al-Mutairi (1996)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zeil1997.html">Zeil &amp; Zanker (1997)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Layne1998.html">Layne (1998)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Devi1987.html">Devi (1987)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Weis1988.1.html">Weis &amp; Kim (1988)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ismail1991.html">Ismail <em>et al.</em> (1991)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Seba1758.html">Seba (1758)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Manning1981.html">Manning &amp; Holthuis (1981)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Herbst1782.html">Herbst (1782)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Lamarck1801.html">Lamarck (1801)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Shaw1802.html">Shaw &amp; Nodder (1802)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Leach1814.html">Leach (1814)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rathbun1897.1.html">Rathbun (1897)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/MilneEdwards1852.html">Milne Edwards (1852)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Smith1870.2.html">Smith (1870)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Kingsley1880.html">Kingsley (1880)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1976.html">von Hagen (1976)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Nakasone1982.html">Nakasone (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonPrahl1982.html">von Prahl (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hogarth1986.html">Hogarth (1986)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1979.html">Thurman (1979)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1980.html">Barnwell (1980)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1980.html">Green (1980)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1984.1.html">Barnwell &amp; Thurman (1984)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Collins1984.html">Collins <em>et al.</em> (1984)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1989.html">von Hagen &amp; Jones (1989)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/George1982.html">George &amp; Jones (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Jones1994.html">Jones &amp; Morton (1994)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Kitaura1998.html">Kitaura <em>et al.</em> (1998)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Levinton1996.html">Levinton <em>et al.</em> (1996)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Sturmbauer1996.html">Sturmbauer <em>et al.</em> (1996)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Salmon1988.2.html">Salmon &amp; Zucker (1988)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Albrecht1981.html">Albrecht &amp; von Hagen (1981)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Suzawa1993.html">Suzawa <em>et al.</em> (1993)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rathbun1933.html">Rathbun (1933)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1968.2.html">von Hagen (1968)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonHagen1980.html">von Hagen (1980)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Novak1974.html">Novak &amp; Salmon (1974)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Altevogt1979.html">Altevogt &amp; Davis (1979)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Guinot1979.html">Guinot (1979)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1981.1.html">Thurman (1981)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1982.html">Barnwell (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Jones1982.html">Jones &amp; George (1982)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hendrickx1984.html">Hendrickx (1984)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/vonPrahl1985.html">von Prahl &amp; Toro (1985)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bairagi1988.html">Bairagi &amp; Misra (1988)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Dai1991.html">Dai &amp; Yang (1991)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Shih1999.3.html">Shih <em>et al.</em> (1999)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1972.2.html">Green &amp; Schochet (1972)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Yamaguchi1977.html">Yamaguchi (1977)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Zeil1986.html">Zeil <em>et al.</em> (1986)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1954.html">Bott (1954)</a> → <em class="species">Uca</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Afruca</em></td>
+      <td><em class="species">Afruca</em></td>
+      <td>MSR</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Leach1814.html">Leach (1814)</a> → <em class="species">Uca</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Uca</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Heteruca</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Gelasimus</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>subgenus</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Allen2002.html">Allen &amp; Levinton (2002)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 1184</td>
       <td>&nbsp;</td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Jaroensutasinee2002.html">Jaroensutasinee &amp; Tantichodok (2002)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 1009, 1114-1115</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyatt1978.html">Hyatt &amp; Salmon (1978)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Christy1984.html">Christy &amp; Salmon (1984)</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9605,10 +10995,31 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Adamowicz2006.html">Adamowicz &amp; Purvis (2006)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 1406, 1408-1411, 1413</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Sturmbauer1996.html">Sturmbauer <em>et al.</em> (1996)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Hopkins2007.2.html">Hopkins &amp; Thurman (2007)</a></td>
       <td>fiddler crabs</td>
       <td>text p. e51</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9620,7 +11031,7 @@
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>fiddler crabs</td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9635,6 +11046,30 @@
       <td>&nbsp;</td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/AjmalKhan2009.html">Ajmal Khan &amp; Ravichandran (2009)</a></td>
+      <td>&nbsp;</td>
+      <td> text p. 322, 330</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pichavaram_Mangove_Forest_-_Tamil_Nadu_-_India.html">Pichavaram Mangove Forest, Tamil Nadu, India</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>fiddler crabs</td>
+      <td>text p. 900-901</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/White2000.html">White <em>et al.</em> (2000)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -9731,6 +11166,36 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Wunderlich2013.html">Wunderlich &amp; Pinheiro (2013)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 279</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Frith1980.html">Frith &amp; Brunenmeister (1980)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/deRivera2003.1.html">deRivera (2003)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Mokhtari2008.html">Mokhtari <em>et al.</em> (2008)</a></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Qureshi2014.html">Qureshi &amp; Saher (2014)</a></td>
       <td>&nbsp;</td>
       <td>text p. 64</td>
@@ -9746,7 +11211,7 @@
       <td><a href="../references/Faria2014.html">Faria <em>et al.</em> (2014)</a></td>
       <td>fiddler crabs</td>
       <td>text p. e272</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><em class="species">Uca</em></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9763,6 +11228,27 @@
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
     </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Yasuda2016.html">Yasuda &amp; Koga (2016)</a></td>
+      <td>fiddler crab</td>
+      <td>text p. 2176, 2180</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Backwell2000.html">Backwell <em>et al.</em> (2000)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Pratt2003.html">Pratt <em>et al.</em> (2003)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
     </table>
     <p>
     </p>
@@ -9771,7 +11257,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

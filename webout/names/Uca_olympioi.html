@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca olympioi_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -348,7 +379,7 @@
       <td><a href="../references/Oliveira1939.1.html">Oliveira (1939)</a></td>
       <td>carangueijo; ciécié</td>
       <td>text p. 122, 127-130, 133, 140, 142-143; plate 8: figures 41-42, 48; plate 14: figures 63-64</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
     </tr>
@@ -359,7 +390,7 @@
       <td><a href="../references/Oliveira1939.3.html">Oliveira (1939)</a></td>
       <td>&nbsp;</td>
       <td>text p. 495, 497</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -370,7 +401,7 @@
       <td><a href="../references/Dansereau1947.html">Dansereau (1947)</a></td>
       <td>&nbsp;</td>
       <td>text p. 469, 471</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -381,7 +412,7 @@
       <td><a href="../references/Oliveira1950.html">Oliveira (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 371, 377</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
     </tr>
@@ -392,7 +423,7 @@
       <td><a href="../references/Oliveira1953.html">Oliveira &amp; Krau (1953)</a></td>
       <td>chama-maré</td>
       <td>text p. 512</td>
-      <td><span class="fa fa-map-marker"></span> location: Guanabara Bay, Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guanabara_Bay_-_Rio_de_Janeiro_-_Brazil.html">Guanabara Bay, Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -403,7 +434,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -425,7 +456,7 @@
       <td><a href="../references/Martins1959.html">Martins <em>et al.</em> (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 87-89</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -447,7 +478,7 @@
       <td><a href="../references/Lacerda1976.html">Lacerda (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 49-60</td>
-      <td><span class="fa fa-map-marker"></span> location: Paraná, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Parana_-_Brazil.html">Paraná, Brazil</a></td>
       <td><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
     </tr>
@@ -459,7 +490,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

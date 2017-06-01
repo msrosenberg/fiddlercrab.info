@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca pugnax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -225,7 +247,7 @@
           ['1952', 1, 1],
           ['1953', 8, 8],
           ['1954', 9, 9],
-          ['1955', 9, 9],
+          ['1955', 10, 10],
           ['1956', 3, 3],
           ['1957', 12, 12],
           ['1958', 11, 11],
@@ -248,12 +270,12 @@
           ['1975', 17, 17],
           ['1976', 22, 22],
           ['1977', 15, 15],
-          ['1978', 4, 4],
+          ['1978', 7, 7],
           ['1979', 3, 3],
-          ['1980', 3, 3],
+          ['1980', 4, 4],
           ['1981', 2, 2],
           ['1982', 4, 4],
-          ['1983', 12, 12],
+          ['1983', 13, 13],
           ['1984', 0, 0],
           ['1985', 12, 12],
           ['1986', 0, 0],
@@ -263,7 +285,7 @@
           ['1990', 2, 2],
           ['1991', 0, 0],
           ['1992', 0, 0],
-          ['1993', 1, 1],
+          ['1993', 2, 2],
           ['1994', 2, 2],
           ['1995', 0, 0],
           ['1996', 1, 1],
@@ -271,20 +293,20 @@
           ['1998', 0, 0],
           ['1999', 1, 1],
           ['2000', 2, 2],
-          ['2001', 2, 2],
-          ['2002', 1, 1],
+          ['2001', 3, 3],
+          ['2002', 2, 2],
           ['2003', 5, 5],
           ['2004', 3, 3],
           ['2005', 0, 0],
           ['2006', 2, 2],
           ['2007', 0, 0],
           ['2008', 0, 0],
-          ['2009', 1, 1],
+          ['2009', 2, 2],
           ['2010', 1, 1],
           ['2011', 0, 0],
           ['2012', 0, 0],
-          ['2013', 2, 2],
-          ['2014', 1, 1],
+          ['2013', 3, 3],
+          ['2014', 3, 3],
           ['2015', 2, 2],
           ['2016', 0, 0],
           ['2017', null, null],
@@ -333,6 +355,15 @@
         </ul>
       </nav>
     </header>
+
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
 
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
@@ -418,7 +449,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New England, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_England_-_USA.html">New England, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -430,7 +461,7 @@
       <td><a href="../references/Mayer1905.html">Mayer (1905)</a></td>
       <td>&nbsp;</td>
       <td>text p. 107; figure 74</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -442,7 +473,7 @@
       <td><a href="../references/Holmes1908.html">Holmes (1908)</a></td>
       <td>fiddler crab</td>
       <td>text p. 493-497</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -463,7 +494,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Rhode Island, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rhode_Island_-_USA.html">Rhode Island, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -475,7 +506,7 @@
       <td><a href="../references/Sumner1911.html">Sumner <em>et al.</em> (1911)</a></td>
       <td>&nbsp;</td>
       <td>text p. 675</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -736,7 +767,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -748,7 +779,7 @@
       <td><a href="../references/Pearse1914.2.html">Pearse (1914)</a></td>
       <td>&nbsp;</td>
       <td>text p. 791-792, 795, 799-801</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -760,7 +791,7 @@
       <td><a href="../references/Schwartz1915.1.html">Schwartz &amp; Safir (1915)</a></td>
       <td>&nbsp;</td>
       <td>text p. 228-239</td>
-      <td><span class="fa fa-map-marker"></span> location: Cold Spring Harbor, Long Island, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cold_Spring_Harbor_-_Long_Island_-_New_York_-_USA.html">Cold Spring Harbor, Long Island, New York, USA</a></td>
       <td><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></td>
       <td><a href="../references/Przibram1917.html">Przibram (1917)</a></td>
       <td>&nbsp;</td>
@@ -772,7 +803,7 @@
       <td><a href="../references/Schwartz1915.2.html">Schwartz &amp; Safir (1915)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1-24</td>
-      <td><span class="fa fa-map-marker"></span> location: Cold Spring Harbor, Long Island, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cold_Spring_Harbor_-_Long_Island_-_New_York_-_USA.html">Cold Spring Harbor, Long Island, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -784,7 +815,7 @@
       <td><a href="../references/Hay1915.html">Hay &amp; Shore (1915-1916)</a></td>
       <td>Mud fiddler</td>
       <td>text p 451-452; plate 37: figure 4</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -895,7 +926,7 @@
       <td><a href="../references/Vanhoffen1916.html">Vanhöffen (1916)</a></td>
       <td>&nbsp;</td>
       <td>text p. 212</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -979,7 +1010,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Massachusetts, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -988,7 +1019,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rhode Island, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rhode_Island_-_USA.html">Rhode Island, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -997,7 +1028,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Connecticut, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Connecticut_-_USA.html">Connecticut, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1006,7 +1037,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Long Island, New York, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Long_Island_-_New_York_-_USA.html">Long Island, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1015,7 +1046,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: New Jersey, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1024,7 +1055,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Virginia, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1033,7 +1064,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: South Carolina, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1042,7 +1073,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: New Orleans, Louisiana, USA [USNM 2259]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/New_Orleans_-_Louisiana_-_USA.html">New Orleans, Louisiana, USA</a> [USNM 2259]</td>
       <td><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1054,7 +1085,7 @@
       <td><a href="../references/Hyman1920.1.html">Hyman (1920)</a></td>
       <td>marsh fiddler</td>
       <td>text p. 444</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1066,7 +1097,7 @@
       <td><a href="../references/Morgan1920.html">Morgan (1920)</a></td>
       <td>&nbsp;</td>
       <td>text p. 220-234, 238-239</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1102,7 +1133,7 @@
       <td><a href="../references/Morgan1923.2.html">Morgan (1923)</a></td>
       <td>fiddler crab</td>
       <td>text p. 274-279</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1111,7 +1142,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1123,7 +1154,7 @@
       <td><a href="../references/Huxley1924.1.html">Huxley (1924)</a></td>
       <td>&nbsp;</td>
       <td>text p. 895-896</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1147,7 +1178,7 @@
       <td><a href="../references/Fish1925.html">Fish (1925)</a></td>
       <td>&nbsp;</td>
       <td>text p. 159-160</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1159,7 +1190,7 @@
       <td><a href="../references/Dembowski1926.html">Dembowski (1926)</a></td>
       <td>&nbsp;</td>
       <td>text p. 180</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1207,7 +1238,7 @@
       <td><a href="../references/Pearse1928.html">Pearse (1928)</a></td>
       <td>&nbsp;</td>
       <td>text p. 231-236</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1219,7 +1250,7 @@
       <td><a href="../references/Richards1929.html">Richards (1929)</a></td>
       <td>fiddler crab</td>
       <td>text p. 28-31</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1231,7 +1262,7 @@
       <td><a href="../references/Boone1930.html">Boone (1930)</a></td>
       <td>&nbsp;</td>
       <td>text p. 17, 220-221; plate 74: figure C</td>
-      <td><span class="fa fa-flask"></span> specimen: Long Island, New York, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Long_Island_-_New_York_-_USA.html">Long Island, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1360,7 +1391,7 @@
       <td><a href="../references/Tazelaar1933.html">Tazelaar (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 393-401</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1381,7 +1412,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1393,7 +1424,7 @@
       <td><a href="../references/Clark1935.html">Clark (1935)</a></td>
       <td>fiddler-crab</td>
       <td>text p. 311-319</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1423,7 +1454,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cape May Formation, New Jersey, USA [Pleistocene]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cape_May_Formation_-_New_Jersey_-_USA.html">Cape May Formation, New Jersey, USA</a> [Pleistocene]</td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>Fossil</td>
@@ -1432,7 +1463,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rehoboth Beach, Sussex County, Delaware, USA [Pleistocene]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rehoboth_Beach_-_Sussex_County_-_Delaware_-_USA.html">Rehoboth Beach, Sussex County, Delaware, USA</a> [Pleistocene]</td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>Fossil</td>
@@ -1444,7 +1475,7 @@
       <td><a href="../references/Carlson1936.html">Carlson (1936)</a></td>
       <td>&nbsp;</td>
       <td>text p. 72-74</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1465,7 +1496,7 @@
       <td><a href="../references/Abramowitz1937.html">Abramowitz (1937)</a></td>
       <td>fiddler crab</td>
       <td>text p. 344-364</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1477,7 +1508,7 @@
       <td><a href="../references/Hoadley1937.html">Hoadley (1937)</a></td>
       <td>&nbsp;</td>
       <td>text p. 155-163</td>
-      <td><span class="fa fa-map-marker"></span> location: Rhode Island, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rhode_Island_-_USA.html">Rhode Island, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1498,7 +1529,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1528,7 +1559,7 @@
       <td><a href="../references/Ayers1938.html">Ayers (1938)</a></td>
       <td>&nbsp;</td>
       <td>text p. 523-526</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1618,7 +1649,7 @@
       <td><a href="../references/Brown1941.html">Brown &amp; Cunningham (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. 82-95</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1639,7 +1670,7 @@
       <td><a href="../references/Wald1941.html">Wald (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. P480</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1663,7 +1694,7 @@
       <td><a href="../references/Gray1942.html">Gray (1942)</a></td>
       <td>&nbsp;</td>
       <td>text p. 3, 5</td>
-      <td><span class="fa fa-map-marker"></span> location: Solomons Island, Maryland, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Solomons_Island_-_Maryland_-_USA.html">Solomons Island, Maryland, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1687,7 +1718,7 @@
       <td><a href="../references/Crane1943.3.html">Crane (1943)</a></td>
       <td>&nbsp;</td>
       <td>text p. 217-223; figure 1</td>
-      <td><span class="fa fa-map-marker"></span> location: New York City, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_City_-_New_York_-_USA.html">New York City, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1741,7 +1772,7 @@
       <td><a href="../references/Brown1949.html">Brown &amp; Webb (1949)</a></td>
       <td>&nbsp;</td>
       <td>text p. 137-147</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1753,7 +1784,7 @@
       <td><a href="../references/Oliveira1950.html">Oliveira (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 371, 385</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1765,7 +1796,7 @@
       <td><a href="../references/Edwards1950.html">Edwards (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 34-38</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1777,7 +1808,7 @@
       <td><a href="../references/Webb1950.1.html">Webb (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 320-336</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1789,7 +1820,7 @@
       <td><a href="../references/Hedgpeth1950.html">Hedgpeth (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 116</td>
-      <td><span class="fa fa-map-marker"></span> location: Aransas National Wildlife Refuge, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Aransas_National_Wildlife_Refuge_-_Texas_-_USA.html">Aransas National Wildlife Refuge, Texas, USA</a></td>
       <td><a href="../u_virens.html"><em class="species">Uca virens</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1810,7 +1841,7 @@
       <td><a href="../references/Behre1950.html">Behre (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 27</td>
-      <td><span class="fa fa-map-marker"></span> location: Grand Isle, Louisiana, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Grand_Isle_-_Louisiana_-_USA.html">Grand Isle, Louisiana, USA</a></td>
       <td><a href="../u_virens.html"><em class="species">Uca virens</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1822,7 +1853,7 @@
       <td><a href="../references/Brown1951.html">Brown &amp; Stephens (1951)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71-82</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1834,7 +1865,7 @@
       <td><a href="../references/Brown1952.html">Brown &amp; Hines (1952)</a></td>
       <td>&nbsp;</td>
       <td>text p. 57-69</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1882,7 +1913,7 @@
       <td><a href="../references/Hines1953.html">Hines (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 375-376</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1906,7 +1937,7 @@
       <td><a href="../references/Hunter1953.html">Hunter &amp; Vernberg (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 163, 166, 169-170</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1918,7 +1949,7 @@
       <td><a href="../references/Brown1953.3.html">Brown <em>et al.</em> (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 33-58</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1930,7 +1961,7 @@
       <td><a href="../references/Passano1953.html">Passano (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 160-164, 167-169, 171</td>
-      <td><span class="fa fa-map-marker"></span> location: New Haven, Connecticut, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Haven_-_Connecticut_-_USA.html">New Haven, Connecticut, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1978,7 +2009,7 @@
       <td><a href="../references/Brown1954.2.html">Brown <em>et al.</em> (1954)</a></td>
       <td>&nbsp;</td>
       <td>text p. 477-493, 497, 499-504</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1990,7 +2021,7 @@
       <td><a href="../references/Brown1954.3.html">Brown <em>et al.</em> (1954)</a></td>
       <td>&nbsp;</td>
       <td>text p. 308-317</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2002,7 +2033,7 @@
       <td><a href="../references/Brown1954.4.html">Brown <em>et al.</em> (1954)</a></td>
       <td>&nbsp;</td>
       <td>text p. 345-349</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2032,7 +2063,7 @@
       <td><a href="../references/Hines1954.html">Hines (1954)</a></td>
       <td>&nbsp;</td>
       <td>text p. 386-396</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2074,7 +2105,7 @@
       <td><a href="../references/Brown1954.6.html">Brown <em>et al.</em> (1954)</a></td>
       <td>&nbsp;</td>
       <td>text p. 306</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2185,7 +2216,7 @@
       <td><a href="../references/Brown1955.html">Brown <em>et al.</em> (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 93-99</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2197,7 +2228,7 @@
       <td><a href="../references/Wurtz1955.html">Wurtz &amp; Roback (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 190</td>
-      <td><span class="fa fa-map-marker"></span> location: Sabine River, Orange, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sabine_River_-_Orange_-_Texas_-_USA.html">Sabine River, Orange, Texas, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -2209,7 +2240,7 @@
       <td><a href="../references/Brown1955.3.html">Brown <em>et al.</em> (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 239, 241, 243-246, 248-253</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2233,7 +2264,7 @@
       <td><a href="../references/Stephens1955.html">Stephens (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 352</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2248,6 +2279,18 @@
       <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1953.3.html">Brown <em>et al.</em> (1953)</a> → <em class="species">Uca pugnax</em></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Brown1955.2.html">Brown <em>et al.</em> (1955)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 333-337</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -2299,7 +2342,7 @@
       <td><a href="../references/Brown1956.2.html">Brown <em>et al.</em> (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 613-614</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2311,7 +2354,7 @@
       <td><a href="../references/Bennett1957.html">Bennett <em>et al.</em> (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 267-274</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2344,7 +2387,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 72, 74, 76, 79-81</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2353,7 +2396,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Connecticut, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Connecticut_-_USA.html">Connecticut, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2362,7 +2405,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2371,7 +2414,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -2392,7 +2435,7 @@
       <td><a href="../references/Demeusy1957.html">Démeusy (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 246, 249-250</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2452,7 +2495,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Delaware, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Delaware_-_USA.html">Delaware, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2464,7 +2507,7 @@
       <td><a href="../references/Trager1957.html">Trager (1957)</a></td>
       <td>fiddler crab</td>
       <td>text p. 132-136</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2476,7 +2519,7 @@
       <td><a href="../references/Gray1957.html">Gray (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 35-37</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2500,7 +2543,7 @@
       <td><a href="../references/Stephens1957.html">Stephens (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 57-69</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2512,7 +2555,7 @@
       <td><a href="../references/Odum1957.html">Odum (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 53, 58, 60</td>
-      <td><span class="fa fa-map-marker"></span> location: East Haven, Connecticut, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_Haven_-_Connecticut_-_USA.html">East Haven, Connecticut, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2521,7 +2564,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2599,7 +2642,7 @@
       <td><a href="../references/Tashian1958.html">Tashian &amp; Vernberg (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89-91; plate 1: figures 1-2</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2677,7 +2720,7 @@
       <td><a href="../references/Teal1958.html">Teal (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 185-193</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2707,7 +2750,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2719,7 +2762,7 @@
       <td><a href="../references/Woods1958.html">Woods <em>et al.</em> (1958)</a></td>
       <td>Fiddler crab</td>
       <td>text p. 519</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2743,7 +2786,7 @@
       <td><a href="../references/Brown1958.html">Brown <em>et al.</em> (1958)</a></td>
       <td>fiddler crabs</td>
       <td>text p. 238-240</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2776,7 +2819,7 @@
       <td><a href="../references/Bennett1959.1.html">Bennett &amp; Brown (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 404</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2788,7 +2831,7 @@
       <td><a href="../references/Bennett1959.2.html">Bennett &amp; Brown (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 404</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2800,7 +2843,7 @@
       <td><a href="../references/Brett1959.html">Brett <em>et al.</em> (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 405</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2848,7 +2891,7 @@
       <td><a href="../references/Teal1959.html">Teal (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1, 3-13</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2887,7 +2930,7 @@
       <td><a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 589-591</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2935,7 +2978,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2983,7 +3026,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3085,8 +3128,8 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1955.2.html">Brown <em>et al.</em> (1955)</a></td>
-      <td>TBD</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1955.2.html">Brown <em>et al.</em> (1955)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -3127,7 +3170,7 @@
       <td><a href="../references/Vernberg1960.html">Vernberg (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 399</td>
-      <td><span class="fa fa-map-marker"></span> location: North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Carolina_-_USA.html">North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3226,7 +3269,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New Haven, Connecticut, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Haven_-_Connecticut_-_USA.html">New Haven, Connecticut, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3238,7 +3281,7 @@
       <td><a href="../references/Webb1960.html">Webb (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 346-347</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3343,7 +3386,7 @@
       <td><a href="../references/Brown1960.2.html">Brown (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 274-275, 277; Figure 5</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3388,7 +3431,7 @@
       <td><a href="../references/Stephens1961.html">Stephens &amp; Schinske (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177-178</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3436,7 +3479,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3448,7 +3491,7 @@
       <td><a href="../references/Miller1961.html">Miller (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89, 94-95, 97-99</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3487,7 +3530,7 @@
       <td><a href="../references/Wass1961.html">Wass (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. XII-19</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3724,7 +3767,7 @@
       <td><a href="../references/Stephens1962.html">Stephens (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 927-938</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3736,7 +3779,7 @@
       <td><a href="../references/Teal1962.html">Teal (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 615, 619-620</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3787,7 +3830,7 @@
       <td><a href="../references/Palmer1962.html">Palmer (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 507-508</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3868,7 +3911,7 @@
       <td><a href="../references/Barnwell1963.1.html">Barnwell &amp; Brown (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 371-372</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3946,7 +3989,7 @@
       <td><a href="../references/Fingerman1963.html">Fingerman <em>et al.</em> (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 496-504</td>
-      <td><span class="fa fa-map-marker"></span> location: Ocean Springs, Mississippi, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ocean_Springs_-_Mississippi_-_USA.html">Ocean Springs, Mississippi, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -3958,7 +4001,7 @@
       <td><a href="../references/Palmer1963.html">Palmer (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 387</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3970,7 +4013,7 @@
       <td><a href="../references/Wass1963.html">Wass (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 45</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4027,7 +4070,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Chappaquoit, Buzzards Bay, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chappaquoit_-_Buzzards_Bay_-_Massachusetts_-_USA.html">Chappaquoit, Buzzards Bay, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4036,7 +4079,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Lagoon Pond, Martha's Vineyard, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lagoon_Pond_-_Marthas_Vineyard_-_Massachusetts_-_USA.html">Lagoon Pond, Martha's Vineyard, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4087,7 +4130,7 @@
       <td><a href="../references/Fingerman1964.2.html">Fingerman <em>et al.</em> (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 83-89</td>
-      <td><span class="fa fa-map-marker"></span> location: Ocean Springs, Mississippi, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ocean_Springs_-_Mississippi_-_USA.html">Ocean Springs, Mississippi, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -4099,7 +4142,7 @@
       <td><a href="../references/Green1964.html">Green (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 239-253</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4111,7 +4154,7 @@
       <td><a href="../references/Palmer1964.html">Palmer (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 431-434</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4132,7 +4175,7 @@
       <td><a href="../references/Stephens1964.html">Stephens <em>et al.</em> (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 386-404</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4177,7 +4220,7 @@
       <td><a href="../references/Webb1965.html">Webb &amp; Brown (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 582-591</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4246,7 +4289,7 @@
       <td><a href="../references/Williams1965.html">Williams (1965)</a></td>
       <td>mud fiddler</td>
       <td>text p. 227-234; figures 209-210</td>
-      <td><span class="fa fa-map-marker"></span> location: North and South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_and_South_Carolina_-_USA.html">North and South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4459,7 +4502,7 @@
       <td><a href="../references/Salmon1965.html">Salmon (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 123-126, 128-130, 135, 140-142, 145-147</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4507,7 +4550,7 @@
       <td><a href="../references/Wass1965.html">Wass (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 41</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4519,7 +4562,7 @@
       <td><a href="../references/Tomkins1965.html">Tomkins (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 166</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia and South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_and_South_Carolina_-_USA.html">Georgia and South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4567,7 +4610,7 @@
       <td><a href="../references/Barnwell1966.html">Barnwell (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1-2, 10-13, 15-16</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4633,7 +4676,7 @@
       <td><a href="../references/Vernberg1966.2.html">Vernberg &amp; Costlow (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 36-37, 39-45, 48-51</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4642,7 +4685,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4654,7 +4697,7 @@
       <td><a href="../references/Vernberg1966.3.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 363-373</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4684,7 +4727,7 @@
       <td><a href="../references/Vernberg1966.4.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 30-33</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4777,7 +4820,7 @@
       <td><a href="../references/Vernberg1966.6.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 327</td>
-      <td><span class="fa fa-map-marker"></span> location: North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Carolina_-_USA.html">North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4789,7 +4832,7 @@
       <td><a href="../references/Salmon1966.html">Salmon (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 515</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4801,7 +4844,7 @@
       <td><a href="../references/Fingerman1966.1.html">Fingerman (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 174</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4813,7 +4856,7 @@
       <td><a href="../references/Webb1966.html">Webb (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 181-186</td>
-      <td><span class="fa fa-map-marker"></span> location: Buzzards Bay, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Buzzards_Bay_-_Massachusetts_-_USA.html">Buzzards Bay, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4825,7 +4868,7 @@
       <td><a href="../references/Vernberg1964.html">Vernberg &amp; Vernberg (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 478-484</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4885,7 +4928,7 @@
       <td><a href="../references/Nunnemacher1966.html">Nunnemacher (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 375</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4909,7 +4952,7 @@
       <td><a href="../references/Summers1967.html">Summers (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 129-136</td>
-      <td><span class="fa fa-map-marker"></span> location: Fort George Island, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fort_George_Island_-_Florida_-_USA.html">Fort George Island, Florida, USA</a></td>
       <td><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></td>
       <td><a href="../references/Summers1968.html">Summers (1968)</a></td>
       <td>He calls this species <em class="species">Uca pugnax</em> in this paper, but corrects this to <em class="species">Uca pugilator</em> in a later publication.</td>
@@ -4921,7 +4964,7 @@
       <td><a href="../references/Teal1967.html">Teal &amp; Carey (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 83-90</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4930,7 +4973,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4969,7 +5012,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_Florida_-_USA.html">Northeastern Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -4978,7 +5021,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northwestern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northwestern_Florida_-_USA.html">Northwestern Florida, USA</a></td>
       <td><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></td>
       <td><a href="../references/Barnwell1968.2.html">Barnwell (1968)</a></td>
       <td>&nbsp;</td>
@@ -5002,7 +5045,7 @@
       <td><a href="../references/Green1967.html">Green (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 466</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5080,7 +5123,7 @@
       <td><a href="../references/Miller1967.html">Miller &amp; Vernberg (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 766</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5101,7 +5144,7 @@
       <td><a href="../references/Barnwell1968.1.html">Barnwell (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 221-223, 228-233</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5170,7 +5213,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5194,7 +5237,7 @@
       <td><a href="../references/Stewart1968.html">Stewart &amp; Green (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 438</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5227,7 +5270,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5308,7 +5351,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5362,7 +5405,7 @@
       <td><a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 459-468</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5443,7 +5486,7 @@
       <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Fingerman1959.html">Fingerman (1959)</a> → <em class="species">Uca pugnax</em></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
-      <td>in part</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -5470,7 +5513,7 @@
       <td><a href="../references/Green1969.1.html">Green (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 277-285</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5482,7 +5525,7 @@
       <td><a href="../references/Green1969.2.html">Green &amp; Neff (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 401</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5494,7 +5537,7 @@
       <td><a href="../references/Odum1969.html">Odum <em>et al.</em> (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 576-577</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5536,7 +5579,7 @@
       <td><a href="../references/Vernberg1969.2.html">Vernberg (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 334-337</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5617,7 +5660,7 @@
       <td><a href="../references/Spirito1969.html">Spirito (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1112-1113</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5641,7 +5684,7 @@
       <td><a href="../references/Bourdon1970.html">Bourdon &amp; Bowman (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 410, 413, 416, 418, 421</td>
-      <td><span class="fa fa-map-marker"></span> location: Savannah, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Savannah_-_Georgia_-_USA.html">Savannah, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5653,7 +5696,7 @@
       <td><a href="../references/Kurata1970.html">Kurata (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 236-240, 254, 256, 273; plates 95-96</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_-_USA.html">Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5686,7 +5729,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 221, 228, 230</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of North America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -5698,7 +5741,7 @@
       <td><a href="../references/McConnell1970.html">McConnell &amp; Shelby (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 99-100</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5710,7 +5753,7 @@
       <td><a href="../references/Spirito1970.1.html">Spirito (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 211-225</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5734,7 +5777,7 @@
       <td><a href="../references/Coward1970.html">Coward <em>et al.</em> (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 24-26, 28-30</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5911,7 +5954,7 @@
       <td><a href="../references/Green1970.2.html">Green (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 511</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5923,7 +5966,7 @@
       <td><a href="../references/Heard1970.html">Heard (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 148-149</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlanic and Gulf coasts of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlanic_and_Gulf_coasts_of_United_States.html">Atlanic and Gulf coasts of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -5944,7 +5987,7 @@
       <td><a href="../references/Skobe1970.html">Skobe &amp; Nunnemacher (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 81-82, 84-85, 87</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -5956,7 +5999,7 @@
       <td><a href="../references/Aspey1971.html">Aspey (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 669-676</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6055,7 +6098,7 @@
       <td><a href="../references/Kerwin1971.html">Kerwin (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 180-183</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6085,7 +6128,7 @@
       <td><a href="../references/Selander1971.html">Selander <em>et al.</em> (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 402</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6097,7 +6140,7 @@
       <td><a href="../references/Webb1971.html">Webb (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 191-197</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6118,7 +6161,7 @@
       <td><a href="../references/Unglaub1971.html">Unglaub (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 696</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6130,7 +6173,7 @@
       <td><a href="../references/Engel1971.html">Engel <em>et al.</em> (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6142,7 +6185,7 @@
       <td><a href="../references/Skinner1972.html">Skinner &amp; Graham (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 223-224, 231</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6154,7 +6197,7 @@
       <td><a href="../references/Webb1972.html">Webb (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 179-185</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6388,7 +6431,7 @@
       <td><a href="../references/Engel1973.html">Engel (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 289-291</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6400,7 +6443,7 @@
       <td><a href="../references/Salmon1973.html">Salmon &amp; Horch (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 530-531, 538</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6421,7 +6464,7 @@
       <td><a href="../references/Frey1973.html">Frey <em>et al.</em> (1973)</a></td>
       <td>&nbsp;</td>
       <td>Figure 1</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_-_USA.html">Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6433,7 +6476,7 @@
       <td><a href="../references/Mangum1973.html">Mangum (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 308</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts or Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_or_Virginia_-_USA.html">Massachusetts or Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>The location could be either Massachusetts or Virginia, but either way the species is likely correct.</td>
@@ -6445,7 +6488,7 @@
       <td><a href="../references/Silverthorn1973.1.html">Silverthorn (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 417-419</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgetown, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgetown_-_South_Carolina_-_USA.html">Georgetown, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6502,7 +6545,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6535,7 +6578,7 @@
       <td><a href="../references/Miller1973.2.html">Miller &amp; Maurer (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 219-221</td>
-      <td><span class="fa fa-map-marker"></span> location: Delaware Bay, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Delaware_Bay_-_USA.html">Delaware Bay, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6721,7 +6764,7 @@
       <td><a href="../references/Powers1973.html">Powers (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1271</td>
-      <td><span class="fa fa-map-marker"></span> location: Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Texas_-_USA.html">Texas, USA</a></td>
       <td><a href="../u_virens.html"><em class="species">Uca virens</em></a></td>
       <td><a href="../references/Powers1975.2.html">Powers (1975)</a></td>
       <td>&nbsp;</td>
@@ -6733,7 +6776,7 @@
       <td><a href="../references/Silverthorn1973.3.html">Silverthorn (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1275-1276</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -6745,7 +6788,7 @@
       <td><a href="../references/Nixon1973.html">Nixon &amp; Oviatt (1973)</a></td>
       <td>fiddler crab</td>
       <td>text p. 468, 471</td>
-      <td><span class="fa fa-map-marker"></span> location: Rhode Island, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rhode_Island_-_USA.html">Rhode Island, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7003,7 +7046,7 @@
       <td><a href="../references/Allen1973.html">Allen &amp; Curran (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7036,7 +7079,7 @@
       <td><a href="../references/Allen1974.html">Allen &amp; Curran (1974)</a></td>
       <td>mud fiddler</td>
       <td>text p. 538, 541-547</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7153,7 +7196,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: West Falmouth, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Falmouth_-_Massachusetts_-_USA.html">West Falmouth, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7165,7 +7208,7 @@
       <td><a href="../references/Scott1974.html">Scott &amp; Mote (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 659-662</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7186,7 +7229,7 @@
       <td><a href="../references/Valiela1974.html">Valiela <em>et al.</em> (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 652-659</td>
-      <td><span class="fa fa-map-marker"></span> location: Falmouth, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Falmouth_-_Massachusetts_-_USA.html">Falmouth, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7207,7 +7250,7 @@
       <td><a href="../references/Young1974.html">Young (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 68-71</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7219,7 +7262,7 @@
       <td><a href="../references/Pitts1974.html">Pitts &amp; Cowley (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 670</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgetown, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgetown_-_South_Carolina_-_USA.html">Georgetown, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7243,7 +7286,7 @@
       <td><a href="../references/Ward1974.html">Ward &amp; Howes (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 694-697</td>
-      <td><span class="fa fa-map-marker"></span> location: Great Bay, New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Great_Bay_-_New_Jersey_-_USA.html">Great Bay, New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7333,7 +7376,7 @@
       <td><a href="../references/Hoffert1975.html">Hoffert <em>et al.</em> (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 351-352</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida Keys, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_Keys_-_Florida_-_USA.html">Florida Keys, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -7345,7 +7388,7 @@
       <td><a href="../references/Sandifer1975.html">Sandifer (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 271</td>
-      <td><span class="fa fa-map-marker"></span> location: Chesapeake Bay, Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chesapeake_Bay_-_Virginia_-_USA.html">Chesapeake Bay, Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7357,7 +7400,7 @@
       <td><a href="../references/Reimold1975.html">Reimold <em>et al.</em> (1975)</a></td>
       <td>mud fiddler crab</td>
       <td>text p. 119, 121</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7369,7 +7412,7 @@
       <td><a href="../references/Wolf1975.html">Wolf <em>et al.</em> (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 79-90</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7555,7 +7598,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_North_Carolina_-_USA.html">Beaufort, North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7567,7 +7610,7 @@
       <td><a href="../references/Vernberg1975.html">Vernberg &amp; Vernberg (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 169-177</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgetown, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgetown_-_South_Carolina_-_USA.html">Georgetown, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7630,7 +7673,7 @@
       <td><a href="../references/Barnes1975.1.html">Barnes (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 237-254</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7642,7 +7685,7 @@
       <td><a href="../references/Silverthorn1975.3.html">Silverthorn (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 129-133</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgetown, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgetown_-_South_Carolina_-_USA.html">Georgetown, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7654,7 +7697,7 @@
       <td><a href="../references/Abreu1975.html">Abreu (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 139</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7717,7 +7760,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7729,7 +7772,7 @@
       <td><a href="../references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 173</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7741,7 +7784,7 @@
       <td><a href="../references/Haines1976.html">Haines (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 880-882</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7753,7 +7796,7 @@
       <td><a href="../references/Lacerda1976.html">Lacerda (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 49-60</td>
-      <td><span class="fa fa-map-marker"></span> location: Paraná, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Parana_-_Brazil.html">Paraná, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -7843,7 +7886,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7855,7 +7898,7 @@
       <td><a href="../references/Weis1976.3.html">Weis (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 153, 157-158, 160-161</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7876,7 +7919,7 @@
       <td><a href="../references/Weis1976.4.html">Weis &amp; Mantel (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 461-464</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7888,7 +7931,7 @@
       <td><a href="../references/Weatherly1976.html">Weatherly (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 11, 40</td>
-      <td><span class="fa fa-map-marker"></span> location: New England, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_England_-_USA.html">New England, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -7918,7 +7961,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8038,7 +8081,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8107,7 +8150,7 @@
       <td><a href="../references/Lesser1976.html">Lesser <em>et al.</em> (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 69-70, 74-75</td>
-      <td><span class="fa fa-map-marker"></span> location: Delaware, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Delaware_-_USA.html">Delaware, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8137,7 +8180,7 @@
       <td><a href="../references/Grimes1976.html">Grimes (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 248-249</td>
-      <td><span class="fa fa-map-marker"></span> location: North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Carolina_-_USA.html">North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8200,7 +8243,7 @@
       <td><a href="../references/Burns1976.html">Burns (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 5-11</td>
-      <td><span class="fa fa-map-marker"></span> location: Buzzards Bay, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Buzzards_Bay_-_Massachusetts_-_USA.html">Buzzards Bay, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8230,7 +8273,7 @@
       <td><a href="../references/Kraeuter1976.html">Kraeuter (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 215-221</td>
-      <td><span class="fa fa-map-marker"></span> location: Sapelo Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8251,7 +8294,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Great Bay, New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Great_Bay_-_New_Jersey_-_USA.html">Great Bay, New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8386,7 +8429,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: East Hampton, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_Hampton_-_New_York_-_USA.html">East Hampton, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8434,7 +8477,7 @@
       <td><a href="../references/Powers1977.html">Powers (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 18, 143, 147, 149</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8500,7 +8543,7 @@
       <td><a href="../references/Krebs1977.html">Krebs &amp; Burns (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 484-486</td>
-      <td><span class="fa fa-map-marker"></span> location: Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Massachusetts_-_USA.html">Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8602,7 +8645,7 @@
       <td><a href="../references/Klaas1977.html">Klaas &amp; Belisle (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 152, 155-156</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8614,7 +8657,7 @@
       <td><a href="../references/Heard1977.html">Heard (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 52-53</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8626,7 +8669,7 @@
       <td><a href="../references/Basan1977.html">Basan &amp; Frey (1977)</a></td>
       <td>mud fiddler</td>
       <td>text p. 52-53, 55-56, 59-60, 62-66</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_-_USA.html">Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8773,7 +8816,7 @@
       <td><a href="../references/Shisler1977.html">Shisler &amp; Jobbins (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 632-635</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8797,7 +8840,7 @@
       <td><a href="../references/Ringold1978.html">Ringold (1978)</a></td>
       <td>&nbsp;</td>
       <td>text p. 599</td>
-      <td><span class="fa fa-map-marker"></span> location: Maryland, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Maryland_-_USA.html">Maryland, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8809,7 +8852,7 @@
       <td><a href="../references/Gosner1978.html">Gosner (1978)</a></td>
       <td>mud fiddler</td>
       <td>text p. 252; Plate 58</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -8839,10 +8882,109 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Aspey1978.html">Aspey (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 235-243</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Pearse1914.2.html">Pearse (1914)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1943.3.html">Crane (1943)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyman1920.1.html">Hyman (1920)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Teal1958.html">Teal (1958)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Aspey1971.html">Aspey (1971)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sapelo_Island_-_Georgia_-_USA.html">Sapelo Island, Georgia, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Bell1978.html">Bell <em>et al.</em> (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 99-105</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Inlet_-_South_Carolina_-_USA.html">North Inlet, South Carolina, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Wheeler1978.html">Wheeler (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 268-269</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Brown1953.3.html">Brown <em>et al.</em> (1953)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1966.html">Barnwell (1966)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lewes_-_Delaware_-_USA.html">Lewes, Delaware, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Powers1979.html">Powers (1979)</a></td>
       <td>&nbsp;</td>
       <td>text p. 913</td>
-      <td><span class="fa fa-map-marker"></span> location: New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_-_USA.html">New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8866,7 +9008,7 @@
       <td><a href="../references/Headstrom1979.html">Headstrom (1979)</a></td>
       <td>&nbsp;</td>
       <td>text p. 48</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8890,7 +9032,7 @@
       <td><a href="../references/Brown1980.html">Brown &amp; Loveland (1980)</a></td>
       <td>&nbsp;</td>
       <td>text p. 957</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8905,6 +9047,18 @@
       <td>&nbsp;</td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Fleeger1980.html">Fleeger (1980)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 116</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Teal1962.html">Teal (1962)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -8926,7 +9080,7 @@
       <td><a href="../references/Wagner1981.html">Wagner &amp; Foreman (1981)</a></td>
       <td>&nbsp;</td>
       <td>text p. 331-332</td>
-      <td><span class="fa fa-map-marker"></span> location: Woods Hole, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Woods_Hole_-_Massachusetts_-_USA.html">Woods Hole, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8938,7 +9092,7 @@
       <td><a href="../references/Bursey1982.html">Bursey (1982)</a></td>
       <td>&nbsp;</td>
       <td>text p. 950</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8974,7 +9128,7 @@
       <td><a href="../references/Lee1982.html">Lee <em>et al.</em> (1982)</a></td>
       <td>&nbsp;</td>
       <td>text p. 146-151, 155</td>
-      <td><span class="fa fa-map-marker"></span> location: Wilmington River, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Wilmington_River_-_Georgia_-_USA.html">Wilmington River, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -8998,7 +9152,7 @@
       <td><a href="../references/Woff1983.html">Wolff (1983)</a></td>
       <td>&nbsp;</td>
       <td>text p. 157</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of North America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>in part</td>
@@ -9022,7 +9176,7 @@
       <td><a href="../references/Heard1983.html">Heard &amp; Overstreet (1983)</a></td>
       <td>&nbsp;</td>
       <td>text p. 171</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_-_USA.html">Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9145,8 +9299,8 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wheeler1978.html">Wheeler (1978)</a></td>
-      <td>TBD</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wheeler1978.html">Wheeler (1978)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -9298,10 +9452,49 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Barden1983.html">Barden &amp; Koulish (1983)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 42, 49</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1964.html">Green (1964)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1969.1.html">Green (1969)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1973.html">Green (1973)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Green1972.html">Green &amp; Neff (1972)</a> → <em class="species">.</em></td>
+      <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Mace1985.html">Mace &amp; McGraw (1985)</a></td>
       <td>&nbsp;</td>
       <td>text p. 148</td>
-      <td><span class="fa fa-map-marker"></span> location: Pleasure Island, Port Arthur, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pleasure_Island_-_Port_Arthur_-_Texas_-_USA.html">Pleasure Island, Port Arthur, Texas, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -9418,8 +9611,8 @@
       <td><a href="../references/Conan1985.html">Conan (1985)</a></td>
       <td>&nbsp;</td>
       <td>text p. 90</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wheeler1978.html">Wheeler (1978)</a></td>
-      <td>TBD</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Wheeler1978.html">Wheeler (1978)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -9454,7 +9647,7 @@
       <td><a href="../references/Dexter1985.html">Dexter (1985)</a></td>
       <td>&nbsp;</td>
       <td>text p. 64A</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Ann, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Ann_-_Massachusetts_-_USA.html">Cape Ann, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9547,7 +9740,7 @@
       <td><a href="../references/OConnor1987.html">O'Connor (1987)</a></td>
       <td>&nbsp;</td>
       <td>text p. 163A</td>
-      <td><span class="fa fa-map-marker"></span> location: North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Carolina_-_USA.html">North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9760,7 +9953,7 @@
       <td><a href="../references/Wolcott1988.2.html">Wolcott &amp; Wolcott (1988)</a></td>
       <td>&nbsp;</td>
       <td>text p. 149</td>
-      <td><span class="fa fa-map-marker"></span> location: North Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/North_Carolina_-_USA.html">North Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9784,7 +9977,7 @@
       <td><a href="../references/Grebel1990.html">Grebel &amp; Weis (1990)</a></td>
       <td>&nbsp;</td>
       <td>text p. 138A</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9808,9 +10001,21 @@
       <td><a href="../references/Bishop1993.html">Bishop (1993)</a></td>
       <td>&nbsp;</td>
       <td>text p. 296</td>
-      <td><span class="fa fa-map-marker"></span> location: Southeastern United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southeastern_United_States.html">Southeastern United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Sarojini1993.html">Sarojini <em>et al.</em> (1993)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 321</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Young1974.html">Young (1974)</a> → <em class="species">Uca pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -9820,7 +10025,7 @@
       <td><a href="../references/Croll1994.html">Croll &amp; Klinger (1994)</a></td>
       <td>&nbsp;</td>
       <td>text p. 53A</td>
-      <td><span class="fa fa-map-marker"></span> location: Hunting Island, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hunting_Island_-_South_Carolina_-_USA.html">Hunting Island, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9832,7 +10037,7 @@
       <td><a href="../references/Weissburg1994.1.html">Weissburg &amp; Derby (1994)</a></td>
       <td>&nbsp;</td>
       <td>text p. 572</td>
-      <td><span class="fa fa-map-marker"></span> location: Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Georgia_-_USA.html">Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9880,7 +10085,7 @@
       <td><a href="../references/Croll2000.1.html">Croll &amp; McClintock (2000)</a></td>
       <td>&nbsp;</td>
       <td>text p. 984</td>
-      <td><span class="fa fa-map-marker"></span> location: Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Virginia_-_USA.html">Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9889,7 +10094,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9901,7 +10106,7 @@
       <td><a href="../references/Croll2000.2.html">Croll &amp; McClintock (2000)</a></td>
       <td>&nbsp;</td>
       <td>text p. 111, 113-117</td>
-      <td><span class="fa fa-map-marker"></span> location: Saxis, Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Saxis_-_Virginia_-_USA.html">Saxis, Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9910,7 +10115,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Wallops Island, Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Wallops_Island_-_Virginia_-_USA.html">Wallops Island, Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9919,7 +10124,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Hunting Island, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hunting_Island_-_South_Carolina_-_USA.html">Hunting Island, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9931,7 +10136,7 @@
       <td><a href="../references/Garcia2001.html">Garcia (2001)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1449</td>
-      <td><span class="fa fa-map-marker"></span> location: Lewes, Delaware, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lewes_-_Delaware_-_USA.html">Lewes, Delaware, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9943,7 +10148,37 @@
       <td><a href="../references/Thurman2001.1.html">Thurman (2001)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1607</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 849-850, 852, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) [galapagensis] pugnax pugnax</em></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Flax_Pond_-_Long_Island_-_New_York_-_USA.html">Flax Pond, Long Island, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9955,9 +10190,21 @@
       <td><a href="../references/Nieto2002.html">Nieto &amp; McClary (2002)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1286</td>
-      <td><span class="fa fa-map-marker"></span> location: New Jersey, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Jersey_-_USA.html">New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Jaroensutasinee2002.html">Jaroensutasinee &amp; Tantichodok (2002)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 1114-1115</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hyatt1978.html">Hyatt &amp; Salmon (1978)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -9967,7 +10214,7 @@
       <td><a href="../references/Brodie2003.html">Brodie &amp; Staton (2003)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1080</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -9979,7 +10226,7 @@
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10015,7 +10262,7 @@
       <td><a href="../references/Hyun2003.html">Hyun <em>et al.</em> (2003)</a></td>
       <td>mud fiddler crab</td>
       <td>text p. N-170</td>
-      <td><span class="fa fa-map-marker"></span> location: Skidaway Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Skidaway_Island_-_Georgia_-_USA.html">Skidaway Island, Georgia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10027,7 +10274,7 @@
       <td><a href="../references/Brodie2004.2.html">Brodie &amp; Staton (2004)</a></td>
       <td>&nbsp;</td>
       <td>text p. 64</td>
-      <td><span class="fa fa-map-marker"></span> location: Southeastern United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southeastern_United_States.html">Southeastern United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10039,7 +10286,7 @@
       <td><a href="../references/Allen2004.html">Allen &amp; Levinton (2004)</a></td>
       <td>&nbsp;</td>
       <td>text p. 514</td>
-      <td><span class="fa fa-map-marker"></span> location: Long Island, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Long_Island_-_New_York_-_USA.html">Long Island, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10111,7 +10358,7 @@
       <td><a href="../references/Brodie2006.2.html">Brodie &amp; Godley (2006)</a></td>
       <td>&nbsp;</td>
       <td>text p. e17</td>
-      <td><span class="fa fa-map-marker"></span> location: South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Carolina_-_USA.html">South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10132,10 +10379,22 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 900-901</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Gulmann2004.html">Gulmann (2004)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Barnard2010.html">Barnard <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
       <td>text p. e203</td>
-      <td><span class="fa fa-map-marker"></span> location: New York City, New York, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_York_City_-_New_York_-_USA.html">New York City, New York, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10147,7 +10406,7 @@
       <td><a href="../references/Smith2013.html">Smith (2013)</a></td>
       <td>&nbsp;</td>
       <td>text p. 66</td>
-      <td><span class="fa fa-map-marker"></span> location: Cape Cod, Massachusetts, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cape_Cod_-_Massachusetts_-_USA.html">Cape Cod, Massachusetts, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10177,7 +10436,19 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Beaufort, South Carolina, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Beaufort_-_South_Carolina_-_USA.html">Beaufort, South Carolina, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Underwood2013.html">Underwood <em>et al.</em> (2013)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 397, 399-401</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Kiawah_Island_-_South_Carolina_-_USA.html">Kiawah Island, South Carolina, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10189,7 +10460,31 @@
       <td><a href="../references/Whitten2014.html">Whitten &amp; Martin (2014)</a></td>
       <td>&nbsp;</td>
       <td>text p. 87</td>
-      <td><span class="fa fa-map-marker"></span> location: St. Catherines Island, Georgia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/St._Catherines_Island_-_Georgia_-_USA.html">St. Catherines Island, Georgia, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Cain2014.html">Cain &amp; Cohen (2014)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 440-441</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Skidaway_Island_-_Georgia_-_USA.html">Skidaway Island, Georgia, USA</a></td>
+      <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Balci2014.html">Balci <em>et al.</em> (2014)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 65-72</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tuckerton_-_New_Jersey_-_USA.html">Tuckerton, New Jersey, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10213,7 +10508,7 @@
       <td><a href="../references/Roberts2015.html">Roberts <em>et al.</em> (2015)</a></td>
       <td>&nbsp;</td>
       <td>text p. e321</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of United States</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -10226,7 +10521,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

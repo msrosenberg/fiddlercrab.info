@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_lactea_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_lactea_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Austruca"><em class="species">Austruca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Milky Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_lactea.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Austruca_lactea.html"><em class="species">Austruca lactea</em></a>, <a href="names/Gelasimus_annulipes_var_lacteus.html"><em class="species">Gelasimus annulipes </em> var. <em class="species"> lacteus</em></a>, <a href="names/Gelasimus_lacteus.html"><em class="species">Gelasimus lacteus</em></a>, <a href="names/Ocypode_Gelasimus_lactea.html"><em class="species">Ocypode (Gelasimus) lactea</em></a>, <a href="names/Uca_Austruca_lactea.html"><em class="species">Uca (Austruca) lactea</em></a>, <a href="names/Uca_Celuca_lactea.html"><em class="species">Uca (Celuca) lactea</em></a>, <a href="names/Uca_Celuca_lactea_lactea.html"><em class="species">Uca (Celuca) lactea lactea</em></a>, <a href="names/Uca_Leptuca_lactea.html"><em class="species">Uca (Leptuca) lactea</em></a>, <a href="names/Uca_Minuca_lactea.html"><em class="species">Uca (Minuca) lactea</em></a>, <a href="names/Uca_Paraleptuca_lactea.html"><em class="species">Uca (Paraleptuca) lactea</em></a>, <a href="names/Uca_laclaea.html"><em class="species">Uca laclaea</em></a>, <a href="names/Uca_lactaea.html"><em class="species">Uca lactaea</em></a>, <a href="names/Uca_lactea.html"><em class="species">Uca lactea</em></a>, <a href="names/Uca_lactea_subsp_lactea.html"><em class="species">Uca lactea </em> subsp. <em class="species"> lactea</em></a>, <a href="names/Uca_lacteus.html"><em class="species">Uca lacteus</em></a>, <a href="names/Uca_latea.html"><em class="species">Uca latea</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: China, Taiwan, South Korea, Japan</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_lactea_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_lactea_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -191,6 +196,7 @@
     <section class="spsection">
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
       <p>
+<a href="references/Aiyun1986.html">Aiyun &amp; Yuzhi (1986)</a>, 
 <a href="references/Alcock1900.html">Alcock (1900)</a>, 
 <a href="references/Ansell1988.html">Ansell (1988)</a>, 
 <a href="references/Balss1922.1.html">Balss (1922)</a>, 
@@ -237,6 +243,7 @@
 <a href="references/Miyake1936.html">Miyake (1936)</a>, 
 <a href="references/Miyake1938.html">Miyake (1938)</a>, 
 <a href="references/Miyake1939.html">Miyake (1939)</a>, 
+<a href="references/Miyawaki1985.html">Miyawaki &amp; Tsurada (1985)</a>, 
 <a href="references/Murai1987.2.html">Murai &amp; Goshima (1987)</a>, 
 <a href="references/Muramatsu2005.html">Muramatsu (2005)</a>, 
 <a href="references/Mauroka1976.html">Muraoka (1976)</a>, 
@@ -251,6 +258,7 @@
 <a href="references/Pesta1913.html">Pesta (1913)</a>, 
 <a href="references/Powers1975.2.html">Powers (1975)</a>, 
 <a href="references/Powers1983.html">Powers &amp; Bliss (1983)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Saigusa1997.html">Saigusa (1997)</a>, 
 <a href="references/Sakai1934.html">Sakai (1934)</a>, 
 <a href="references/Sakai1936.html">Sakai (1936)</a>, 
@@ -292,7 +300,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

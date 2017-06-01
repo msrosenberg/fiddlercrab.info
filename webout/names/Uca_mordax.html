@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca mordax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -225,7 +247,7 @@
           ['1952', 0, 0],
           ['1953', 2, 2],
           ['1954', 0, 0],
-          ['1955', 0, 0],
+          ['1955', 1, 1],
           ['1956', 2, 2],
           ['1957', 1, 1],
           ['1958', 2, 2],
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -370,7 +401,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Liberia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Liberia.html">Liberia</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>Female specimen; either a different species or incorrect location</td>
@@ -400,7 +431,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pernambuco, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -430,7 +461,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -442,7 +473,7 @@
       <td><a href="../references/Pearse1914.1.html">Pearse (1914)</a></td>
       <td>&nbsp;</td>
       <td>text p. 416</td>
-      <td><span class="fa fa-map-marker"></span> location: Colombia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Colombia.html">Colombia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
       <td><a href="../references/Pearse1916.html">Pearse (1916)</a></td>
       <td>&nbsp;</td>
       <td>text p. 532, 554</td>
-      <td><span class="fa fa-map-marker"></span> location: Santa Marta, Colombia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santa_Marta_-_Colombia.html">Santa Marta, Colombia</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -466,7 +497,7 @@
       <td><a href="../references/Vanhoffen1916.html">Vanhöffen (1916)</a></td>
       <td>&nbsp;</td>
       <td>text p. 212</td>
-      <td><span class="fa fa-map-marker"></span> location: Colombia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Colombia.html">Colombia</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -550,7 +581,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cameron, Louisiana, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cameron_-_Louisiana_-_USA.html">Cameron, Louisiana, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -559,7 +590,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tampico, Tamaulipas, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tampico_-_Tamaulipas_-_Mexico.html">Tampico, Tamaulipas, Mexico</a></td>
       <td><a href="../u_marguerita.html"><em class="species">Uca marguerita</em></a></td>
       <td><a href="../references/Thurman1981.1.html">Thurman (1981)</a></td>
       <td>&nbsp;</td>
@@ -568,7 +599,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Belize</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Belize.html">Belize</a></td>
       <td><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -577,7 +608,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Swan Islands, Honduras</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Swan_Islands_-_Honduras.html">Swan Islands, Honduras</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -586,7 +617,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Atlantic coast of Nicaragua</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Atlantic_coast_of_Nicaragua.html">Atlantic coast of Nicaragua</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -595,7 +626,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rum Cay, The Bahamas</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rum_Cay_-_The_Bahamas.html">Rum Cay, The Bahamas</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -604,7 +635,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Marianao Playa, Cuba</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Marianao_Playa_-_Cuba.html">Marianao Playa, Cuba</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -613,7 +644,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Jamaica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -622,7 +653,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santo Domingo, Dominican Republic</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santo_Domingo_-_Dominican_Republic.html">Santo Domingo, Dominican Republic</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -631,7 +662,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Rico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -640,7 +671,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Saint Thomas, U.S. Virgin Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Saint_Thomas_-_U.S._Virgin_Islands.html">Saint Thomas, U.S. Virgin Islands</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -649,7 +680,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Saint Croix, U.S. Virgin Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Saint_Croix_-_U.S._Virgin_Islands.html">Saint Croix, U.S. Virgin Islands</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -658,7 +689,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pernambuco, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -667,7 +698,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Itabapoana, Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Itabapoana_-_Rio_de_Janeiro_-_Brazil.html">Itabapoana, Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -676,7 +707,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -685,7 +716,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Liberia <!></td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Liberia.html">Liberia</a>!></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>incorrect location</td>
@@ -694,7 +725,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Blas, Nayarit, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Blas_-_Nayarit_-_Mexico.html">San Blas, Nayarit, Mexico</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -703,7 +734,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Acapulco, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Acapulco_-_Mexico.html">Acapulco, Mexico</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -715,7 +746,7 @@
       <td><a href="../references/Rathbun1921.4.html">Rathbun (1921)</a></td>
       <td>&nbsp;</td>
       <td>text p. 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Antigua, Antigua and Barbuda</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Antigua_-_Antigua_and_Barbuda.html">Antigua, Antigua and Barbuda</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -724,7 +755,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Barbados</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Barbados.html">Barbados</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -757,7 +788,7 @@
       <td><a href="../references/Beebe1928.html">Beebe (1928)</a></td>
       <td>fiddler crab</td>
       <td>text p. 52-53, 58-66</td>
-      <td><span class="fa fa-map-marker"></span> location: Haiti</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Haiti.html">Haiti</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -796,7 +827,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: The Bahamas</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -805,7 +836,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Suriname</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Suriname.html">Suriname</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -814,7 +845,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Saint Thomas, U.S. Virgin Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Saint_Thomas_-_U.S._Virgin_Islands.html">Saint Thomas, U.S. Virgin Islands</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -823,7 +854,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cubatão, São Paulo, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cubatao_-_Sao_Paulo_-_Brazil.html">Cubatão, São Paulo, Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Antilles</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Antilles.html">Antilles</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -841,7 +872,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Paramaribo, Suriname</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Paramaribo_-_Suriname.html">Paramaribo, Suriname</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -871,7 +902,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tabogilla Island, Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tabogilla_Island_-_Panama.html">Tabogilla Island, Panama</a></td>
       <td><a href="../u_herradurensis.html"><em class="species">Uca herradurensis</em></a></td>
       <td>MSR</td>
       <td>Crane claims U. macrodactyla in 1941…U. herradurensis?</td>
@@ -880,7 +911,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tabogilla Island, Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tabogilla_Island_-_Panama.html">Tabogilla Island, Panama</a></td>
       <td><a href="../u_panamensis.html"><em class="species">Uca panamensis</em></a></td>
       <td><a href="../references/Crane1941.html">Crane (1941)</a></td>
       <td>&nbsp;</td>
@@ -892,7 +923,7 @@
       <td><a href="../references/Rathbun1933.html">Rathbun (1933)</a></td>
       <td>&nbsp;</td>
       <td>text p. 97</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto Rico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1012,7 +1043,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Powers1977.html">Powers (1977)</a></td>
       <td>&nbsp;</td>
@@ -1024,7 +1055,7 @@
       <td><a href="../references/Mertens1940.html">Mertens (1940)</a></td>
       <td>&nbsp;</td>
       <td>text p. 196-197; figure 44</td>
-      <td><span class="fa fa-map-marker"></span> location: Hispaniola</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hispaniola.html">Hispaniola</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1072,7 +1103,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Islas Negritos, Costa Rica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Islas_Negritos_-_Costa_Rica.html">Islas Negritos, Costa Rica</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1081,7 +1112,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Golfito, Costa Rica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Golfito_-_Costa_Rica.html">Golfito, Costa Rica</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1090,7 +1121,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Juan del Sur, Nicaragua</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Juan_del_Sur_-_Nicaragua.html">San Juan del Sur, Nicaragua</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1102,7 +1133,7 @@
       <td><a href="../references/Crane1943.1.html">Crane (1943)</a></td>
       <td>&nbsp;</td>
       <td>text p. 31-32; figure 1; plate 1: figures 3-4</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1132,7 +1163,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Juan River, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Juan_River_-_Venezuela.html">San Juan River, Venezuela</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1141,7 +1172,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isla Cotorra, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isla_Cotorra_-_Venezuela.html">Isla Cotorra, Venezuela</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1186,7 +1217,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Boca del Rio, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Boca_del_Rio_-_Veracruz_-_Mexico.html">Boca del Rio, Veracruz, Mexico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1195,7 +1226,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Nautla, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Nautla_-_Veracruz_-_Mexico.html">Nautla, Veracruz, Mexico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1204,7 +1235,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Casitas, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Casitas_-_Veracruz_-_Mexico.html">Casitas, Veracruz, Mexico</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1213,7 +1244,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cuyutlán, Colima, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cuyutlan_-_Colima_-_Mexico.html">Cuyutlán, Colima, Mexico</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>Incorrect coast</td>
@@ -1222,7 +1253,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Nautla, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Nautla_-_Veracruz_-_Mexico.html">Nautla, Veracruz, Mexico</a></td>
       <td><a href="../u_marguerita.html"><em class="species">Uca marguerita</em></a></td>
       <td><a href="../references/Thurman1981.1.html">Thurman (1981)</a></td>
       <td>&nbsp;</td>
@@ -1231,7 +1262,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Casitas, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Casitas_-_Veracruz_-_Mexico.html">Casitas, Veracruz, Mexico</a></td>
       <td><a href="../u_marguerita.html"><em class="species">Uca marguerita</em></a></td>
       <td><a href="../references/Thurman1981.1.html">Thurman (1981)</a></td>
       <td>&nbsp;</td>
@@ -1243,7 +1274,7 @@
       <td><a href="../references/Behre1950.html">Behre (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 26-27</td>
-      <td><span class="fa fa-map-marker"></span> location: Grand Isle, Louisiana, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Grand_Isle_-_Louisiana_-_USA.html">Grand Isle, Louisiana, USA</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1255,7 +1286,7 @@
       <td><a href="../references/Scholander1953.html">Scholander <em>et al.</em> (1953)</a></td>
       <td>fiddler crab</td>
       <td>text p. 71, 75, 79-80; figures 2, 10</td>
-      <td><span class="fa fa-map-marker"></span> location: US Naval Station, Coco Solo, Panama</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/US_Naval_Station_-_Coco_Solo_-_Panama.html">US Naval Station, Coco Solo, Panama</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>They are not at all clear where the specimens were collected, but this is the most likely location. Could be either coast, however.</td>
@@ -1267,10 +1298,22 @@
       <td><a href="../references/Passano1953.html">Passano (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 160-165, 169, 171-178, 181; figures 3-4</td>
-      <td><span class="fa fa-map-marker"></span> location: New Haven, Connecticut, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Haven_-_Connecticut_-_USA.html">New Haven, Connecticut, USA</a></td>
       <td><a href="../u_minax.html"><em class="species">Uca minax</em></a></td>
       <td>MSR</td>
       <td>This species is not found anywhere near where it was supposedly collected, but logically one can believe that the author mixed up the name he used with <em class="species">Uca minax.</em></td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Welsh1955.html">Welsh (1955)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 287, 289-293</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bimini_-_The_Bahamas.html">Bimini, The Bahamas</a></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
+      <td><span class="fa fa-map-o"></span> Geography</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td class="rowspacer" colspan="7">&nbsp;</td>
@@ -1303,7 +1346,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 76, 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of Guatemala</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_Guatemala.html">Atlantic coast of Guatemala</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1312,7 +1355,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1321,7 +1364,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1330,7 +1373,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1360,7 +1403,7 @@
       <td><a href="../references/Gerlach1958.1.html">Gerlach (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 51</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1372,7 +1415,7 @@
       <td><a href="../references/Gerlach1958.2.html">Gerlach (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 672-673, 705</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
@@ -1384,7 +1427,7 @@
       <td><a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 589, 591</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1405,7 +1448,7 @@
       <td><a href="../references/Vernberg1959.2.html">Vernberg (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 165, 169-172, 177, 180</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1426,7 +1469,7 @@
       <td><a href="../references/Garth1960.html">Garth (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 119</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1450,8 +1493,8 @@
       <td><a href="../references/Bliss1960.html">Bliss (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 565-566</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Welsh1955.html">Welsh (1955)</a></td>
-      <td>TBD</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Welsh1955.html">Welsh (1955)</a> → <em class="species">Uca mordax</em></td>
+      <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -1462,7 +1505,7 @@
       <td><a href="../references/Barnwell1963.2.html">Barnwell (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 400-405, 407-414</td>
-      <td><span class="fa fa-map-marker"></span> location: Belém, Pará, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Belem_-_Para_-_Brazil.html">Belém, Pará, Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1510,7 +1553,7 @@
       <td><a href="../references/Velez1967.html">Vélez (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 43</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1576,7 +1619,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>&nbsp;</td>
@@ -1588,7 +1631,7 @@
       <td><a href="../references/Coelho1967.html">Coelho (1967)</a></td>
       <td>xié</td>
       <td>text p. 81-82, 84</td>
-      <td><span class="fa fa-map-marker"></span> location: Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1600,7 +1643,7 @@
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1693,7 +1736,7 @@
       <td><a href="../references/SchmidtNielsen1968.html">Schmidt-Nielsen <em>et al.</em> (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 473-480</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1726,7 +1769,7 @@
       <td><a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 460-461</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1759,7 +1802,7 @@
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 28</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of South America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_South_America.html">Atlantic coast of South America</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1783,7 +1826,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 221, 225, 228, 230-232</td>
-      <td><span class="fa fa-flask"></span> specimen: Atlantic coast of Guatemala</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Atlantic_coast_of_Guatemala.html">Atlantic coast of Guatemala</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1792,7 +1835,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1801,7 +1844,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Panama</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Panama.html">Panama</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1810,7 +1853,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1861,7 +1904,7 @@
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 366-368, 373-374, 376-378, 382, 384-386, 391, 396, 407; figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1918,7 +1961,7 @@
       <td><a href="../references/Brusca1973.html">Brusca (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 265</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></td>
       <td><a href="../references/Brusca1980.html">Brusca (1980)</a></td>
       <td>&nbsp;</td>
@@ -1963,7 +2006,7 @@
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301, 303-304, 312, 314</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>location is slightly misleading; mostly restricted to mainland</td>
@@ -1984,7 +2027,7 @@
       <td><a href="../references/Fimpel1975.html">Fimpel (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 173, 177, 181-182</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2188,7 +2231,7 @@
       <td><a href="../references/Fontaine1988.html">Fontaine &amp; Barnwell (1988)</a></td>
       <td>&nbsp;</td>
       <td>text p. 92A</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Limón, Limon, Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Limon_-_Limon_-_Costa_Rica.html">Puerto Limón, Limon, Costa Rica</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2221,10 +2264,49 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-852, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) [minax] mordax</em></td>
+      <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138589]</td>
+      <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Minuca mordax</em></td>
+      <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>&nbsp;</td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2249,7 +2331,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

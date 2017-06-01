@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca subcylindrica_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -271,8 +293,8 @@
           ['1998', 1, 1],
           ['1999', 0, 0],
           ['2000', 1, 1],
-          ['2001', 0, 0],
-          ['2002', null, null],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', 0, 0],
           ['2004', 1, 1],
           ['2005', 0, 0],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -388,7 +419,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Corpus Christi, Texas, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Corpus_Christi_-_Texas_-_USA.html">Corpus Christi, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -397,7 +428,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santa Rosa, Texas, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santa_Rosa_-_Texas_-_USA.html">Santa Rosa, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -406,7 +437,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Matamoros, Tamaulipas, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Matamoros_-_Tamaulipas_-_Mexico.html">Matamoros, Tamaulipas, Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -436,7 +467,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Brooke County, Texas, USA [Pleistocene]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Brooke_County_-_Texas_-_USA.html">Brooke County, Texas, USA</a> [Pleistocene]</td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>Fossil</td>
@@ -460,7 +491,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 222, 228</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -496,7 +527,7 @@
       <td><a href="../references/Fotheringham1975.html">Fotheringham &amp; Brunenmeister (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 100-101; figure 5.6a</td>
-      <td><span class="fa fa-map-marker"></span> location: Northwestern Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northwestern_Gulf_of_Mexico.html">Northwestern Gulf of Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
       <td><a href="../references/Powers1975.2.html">Powers (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 22</td>
-      <td><span class="fa fa-map-marker"></span> location: Mustang Island, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mustang_Island_-_Texas_-_USA.html">Mustang Island, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -520,7 +551,7 @@
       <td><a href="../references/Powers1977.html">Powers (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 18, 148</td>
-      <td><span class="fa fa-map-marker"></span> location: Texas, USA to Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Texas_-_USA_to_Mexico.html">Texas, USA to Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -577,7 +608,7 @@
       <td><a href="../references/Thurman1977.2.html">Thurman &amp; Barnwell (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 942</td>
-      <td><span class="fa fa-map-marker"></span> location: Laguna Madre, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Laguna_Madre_-_Texas_-_USA.html">Laguna Madre, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -589,7 +620,7 @@
       <td><a href="../references/Rabalais1981.html">Rabalais &amp; Cameron (1981)</a></td>
       <td>&nbsp;</td>
       <td>text p. 990</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -601,7 +632,7 @@
       <td><a href="../references/Thurman1981.2.html">Thurman &amp; Thurman (1981)</a></td>
       <td>&nbsp;</td>
       <td>text p. 990</td>
-      <td><span class="fa fa-map-marker"></span> location: Laguna Madre, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Laguna_Madre_-_Texas_-_USA.html">Laguna Madre, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -610,7 +641,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA to Northeastern Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA_to_Northeastern_Mexico.html">Southern Texas, USA to Northeastern Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -622,7 +653,7 @@
       <td><a href="../references/Rabalais1982.html">Rabalais &amp; Cameron (1982)</a></td>
       <td>&nbsp;</td>
       <td>text p. 920</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -634,7 +665,7 @@
       <td><a href="../references/Rabalais1984.html">Rabalais (1984)</a></td>
       <td>&nbsp;</td>
       <td>text p. 42A</td>
-      <td><span class="fa fa-map-marker"></span> location: Western Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Western_Gulf_of_Mexico.html">Western Gulf of Mexico</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -646,7 +677,7 @@
       <td><a href="../references/Thurman1984.2.html">Thurman (1984)</a></td>
       <td>&nbsp;</td>
       <td>text p. 40A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -775,7 +806,7 @@
       <td><a href="../references/Thurman1994.html">Thurman (1994)</a></td>
       <td>&nbsp;</td>
       <td>text p. 31A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -787,7 +818,7 @@
       <td><a href="../references/Thurman1996.html">Thurman (1996)</a></td>
       <td>&nbsp;</td>
       <td>text p. 67A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -799,7 +830,7 @@
       <td><a href="../references/Borghammer1996.html">Broghammer &amp; Thurman (1996)</a></td>
       <td>&nbsp;</td>
       <td>text p. 108A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -823,7 +854,46 @@
       <td><a href="../references/Thurman2000.html">Thurman (2000)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1235</td>
-      <td><span class="fa fa-map-marker"></span> location: Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Texas_-_USA.html">Texas, USA</a></td>
+      <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 849-850, 852, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) subcylindrica</em></td>
+      <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnwell1984.1.html">Barnwell &amp; Thurman (1984)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1984.1.html">Thurman (1984)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Kingsville_-_Texas_-_USA.html">Kingsville, Texas, USA</a></td>
       <td><a href="../u_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -848,7 +918,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

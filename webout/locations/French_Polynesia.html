@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_French_Polynesia_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_French_Polynesia_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(-13.7, -145.1);
+        var swcorner = new google.maps.LatLng(-21.3, -154.0);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -69,6 +73,7 @@
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
     <ul class="splist">
+    <li><a href="Bora_Bora_-_French_Polynesia.html">Bora Bora</a></li>
     <li><a href="Gatavake_-_French_Polynesia.html">Gatavaké</a></li>
     <li><a href="Mangareva_-_French_Polynesia.html">Mangareva</a></li>
     <li><a href="Moorea_-_French_Polynesia.html">Mo'orea</a></li>
@@ -84,19 +89,32 @@
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
     <ul class="splist">
+      <li><a href="../names/Gelasimus_Duperreyi.html"><em class="species">Gelasimus Duperreyi</em></a><sup>*</sup></li>
+      <li><a href="../names/Gelasimus_Latreilii.html"><em class="species">Gelasimus Latreilii</em></a><sup>*</sup></li>
+      <li><a href="../names/Gelasimus_Latreillei.html"><em class="species">Gelasimus Latreillei</em></a><sup>*</sup></li>
+      <li><a href="../names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a><sup>*</sup></li>
+      <li><a href="../names/Gelasimus_latreillii.html"><em class="species">Gelasimus latreillii</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_tetragonon.html"><em class="species">Gelasimus tetragonon</em></a></li>
+      <li><a href="../names/Gelasimus_tetragonum.html"><em class="species">Gelasimus tetragonum</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Amphiuca_chlorophthalmus_crassipes.html"><em class="species">Uca (Amphiuca) chlorophthalmus crassipes</em></a></li>
+      <li><a href="../names/Uca_Minuca_gaimardi.html"><em class="species">Uca (Minuca) gaimardi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Paraleptuca_crassipes.html"><em class="species">Uca (Paraleptuca) crassipes</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a></li>
+      <li><a href="../names/Uca_duperryi.html"><em class="species">Uca duperryi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_gaimardi.html"><em class="species">Uca gaimardi</em></a></li>
+      <li><a href="../names/Uca_latreillei.html"><em class="species">Uca latreillei</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a><sup>*</sup></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
     <ul class="splist">
+      <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a><sup>*</sup></li>
       <li><a href="../names/sn_crassipes.html"><em class="species">crassipes</em></a></li>
+      <li><a href="../names/sn_duperreyi.html"><em class="species">duperreyi</em></a><sup>*</sup></li>
       <li><a href="../names/sn_gaimardi.html"><em class="species">gaimardi</em></a></li>
+      <li><a href="../names/sn_latreillei.html"><em class="species">latreillei</em></a><sup>*</sup></li>
       <li><a href="../names/sn_tetragonon.html"><em class="species">tetragonon</em></a></li>
     </ul>
   </section>
@@ -106,7 +124,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

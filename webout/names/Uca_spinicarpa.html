@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca spinicarpa_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -271,7 +293,7 @@
           ['1998', 0, 0],
           ['1999', 0, 0],
           ['2000', 1, 1],
-          ['2001', 1, 1],
+          ['2001', 2, 2],
           ['2002', 0, 0],
           ['2003', 0, 0],
           ['2004', 1, 1],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -366,7 +397,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio Mamanguape, Paraíba, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_Mamanguape_-_Paraiba_-_Brazil.html">Rio Mamanguape, Paraíba, Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -385,7 +416,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Mobile, Alabama, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Mobile_-_Alabama_-_USA.html">Mobile, Alabama, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -393,7 +424,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Biloxi Bay, Mississippi, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Biloxi_Bay_-_Mississippi_-_USA.html">Biloxi Bay, Mississippi, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -401,7 +432,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Galveston, Texas, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Galveston_-_Texas_-_USA.html">Galveston, Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -409,7 +440,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Matagorda Bay, Texas, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Matagorda_Bay_-_Texas_-_USA.html">Matagorda Bay, Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -417,7 +448,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Matamoros, Tamaulipas, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Matamoros_-_Tamaulipas_-_Mexico.html">Matamoros, Tamaulipas, Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -425,7 +456,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tampico, Tamaulipas, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tampico_-_Tamaulipas_-_Mexico.html">Tampico, Tamaulipas, Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -433,7 +464,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Jamaica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -441,7 +472,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio Mamanguape, Paraíba, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_Mamanguape_-_Paraiba_-_Brazil.html">Rio Mamanguape, Paraíba, Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -529,7 +560,7 @@
     <tr>
       <td><a href="../references/Fotheringham1975.html">Fotheringham &amp; Brunenmeister (1975)</a></td>
       <td>text p. 100-101; figure 5.6c</td>
-      <td><span class="fa fa-map-marker"></span> location: Northwestern Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northwestern_Gulf_of_Mexico.html">Northwestern Gulf of Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -540,7 +571,7 @@
     <tr>
       <td><a href="../references/Heard1976.html">Heard (1976)</a></td>
       <td>text p. 9, 11, 14, 17, 21, 23-25, 30, 34, 122</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -583,7 +614,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Alabama, USA to Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Alabama_-_USA_to_Mexico.html">Alabama, USA to Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -634,7 +665,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_Gulf_of_Mexico.html">Northeastern Gulf of Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -678,7 +709,7 @@
     <tr>
       <td><a href="../references/Mace1985.html">Mace &amp; McGraw (1985)</a></td>
       <td>text p. 148</td>
-      <td><span class="fa fa-map-marker"></span> location: Pleasure Island, Port Arthur, Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pleasure_Island_-_Port_Arthur_-_Texas_-_USA.html">Pleasure Island, Port Arthur, Texas, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -689,7 +720,7 @@
     <tr>
       <td><a href="../references/Thurman1987.2.html">Thurman (1987)</a></td>
       <td>text p. 162A</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -700,7 +731,7 @@
     <tr>
       <td><a href="../references/Thurman1994.html">Thurman (1994)</a></td>
       <td>text p. 31A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -711,7 +742,7 @@
     <tr>
       <td><a href="../references/Thurman1996.html">Thurman (1996)</a></td>
       <td>text p. 67A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -722,7 +753,7 @@
     <tr>
       <td><a href="../references/Balbort1997.html">Balbort &amp; Thurman (1997)</a></td>
       <td>text p. 186A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -733,7 +764,7 @@
     <tr>
       <td><a href="../references/Thurman2000.html">Thurman (2000)</a></td>
       <td>text p. 1235</td>
-      <td><span class="fa fa-map-marker"></span> location: Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Texas_-_USA.html">Texas, USA</a></td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -744,7 +775,26 @@
     <tr>
       <td><a href="../references/Thurman2001.1.html">Thurman (2001)</a></td>
       <td>text p. 1607</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Florida_-_USA.html">West coast of Florida, USA</a></td>
+      <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 843, 849-850, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) [crenulata] speciosa spinicarpa</em></td>
+      <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 139174]</td>
       <td><a href="../u_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -779,7 +829,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

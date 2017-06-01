@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus brevifrons_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -346,7 +377,7 @@
     <tr>
       <td><a href="../references/Stimpson1860.html">Stimpson (1860)</a></td>
       <td>text p. 229</td>
-      <td><span class="fa fa-flask"></span> specimen: Todos Santos, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Todos_Santos_-_Baja_California_Sur_-_Mexico.html">Todos Santos, Baja California Sur, Mexico</a></td>
       <td><a href="../u_brevifrons.html"><em class="species">Uca brevifrons</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -356,7 +387,7 @@
     <tr>
       <td><a href="../references/Smith1870.2.html">Smith (1870)</a></td>
       <td>text p. 115, 131</td>
-      <td><span class="fa fa-map-marker"></span> location: Todos Santos, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Todos_Santos_-_Baja_California_Sur_-_Mexico.html">Todos Santos, Baja California Sur, Mexico</a></td>
       <td><a href="../u_brevifrons.html"><em class="species">Uca brevifrons</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -380,7 +411,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Magdalena Bay, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Magdalena_Bay_-_Baja_California_Sur_-_Mexico.html">Magdalena Bay, Baja California Sur, Mexico</a></td>
       <td><a href="../u_brevifrons.html"><em class="species">Uca brevifrons</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
     </tr>
@@ -392,7 +423,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

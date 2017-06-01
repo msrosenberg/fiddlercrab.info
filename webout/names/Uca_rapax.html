@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca rapax_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -248,7 +270,7 @@
           ['1975', 6, 6],
           ['1976', 5, 5],
           ['1977', 9, 9],
-          ['1978', 1, 1],
+          ['1978', 2, 2],
           ['1979', 0, 0],
           ['1980', 0, 0],
           ['1981', 1, 1],
@@ -271,7 +293,7 @@
           ['1998', 0, 0],
           ['1999', 0, 0],
           ['2000', 1, 1],
-          ['2001', 0, 0],
+          ['2001', 1, 1],
           ['2002', 0, 0],
           ['2003', 1, 1],
           ['2004', 1, 1],
@@ -279,7 +301,7 @@
           ['2006', 0, 0],
           ['2007', 1, 1],
           ['2008', 0, 0],
-          ['2009', 0, 0],
+          ['2009', 1, 1],
           ['2010', 1, 1],
           ['2011', 0, 0],
           ['2012', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -361,7 +392,7 @@
       <td><a href="../references/Tashian1958.html">Tashian &amp; Vernberg (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89-91; plate 1: figures 3-4</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -391,7 +422,7 @@
       <td><a href="../references/Crane1958.html">Crane (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 113-114, 118, 123, 127</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -430,7 +461,7 @@
       <td><a href="../references/Gerlach1958.2.html">Gerlach (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 672-673, 684</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -442,7 +473,7 @@
       <td><a href="../references/Burgers1958.html">Burgers (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 579-588</td>
-      <td><span class="fa fa-map-marker"></span> location: Piscaderabaai, Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Piscaderabaai_-_Curacao.html">Piscaderabaai, Curaçao</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
       <td><a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 589-591</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -463,7 +494,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Miami, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Miami_-_Florida_-_USA.html">Miami, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -502,7 +533,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -511,7 +542,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Alligator Harbor, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Alligator_Harbor_-_Florida_-_USA.html">Alligator Harbor, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -550,7 +581,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -559,7 +590,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Alligator Harbor, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Alligator_Harbor_-_Florida_-_USA.html">Alligator Harbor, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -571,7 +602,7 @@
       <td><a href="../references/Vernberg1960.html">Vernberg (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 399</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -595,7 +626,7 @@
       <td><a href="../references/Tabb1961.html">Tabb &amp; Manning (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 602</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Floriday Bay, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Floriday_Bay_-_Florida_-_USA.html">Northern Floriday Bay, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -640,7 +671,7 @@
       <td><a href="../references/Barnwell1963.2.html">Barnwell (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 400, 402-404, 414</td>
-      <td><span class="fa fa-map-marker"></span> location: Belém, Pará, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Belem_-_Para_-_Brazil.html">Belém, Pará, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -715,7 +746,7 @@
       <td><a href="../references/Salmon1965.html">Salmon (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 124, 130</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -748,7 +779,7 @@
       <td><a href="../references/Vernberg1966.1.html">Vernberg &amp; Costlow (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 62-63</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -760,7 +791,7 @@
       <td><a href="../references/Vernberg1966.2.html">Vernberg &amp; Costlow (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 36-41, 43-48, 50-51</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -781,7 +812,7 @@
       <td><a href="../references/Vernberg1966.3.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 363-365, 367-374</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -811,7 +842,7 @@
       <td><a href="../references/Vernberg1966.4.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 30-33</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
       <td><a href="../references/Vernberg1966.5.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 489-490, 492-503, 508, 510-513, 515-522</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -889,7 +920,7 @@
       <td><a href="../references/Vernberg1966.6.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 326-327</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -898,7 +929,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -907,7 +938,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -919,7 +950,7 @@
       <td><a href="../references/Vernberg1966.7.html">Vernberg &amp; Vernberg (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 327</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -928,7 +959,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -937,7 +968,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -949,7 +980,7 @@
       <td><a href="../references/Salmon1966.html">Salmon (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 515</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -961,7 +992,7 @@
       <td><a href="../references/Vernberg1964.html">Vernberg &amp; Vernberg (1964)</a></td>
       <td>&nbsp;</td>
       <td>text p. 478, 480-484</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1009,7 +1040,7 @@
       <td><a href="../references/Vernberg1967.1.html">Vernberg &amp; Vernberg (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 118-120</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1066,7 +1097,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1078,7 +1109,7 @@
       <td><a href="../references/vonHagen1967.2.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301-303, 306-307, 309-310, 312, 315, 317</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1090,7 +1121,7 @@
       <td><a href="../references/Crane1967.html">Crane (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 49, 51-58, 66, 69-74</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1123,7 +1154,7 @@
       <td><a href="../references/Miller1967.html">Miller &amp; Vernberg (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 766</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1135,7 +1166,7 @@
       <td><a href="../references/Vernberg1967.2.html">Vernberg &amp; Vernberg (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 194</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1144,7 +1175,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1156,7 +1187,7 @@
       <td><a href="../references/Coelho1967.html">Coelho (1967)</a></td>
       <td>xié</td>
       <td>text p. 81-82, 84, 86</td>
-      <td><span class="fa fa-map-marker"></span> location: Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1168,7 +1199,7 @@
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1192,7 +1223,7 @@
       <td><a href="../references/Salmon1968.1.html">Salmon &amp; Atsaides (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 275, 287, 289</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1225,7 +1256,7 @@
       <td><a href="../references/Vernberg1968.1.html">Vernberg &amp; Vernberg (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 113-122</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1234,7 +1265,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1243,7 +1274,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1282,7 +1313,7 @@
       <td><a href="../references/Vernberg1968.2.html">Vernberg &amp; Vernberg (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 499-506</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1291,7 +1322,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1408,7 +1439,7 @@
       <td><a href="../references/SchmidtNielsen1968.html">Schmidt-Nielsen <em>et al.</em> (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 474</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1432,7 +1463,7 @@
       <td><a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 459-463, 465, 467-468</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1489,7 +1520,7 @@
       <td><a href="../references/vanDelft1968.html">van Delft (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 58-71; figure 55-56; Plate VIII</td>
-      <td><span class="fa fa-map-marker"></span> location: Piscaderabaai, Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Piscaderabaai_-_Curacao.html">Piscaderabaai, Curaçao</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1519,7 +1550,7 @@
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7, 15, 33, 203, 214-215; figure 73</td>
-      <td><span class="fa fa-map-marker"></span> location: Antilles</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Antilles.html">Antilles</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1528,7 +1559,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of South America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_South_America.html">Atlantic coast of South America</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1537,7 +1568,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of Mexico and Central America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_Mexico_and_Central_America.html">Atlantic coast of Mexico and Central America</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1546,7 +1577,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of North America</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1633,7 +1664,7 @@
       <td><a href="../references/Vernberg1969.2.html">Vernberg (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 334-337, 339</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1681,7 +1712,7 @@
       <td><a href="../references/Warner1969.html">Warner (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 381-385</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1693,7 +1724,7 @@
       <td><a href="../references/Altevogt1969.html">Altevogt (1969)</a></td>
       <td>&nbsp;</td>
       <td>?</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1738,7 +1769,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 221, 226, 228-233</td>
-      <td><span class="fa fa-flask"></span> specimen: Suriname</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Suriname.html">Suriname</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1810,7 +1841,7 @@
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 366-369, 373-380, 382-384, 386-388, 390-392, 396-397, 403-405, 407; figures 2, 10</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1858,7 +1889,7 @@
       <td><a href="../references/vonHagen1970.2.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 245, 248-249, 252</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1936,7 +1967,7 @@
       <td><a href="../references/Heard1970.html">Heard (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 148-149</td>
-      <td><span class="fa fa-map-marker"></span> location: Dauphin Island, Alabama, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dauphin_Island_-_Alabama_-_USA.html">Dauphin Island, Alabama, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1948,7 +1979,7 @@
       <td><a href="../references/Salmon1971.html">Salmon (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 210-211, 213-214, 216, 218-223</td>
-      <td><span class="fa fa-map-marker"></span> location: Osprey, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Osprey_-_Florida_-_USA.html">Osprey, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2017,7 +2048,7 @@
       <td><a href="../references/Altevogt1972.html">Altevogt (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 463-464</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2095,7 +2126,7 @@
       <td><a href="../references/Menzies1972.html">Menzies &amp; George (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 156-157</td>
-      <td><span class="fa fa-map-marker"></span> location: Galeta Island, Coco Solo, Panama</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Galeta_Island_-_Coco_Solo_-_Panama.html">Galeta Island, Coco Solo, Panama</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2137,7 +2168,7 @@
       <td><a href="../references/Hannan1973.html">Hannan &amp; Evans (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1200-1203, 1207, 1211</td>
-      <td><span class="fa fa-map-marker"></span> location: Biscayne Bay, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Biscayne_Bay_-_Florida_-_USA.html">Biscayne Bay, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2188,7 +2219,7 @@
       <td><a href="../references/Smith1973.html">Smith &amp; Miller (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 186-193, 195-197, 199, 201-206</td>
-      <td><span class="fa fa-map-marker"></span> location: Key Largo, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Key_Largo_-_Florida_-_USA.html">Key Largo, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2293,7 +2324,7 @@
       <td><a href="../references/Fotheringham1975.html">Fotheringham &amp; Brunenmeister (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 98, 100-102; figures 5.5; figure 5.6d</td>
-      <td><span class="fa fa-map-marker"></span> location: Northwestern Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northwestern_Gulf_of_Mexico.html">Northwestern Gulf of Mexico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2362,7 +2393,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Placida, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Placida_-_Florida_-_USA.html">Placida, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2371,7 +2402,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2392,7 +2423,7 @@
       <td><a href="../references/Vernberg1975.html">Vernberg &amp; Vernberg (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 169-171, 173-177</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2422,7 +2453,7 @@
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301, 303, 305-307, 310-312</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2482,7 +2513,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2584,7 +2615,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2605,7 +2636,7 @@
       <td><a href="../references/Warner1977.html">Warner (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 108-109, 111, 143; figure 30</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2626,7 +2657,7 @@
       <td><a href="../references/Weis1977.1.html">Weis (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 263-267, 269-273</td>
-      <td><span class="fa fa-map-marker"></span> location: Boca Raton, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Boca_Raton_-_Florida_-_USA.html">Boca Raton, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2764,7 +2795,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: The Bahamas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/The_Bahamas.html">The Bahamas</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2773,7 +2804,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2782,7 +2813,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern coast of Mexico to Guatemala</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_coast_of_Mexico_to_Guatemala.html">Northeastern coast of Mexico to Guatemala</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2791,7 +2822,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2800,7 +2831,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2809,7 +2840,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Hispaniola</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hispaniola.html">Hispaniola</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2818,7 +2849,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Rico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Rico.html">Puerto Rico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2827,7 +2858,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Antilles</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Antilles.html">Antilles</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -2836,7 +2867,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Panama to Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Panama_to_Brazil.html">Panama to Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3082,8 +3113,29 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cumana, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cumana_-_Venezuela.html">Cumana, Venezuela</a></td>
       <td><em class="species">Uca</em></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Ahmed1978.2.html">Ahmed &amp; Khan (1978)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 50, 53</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Vernberg1966.1.html">Vernberg &amp; Costlow (1966)</a> → <em class="species">Uca rapax</em></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Ahmed1976.1.html">Ahmed (1976)</a> → <em class="species">Uca rapax</em></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -3235,7 +3287,7 @@
       <td><a href="../references/Thurman1987.2.html">Thurman (1987)</a></td>
       <td>&nbsp;</td>
       <td>text p. 162A</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3328,7 +3380,7 @@
       <td><a href="../references/Thurman1996.html">Thurman (1996)</a></td>
       <td>&nbsp;</td>
       <td>text p. 67A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3340,7 +3392,7 @@
       <td><a href="../references/McKenney1996.html">McKenney <em>et al.</em> (1996)</a></td>
       <td>&nbsp;</td>
       <td>text p. 109A</td>
-      <td><span class="fa fa-map-marker"></span> location: Rookery Bay National Estuarine Research Reserve, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rookery_Bay_National_Estuarine_Research_Reserve_-_Florida_-_USA.html">Rookery Bay National Estuarine Research Reserve, Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3352,7 +3404,7 @@
       <td><a href="../references/Balbort1997.html">Balbort &amp; Thurman (1997)</a></td>
       <td>&nbsp;</td>
       <td>text p. 186A</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Texas_-_USA.html">Southern Texas, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3364,9 +3416,48 @@
       <td><a href="../references/Thurman2000.html">Thurman (2000)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1235</td>
-      <td><span class="fa fa-map-marker"></span> location: Texas, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Texas_-_USA.html">Texas, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-850, 852, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) [galapagensis] rapax rapax</em></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 93084]</td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Minuca rapax</em></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -3376,7 +3467,7 @@
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3400,10 +3491,49 @@
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>&nbsp;</td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 896, 899-900</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bahia_Bioluminiscente_-_Vieques_-_Puerto_Rico.html">Bahía Bioluminiscente, Vieques, Puerto Rico</a></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Blue_Beach_-_Laguna_Kiani_-_Vieques_-_Puerto_Rico.html">Blue Beach, Laguna Kiani, Vieques, Puerto Rico</a></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Mattson1988.html">Mattson (1988)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) [galapagensis] rapax rapax</em></td>
+      <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
     </tr>
     <tr>
       <td class="rowspacer" colspan="7">&nbsp;</td>
@@ -3424,7 +3554,7 @@
       <td><a href="../references/Faria2014.html">Faria <em>et al.</em> (2014)</a></td>
       <td>&nbsp;</td>
       <td>text p. e272</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -3449,7 +3579,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca inversa_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -265,14 +287,14 @@
           ['1992', null, null],
           ['1993', null, null],
           ['1994', null, null],
-          ['1995', null, null],
-          ['1996', null, null],
-          ['1997', null, null],
+          ['1995', 0, 0],
+          ['1996', 1, 1],
+          ['1997', 0, 0],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 2, 2],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -333,6 +355,15 @@
         </ul>
       </nav>
     </header>
+
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
 
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
@@ -406,7 +437,7 @@
     <tr>
       <td><a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a></td>
       <td>text p. 1202</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Africa.html">Eastern Africa</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -441,7 +472,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Socotra, Yemen</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Socotra_-_Yemen.html">Socotra, Yemen</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -449,7 +480,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Abd al Kuri, Socotra, Yemen</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Abd_al_Kuri_-_Socotra_-_Yemen.html">Abd al Kuri, Socotra, Yemen</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -460,7 +491,7 @@
     <tr>
       <td><a href="../references/Nobili1906.2.html">Nobili (1906)</a></td>
       <td>text p. 151</td>
-      <td><span class="fa fa-flask"></span> specimen: Massawa, Eritrea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Massawa_-_Eritrea.html">Massawa, Eritrea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -543,7 +574,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -586,7 +617,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -597,7 +628,7 @@
     <tr>
       <td><a href="../references/Laurie1915.html">Laurie (1915)</a></td>
       <td>text p. 416</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -648,7 +679,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Red Sea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -707,7 +738,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Somalia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Somalia.html">Somalia</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -774,7 +805,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Eritrea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Eritrea.html">Eritrea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -782,7 +813,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Djibouti</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Djibouti.html">Djibouti</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -798,7 +829,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Gulf of Aden</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Gulf_of_Aden.html">Gulf of Aden</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -806,7 +837,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Dissei, Eritrea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Dissei_-_Eritrea.html">Dissei, Eritrea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -814,7 +845,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isola Nocra, Eritrea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isola_Nocra_-_Eritrea.html">Isola Nocra, Eritrea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -841,7 +872,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Gongoni, Kenya</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Gongoni_-_Kenya.html">Gongoni, Kenya</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -879,7 +910,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Lindi, Tanzania</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Lindi_-_Tanzania.html">Lindi, Tanzania</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -981,7 +1012,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -992,7 +1023,7 @@
     <tr>
       <td><a href="../references/Fourmanoir1953.html">Fourmanoir (1953)</a></td>
       <td>text p. 89</td>
-      <td><span class="fa fa-map-marker"></span> location: Majunga, Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Majunga_-_Madagascar.html">Majunga, Madagascar</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1035,7 +1066,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Dissei, Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dissei_-_Eritrea.html">Dissei, Eritrea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1046,7 +1077,7 @@
     <tr>
       <td><a href="../references/Gordon1955.html">Gordon (1955)</a></td>
       <td>text p. 356-357, 359</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1057,7 +1088,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Pakistan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pakistan.html">Pakistan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1068,7 +1099,7 @@
     <tr>
       <td><a href="../references/Crane1958.html">Crane (1958)</a></td>
       <td>text p. 123</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Africa.html">Eastern Africa</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1079,7 +1110,7 @@
     <tr>
       <td><a href="../references/Gordon1958.html">Gordon (1958)</a></td>
       <td>text p. 238</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1090,7 +1121,7 @@
     <tr>
       <td><a href="../references/Holthuis1958.html">Holthuis (1958)</a></td>
       <td>text p. 53</td>
-      <td><span class="fa fa-flask"></span> specimen: Ras Mohammed, Egypt [No. E 56/325]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ras_Mohammed_-_Egypt.html">Ras Mohammed, Egypt</a> [No. E 56/325]</td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1098,7 +1129,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: El-Monqatea, Egypt [No. E 57/42]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/El-Monqatea_-_Egypt.html">El-Monqatea, Egypt</a> [No. E 57/42]</td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1106,7 +1137,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Marsa Al Zabad, Egypt [No. E 57/107]</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Marsa_Al_Zabad_-_Egypt.html">Marsa Al Zabad, Egypt</a> [No. E 57/107]</td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1117,7 +1148,7 @@
     <tr>
       <td><a href="../references/Macnae1958.html">Macnae &amp; Kalk (1958)</a></td>
       <td>text p. 119, 125</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1128,7 +1159,7 @@
     <tr>
       <td><a href="../references/Kalik1958.1.html">Kalik (1958)</a></td>
       <td>text p. 38, 40</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1139,7 +1170,7 @@
     <tr>
       <td><a href="../references/Kalik1958.2.html">Kalik (1958)</a></td>
       <td>text p. 67, 69, 81</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1150,7 +1181,7 @@
     <tr>
       <td><a href="../references/Edney1961.html">Edney (1961)</a></td>
       <td>text p. 71-74, 76-83, 85, 88</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1161,7 +1192,7 @@
     <tr>
       <td><a href="../references/Edney1962.html">Edney (1962)</a></td>
       <td>text p. 80-81</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1172,7 +1203,7 @@
     <tr>
       <td><a href="../references/Macnae1962.html">Macnae &amp; Kalk (1962)</a></td>
       <td>text p. 22, 26, 30, 32</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1191,7 +1222,7 @@
     <tr>
       <td><a href="../references/Macnae1963.html">Macnae (1963)</a></td>
       <td>text p. 9, 23</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1202,7 +1233,7 @@
     <tr>
       <td><a href="../references/Crosnier1965.html">Crosnier (1965)</a></td>
       <td>text p. 107, 113-115, 117-118; figures 201-203, 210-211</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1256,7 +1287,7 @@
     <tr>
       <td><a href="../references/Macnae1967.html">Macnae (1967)</a></td>
       <td>text p. 440</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1267,7 +1298,7 @@
     <tr>
       <td><a href="../references/Macnae1968.html">Macnae (1968)</a></td>
       <td>text p. 101, 174, 203, 209-211, 225</td>
-      <td><span class="fa fa-map-marker"></span> location: Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mozambique.html">Mozambique</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1338,7 +1369,7 @@
     <tr>
       <td><a href="../references/Fishelson1971.html">Fishelson (1971)</a></td>
       <td>text p. 119</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1360,7 +1391,7 @@
     <tr>
       <td><a href="../references/Spaargaren1977.html">Spaargaren (1977)</a></td>
       <td>text p. 100-101, 103-104</td>
-      <td><span class="fa fa-map-marker"></span> location: Red Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Red_Sea.html">Red Sea</a></td>
       <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1432,6 +1463,95 @@
       <td class="rowspacer" colspan="6">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/AlGhais1996.html">Al-Ghais &amp; Cooper (1996)</a></td>
+      <td>text p. 421-422, 427</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Umm_AI_Quwain_-_United_Arab_Emirates.html">Umm AI Quwain, United Arab Emirates</a></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Guinot1966.html">Guinot (1966)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Amphiuca) inversa inversa</em></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Collins1984.html">Collins <em>et al.</em> (1984)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Barnard1950.html">Barnard (1950)</a> → <em class="species">Uca inversa</em></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crosnier1965.html">Crosnier (1965)</a> → <em class="species">Uca inversa</em></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Vannini2001.html">Vannini <em>et al.</em> (2001)</a></td>
+      <td>text p. 456-457</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mida_Creek_-_Kenya.html">Mida Creek, Kenya</a></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 842, 844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Amphiuca) inversa inversa</em></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138044]</td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Austruca inversa</em></td>
+      <td><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a></td>
       <td>text p. 1</td>
       <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Hoffmann1874.html">Hoffmann (1874)</a> → <em class="species">Gelasimus inversus</em></td>
@@ -1458,7 +1578,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

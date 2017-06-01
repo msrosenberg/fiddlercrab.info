@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus sp._point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -332,6 +354,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -345,7 +376,7 @@
     <tr>
       <td><a href="../references/Muller1864.html">Müller (1864)</a></td>
       <td>text p. 24</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>He refers to a small, unnamed species</td>
@@ -356,7 +387,7 @@
     <tr>
       <td><a href="../references/Muller1869.html">Müller (1869)</a></td>
       <td>text p. 36</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>He refers to a small, unnamed species</td>
@@ -367,7 +398,7 @@
     <tr>
       <td><a href="../references/Uhler1878.html">Uhler (1878)</a></td>
       <td>text p. 25</td>
-      <td><span class="fa fa-map-marker"></span> location: Fort Wool, Virginia, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fort_Wool_-_Virginia_-_USA.html">Fort Wool, Virginia, USA</a></td>
       <td><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></td>
       <td>MSR</td>
       <td>&nbsp;</td>
@@ -378,7 +409,7 @@
     <tr>
       <td><a href="../references/Pfeffer1889.html">Pfeffer (1889)</a></td>
       <td>text p. 30</td>
-      <td><span class="fa fa-map-marker"></span> location: Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanzania.html">Tanzania</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -400,7 +431,7 @@
     <tr>
       <td><a href="../references/deMan1895.html">De Man (1895)</a></td>
       <td>text p. 574-576</td>
-      <td><span class="fa fa-flask"></span> specimen: Pontianak, Borneo, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pontianak_-_Borneo_-_Indonesia.html">Pontianak, Borneo, Indonesia</a></td>
       <td><a href="../u_demani.html"><em class="species">Uca demani</em></a></td>
       <td><a href="../references/Ortmann1897.html">Ortmann (1897)</a></td>
       <td>&nbsp;</td>
@@ -411,7 +442,7 @@
     <tr>
       <td><a href="../references/DelPrato1896.html">Del Prato (1896)</a></td>
       <td>text p. 183</td>
-      <td><span class="fa fa-map-marker"></span> location: Eritrea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eritrea.html">Eritrea</a></td>
       <td>?</td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -422,7 +453,7 @@
     <tr>
       <td><a href="../references/SavilleKent1897.html">Saville-Kent (1897)</a></td>
       <td>text p. 241</td>
-      <td><span class="fa fa-map-marker"></span> location: Broome, Western Australia, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Broome_-_Western_Australia_-_Australia.html">Broome, Western Australia, Australia</a></td>
       <td><a href="../u_polita.html"><em class="species">Uca polita</em></a></td>
       <td>MSR</td>
       <td>described as &ldquo;carapace in the male bright blue centrally, with a brown anterior border. The ambulatory limbs were pale yellow, and the fighting and rudimentary chaela a most delicate rose pink&rdquo;</td>
@@ -430,7 +461,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Broome, Western Australia, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Broome_-_Western_Australia_-_Australia.html">Broome, Western Australia, Australia</a></td>
       <td><a href="../u_mjoebergi.html"><em class="species">Uca mjoebergi</em></a></td>
       <td>MSR</td>
       <td>described as &ldquo;the smallest species of all, having a carapace, or shell, scarcely half an inch in diameter, makes its burrows in sandy situations, far up on the beach near high spring level. Its strikingly delicate colouring included a pale lilac carapace, rose pink legs, and a large lemon-yellow fighting claw&rdquo;</td>
@@ -438,7 +469,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Broome, Western Australia, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Broome_-_Western_Australia_-_Australia.html">Broome, Western Australia, Australia</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear which species he was describing. &ldquo;One form, equal in size to the scarlet species, and, in this instance, living in its vicinity, had the large, but somewhat shorter and thicker, fighting chrela in the male cream colour, while the body and all the other limbs were a slaty black.&rdquo; </td>
@@ -449,7 +480,7 @@
     <tr>
       <td><a href="../references/deMan1902.html">De Man (1902)</a></td>
       <td>text p. 489-491; plate 19: figure 5</td>
-      <td><span class="fa fa-map-marker"></span> location: Ternate, Maluku Islands, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ternate_-_Maluku_Islands_-_Indonesia.html">Ternate, Maluku Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -457,7 +488,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Bacan, Maluku Islands, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Bacan_-_Maluku_Islands_-_Indonesia.html">Bacan, Maluku Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -468,7 +499,7 @@
     <tr>
       <td><a href="../references/Gordon1934.html">Gordon (1934)</a></td>
       <td>text p. 11, 15</td>
-      <td><span class="fa fa-flask"></span> specimen: Ambon Island, Maluku, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ambon_Island_-_Maluku_-_Indonesia.html">Ambon Island, Maluku, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -476,7 +507,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kobroor Island, Aru Islands, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kobroor_Island_-_Aru_Islands_-_Indonesia.html">Kobroor Island, Aru Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -484,7 +515,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Dodinga Bay, Halmahera, Maluku Islands, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Dodinga_Bay_-_Halmahera_-_Maluku_Islands_-_Indonesia.html">Dodinga Bay, Halmahera, Maluku Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -495,7 +526,7 @@
     <tr>
       <td><a href="../references/Raut1943.html">Raut (1943)</a></td>
       <td>text p. 300</td>
-      <td><span class="fa fa-map-marker"></span> location: Elephanta Island, Mumbai, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Elephanta_Island_-_Mumbai_-_India.html">Elephanta Island, Mumbai, India</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

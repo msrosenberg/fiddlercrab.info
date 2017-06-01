@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca maracoani_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -388,7 +419,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Natal, Rio Grande do Norte, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Natal_-_Rio_Grande_do_Norte_-_Brazil.html">Natal, Rio Grande do Norte, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -397,7 +428,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cabedelo, Paraíba, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cabedelo_-_Paraiba_-_Brazil.html">Cabedelo, Paraíba, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -409,7 +440,7 @@
       <td><a href="../references/Moreira1901.html">Moreira (1901)</a></td>
       <td>Tesoura</td>
       <td>text p. 52</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -421,7 +452,7 @@
       <td><a href="../references/Rathbun1915.html">Rathbun (1915)</a></td>
       <td>&nbsp;</td>
       <td>text p. 126</td>
-      <td><span class="fa fa-map-marker"></span> location: Atlantic coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Atlantic_coast_of_the_Americas.html">Atlantic coast of the Americas</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -532,7 +563,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cayenne, French Guiana</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cayenne_-_French_Guiana.html">Cayenne, French Guiana</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -541,7 +572,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maranhão, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maranhao_-_Brazil.html">Maranhão, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -550,7 +581,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Natal, Rio Grande do Norte, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Natal_-_Rio_Grande_do_Norte_-_Brazil.html">Natal, Rio Grande do Norte, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -559,7 +590,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Plataforma, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Plataforma_-_Bahia_-_Brazil.html">Plataforma, Bahia, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -568,7 +599,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Porto Seguro, Bahia, Brazil</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Porto_Seguro_-_Bahia_-_Brazil.html">Porto Seguro, Bahia, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -718,7 +749,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -730,7 +761,7 @@
       <td><a href="../references/Oliveira1939.3.html">Oliveira (1939)</a></td>
       <td>&nbsp;</td>
       <td>text p. 490</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -742,7 +773,7 @@
       <td><a href="../references/Villela1941.1.html">Villela &amp; Oliveira (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. 69-73</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -754,7 +785,7 @@
       <td><a href="../references/Villela1941.2.html">Villela &amp; Oliveira (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. 387-392</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -784,7 +815,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pedernales, Venezuela</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pedernales_-_Venezuela.html">Pedernales, Venezuela</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -808,7 +839,7 @@
       <td><a href="../references/Dansereau1947.html">Dansereau (1947)</a></td>
       <td>&nbsp;</td>
       <td>text p. 466-467, 471</td>
-      <td><span class="fa fa-map-marker"></span> location: Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -820,7 +851,7 @@
       <td><a href="../references/Oliveira1950.html">Oliveira (1950)</a></td>
       <td>&nbsp;</td>
       <td>text p. 371, 377, 385</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
       <td><a href="../references/Oliveira1953.html">Oliveira &amp; Krau (1953)</a></td>
       <td>tesoura</td>
       <td>text p. 512</td>
-      <td><span class="fa fa-map-marker"></span> location: Guanabara Bay, Rio de Janeiro, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guanabara_Bay_-_Rio_de_Janeiro_-_Brazil.html">Guanabara Bay, Rio de Janeiro, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -844,7 +875,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71, 73, 75, 77, 79-81</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela.html">Venezuela</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -853,7 +884,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -862,7 +893,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Guyana</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Guyana.html">Guyana</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -871,7 +902,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Suriname</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Suriname.html">Suriname</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -880,7 +911,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -901,7 +932,7 @@
       <td><a href="../references/Crane1958.html">Crane (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 113-129; figures 2-5</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -922,7 +953,7 @@
       <td><a href="../references/Gerlach1958.2.html">Gerlach (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 672-673, 684</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -934,7 +965,7 @@
       <td><a href="../references/GuinotDumortier1959.html">Guinot-Dumortier (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 515</td>
-      <td><span class="fa fa-map-marker"></span> location: Cayenne, French Guiana</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cayenne_-_French_Guiana.html">Cayenne, French Guiana</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -982,7 +1013,7 @@
       <td><a href="../references/Rodriguez1959.html">Rodriguez (1959)</a></td>
       <td>&nbsp;</td>
       <td>text p. 264-265, 272, 275</td>
-      <td><span class="fa fa-map-marker"></span> location: Margarita Island, Venezuela</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Margarita_Island_-_Venezuela.html">Margarita Island, Venezuela</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1030,7 +1061,7 @@
       <td><a href="../references/Barnwell1963.2.html">Barnwell (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 400, 402-407, 411-414</td>
-      <td><span class="fa fa-map-marker"></span> location: Belém, Pará, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Belem_-_Para_-_Brazil.html">Belém, Pará, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1120,7 +1151,7 @@
       <td><a href="../references/Coelho1967.html">Coelho (1967)</a></td>
       <td>tesoura</td>
       <td>text p. 81-82, 84, 86</td>
-      <td><span class="fa fa-map-marker"></span> location: Pernambuco, Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pernambuco_-_Brazil.html">Pernambuco, Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1132,7 +1163,7 @@
       <td><a href="../references/vonHagen1967.1.html">von Hagen (1967)</a></td>
       <td>&nbsp;</td>
       <td>text p. 177</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1201,7 +1232,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Trinidad</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1267,7 +1298,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Venezuela to Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Venezuela_to_Brazil.html">Venezuela to Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1321,7 +1352,7 @@
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 220, 224, 228, 230-232</td>
-      <td><span class="fa fa-flask"></span> specimen: Cayenne, French Guiana</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cayenne_-_French_Guiana.html">Cayenne, French Guiana</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1369,7 +1400,7 @@
       <td><a href="../references/vonHagen1970.4.html">von Hagen (1970)</a></td>
       <td>&nbsp;</td>
       <td>text p. 366-369, 372-377, 379, 382, 386, 390-391, 393, 395-397, 401, 403-404, 406-408; figure 2</td>
-      <td><span class="fa fa-map-marker"></span> location: Trinidad</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Trinidad.html">Trinidad</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1411,7 +1442,7 @@
       <td><a href="../references/Coelho1971.html">Coelho (1971)</a></td>
       <td>&nbsp;</td>
       <td>text p. 235</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Brazil.html">Northern Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1516,7 +1547,7 @@
       <td><a href="../references/vonHagen1975.html">von Hagen (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 301, 303, 306, 311, 313</td>
-      <td><span class="fa fa-map-marker"></span> location: West Indies</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_Indies.html">West Indies</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1528,7 +1559,7 @@
       <td><a href="../references/Fimpel1975.html">Fimpel (1975)</a></td>
       <td>&nbsp;</td>
       <td>text p. 173, 177, 181-183, 204</td>
-      <td><span class="fa fa-map-marker"></span> location: Brazil</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Brazil.html">Brazil</a></td>
       <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1692,6 +1723,36 @@
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Uca) maracoani maracoani</em></td>
+      <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138580]</td>
+      <td><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Gelasimus maracoani</em></td>
+      <td><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
     </table>
     <p>
     </p>
@@ -1700,7 +1761,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_oerstedi_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_oerstedi_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Aqua Fiddler Crab, Œrsted's Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_oerstedi.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Leptuca_oerstedi.html"><em class="species">Leptuca oerstedi</em></a>, <a href="names/Uca_Celuca_oerstedi.html"><em class="species">Uca (Celuca) oerstedi</em></a>, <a href="names/Uca_Leptuca_oerstedi.html"><em class="species">Uca (Leptuca) oerstedi</em></a>, <a href="names/Uca_Minuca_oerstedi.html"><em class="species">Uca (Minuca) oerstedi</em></a>, <a href="names/Uca_oerstedi.html"><em class="species">Uca oerstedi</em></a>, <a href="names/Uca__oe_rstedi.html"><em class="species">Uca œrstedi</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to Panama</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_oerstedi_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_oerstedi_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -172,18 +177,20 @@
 <a href="references/Crane1966.1.html">Crane (1966)</a>, 
 <a href="references/Crane1975.html">Crane (1975)</a>, 
 <a href="references/Green1961.html">Green (1961)</a>, 
+<a href="references/Hendrickx1995.html">Hendrickx (1995)</a>, 
 <a href="references/Neiman1997.html">Neiman &amp; Barnwell (1997)</a>, 
 <a href="references/Oliveira1939.1.html">Oliveira (1939)</a>, 
 <a href="references/Portell2012.html">Portell <em>et al.</em> (2012)</a>, 
 <a href="references/Rathbun1904.1.html">Rathbun (1904)</a>, 
-<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>      </p>
+<a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

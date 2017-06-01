@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca dussumieri_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -202,8 +224,8 @@
           ['1929', 1, 1],
           ['1930', 0, 0],
           ['1931', null, null],
-          ['1932', null, null],
-          ['1933', null, null],
+          ['1932', 0, 0],
+          ['1933', 1, 1],
           ['1934', 0, 0],
           ['1935', 1, 1],
           ['1936', 0, 0],
@@ -254,8 +276,8 @@
           ['1981', 0, 0],
           ['1982', 1, 1],
           ['1983', 0, 0],
-          ['1984', null, null],
-          ['1985', null, null],
+          ['1984', 1, 1],
+          ['1985', 0, 0],
           ['1986', null, null],
           ['1987', 0, 0],
           ['1988', 2, 2],
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -358,7 +389,7 @@
     <tr>
       <td><a href="../references/Doflein1899.html">Doflein (1899)</a></td>
       <td>text p. 193</td>
-      <td><span class="fa fa-flask"></span> specimen: Indian Ocean</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Indian_Ocean.html">Indian Ocean</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -425,7 +456,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Moresby, Papua New Guinea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Moresby_-_Papua_New_Guinea.html">Port Moresby, Papua New Guinea</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -433,7 +464,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Andai, New Guinea, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Andai_-_New_Guinea_-_Indonesia.html">Andai, New Guinea, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -441,7 +472,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cenderawasih Bay, New Guinea, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cenderawasih_Bay_-_New_Guinea_-_Indonesia.html">Cenderawasih Bay, New Guinea, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -449,7 +480,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Hula, Papua New Guinea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Hula_-_Papua_New_Guinea.html">Hula, Papua New Guinea</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -516,7 +547,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sarawak_-_Borneo_-_Malaysia.html">Sarawak, Borneo, Malaysia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -524,7 +555,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sibolga, Sumatra, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sibolga_-_Sumatra_-_Indonesia.html">Sibolga, Sumatra, Indonesia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -567,7 +598,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Singapore</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -578,7 +609,7 @@
     <tr>
       <td><a href="../references/Schenkel1902.html">Schenkel (1902)</a></td>
       <td>text p. 578, 580</td>
-      <td><span class="fa fa-flask"></span> specimen: Kema, Sulawesi, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kema_-_Sulawesi_-_Indonesia.html">Kema, Sulawesi, Indonesia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -629,7 +660,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samarinda, Borneo, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samarinda_-_Borneo_-_Indonesia.html">Samarinda, Borneo, Indonesia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -656,7 +687,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Curtis, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Curtis_-_Queensland_-_Australia.html">Port Curtis, Queensland, Australia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -697,7 +728,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Makassar, Sulawesi, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Makassar_-_Sulawesi_-_Indonesia.html">Makassar, Sulawesi, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -708,7 +739,7 @@
     <tr>
       <td><a href="../references/Roux1917.html">Roux (1917)</a></td>
       <td>text p. 614</td>
-      <td><span class="fa fa-map-marker"></span> location: Merauke, New Guinea, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Merauke_-_New_Guinea_-_Indonesia.html">Merauke, New Guinea, Indonesia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -735,7 +766,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Labuan Tereng, Lombok, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Labuan_Tereng_-_Lombok_-_Indonesia.html">Labuan Tereng, Lombok, Indonesia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -743,7 +774,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Labuan Bajo, Flores, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Labuan_Bajo_-_Flores_-_Indonesia.html">Labuan Bajo, Flores, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -770,7 +801,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Yap, Caroline Islands, Micronesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Yap_-_Caroline_Islands_-_Micronesia.html">Yap, Caroline Islands, Micronesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -789,7 +820,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Broome, Western Australia, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Broome_-_Western_Australia_-_Australia.html">Broome, Western Australia, Australia</a></td>
       <td><a href="../u_flammula.html"><em class="species">Uca flammula</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -800,7 +831,7 @@
     <tr>
       <td><a href="../references/Gee1925.html">Gee (1925)</a></td>
       <td>text p. 165</td>
-      <td><span class="fa fa-map-marker"></span> location: Macau, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Macau_-_China.html">Macau, China</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -808,7 +839,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: "Chin Bey", China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Chin_Bey_-_China.html">"Chin Bey", China</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -859,7 +890,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sumatra, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sumatra_-_Indonesia.html">Sumatra, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -867,7 +898,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Borneo</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Borneo.html">Borneo</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -878,9 +909,20 @@
     <tr>
       <td><a href="../references/Musgrave1929.html">Musgrave (1929)</a></td>
       <td>text p. 342</td>
-      <td><span class="fa fa-map-marker"></span> location: Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Queensland_-_Australia.html">Queensland, Australia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Pearse1933.html">Pearse (1933)</a></td>
+      <td>text p. 180</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pak_Nam_Pran_-_Thailand.html">Pak Nam Pran, Thailand</a></td>
+      <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
+      <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -921,7 +963,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Houtman Abrolhos</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Houtman_Abrolhos.html">Houtman Abrolhos</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -956,7 +998,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jolo, Sulu, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jolo_-_Sulu_-_Philippines.html">Jolo, Sulu, Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -964,7 +1006,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Mactan, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mactan_-_Philippines.html">Mactan, Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -972,7 +1014,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tamiso, Negros Occidental, Negros, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tamiso_-_Negros_Occidental_-_Negros_-_Philippines.html">Tamiso, Negros Occidental, Negros, Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -980,7 +1022,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cebu Province, Cebu, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cebu_Province_-_Cebu_-_Philippines.html">Cebu Province, Cebu, Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1040,7 +1082,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Labuan, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Labuan_-_Malaysia.html">Labuan, Malaysia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1048,7 +1090,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kuching, Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kuching_-_Sarawak_-_Borneo_-_Malaysia.html">Kuching, Sarawak, Borneo, Malaysia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1059,15 +1101,15 @@
     <tr>
       <td><a href="../references/Suvatti1950.html">Suvatti (1950)</a></td>
       <td>text p. 1, 153</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Pearse1933.html">Pearse (1933)</a></td>
-      <td>TBD</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Pearse1933.html">Pearse (1933)</a> → <em class="species">Uca dussumieri</em></td>
+      <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tha Chalom, Thailand</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tha_Chalom_-_Thailand.html">Tha Chalom, Thailand</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1078,7 +1120,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 71, 73, 78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Singapore</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1086,7 +1128,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sarawak_-_Borneo_-_Malaysia.html">Sarawak, Borneo, Malaysia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy, <a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1094,7 +1136,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1129,7 +1171,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1140,7 +1182,7 @@
     <tr>
       <td><a href="../references/Crosnier1965.html">Crosnier (1965)</a></td>
       <td>text p. 107, 112</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><a href="../references/Serene1973.3.html">Serène (1973)</a></td>
       <td>&nbsp;</td>
@@ -1186,7 +1228,7 @@
     <tr>
       <td><a href="../references/Macnae1966.html">Macnae (1966)</a></td>
       <td>text p. 79-80, 85, 89</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Australia.html">Eastern Australia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1208,7 +1250,7 @@
     <tr>
       <td><a href="../references/Macnae1967.html">Macnae (1967)</a></td>
       <td>text p. 434, 436</td>
-      <td><span class="fa fa-map-marker"></span> location: Townsville, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Townsville_-_Queensland_-_Australia.html">Townsville, Queensland, Australia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1219,7 +1261,7 @@
     <tr>
       <td><a href="../references/Macnae1968.html">Macnae (1968)</a></td>
       <td>text p. 105, 172, 179, 181, 202-205, 231-232</td>
-      <td><span class="fa fa-map-marker"></span> location: Western Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Western_Malaysia.html">Western Malaysia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1227,7 +1269,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Australia.html">Australia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1235,7 +1277,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1246,7 +1288,7 @@
     <tr>
       <td><a href="../references/McNeil1968.html">McNeill (1968)</a></td>
       <td>text p. 83</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Douglas, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Douglas_-_Queensland_-_Australia.html">Port Douglas, Queensland, Australia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1338,7 +1380,7 @@
     <tr>
       <td><a href="../references/Lundoer1974.html">Lundoer (1974)</a></td>
       <td>text p. 8</td>
-      <td><span class="fa fa-flask"></span> specimen: Phuket Island, Thailand</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Phuket_Island_-_Thailand.html">Phuket Island, Thailand</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>Could also be <em class="species">Uca paradussumieri.</em></td>
@@ -1349,7 +1391,7 @@
     <tr>
       <td><a href="../references/Sasekumar1974.html">Sasekumar (1974)</a></td>
       <td>text p. 58, 60-61, 63, 65, 68</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Klang, Selangor, Malaysia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Klang_-_Selangor_-_Malaysia.html">Port Klang, Selangor, Malaysia</a></td>
       <td><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -1427,7 +1469,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Northern Territory, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Northern_Territory_-_Australia.html">Northern Territory, Australia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1435,7 +1477,18 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Queensland, Australia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Queensland_-_Australia.html">Queensland, Australia</a></td>
+      <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Adirwiryono1984.html">Adirwiryono <em>et al.</em> (1984)</a></td>
+      <td>text p. 241, 244, 246-248</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanjung_Bungin_-_Lampung_-_Sumatra_-_Indonesia.html">Tanjung Bungin, Lampung, Sumatra, Indonesia</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1474,6 +1527,33 @@
       <td class="rowspacer" colspan="6">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 842, 844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Deltuca) dussumieri dussumieri</em></td>
+      <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 125711]</td>
+      <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Mesuca (Latuca) dussumieri</em></td>
+      <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Aoki2009.html">Aoki <em>et al.</em> (2009)</a></td>
       <td>text p. 12</td>
       <td>&nbsp;</td>
@@ -1500,7 +1580,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

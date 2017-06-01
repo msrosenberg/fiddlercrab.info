@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_bellator_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_bellator_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Australuca"><em class="species">Australuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Belligerent Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_bellator.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Gelasimus_bellator.html"><em class="species">Gelasimus bellator</em></a>, <a href="names/Gelasimus_signatus_var_angustifrons.html"><em class="species">Gelasimus signatus </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_Australuca_bellator.html"><em class="species">Uca (Australuca) bellator</em></a>, <a href="names/Uca_Australuca_bellator_bellator.html"><em class="species">Uca (Australuca) bellator bellator</em></a>, <a href="names/Uca_Uca_angustifrons.html"><em class="species">Uca (Uca) angustifrons</em></a>, <a href="names/Uca_angustifrons.html"><em class="species">Uca angustifrons</em></a>, <a href="names/Uca_bellator.html"><em class="species">Uca bellator</em></a>, <a href="names/Uca_forceps_var_angustifrons.html"><em class="species">Uca forceps </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_signata_var_angustifrons.html"><em class="species">Uca signata </em> var. <em class="species"> angustifrons</em></a>, <a href="names/Uca_signatus_var_angustifrons.html"><em class="species">Uca signatus </em> var. <em class="species"> angustifrons</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: Philippines, Malaysia, Indonesia</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_bellator_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_bellator_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -161,6 +166,7 @@
 <a href="references/MilneEdwards1854.2.html">Milne Edwards (1854)</a>, 
 <a href="references/Ortmann1897.html">Ortmann (1897)</a>, 
 <a href="references/Powers1975.2.html">Powers (1975)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Roux1917.html">Roux (1917)</a>, 
 <a href="references/Serene1973.3.html">Serène (1973)</a>, 
 <a href="references/Tweedie1950.1.html">Tweedie (1950)</a>, 
@@ -176,7 +182,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

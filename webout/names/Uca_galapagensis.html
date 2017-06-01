@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca galapagensis_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -349,7 +380,7 @@
       <td><a href="../references/Rathbun1902.3.html">Rathbun (1902)</a></td>
       <td>&nbsp;</td>
       <td>text p. 275-277; plate 12: figures 1-2</td>
-      <td><span class="fa fa-flask"></span> specimen: Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Galapagos_Islands.html">Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>type description</td>
@@ -370,7 +401,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio Zarumilla, Peru</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_Zarumilla_-_Peru.html">Rio Zarumilla, Peru</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -391,7 +422,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Galapagos_Islands.html">Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -400,7 +431,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Rio Zarumilla, Peru</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Rio_Zarumilla_-_Peru.html">Rio Zarumilla, Peru</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -430,7 +461,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Galapagos_Islands.html">Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -469,7 +500,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Baltra Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Baltra_Island_-_Galapagos_Islands.html">Baltra Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -478,7 +509,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santiago Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santiago_Island_-_Galapagos_Islands.html">Santiago Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -487,7 +518,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Eden Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Eden_Island_-_Galapagos_Islands.html">Eden Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -496,7 +527,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cocos Island, Costa Rica</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cocos_Island_-_Costa_Rica.html">Cocos Island, Costa Rica</a></td>
       <td><a href="../u_panamensis.html"><em class="species">Uca panamensis</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -508,7 +539,7 @@
       <td><a href="../references/Silvertsen1934.html">Sivertsen (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 20-21</td>
-      <td><span class="fa fa-map-marker"></span> location: Galápagos Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Galapagos_Islands.html">Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -517,7 +548,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Galápagos Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Galapagos_Islands.html">Galápagos Islands</a></td>
       <td><a href="../u_helleri.html"><em class="species">Uca helleri</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -538,7 +569,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santa Cruz Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santa_Cruz_Island_-_Galapagos_Islands.html">Santa Cruz Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -673,7 +704,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Floreana Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Floreana_Island_-_Galapagos_Islands.html">Floreana Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -682,7 +713,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santa Cruz Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santa_Cruz_Island_-_Galapagos_Islands.html">Santa Cruz Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -691,7 +722,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Baltra Island, Galápagos Islands</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Baltra_Island_-_Galapagos_Islands.html">Baltra Island, Galápagos Islands</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -703,7 +734,7 @@
       <td><a href="../references/Crane1947.html">Crane (1947)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -715,7 +746,7 @@
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 78, 80</td>
-      <td><span class="fa fa-map-marker"></span> location: Ecuador</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Ecuador.html">Ecuador</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -739,7 +770,7 @@
       <td><a href="../references/vonHagen1968.2.html">von Hagen (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 399, 403, 406, 408-409, 415-421, 425, 427, 429, 443-444, 446-447, 449, 451, 454-458, 460-463; figures 7-8</td>
-      <td><span class="fa fa-flask"></span> specimen: Peru</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Peru.html">Peru</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -862,7 +893,7 @@
       <td><a href="../references/Altevogt1972.html">Altevogt (1972)</a></td>
       <td>&nbsp;</td>
       <td>text p. 457</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -874,7 +905,7 @@
       <td><a href="../references/Brusca1980.html">Brusca (1980)</a></td>
       <td>&nbsp;</td>
       <td>text p. 295, 304</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_zacae.html"><em class="species">Uca zacae</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>Based on the description and geography, the best guess is that this is actually <em class="species">U. zacae.</em></td>
@@ -916,7 +947,7 @@
       <td><a href="../references/Barnwell1985.html">Barnwell &amp; Szelistowski (1985)</a></td>
       <td>&nbsp;</td>
       <td>text p. 85A</td>
-      <td><span class="fa fa-map-marker"></span> location: Río Lagarto, Costa Rica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Rio_Lagarto_-_Costa_Rica.html">Río Lagarto, Costa Rica</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -949,6 +980,54 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-850, 852, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Thurman1982.html">Thurman (1982)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Minuca) [galapagensis] galapagensis galapagensis</em></td>
+      <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138536]</td>
+      <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Planuca galapagensis</em></td>
+      <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Planuca macrodactyla</em></td>
+      <td>?</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a></td>
       <td>&nbsp;</td>
       <td>text p. 213-216, 218</td>
@@ -961,7 +1040,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Puerto El Morro, Ecuador</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Puerto_El_Morro_-_Ecuador.html">Puerto El Morro, Ecuador</a></td>
       <td><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -983,7 +1062,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

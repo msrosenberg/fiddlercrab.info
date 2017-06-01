@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca crenulata_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -271,15 +293,15 @@
           ['1998', null, null],
           ['1999', null, null],
           ['2000', 0, 0],
-          ['2001', 2, 2],
+          ['2001', 3, 3],
           ['2002', 0, 0],
           ['2003', 1, 1],
           ['2004', 1, 1],
           ['2005', 0, 0],
           ['2006', null, null],
           ['2007', null, null],
-          ['2008', null, null],
-          ['2009', 0, 0],
+          ['2008', 0, 0],
+          ['2009', 1, 1],
           ['2010', 1, 1],
           ['2011', 0, 0],
           ['2012', null, null],
@@ -333,6 +355,15 @@
         </ul>
       </nav>
     </header>
+
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
 
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
@@ -394,7 +425,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: San Diego to Baja California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Diego_to_Baja_California_-_Mexico.html">San Diego to Baja California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -418,7 +449,7 @@
       <td><a href="../references/Rathbun1904.2.html">Rathbun (1904)</a></td>
       <td>&nbsp;</td>
       <td>text p. 17, 190</td>
-      <td><span class="fa fa-map-marker"></span> location: San Diego to Baja California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Diego_to_Baja_California_-_Mexico.html">San Diego to Baja California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -511,7 +542,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Diego, California, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Diego_-_California_-_USA.html">San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -520,7 +551,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Todos Santos, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Todos_Santos_-_Baja_California_Sur_-_Mexico.html">Todos Santos, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -529,7 +560,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Santo Domingo, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Santo_Domingo_-_Baja_California_Sur_-_Mexico.html">Santo Domingo, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -538,7 +569,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Magdalena Bay, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Magdalena_Bay_-_Baja_California_Sur_-_Mexico.html">Magdalena Bay, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -547,7 +578,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: La Paz, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/La_Paz_-_Baja_California_Sur_-_Mexico.html">La Paz, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -556,7 +587,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Pichilinque, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Pichilinque_-_Baja_California_Sur_-_Mexico.html">Pichilinque, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -565,7 +596,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Luis Gonzales Bay, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Luis_Gonzales_Bay_-_Baja_California_Sur_-_Mexico.html">San Luis Gonzales Bay, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -574,7 +605,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: San Felipe Bay, Baja California, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/San_Felipe_Bay_-_Baja_California_-_Mexico.html">San Felipe Bay, Baja California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -583,7 +614,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Guaymas, Sonora, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Guaymas_-_Sonora_-_Mexico.html">Guaymas, Sonora, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -592,7 +623,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Mazatlán, Sinaloa, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Mazatlan_-_Sinaloa_-_Mexico.html">Mazatlán, Sinaloa, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -661,7 +692,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Magdalena Bay, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Magdalena_Bay_-_Baja_California_Sur_-_Mexico.html">Magdalena Bay, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -670,7 +701,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahía Agua Verde, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_Agua_Verde_-_Baja_California_Sur_-_Mexico.html">Bahía Agua Verde, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -679,7 +710,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahia de Concepcion, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_de_Concepcion_-_Baja_California_Sur_-_Mexico.html">Bahia de Concepcion, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -709,7 +740,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Isla Carmen, Gulf of California, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Isla_Carmen_-_Gulf_of_California_-_Mexico.html">Isla Carmen, Gulf of California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -718,7 +749,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Bahía de Tepoca, Sonora, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Bahia_de_Tepoca_-_Sonora_-_Mexico.html">Bahía de Tepoca, Sonora, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -727,7 +758,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Ballandra Bay, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Ballandra_Bay_-_Baja_California_Sur_-_Mexico.html">Ballandra Bay, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -739,7 +770,7 @@
       <td><a href="../references/Johnson1927.html">Johnson &amp; Snook (1927)</a></td>
       <td>fiddler crab</td>
       <td>text p. 400-402; figures 357-358</td>
-      <td><span class="fa fa-map-marker"></span> location: Mission Bay, San Diego, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mission_Bay_-_San_Diego_-_California_-_USA.html">Mission Bay, San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -769,7 +800,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Todos Santos, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Todos_Santos_-_Baja_California_Sur_-_Mexico.html">Todos Santos, Baja California Sur, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -820,7 +851,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tenacatita Bay, Jalisco, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tenacatita_Bay_-_Jalisco_-_Mexico.html">Tenacatita Bay, Jalisco, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -832,7 +863,7 @@
       <td><a href="../references/Jones1941.html">Jones (1941)</a></td>
       <td>&nbsp;</td>
       <td>text p. 79-81, 83-84, 86, 89-92</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_California_-_USA.html">Southern California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -844,7 +875,7 @@
       <td><a href="../references/Crane1947.html">Crane (1947)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89</td>
-      <td><span class="fa fa-map-marker"></span> location: Pacific coast of the Americas</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Pacific_coast_of_the_Americas.html">Pacific coast of the Americas</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -868,7 +899,7 @@
       <td><a href="../references/Sarkisian1957.html">Sarkisian (1957)</a></td>
       <td>&nbsp;</td>
       <td>text p. 35-38, 40, 46</td>
-      <td><span class="fa fa-map-marker"></span> location: Newport Bay, Newport Beach, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Newport_Bay_-_Newport_Beach_-_California_-_USA.html">Newport Bay, Newport Beach, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -904,7 +935,7 @@
       <td><a href="../references/Garth1960.html">Garth (1960)</a></td>
       <td>&nbsp;</td>
       <td>text p. 110-111</td>
-      <td><span class="fa fa-map-marker"></span> location: San Diego to Baja California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Diego_to_Baja_California_-_Mexico.html">San Diego to Baja California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -970,7 +1001,7 @@
       <td><a href="../references/Gross1961.html">Gross (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 290</td>
-      <td><span class="fa fa-map-marker"></span> location: San Diego, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Diego_-_California_-_USA.html">San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1024,7 +1055,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Newport Bay, Newport Beach, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Newport_Bay_-_Newport_Beach_-_California_-_USA.html">Newport Bay, Newport Beach, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1036,7 +1067,7 @@
       <td><a href="../references/Eberhardt1966.html">Eberhardt (1966)</a></td>
       <td>&nbsp;</td>
       <td>text p. 161</td>
-      <td><span class="fa fa-map-marker"></span> location: Laguna Guerrero Negro, Baja California Sur, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Laguna_Guerrero_Negro_-_Baja_California_Sur_-_Mexico.html">Laguna Guerrero Negro, Baja California Sur, Mexico</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1072,7 +1103,7 @@
       <td><a href="../references/Ricketts1968.html">Ricketts <em>et al.</em> (1968)</a></td>
       <td>fiddler crab; siho maneki</td>
       <td>text p. 307-311, 499; figure 223</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_California_-_USA.html">Southern California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1105,7 +1136,7 @@
       <td><a href="../references/Hinton1969.html">Hinton (1969)</a></td>
       <td>&nbsp;</td>
       <td>text p. 140-142; figure 198</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_California_-_USA.html">Southern California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1162,7 +1193,7 @@
       <td><a href="../references/Honegger1973.1.html">Honegger (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 19-30</td>
-      <td><span class="fa fa-map-marker"></span> location: Carlsbad, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Carlsbad_-_California_-_USA.html">Carlsbad, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1201,7 +1232,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Carlsbad, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Carlsbad_-_California_-_USA.html">Carlsbad, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1225,7 +1256,7 @@
       <td><a href="../references/Brusca1973.html">Brusca (1973)</a></td>
       <td>&nbsp;</td>
       <td>text p. 263-265; figure 7.58</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1348,7 +1379,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Carlsbad, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Carlsbad_-_California_-_USA.html">Carlsbad, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1360,7 +1391,7 @@
       <td><a href="../references/Allen1976.html">Allen (1976)</a></td>
       <td>Southern California Fiddler Crab</td>
       <td>text p. 9, 39, 240, 252-253; figure 393</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_California_-_USA.html">Southern California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1450,7 +1481,7 @@
       <td><a href="../references/Headstrom1979.html">Headstrom (1979)</a></td>
       <td>&nbsp;</td>
       <td>text p. 48</td>
-      <td><span class="fa fa-map-marker"></span> location: San Diego, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/San_Diego_-_California_-_USA.html">San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1462,7 +1493,7 @@
       <td><a href="../references/Brusca1980.html">Brusca (1980)</a></td>
       <td>&nbsp;</td>
       <td>text p. 292-293, 295, 303-304; figure 20.14</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of California, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_California_-_Mexico.html">Gulf of California, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1492,7 +1523,7 @@
       <td><a href="../references/Green1980.html">Green (1980)</a></td>
       <td>&nbsp;</td>
       <td>text p. 957</td>
-      <td><span class="fa fa-map-marker"></span> location: Puerto Peñasco, Sonora, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Puerto_Penasco_-_Sonora_-_Mexico.html">Puerto Peñasco, Sonora, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1570,7 +1601,7 @@
       <td><a href="../references/Naiditch2001.html">Naiditch <em>et al.</em> (2001)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1535</td>
-      <td><span class="fa fa-map-marker"></span> location: Santiago Bay, Manzanillo, Colima, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santiago_Bay_-_Manzanillo_-_Colima_-_Mexico.html">Santiago Bay, Manzanillo, Colima, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1582,7 +1613,28 @@
       <td><a href="../references/Neuffer2001.html">Neuffer <em>et al.</em> (2001)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1538</td>
-      <td><span class="fa fa-map-marker"></span> location: Santiago Bay, Manzanillo, Colima, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Santiago_Bay_-_Manzanillo_-_Colima_-_Mexico.html">Santiago Bay, Manzanillo, Colima, Mexico</a></td>
+      <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 843, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) [crenulata] crenulata crenulata</em></td>
+      <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Catalina_Island_-_San_Diego_-_California_-_USA.html">Catalina Island, San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1594,7 +1646,7 @@
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Mission Bay, San Diego, California, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mission_Bay_-_San_Diego_-_California_-_USA.html">Mission Bay, San Diego, California, USA</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1615,10 +1667,22 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 900</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Lichtwardt2001.html">Lichtwardt <em>et al.</em> (2001)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/McDermott2010.html">McDermott &amp; Pope (2010)</a></td>
       <td>&nbsp;</td>
       <td>text p. e266</td>
-      <td><span class="fa fa-map-marker"></span> location: Sonora, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sonora_-_Mexico.html">Sonora, Mexico</a></td>
       <td><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1631,7 +1695,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

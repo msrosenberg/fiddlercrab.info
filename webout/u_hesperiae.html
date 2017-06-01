@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_hesperiae_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_hesperiae_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Gelasimus"><em class="species">Gelasimus</em></a></dd>
        <dt>Common Names</dt>
          <dd>Western Calling Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_hesperiae.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Uca_Gelasimus_hesperiae.html"><em class="species">Uca (Gelasimus) hesperiae</em></a>, <a href="names/Uca_Thalassuca_vocans_hesperiae.html"><em class="species">Uca (Thalassuca) vocans hesperiae</em></a>, <a href="names/Uca_hesperiae.html"><em class="species">Uca hesperiae</em></a>, <a href="names/Uca_vocans_hesperiae.html"><em class="species">Uca vocans hesperiae</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Indo-West Pacific: South Africa to Somalia, Southern India, Burma, Thailand, Western Indonesia, Western Malaysia</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_hesperiae_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_hesperiae_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -174,6 +179,7 @@
       <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
       <p>
 <a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/AlGhais1996.html">Al-Ghais &amp; Cooper (1996)</a>, 
 <a href="references/Altevogt1955.2.html">Altevogt (1955)</a>, 
 <a href="references/Altevogt1955.1.html">Altevogt (1955)</a>, 
 <a href="references/Altevogt1956.1.html">Altevogt (1956)</a>, 
@@ -214,6 +220,7 @@
 <a href="references/Hyatt1973.html">Hyatt (1973)</a>, 
 <a href="references/Hyatt1975.html">Hyatt (1975)</a>, 
 <a href="references/Jansen1970.html">Jansen (1970)</a>, 
+<a href="references/Jaroensutasinee2002.html">Jaroensutasinee &amp; Tantichodok (2002)</a>, 
 <a href="references/Kalik1958.2.html">Kalik (1958)</a>, 
 <a href="references/Kalik1958.1.html">Kalik (1958)</a>, 
 <a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
@@ -236,6 +243,7 @@
 <a href="references/Peters1955.html">Peters (1955)</a>, 
 <a href="references/Pillai1951.html">Pillai (1951)</a>, 
 <a href="references/Richters1880.html">Richters (1880)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Salmon1965.html">Salmon (1965)</a>, 
 <a href="references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a>, 
 <a href="references/Sankarankutty1961.html">Sankarankutty (1961)</a>, 
@@ -243,6 +251,7 @@
 <a href="references/Schone1963.html">Schöne &amp; Schöne (1963)</a>, 
 <a href="references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="references/Stebbing1921.html">Stebbing (1921)</a>, 
+<a href="references/Templeton2017.html">Templeton (2017)</a>, 
 <a href="references/vonHagen1962.1.html">von Hagen (1962)</a>, 
 <a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
 <a href="references/vonHagen1970.3.html">von Hagen (1970)</a>, 
@@ -257,7 +266,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

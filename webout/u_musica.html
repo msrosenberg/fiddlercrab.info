@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_musica_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_musica_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Leptuca"><em class="species">Leptuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>Musical Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
-         <dd><em class="species"><a href="names/Uca_Celuca_musica_musica.html"><em class="species">Uca (Celuca) musica musica</em></a>, <a href="names/Uca_Leptuca_musica.html"><em class="species">Uca (Leptuca) musica</em></a>, <a href="names/Uca_musica.html"><em class="species">Uca musica</em></a>, <a href="names/Uca_musica_musica.html"><em class="species">Uca musica musica</em></a></em></dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_musica.html">Chronology</a>)</dt>
+         <dd><em class="species"><a href="names/Uca_Celuca_musica_musica.html"><em class="species">Uca (Celuca) musica musica</em></a>, <a href="names/Uca_Leptuca_musica.html"><em class="species">Uca (Leptuca) musica</em></a>, <a href="names/Uca_Leptuca_musica_musica.html"><em class="species">Uca (Leptuca) musica musica</em></a>, <a href="names/Uca_musica.html"><em class="species">Uca musica</em></a>, <a href="names/Uca_musica_musica.html"><em class="species">Uca musica musica</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: Gulf of California, Mexico (Nayarit to Baja California)</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_musica_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_musica_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -144,6 +149,9 @@
 <a href="references/GuinotDumortier1960.html">Guinot-Dumortier &amp; Dumortier (1960)</a>, 
 <a href="references/Harris1998.html">Harris <em>et al.</em> (1998)</a>, 
 <a href="references/Headstrom1979.html">Headstrom (1979)</a>, 
+<a href="references/Hendrickx1979.html">Hendrickx (1979)</a>, 
+<a href="references/Hendrickx1984.html">Hendrickx (1984)</a>, 
+<a href="references/Hendrickx1995.html">Hendrickx (1995)</a>, 
 <a href="references/Johnson1927.html">Johnson &amp; Snook (1927)</a>, 
 <a href="references/Kaufmann1985.html">Kaufmann &amp; Barnwell (1985)</a>, 
 <a href="references/Lockington1877.2.html">Lockington (1877)</a>, 
@@ -156,6 +164,7 @@
 <a href="references/Rathbun1915.html">Rathbun (1915)</a>, 
 <a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
 <a href="references/Rathbun1924.4.html">Rathbun (1924)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a>, 
 <a href="references/Schmitt1921.html">Schmitt (1921)</a>, 
 <a href="references/Streets1877.html">Streets (1877)</a>, 
@@ -167,7 +176,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

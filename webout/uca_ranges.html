@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/uca_all_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/uca_all_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -53,17 +56,24 @@
     </div>
     <header id="uca_ranges.html">
       <h1 class="bookmark1">Geographic Ranges</h1>
+      <nav>
+        <ul>
+          <li><a href="locations\index.html"><span class="fa fa-list"></span> Location Index</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="topspsection">
       <div class="map_section">
         <div id="range_map_canvas"></div>
+        <div id="point_map_canvas"></div>
         <div class="map_download">
           <a href="maps/uca_all_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+          <a href="maps/uca_all_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
         </div>
       </div>
       <p>
-        The first map shows the approximate density of species richness, with denser color where more species are found. 
+        The first map shows the approximate density of species richness, with denser color where more species are found. The second map shows approximate point locations where fiddler crabs have been recorded in the scientific record. Red markers indicate points where fiddler crabs are found; blue indicate false location records. See the <a href="locations/index.html">location index</a> for a full list of all point locations.
       </p>
       <p>
         Specific ranges for a species or name can be found on its associated pages. The list below sorts the species by major geographic region.
@@ -201,7 +211,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

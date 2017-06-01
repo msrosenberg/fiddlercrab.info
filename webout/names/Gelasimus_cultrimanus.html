@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Gelasimus cultrimanus_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -347,7 +378,7 @@
     <tr>
       <td><a href="../references/White1847.1.html">White (1847)</a></td>
       <td>text p. 35</td>
-      <td><span class="fa fa-flask"></span> specimen: Philippines</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -369,7 +400,7 @@
     <tr>
       <td><a href="../references/Adams1848.html">Adams &amp; White (1848)</a></td>
       <td>text p. 49</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -455,7 +486,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -463,7 +494,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Moreton Bay, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Moreton_Bay_-_Queensland_-_Australia.html">Moreton Bay, Queensland, Australia</a></td>
       <td><a href="../u_vomeris.html"><em class="species">Uca vomeris</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -471,7 +502,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Malabar coast, India</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Malabar_coast_-_India.html">Malabar coast, India</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -479,7 +510,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Java_-_Indonesia.html">Java, Indonesia</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -487,7 +518,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Nicobar Islands</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nicobar_Islands.html">Nicobar Islands</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -495,7 +526,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tanzania.html">Tanzania</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -503,7 +534,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: New Caledonia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/New_Caledonia.html">New Caledonia</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>Could be <em class="species">Uca vomeris</em> or <em class="species">U. jocelynae.</em></td>
@@ -514,7 +545,7 @@
     <tr>
       <td><a href="../references/Cano1889.1.html">Cano (1889)</a></td>
       <td>text p. 103</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -549,7 +580,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -632,7 +663,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Indian Ocean</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Indian_Ocean.html">Indian Ocean</a></td>
       <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -640,7 +671,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Fiji</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Fiji.html">Fiji</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -648,7 +679,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -656,7 +687,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Luzon, Philippines</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Luzon_-_Philippines.html">Luzon, Philippines</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -664,7 +695,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: South Sea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/South_Sea.html">South Sea</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -672,7 +703,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Northeastern Papua New Guinea</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Northeastern_Papua_New_Guinea.html">Northeastern Papua New Guinea</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>Could be <em class="species">Uca vomeris</em> or <em class="species">U. jocelynae.</em></td>
@@ -680,7 +711,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Singapore</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Singapore.html">Singapore</a></td>
       <td><a href="../u_vocans.html"><em class="species">Uca vocans</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy</td>
       <td>&nbsp;</td>
@@ -691,7 +722,7 @@
     <tr>
       <td><a href="../references/Ortmann1894.2.html">Ortmann (1894)</a></td>
       <td>text p. 7, 58-59, 67</td>
-      <td><span class="fa fa-map-marker"></span> location: Dar es Salaam, Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Dar_es_Salaam_-_Tanzania.html">Dar es Salaam, Tanzania</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -699,7 +730,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Kilwa-Kiwindje, Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Kilwa-Kiwindje_-_Tanzania.html">Kilwa-Kiwindje, Tanzania</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -707,7 +738,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Lindi, Tanzania</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Lindi_-_Tanzania.html">Lindi, Tanzania</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -726,7 +757,7 @@
     <tr>
       <td><a href="../references/Thompson1901.html">Thompson (1901)</a></td>
       <td>text p. 5</td>
-      <td><span class="fa fa-flask"></span> specimen: Samoa</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Samoa.html">Samoa</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -734,7 +765,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Fiji</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Fiji.html">Fiji</a></td>
       <td><a href="../u_excisa.html"><em class="species">Uca excisa</em></a></td>
       <td><span class="fa fa-exchange"></span> Synonymy/<br /><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -742,7 +773,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Japan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Japan.html">Japan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -755,7 +786,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

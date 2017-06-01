@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_herradurensis_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_herradurensis_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Minuca"><em class="species">Minuca</em></a></dd>
        <dt>Common Names</dt>
          <dd>La Herradura Fiddler Crab</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_herradurensis.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Minuca_herradurensis.html"><em class="species">Minuca herradurensis</em></a>, <a href="names/Uca_Minuca__galapagensis__galapagensis_herradurensis.html"><em class="species">Uca (Minuca) [galapagensis] galapagensis herradurensis</em></a>, <a href="names/Uca_Minuca_galapagensis_herradurensis.html"><em class="species">Uca (Minuca) galapagensis herradurensis</em></a>, <a href="names/Uca_Minuca_glabromana_herradurensis.html"><em class="species">Uca (Minuca) glabromana herradurensis</em></a>, <a href="names/Uca_Minuca_herradurensis.html"><em class="species">Uca (Minuca) herradurensis</em></a>, <a href="names/Uca_Minuca_macrodactyla_glabromana.html"><em class="species">Uca (Minuca) macrodactyla glabromana</em></a>, <a href="names/Uca_galapagensis_herradurensis.html"><em class="species">Uca galapagensis herradurensis</em></a>, <a href="names/Uca_herradurensis.html"><em class="species">Uca herradurensis</em></a>, <a href="names/Uca_macrodactyla_glabromana.html"><em class="species">Uca macrodactyla glabromana</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Pacific: El Salvador to Panama (possibly Mexico)</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_herradurensis_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_herradurensis_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -147,11 +152,14 @@
 <a href="references/Fingerman1988.html">Fingerman (1988)</a>, 
 <a href="references/Garth1957.html">Garth (1957)</a>, 
 <a href="references/Glassell1934.html">Glassell (1934)</a>, 
+<a href="references/Hendrickx1979.html">Hendrickx (1979)</a>, 
+<a href="references/Hendrickx1995.html">Hendrickx (1995)</a>, 
 <a href="references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a>, 
 <a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
 <a href="references/Peters1955.html">Peters (1955)</a>, 
 <a href="references/Rao1985.2.html">Rao (1985)</a>, 
 <a href="references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Thurman1981.1.html">Thurman (1981)</a>, 
 <a href="references/vonHagen1968.2.html">von Hagen (1968)</a>, 
 <a href="references/vonHagen1970.1.html">von Hagen (1970)</a>, 
@@ -162,7 +170,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

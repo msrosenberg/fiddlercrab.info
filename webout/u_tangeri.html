@@ -41,6 +41,9 @@
         var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
         var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tangeri_range_map.kmz",{suppressInfoWindows: true});
         range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_tangeri_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
       }
     </script>
   </head>
@@ -82,14 +85,16 @@
          <dd><a href="uca_systematics.html#Afruca"><em class="species">Afruca</em></a></dd>
        <dt>Common Names</dt>
          <dd>West African Fiddler Crab; European Fiddler Crab; Barrilete</dd>
-       <dt>Synonyms, Alternate Spellings, &amp; Name Forms</dt>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_tangeri.html">Chronology</a>)</dt>
          <dd><em class="species"><a href="names/Gelasimus_atlanticus.html"><em class="species">Gelasimus atlanticus</em></a>, <a href="names/Gelasimus_cimatodus.html"><em class="species">Gelasimus cimatodus</em></a>, <a href="names/Gelasimus_perlatus.html"><em class="species">Gelasimus perlatus</em></a>, <a href="names/Gelasimus_Tangeri.html"><em class="species">Gelasimus Tangeri</em></a>, <a href="names/Gelasimus_Tangerii.html"><em class="species">Gelasimus Tangerii</em></a>, <a href="names/Gelasimus_tangieri.html"><em class="species">Gelasimus tangieri</em></a>, <a href="names/Uca_Afruca_tangeri.html"><em class="species">Uca (Afruca) tangeri</em></a>, <a href="names/Uca_Gelasimus_Tangeri.html"><em class="species">Uca (Gelasimus) Tangeri</em></a>, <a href="names/Uca_Minuca_tangeri.html"><em class="species">Uca (Minuca) tangeri</em></a>, <a href="names/Uca_Uca_tangeri.html"><em class="species">Uca (Uca) tangeri</em></a>, <a href="names/Uca_tangari.html"><em class="species">Uca tangari</em></a>, <a href="names/Uca_tangeri.html"><em class="species">Uca tangeri</em></a>, <a href="names/Uca_tangeri_var_matandensis.html"><em class="species">Uca tangeri </em> var. <em class="species"> matandensis</em></a>, <a href="names/Uca_tangieri.html"><em class="species">Uca tangieri</em></a></em></dd>
        <dt class="pagebreak">Geographic Range</dt>
          <dd>Eastern Atlantic: Southern Spain and Portugal through the west coast of Africa, down to Angola (~16° S)</dd>
          <dd>
            <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
            <div class="map_download">
              <a href="maps/u_tangeri_range_map.svg"><span class="fa fa-download"></span> Download SVG line map of ranges.</a> 
+             <a href="maps/u_tangeri_point_map.svg"><span class="fa fa-download"></span> Download SVG line map of point locations.</a>
            </div>
          </dd>
          <dd class="map_data">
@@ -240,6 +245,7 @@
 <a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
 <a href="references/Benedict1893.html">Benedict (1893)</a>, 
 <a href="references/Benedict1894.html">Benedict (1894)</a>, 
+<a href="references/Biljlsma1991.html">Biljlsma &amp; de Roder (1991)</a>, 
 <a href="references/Bolivar1892.html">Bolivar (1892)</a>, 
 <a href="references/Bosc1802.html">Bosc (1802)</a>, 
 <a href="references/Bosc1830.html">Bosc (1830)</a>, 
@@ -297,6 +303,7 @@
 <a href="references/Hediger1934.1.html">Hediger (1934)</a>, 
 <a href="references/Hediger1934.2.html">Hediger (1934)</a>, 
 <a href="references/Heller1863.html">Heller (1863)</a>, 
+<a href="references/Hendrickx1984.html">Hendrickx (1984)</a>, 
 <a href="references/Herbst1782.html">Herbst (1782)</a>, 
 <a href="references/Herbst1790.2.html">Herbst (1790)</a>, 
 <a href="references/Herbst1799.html">Herbst (1799)</a>, 
@@ -347,6 +354,7 @@
 <a href="references/Monod1933.html">Monod (1933)</a>, 
 <a href="references/Monod1956.html">Monod (1956)</a>, 
 <a href="references/Monod1959.html">Monod &amp; Nicou (1959)</a>, 
+<a href="references/Mourente1994.html">Mourente <em>et al.</em> (1994)</a>, 
 <a href="references/Neumann1878.html">Neumann (1878)</a>, 
 <a href="references/Nicou1959.html">Nicou (1959)</a>, 
 <a href="references/Nicou1960.html">Nicou (1960)</a>, 
@@ -390,6 +398,7 @@
 <a href="references/Rathbun1921.3.html">Rathbun (1921)</a>, 
 <a href="references/Rathbun1924.2.html">Rathbun (1924)</a>, 
 <a href="references/Rochebrune1883.html">Rochebrune (1883)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
 <a href="references/Rossignol1957.html">Rossignol (1957)</a>, 
 <a href="references/Roux1927.html">Roux (1927)</a>, 
 <a href="references/Salmon1965.html">Salmon (1965)</a>, 
@@ -428,14 +437,20 @@
 <a href="references/Yamaghuchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a>, 
 <a href="references/Young1900.html">Young (1900)</a>, 
 <a href="references/Zucker1973.html">Zucker (1973)</a>, 
-<a href="references/Zwarts1984.html">Zwarts (1984)</a>      </p>
+<a href="references/Zwarts1984.html">Zwarts (1984)</a>, 
+<a href="references/Zwarts1985.html">Zwarts (1985)</a>, 
+<a href="references/Zwarts1988.html">Zwarts (1988)</a>, 
+<a href="references/Zwarts1990.1.html">Zwarts (1990)</a>, 
+<a href="references/Zwarts1990.2.html">Zwarts &amp; Blomert (1990)</a>, 
+<a href="references/Zwarts1989.html">Zwarts &amp; Dirksen (1989)</a>, 
+<a href="references/Zwarts1990.3.html">Zwarts &amp; Dirksen (1990)</a>      </p>
     </section>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

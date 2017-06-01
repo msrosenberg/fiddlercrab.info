@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca speciosa_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -271,7 +293,7 @@
           ['1998', null, null],
           ['1999', null, null],
           ['2000', 0, 0],
-          ['2001', 1, 1],
+          ['2001', 2, 2],
           ['2002', 0, 0],
           ['2003', 1, 1],
           ['2004', 1, 1],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -385,7 +416,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cocoanut Grove, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cocoanut_Grove_-_Florida_-_USA.html">Cocoanut Grove, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -393,7 +424,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Cards Sound, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Cards_Sound_-_Florida_-_USA.html">Cards Sound, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -401,7 +432,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Vaca Key, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Vaca_Key_-_Florida_-_USA.html">Vaca Key, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -409,7 +440,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Key West, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Key_West_-_Florida_-_USA.html">Key West, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -417,7 +448,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sarasota Bay, Florida, USA</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sarasota_Bay_-_Florida_-_USA.html">Sarasota Bay, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -425,7 +456,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a></td>
       <td>&nbsp;</td>
@@ -444,7 +475,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -474,7 +505,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Casitas, Veracruz, Mexico</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Casitas_-_Veracruz_-_Mexico.html">Casitas, Veracruz, Mexico</a></td>
       <td><a href="../u_marguerita.html"><em class="species">Uca marguerita</em></a></td>
       <td><a href="../references/Thurman1981.1.html">Thurman (1981)</a></td>
       <td>&nbsp;</td>
@@ -485,7 +516,7 @@
     <tr>
       <td><a href="../references/Wass1955.html">Wass (1955)</a></td>
       <td>text p. 137, 166</td>
-      <td><span class="fa fa-map-marker"></span> location: Alligator Harbor, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Alligator_Harbor_-_Florida_-_USA.html">Alligator Harbor, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -496,7 +527,7 @@
     <tr>
       <td><a href="../references/Fingerman1956.1.html">Fingerman (1956)</a></td>
       <td>text p. 275, 278-279, 281-289</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf coast Research Laboratory, Ocean Springs, Mississippi, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_coast_Research_Laboratory_-_Ocean_Springs_-_Mississippi_-_USA.html">Gulf coast Research Laboratory, Ocean Springs, Mississippi, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -507,7 +538,7 @@
     <tr>
       <td><a href="../references/Tashian1956.html">Tashian (1956)</a></td>
       <td>text p. 43</td>
-      <td><span class="fa fa-map-marker"></span> location: Key Biscayne, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Key_Biscayne_-_Florida_-_USA.html">Key Biscayne, Florida, USA</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -529,7 +560,7 @@
     <tr>
       <td><a href="../references/Crane1957.html">Crane (1957)</a></td>
       <td>text p. 79-80</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -595,7 +626,7 @@
     <tr>
       <td><a href="../references/Holthuis1959.1.html">Holthuis (1959)</a></td>
       <td>text p. 277</td>
-      <td><span class="fa fa-map-marker"></span> location: Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -666,7 +697,7 @@
     <tr>
       <td><a href="../references/Tabb1961.html">Tabb &amp; Manning (1961)</a></td>
       <td>text p. 602</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern Floriday Bay, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_Floriday_Bay_-_Florida_-_USA.html">Northern Floriday Bay, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -726,7 +757,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -770,7 +801,7 @@
     <tr>
       <td><a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a></td>
       <td>text p. 460</td>
-      <td><span class="fa fa-map-marker"></span> location: East coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/East_coast_of_Florida_-_USA.html">East coast of Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -800,7 +831,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern coast of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_coast_of_Mexico.html">Eastern coast of Mexico</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -808,7 +839,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -816,7 +847,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jamaica</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jamaica.html">Jamaica</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -824,7 +855,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -862,7 +893,7 @@
     <tr>
       <td><a href="../references/vonHagen1970.1.html">von Hagen (1970)</a></td>
       <td>text p. 218, 222, 224, 227-228, 230-233</td>
-      <td><span class="fa fa-flask"></span> specimen: Curaçao</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -954,7 +985,7 @@
     <tr>
       <td><a href="../references/Spaargaren1975.html">Spaargaren (1975)</a></td>
       <td>text p. 275-279, 281</td>
-      <td><span class="fa fa-map-marker"></span> location: Curaçao</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Curacao.html">Curaçao</a></td>
       <td>?</td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>It is not clear what species they studied, but this is well outside the accepted range of <em class="species">Uca speciosa.</em> Perhaps <em class="species">U. cumulanta</em> or <em class="species">U. leptodactyla.</em></td>
@@ -965,7 +996,7 @@
     <tr>
       <td><a href="../references/Greenspan1975.html">Greenspan (1975)</a></td>
       <td>text p. 30, 69</td>
-      <td><span class="fa fa-map-marker"></span> location: Placida, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Placida_-_Florida_-_USA.html">Placida, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -976,7 +1007,7 @@
     <tr>
       <td><a href="../references/Subrahmanyam1976.html">Subrahmanyam <em>et al.</em> (1976)</a></td>
       <td>text p. 184</td>
-      <td><span class="fa fa-map-marker"></span> location: Northwestern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northwestern_Florida_-_USA.html">Northwestern Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -987,7 +1018,7 @@
     <tr>
       <td><a href="../references/Heard1976.html">Heard (1976)</a></td>
       <td>text p. 9, 11, 23, 122</td>
-      <td><span class="fa fa-map-marker"></span> location: Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Gulf_of_Mexico.html">Gulf of Mexico</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -998,7 +1029,7 @@
     <tr>
       <td><a href="../references/Weis1977.1.html">Weis (1977)</a></td>
       <td>text p. 263-266, 269-270, 272-273</td>
-      <td><span class="fa fa-map-marker"></span> location: Boca Raton, Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Boca_Raton_-_Florida_-_USA.html">Boca Raton, Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1057,7 +1088,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Florida_-_USA.html">Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1065,7 +1096,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Cuba</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Cuba.html">Cuba</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1073,7 +1104,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern Yucatan Peninsula, Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_Yucatan_Peninsula_-_Mexico.html">Northeastern Yucatan Peninsula, Mexico</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1156,7 +1187,7 @@
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northeastern Gulf of Mexico</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northeastern_Gulf_of_Mexico.html">Northeastern Gulf of Mexico</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1244,7 +1275,26 @@
     <tr>
       <td><a href="../references/Thurman2001.1.html">Thurman (2001)</a></td>
       <td>text p. 1607</td>
-      <td><span class="fa fa-map-marker"></span> location: West coast of Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/West_coast_of_Florida_-_USA.html">West coast of Florida, USA</a></td>
+      <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>text p. 843, 849-850, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) [crenulata] speciosa speciosa</em></td>
+      <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 138824]</td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1255,7 +1305,7 @@
     <tr>
       <td><a href="../references/McFaddon2003.html">McFadden &amp; Thurman (2003)</a></td>
       <td>text p. 1044</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern Florida, USA</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_Florida_-_USA.html">Southern Florida, USA</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1277,7 +1327,7 @@
     <tr>
       <td><a href="../references/Thurman2007.html">Thurman <em>et al.</em> (2007)</a></td>
       <td>text p. e234</td>
-      <td><span class="fa fa-map-marker"></span> location: Caribbean Sea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Caribbean_Sea.html">Caribbean Sea</a></td>
       <td><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1290,7 +1340,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

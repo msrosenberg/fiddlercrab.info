@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca urvillei_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -270,9 +292,9 @@
           ['1997', null, null],
           ['1998', null, null],
           ['1999', null, null],
-          ['2000', null, null],
-          ['2001', null, null],
-          ['2002', null, null],
+          ['2000', 0, 0],
+          ['2001', 1, 1],
+          ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
           ['2005', 0, 0],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -349,7 +380,7 @@
       <td><a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1198, 1202</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Africa.html">Eastern Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -370,7 +401,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Maluku Islands, Indonesia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Maluku_Islands_-_Indonesia.html">Maluku Islands, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -406,7 +437,7 @@
       <td><a href="../references/Verwey1930.html">Verwey (1930)</a></td>
       <td>&nbsp;</td>
       <td>text p. 173, 175, 177-178, 188</td>
-      <td><span class="fa fa-map-marker"></span> location: Eastern Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Eastern_Java_-_Indonesia.html">Eastern Java, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -415,7 +446,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Jakarta, Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Jakarta_-_Java_-_Indonesia.html">Jakarta, Java, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -424,7 +455,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern/Central Java, Indonesia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern-Central_Java_-_Indonesia.html">Southern/Central Java, Indonesia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -454,7 +485,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td><a href="../u_dussumieri.html"><em class="species">Uca dussumieri</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -466,7 +497,7 @@
       <td><a href="../references/Vatova1943.html">Vatova (1943)</a></td>
       <td>&nbsp;</td>
       <td>text p. 9, 25; plate 3: figure 1</td>
-      <td><span class="fa fa-map-marker"></span> location: Giumbo, Somalia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Giumbo_-_Somalia.html">Giumbo, Somalia</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -550,7 +581,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -562,7 +593,7 @@
       <td><a href="../references/Fourmanoir1953.html">Fourmanoir (1953)</a></td>
       <td>&nbsp;</td>
       <td>text p. 89-90</td>
-      <td><span class="fa fa-map-marker"></span> location: Majunga, Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Majunga_-_Madagascar.html">Majunga, Madagascar</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -574,7 +605,7 @@
       <td><a href="../references/Gordon1955.html">Gordon (1955)</a></td>
       <td>&nbsp;</td>
       <td>text p. 356</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -586,7 +617,7 @@
       <td><a href="../references/Day1956.html">Day &amp; Morgans (1956)</a></td>
       <td>&nbsp;</td>
       <td>text p. 277-278, 305</td>
-      <td><span class="fa fa-map-marker"></span> location: Durban Bay, South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Durban_Bay_-_South_Africa.html">Durban Bay, South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -610,7 +641,7 @@
       <td><a href="../references/Gordon1958.html">Gordon (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 238</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -622,7 +653,7 @@
       <td><a href="../references/Macnae1958.html">Macnae &amp; Kalk (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 119, 125</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -634,7 +665,7 @@
       <td><a href="../references/Kalik1958.1.html">Kalik (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 41</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -646,7 +677,7 @@
       <td><a href="../references/Kalik1958.2.html">Kalik (1958)</a></td>
       <td>&nbsp;</td>
       <td>text p. 67, 69, 81</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -676,7 +707,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -688,7 +719,7 @@
       <td><a href="../references/Edney1961.html">Edney (1961)</a></td>
       <td>&nbsp;</td>
       <td>text p. 71-74, 76-82, 85</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -700,7 +731,7 @@
       <td><a href="../references/Edney1962.html">Edney (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 80-81</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -712,7 +743,7 @@
       <td><a href="../references/Macnae1962.html">Macnae &amp; Kalk (1962)</a></td>
       <td>&nbsp;</td>
       <td>text p. 27, 30, 32; plate 1</td>
-      <td><span class="fa fa-map-marker"></span> location: Inhaca Island, Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Inhaca_Island_-_Mozambique.html">Inhaca Island, Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -724,7 +755,7 @@
       <td><a href="../references/Macnae1963.html">Macnae (1963)</a></td>
       <td>&nbsp;</td>
       <td>text p. 5-7, 12, 14, 19-20, 23</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -748,7 +779,7 @@
       <td><a href="../references/Crosnier1965.html">Crosnier (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 106-107, 110-112; figures 186, 191-193, 195-186</td>
-      <td><span class="fa fa-map-marker"></span> location: Madagascar</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Madagascar.html">Madagascar</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -838,7 +869,7 @@
       <td><a href="../references/Macnae1968.html">Macnae (1968)</a></td>
       <td>&nbsp;</td>
       <td>text p. 105, 181, 202-205, 209-210, 225, 232</td>
-      <td><span class="fa fa-map-marker"></span> location: Mozambique</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mozambique.html">Mozambique</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -892,7 +923,7 @@
       <td><a href="../references/Day1969.html">Day (1969)</a></td>
       <td>Fiddler-crab</td>
       <td>text p. 113</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1015,7 +1046,7 @@
       <td><a href="../references/Lehmann1974.html">Lehmann <em>et al.</em> (1974)</a></td>
       <td>&nbsp;</td>
       <td>text p. 187, 189</td>
-      <td><span class="fa fa-map-marker"></span> location: Mombasa, Kenya</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Mombasa_-_Kenya.html">Mombasa, Kenya</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1072,7 +1103,7 @@
       <td><a href="../references/Frith1976.html">Frith <em>et al.</em> (1976)</a></td>
       <td>&nbsp;</td>
       <td>text p. 14, 19, 23-24, 35</td>
-      <td><span class="fa fa-map-marker"></span> location: Phuket Island, Thailand</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Phuket_Island_-_Thailand.html">Phuket Island, Thailand</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1119,15 +1150,6 @@
       <td>&nbsp;</td>
       <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Fourmanoir1953.html">Fourmanoir (1953)</a> → <em class="species">Uca urvillei</em></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
-      <td><span class="fa fa-gears"></span> Computed</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Fourmanoir1955.html">Fourmanoir (1955)</a></td>
-      <td>TBD</td>
       <td><span class="fa fa-gears"></span> Computed</td>
       <td>&nbsp;</td>
     </tr>
@@ -1231,6 +1253,36 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-851, 860, 868-869</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Deltuca) [coarctata] urvillei</em></td>
+      <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Durban_Harbour_-_South_Africa.html">Durban Harbour, South Africa</a></td>
+      <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Tubuca urvillei</em></td>
+      <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Ghory2006.html">Ghory &amp; Siddiqui (2006)</a></td>
       <td>&nbsp;</td>
       <td>text p. 161-166; figure 1</td>
@@ -1243,7 +1295,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sandspit, Karachi, Pakistan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sandspit_-_Karachi_-_Pakistan.html">Sandspit, Karachi, Pakistan</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1256,7 +1308,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

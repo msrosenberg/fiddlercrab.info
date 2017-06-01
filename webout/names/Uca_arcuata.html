@@ -21,6 +21,28 @@
     <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca arcuata_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -271,7 +293,7 @@
           ['1998', null, null],
           ['1999', null, null],
           ['2000', 0, 0],
-          ['2001', 1, 1],
+          ['2001', 2, 2],
           ['2002', 0, 0],
           ['2003', null, null],
           ['2004', null, null],
@@ -279,7 +301,7 @@
           ['2006', 2, 2],
           ['2007', 0, 0],
           ['2008', 0, 0],
-          ['2009', 1, 1],
+          ['2009', 3, 3],
           ['2010', 1, 1],
           ['2011', 0, 0],
           ['2012', null, null],
@@ -334,6 +356,15 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
+    <div class="chron_div">
+      <div class="chronchart_title_top">Number of Uses of Name per Year</div>
+      <div id="chronchart0_div" class="chronchart_top"></div>
+    </div>
+
     <h3 class="nobookmark">Publications Using this Name</h3>
     <table class="citetable">
       <tr>
@@ -379,7 +410,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Kuching, Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Kuching_-_Sarawak_-_Borneo_-_Malaysia.html">Kuching, Sarawak, Borneo, Malaysia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -436,7 +467,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -466,7 +497,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Port Curtis, Queensland, Australia</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Port_Curtis_-_Queensland_-_Australia.html">Port Curtis, Queensland, Australia</a></td>
       <td><a href="../u_coarctata.html"><em class="species">Uca coarctata</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -514,7 +545,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: South Africa</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/South_Africa.html">South Africa</a></td>
       <td><a href="../u_urvillei.html"><em class="species">Uca urvillei</em></a></td>
       <td><span class="fa fa-map-o"></span> Geography</td>
       <td>&nbsp;</td>
@@ -619,7 +650,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Wakayama, Honshu, Japan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Wakayama_-_Honshu_-_Japan.html">Wakayama, Honshu, Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -628,7 +659,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Tamsui, Taiwan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Tamsui_-_Taiwan.html">Tamsui, Taiwan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -694,7 +725,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Miyako-jima, Japan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Miyako-jima_-_Japan.html">Miyako-jima, Japan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -703,7 +734,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Fuzhou, China</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Fuzhou_-_China.html">Fuzhou, China</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -712,7 +743,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Southern Taiwan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Southern_Taiwan.html">Southern Taiwan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -721,7 +752,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Zamboanga, Minanao, Philippines</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Zamboanga_-_Minanao_-_Philippines.html">Zamboanga, Minanao, Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -730,7 +761,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Singapore</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Singapore.html">Singapore</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -739,7 +770,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Penang, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Penang_-_Malaysia.html">Penang, Malaysia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -805,7 +836,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Sarawak, Borneo, Malaysia</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Sarawak_-_Borneo_-_Malaysia.html">Sarawak, Borneo, Malaysia</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -817,7 +848,7 @@
       <td><a href="../references/Kellogg1928.html">Kellogg (1928)</a></td>
       <td>&nbsp;</td>
       <td>text p. 356</td>
-      <td><span class="fa fa-map-marker"></span> location: Fuzhou, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fuzhou_-_China.html">Fuzhou, China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
@@ -829,7 +860,7 @@
       <td><a href="../references/Gordon1931.html">Gordon (1931)</a></td>
       <td>&nbsp;</td>
       <td>text p. 528</td>
-      <td><span class="fa fa-map-marker"></span> location: China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/China.html">China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -841,7 +872,7 @@
       <td><a href="../references/Rathbun1931.html">Rathbun (1931)</a></td>
       <td>&nbsp;</td>
       <td>text p. 101</td>
-      <td><span class="fa fa-map-marker"></span> location: Xiamen, Fujian, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Xiamen_-_Fujian_-_China.html">Xiamen, Fujian, China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -850,7 +881,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Fuzhou, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Fuzhou_-_China.html">Fuzhou, China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -859,7 +890,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Sandu'ao, Fujian, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Sanduao_-_Fujian_-_China.html">Sandu'ao, Fujian, China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -961,7 +992,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern coast of Shandong Peninsula, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_coast_of_Shandong_Peninsula_-_China.html">Southern coast of Shandong Peninsula, China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -973,7 +1004,7 @@
       <td><a href="../references/Takahasi1934.1.html">Takahasi (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7</td>
-      <td><span class="fa fa-map-marker"></span> location: Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Taiwan.html">Taiwan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -985,7 +1016,7 @@
       <td><a href="../references/Sakai1934.html">Sakai (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 320</td>
-      <td><span class="fa fa-map-marker"></span> location: Nagasaki, Kyūshū, Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Nagasaki_-_Kyushu_-_Japan.html">Nagasaki, Kyūshū, Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1006,7 +1037,7 @@
       <td><a href="../references/Takahasi1934.2.html">Takahasi (1934)</a></td>
       <td>&nbsp;</td>
       <td>text p. 73-74</td>
-      <td><span class="fa fa-map-marker"></span> location: Tamsui, Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Tamsui_-_Taiwan.html">Tamsui, Taiwan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1018,7 +1049,7 @@
       <td><a href="../references/Takahasi1935.html">Takahasi (1935)</a></td>
       <td>&nbsp;</td>
       <td>text p. 78-85</td>
-      <td><span class="fa fa-map-marker"></span> location: Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Taiwan.html">Taiwan</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1030,7 +1061,7 @@
       <td><a href="../references/Kamita1935.html">Kamita (1935)</a></td>
       <td>&nbsp;</td>
       <td>text p. 61, 64, 69</td>
-      <td><span class="fa fa-map-marker"></span> location: Western Korea</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Western_Korea.html">Western Korea</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1042,7 +1073,7 @@
       <td><a href="../references/Sato1936.1.html">Sato (1936)</a></td>
       <td>&nbsp;</td>
       <td>text p. 1954</td>
-      <td><span class="fa fa-map-marker"></span> location: Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Taiwan.html">Taiwan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1099,7 +1130,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1111,7 +1142,7 @@
       <td><a href="../references/Shen1937.1.html">Shen (1937)</a></td>
       <td>&nbsp;</td>
       <td>text p. 170</td>
-      <td><span class="fa fa-map-marker"></span> location: Southern coast of Shandong Peninsula, China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Southern_coast_of_Shandong_Peninsula_-_China.html">Southern coast of Shandong Peninsula, China</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1150,7 +1181,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Manila, Luzon, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Manila_-_Luzon_-_Philippines.html">Manila, Luzon, Philippines</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear what species this is</td>
@@ -1159,7 +1190,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Capiz, Panay, Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Capiz_-_Panay_-_Philippines.html">Capiz, Panay, Philippines</a></td>
       <td>?</td>
       <td>&nbsp;</td>
       <td>It is not clear what species this is</td>
@@ -1171,7 +1202,7 @@
       <td><a href="../references/Shen1937.2.html">Shen (1937)</a></td>
       <td>&nbsp;</td>
       <td>text p. 309</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_China.html">Northern China</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1180,7 +1211,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Northern China</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Northern_China.html">Northern China</a></td>
       <td><a href="../u_acuta.html"><em class="species">Uca acuta</em></a></td>
       <td><a href="../references/Crane1975.html">Crane (1975)</a></td>
       <td>&nbsp;</td>
@@ -1243,7 +1274,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-map-marker"></span> location: Philippines</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Philippines.html">Philippines</a></td>
       <td>TBD</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -1255,7 +1286,7 @@
       <td><a href="../references/Ono1965.html">Ono (1965)</a></td>
       <td>&nbsp;</td>
       <td>text p. 7-9, 12-13, 20-21, 31, 39-43, 48-54; figures III.6, III.7</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1303,7 +1334,7 @@
       <td><a href="../references/Lewinsohn1977.html">Lewinsohn (1977)</a></td>
       <td>&nbsp;</td>
       <td>text p. 58-59</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1357,7 +1388,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-flask"></span> specimen: Japan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1420,10 +1451,40 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Rosenberg2001.html">Rosenberg (2001)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 842, 844, 849-850, 860, 866-867</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Deltuca) [coarctata] arcuata</em></td>
+      <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-flask"></span> specimen: [USNM 64953]</td>
+      <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Bott1973.2.html">Bott (1973)</a> → <em class="species">Mesuca (Mesuca) brevipes</em></td>
+      <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Ohno2006.html">Ohno <em>et al.</em> (2006)</a></td>
       <td>&nbsp;</td>
       <td>text p. 21-25</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1444,7 +1505,7 @@
       <td><a href="../references/Ohno2006.2.html">Ohno <em>et al.</em> (2006)</a></td>
       <td>&nbsp;</td>
       <td>text p. 8-14</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1519,7 +1580,7 @@
       <td><a href="../references/Aoki2009.html">Aoki <em>et al.</em> (2009)</a></td>
       <td>&nbsp;</td>
       <td>text p. 10-13</td>
-      <td><span class="fa fa-map-marker"></span> location: Japan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Japan.html">Japan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1546,10 +1607,34 @@
       <td class="rowspacer" colspan="7">&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="../references/Xie2009.html">Xie &amp; Gao (2009)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 1158, 1160-1161</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Wanggang_-_Jiangsu_-_China.html">Wanggang, Jiangsu, China</a></td>
+      <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
+      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a></td>
+      <td>&nbsp;</td>
+      <td>text p. 900</td>
+      <td><span class="fa fa-pencil-square-o"></span> citation: <a href="../references/Chien2001.html">Chien &amp; Hsieh (2001)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-gears"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a></td>
       <td>&nbsp;</td>
       <td>text p. 49, 58</td>
-      <td><span class="fa fa-flask"></span> specimen: Taiwan</td>
+      <td><span class="fa fa-flask"></span> specimen: <a href="../locations/Taiwan.html">Taiwan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1561,7 +1646,7 @@
       <td><a href="../references/Yun2015.html">Yun <em>et al.</em> (2015)</a></td>
       <td>&nbsp;</td>
       <td>text p. 275-279</td>
-      <td><span class="fa fa-map-marker"></span> location: Taiwan</td>
+      <td><span class="fa fa-map-marker"></span> location: <a href="../locations/Taiwan.html">Taiwan</a></td>
       <td><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></td>
       <td><span class="fa fa-arrow-left"></span> Original</td>
       <td>&nbsp;</td>
@@ -1574,7 +1659,7 @@
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.05.01.13.18 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.06.01.10.00 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>
