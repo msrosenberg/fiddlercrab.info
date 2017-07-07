@@ -411,6 +411,8 @@ a:visited.vidlink {
 
 .chronchart_title_top {
 	padding: 0;
+	padding-top: 1em;
+	font-size: 1.25em;
 	float: none;
 }
 
