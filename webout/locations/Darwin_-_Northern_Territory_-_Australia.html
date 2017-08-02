@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Darwin_-_Northern_Territory_-_Australia_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Darwin_-_Northern_Territory_-_Australia_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(-4.949999999999999, 145.833333);
+        var swcorner = new google.maps.LatLng(-19.95, 115.83333300000001);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -68,6 +72,12 @@
            <div id="point_map_canvas" class="sp_map"></div>
     </div>
     </dl>
+  <section class="spsection">
+    <h3 class="nobookmark">Includes Subareas</h3>
+    <ul class="splist">
+    <li><a href="East_Point_Reserve_-_Darwin_-_Northern_Territory_-_Australia.html">East Point Reserve</a></li>
+    </ul>
+  </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
     <ul class="splist">
@@ -126,12 +136,47 @@
       <li><a href="../names/sn_vocans.html"><em class="species">vocans</em></a></li>
     </ul>
   </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Alcock1900.html">Alcock (1900)</a><sup>†</sup>, 
+<a href="../references/Backwell2004.html">Backwell &amp; Jennions (2004)</a>, 
+<a href="../references/Balss1935.html">Balss (1935)</a><sup>†</sup>, 
+<a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
+<a href="../references/Chhapgar1957.html">Chhapgar (1957)</a><sup>†</sup>, 
+<a href="../references/Crane1975.html">Crane (1975)</a>, 
+<a href="../references/Estampador1937.html">Estampador (1937)</a><sup>†</sup>, 
+<a href="../references/Estampador1959.html">Estampador (1959)</a><sup>†</sup>, 
+<a href="../references/George1982.html">George &amp; Jones (1982)</a><sup>†</sup>, 
+<a href="../references/Haswell1882.html">Haswell (1882)</a>, 
+<a href="../references/Kinnear2009.html">Kinnear <em>et al.</em> (2009)</a>, 
+<a href="../references/Lanchester1900.1.html">Lanchester (1900)</a><sup>†</sup>, 
+<a href="../references/Macnae1966.html">Macnae (1966)</a>, 
+<a href="../references/McNeill1920.html">McNeill (1920)</a><sup>†</sup>, 
+<a href="../references/Munguia2017.html">Munguia <em>et al.</em> (2017)</a>, 
+<a href="../references/Ortmann1894.1.html">Ortmann (1894)</a><sup>†</sup>, 
+<a href="../references/Ortmann1897.html">Ortmann (1897)</a><sup>†</sup>, 
+<a href="../references/Parisi1918.html">Parisi (1918)</a><sup>†</sup>, 
+<a href="../references/Reaney2008.2.html">Reaney <em>et al.</em> (2008)</a>, 
+<a href="../references/Ribeiro2003.1.html">Ribeiro <em>et al.</em> (2003)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2000.html">Rosenberg (2000)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2001.html">Rosenberg (2001)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2002.html">Rosenberg (2002)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2013.html">Rosenberg (2013)</a><sup>†</sup>, 
+<a href="../references/Serene1973.3.html">Serène (1973)</a><sup>†</sup>, 
+<a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a><sup>†</sup>, 
+<a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
+<a href="../references/Stebbing1905.html">Stebbing (1905)</a><sup>†</sup>, 
+<a href="../references/vonHagen1976.html">von Hagen (1976)</a><sup>†</sup>, 
+<a href="../references/Yamaguchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a><sup>†</sup>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

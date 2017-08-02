@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_La_Captana_-_Canal_Zone_-_Panama_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_La_Captana_-_Canal_Zone_-_Panama_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(16.448705, -64.574039);
+        var swcorner = new google.maps.LatLng(1.4487050000000004, -94.574039);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -87,12 +91,21 @@
       <li><a href="../names/sn_brevifrons.html"><em class="species">brevifrons</em></a></li>
     </ul>
   </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
+<a href="../references/Garth1948.html">Garth (1948)</a><sup>†</sup>, 
+<a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

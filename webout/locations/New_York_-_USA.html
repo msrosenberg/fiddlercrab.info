@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_New_York_-_USA_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_New_York_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(48.212778, -59.005832999999996);
+        var swcorner = new google.maps.LatLng(33.212778, -89.005833);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -123,12 +127,152 @@
       <li><a href="../names/sn_vocator.html"><em class="species">vocator</em></a></li>
     </ul>
   </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Allen2002.html">Allen &amp; Levinton (2002)</a>, 
+<a href="../references/Allen2004.html">Allen &amp; Levinton (2004)</a>, 
+<a href="../references/Altevogt1955.2.html">Altevogt (1955)</a><sup>†</sup>, 
+<a href="../references/Altevogt1955.1.html">Altevogt (1955)</a><sup>†</sup>, 
+<a href="../references/Altevogt1957.1.html">Altevogt (1957)</a><sup>†</sup>, 
+<a href="../references/Altevogt1959.1.html">Altevogt (1959)</a><sup>†</sup>, 
+<a href="../references/Altevogt1962.html">Altevogt (1962)</a><sup>†</sup>, 
+<a href="../references/Altevogt1963.1.html">Altevogt (1963)</a><sup>†</sup>, 
+<a href="../references/Altevogt1964.2.html">Altevogt &amp; von Hagen (1964)</a><sup>†</sup>, 
+<a href="../references/Aspey1971.html">Aspey (1971)</a><sup>†</sup>, 
+<a href="../references/Aspey1978.html">Aspey (1978)</a><sup>†</sup>, 
+<a href="../references/Barden1983.html">Barden &amp; Koulish (1983)</a>, 
+<a href="../references/Barnard2010.html">Barnard <em>et al.</em> (2010)</a>, 
+<a href="../references/Barnwell1963.2.html">Barnwell (1963)</a><sup>†</sup>, 
+<a href="../references/Barnwell1968.1.html">Barnwell (1968)</a><sup>†</sup>, 
+<a href="../references/Boone1930.html">Boone (1930)</a>, 
+<a href="../references/Bright1972.html">Bright &amp; Hogue (1972)</a><sup>†</sup>, 
+<a href="../references/Burkenroad1947.html">Burkenroad (1947)</a>, 
+<a href="../references/Christiansen1976.html">Christiansen &amp; Yang (1976)</a><sup>†</sup>, 
+<a href="../references/Clark1935.html">Clark (1935)</a>, 
+<a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
+<a href="../references/Crane1943.3.html">Crane (1943)</a>, 
+<a href="../references/Crane1957.html">Crane (1957)</a>, 
+<a href="../references/Crane1958.html">Crane (1958)</a><sup>†</sup>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
+<a href="../references/DeKay1844.html">De Kay (1844)</a>, 
+<a href="../references/Dembowski1925.html">Dembowski (1925)</a><sup>†</sup>, 
+<a href="../references/Demeusy1957.html">Démeusy (1957)</a><sup>†</sup>, 
+<a href="../references/Dumortier1963.2.html">Dumortier (1963)</a><sup>†</sup>, 
+<a href="../references/Dumortier1963.html">Dumortier (1963)</a><sup>†</sup>, 
+<a href="../references/Florkin1960.2.html">Florkin (1960)</a><sup>†</sup>, 
+<a href="../references/Fowler1912.html">Fowler (1912)</a><sup>†</sup>, 
+<a href="../references/Greenspan1975.html">Greenspan (1975)</a><sup>†</sup>, 
+<a href="../references/GuinotDumortier1960.html">Guinot-Dumortier &amp; Dumortier (1960)</a><sup>†</sup>, 
+<a href="../references/Guyselman1953.html">Guyselman (1953)</a><sup>†</sup>, 
+<a href="../references/Haefner1985.html">Haefner (1985)</a>, 
+<a href="../references/Hannan1973.html">Hannan &amp; Evans (1973)</a><sup>†</sup>, 
+<a href="../references/Hanson2002.html">Hanson <em>et al.</em> (2002)</a>, 
+<a href="../references/Hartnoll1988.3.html">Hartnoll (1988)</a><sup>†</sup>, 
+<a href="../references/Hay1915.html">Hay &amp; Shore (1915-1916)</a><sup>†</sup>, 
+<a href="../references/Hedgpeth1950.html">Hedgpeth (1950)</a><sup>†</sup>, 
+<a href="../references/Hediger1934.1.html">Hediger (1934)</a><sup>†</sup>, 
+<a href="../references/Holthuis1956.html">Holthuis (1956)</a><sup>†</sup>, 
+<a href="../references/Hsiang1975.html">Hsiang &amp; Premuzic (1975)</a>, 
+<a href="../references/Hyatt1973.html">Hyatt (1973)</a><sup>†</sup>, 
+<a href="../references/Hyatt1974.html">Hyatt (1974)</a><sup>†</sup>, 
+<a href="../references/Hyatt1975.html">Hyatt (1975)</a><sup>†</sup>, 
+<a href="../references/ICZN1959.html">ICZN (1959)</a><sup>†</sup>, 
+<a href="../references/Ives1891.html">Ives (1891)</a><sup>†</sup>, 
+<a href="../references/Kingsley1878.html">Kingsley (1878)</a><sup>†</sup>, 
+<a href="../references/Kingsley1880.html">Kingsley (1880)</a><sup>†</sup>, 
+<a href="../references/Kleinholz1941.1.html">Kleinholz &amp; Bourquin (1941)</a>, 
+<a href="../references/Kleinholz1941.2.html">Kleinholz &amp; Bourquin (1941)</a>, 
+<a href="../references/Korte1966.html">Korte (1966)</a><sup>†</sup>, 
+<a href="../references/Krebs1976.html">Krebs (1976)</a><sup>†</sup>, 
+<a href="../references/Krebs1977.html">Krebs &amp; Burns (1977)</a><sup>†</sup>, 
+<a href="../references/Krebs1974.html">Krebs <em>et al.</em> (1974)</a><sup>†</sup>, 
+<a href="../references/Langdon1971.html">Langdon (1971)</a><sup>†</sup>, 
+<a href="../references/Maccagno1928.html">Maccagno (1928)</a><sup>†</sup>, 
+<a href="../references/Mantel1973.html">Mantel &amp; Levin (1973)</a>, 
+<a href="../references/Mantel1976.html">Mantel &amp; Olson (1976)</a>, 
+<a href="../references/Mayer1905.html">Mayer (1905)</a>, 
+<a href="../references/Miller1961.html">Miller (1961)</a><sup>†</sup>, 
+<a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a><sup>†</sup>, 
+<a href="../references/MilneEdwards1852.html">Milne Edwards (1852)</a><sup>†</sup>, 
+<a href="../references/MilneEdwards1854.2.html">Milne Edwards (1854)</a><sup>†</sup>, 
+<a href="../references/Novak1974.html">Novak &amp; Salmon (1974)</a><sup>†</sup>, 
+<a href="../references/Odum1969.html">Odum <em>et al.</em> (1969)</a>, 
+<a href="../references/Oliveira1939.1.html">Oliveira (1939)</a><sup>†</sup>, 
+<a href="../references/Ortmann1897.html">Ortmann (1897)</a><sup>†</sup>, 
+<a href="../references/Paulmier1905.html">Paulmier (1905)</a>, 
+<a href="../references/Peters1955.html">Peters (1955)</a><sup>†</sup>, 
+<a href="../references/Powers1975.1.html">Powers (1975)</a><sup>†</sup>, 
+<a href="../references/Powers1977.html">Powers (1977)</a><sup>†</sup>, 
+<a href="../references/Powers1979.html">Powers (1979)</a>, 
+<a href="../references/Powers1983.html">Powers &amp; Bliss (1983)</a><sup>†</sup>, 
+<a href="../references/Przibram1917.html">Przibram (1917)</a><sup>†</sup>, 
+<a href="../references/Rafinesque1817.html">Rafinesque (1817)</a>, 
+<a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="../references/Rathbun1935.3.html">Rathbun (1935)</a><sup>†</sup>, 
+<a href="../references/Rosenberg1997.html">Rosenberg (1997)</a>, 
+<a href="../references/Rosenberg2000.html">Rosenberg (2000)</a>, 
+<a href="../references/Rosenberg2001.html">Rosenberg (2001)</a>, 
+<a href="../references/Rosenberg2002.html">Rosenberg (2002)</a><sup>†</sup>, 
+<a href="../references/Salmon1965.html">Salmon (1965)</a><sup>†</sup>, 
+<a href="../references/Salmon1967.html">Salmon (1967)</a><sup>†</sup>, 
+<a href="../references/Salmon1968.1.html">Salmon &amp; Atsaides (1968)</a><sup>†</sup>, 
+<a href="../references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a><sup>†</sup>, 
+<a href="../references/Salmon1972.html">Salmon &amp; Horch (1972)</a><sup>†</sup>, 
+<a href="../references/Salmon1973.html">Salmon &amp; Horch (1973)</a><sup>†</sup>, 
+<a href="../references/Salmon1962.2.html">Salmon &amp; Stout (1962)</a><sup>†</sup>, 
+<a href="../references/Sastry1983.2.html">Sastry (1983)</a><sup>†</sup>, 
+<a href="../references/Schone1961.html">Schöne (1961)</a><sup>†</sup>, 
+<a href="../references/Schramm1867.html">Schramm (1867)</a><sup>†</sup>, 
+<a href="../references/Schwartz1915.1.html">Schwartz &amp; Safir (1915)</a>, 
+<a href="../references/Schwartz1915.2.html">Schwartz &amp; Safir (1915)</a>, 
+<a href="../references/Sendler1912.html">Sendler (1912)</a>, 
+<a href="../references/Skinner1985.html">Skinner (1985)</a><sup>†</sup>, 
+<a href="../references/Smith1870.2.html">Smith (1870)</a><sup>†</sup>, 
+<a href="../references/Smith1973.html">Smith &amp; Miller (1973)</a><sup>†</sup>, 
+<a href="../references/Spencer1979.html">Spencer <em>et al.</em> (1979)</a><sup>†</sup>, 
+<a href="../references/Stimpson1859.html">Stimpson (1859)</a><sup>†</sup>, 
+<a href="../references/Tashian1956.html">Tashian (1956)</a>, 
+<a href="../references/Tashian1958.html">Tashian &amp; Vernberg (1958)</a><sup>†</sup>, 
+<a href="../references/Teal1958.html">Teal (1958)</a><sup>†</sup>, 
+<a href="../references/Teal1959.html">Teal (1959)</a><sup>†</sup>, 
+<a href="../references/Vernberg1959.2.html">Vernberg (1959)</a><sup>†</sup>, 
+<a href="../references/Vernberg1966.2.html">Vernberg &amp; Costlow (1966)</a>, 
+<a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a><sup>†</sup>, 
+<a href="../references/Vernberg1964.html">Vernberg &amp; Vernberg (1964)</a><sup>†</sup>, 
+<a href="../references/Vernberg1966.5.html">Vernberg &amp; Vernberg (1966)</a><sup>†</sup>, 
+<a href="../references/Vernberg1970.html">Vernberg &amp; Vernberg (1970)</a><sup>†</sup>, 
+<a href="../references/Vernberg1972.4.html">Vernberg &amp; Vernberg (1972)</a><sup>†</sup>, 
+<a href="../references/Verrill1873.html">Verrill (1873)</a><sup>†</sup>, 
+<a href="../references/Verrill1874.html">Verrill &amp; Smith (1874)</a><sup>†</sup>, 
+<a href="../references/vonHagen1961.html">von Hagen (1961)</a><sup>†</sup>, 
+<a href="../references/vonHagen1962.1.html">von Hagen (1962)</a><sup>†</sup>, 
+<a href="../references/vonHagen1968.2.html">von Hagen (1968)</a><sup>†</sup>, 
+<a href="../references/vonHagen1970.4.html">von Hagen (1970)</a><sup>†</sup>, 
+<a href="../references/vonMartens1869.html">von Martens (1869)</a><sup>†</sup>, 
+<a href="../references/Ward1976.1.html">Ward &amp; Busch (1976)</a><sup>†</sup>, 
+<a href="../references/Ward1974.html">Ward &amp; Howes (1974)</a><sup>†</sup>, 
+<a href="../references/Weis1976.3.html">Weis (1976)</a>, 
+<a href="../references/Weis1976.2.html">Weis (1976)</a>, 
+<a href="../references/Weis1977.1.html">Weis (1977)</a>, 
+<a href="../references/Weis1977.2.html">Weis (1977)</a>, 
+<a href="../references/Weis1976.4.html">Weis &amp; Mantel (1976)</a>, 
+<a href="../references/Weis1979.1.html">Weis &amp; Weis (1979)</a><sup>†</sup>, 
+<a href="../references/Williams1965.html">Williams (1965)</a><sup>†</sup>, 
+<a href="../references/Williams1984.html">Williams (1984)</a><sup>†</sup>, 
+<a href="../references/Wolvekamp1960.html">Wolvekamp &amp; Waterman (1960)</a><sup>†</sup>, 
+<a href="../references/Yamaguchi1971.html">Yamaguchi (1971)</a><sup>†</sup>, 
+<a href="../references/Young1900.html">Young (1900)</a><sup>†</sup>, 
+<a href="../references/Zeleny1905.2.html">Zeleny (1905)</a><sup>†</sup>, 
+<a href="../references/Zeleny1905.1.html">Zeleny (1905)</a>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Thailand_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Thailand_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(15.862382, 114.291912);
+        var swcorner = new google.maps.LatLng(0.8623820000000002, 84.291912);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -169,13 +173,58 @@
       <li><a href="../names/sn_vocans.html"><em class="species">vocans</em></a></li>
     </ul>
   </section>
-    <p>Entries marked with <sup>*</sup> are inferred from subareas</p>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Alcock1900.html">Alcock (1900)</a><sup>*</sup>, 
+<a href="../references/Boone1934.html">Boone (1934)</a><sup>*</sup>, 
+<a href="../references/Chhapgar1957.html">Chhapgar (1957)</a><sup>*</sup>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>*</sup>, 
+<a href="../references/deMan1888.html">De Man (1887-1888)</a><sup>*</sup>, 
+<a href="../references/deMan1891.html">De Man (1891)</a><sup>*</sup>, 
+<a href="../references/Frith1977.1.html">Frith (1977)</a><sup>*</sup>, 
+<a href="../references/Frith1977.2.html">Frith &amp; Frith (1977)</a><sup>*</sup>, 
+<a href="../references/Frith1977.3.html">Frith &amp; Frith (1977)</a><sup>*</sup>, 
+<a href="../references/Frith1976.html">Frith <em>et al.</em> (1976)</a><sup>*</sup>, 
+<a href="../references/Green1972.2.html">Green &amp; Schochet (1972)</a>, 
+<a href="../references/Green1991.html">Green &amp; Schochet (1991)</a><sup>*</sup>, 
+<a href="../references/Hartnoll1988.3.html">Hartnoll (1988)</a><sup>*</sup>, 
+<a href="../references/Hilgendorf1869.html">Hilgendorf (1869)</a><sup>*</sup>, 
+<a href="../references/Hoffmann1874.html">Hoffmann (1874)</a><sup>*</sup>, 
+<a href="../references/Jaroensutasinee2002.html">Jaroensutasinee &amp; Tantichodok (2002)</a><sup>*</sup>, 
+<a href="../references/Kanchanaphum1998.html">Kanchanaphum <em>et al.</em> (1998)</a>, 
+<a href="../references/Kemp1918.html">Kemp (1918)</a><sup>*</sup>, 
+<a href="../references/Kingsley1880.html">Kingsley (1880)</a><sup>*</sup>, 
+<a href="../references/Kon2009.1.html">Kon <em>et al.</em> (2009)</a><sup>*</sup>, 
+<a href="../references/Kon2007.html">Kon <em>et al.</em> (2007)</a><sup>*</sup>, 
+<a href="../references/Kon2009.2.html">Kon <em>et al.</em> (2009)</a><sup>*</sup>, 
+<a href="../references/Lanchester1902.html">Lanchester (1902)</a><sup>*</sup>, 
+<a href="../references/Lundoer1974.html">Lundoer (1974)</a><sup>*</sup>, 
+<a href="../references/Miers1884.2.html">Miers (1884)</a><sup>*</sup>, 
+<a href="../references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a><sup>*</sup>, 
+<a href="../references/Nielsen2003.html">Nielsen <em>et al.</em> (2003)</a><sup>*</sup>, 
+<a href="../references/Nobili1899.2.html">Nobili (1899)</a><sup>*</sup>, 
+<a href="../references/Nobili1899.3.html">Nobili (1899)</a><sup>*</sup>, 
+<a href="../references/Ortmann1894.2.html">Ortmann (1894)</a><sup>*</sup>, 
+<a href="../references/Ortmann1894.1.html">Ortmann (1894)</a><sup>*</sup>, 
+<a href="../references/Pearse1933.html">Pearse (1933)</a><sup>*</sup>, 
+<a href="../references/Pfeffer1889.html">Pfeffer (1889)</a><sup>*</sup>, 
+<a href="../references/Rathbun1910.1.html">Rathbun (1910)</a><sup>*</sup>, 
+<a href="../references/Serene1973.3.html">Serène (1973)</a><sup>*</sup>, 
+<a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a><sup>*</sup>, 
+<a href="../references/Suvatti1938.html">Suvatti (1938)</a><sup>*</sup>, 
+<a href="../references/Suvatti1950.html">Suvatti (1950)</a><sup>*</sup>, 
+<a href="../references/Templeton2017.html">Templeton (2017)</a><sup>*</sup>, 
+<a href="../references/Tweedie1937.html">Tweedie (1937)</a><sup>*</sup>, 
+<a href="../references/Williams1981.html">Williams &amp; Heng (1981)</a><sup>*</sup>      </p>
+    </section>
+    <p>Entries marked with <sup>*</sup> are inferred from subareas.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Cape_Cod_-_Massachusetts_-_USA_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Cape_Cod_-_Massachusetts_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(49.219774, -55.255236999999994);
+        var swcorner = new google.maps.LatLng(34.219774, -85.255237);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -90,12 +94,43 @@
       <li><a href="../names/sn_pugnax.html"><em class="species">pugnax</em></a></li>
     </ul>
   </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Barden1983.html">Barden &amp; Koulish (1983)</a><sup>†</sup>, 
+<a href="../references/Barnwell1966.html">Barnwell (1966)</a><sup>†</sup>, 
+<a href="../references/Barnwell1976.html">Barnwell (1976)</a><sup>†</sup>, 
+<a href="../references/Bennett1963.html">Bennett (1963)</a><sup>†</sup>, 
+<a href="../references/Bennett1959.1.html">Bennett &amp; Brown (1959)</a>, 
+<a href="../references/Bennett1959.2.html">Bennett &amp; Brown (1959)</a>, 
+<a href="../references/Bennett1957.html">Bennett <em>et al.</em> (1957)</a>, 
+<a href="../references/Brett1959.html">Brett <em>et al.</em> (1959)</a>, 
+<a href="../references/Brown1960.2.html">Brown (1960)</a>, 
+<a href="../references/Brown1961.html">Brown (1961)</a><sup>†</sup>, 
+<a href="../references/DeCoursey1983.html">DeCoursey (1983)</a><sup>†</sup>, 
+<a href="../references/Enright1965.html">Enright (1965)</a><sup>†</sup>, 
+<a href="../references/Fingerman1960.html">Fingerman (1960)</a><sup>†</sup>, 
+<a href="../references/Green1964.html">Green (1964)</a>, 
+<a href="../references/Honegger1973.2.html">Honegger (1973)</a><sup>†</sup>, 
+<a href="../references/Lockwood1967.html">Lockwood (1967)</a><sup>†</sup>, 
+<a href="../references/Palmer1973.html">Palmer (1973)</a><sup>†</sup>, 
+<a href="../references/Rao1985.2.html">Rao (1985)</a><sup>†</sup>, 
+<a href="../references/Smith2013.html">Smith (2013)</a>, 
+<a href="../references/Thallwitz1891.html">Thallwitz (1891)</a>, 
+<a href="../references/Webb1971.html">Webb (1971)</a><sup>†</sup>, 
+<a href="../references/Webb1972.html">Webb (1972)</a><sup>†</sup>, 
+<a href="../references/Webb1976.html">Webb (1976)</a><sup>†</sup>, 
+<a href="../references/Webb1958.html">Webb &amp; Brown (1958)</a>, 
+<a href="../references/Webb1961.html">Webb &amp; Brown (1961)</a>, 
+<a href="../references/Webb1965.html">Webb &amp; Brown (1965)</a>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

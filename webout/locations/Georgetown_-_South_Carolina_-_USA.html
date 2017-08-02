@@ -39,8 +39,12 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Georgetown_-_South_Carolina_-_USA_point_map.kmz",{suppressInfoWindows: false});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Georgetown_-_South_Carolina_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
         point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(40.8675, -64.293889);
+        var swcorner = new google.maps.LatLng(25.8675, -94.293889);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -99,12 +103,47 @@
       <li><a href="../names/sn_pugnax.html"><em class="species">pugnax</em></a></li>
     </ul>
   </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Borgianini2005.html">Borgianini <em>et al.</em> (2005)</a>, 
+<a href="../references/Chrzanowski1977.html">Chrzanowski &amp; Cowley (1977)</a>, 
+<a href="../references/Claybrook1976.html">Claybrook (1976)</a>, 
+<a href="../references/Claybrook1983.html">Claybrook (1983)</a><sup>†</sup>, 
+<a href="../references/Cowley1978.html">Cowley &amp; Frye (1978)</a>, 
+<a href="../references/Hwang1982.html">Hwang &amp; Oswald (1982)</a>, 
+<a href="../references/Johnston1984.html">Johnston <em>et al.</em> (1984)</a>, 
+<a href="../references/Krebs1976.html">Krebs (1976)</a><sup>†</sup>, 
+<a href="../references/OHara1973.2.html">O'Hara (1973)</a>, 
+<a href="../references/Pitts1974.html">Pitts &amp; Cowley (1974)</a>, 
+<a href="../references/Powers1977.html">Powers (1977)</a><sup>†</sup>, 
+<a href="../references/Silverthorn1973.1.html">Silverthorn (1973)</a>, 
+<a href="../references/Silverthorn1975.1.html">Silverthorn (1975)</a>, 
+<a href="../references/Silverthorn1975.2.html">Silverthorn (1975)</a>, 
+<a href="../references/Silverthorn1975.3.html">Silverthorn (1975)</a>, 
+<a href="../references/Skinner1985.html">Skinner (1985)</a><sup>†</sup>, 
+<a href="../references/Vernberg1983.2.html">Vernberg (1983)</a><sup>†</sup>, 
+<a href="../references/Vernberg1977.3.html">Vernberg <em>et al.</em> (1977)</a>, 
+<a href="../references/Vernberg1977.1.html">Vernberg <em>et al.</em> (1977)</a>, 
+<a href="../references/Vernberg1975.html">Vernberg &amp; Vernberg (1975)</a>, 
+<a href="../references/Vernberg1975.2.html">Vernberg (1975)</a><sup>†</sup>, 
+<a href="../references/Vernberg1983.html">Vernberg (1983)</a><sup>†</sup>, 
+<a href="../references/Vernberg1977.2.html">Vernberg &amp; DeCoursey (1977)</a>, 
+<a href="../references/Vernberg1974.1.html">Vernberg <em>et al.</em> (1974)</a>, 
+<a href="../references/Vernberg1974.2.html">Vernberg <em>et al.</em> (1974)</a>, 
+<a href="../references/Waldichuk1974.html">Waldichuk (1974)</a><sup>†</sup>, 
+<a href="../references/Weis1977.1.html">Weis (1977)</a><sup>†</sup>, 
+<a href="../references/Weis1979.1.html">Weis &amp; Weis (1979)</a><sup>†</sup>, 
+<a href="../references/Wilson1985.2.html">Wilson <em>et al.</em> (1985)</a><sup>†</sup>, 
+<a href="../references/Zimmer1999.html">Zimmer <em>et al.</em> (1999)</a>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.07.06.22.35 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>
