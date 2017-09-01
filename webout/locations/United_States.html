@@ -16,9 +16,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One|Lora:400,700,400italic,700italic" />
     <link rel="stylesheet" href="../uca_style.css" />
-    <script src="https://use.fontawesome.com/3669ad7c2b.js"></script>
+    <script defer src="../js/packs/solid.js"></script>
+    <script defer src="../js/packs/regular.js"></script>
+    <script defer src="../js/packs/brands.js"></script>
+    <script defer src="../js/fontawesome.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
     <script type="text/javascript"
@@ -53,7 +55,7 @@
     <div id="home">
       <a href="../index.html" class="home-title">Fiddler Crabs</a>
       <a href="../index.html" class="home-link"><span class ="fa fa-home"></span> Home</a>
-      <a href="../blog" class="home-link"><span class ="fa fa-pencil"></span> Blog</a>
+      <a href="../blog" class="home-link"><span class ="fa fa-pencil-alt"></span> Blog</a>
     </div>
     <header id="United_States.html">
       <h1 class="nobookmark">United States</h1>
@@ -81,7 +83,6 @@
     <li><a href="Delaware_Bay_-_USA.html">Delaware Bay</a></li>
     <li><a href="Delaware_-_USA.html">Delaware</a></li>
     <li><a href="Florida_-_USA.html">Florida</a></li>
-    <li><a href="Florida_-_USA_to_Texas_-_USA.html">Florida to Texas</a></li>
     <li><a href="Georgia_-_USA.html">Georgia</a></li>
     <li><a href="Hawaii_-_USA.html">Hawaii</a></li>
     <li><a href="Louisiana_-_USA.html">Louisiana</a></li>
@@ -89,12 +90,9 @@
     <li><a href="Massachusetts_or_Virginia_-_USA.html">Massachusetts or Virginia</a></li>
     <li><a href="Massachusetts_-_USA.html">Massachusetts</a></li>
     <li><a href="Mississippi_-_USA.html">Mississippi</a></li>
-    <li><a href="Mississippi_-_USA_to_Florida_-_USA.html">Mississippi to Florida</a></li>
     <li><a href="New_England_-_USA.html">New England</a></li>
     <li><a href="New_Jersey_-_USA.html">New Jersey</a></li>
-    <li><a href="New_York_and_New_Jersey_-_USA.html">New York and New Jersey</a></li>
     <li><a href="New_York_-_USA.html">New York</a></li>
-    <li><a href="North_and_South_Carolina_-_USA.html">North and South Carolina</a></li>
     <li><a href="North_Carolina_-_USA.html">North Carolina</a></li>
     <li><a href="Northwestern_Florida_-_USA_to_Louisiana_-_USA_-_possibly_Texas_-_USA.html">Northwestern Florida to Louisiana, possibly Texas</a></li>
     <li><a href="Northwestern_Florida_-_USA_to_Southern_Texas_-_USA.html">Northwestern Florida to Southern Texas</a></li>
@@ -104,6 +102,7 @@
     <li><a href="Texas_-_USA.html">Texas</a></li>
     <li><a href="Virginia_-_USA.html">Virginia</a></li>
     <li><a href="Washington_-_USA.html">Washington</a></li>
+    <li><a href="New_Hampshire_-_USA.html">New Hampshire</a></li>
     </ul>
   </section>
   <section class="spsection">
@@ -342,6 +341,7 @@
 <a href="../references/Bennett1959.1.html">Bennett &amp; Brown (1959)</a><sup>*</sup>, 
 <a href="../references/Bennett1959.2.html">Bennett &amp; Brown (1959)</a><sup>*</sup>, 
 <a href="../references/Bennett1957.html">Bennett <em>et al.</em> (1957)</a><sup>*</sup>, 
+<a href="../references/Bergey2006.html">Bergey &amp; Weis (2006)</a><sup>*</sup>, 
 <a href="../references/Bishop1993.html">Bishop (1993)</a><sup>*</sup>, 
 <a href="../references/Blanquet1968.html">Blanquet (1968)</a><sup>*</sup>, 
 <a href="../references/Bliss1960.html">Bliss (1960)</a><sup>*</sup>, 
@@ -677,11 +677,13 @@
 <a href="../references/Ives1891.html">Ives (1891)</a><sup>*</sup>, 
 <a href="../references/Jansen1970.html">Jansen (1970)</a><sup>*</sup>, 
 <a href="../references/Johnson1974.html">Johnson (1974)</a><sup>*</sup>, 
+<a href="../references/Johnson2014.html">Johnson (2014)</a><sup>*</sup>, 
 <a href="../references/Johnson1927.html">Johnson &amp; Snook (1927)</a><sup>*</sup>, 
 <a href="../references/Johnston1986.html">Johnston &amp; Bildstein (1986)</a><sup>*</sup>, 
 <a href="../references/Johnston1984.html">Johnston <em>et al.</em> (1984)</a><sup>*</sup>, 
 <a href="../references/Jones1968.html">Jones (1968)</a><sup>*</sup>, 
 <a href="../references/Jones1941.html">Jones (1941)</a><sup>*</sup>, 
+<a href="../references/Jones2011.html">Jones <em>et al.</em> (2011)</a><sup>*</sup>, 
 <a href="../references/Kaiser1975.html">Kaiser &amp; Lehmann (1975)</a><sup>*</sup>, 
 <a href="../references/Keller1977.html">Keller (1977)</a><sup>*</sup>, 
 <a href="../references/Keller1973.html">Keller &amp; Andrew (1973)</a><sup>*</sup>, 
@@ -1166,10 +1168,10 @@
     <p>Entries marked with <sup>*</sup> are inferred from subareas.</p>
 
     <footer>
-       <figure id="footmap"><script type="text/javascript" src="http://jf.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','150','75','5f9t1sywiez','ff0000',20);</script><figcaption>Visitors</figcaption></figure>
-       <p id="citation"><a href="citation.html"><span class="fa fa-pencil"></span> How to cite this site</a></p>
-       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope-o"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2017.08.01.12.30 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2017.09.01.10.39 &mdash; Copyright &copy; 2003&ndash;2017 All Rights Reserved</p>
     </footer>
   </body>
 </html>

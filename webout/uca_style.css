@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Merienda+One);
+@import url("https://fonts.googleapis.com/css?family=Merienda+One|Noto+Serif:400,400i,700,700i");
 
 body { 
   background-color: white;
   background-color: white;
-  font-family: "Lora", "Georgia", serif;
+  font-family: "Noto Serif", "Georgia", serif;
   font-size: medium;
  }
 
@@ -449,8 +449,8 @@ a:visited.vidlink {
 	  color: red;
 	 }
 
-	h2 a:hover,
-	h3 a:hover {
+	xh2 a:hover,
+	xh3 a:hover {
 	  color: black;
 	 }
 
