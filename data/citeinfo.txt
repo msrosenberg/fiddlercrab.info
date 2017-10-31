@@ -760,8 +760,8 @@ Stimpson1858	2	Gelasimus dubius	.	text p. 99	location	Ryukyu Islands, Japan	.	co
 Stimpson1858	3	Gelasimus vocante	.	text p. 99	n/a	.	.	vocans	<	conjugation of vocans?	.
 Stimpson1858	4	Gelasimus vocantis	.	text p. 99	n/a	.	.	vocans	<	conjugation of vocans?	.
 Stimpson1858	5	Gelasimus acuto	.	text p. 99	n/a	.	.	acuta	<	conjugation of acutus?	.
-Stimpson1858	6	Gelasimus acutus	.	text p. 99	location	Macau, China	.	acuta	<	.	.
-Stimpson1858	7	Gelasimus splendidus	.	text p. 99-100	location	Hong Kong, China	.	splendida	<	.	.
+Stimpson1858	6	Gelasimus acutus	.	text p. 99	location	Macau, China	.	acuta	<	type description	.
+Stimpson1858	7	Gelasimus splendidus	.	text p. 99-100	location	Hong Kong, China	.	splendida	<	type description	.
 Stimpson1858	8	Gelasimus brevipede	.	text p. 99	n/a	.	.	arcuata	Crane1975	conjugation of brevipes?	.
 Stimpson1858	9	Gelasimus pulchellus	.	text p. 100	location	Tahiti	.	crassipes	Crane1975	.	.
 Stimpson1858	10	Gelasimus annulipedi	.	text p. 100	n/a	.	.	annulipes	<	conjugation of annulipes?	.
@@ -783,7 +783,7 @@ Stimpson1859	2.4	Gelasimus pugilator	.	text p. 62-63	citation	Gould1841	1	=	=	.	
 Stimpson1859	2.5	Gelasimus pugilator	.	text p. 62-63	location	Atlantic coast of North America	.	pugilator	<	mixed species in Gulf of Mexico	.
 Stimpson1859	3	Gelasimus subcylindricus	.	text p. 63	specimen	Matamoros, Tamaulipas, Mexico	.	subcylindrica	<	type description	.
 Stimpson1859	4	Gelasimus panamensis	.	text p. 63	specimen	Panama	.	panamensis	<	.	.
-Stimpson1860	1	Gelasimus brevifrons	.	text p. 229	specimen	Todos Santos, Baja California Sur, Mexico	.	brevifrons	<	.	.
+Stimpson1860	1	Gelasimus brevifrons	.	text p. 229	specimen	Todos Santos, Baja California Sur, Mexico	.	brevifrons	<	type description	.
 Stimpson1860	2	Gelasimus palustris	.	text p. 229	n/a	.	.	.	.	.	.
 Lawson1860	1	.	Fiddler; Fidlars	text p. 200, 251, 265	location	Atlantic coast of United States	.	?	.	Likely refers to both <em class="species">Uca pugilator</em> and <em class="species">Uca pugnax</em>.	A reprint of his 1714 book
 Tennent1861	1	Gelasimus tetragonon	Calling Crabs	text & figure p. 477-478	location	Sri Lanka	.	.	.	.	.
@@ -1240,7 +1240,7 @@ Kingsley1878	2.3	Gelasimus pugnax	.	text p. 322	citation	LeConte1855	1.1	=	=	.	.
 Kingsley1878	2.4	Gelasimus pugnax	.	text p. 322	citation	Stimpson1859	1.6	=	=	.	.
 Kingsley1878	2.5	Gelasimus pugnax	.	text p. 322	citation	Smith1870.2	14	=	=	.	.
 Kingsley1878	2.6	Gelasimus pugnax	.	text p. 322	citation	Verrill1873	3	=	=	.	.
-Kingsley1878	2.7	Gelasimus pugnax	.	text p. 322	location	Atlanic and Gulf coasts of United States	.	pugnax	<	in part	.
+Kingsley1878	2.7	Gelasimus pugnax	.	text p. 322	location	Atlantic and Gulf coasts of United States	.	pugnax	<	in part	.
 Kingsley1878	2.8	Gelasimus pugnax	.	text p. 322	location	West Indies	.	rapax	>MSR:geography	.	.
 Kingsley1878	3.01	Gelasimus pugillator	.	text p. 322	citation	Gould1841	1.02	=	=	.	.
 Kingsley1878	3.02	Gelasimus pugillator	.	text p. 322	citation	DeKay1844	1.7	=	=	.	.
@@ -2041,7 +2041,8 @@ Henderson1893	2.1	Gelasimus triangularis	.	text p. 329, 337, 388	location	Ennore
 Henderson1893	2.2	Gelasimus triangularis	.	text p. 329, 337, 388	citation	deMan1888	8	=	=	.	.
 Henderson1893	2.3	Gelasimus triangularis	.	text p. 329, 337, 388	citation	Heller1865	6.4	=	=	.	.
 Henderson1893	3	Gelasimus	calling crabs; dhobi crabs	text p. 328-329	n/a	.	.	>Uca	.	.	.
-Rathbun1893	1	Gelasimus gracilis	.	text p. 244-245	location	San Diego to Baja California, Mexico	.	crenulata	Crane1975	.	.
+Rathbun1893	1.1	Gelasimus gracilis	.	text p. 244-245	location	San Diego, California, USA	.	crenulata	Crane1975	.	.
+Rathbun1893	1.2	Gelasimus gracilis	.	text p. 244-245	location	Baja California, Mexico	.	crenulata	Crane1975	.	.
 Rathbun1893	2	Gelasimus pugnax	.	text p. 244-245	n/a	.	.	pugnax	<	.	.
 Rathbun1893	3	Gelasimus crenulatus	.	text p. 245	citation	Lockington1877.2	9	=	=	.	.
 Rathbun1893	4	Gelasimus latimanus	.	text p. 245-246	location	La Paz, Baja California Sur, Mexico	.	latimanus	<	Type description	.
@@ -2282,7 +2283,7 @@ Ortmann1897	5	Uca dussumieri	.	text p. 348-349	citation	Kingsley1880	16	=	=	.	.
 Ortmann1897	6	Uca arcuata	.	text p. 349	n/a	.	.	arcuata	<	.	.
 Ortmann1897	7.1	Uca coarctata	.	text p. 349	citation	deMan1891	5	=	=	.	.
 Ortmann1897	7.2	Uca coarctata	.	text p. 349	citation	Ortmann1894.1	8	=	=	.	.
-Ortmann1897	8.1	Uca demani	.	text p. 349-350	citation	deMan1891	6.2	=	=	.	.
+Ortmann1897	8.1	Uca demani	.	text p. 349-350	citation	deMan1891	6.2	=	=	Type description	.
 Ortmann1897	8.2	Uca demani	.	text p. 349-350	citation	deMan1892	6	=	=	.	.
 Ortmann1897	8.3	Uca demani	.	text p. 349-350	citation	Ortmann1894.1	9	=	=	.	.
 Ortmann1897	8.4	Uca demani	.	text p. 349-350	citation	deMan1895	4	=	=	.	.
@@ -2749,7 +2750,8 @@ Holmes1900	1.2	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	citation	King
 Holmes1900	1.3	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	citation	Rathbun1893	1	=	=	.	.
 Holmes1900	1.4	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	citation	Ortmann1897	13	=	=	.	.
 Holmes1900	1.5	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	citation	Rathbun1899	1	=	=	.	.
-Holmes1900	1.6	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	location	San Diego to Baja California, Mexico	.	crenulata	<	.	.
+Holmes1900	1.6	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	location	San Diego, California, USA	.	crenulata	<	.	.
+Holmes1900	1.7	Uca crenulata	.	text p. 75-76; plate 1: figures 7-9	location	Baja California, Mexico	.	crenulata	<	.	.
 Holmes1900	2	Uca pugnax	.	text p. 75	n/a	.	.	pugnax	<	.	.
 Holmes1900	3	Uca coloradensis	.	text p. 76	n/a	.	.	coloradensis	<	.	.
 Holmes1900	4	Uca brevifrons	.	text p. 76	n/a	.	.	brevifrons	<	.	.
@@ -2915,7 +2917,7 @@ Nobili1901.3	3.2	Uca macrodactyla	.	text p. 49-52	location	Tumaco, Colombia	.	ga
 Nobili1901.3	3.3	Uca macrodactyla	.	text p. 49-52	citation	MilneEdwards1843	2	=	=	.	.
 Nobili1901.3	3.4	Uca macrodactyla	.	text p. 49-52	citation	MilneEdwards1852	15	=	=	.	.
 Nobili1901.3	4	Uca minax	.	text p. 49	n/a	.	.	minax	<	.	.
-Nobili1901.3	5	Uca Festae	.	text p. 51-52	location	Rio Daule Inferiore, Ecuador	.	festae	<	.	.
+Nobili1901.3	5	Uca Festae	.	text p. 51-52	location	Rio Daule Inferiore, Ecuador	.	festae	<	type description	.
 Nobili1901.3	6	Uca stenodactyla	.	text p. 52	n/a	.	.	stenodactylus	<	.	.
 Nobili1901.3	7	Uca speciosa	.	text p. 52	n/a	.	.	speciosa	<	.	.
 Nobili1901.3	8	Uca gracilis	.	text p. 52	n/a	.	.	crenulata	>MSR:synonymy	.	.
@@ -3079,9 +3081,10 @@ Holmes1904	4	Uca crenulata	.	text p. 310	n/a	.	.	crenulata	<	.	.
 Holmes1904	5	Uca palustris	.	text p. 310	n/a	.	.	.	.	.	.
 Holmes1904	6	Uca minax	.	text p. 310	n/a	.	.	minax	<	.	.
 Rathbun1904.1	1	Uca œrstedi	.	text p. 161-162	specimen	Puntarenas, Costa Rica	.	oerstedi	<	.	.
-Rathbun1904.2	1.1	Uca crenulata	.	text p. 17, 190	location	San Diego to Baja California, Mexico	.	crenulata	<	.	.
+Rathbun1904.2	1.1	Uca crenulata	.	text p. 17, 190	location	San Diego, California, USA	.	crenulata	<	.	.
 Rathbun1904.2	1.2	Uca crenulata	.	text p. 17, 190	citation	Rathbun1893	1	=	=	.	.
 Rathbun1904.2	1.3	Uca crenulata	.	text p. 17, 190	citation	Bouvier1895	1	=	=	.	.
+Rathbun1904.2	1.4	Uca crenulata	.	text p. 17, 190	location	Baja California, Mexico	.	crenulata	<	.	.
 Doflein1904	1.1	Uca tangieri	.	text p. 127-128	citation	Eydoux1835	1	=	=	.	.
 Doflein1904	1.2	Uca tangieri	.	text p. 127-128	citation	Herklots1851	1	=	=	.	.
 Doflein1904	1.3	Uca tangieri	.	text p. 127-128	citation	Ortmann1897	24	=	=	.	.
@@ -3584,7 +3587,7 @@ Rathbun1915	1.2	Uca monilifera	.	text p. 126-127; plate 9	citation	Agassiz_nd	1	
 Rathbun1915	2.1	Uca maracoani	.	text p. 126	location	Atlantic coast of the Americas	.	maracoani	<	.	.
 Rathbun1915	2.2	Uca maracoani	.	text p. 126	citation	Latreille1802	2	=	=	.	.
 Rathbun1915	2.3	Uca maracoani	.	text p. 126	citation	MilneEdwards1852	1	=	=	.	.
-Rathbun1915	3.1	Uca musica	.	text p. 127-128; figure 5; plate 10	specimen	Pichilinque, Baja California Sur, Mexico	.	musica	<	.	.
+Rathbun1915	3.1	Uca musica	.	text p. 127-128; figure 5; plate 10	specimen	Pichilinque, Baja California Sur, Mexico	.	musica	<	type description	.
 Rathbun1915	3.2	Uca musica	.	text p. 127-128; figure 5; plate 10	citation	Streets1877	1.3	=	=	.	.
 Rathbun1915	3.3	Uca musica	.	text p. 127-128; figure 5; plate 10	citation	Ortmann1897	23	=	=	.	.
 Rathbun1915	3.4	Uca musica	.	text p. 127-128; figure 5; plate 10	citation	Rathbun1899	5.4	=	=	.	.
@@ -4899,7 +4902,7 @@ Rathbun1935.1	1	Uca guayaquilensis	.	text p. 50	specimen	Guayaquil, Ecuador	.	fe
 Rathbun1935.1	2	Uca coloradensis	.	text p. 50	n/a	.	.	coloradensis	<	.	.
 Rathbun1935.1	3	Uca deichmanni	.	text p. 51	specimen	Panama	.	deichmanni	<	.	.
 Rathbun1935.1	4	Uca stenodactylus	.	text p. 51	n/a	.	.	stenodactylus	<	.	.
-Rathbun1935.1	5	Uca inaequalis	.	text p. 51	specimen	Guayaquil, Ecuador	.	inaequalis	<	.	.
+Rathbun1935.1	5	Uca inaequalis	.	text p. 51	specimen	Guayaquil, Ecuador	.	inaequalis	<	type description	.
 Rathbun1935.2	1.1	Uca inversa	.	text p. 27	citation	Hoffmann1874	7	=	=	.	.
 Rathbun1935.2	1.2	Uca inversa	.	text p. 27	citation	deMan1891	15	=	=	.	.
 Rathbun1935.2	1.3	Uca inversa	.	text p. 27	specimen	Gongoni, Kenya	.	inversa	<	.	.
@@ -7265,7 +7268,8 @@ Fingerman1960	1.5	Uca pugnax	.	text p. 481-484	citation	Hines1954	1	=	=	.	.
 Fingerman1960	1.6	Uca pugnax	.	text p. 481-484	citation	Brown1953.3	2	=	=	.	.
 Fingerman1960	1.7	Uca pugnax	.	text p. 481-484	citation	Brown1954.4	1	=	=	.	.
 Fingerman1960	2	Uca pugilator	.	text p. 482	citation	Brown1954.2	2	=	=	.	.
-Garth1960	1	Uca crenulata	.	text p. 110-111	location	San Diego to Baja California, Mexico	.	crenulata	<	.	.
+Garth1960	1.1	Uca crenulata	.	text p. 110-111	location	San Diego, California, USA	.	crenulata	<	.	.
+Garth1960	1.2	Uca crenulata	.	text p. 110-111	location	Baja California, Mexico	.	crenulata	<	.	.
 Garth1960	2	Uca coloradensis	.	text p. 113	location	Gulf of California, Mexico	.	coloradensis	<	.	.
 Garth1960	3	Uca monilifera	.	text p. 113	location	Gulf of California, Mexico	.	monilifera	<	.	.
 Garth1960	4	Uca brevifrons	.	text p. 119	location	Gulf of California, Mexico	.	brevifrons	<	.	.
@@ -8320,7 +8324,7 @@ Fingerman1967.1	1.2	Uca pugilator	.	text p. 303-318	location	Shell Point Island,
 Fingerman1967.1	1.3	Uca pugilator	.	text p. 303-318	citation	Brown1948.1	1	=	=	.	.
 Fingerman1967.1	1.4	Uca pugilator	.	text p. 303-318	citation	Fingerman1956.1	2	=	=	.	.
 Fingerman1967.1	2	Uca pugnax	.	text p. 311	citation	Stephens1962	1	=	=	.	.
-Holthuis1967	1.1	Uca burgersi	.	text p. 51-54	citation	Streets1872	1	=	=	.	.
+Holthuis1967	1.1	Uca burgersi	.	text p. 51-54	citation	Streets1872	1	=	=	type description	.
 Holthuis1967	1.2	Uca burgersi	.	text p. 51-54	citation	Kingsley1880	26	=	=	.	.
 Holthuis1967	1.3	Uca burgersi	.	text p. 51-54	citation	Rathbun1918.2	11	=	=	.	.
 Holthuis1967	1.4	Uca burgersi	.	text p. 51-54	citation	Holthuis1959.1	5	=	=	.	.
@@ -9591,9 +9595,9 @@ Neff1970	1	Uca	.	text p. 545	n/a	.	.	>Uca	<	No species is specified	.
 Rao1970.4	1	Uca pugilator	.	text p. 495	n/a	.	.	pugilator	<	No location given for specimens.	.
 Rao1970.5	1	Uca pugilator	.	text p. 495-496	n/a	.	.	pugilator	<	No location given for specimens.	.
 Snyder1970	1	Uca	.	text p. 511	n/a	.	.	>Uca	<	No species is specified	.
-Heard1970	1.1	Uca minax	.	text p. 148-149	location	Atlanic and Gulf coasts of United States	.	minax	<	.	.
+Heard1970	1.1	Uca minax	.	text p. 148-149	location	Atlantic and Gulf coasts of United States	.	minax	<	.	.
 Heard1970	1.2	Uca minax	.	text p. 148-149	citation	Hunter1953	3	=	=	.	.
-Heard1970	2.1	Uca pugnax	.	text p. 148-149	location	Atlanic and Gulf coasts of United States	.	pugnax	<	in part	.
+Heard1970	2.1	Uca pugnax	.	text p. 148-149	location	Atlantic and Gulf coasts of United States	.	pugnax	<	in part	.
 Heard1970	2.2	Uca pugnax	.	text p. 148-149	citation	Hunter1953	2	=	=	.	.
 Heard1970	3	Uca rapax	.	text p. 148-149	location	Dauphin Island, Alabama, USA	.	rapax	<	.	.
 Heard1970	4.1	Uca pugilator	.	text p. 149	citation	Hunter1952	1	=	=	.	.
@@ -10502,6 +10506,9 @@ Basan1973	1	Uca pugilator	.	text p. 445	location	Sapelo Island, Georgia, USA	.	p
 Allen1973	1	Uca pugilator	.	text p. 1	location	Beaufort, North Carolina, USA	.	pugilator	<	.	.
 Allen1973	2	Uca pugnax	.	text p. 1	location	Beaufort, North Carolina, USA	.	pugnax	<	.	.
 Allen1973	3	Uca minax	.	text p. 1	location	Beaufort, North Carolina, USA	.	minax	<	.	.
+Hartnoll1973	1	Uca marionis	.	text p. 145; Figure 3d	location	Dar es Salaam, Tanzania	.	hesperiae	>MSR:synonymy/geography	.	.
+Hartnoll1973	2.1	Uca spp.	.	text p. 148-149, 151	citation	Altevogt1957.2	0	>Uca	<	.	.
+Hartnoll1973	2.2	Uca spp.	.	text p. 148-149, 151	citation	Atkinson1973	0	>Uca	<	.	.
 Novak1974	1.1	Uca panacea	.	text p. 313-325; figures 1-8	location	Panacea, Florida, USA	.	panacea	<	type description	.
 Novak1974	1.2	Uca panacea	.	text p. 313-325; figures 1-8	citation	Rao1968.3	.	=	=	.	.
 Novak1974	1.3	Uca panacea	.	text p. 313-325; figures 1-8	citation	Selander1971	2	=	=	.	.
@@ -12908,13 +12915,14 @@ Salmon1977	2.2	Uca minax	red-jointed fiddler crab	text p. 187-190, 192	n/a	.	.	m
 Powers1977	1.1	Uca	.	text p. 10, 13, 18, 142	citation	Bott1973.2	0	>Uca	<	.	.
 Powers1977	1.2	Uca	.	text p. 10, 13, 18, 142	citation	Crane1975	0	>Uca	<	.	.
 Powers1977	1.3	Uca	.	text p. 10, 13, 18, 142	citation	Abele1970	.	=	=	.	.
-Powers1977	2.1	Uca subcylindrica	.	text p. 18, 148	location	Texas, USA to Mexico	.	subcylindrica	<	.	.
+Powers1977	2.1	Uca subcylindrica	.	text p. 18, 148	location	Texas, USA	.	subcylindrica	<	.	.
 Powers1977	2.2	Uca subcylindrica	.	text p. 18, 148	citation	Stimpson1859	3	=	=	.	.
 Powers1977	2.3	Uca subcylindrica	.	text p. 18, 148	citation	Rathbun1918.2	30	=	=	.	.
 Powers1977	2.4	Uca subcylindrica	.	text p. 18, 148	citation	Felder1973	.	=	=	.	.
 Powers1977	2.5	Uca subcylindrica	.	text p. 18, 148	citation	Crane1975	70	=	=	.	.
 Powers1977	2.6	Uca subcylindrica	.	text p. 18, 148	citation	Fotheringham1975	2	=	=	.	.
-Powers1977	3.01	Uca panacea	sand fiddler crab	text p. 18, 144-146	location	Northwestern Florida, USA to Southern Texas, USA	.	panacea	<	.	.
+Powers1977	2.7	Uca subcylindrica	.	text p. 18, 148	location	Eastern coast of Mexico	.	subcylindrica	<	.	.
+Powers1977	3.01	Uca panacea	sand fiddler crab	text p. 18, 144-146	location	Northwestern Florida, USA	.	panacea	<	.	.
 Powers1977	3.02	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Novak1974	1	=	=	.	.
 Powers1977	3.03	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Selander1971	2	=	=	.	.
 Powers1977	3.04	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Rathbun1918.2	15	=	=	in part	.
@@ -12925,6 +12933,10 @@ Powers1977	3.08	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Hedgp
 Powers1977	3.09	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Powers1973	2	=	=	.	.
 Powers1977	3.1	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Powers1975.2	1	=	=	.	.
 Powers1977	3.11	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Powers1976	1	=	=	.	.
+Powers1977	3.12	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Texas, USA	.	panacea	<	.	.
+Powers1977	3.13	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Louisiana, USA	.	panacea	<	.	.
+Powers1977	3.14	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Mississippi, USA	.	panacea	<	.	.
+Powers1977	3.15	Uca panacea	sand fiddler crab	text p. 18, 144-146	citation	Alabama, USA	.	panacea	<	.	.
 Powers1977	4.001	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Selander1971	1	=	=	.	.
 Powers1977	4.002	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Bosc1802	2.1	=	=	.	.
 Powers1977	4.003	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Hay1915	3	=	=	.	.
@@ -13048,7 +13060,7 @@ Powers1977	4.120	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	He
 Powers1977	4.121	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Whitten1950	2	=	=	.	.
 Powers1977	4.122	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Simmons1957	1	=	=	.	.
 Powers1977	4.123	Uca pugilator	sand fiddler crab	text p. 18, 145-146	citation	Leary1961	.	=	=	.	.
-Powers1977	5.1	Uca virens	.	text p. 18, 143-144, 147, 149	location	Mississippi, USA, to Mexico	.	virens	<	.	.
+Powers1977	5.1	Uca virens	.	text p. 18, 143-144, 147, 149	location	Mississippi, USA	.	virens	<	.	.
 Powers1977	5.2	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Selander1971	5	=	=	.	.
 Powers1977	5.3	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Felder1973	.	=	=	.	.
 Powers1977	5.4	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Salmon1968.1	4	=	=	.	.
@@ -13056,6 +13068,9 @@ Powers1977	5.5	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Crane1975	68	
 Powers1977	5.6	Uca virens	.	text p. 18, 143-144, 147, 149	citation	vonHagen1976	4.3	=	=	.	.
 Powers1977	5.7	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Powers1975.2	2	=	=	.	.
 Powers1977	5.8	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Powers1976	2	=	=	.	.
+Powers1977	5.9	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Louisiana, USA	.	virens	<	.	.
+Powers1977	5.10	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Texas, USA	.	virens	<	.	.
+Powers1977	5.11	Uca virens	.	text p. 18, 143-144, 147, 149	citation	Eastern coast of Mexico	.	virens	<	.	.
 Powers1977	6.01	Uca longisignalis	.	text p. 18, 143-144, 147, 149	location	Northwestern Florida, USA to Southern Texas, USA	.	longisignalis	<	.	.
 Powers1977	6.02	Uca longisignalis	.	text p. 18, 143-144, 147, 149	citation	Selander1971	4	=	=	.	.
 Powers1977	6.03	Uca longisignalis	.	text p. 18, 143-144, 147, 149	citation	Salmon1968.1	3	=	=	.	.
@@ -13095,13 +13110,15 @@ Powers1977	8.18	Uca burgersi	.	text p. 142, 144	location	Jamaica	.	burgersi	<	.	
 Powers1977	8.19	Uca burgersi	.	text p. 142, 144	location	Hispaniola	.	burgersi	<	.	.
 Powers1977	8.2	Uca burgersi	.	text p. 142, 144	location	Puerto Rico	.	burgersi	<	.	.
 Powers1977	8.21	Uca burgersi	.	text p. 142, 144	location	Antilles	.	burgersi	<	.	.
-Powers1977	8.22	Uca burgersi	.	text p. 142, 144	location	Eastern Yucatan Peninsula, Mexico to Guatemala	.	burgersi	<	.	.
+Powers1977	8.22	Uca burgersi	.	text p. 142, 144	location	Eastern Yucatan Peninsula, Mexico	.	burgersi	<	.	.
 Powers1977	8.23	Uca burgersi	.	text p. 142, 144	location	Atlantic coast of Panama	.	burgersi	<	.	.
 Powers1977	8.24	Uca burgersi	.	text p. 142, 144	location	Venezuela	.	burgersi	<	.	.
 Powers1977	8.25	Uca burgersi	.	text p. 142, 144	location	Guyana	.	burgersi	<	.	.
 Powers1977	8.26	Uca burgersi	.	text p. 142, 144	location	Suriname	.	burgersi	<	.	.
 Powers1977	8.27	Uca burgersi	.	text p. 142, 144	location	French Guiana	.	burgersi	<	.	.
 Powers1977	8.28	Uca burgersi	.	text p. 142, 144	location	Brazil	.	burgersi	<	.	.
+Powers1977	8.29	Uca burgersi	.	text p. 142, 144	location	Belize	.	burgersi	<	.	.
+Powers1977	8.3	Uca burgersi	.	text p. 142, 144	location	Atlantic coast of Guatemala	.	burgersi	<	.	.
 Powers1977	9.01	Uca leptodactyla	.	text p. 143	citation	Rathbun1898	2	=	=	.	.
 Powers1977	9.02	Uca leptodactyla	.	text p. 143	citation	Rathbun1918.2	32	=	=	.	.
 Powers1977	9.03	Uca leptodactyla	.	text p. 143	citation	Maccagno1928	26	=	=	in part	.
@@ -13144,7 +13161,7 @@ Powers1977	10.1	Uca rapax	.	text p. 143-144, 147	citation	Chace1969	10	=	=	.	.
 Powers1977	10.11	Uca rapax	.	text p. 143-144, 147	citation	vonHagen1970.1	5	=	=	.	.
 Powers1977	10.12	Uca rapax	.	text p. 143-144, 147	location	The Bahamas	.	rapax	<	.	.
 Powers1977	10.13	Uca rapax	.	text p. 143-144, 147	location	Florida, USA	.	rapax	<	.	.
-Powers1977	10.14	Uca rapax	.	text p. 143-144, 147	location	Northeastern coast of Mexico to Guatemala	.	rapax	<	.	.
+Powers1977	10.14	Uca rapax	.	text p. 143-144, 147	location	Eastern coast of Mexico	.	rapax	<	.	.
 Powers1977	10.15	Uca rapax	.	text p. 143-144, 147	location	Cuba	.	rapax	<	.	.
 Powers1977	10.16	Uca rapax	.	text p. 143-144, 147	location	Jamaica	.	rapax	<	.	.
 Powers1977	10.17	Uca rapax	.	text p. 143-144, 147	location	Hispaniola	.	rapax	<	.	.
@@ -13172,6 +13189,8 @@ Powers1977	10.38	Uca rapax	.	text p. 143-144, 147	location	Guyana	.	rapax	<	.	.
 Powers1977	10.39	Uca rapax	.	text p. 143-144, 147	location	Suriname	.	rapax	<	.	.
 Powers1977	10.4	Uca rapax	.	text p. 143-144, 147	location	French Guiana	.	rapax	<	.	.
 Powers1977	10.41	Uca rapax	.	text p. 143-144, 147	location	Brazil	.	rapax	<	.	.
+Powers1977	10.42	Uca rapax	.	text p. 143-144, 147	location	Belize	.	rapax	<	.	.
+Powers1977	10.43	Uca rapax	.	text p. 143-144, 147	location	Atlantic coast of Guatemala	.	rapax	<	.	.
 Powers1977	11.01	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	vonHagen1976	21	=	=	.	.
 Powers1977	11.02	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	LeConte1855	2	=	=	.	.
 Powers1977	11.03	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Hay1915	1	=	=	.	.
@@ -13182,7 +13201,7 @@ Powers1977	11.07	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab
 Powers1977	11.08	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Felder1973	.	=	=	.	.
 Powers1977	11.09	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Crane1975	61	=	=	.	.
 Powers1977	11.1	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	location	Atlantic coast of United States	.	minax	<	.	.
-Powers1977	11.11	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	location	Northwestern Florida, USA to Louisiana, USA, possibly Texas, USA	.	minax	<	.	.
+Powers1977	11.11	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	location	Northwestern Florida, USA	.	minax	<	.	.
 Powers1977	11.12	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Wass1955	3	=	=	.	.
 Powers1977	11.13	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Abele1970	.	=	=	.	.
 Powers1977	11.14	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Menzel1971	.	=	=	.	.
@@ -13210,6 +13229,10 @@ Powers1977	11.35	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab
 Powers1977	11.36	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Crane1957	29	=	=	.	.
 Powers1977	11.37	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Salmon1965	3	=	=	.	.
 Powers1977	11.38	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Salmon1973	1	=	=	.	.
+Powers1977	11.39	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Texas, USA	.	minax	<	.	.
+Powers1977	11.4	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Louisiana, USA	.	minax	<	.	.
+Powers1977	11.41	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Mississippi, USA	.	minax	<	.	.
+Powers1977	11.42	Uca minax	Red-Jointed Fiddler Crab; Brackish Water Fiddler Crab	text p. 143-144, 147	citation	Alabama, USA	.	minax	<	.	.
 Powers1977	12	Uca minas	.	text p. 144	citation	vonHagen1976	21.2	=	=	typo	.
 Powers1977	13.1	Uca mordax	.	text p. 144	citation	Crane1975	60	=	=	.	.
 Powers1977	13.2	Uca mordax	.	text p. 144	citation	Rathbun1918.2	11	=	=	in part	.
@@ -13255,10 +13278,14 @@ Powers1977	16.1	Uca spinicarpa	.	text p. 148	citation	Rathbun1900.2	7	=	=	.	.
 Powers1977	16.2	Uca spinicarpa	.	text p. 148	citation	Rathbun1918.2	23	=	=	.	.
 Powers1977	16.3	Uca spinicarpa	.	text p. 148	citation	Felder1973	.	=	=	.	.
 Powers1977	16.4	Uca spinicarpa	.	text p. 148	citation	Crane1975	78	=	=	.	.
-Powers1977	16.5	Uca spinicarpa	.	text p. 148	location	Alabama, USA to Mexico	.	spinicarpa	<	.	.
+Powers1977	16.5	Uca spinicarpa	.	text p. 148	location	Alabama, USA	.	spinicarpa	<	.	.
 Powers1977	16.6	Uca spinicarpa	.	text p. 148	citation	Leary1961	.	=	=	.	.
 Powers1977	16.7	Uca spinicarpa	.	text p. 148	citation	Fotheringham1975	4	=	=	.	.
 Powers1977	16.8	Uca spinicarpa	.	text p. 148	citation	Bott1973.2	0	=	=	.	.
+Powers1977	16.9	Uca spinicarpa	.	text p. 148	location	Mississippi, USA	.	spinicarpa	<	.	.
+Powers1977	16.10	Uca spinicarpa	.	text p. 148	location	Louisiana, USA	.	spinicarpa	<	.	.
+Powers1977	16.11	Uca spinicarpa	.	text p. 148	location	Texas, USA	.	spinicarpa	<	.	.
+Powers1977	16.12	Uca spinicarpa	.	text p. 148	location	Eastern coast of Mexico	.	spinicarpa	<	.	.
 Powers1977	17	Uca cumulanta	.	text p. 148	citation	Chace1969	7	=	=	.	.
 Powers1977	18.01	Uca thayeri	.	text p. 148-149	citation	Rathbun1900.3	3	=	=	.	.
 Powers1977	18.02	Uca thayeri	.	text p. 148-149	citation	Rathbun1918.2	19	=	=	.	.
@@ -13698,6 +13725,17 @@ Wheeler1978	3.1	Uca triangularis	.	text p. 268	citation	Feest1969	2	=	=	.	.
 Wheeler1978	3.2	Uca triangularis	.	text p. 268	citation	vonHagen1970.4	23	=	=	.	.
 Wheeler1978	4	Uca	.	text p. 268	citation	vonHagen1970.4	0	>Uca	<	.	.
 Pretzmann1978	1	Uca	.	text p. 590	location	Puerto Pizarro, Peru	0	>Uca	<	.	.
+Christy1978	1.1	Uca	fiddler crabs	text p. 453-455	citation	Crane1975	0	>Uca	<	.	.
+Christy1978	1.2	Uca	fiddler crabs	text p. 453-455	citation	Crane1958	0	>Uca	<	.	.
+Christy1978	1.3	Uca	fiddler crabs	text p. 453-455	citation	vonHagen1970.4	0	>Uca	<	.	.
+Christy1978	1.4	Uca	fiddler crabs	text p. 453-455	citation	vonHagen1962.1	0	>Uca	<	.	.
+Christy1978	1.5	Uca	fiddler crabs	text p. 453-455	citation	Zucker1974	0	>Uca	<	.	.
+Christy1978	1.6	Uca	fiddler crabs	text p. 453-455	citation	DeCoursey1976	0	>Uca	<	.	.
+Christy1978	1.7	Uca	fiddler crabs	text p. 453-455	citation	Sandifer1973	0	>Uca	<	.	.
+Christy1978	2.1	Uca pugilator	.	text p. 453-455	citation	Salmon1965	1	=	=	.	.
+Christy1978	2.2	Uca pugilator	.	text p. 453-455	citation	Crane1975	73	=	=	.	.
+Christy1978	2.3	Uca pugilator	.	text p. 453-455	location	Cayo Pelau, Florida, USA	.	=	=	.	.
+Christy1978	2.4	Uca pugilator	.	text p. 453-455	citation	Herrnkind1968.2	1	=	=	.	.
 Christy1979	1	Uca pugilator	.	text p. 933	location	South Carolina, USA	.	pugilator	<	.	.
 Dietrich1979	1	Uca pugilator	.	text p. 972	location	North Carolina, USA	.	pugilator	<	.	.
 Dores1979	1	Uca	.	text p. 917	n/a	.	.	>Uca	<	.	The particular studied species is never named.
@@ -13710,7 +13748,9 @@ Headstrom1979	1	.	fiddler crab	text p. 47-48, 123	n/a	.	.	>Uca	<	.	.
 Headstrom1979	2	Uca minax	.	text p. 47-48; Figure 33	location	Atlantic coast of United States	.	minax	<	.	.
 Headstrom1979	3	Uca pugnax	.	text p. 48	location	Atlantic coast of United States	.	pugnax	<	.	.
 Headstrom1979	4	Uca pugilator	.	text p. 48	location	Atlantic coast of United States	.	pugilator	<	.	.
-Headstrom1979	5	Uca musica	.	text p. 48	location	Vancouver Island to Mexico	.	musica	<	The range is nonsense; the reports of fiddlers north up by Seattle and Vancouver are incorrect.	.
+Headstrom1979	5.1	Uca musica	.	text p. 48	location	Pacific coast of Mexico	.	musica	<	.	.
+Headstrom1979	5.2	Uca musica	.	text p. 48	location	Pacific coast of United States	.	musica	<	The reports of fiddlers north up by Seattle and Vancouver are incorrect.	.
+Headstrom1979	5.3	Uca musica	.	text p. 48	location	Vancouver Island, British Columbia, Canada	.	musica	<	The reports of fiddlers north up by Seattle and Vancouver are incorrect.	.
 Headstrom1979	6	Uca crenulata	.	text p. 48	location	San Diego, California, USA	.	crenulata	<	.	.
 Weis1979.1	1.1	Uca pugilator	.	text p. 157-165	citation	Weis1976.1	1	=	=	.	.
 Weis1979.1	1.2	Uca pugilator	.	text p. 157-165	citation	Weis1977.1	1	=	=	.	.
@@ -13808,7 +13848,12 @@ Brusca1980	9	Uca pugnax	.	text p. 303	n/a	.	.	pugnax	<	.	.
 Brusca1980	10	Uca crenulata coloradensis	.	text p. 304	location	Gulf of California, Mexico	.	coloradensis	<	.	.
 Brusca1980	11	Uca crenulata crenulata	.	text p. 304	location	Gulf of California, Mexico	.	crenulata	<	.	.
 Brusca1980	12	Uca virens	.	text p. 304	citation	Powers1976	2	=	=	.	.
-Brusca1980	13	Uca musica terpsichores	.	text p. 304	location	Central America to Peru	.	terpsichores	<	.	.
+Brusca1980	13.1	Uca musica terpsichores	.	text p. 304	location	Peru	.	terpsichores	<	.	.
+Brusca1980	13.2	Uca musica terpsichores	.	text p. 304	location	Ecuador	.	terpsichores	<	.	.
+Brusca1980	13.3	Uca musica terpsichores	.	text p. 304	location	Pacific coast of Colombia	.	terpsichores	<	.	.
+Brusca1980	13.4	Uca musica terpsichores	.	text p. 304	location	Pacific coast of Panama	.	terpsichores	<	.	.
+Brusca1980	13.5	Uca musica terpsichores	.	text p. 304	location	Pacific coast of Costa Rica	.	terpsichores	<	.	.
+Brusca1980	13.6	Uca musica terpsichores	.	text p. 304	location	Pacific coast of Nicaragua	.	terpsichores	<	.	.
 Brusca1980	14	Uca vocator vocator	.	text p. 305	location	Atlantic coast of the Americas	.	vocator	<	.	.
 Brusca1980	15	Uca princeps princeps	.	text p. 305; figure 20.17	location	Gulf of California, Mexico	.	princeps	<	.	.
 Brusca1980	16	Uca princeps monilifera	.	text p. 305	location	Gulf of California, Mexico	.	monilifera	<	.	.
@@ -13838,6 +13883,10 @@ Full1980	1	Uca minax	.	text p. 909	n/a	.	.	minax	<	.	.
 Full1980	2	Uca pugilator	.	text p. 909	n/a	.	.	pugilator	<	.	.
 Full1980	3	Uca pugnax	.	text p. 909	n/a	.	.	pugnax	<	.	.
 Fleeger1980	1	Uca pugnax	.	text p. 116	citation	Teal1962	2	=	=	.	.
+Quinn1980	1.1	Uca	.	text p. 49	citation	Altevogt1957.1	0	>Uca	<	.	.
+Quinn1980	1.2	Uca	.	text p. 49	citation	Miller1961	0	>Uca	<	.	.
+Quinn1980	2	Uca pugilator	.	text p. 59	citation	Miller1961	1	=	=	.	.
+Quinn1980	3	Uca pugnax	.	text p. 59	citation	Miller1961	2	=	=	.	.
 Thurman1981.1	1.1	Uca marguerita	.	text p. 169-179; figure 2	specimen	Veracruz, Mexico	.	marguerita	<	type description	.
 Thurman1981.1	1.2	Uca marguerita	.	text p. 169-179; figure 2	citation	Rathbun1918.2	11.1	=	=	.	.
 Thurman1981.1	1.3	Uca marguerita	.	text p. 169-179; figure 2	citation	Buitendijk1950	2.6	=	=	.	.
@@ -13874,7 +13923,8 @@ Thurman1981.2	1	Uca subcylindrica	.	text p. 990	location	Laguna Madre, Texas, US
 Thurman1981.2	2	Uca	.	text p. 990	n/a	.	.	>Uca	<	.	.
 Schwing1981	1	Uca	.	text p. 281	location	North Inlet, South Carolina, USA	.	>Uca	<	Could be a mix of three species: <em class="species">Uca pugilator, U. pugnax,</em> and <em class="species">U. minax.</em>	.
 Wagner1981	1	Uca pugnax	.	text p. 331-332	location	Woods Hole, Massachusetts, USA	.	pugnax	<	.	.
-Rabalais1981	1	Uca subcylindrica	.	text p. 990	location	Southern Texas, USA to Northeastern Mexico	.	subcylindrica	<	.	.
+Rabalais1981	1.1	Uca subcylindrica	.	text p. 990	location	Southern Texas, USA	.	subcylindrica	<	.	.
+Rabalais1981	1.2	Uca subcylindrica	.	text p. 990	location	Eastern coast of Mexico	.	subcylindrica	<	.	.
 Rabalais1981	2	Uca	.	text p. 990	n/a	.	.	>Uca	<	.	.
 Begg1981	1	Uca annulipes	.	text p. 250	location	Umgeni River, Durban, South Africa	.	occidentalis	>MSR:geography	.	.
 Hackney1981	1	Uca longisignalis	.	text p. 658-660	location	Bay St Louis, Mississippi, USA	.	longisignalis	<	.	.
@@ -14343,6 +14393,12 @@ ICZN1983	1.2	Cancer vocans major	.	text p. 200	citation	Shaw1802	1	=	=	.	.
 ICZN1983	1.3	Cancer vocans major	.	text p. 200	citation	Crane1975	48	=	=	.	.
 ICZN1983	1.4	Cancer vocans major	.	text p. 200	citation	Holthuis1979	.	=	=	.	.
 ICZN1983	2	Gelasimus tangeri	.	text p. 200	citation	Eydoux1835	1	=	=	.	.
+delaCruz1983	1	Uca longisignalis	.	text p. 99-106	location	Bay St Louis, Mississippi, USA	.	longisignalis	<	.	.
+Felgenhauer1983	1.1	Uca	.	text p. 187, 193	citation	Altevogt1957.2	0	>Uca	<	.	.
+Felgenhauer1983	1.2	Uca	.	text p. 187, 193	citation	Miller1961	0	>Uca	<	.	.
+Felgenhauer1983	1.3	Uca	.	text p. 187, 193	citation	Quinn1980	0	>Uca	<	.	.
+Felgenhauer1983	1.4	Uca	.	text p. 187, 193	citation	Hartnoll1973	0	>Uca	<	.	.
+Felgenhauer1983	2	Uca pugnax	.	text p. 188, 192	location	Panacea, Florida, USA	.	pugnax	<	.	.
 Barnwell1984.3	1.1	Uca vocans pacificensis	.	text p. 68A	location	Fiji	.	excisa	>MSR:synonymy/geography	.	.
 Barnwell1984.3	1.2	Uca vocans pacificensis	.	text p. 68A	location	Zamboanga, Minanao, Philippines	.	jocelynae	>MSR:synonymy/geography	.	.
 Barnwell1984.3	2.1	Uca vocans vocans	.	text p. 68A	location	Manila, Luzon, Philippines	.	vocans	<	.	.
@@ -15242,7 +15298,7 @@ Bairagi1988	2.6	Uca (Deltuca) rosea	.	text p. 449-450; figure 1	citation	Chopra1
 Bairagi1988	2.7	Uca (Deltuca) rosea	.	text p. 449-450; figure 1	citation	Chopra1937	3.5	=	=	.	.
 Bairagi1988	2.8	Uca (Deltuca) rosea	.	text p. 449-450; figure 1	citation	Crane1975	5	=	=	.	.
 Bairagi1988	3	Uca (Deltuca) acuta	.	text p. 450	citation	Crane1975	3	=	=	.	.
-Formanowicz1988	1	Uca panacea	.	text p. 1836-1837	location	Aransas County, Texas, USA		panacea	<	.	.
+Formanowicz1988	1	Uca panacea	.	text p. 1836-1837	location	Aransas County, Texas, USA	.	panacea	<	.	.
 Formanowicz1988	2	.	fiddler crabs	text p. 1837	citation	Full1984.2	0	>Uca	<	.	.
 Kerstitch1989	1	Uca princeps	Princely Fiddler Crab	text p. 90	location	Gulf of California, Mexico	.	princeps	<	.	.
 Gaus1989	1	Uca pugilator	.	text p. 261	n/a	.	.	pugilator	<	.	.
@@ -15311,6 +15367,11 @@ Somers1991	1	Uca thayeri	.	text p. 362	citation	Salmon1987.1	.	=	=	.	.
 Biljlsma1991	1	Uca sp.	fiddler crabs	text p. 22, 25	citation	Swennen1985	.	=	=	.	.
 Biljlsma1991	2	Uca tangeri	.	text p. 25	citation	Zwarts1985	2	=	=	.	.
 Tsai1991	1	Uca pugilator	.	text p. 59, 61	citation	Grant1981	.	=	=	.	.
+Morrier1991	1	Uca thayeri	.	text p. 601-602, 608-609, 612, 615, 617	location	Chacopata Lagoon Complex, Araya Peninsula, Sucre, Venezuela	.	thayeri	<	.	.
+Morrier1991	2.1	Uca tangeri	.	text p. 602, 615	citation	Zwarts1990.2	1	=	=	.	.
+Morrier1991	2.2	Uca tangeri	.	text p. 602, 615	citation	Zwarts1985	2	=	=	.	.
+Morrier1991	2.3	Uca tangeri	.	text p. 602, 615	citation	Zwarts1990.1	1	=	=	.	.
+Morrier1991	2.4	Uca tangeri	.	text p. 602, 615	citation	Zwarts1990.3	1	=	=	.	.
 Sarojini1992	1	Uca pugilator	.	text p. 64A	n/a	.	.	pugilator	<	.	.
 Grant1992	1	Uca minax	.	text p. 6	location	Sneads Ferry, North Carolina, USA	.	minax	<	.	.
 Gleeson1992	1	Uca	.	text p. 405	n/a	.	.	>Uca	<	.	.
@@ -15327,6 +15388,11 @@ Schinca1992	2.4	Uca	.	text p. 37-38	citation	Salmon1988.1	0	>Uca	=	.	.
 Schinca1992	3	Celuca	.	text p. 38	n/a	.	.	>Leptuca	>MSR:synonymy	.	.
 Mantel1992	1	Uca pugilator	.	text p. 448	citation	Hopkins1992	.	=	=	.	.
 Reinsel1992	1	Uca pugilator	sand fiddler crabs	text p. 318-319	location	Beaufort, North Carolina, USA	.	pugilator	<	.	.
+McNeil1992	1.1	Uca	fiddler crabs	text p. 401-402	citation	Meinertzagen1985	0	>Uca	<	.	.
+McNeil1992	1.2	Uca	fiddler crabs	text p. 401-402	citation	Zwarts1990.1	0	>Uca	<	.	.
+McNeil1992	1.3	Uca	fiddler crabs	text p. 401-402	citation	Morrier1991	0	>Uca	<	.	.
+McNeil1992	1.4	Uca	fiddler crabs	text p. 401-402	citation	Zwarts1990.3	0	>Uca	<	.	.
+McNeil1992	1.5	Uca	fiddler crabs	text p. 401-402	location	Chacopata Lagoon Complex, Araya Peninsula, Sucre, Venezuela	0	>Uca	<	.	.
 Yamaguchi1993.1	1	Uca arcuata	.	text p. 85; figure 15	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.1	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.2	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	Parisi1918	3	=	=	.	.
@@ -15393,6 +15459,7 @@ Sarojini1993	2	Uca pugnax	.	text p. 321	citation	Young1974	1	=	=	.	.
 Nassel1993	1.1	Uca pugilator	.	text p. 183-185, 193	citation	Rao1985.1	.	=	=	.	.
 Nassel1993	1.2	Uca pugilator	.	text p. 183-185, 193	citation	Fingerman1967.3	1	=	=	.	.
 Nassel1993	1.3	Uca pugilator	.	text p. 183-185, 193	n/a	.	.	pugilator	<	no location of specimens stated	.
+Turpie1993	1	.	fiddler crabs	text p. 158	citation	Zwarts1990.2	0	>Uca	<	.	.
 Thurman1994	1	Uca	.	text p. 31A	location	Southern Texas, USA	.	>Uca	<	Mentions there were 5 species studied, but only specifies 3	.
 Thurman1994	2	Uca subcylindrica	.	text p. 31A	location	Southern Texas, USA	.	subcylindrica	<	.	.
 Thurman1994	3	Uca panacea	.	text p. 31A	location	Southern Texas, USA	.	panacea	<	.	.
@@ -15497,6 +15564,11 @@ Tucker1995	2	Gelasimus	.	text p. 167	n/a	.	.	>Uca	<	.	.
 Tucker1995	3	Uca	.	text p. 167	n/a	.	.	>Uca	<	.	.
 Weissburg1995.2	1	Uca pugnax	.	text p. 800-801	location	Georgia, USA	.	pugnax	<	.	.
 Weissburg1995.2	2	Uca pugilator	.	text p. 800-801	location	Georgia, USA	.	pugilator	<	.	.
+McNeil1995.2	1	Uca cumulanta	.	text p. 169-171, 173, 175	location	Chacopata Lagoon Complex, Araya Peninsula, Sucre, Venezuela	.	cumulanta	<	.	.
+McNeil1995.2	2.1	.	fiddler crabs	text p. 175	citation	McNeil1992	0	>Uca	<	.	.
+McNeil1995.2	2.2	.	fiddler crabs	text p. 175	citation	Cramp1982	0	>Uca	<	.	.
+McNeil1995.2	2.3	.	fiddler crabs	text p. 175	citation	Zwarts1990.1	0	>Uca	<	.	.
+McNeil1995.2	2.4	.	fiddler crabs	text p. 175	citation	Turpie1993	0	>Uca	<	.	.
 Thurman1996	1	Uca panacea	.	text p. 67A	location	Southern Texas, USA	.	panacea	<	.	.
 Thurman1996	2	Uca rapax	.	text p. 67A	location	Southern Texas, USA	.	rapax	<	.	.
 Thurman1996	3	Uca spinicarpa	.	text p. 67A	location	Southern Texas, USA	.	spinicarpa	<	.	.
@@ -15534,6 +15606,7 @@ AlGhais1996	5.3	Uca inversa	.	text p. 421-422, 427	citation	Crane1975	36	=	=	.	.
 AlGhais1996	5.4	Uca inversa	.	text p. 421-422, 427	citation	Collins1984	.	=	=	.	.
 AlGhais1996	5.5	Uca inversa	.	text p. 421-422, 427	citation	Barnard1950	5	=	=	.	.
 AlGhais1996	5.6	Uca inversa	.	text p. 421-422, 427	citation	Crosnier1965	7	=	=	.	.
+Gibson1996	1	Uca annulipes	.	text p. 468-469	citation	Backwell1996	.	=	=	.	.
 Balbort1997	1	Uca longisignalis	.	text p. 186A	location	Southern Texas, USA	.	longisignalis	<	.	.
 Balbort1997	2	Uca panacea	.	text p. 186A	location	Southern Texas, USA	.	panacea	<	.	.
 Balbort1997	3	Uca rapax	.	text p. 186A	location	Southern Texas, USA	.	rapax	<	.	.
@@ -17449,6 +17522,15 @@ Reaney2008.2	1.1	Uca mjoebergi	.	text p. R62-R63	location	Darwin, Northern Terri
 Reaney2008.2	1.2	Uca mjoebergi	.	text p. R62-R63	citation	Reaney2007.2	.	=	=	.	.
 Reaney2008.2	2.1	.	fiddler crabs	text p. R62	citation	Backwell1998.1	0	>Uca	=	.	.
 Reaney2008.2	2.2	.	fiddler crabs	text p. R62	citation	Backwell1999	0	>Uca	=	.	.
+Hotard2008	1.1	Uca pugilator	.	text p. 242-244	citation	Zou1999.4	.	=	=	.	.
+Hotard2008	1.2	Uca pugilator	.	text p. 242-244	location	Panacea, Florida, USA	.	?	.	Could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
+Hotard2008	1.3	Uca pugilator	.	text p. 242-244	citation	Vigh1985.2	.	=	=	.	.
+Hotard2008	1.4	Uca pugilator	.	text p. 242-244	citation	Zou1999.5	.	=	=	.	.
+Fayed2008	1.1	Uca mjoebergi	.	text p. 143-145	location	Darwin, Northern Territory, Australia	.	mjoebergi	<	.	.
+Fayed2008	1.2	Uca mjoebergi	.	text p. 143-145	citation	Morrell2005	.	=	=	.	.
+Fayed2008	2.1	Uca	.	text p. 143	citation	Backwell2000	0	>Uca	<	.	.
+Fayed2008	2.2	Uca	.	text p. 143	citation	Backwell2004	0	>Uca	<	.	.
+Fayed2008	2.3	Uca	.	text p. 143	citation	Jennions1996	0	>Uca	<	.	.
 Meng2009.3	1	Uca pugilator	.	text p. e114	n/a	.	.	pugilator	<	.	.
 Aoki2009	1.1	Uca arcuata	.	text p. 10-13	location	Japan	.	arcuata	<	.	.
 Aoki2009	1.2	Uca arcuata	.	text p. 10-13	citation	Ono1965	2	=	=	.	.
@@ -18279,6 +18361,490 @@ deNoronhaCampos2016	2	Uca vocator	.	text p. 291	citation	Simith2010	.	=	=	.	.
 deNoronhaCampos2016	3.1	Uca pugilator	.	text p. 297	citation	Christy1989	.	=	=	.	.
 deNoronhaCampos2016	3.2	Uca pugilator	.	text p. 297	citation	OConnor1991	.	=	=	.	.
 Karagozlu2016	1	Uca (Tubuca) arcuata	.	text p. 835-836	location	Bang La Mangrove Forest, Vietnam	.	arcuata	<	.	.
+Shih2016.2	1.1	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Spivak1991	.	=	=	.	.
+Shih2016.2	1.2	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Crane1975	41	=	=	.	.
+Shih2016.2	1.3	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Levinton1996	.	=	=	in part	.
+Shih2016.2	1.4	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Rosenberg2001	3.2	=	=	in part	.
+Shih2016.2	1.5	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Sturmbauer1996	.	=	=	in part	.
+Shih2016.2	1.6	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Beinlich2006	8.3	=	=	in part	.
+Shih2016.2	1.7	Afruca	.	text p. 139-141, 143-145, 147-149, 161, 168	citation	Ng2008	.	=	=	in part	.
+Shih2016.2	2.01	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	specimen	Elmina, Ghana [NCHUZOOL 13654]	.	tangeri	<	.	.
+Shih2016.2	2.02	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	specimen	El Puerto de Santa Maria, Cádiz, Spain [NCHUZOOL 14911]	.	tangeri	<	.	.
+Shih2016.2	2.03	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	specimen	El Puerto de Santa Maria, Cádiz, Spain [NCHUZOOL 13585]	.	tangeri	<	.	.
+Shih2016.2	2.04	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Spivak1991	.	=	=	.	.
+Shih2016.2	2.05	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Eydoux1835	1	=	=	.	.
+Shih2016.2	2.06	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Herklots1851	1	=	=	.	.
+Shih2016.2	2.07	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Rochebrune1883	1	=	=	.	.
+Shih2016.2	2.08	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Monod1927	2.1	=	=	.	.
+Shih2016.2	2.09	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Monod1929	1	=	=	.	.
+Shih2016.2	2.1	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Bott1973.1	1	=	=	.	.
+Shih2016.2	2.11	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	ICZN1983	2	=	=	.	.
+Shih2016.2	2.12	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Holthuis1979	.	=	=	.	.
+Shih2016.2	2.13	Afruca tangeri	.	text p. 140, 143, 147-149, 168; Figures 6A-B	citation	Rosenberg2001	10	=	=	.	.
+Shih2016.2	3.1	Austruca	.	text p. 139-140, 142, 144, 151-153, 156, 161, 168	citation	Shih2013	.	=	=	.	.
+Shih2016.2	3.2	Austruca	.	text p. 139-140, 142, 144, 151-153, 156, 161, 168	citation	Bott1973.2	58	=	=	.	.
+Shih2016.2	3.3	Austruca	.	text p. 139-140, 142, 144, 151-153, 156, 161, 168	citation	Crane1975	71	=	=	in part	.
+Shih2016.2	4.1	Austruca albimana	.	text p. 142, 153, 168	specimen	Nabq, Sinai, Egypt [NCHUZOOL 13242]	.	albimana	<	.	.
+Shih2016.2	4.2	Austruca albimana	.	text p. 142, 153, 168	citation	Kossmann1877	19	=	=	.	.
+Shih2016.2	4.3	Austruca albimana	.	text p. 142, 153, 168	citation	Beinlich2006	58	=	=	.	.
+Shih2016.2	5.1	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	specimen	Phuket Island, Thailand [NCHUZOOL 13258]	.	annulipes	<	.	.
+Shih2016.2	5.2	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	citation	MilneEdwards1837.2	10	=	=	.	.
+Shih2016.2	5.3	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	location	Tioman, Malaysia	.	annulipes	<	.	.
+Shih2016.2	5.4	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	citation	White1847.1	16	=	=	.	.
+Shih2016.2	5.5	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	citation	Verwey1930	2	=	=	.	.
+Shih2016.2	5.6	Austruca annulipes	.	text p. 142, 151-153, 168; Figure 8A	citation	Beinlich2006	32	=	=	.	.
+Shih2016.2	6.1	Austruca occidentalis	.	text p. 140, 142, 153, 168	specimen	Madagascar [ZRC THH04-30]	.	occidentalis	<	.	.
+Shih2016.2	6.2	Austruca occidentalis	.	text p. 140, 142, 153, 168	citation	Naderloo2016	.	=	=	.	.
+Shih2016.2	7.1	Austruca bengali	.	text p. 142, 152-153, 168; Figure 8B	specimen	Selangor, Malaysia [NCHUZOOL 13575]	.	bengali	<	.	.
+Shih2016.2	7.2	Austruca bengali	.	text p. 142, 152-153, 168; Figure 8B	location	Selangor, Malaysia	.	bengali	<	.	.
+Shih2016.2	7.3	Austruca bengali	.	text p. 142, 152-153, 168; Figure 8B	citation	Crane1975	94	=	=	.	.
+Shih2016.2	7.4	Austruca bengali	.	text p. 142, 152-153, 168; Figure 8B	citation	Beinlich2006	33	=	=	.	.
+Shih2016.2	8.1	Austruca iranica	.	text p. 140, 142, 152-153, 168; Figure 8C	specimen	Gav Bandi, Iran [NCHUZOOL 13245]	.	iranica	<	.	.
+Shih2016.2	8.2	Austruca iranica	.	text p. 140, 142, 152-153, 168; Figure 8C	citation	Pretzmann1971	2	=	=	.	.
+Shih2016.2	8.3	Austruca iranica	.	text p. 140, 142, 152-153, 168; Figure 8C	location	Iran	.	iranica	<	.	.
+Shih2016.2	9.1	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	specimen	Hong Kong, China [NCHUZOOL 13250]	.	lactea	<	.	.
+Shih2016.2	9.2	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	location	Taiwan	.	lactea	<	.	.
+Shih2016.2	9.3	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	deHaan1835	7	=	=	.	.
+Shih2016.2	9.4	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	MilneEdwards1837.2	4	=	=	.	.
+Shih2016.2	9.5	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	Beinlich2006	46	=	=	.	.
+Shih2016.2	10.1	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	specimen	Bedford Islands, Western Australia, Australia [QM W20253]	.	mjoebergi	<	.	.
+Shih2016.2	10.2	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	location	Northern Territory, Australia	.	mjoebergi	<	.	.
+Shih2016.2	10.3	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	citation	Rathbun1924.1	1	=	=	.	.
+Shih2016.2	10.4	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	citation	Beinlich2006	47	=	=	.	.
+Shih2016.2	11.1	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	specimen	Dulan Forest, Taitung, Taiwan [NTOU]	.	perplexa	<	.	.
+Shih2016.2	11.2	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	specimen	Ouano Bay, New Caledonia [NCHUZOOL 13573]	.	perplexa	<	.	.
+Shih2016.2	11.3	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	specimen	Wallis, Wallis and Futuna [NCHUZOOL 14912]	.	perplexa	<	.	.
+Shih2016.2	11.4	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	location	Dongsha Islands, Taiwan	.	perplexa	<	.	.
+Shih2016.2	11.5	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	citation	MilneEdwards1873	6	=	=	.	.
+Shih2016.2	11.6	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	citation	Nobili1901.1	3	=	=	.	.
+Shih2016.2	11.7	Austruca perplexa	.	text p. 142, 152-153, 168; Figure 8F	citation	Beinlich2006	48	=	=	.	.
+Shih2016.2	12.1	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	specimen	Qeshm, Iran [NCHUZOOL 13576]	.	sindensis	<	.	.
+Shih2016.2	12.2	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	specimen	Khor Al-Zubair, Iraq [ZRC 2010.0103]	.	sindensis	<	.	.
+Shih2016.2	12.3	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	citation	Shih2013	.	=	=	.	.
+Shih2016.2	12.4	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	location	Iran	.	sindensis	<	.	.
+Shih2016.2	12.5	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	citation	Alcock1900	5	=	=	.	.
+Shih2016.2	12.6	Austruca sindensis	.	text p. 140, 142, 152-153, 156, 168; Figure 8G	citation	Crane1975	37	=	=	.	.
+Shih2016.2	13.1	Austruca triangularis	.	text p. 142, 152-153, 168; Figure 8H	specimen	Cebu, Philippines [NCHUZOOL 13574]	.	triangularis	<	.	.
+Shih2016.2	13.2	Austruca triangularis	.	text p. 142, 152-153, 168; Figure 8H	location	Cebu, Philippines	.	triangularis	<	.	.
+Shih2016.2	13.3	Austruca triangularis	.	text p. 142, 152-153, 168; Figure 8H	citation	MilneEdwards1873	8	=	=	.	.
+Shih2016.2	13.4	Austruca triangularis	.	text p. 142, 152-153, 168; Figure 8H	citation	Beinlich2006	35	=	=	.	.
+Shih2016.2	14.1	Cranuca	.	text p. 139-140, 142, 144, 151, 153, 155, 161, 169	citation	Beinlich2006	2	=	=	.	.
+Shih2016.2	14.2	Cranuca	.	text p. 139-140, 142, 144, 151, 153, 155, 161, 169	citation	Shih2013	.	=	=	.	.
+Shih2016.2	15.1	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	specimen	Gazi, Kenya [MZUF 1024]	.	inversa	<	.	.
+Shih2016.2	15.2	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	specimen	Sinai, Egypt [TAU SLR 1475]	.	inversa	<	.	.
+Shih2016.2	15.3	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	specimen	Dar es Salaam, Tanzania [NCHUZOOL 13255]	.	inversa	<	.	.
+Shih2016.2	15.4	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	citation	Hoffmann1874	7	=	=	.	.
+Shih2016.2	15.5	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	citation	Crane1975	36	=	=	.	.
+Shih2016.2	15.6	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	citation	Beinlich2006	17	=	=	.	.
+Shih2016.2	15.7	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	citation	Shih2013	.	=	=	.	.
+Shih2016.2	15.8	Cranuca inversa	.	text p. 142, 153, 155-156, 169; Figure 9A	location	Eastern Africa	.	inversa	<	.	.
+Shih2016.2	16.1	Gelasimus	.	text p. 139, 142, 144, 149-151, 153, 159, 161, 169	citation	Latreille1817.2	0	=	=	.	.
+Shih2016.2	16.2	Gelasimus	.	text p. 139, 142, 144, 149-151, 153, 159, 161, 169	citation	Bott1973.2	56	=	=	.	.
+Shih2016.2	16.3	Gelasimus	.	text p. 139, 142, 144, 149-151, 153, 159, 161, 169	citation	Bott1973.2	55	=	=	.	.
+Shih2016.2	16.4	Gelasimus	.	text p. 139, 142, 144, 149-151, 153, 159, 161, 169	citation	Crane1975	24	=	=	.	.
+Shih2016.2	16.5	Gelasimus	.	text p. 139, 142, 144, 149-151, 153, 159, 161, 169	citation	Poupin2010.2	.	=	=	.	.
+Shih2016.2	17.1	Gelasimus borealis	.	text p. 142, 150-151, 169; Figure 7A	specimen	Hong Kong, China [NCHUZOOL 13207]	.	borealis	<	.	.
+Shih2016.2	17.2	Gelasimus borealis	.	text p. 142, 150-151, 169; Figure 7A	specimen	Kinmen, Taiwan [TMCD CHCD853]	.	borealis	<	.	.
+Shih2016.2	17.3	Gelasimus borealis	.	text p. 142, 150-151, 169; Figure 7A	location	Taiwan	.	borealis	<	.	.
+Shih2016.2	17.4	Gelasimus borealis	.	text p. 142, 150-151, 169; Figure 7A	citation	Crane1975	32	=	=	.	.
+Shih2016.2	17.5	Gelasimus borealis	.	text p. 142, 150-151, 169; Figure 7A	citation	Chu2015	.	=	=	.	.
+Shih2016.2	18.1	Gelasimus dampieri	.	text p. 142, 150-151, 169; Figure 7B	specimen	Darwin, Northern Territory, Australia	.	dampieri	<	Location mistakenly listed as &ldquo;New Territory&rdquo;	.
+Shih2016.2	18.2	Gelasimus dampieri	.	text p. 142, 150-151, 169; Figure 7B	location	Northern Territory, Australia	.	dampieri	<	.	.
+Shih2016.2	18.3	Gelasimus dampieri	.	text p. 142, 150-151, 169; Figure 7B	citation	Crane1975	29	=	=	.	.
+Shih2016.2	18.4	Gelasimus dampieri	.	text p. 142, 150-151, 169; Figure 7B	citation	Chu2015	.	=	=	.	.
+Shih2016.2	19.1	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	specimen	Phuket Island, Thailand [ZRC 2000.1056]	.	hesperiae	<	.	.
+Shih2016.2	19.2	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	specimen	Madagascar [ZRC THH04-30]	.	hesperiae	<	.	.
+Shih2016.2	19.3	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	specimen	Mauritius [ZRC THH04-30]	.	hesperiae	<	.	.
+Shih2016.2	19.4	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	specimen	Mida Creek, Kenya [NCHUZOOL 13172]	.	hesperiae	<	.	.
+Shih2016.2	19.5	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	location	Tanzania	.	hesperiae	<	.	.
+Shih2016.2	19.6	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	citation	Crane1975	30	=	=	.	.
+Shih2016.2	19.7	Gelasimus hesperiae	.	text p. 142, 150-151, 169; Figure 7C	citation	Kossmann1877	8	=	=	.	.
+Shih2016.2	20.1	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	specimen	Dulan Forest, Taitung, Taiwan [NTOU]	.	jocelynae	<	.	.
+Shih2016.2	20.2	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	specimen	Panglao, Bohol, Philippines [ZRC 2009.0925 [M9]]	.	jocelynae	<	.	.
+Shih2016.2	20.3	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	specimen	Papua New Guinea [QM W26812]	.	jocelynae	<	.	.
+Shih2016.2	20.4	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	specimen	Espiritu Santo, Vanuatu [ZRC 2009.0930 [VM53]]	.	jocelynae	<	.	.
+Shih2016.2	20.5	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	citation	Shih2010.1	1	=	=	.	.
+Shih2016.2	20.6	Gelasimus jocelynae	.	text p. 140, 142, 150-151, 169; Figure 7D	location	Penghu, Taiwan	.	jocelynae	<	.	.
+Shih2016.2	21.1	Gelasimus neocultrimana	.	text p. 142, 150-151, 169; Figure 7E	specimen	Wallis, Wallis and Futuna [NCHUZOOL 13303]	.	excisa	>MSR:synonymy	.	.
+Shih2016.2	21.2	Gelasimus neocultrimana	.	text p. 142, 150-151, 169; Figure 7E	location	Fiji	.	excisa	>MSR:synonymy	.	.
+Shih2016.2	21.2	Gelasimus neocultrimana	.	text p. 142, 150-151, 169; Figure 7E	citation	Bott1973.2	8	=	=	.	.
+Shih2016.2	21.4	Gelasimus neocultrimana	.	text p. 142, 150-151, 169; Figure 7E	citation	Crane1975	31	=	=	.	.
+Shih2016.2	22.01	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	specimen	Kenting, Pingtung, Taiwan [TMCD CHCD 526]	.	tetragonon	<	.	.
+Shih2016.2	22.02	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	specimen	Madagascar [ZRC THH04-17]	.	tetragonon	<	Location listed as Sarodrano, Madagascar, which is completely in the interior of the island.	.
+Shih2016.2	22.03	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	specimen	Mo'orea, French Polynesia [MNHN]	.	tetragonon	<	.	.
+Shih2016.2	22.04	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	location	Penghu, Taiwan	.	tetragonon	<	.	.
+Shih2016.2	22.05	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	Bott1973.2	3	=	=	.	.
+Shih2016.2	22.06	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	Crane1975	25	=	=	.	.
+Shih2016.2	22.07	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	Herbst1790	1	=	=	.	.
+Shih2016.2	22.08	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	GuerinMeneville1829.1	2	=	=	.	.
+Shih2016.2	22.09	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	GuerinMeneville1829.1	1	=	=	.	.
+Shih2016.2	22.1	Gelasimus tetragonon	.	text p. 142, 150-151, 169; Figure 7F	citation	Hess1865	3	=	=	.	.
+Shih2016.2	23.01	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	specimen	Bohol, Philippines [NCHUZOOL 13667]	.	vocans	<	.	.
+Shih2016.2	23.02	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	specimen	Hainan Island, China [NCHUZOOL 13182]	.	vocans	<	.	.
+Shih2016.2	23.03	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	location	Labuan, Malaysia	.	vocans	<	.	.
+Shih2016.2	23.04	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	Linnaeus1758	1.1	=	=	.	.
+Shih2016.2	23.05	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	MilneEdwards1837.1	1	=	=	.	.
+Shih2016.2	23.06	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	Desmarest1823	5	=	=	.	.
+Shih2016.2	23.07	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	Dana1851	1	=	=	.	.
+Shih2016.2	23.08	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	White1847.1	5	=	=	.	.
+Shih2016.2	23.09	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	Nobili1906.3	7	=	=	.	.
+Shih2016.2	23.1	Gelasimus vocans	.	text p. 142, 150-151, 169; Figure 7G	citation	Chu2015	.	=	=	.	.
+Shih2016.2	24.1	Gelasimus vomeris	.	text p. 142, 150-151, 169; Figure 7H	specimen	Boggy Creek, Queensland, Australia [QM W23884]	.	vomeris	<	.	.
+Shih2016.2	24.2	Gelasimus vomeris	.	text p. 142, 150-151, 169; Figure 7H	location	Queensland, Australia	.	vomeris	<	.	.
+Shih2016.2	24.3	Gelasimus vomeris	.	text p. 142, 150-151, 169; Figure 7H	citation	McNeill1920	2	=	=	.	.
+Shih2016.2	24.4	Gelasimus vomeris	.	text p. 142, 150-151, 169; Figure 7H	citation	Chu2015	.	=	=	.	.
+Shih2016.2	25.01	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Shih2013	.	=	=	.	.
+Shih2016.2	25.02	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	25.03	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Bott1973.2	64	=	=	.	.
+Shih2016.2	25.04	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Crane1975	71	=	in part	.	.
+Shih2016.2	25.05	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Bott1973.2	63	=	=	.	.
+Shih2016.2	25.06	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Crane1975	38	=	=	.	.
+Shih2016.2	25.07	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Beinlich2006	4	=	=	.	.
+Shih2016.2	25.08	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Rosenberg2001	8	=	=	.	.
+Shih2016.2	25.09	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Bezerra2012	.	=	=	.	.
+Shih2016.2	25.1	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Levinton1996	.	=	=	.	.
+Shih2016.2	25.11	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Sturmbauer1996	.	=	=	.	.
+Shih2016.2	25.12	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Barnwell1984.1	.	=	=	.	.
+Shih2016.2	25.13	Leptuca	.	text p. 139, 141, 143-144, 151, 153-156, 161, 169	citation	Ng2008	.	=	=	.	.
+Shih2016.2	26.1	Leptuca cumulanta	.	text p. 143, 153, 169	specimen	Rio de Janeiro, Brazil [NCHUZOOL 13949]	.	cumulanta	<	.	.
+Shih2016.2	26.2	Leptuca cumulanta	.	text p. 143, 153, 169	citation	Crane1943.2	6	=	=	.	.
+Shih2016.2	27.1	Leptuca deichmanni	.	text p. 143, 153, 155, 169; Figure 9B	specimen	Isla Naos, Panama [NCHUZOOL 13583]	.	deichmanni	<	.	.
+Shih2016.2	27.2	Leptuca deichmanni	.	text p. 143, 153, 155, 169; Figure 9B	citation	Rathbun1935.1	3	=	=	.	.
+Shih2016.2	27.3	Leptuca deichmanni	.	text p. 143, 153, 155, 169; Figure 9B	location	Panama	.	deichmanni	<	.	.
+Shih2016.2	28.1	Leptuca dorotheae	.	text p. 143, 153, 169	specimen	Rio Tempisque, Costa Rica [ZRC]	.	dorotheae	<	.	.
+Shih2016.2	28.2	Leptuca dorotheae	.	text p. 143, 153, 169	citation	vonHagen1968.2	14	=	=	.	.
+Shih2016.2	29.1	Leptuca leptodactyla	.	text p. 143, 153-154, 170	specimen	Pigeon Creek, San Salvador, The Bahamas [ZRC]	.	leptodactyla	<	.	.
+Shih2016.2	29.2	Leptuca leptodactyla	.	text p. 143, 153-154, 170	specimen	São Paulo, Brazil [NCHUZOOL 14914]	.	leptodactyla	<	.	.
+Shih2016.2	29.3	Leptuca leptodactyla	.	text p. 143, 153-154, 170	specimen	Enseada do Mucuripe, Fortaleza, Ceará, Brazil [NCHUZOOL 14915]	.	leptodactyla	<	.	.
+Shih2016.2	29.4	Leptuca leptodactyla	.	text p. 143, 153-154, 170	citation	Rathbun1898	2	=	=	.	.
+Shih2016.2	29.5	Leptuca leptodactyla	.	text p. 143, 153-154, 170	citation	Rankin1898	4	=	=	.	.
+Shih2016.2	29.6	Leptuca leptodactyla	.	text p. 143, 153-154, 170	citation	Ng2008	.	=	=	.	.
+Shih2016.2	29.7	Leptuca leptodactyla	.	text p. 143, 153-154, 170	citation	Chace1969	8	=	=	.	.
+Shih2016.2	29.8	Leptuca leptodactyla	.	text p. 143, 153-154, 170	citation	Crane1975	99	=	=	.	.
+Shih2016.2	30.1	Leptuca panacea	.	text p. 143, 153, 170	specimen	South Padre Island, Cameron County, Texas, USA [NCHUZOOL 13950]	.	panacea	<	.	.
+Shih2016.2	30.2	Leptuca panacea	.	text p. 143, 153, 170	citation	Novak1974	1	=	=	.	.
+Shih2016.2	31.1	Leptuca pugilator	.	text p. 143, 153, 170	specimen	Georgetown, South Carolina, USA [NCHUZOOL 13586]	.	pugilator	<	.	.
+Shih2016.2	31.2	Leptuca pugilator	.	text p. 143, 153, 170	citation	Bosc1802	1	=	=	.	.
+Shih2016.2	31.3	Leptuca pugilator	.	text p. 143, 153, 170	specimen	Seahorse Key, Florida, USA [ASIZ]	.	pugilator	<	.	.
+Shih2016.2	32.1	Leptuca speciosa	.	text p. 143, 154-155, 170; Figure 9C	specimen	Alligator Point, Florida, USA [NCHUZOOL 13947]	.	speciosa	<	.	.
+Shih2016.2	32.2	Leptuca speciosa	.	text p. 143, 154-155, 170; Figure 9C	specimen	Pigeon Creek, San Salvador, The Bahamas [ZRC]	.	speciosa	<	.	.
+Shih2016.2	32.3	Leptuca speciosa	.	text p. 143, 154-155, 170; Figure 9C	citation	Ives1891	1	=	=	.	.
+Shih2016.2	32.4	Leptuca speciosa	.	text p. 143, 154-155, 170; Figure 9C	location	The Bahamas	.	speciosa	<	.	.
+Shih2016.2	33.1	Leptuca spinicarpa	.	text p. 143, 154, 170	specimen	Money Bayou, Florida, USA [NCHUZOOL 13947]	.	spinicarpa	<	.	.
+Shih2016.2	33.2	Leptuca spinicarpa	.	text p. 143, 154, 170	specimen	Bolivar Peninsula, Texas, USA [ZRC 2009.0295]	.	spinicarpa	<	.	.
+Shih2016.2	33.3	Leptuca spinicarpa	.	text p. 143, 154, 170	citation	Rathbun1900.2	7	=	=	.	.
+Shih2016.2	34.1	Leptuca stenodactylus	.	text p. 143, 154, 170	specimen	El Salvador [SMF 2357]	.	stenodactylus	<	.	.
+Shih2016.2	34.2	Leptuca stenodactylus	.	text p. 143, 154, 170	citation	MilneEdwards1843	1	=	=	.	.
+Shih2016.2	34.3	Leptuca stenodactylus	.	text p. 143, 154, 170	citation	Smith1870.2	22	=	=	.	.
+Shih2016.2	35.1	Leptuca subcylindrica	.	text p. 143, 154, 170	specimen	Kingsville, Texas, USA [NCHUZOOL 13952]	.	subcylindrica	<	.	.
+Shih2016.2	35.2	Leptuca subcylindrica	.	text p. 143, 154, 170	citation	Stimpson1859	3	=	=	.	.
+Shih2016.2	35.3	Leptuca subcylindrica	.	text p. 143, 154, 170	citation	Beinlich2006	95	=	=	.	.
+Shih2016.2	36.1	Leptuca terpsichores	.	text p. 143, 154-155, 170; Figure 9D	specimen	Isla Naos, Panama [NCHUZOOL 13582]	.	terpsichores	<	.	.
+Shih2016.2	36.2	Leptuca terpsichores	.	text p. 143, 154-155, 170; Figure 9D	citation	Crane1941	28	=	=	.	.
+Shih2016.2	36.3	Leptuca terpsichores	.	text p. 143, 154-155, 170; Figure 9D	location	Panama	.	terpsichores	<	.	.
+Shih2016.2	37.1	Leptuca thayeri	.	text p. 143, 154-155, 170; Figure 9E	specimen	Anchieta, Espírito Santo, Brazil [NCHUZOOL 13954]	.	thayeri	<	.	.
+Shih2016.2	37.2	Leptuca thayeri	.	text p. 143, 154-155, 170; Figure 9E	specimen	Hutchinson Island, Fort Pierce, Florida, USA [NCHUZOOL 13953]	.	thayeri	<	.	.
+Shih2016.2	37.3	Leptuca thayeri	.	text p. 143, 154-155, 170; Figure 9E	citation	Rathbun1900.3	3	=	=	.	.
+Shih2016.2	37.4	Leptuca thayeri	.	text p. 143, 154-155, 170; Figure 9E	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	37.5	Leptuca thayeri	.	text p. 143, 154-155, 170; Figure 9E	location	Brazil	.	thayeri	<	.	.
+Shih2016.2	38.1	Leptuca umbratila	.	text p. 143, 154-155, 170; Figure 9F	specimen	Diablo, Panama City, Panama [NCHUZOOL 13579]	.	umbratila	<	.	.
+Shih2016.2	38.2	Leptuca umbratila	.	text p. 143, 154-155, 170; Figure 9F	citation	Crane1941	14	=	=	.	.
+Shih2016.2	38.3	Leptuca umbratila	.	text p. 143, 154-155, 170; Figure 9F	citation	Bott1954	8	=	=	.	.
+Shih2016.2	38.4	Leptuca umbratila	.	text p. 143, 154-155, 170; Figure 9F	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	38.6	Leptuca umbratila	.	text p. 143, 154-155, 170; Figure 9F	location	Panama	.	umbratila	<	.	.
+Shih2016.2	39.1	Leptuca uruguayensis	.	text p. 143, 154, 171	specimen	Bahía Samborombón, Argentina [NCHUZOOL 13577]	.	uruguayensis	<	.	.
+Shih2016.2	39.2	Leptuca uruguayensis	.	text p. 143, 154, 171	citation	Nobili1901.2	1	=	=	.	.
+Shih2016.2	39.3	Leptuca uruguayensis	.	text p. 143, 154, 171	citation	Oliveira1939.1	18	=	=	.	.
+Shih2016.2	40.01	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Bott1954	40	=	=	.	.
+Shih2016.2	40.02	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Shih2013	.	=	=	.	.
+Shih2016.2	40.03	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	40.04	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Beinlich2006	5	=	=	.	.
+Shih2016.2	40.05	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Rosenberg2001	2	=	=	.	.
+Shih2016.2	40.06	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Crane1975	53	=	=	.	.
+Shih2016.2	40.07	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Bezerra2012	.	=	=	.	.
+Shih2016.2	40.08	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Levinton1996	.	=	=	.	.
+Shih2016.2	40.09	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Sturmbauer1996	.	=	=	.	.
+Shih2016.2	40.1	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Barnwell1984.1	.	=	=	.	.
+Shih2016.2	40.11	Minuca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 171	citation	Ng2008	.	=	=	.	.
+Shih2016.2	41.1	Minuca argillicola	.	text p. 143, 154, 156, 171	specimen	Puerto El Morro, Ecuador [SMF 34737]	.	argillicola	<	.	.
+Shih2016.2	41.2	Minuca argillicola	.	text p. 143, 154, 156, 171	citation	Crane1941	15	=	=	.	.
+Shih2016.2	41.3	Minuca argillicola	.	text p. 143, 154, 156, 171	citation	Beinlich2006	98	=	=	.	.
+Shih2016.2	42.1	Minuca brevifrons	.	text p. 143, 154-156, 171; Figure 9G	specimen	San Juanillo, Costa Rica [ZRC 2012.0126]	.	brevifrons	<	.	.
+Shih2016.2	42.2	Minuca brevifrons	.	text p. 143, 154-156, 171; Figure 9G	citation	Stimpson1860	1	=	=	.	.
+Shih2016.2	42.3	Minuca brevifrons	.	text p. 143, 154-156, 171; Figure 9G	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	42.4	Minuca brevifrons	.	text p. 143, 154-156, 171; Figure 9G	location	Costa Rica	.	brevifrons	<	.	.
+Shih2016.2	45.1	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	specimen	San Salvador, The Bahamas [ZRC]	.	burgersi	<	.	.
+Shih2016.2	45.2	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	specimen	Brazil [NCHUZOOL 13956]	.	burgersi	<	.	.
+Shih2016.2	45.3	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	citation	Holthuis1967	1	=	=	.	.
+Shih2016.2	45.4	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	citation	Coelho1972	.	=	=	.	.
+Shih2016.2	45.5	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	45.6	Minuca burgersi	.	text p. 143, 154-156, 171; Figure 9H	location	The Bahamas	.	burgersi	<	.	.
+Shih2016.2	46.1	Minuca ecuadoriensis	.	text p. 143, 154, 156, 171	specimen	Puerto El Morro, Ecuador [SMF 34740]	.	ecuadoriensis	<	.	.
+Shih2016.2	46.2	Minuca ecuadoriensis	.	text p. 143, 154, 156, 171	citation	Maccagno1928	33	=	=	.	.
+Shih2016.2	46.3	Minuca ecuadoriensis	.	text p. 143, 154, 156, 171	citation	Crane1943.1	1	=	=	.	.
+Shih2016.2	46.4	Minuca ecuadoriensis	.	text p. 143, 154, 156, 171	citation	Landstorfer2010	2	=	=	.	.
+Shih2016.2	47.1	Minuca galapagensis	.	text p. 143, 154, 156, 171	specimen	Puerto El Morro, Ecuador [SMF 34741]	.	galapagensis	<	.	.
+Shih2016.2	47.2	Minuca galapagensis	.	text p. 143, 154, 156, 171	citation	Rathbun1902.3	1	=	=	.	.
+Shih2016.2	47.3	Minuca galapagensis	.	text p. 143, 154, 156, 171	citation	MilneEdwards1843	2	=	=	.	.
+Shih2016.2	47.4	Minuca galapagensis	.	text p. 143, 154, 156, 171	citation	Landstorfer2010	5	=	=	.	.
+Shih2016.2	48.1	Minuca herradurensis	.	text p. 143, 154, 156-157, 171; Figure 10A	specimen	Diablo, Panama City, Panama [NCHUZOOL 13580]	.	herradurensis	<	.	.
+Shih2016.2	48.2	Minuca herradurensis	.	text p. 143, 154, 156-157, 171; Figure 10A	citation	Bott1954	11	=	=	.	.
+Shih2016.2	48.3	Minuca herradurensis	.	text p. 143, 154, 156-157, 171; Figure 10A	citation	Landstorfer2010	4	=	=	.	.
+Shih2016.2	48.4	Minuca herradurensis	.	text p. 143, 154, 156-157, 171; Figure 10A	location	Panama	.	herradurensis	<	.	.
+Shih2016.2	49.1	Minuca minax	.	text p. 143, 154, 171	specimen	Chesapeake Bay, Virginia, USA [NCHUZOOL 13939]	.	minax	<	.	.
+Shih2016.2	49.2	Minuca minax	.	text p. 143, 154, 171	specimen	Florida, USA [NCHUZOOL 13957]	.	minax	<	.	.
+Shih2016.2	49.3	Minuca minax	.	text p. 143, 154, 171	citation	LeConte1855	2	=	=	.	.
+Shih2016.2	50.1	Minuca mordax	.	text p. 143, 154, 156, 171	specimen	São Paulo, Brazil [NCHUZOOL 13940]	.	mordax	<	.	.
+Shih2016.2	50.2	Minuca mordax	.	text p. 143, 154, 156, 171	citation	Smith1870.2	16	=	=	.	.
+Shih2016.2	50.3	Minuca mordax	.	text p. 143, 154, 156, 171	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	51.1	Minuca osa	.	text p. 140, 143, 154, 156, 171	specimen	Golfo Dolce, Costa Rica [UCR 2620-01]	.	osa	<	.	.
+Shih2016.2	51.2	Minuca osa	.	text p. 140, 143, 154, 156, 171	citation	Landstorfer2010	12	=	=	.	.
+Shih2016.2	52.1	Minuca pugnax	.	text p. 143, 154, 171	specimen	Assateague Island, Maryland, USA [NCHUZOOL 13941]	.	pugnax	<	.	.
+Shih2016.2	52.2	Minuca pugnax	.	text p. 143, 154, 171	citation	Smith1870.2	14	=	=	.	.
+Shih2016.2	52.3	Minuca pugnax	.	text p. 143, 154, 171	citation	Rafinesque1817	1	=	=	.	.
+Shih2016.2	53.1	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	specimen	Trelawny, Jamaica [NCHUZOOL 13942]	.	rapax	<	.	.
+Shih2016.2	53.2	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	specimen	Paraquita Bay, British Virgin Islands [NCHUZOOL 13943]	.	rapax	<	.	.
+Shih2016.2	53.3	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	specimen	Bocas del Toro, Panama [NCHUZOOL 13944]	.	rapax	<	.	.
+Shih2016.2	53.4	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	citation	Smith1870.2	15	=	=	.	.
+Shih2016.2	53.5	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	citation	MilneEdwards1852	13	=	=	.	.
+Shih2016.2	53.6	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	citation	Oliveira1939.1	49	=	=	.	.
+Shih2016.2	53.7	Minuca rapax	.	text p. 143, 154, 157, 171; Figure 10B	location	Brazil	.	rapax	<	.	.
+Shih2016.2	54.1	Minuca victoriana	.	text p. 143, 154, 171	specimen	Bahia, Brazil [NCHUZOOL 13945]	.	victoriana	<	.	.
+Shih2016.2	54.2	Minuca victoriana	.	text p. 143, 154, 171	citation	vonHagen1987.1	1	=	=	.	.
+Shih2016.2	55.1	Minuca virens	.	text p. 140-141, 143, 154, 156, 171-172	specimen	Ingleside Cove, Corpus Christi, Texas, USA [NCHUZOOL 13584]	.	virens	<	.	.
+Shih2016.2	55.2	Minuca virens	.	text p. 140-141, 143, 154, 156, 171-172	specimen	Money Bayou, Florida, USA [NCHUZOOL 13946]	.	virens	<	.	.
+Shih2016.2	55.3	Minuca virens	.	text p. 140-141, 143, 154, 156, 171-172	citation	Rosenberg2014	.	=	=	.	.
+Shih2016.2	55.4	Minuca virens	.	text p. 140-141, 143, 154, 156, 171-172	citation	Salmon1968.1	4	=	=	.	.
+Shih2016.2	55.5	Minuca virens	.	text p. 140-141, 143, 154, 156, 171-172	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	56.1	Minuca longisignalis	.	text p. 143, 154, 156, 171	specimen	Ingleside Cove, Corpus Christi, Texas, USA [NCHUZOOL 13938]	.	<	longisignalis	They suggest this species may be identical to <em class="species">Minuca minax.</em>	.
+Shih2016.2	56.2	Minuca longisignalis	.	text p. 143, 154, 156, 171	citation	Salmon1968.1	3	=	=	.	.
+Shih2016.2	56.3	Minuca longisignalis	.	text p. 143, 154, 156, 171	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	57.1	Minuca vocator	.	text p. 143, 154, 156, 172	specimen	Ceará, Brazil [NCHUZOOL 13948]	.	vocator	<	.	.
+Shih2016.2	57.2	Minuca vocator	.	text p. 143, 154, 156, 172	specimen	Trinidad	.	vocator	<	.	.
+Shih2016.2	57.3	Minuca vocator	.	text p. 143, 154, 156, 172	citation	Herbst1804	1	=	=	.	.
+Shih2016.2	57.4	Minuca vocator	.	text p. 143, 154, 156, 172	citation	Oliveira1939.1	26	=	=	.	.
+Shih2016.2	57.5	Minuca vocator	.	text p. 143, 154, 156, 172	citation	Crane1943.2	4	=	=	.	.
+Shih2016.2	57.6	Minuca vocator	.	text p. 143, 154, 156, 172	citation	vonHagen1968.2	9	=	=	.	.
+Shih2016.2	57.7	Minuca vocator	.	text p. 143, 154, 156, 172	citation	Landstorfer2010	1	=	=	.	.
+Shih2016.2	58.1	Minuca zacae	.	text p. 143, 154, 172	specimen	El Salvador [SMF 2104a]	.	zacae	<	.	.
+Shih2016.2	58.2	Minuca zacae	.	text p. 143, 154, 172	citation	Crane1941	6	=	=	.	.
+Shih2016.2	58.3	Minuca zacae	.	text p. 143, 154, 172	citation	Bott1954	13	=	=	.	.
+Shih2016.2	59.1	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Bott1973.2	59	=	=	.	.
+Shih2016.2	59.2	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Crane1975	33	=	=	.	.
+Shih2016.2	59.3	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Beinlich2006	6	=	=	in part	.
+Shih2016.2	59.4	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Shih2012	.	=	=	.	.
+Shih2016.2	59.5	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Shih2013.2	8	=	=	.	.
+Shih2016.2	59.6	Paraleptuca	.	text p. 139, 142, 144, 151, 153, 156-157, 159, 161, 173	citation	Poupin2010.2	.	=	=	.	.
+Shih2016.2	60.01	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	specimen	Okinawa Island, Japan [NCHUZOOL 13467]	.	crassipes	<	.	.
+Shih2016.2	60.02	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	specimen	Ha'apiti, Mo'orea, French Polynesia [NCHUZOOL 13478]	.	crassipes	<	.	.
+Shih2016.2	60.03	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	White1847.1	15	=	=	.	.
+Shih2016.2	60.04	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	MilneEdwards1852	19	=	=	.	.
+Shih2016.2	60.05	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	Stimpson1858	9	=	=	.	.
+Shih2016.2	60.06	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	MilneEdwards1852	22	=	=	.	.
+Shih2016.2	60.07	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	Rathbun1913	4	=	=	.	.
+Shih2016.2	60.08	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	Crane1975	35	=	=	.	.
+Shih2016.2	60.09	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	citation	Beinlich2006	34	=	=	.	.
+Shih2016.2	60.1	Paraleptuca crassipes	.	text p. 142, 156-157, 173; Figure 10D	location	Dongsha Islands, Taiwan	.	crassipes	<	.	.
+Shih2016.2	61.1	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	specimen	Tai Tam, Hong Kong, China [NCHUZOOL 13368]	.	splendida	<	.	.
+Shih2016.2	61.2	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	specimen	Cingluo, Penghu, Taiwan [NCHUZOOL 13457]	.	splendida	<	.	.
+Shih2016.2	61.3	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	specimen	Nha Trang, Vietnam [NCHUZOOL 13561]	.	splendida	<	.	.
+Shih2016.2	61.4	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	citation	Stimpson1858	7	=	=	.	.
+Shih2016.2	61.5	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	citation	Shih2012	.	=	=	.	.
+Shih2016.2	61.6	Paraleptuca splendida	.	text p. 142, 156-157, 173; Figure 10E	location	Penghu, Taiwan	.	splendida	<	.	.
+Shih2016.2	62.1	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	specimen	Malamani, Mayotte [MNHN-IU-2011-5599]	.	chlorophthalmus	<	.	.
+Shih2016.2	62.2	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	specimen	Malamani, Mayotte [MNHN-IU-2011-5600]	.	chlorophthalmus	<	.	.
+Shih2016.2	62.3	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	specimen	Dar es Salaam, Tanzania [NCHUZOOL 13561]	.	chlorophthalmus	<	.	.
+Shih2016.2	62.4	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	citation	MilneEdwards1837.2	9	=	=	.	.
+Shih2016.2	62.5	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	citation	Doflein1899	13	=	=	.	.
+Shih2016.2	62.6	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	citation	Crane1975	34	=	=	.	.
+Shih2016.2	62.7	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	citation	Beinlich2006	18	=	=	.	.
+Shih2016.2	62.8	Paraleptuca chlorophthalmus	.	text p. 142, 156-157, 173; Figure 10C	location	Eastern Africa	.	chlorophthalmus	<	.	.
+Shih2016.2	63	Petruca	.	text p. 139-141, 143-144, 151, 154, 156-157, 161, 173	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	64.1	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	specimen	Isla Naos, Panama [USNM 1294205]	.	panamensis	<	.	.
+Shih2016.2	64.2	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	specimen	Isla Naos, Panama [NCHUZOOL 13581]	.	panamensis	<	.	.
+Shih2016.2	64.3	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	specimen	San Juanillo, Costa Rica [NCHUZOOL 14753]	.	panamensis	<	.	.
+Shih2016.2	64.4	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	specimen	San Juanillo, Costa Rica [ZRC 2012.0126]	.	panamensis	<	.	.
+Shih2016.2	64.5	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	64.6	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	citation	Stimpson1859	4	=	=	.	.
+Shih2016.2	64.7	Petruca panamensis	.	text p. 140, 143, 154, 156-157, 173; Figure 10F	location	Costa Rica	.	panamensis	<	.	.
+Shih2016.2	65.1	Tubuca	.	text p. 139, 141-142, 144-145, 151, 157-161, 173	citation	Bott1973.2	57	=	=	.	.
+Shih2016.2	65.2	Tubuca	.	text p. 139, 141-142, 144-145, 151, 157-161, 173	citation	Crane1975	17	=	=	.	.
+Shih2016.2	65.3	Tubuca	.	text p. 139, 141-142, 144-145, 151, 157-161, 173	citation	Crane1975	2	=	=	.	.
+Shih2016.2	65.4	Tubuca	.	text p. 139, 141-142, 144-145, 151, 157-161, 173	citation	Poupin2010.2	.	=	=	.	.
+Shih2016.2	66.1	Tubuca acuta	.	text p. 142, 159, 173	specimen	Hainan Island, China [NCHUZOOL 13351]	.	acuta	<	.	.
+Shih2016.2	66.2	Tubuca acuta	.	text p. 142, 159, 173	specimen	Kinmen, Taiwan [NCHUZOOL 13650]	.	acuta	<	.	.
+Shih2016.2	66.3	Tubuca acuta	.	text p. 142, 159, 173	citation	Stimpson1858	6	=	=	.	.
+Shih2016.2	67.1	Tubuca arcuata	.	text p. 142, 157, 159, 173; Figure 10G	specimen	Dongzhai Harbour, Hainan Island, China [NCHUZOOL 13363]	.	arcuata	<	.	.
+Shih2016.2	67.2	Tubuca arcuata	.	text p. 142, 157, 159, 173; Figure 10G	specimen	Incheon, South Korea [NCHUZOOL 13651]	.	arcuata	<	.	.
+Shih2016.2	67.3	Tubuca arcuata	.	text p. 142, 157, 159, 173; Figure 10G	location	Hainan Island, China	.	arcuata	<	.	.
+Shih2016.2	67.4	Tubuca arcuata	.	text p. 142, 157, 159, 173; Figure 10G	citation	deHaan1835	6	=	=	.	.
+Shih2016.2	67.5	Tubuca arcuata	.	text p. 142, 157, 159, 173; Figure 10G	citation	MilneEdwards1852	7	=	=	.	.
+Shih2016.2	68.1	Tubuca capricornis	.	text p. 142, 159, 173	specimen	Bedford Islands, Western Australia, Australia [qM W. 20267]	.	capricornis	<	.	.
+Shih2016.2	68.2	Tubuca capricornis	.	text p. 142, 159, 173	citation	Crane1975	7	=	=	.	.
+Shih2016.2	68.3	Tubuca capricornis	.	text p. 142, 159, 173	citation	George1982	2	=	=	.	.
+Shih2016.2	69.01	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	specimen	Penghu, Taiwan [NCHUZOOL 13231]	.	coarctata	<	.	.
+Shih2016.2	69.02	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	specimen	Turtle Bay, Queensland, Australia [QM W20132]	.	coarctata	<	.	.
+Shih2016.2	69.03	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	specimen	Queensland, Australia [QM W19920]	.	coarctata	<	.	.
+Shih2016.2	69.04	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	specimen	Queensland, Australia [QM W19245]	.	coarctata	<	.	.
+Shih2016.2	69.05	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	specimen	New Caledonia [QM W29055]	.	coarctata	<	.	.
+Shih2016.2	69.06	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	location	Taiwan	.	coarctata	<	.	.
+Shih2016.2	69.07	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	citation	MilneEdwards1852	6	=	=	.	.
+Shih2016.2	69.08	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	citation	Pearse1912.1	1	=	=	.	.
+Shih2016.2	69.09	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	citation	Nemec1939	1	=	=	.	.
+Shih2016.2	69.1	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	citation	Rathbun1913	2	=	=	.	.
+Shih2016.2	69.11	Tubuca coarctata	.	text p. 142, 158-159, 173-174; Figure 11A	citation	Kirk1880	1	=	=	.	.
+Shih2016.2	70.1	Tubuca demani	.	text p. 142, 159, 174	specimen	Cebu, Philippines [NCHUZOOL 13372]	.	demani	<	.	.
+Shih2016.2	70.2	Tubuca demani	.	text p. 142, 159, 174	citation	Ortmann1897	8	=	=	.	.
+Shih2016.2	70.3	Tubuca demani	.	text p. 142, 159, 174	citation	Rathbun1913	1	=	=	.	.
+Shih2016.2	71.1	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	specimen	Penghu, Taiwan [NCHUZOOL 14717]	.	dussumieri	<	.	.
+Shih2016.2	71.2	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	specimen	Mindanao, Philippines [NCHUZOOL 14922]	.	dussumieri	<	.	.
+Shih2016.2	71.3	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	specimen	New Caledonia [QM W29054]	.	dussumieri	<	.	.
+Shih2016.2	71.4	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	location	Penghu, Taiwan	.	dussumieri	<	.	.
+Shih2016.2	71.5	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	citation	MilneEdwards1852	12	=	=	.	.
+Shih2016.2	71.6	Tubuca dussumieri	.	text p. 142, 158-159, 174; Figure 11B	citation	Stimpson1858	2	=	=	.	.
+Shih2016.2	72.1	Tubuca flamula	.	text p. 142, 159, 174	specimen	Kimberley, Western Australia, Australia [QM W20214]	.	flammula	<	.	.
+Shih2016.2	72.2	Tubuca flamula	.	text p. 142, 159, 174	specimen	Dampier, Western Australia, Australia [ZRC Aus 010800/13]	.	flammula	<	.	.
+Shih2016.2	72.3	Tubuca flamula	.	text p. 142, 159, 174	citation	Crane1975	15	=	=	.	.
+Shih2016.2	73.1	Tubuca forcipata	.	text p. 142, 158-159, 174; Figure 11D	specimen	Johor, Malaysia [NTOU]	.	forcipata	<	.	.
+Shih2016.2	73.2	Tubuca forcipata	.	text p. 142, 158-159, 174; Figure 11D	location	Sarawak, Borneo, Malaysia	.	forcipata	<	.	.
+Shih2016.2	73.3	Tubuca forcipata	.	text p. 142, 158-159, 174; Figure 11D	citation	Adams1848	5	=	=	.	.
+Shih2016.2	73.4	Tubuca forcipata	.	text p. 142, 158-159, 174; Figure 11D	citation	Estampador1937	18	=	=	.	.
+Shih2016.2	73.5	Tubuca forcipata	.	text p. 142, 158-159, 174; Figure 11D	citation	Rathbun1909	1	=	=	.	.
+Shih2016.2	74.1	Tubuca paradussumieri	.	text p. 142, 159, 174	specimen	Hainan Island, China [NCHUZOOL 13381]	.	paradussumieri	<	.	.
+Shih2016.2	74.2	Tubuca paradussumieri	.	text p. 142, 159, 174	citation	Bott1973.2	9	=	=	.	.
+Shih2016.2	74.3	Tubuca paradussumieri	.	text p. 142, 159, 174	citation	Crane1975	8	=	=	.	.
+Shih2016.2	75.1	Tubuca rhizophorae	.	text p. 142, 158-159, 174; Figure 11F	specimen	Mersing, Johor, Malaysia [NCHUZOOL 14923]	.	rhizophorae	<	.	.
+Shih2016.2	75.2	Tubuca rhizophorae	.	text p. 142, 158-159, 174; Figure 11F	specimen	Madang, Sabah, Borneo, Malaysia [NCHUZOOL 14924]	.	rhizophorae	<	.	.
+Shih2016.2	75.3	Tubuca rhizophorae	.	text p. 142, 158-159, 174; Figure 11F	location	Johor, Malaysia	.	rhizophorae	<	.	.
+Shih2016.2	75.4	Tubuca rhizophorae	.	text p. 142, 158-159, 174; Figure 11F	citation	Tweedie1950.1	1	=	=	.	.
+Shih2016.2	76.1	Tubuca rosea	.	text p. 142, 158-159, 174; Figure 11G	specimen	Johor, Malaysia [NTOU]	.	rosea	<	.	.
+Shih2016.2	76.2	Tubuca rosea	.	text p. 142, 158-159, 174; Figure 11G	location	Selangor, Malaysia	.	rosea	<	.	.
+Shih2016.2	76.3	Tubuca rosea	.	text p. 142, 158-159, 174; Figure 11G	citation	Tweedie1937	9	=	=	.	.
+Shih2016.2	77.1	Tubuca typhoni	.	text p. 142, 159, 174	specimen	Hainan Island, China [NCHUZOOL 13371]	.	typhoni	<	.	.
+Shih2016.2	77.2	Tubuca typhoni	.	text p. 142, 159, 174	citation	Crane1975	10	=	=	.	.
+Shih2016.2	78.1	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	specimen	Poroani, Mayotte [ZRC 1999.1107]	.	urvillei	<	.	.
+Shih2016.2	78.2	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14925]	.	urvillei	<	.	.
+Shih2016.2	78.3	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	citation	MilneEdwards1852	11	=	=	.	.
+Shih2016.2	78.4	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	location	Ranong, Thailand	.	urvillei	<	.	.
+Shih2016.2	79.1	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	specimen	Labuan, Malaysia [NCHUZOOL 13649]	.	bellator	<	.	.
+Shih2016.2	79.2	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	location	Labuan, Malaysia	.	bellator	<	.	.
+Shih2016.2	79.3	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	citation	White1847.1	10	=	=	.	.
+Shih2016.2	80.1	Tubuca elegans	.	text p. 142, 158-159, 174; Figure 11C	specimen	Lacrosse Island, Western Australia, Australia [QM W21038]	.	elegans	<	.	.
+Shih2016.2	80.2	Tubuca elegans	.	text p. 142, 158-159, 174; Figure 11C	location	Northern Territory, Australia	.	elegans	<	Location mistakenly listed as &ldquo;New Territory&rdquo;	.
+Shih2016.2	80.3	Tubuca elegans	.	text p. 142, 158-159, 174; Figure 11C	citation	George1982	1	=	=	.	.
+Shih2016.2	81.1	Tubuca longidigitum	.	text p. 142, 159, 174	specimen	Redland Bay, Brisbane, Queensland, Australia [NCHUZOOL 13656]	.	longidigitum	<	.	.
+Shih2016.2	81.2	Tubuca longidigitum	.	text p. 142, 159, 174	specimen	Hervey Bay, Queensland, Australia [QM W19274]	.	longidigitum	<	.	.
+Shih2016.2	81.3	Tubuca longidigitum	.	text p. 142, 159, 174	specimen	Boggy Creek, Queensland, Australia [QM W23884]	.	longidigitum	<	.	.
+Shih2016.2	81.4	Tubuca longidigitum	.	text p. 142, 159, 174	citation	Kingsley1880	16	=	=	.	.
+Shih2016.2	82.1	Tubuca seismella	.	text p. 142, 159, 175	specimen	West Papua, Indonesia [ZRC 2000.2059]	.	seismella	<	.	.
+Shih2016.2	82.2	Tubuca seismella	.	text p. 142, 159, 175	citation	Crane1975	22	=	=	.	.
+Shih2016.2	83.1	Tubuca signata	.	text p. 142, 158-159, 175; Figure 11H	specimen	Hucks Landing, Queensland, Australia [QM W19211]	.	signata	<	.	.
+Shih2016.2	83.2	Tubuca signata	.	text p. 142, 158-159, 175; Figure 11H	location	Northern Territory, Australia	.	signata	<	Location mistakenly listed as &ldquo;New Territory&rdquo;	.
+Shih2016.2	83.3	Tubuca signata	.	text p. 142, 158-159, 175; Figure 11H	citation	Hess1865	2	=	=	.	.
+Shih2016.2	84.01	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Crane1975	43	=	=	.	.
+Shih2016.2	84.02	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Beinlich2006	8	>Uca	.	.	.
+Shih2016.2	84.03	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Ng2008	.	>Uca	.	.	.
+Shih2016.2	84.04	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2009	.	>Uca	.	.	.
+Shih2016.2	84.05	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2010.1	0	>Uca	.	.	.
+Shih2016.2	84.06	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2012	.	>Uca	.	.	.
+Shih2016.2	84.07	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2013.2	0	>Uca	.	.	.
+Shih2016.2	84.08	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Landstorfer2010	0	>Uca	.	.	.
+Shih2016.2	84.09	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Naderloo2010	0	>Uca	.	.	.
+Shih2016.2	84.1	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Levinton1996	0	>Uca	.	.	.
+Shih2016.2	84.11	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Salmon1983.3	0	>Uca	.	.	.
+Shih2016.2	84.12	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Rosenberg2001	3	=	=	.	.
+Shih2016.2	84.13	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	vonHagen1976	0	>Uca	.	.	.
+Shih2016.2	84.14	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Sturmbauer1996	0	>Uca	.	.	.
+Shih2016.2	84.15	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2013	0	>Uca	.	.	.
+Shih2016.2	84.16	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2015.2	.	=	=	.	.
+Shih2016.2	84.17	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Shih2015.3	.	=	=	.	.
+Shih2016.2	84.18	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Chace1969	0	>Uca	.	.	.
+Shih2016.2	84.19	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Rathbun1918.2	0	>Uca	.	.	.
+Shih2016.2	84.2	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Leach1814	3	=	=	.	.
+Shih2016.2	84.21	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Bott1973.2	61	=	=	.	.
+Shih2016.2	84.22	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	MilneEdwards1852	0	>Uca	.	.	.
+Shih2016.2	84.23	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Agassiz_nd	1	=	=	.	.
+Shih2016.2	84.24	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Seba1758	1	=	=	.	.
+Shih2016.2	84.25	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Bott1973.1	2	=	=	.	.
+Shih2016.2	84.26	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Yamaguchi1994	0	=	=	.	.
+Shih2016.2	84.27	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Barnwell1982	0	=	=	.	.
+Shih2016.2	84.28	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Morgan1923.1	0	=	=	.	.
+Shih2016.2	84.29	Uca	fiddler crabs	text p. 139-141, 143-145, 148-149, 151, 161, 175	citation	Yamaguchi2001.8	0	=	=	.	.
+Shih2016.2	85.01	Uca major	.	text p. 143, 148-149, 175; Figure 6E	specimen	Pigeon Creek, San Salvador, The Bahamas [ZRC]	.	major	<	.	.
+Shih2016.2	85.02	Uca major	.	text p. 143, 148-149, 175; Figure 6E	location	The Bahamas	.	major	<	.	.
+Shih2016.2	85.03	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Herbst1782	2	=	=	.	.
+Shih2016.2	85.04	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Lamarck1801	1	=	=	.	.
+Shih2016.2	85.05	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Shaw1802	1	=	=	.	.
+Shih2016.2	85.06	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Leach1814	2	=	=	.	.
+Shih2016.2	85.07	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	MilneEdwards1837.2	2	=	=	.	.
+Shih2016.2	85.08	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Schramm1867	2	=	=	.	.
+Shih2016.2	85.09	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	ICZN1983	1	=	=	.	.
+Shih2016.2	85.1	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Holthuis1979	.	=	=	.	.
+Shih2016.2	85.11	Uca major	.	text p. 143, 148-149, 175; Figure 6E	citation	Rosenberg2001	9	=	=	.	.
+Shih2016.2	86.1	Uca maracoani	.	text p. 143, 148-149, 175; Figure 6F	specimen	Itapissuma, Pernambuco, Brazil [NCHUZOOL 13955]	.	maracoani	<	.	.
+Shih2016.2	86.2	Uca maracoani	.	text p. 143, 148-149, 175; Figure 6F	location	Brazil	.	maracoani	<	.	.
+Shih2016.2	86.3	Uca maracoani	.	text p. 143, 148-149, 175; Figure 6F	citation	Latreille1802	2	=	=	.	.
+Shih2016.2	87.1	Uca princeps	.	text p. 143, 148-149, 175; Figure 6G	specimen	Peru [SMF 13164]	.	princeps	<	.	.
+Shih2016.2	87.2	Uca princeps	.	text p. 143, 148-149, 175; Figure 6G	location	Peru	.	princeps	<	.	.
+Shih2016.2	87.3	Uca princeps	.	text p. 143, 148-149, 175; Figure 6G	citation	Smith1870.2	4	=	=	.	.
+Shih2016.2	88.1	Uca stylifera	.	text p. 143, 148-149, 175; Figure 6H	specimen	Base Naval Vasco Nuñez de Balboa, Panama [NCHUZOOL 13578]	.	stylifera	<	.	.
+Shih2016.2	88.2	Uca stylifera	.	text p. 143, 148-149, 175; Figure 6H	location	Panama	.	stylifera	<	.	.
+Shih2016.2	88.3	Uca stylifera	.	text p. 143, 148-149, 175; Figure 6H	citation	MilneEdwards1852	3	=	=	.	.
+Shih2016.2	88.4	Uca stylifera	.	text p. 143, 148-149, 175; Figure 6H	citation	Smith1870.2	2	=	=	.	.
+Shih2016.2	89	Xeruca	.	text p. 139-140, 142, 144, 151, 159-161, 175	citation	Shih2015.2	.	=	=	.	.
+Shih2016.2	90.1	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	specimen	Bazhang River, Taiwan [NCHUZOOL 13742]	.	formosensis	<	.	.
+Shih2016.2	90.2	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	specimen	Cingluo, Penghu, Taiwan [NCHUZOOL 13770]	.	formosensis	<	.	.
+Shih2016.2	90.3	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	specimen	Qigu, Tainan, Taiwan [NCHUZOOL 13691]	.	formosensis	<	.	.
+Shih2016.2	90.4	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	citation	Shih2015.2	.	=	=	.	.
+Shih2016.2	90.5	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	citation	Rathbun1921.2	1	=	=	.	.
+Shih2016.2	90.6	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	citation	Shih1999.3	.	=	=	.	.
+Shih2016.2	90.7	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	citation	Crane1975	26	=	=	.	.
+Shih2016.2	90.8	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	citation	Rosenberg2001	43	=	=	.	.
+Shih2016.2	90.9	Xeruca formosensis	.	text p. 140, 142, 159-160, 175;  Figure 12B	location	Taiwan	.	formosensis	<	.	.
+Shih2016.2	91	Paraleptuca boninensis	.	text p. 140, 156	citation	Shih2013.2	1	=	=	.	.
+Shih2016.2	92	Austruca cryptica	.	text p. 140, 153	citation	Naderloo2010	1	=	=	.	.
+Shih2016.2	93.1	Tubuca australiae	.	text p. 140-141, 159	citation	Ng2008	.	=	=	.	.
+Shih2016.2	93.2	Tubuca australiae	.	text p. 140-141, 159	citation	Crane1975	11	=	=	.	.
+Shih2016.2	94.1	Uca heteropleura	.	text p. 148-149; Figure 6C	location	Panama	.	heteropleura	<	.	.
+Shih2016.2	94.2	Uca heteropleura	.	text p. 148-149; Figure 6C	citation	Smith1870.2	3	=	=	.	.
+Shih2016.2	95.1	Uca insignis	.	text p. 148-149; Figure 6D	location	El Salvador	.	insignis	<	.	.
+Shih2016.2	95.2	Uca insignis	.	text p. 148-149; Figure 6D	citation	MilneEdwards1852	24	=	=	.	.
+Shih2016.2	95.3	Uca insignis	.	text p. 148-149; Figure 6D	citation	Gerstaecker1856	3	=	=	.	.
+Shih2016.2	95.4	Uca insignis	.	text p. 148-149; Figure 6D	citation	Smith1870.2	5	=	=	.	.
+Shih2016.2	96	Uca intermedia	.	text p. 149	citation	vonPrahl1985	1	=	=	.	.
+Shih2016.2	97.1	Uca monilifera	.	text p. 149	citation	Rathbun1915	1	=	=	.	.
+Shih2016.2	97.2	Uca monilifera	.	text p. 149	citation	Crane1975	46	=	=	.	.
+Shih2016.2	98.1	Uca ornata	.	text p. 149	citation	Smith1870.2	6	=	=	.	.
+Shih2016.2	98.2	Uca ornata	.	text p. 149	citation	vonHagen1968.2	21	=	=	.	.
+Shih2016.2	98.3	Uca ornata	.	text p. 149	citation	Crane1975	52	=	=	.	.
+Shih2016.2	99	Leptuca batuenta	.	text p. 153	citation	Crane1941	19	=	=	.	.
+Shih2016.2	100	Leptuca beebei	.	text p. 153	citation	Crane1941	21	=	=	.	.
+Shih2016.2	101	Leptuca coloradensis	.	text p. 153	citation	Rathbun1893	7	=	=	.	.
+Shih2016.2	102.1	Leptuca crenulata	.	text p. 153	citation	Lockington1877.2	9	=	=	.	.
+Shih2016.2	102.2	Leptuca crenulata	.	text p. 153	citation	Rathbun1893	1	=	=	.	.
+Shih2016.2	103.1	Leptuca festae	.	text p. 153	citation	Nobili1901.3	5	=	=	.	.
+Shih2016.2	103.2	Leptuca festae	.	text p. 153	citation	Rathbun1935.1	1	=	=	.	.
+Shih2016.2	103.3	Leptuca festae	.	text p. 153	citation	Bott1954	22	=	=	.	.
+Shih2016.2	103.4	Leptuca festae	.	text p. 153	citation	Bott1954	23	=	=	.	.
+Shih2016.2	103.5	Leptuca festae	.	text p. 153	citation	Bott1958	4	=	=	.	.
+Shih2016.2	104	Leptuca helleri	.	text p. 153	citation	Rathbun1902.3	2	=	=	.	.
+Shih2016.2	105	Leptuca inaequalis	.	text p. 153	citation	Rathbun1935.1	5	=	=	.	.
+Shih2016.2	106	Leptuca latimanus	.	text p. 153	citation	Rathbun1893	4	=	=	.	.
+Shih2016.2	107	Leptuca limicola	.	text p. 153	citation	Crane1941	25	=	=	.	.
+Shih2016.2	108	Leptuca musica	.	text p. 153	citation	Rathbun1915	3	=	=	.	.
+Shih2016.2	109	Leptuca oerstedi	.	text p. 153	citation	Rathbun1904.1	1	=	=	.	.
+Shih2016.2	110.1	Leptuca pygmaea	.	text p. 153-154	citation	Crane1941	5	=	=	.	.
+Shih2016.2	110.2	Leptuca pygmaea	.	text p. 153-154	citation	Beinlich2006	81	=	=	.	.
+Shih2016.2	111	Leptuca saltitanta	.	text p. 154	citation	Crane1941	20	=	=	.	.
+Shih2016.2	1112	Leptuca tallanica	.	text p. 154	citation	vonHagen1968.2	13	=	=	.	.
+Shih2016.2	113	Leptuca tenuipedis	.	text p. 154	citation	Crane1941	18	=	=	.	.
+Shih2016.2	114.1	Leptuca tomentosa	.	text p. 140, 154	citation	Crane1941	12	=	=	.	.
+Shih2016.2	114.2	Leptuca tomentosa	.	text p. 140, 154	citation	Bott1954	14	=	=	.	.
+Shih2016.2	114.3	Leptuca tomentosa	.	text p. 140, 154	citation	Ng2008	.	=	=	.	.
+Shih2016.2	115	Minuca marguerita	.	text p. 154, 156	citation	Thurman1981.1	1	=	=	.	.
+Shih2016.2	116.1	Tubuca polita	.	text p. 158-159; Figure 11E	location	Northern Territory, Australia	.	polita	<	.	.
+Shih2016.2	116.2	Tubuca polita	.	text p. 158-159; Figure 11E	citation	Crane1975	23	=	=	.	.
+Shih2016.2	117	Tubuca hirsutimanus	.	text p. 159	citation	George1982	3	=	=	.	.
 Didion2017	1	Uca pugilator	Atlantic Sand Fiddler	text p. 102	n/a	.	.	pugilator	<	.	.
 Laurenzano2017	1.1	Minuca rapax	.	text p. 239	location	Suriname	.	rapax	<	.	.
 Laurenzano2017	1.2	Minuca rapax	.	text p. 239	location	Brazil	.	rapax	<	.	.
