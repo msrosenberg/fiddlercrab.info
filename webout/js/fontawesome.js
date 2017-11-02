@@ -1,5 +1,5 @@
 /**
- * Font Awesome 5.0.0-rc2
+ * Font Awesome 5.0.0-rc4
  */
 
 (function () {
@@ -51,6 +51,9 @@ var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
 var UNITS_IN_GRID = 16;
 var DEFAULT_FAMILY_PREFIX = 'fa';
 var DEFAULT_REPLACEMENT_CLASS = 'svg-inline--fa';
+var DATA_FA_PROCESSED = 'data-fa-processed';
+var DATA_FA_PSEUDO_ELEMENT = 'data-fa-pseudo-element';
+var HTML_CLASS_I2SVG_BASE_CLASS = 'fontawesome-i2svg';
 
 var PRODUCTION = function () {
   try {
@@ -70,8 +73,6 @@ var RESERVED_CLASSES = ['xs', 'sm', 'lg', 'fw', 'ul', 'li', 'border', 'pull-left
 })).concat(oneToTwenty.map(function (n) {
   return 'w-' + n;
 }));
-
-var babelHelpers = {};
 
 var classCallCheck = function (instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -96,6 +97,21 @@ var createClass = function () {
     return Constructor;
   };
 }();
+
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
 
 var _extends = Object.assign || function (target) {
   for (var i = 1; i < arguments.length; i++) {
@@ -133,14 +149,13 @@ var toConsumableArray = function (arr) {
   }
 };
 
-babelHelpers;
-
 var _default = _extends({
   familyPrefix: DEFAULT_FAMILY_PREFIX,
   replacementClass: DEFAULT_REPLACEMENT_CLASS,
   autoReplaceSvg: true,
   autoAddCss: true,
   autoA11y: true,
+  searchPseudoElements: false,
   observeMutations: true,
   keepOriginalSource: true,
   measurePerformance: false,
@@ -367,13 +382,13 @@ var makeIconComposition = function (_ref) {
 };
 
 var makeIconStandard = function (_ref) {
-  var attributes = _ref.attributes,
+  var children = _ref.children,
+      attributes = _ref.attributes,
       main = _ref.main,
       transform = _ref.transform,
       styles = _ref.styles;
 
   var styleString = joinStyles(styles);
-  var nextChildren = [];
 
   if (styleString.length > 0) {
     attributes['style'] = styleString;
@@ -381,7 +396,7 @@ var makeIconStandard = function (_ref) {
 
   if (transformIsMeaningful(transform)) {
     var trans = transformForSvg({ transform: transform, containerWidth: main.width, iconWidth: main.width });
-    nextChildren.push({
+    children.push({
       tag: 'g',
       attributes: _extends({}, trans.outer),
       children: [{
@@ -395,11 +410,11 @@ var makeIconStandard = function (_ref) {
       }]
     });
   } else {
-    nextChildren.push(main.icon);
+    children.push(main.icon);
   }
 
   return {
-    children: nextChildren,
+    children: children,
     attributes: attributes
   };
 };
@@ -436,7 +451,10 @@ var asSymbol = function (_ref) {
   var prefix = _ref.prefix,
       iconName = _ref.iconName,
       children = _ref.children,
-      attributes = _ref.attributes;
+      attributes = _ref.attributes,
+      symbol = _ref.symbol;
+
+  var id = symbol === true ? prefix + '-' + config.familyPrefix + '-' + iconName : symbol;
 
   return [{
     tag: 'svg',
@@ -445,19 +463,22 @@ var asSymbol = function (_ref) {
     },
     children: [{
       tag: 'symbol',
-      attributes: _extends({}, attributes, { id: prefix + '-' + config.familyPrefix + '-' + iconName }),
+      attributes: _extends({}, attributes, { id: id }),
       children: children
     }]
   }];
 };
 
 function makeInlineSvgAbstract(params) {
+  var _babelHelpers$extends;
+
   var _params$icons = params.icons,
       main = _params$icons.main,
       compose = _params$icons.compose,
       prefix = params.prefix,
       iconName = params.iconName,
       transform = params.transform,
+      symbol = params.symbol,
       title = params.title,
       extra = params.extra;
 
@@ -470,14 +491,7 @@ function makeInlineSvgAbstract(params) {
 
   var content = {
     children: [],
-    attributes: _extends({}, extra.attributes, {
-      'data-prefix': prefix,
-      'data-icon': iconName,
-      'class': attrClass,
-      'role': 'img',
-      'xmlns': 'http://www.w3.org/2000/svg',
-      'viewBox': '0 0 ' + width + ' ' + height
-    })
+    attributes: _extends({}, extra.attributes, (_babelHelpers$extends = {}, defineProperty(_babelHelpers$extends, DATA_FA_PROCESSED, ''), defineProperty(_babelHelpers$extends, 'data-prefix', prefix), defineProperty(_babelHelpers$extends, 'data-icon', iconName), defineProperty(_babelHelpers$extends, 'class', attrClass), defineProperty(_babelHelpers$extends, 'role', 'img'), defineProperty(_babelHelpers$extends, 'xmlns', 'http://www.w3.org/2000/svg'), defineProperty(_babelHelpers$extends, 'viewBox', '0 0 ' + width + ' ' + height), _babelHelpers$extends))
   };
 
   if (title) content.children.push({ tag: 'title', attributes: { id: content.attributes['aria-labelledby'] || 'title-' + nextUniqueId() }, children: [title] });
@@ -488,6 +502,7 @@ function makeInlineSvgAbstract(params) {
     main: main,
     compose: compose,
     transform: transform,
+    symbol: symbol,
     styles: extra.styles
   });
 
@@ -498,7 +513,7 @@ function makeInlineSvgAbstract(params) {
   args.children = children;
   args.attributes = attributes;
 
-  if (content.attributes.hasOwnProperty('data-fa-symbol')) {
+  if (symbol) {
     return asSymbol(args);
   } else {
     return asIcon(args);
@@ -506,6 +521,8 @@ function makeInlineSvgAbstract(params) {
 }
 
 function makeLayersTextAbstract(params) {
+  var _babelHelpers$extends2;
+
   var content = params.content,
       width = params.width,
       height = params.height,
@@ -514,9 +531,7 @@ function makeLayersTextAbstract(params) {
       extra = params.extra;
 
 
-  var attributes = _extends({}, extra.attributes, title ? { 'title': title } : {}, {
-    'class': extra.classes.join(' ')
-  });
+  var attributes = _extends({}, extra.attributes, title ? { 'title': title } : {}, (_babelHelpers$extends2 = {}, defineProperty(_babelHelpers$extends2, DATA_FA_PROCESSED, ''), defineProperty(_babelHelpers$extends2, 'class', extra.classes.join(' ')), _babelHelpers$extends2));
 
   var styles = _extends({}, extra.styles);
 
@@ -555,9 +570,9 @@ if (!w[NAMESPACE_IDENTIFIER].shims) w[NAMESPACE_IDENTIFIER].shims = [];
 
 var namespace = w[NAMESPACE_IDENTIFIER];
 
-var noop$1 = function noop() {};
-var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : { mark: noop$1, measure: noop$1 };
-var preamble = 'FA "5.0.0-rc2"';
+var noop$2 = function noop() {};
+var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : { mark: noop$2, measure: noop$2 };
+var preamble = 'FA "5.0.0-rc4"';
 
 var begin = function begin(name) {
   p.mark(preamble + ' ' + name + ' begins');
@@ -587,6 +602,8 @@ function toHtml(abstractNodes) {
     return '<' + tag + ' ' + joinAttributes(attributes) + '>' + children.map(toHtml).join('') + '</' + tag + '>';
   }
 }
+
+var noop$1 = function noop() {};
 
 function isReplaced(node) {
   var nodeClass = node.getAttribute ? node.getAttribute('class') : null;
@@ -620,40 +637,90 @@ var mutators = {
   nest: function nest(mutation) {
     var node = mutation[0];
     var abstract = mutation[1];
+
+    // If we already have a replaced node we do not want to continue nesting within it.
+    // Short-circuit to the standard replacement
+    if (~toArray(node.classList).indexOf(config.replacementClass)) {
+      return mutators.replace(mutation);
+    }
+
+    var forSvg = new RegExp(config.familyPrefix + '-.*');
+
+    delete abstract[0].attributes.style;
+
+    var splitClasses = abstract[0].attributes.class.split(' ').reduce(function (acc, cls) {
+      if (cls === config.replacementClass || cls.match(forSvg)) {
+        acc.toSvg.push(cls);
+      } else {
+        acc.toNode.push(cls);
+      }
+
+      return acc;
+    }, { toNode: [], toSvg: [] });
+
+    abstract[0].attributes.class = splitClasses.toSvg.join(' ');
+
     var newInnerHTML = abstract.map(function (a) {
       return toHtml(a);
     }).join('\n');
+    node.setAttribute('class', splitClasses.toNode.join(' '));
+    node.setAttribute(DATA_FA_PROCESSED, '');
     node.innerHTML = newInnerHTML;
   }
 };
 
 function perform(mutations, callback) {
-  if (!WINDOW.requestAnimationFrame) return;
+  var callbackFunction = typeof callback === 'function' ? callback : noop$1;
 
-  WINDOW.requestAnimationFrame(function () {
-    var mutator = getMutator();
-    var end = perf.begin('mutate');
+  if (mutations.length === 0) {
+    callbackFunction();
+  } else {
+    var frame = WINDOW.requestAnimationFrame || function (op) {
+      return op();
+    };
 
-    mutations.map(mutator);
+    frame(function () {
+      var mutator = getMutator();
+      var mark = perf.begin('mutate');
 
-    if (typeof callback === 'function') {
-      callback();
-    }
+      mutations.map(mutator);
 
-    end();
-  });
+      mark();
+
+      callbackFunction();
+    });
+  }
+}
+
+var disabled = false;
+
+function disableObservation(operation) {
+  disabled = true;
+  operation();
+  disabled = false;
 }
 
 function observe(options) {
   if (!MUTATION_OBSERVER) return;
 
   var treeCallback = options.treeCallback,
-      nodeCallback = options.nodeCallback;
+      nodeCallback = options.nodeCallback,
+      pseudoElementsCallback = options.pseudoElementsCallback;
 
   var mo = new MUTATION_OBSERVER(function (objects) {
+    if (disabled) return;
+
     toArray(objects).forEach(function (mutationRecord) {
       if (mutationRecord.type === 'childList' && mutationRecord.addedNodes.length > 0 && !isReplaced(mutationRecord.addedNodes[0])) {
+        if (config.searchPseudoElements) {
+          pseudoElementsCallback(mutationRecord.target);
+        }
+
         treeCallback(mutationRecord.target);
+      }
+
+      if (mutationRecord.type === 'attributes' && mutationRecord.attributeName === 'class' && mutationRecord.target.parentNode && config.searchPseudoElements) {
+        pseudoElementsCallback(mutationRecord.target.parentNode);
       }
 
       if (mutationRecord.type === 'attributes' && isReplaced(mutationRecord.target) && ~ATTRIBUTES_WATCHED_FOR_MUTATION.indexOf(mutationRecord.attributeName)) {
@@ -741,7 +808,7 @@ var reduce = function fastReduceObject (subject, fn, initialValue, thisContext) 
   return result;
 };
 
-var packs$2 = namespace.packs;
+var packs$1 = namespace.packs;
 var shims = namespace.shims;
 
 
@@ -751,7 +818,7 @@ var _byOldName = {};
 
 var build = function build() {
   var lookup = function lookup(reducer) {
-    return reduce(packs$2, function (o, pack, prefix) {
+    return reduce(packs$1, function (o, pack, prefix) {
       o[prefix] = reduce(pack, reducer, {});
       return o;
     }, {});
@@ -775,7 +842,7 @@ var build = function build() {
     return acc;
   });
 
-  var hasRegular = 'far' in packs$2;
+  var hasRegular = 'far' in packs$1;
 
   _byOldName = reduce(shims, function (acc, shim) {
     var oldName = shim[0];
@@ -817,7 +884,7 @@ function toHex(unicode) {
   return result;
 }
 
-var packs$3 = namespace.packs;
+var packs$2 = namespace.packs;
 
 
 var emptyCanonicalIcon = function emptyCanonicalIcon() {
@@ -828,7 +895,7 @@ function getCanonicalIcon(values) {
   return values.reduce(function (acc, cls) {
     var iconName = getIconName(config.familyPrefix, cls);
 
-    if (packs$3[cls]) {
+    if (packs$2[cls]) {
       acc.prefix = cls;
     } else if (iconName) {
       var shim = acc.prefix === 'fa' ? byOldName(iconName) : {};
@@ -940,6 +1007,12 @@ var transformParser = function (node) {
   return parseTransformString(node.getAttribute('data-fa-transform'));
 };
 
+var symbolParser = function (node) {
+  var symbol = node.getAttribute('data-fa-symbol');
+
+  return symbol === null ? false : symbol === '' ? true : symbol;
+};
+
 var attributesParser = function (node) {
   var extraAttributes = toArray(node.attributes).reduce(function (acc, attr) {
     if (acc.name !== 'class' && acc.name !== 'style') {
@@ -981,6 +1054,7 @@ function parseMeta(node) {
 
   var extraStyles = styleParser(node);
   var transform = transformParser(node);
+  var symbol = symbolParser(node);
   var extraAttributes = attributesParser(node);
   var compose = composeParser(node);
 
@@ -989,6 +1063,7 @@ function parseMeta(node) {
     title: node.getAttribute('title'),
     prefix: prefix,
     transform: transform,
+    symbol: symbol,
     compose: compose,
     extra: {
       classes: extraClasses,
@@ -1053,6 +1128,13 @@ var missing = { tag: 'g', children: [RING, DOT, QUESTION, EXCLAMATION] };
 var packs = namespace.packs;
 
 var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
+var FONT_FAMILY_PATTERN = /Font Awesome 5 (Solid|Regular|Light|Brands)/;
+var STYLE_TO_PREFIX = {
+  'Solid': 'fas',
+  'Regular': 'far',
+  'Light': 'fal',
+  'Brands': 'fab'
+};
 
 function findIcon(iconName, prefix) {
   var val = {
@@ -1086,6 +1168,7 @@ function generateSvgReplacementMutation(node, nodeMeta) {
       title = nodeMeta.title,
       prefix = nodeMeta.prefix,
       transform = nodeMeta.transform,
+      symbol = nodeMeta.symbol,
       compose = nodeMeta.compose,
       extra = nodeMeta.extra;
 
@@ -1098,6 +1181,7 @@ function generateSvgReplacementMutation(node, nodeMeta) {
     prefix: prefix,
     iconName: iconName,
     transform: transform,
+    symbol: symbol,
     compose: compose,
     title: title,
     extra: extra
@@ -1144,21 +1228,73 @@ function generateMutation(node) {
   }
 }
 
+function searchPseudoElements(root) {
+  var end = perf.begin('searchPseudoElements');
+
+  disableObservation(function () {
+    toArray(root.querySelectorAll('*')).reduce(function (acc, node) {
+      [':before', ':after'].forEach(function (pos) {
+        var styles = WINDOW.getComputedStyle(node, pos);
+        var fontFamily = styles.getPropertyValue('font-family').match(FONT_FAMILY_PATTERN);
+        var children = toArray(node.children);
+        var pseudoElement = children.filter(function (c) {
+          return c.getAttribute(DATA_FA_PSEUDO_ELEMENT) === pos;
+        })[0];
+
+        if (!fontFamily && pseudoElement) {
+          pseudoElement.remove();
+        }
+
+        if (fontFamily && !pseudoElement) {
+          var content = styles.getPropertyValue('content');
+          var i = DOCUMENT.createElement('i');
+          i.setAttribute('class', '' + STYLE_TO_PREFIX[fontFamily[1]]);
+          i.setAttribute(DATA_FA_PSEUDO_ELEMENT, pos);
+          i.innerText = content.length === 3 ? content.substr(1, 1) : content;
+          if (pos === ':before') {
+            node.insertBefore(i, node.firstChild);
+          } else {
+            node.appendChild(i);
+          }
+        }
+      });
+    });
+  });
+
+  end();
+}
+
 function onTree(root) {
   var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
+  var htmlClassList = DOCUMENT.documentElement.classList;
+  var hclAdd = function hclAdd(suffix) {
+    return htmlClassList.add(HTML_CLASS_I2SVG_BASE_CLASS + '-' + suffix);
+  };
+  var hclRemove = function hclRemove(suffix) {
+    return htmlClassList.remove(HTML_CLASS_I2SVG_BASE_CLASS + '-' + suffix);
+  };
   var prefixes = Object.keys(packs);
-  var prefixesDomQuery = ['.' + LAYERS_TEXT_CLASSNAME].concat(prefixes.map(function (p) {
-    return '.' + p;
+  var prefixesDomQuery = ['.' + LAYERS_TEXT_CLASSNAME + ':not([' + DATA_FA_PROCESSED + '])'].concat(prefixes.map(function (p) {
+    return '.' + p + ':not([' + DATA_FA_PROCESSED + '])';
   })).join(', ');
 
   if (prefixesDomQuery.length === 0) {
     return;
   }
 
-  var end = perf.begin('onTree');
+  var candidates = toArray(root.querySelectorAll(prefixesDomQuery));
 
-  var mutations = toArray(root.querySelectorAll(prefixesDomQuery)).reduce(function (acc, node) {
+  if (candidates.length > 0) {
+    hclAdd('pending');
+    hclRemove('complete');
+  } else {
+    return;
+  }
+
+  var mark = perf.begin('onTree');
+
+  var mutations = candidates.reduce(function (acc, node) {
     try {
       var mutation = generateMutation(node);
 
@@ -1176,9 +1312,15 @@ function onTree(root) {
     return acc;
   }, []);
 
-  end();
+  mark();
 
-  perform(mutations, callback);
+  perform(mutations, function () {
+    hclAdd('active');
+    hclAdd('complete');
+    hclRemove('pending');
+
+    if (typeof callback === 'function') callback();
+  });
 }
 
 function onNode(node) {
@@ -1357,6 +1499,10 @@ var api = {
           callback = _params$callback === undefined ? function () {} : _params$callback;
 
 
+      if (config.searchPseudoElements) {
+        searchPseudoElements(node);
+      }
+
       onTree(node, callback);
     },
 
@@ -1381,6 +1527,8 @@ var api = {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _params$transform = params.transform,
         transform = _params$transform === undefined ? meaninglessTransform : _params$transform,
+        _params$symbol = params.symbol,
+        symbol = _params$symbol === undefined ? false : _params$symbol,
         _params$compose = params.compose,
         compose = _params$compose === undefined ? null : _params$compose,
         _params$title = params.title,
@@ -1392,10 +1540,15 @@ var api = {
         _params$style = params.style,
         style = _params$style === undefined ? {} : _params$style;
 
-    var _ref = iconDefinition.icon ? iconDefinition : findIconDefinition(iconDefinition),
-        prefix = _ref.prefix,
-        iconName = _ref.iconName,
-        icon = _ref.icon;
+
+    var foundIcon = iconDefinition.icon ? iconDefinition : findIconDefinition(iconDefinition);
+
+    if (!foundIcon) return;
+
+    var prefix = foundIcon.prefix,
+        iconName = foundIcon.iconName,
+        icon = foundIcon.icon;
+
 
     return apiObject(_extends({ type: 'icon' }, iconDefinition), function () {
       ensureStyles();
@@ -1416,6 +1569,7 @@ var api = {
         prefix: prefix,
         iconName: iconName,
         transform: _extends({}, meaninglessTransform, transform),
+        symbol: symbol,
         title: title,
         extra: {
           attributes: attributes,
@@ -1508,7 +1662,11 @@ function bootstrap() {
       }
 
       if (config.observeMutations && typeof MutationObserver === 'function') {
-        observe({ treeCallback: onTree, nodeCallback: onNode });
+        observe({
+          treeCallback: onTree,
+          nodeCallback: onNode,
+          pseudoElementsCallback: searchPseudoElements
+        });
       }
     });
   }
