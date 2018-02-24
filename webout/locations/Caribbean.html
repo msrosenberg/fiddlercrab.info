@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caribbean</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="../favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="../favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="../favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="../favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="../favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="../favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="../favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="../uca_style.css" />
+    <script defer src="../js/fa-solid.min.js"></script>
+    <script defer src="../js/fa-regular.min.js"></script>
+    <script defer src="../js/fa-brands.min.js"></script>
+    <script defer src="../js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Caribbean_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(25.0, -61.0);
+        var swcorner = new google.maps.LatLng(4.7, -90.0);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="../index.html" class="home-title">Fiddler Crabs</a>
+      <a href="../index.html" class="home-link"><span class ="fa fa-home"></span> Home</a>
+      <a href="../blog" class="home-link"><span class ="fa fa-pencil-alt"></span> Blog</a>
+    </div>
+    <header id="Caribbean.html">
+      <h1 class="nobookmark">Caribbean</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="fa fa-list"></span> Location Index</a></li>
+        </ul>
+      </nav>
+    </header>
+    <dl>
+    <dt>Included Within</dt>
+      <dd><a href="Western_Atlantic_Ocean.html">Western Atlantic Ocean</a></dd>
+    <dt>Approximate Coordinates</dt>
+      <dd>19.067361&deg;N, 72.798457&deg;W</dd>
+    <div class="map_section">
+           <div id="point_map_canvas" class="sp_map"></div>
+        <div class="map_download">
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+        </div>
+    </div>
+    </dl>
+  <section class="spsection">
+    <h3 class="nobookmark">Includes Subareas</h3>
+    <ul class="splist">
+    <li><a href="Antigua_and_Barbuda.html">Antigua and Barbuda</a></li>
+    <li><a href="Barbados.html">Barbados</a></li>
+    <li><a href="British_Virgin_Islands.html">British Virgin Islands</a></li>
+    <li><a href="Cuba.html">Cuba</a></li>
+    <li><a href="Curacao.html">Curaçao</a></li>
+    <li><a href="Dominica.html">Dominica</a></li>
+    <li><a href="Guadeloupe.html">Guadeloupe</a></li>
+    <li><a href="Hispaniola.html">Hispaniola</a></li>
+    <li><a href="Jamaica.html">Jamaica</a></li>
+    <li><a href="Puerto_Rico.html">Puerto Rico</a></li>
+    <li><a href="Saint_Barthelemy.html">Saint Barthélemy</a></li>
+    <li><a href="Saint_Martin.html">Saint Martin</a></li>
+    <li><a href="Trinidad_and_Tobago.html">Trinidad and Tobago</a></li>
+    <li><a href="U.S._Virgin_Islands.html">U.S. Virgin Islands</a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Currently Recognized Species</h3>
+    <ul class="splist">
+      <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
+      <li><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></li>
+      <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
+      <li><a href="../u_major.html"><em class="species">Uca major</em></a></li>
+      <li><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></li>
+      <li><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></li>
+      <li><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></li>
+      <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
+      <li><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></li>
+      <li><a href="../u_thayeri.html"><em class="species">Uca thayeri</em></a></li>
+      <li><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
+    <ul class="splist">
+      <li><a href="../names/Cancer_Vocans.html"><em class="species">Cancer Vocans</em></a></li>
+      <li><a href="../names/Cancer_major_albidus.html"><em class="species">Cancer major albidus</em></a></li>
+      <li><a href="../names/Cancer_palustris.html"><em class="species">Cancer palustris</em></a></li>
+      <li><a href="../names/Cancer_uca.html"><em class="species">Cancer uca</em></a></li>
+      <li><a href="../names/Cancer_vocans_minor.html"><em class="species">Cancer vocans minor</em></a></li>
+      <li><a href="../names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a></li>
+      <li><a href="../names/Gelasimus_grangeri.html"><em class="species">Gelasimus grangeri</em></a></li>
+      <li><a href="../names/Gelasimus_heterocheles.html"><em class="species">Gelasimus heterocheles</em></a></li>
+      <li><a href="../names/Gelasimus_palustris.html"><em class="species">Gelasimus palustris</em></a></li>
+      <li><a href="../names/Gelasimus_platydactylus.html"><em class="species">Gelasimus platydactylus</em></a></li>
+      <li><a href="../names/Gelasimus_pugnax.html"><em class="species">Gelasimus pugnax</em></a></li>
+      <li><a href="../names/Gelasimus_rapax.html"><em class="species">Gelasimus rapax</em></a></li>
+      <li><a href="../names/Gelasimus_stenodactylus.html"><em class="species">Gelasimus stenodactylus</em></a></li>
+      <li><a href="../names/Gelasimus_vocans.html"><em class="species">Gelasimus vocans</em></a></li>
+      <li><a href="../names/Gelasimus_vocator.html"><em class="species">Gelasimus vocator</em></a></li>
+      <li><a href="../names/Gelasimus_vocator_var_minax.html"><em class="species">Gelasimus vocator </em> var. <em class="species"> minax</em></a></li>
+      <li><a href="../names/Leptuca_thayeri.html"><em class="species">Leptuca thayeri</em></a></li>
+      <li><a href="../names/Minuca_pugnax.html"><em class="species">Minuca pugnax</em></a></li>
+      <li><a href="../names/Minuca_rapax.html"><em class="species">Minuca rapax</em></a></li>
+      <li><a href="../names/Minuca_vocator.html"><em class="species">Minuca vocator</em></a></li>
+      <li><a href="../names/Planuca_thayeri.html"><em class="species">Planuca thayeri</em></a></li>
+      <li><a href="../names/Uca.html"><em class="species">Uca</em></a></li>
+      <li><a href="../names/Uca__burgersi.html"><em class="species">Uca  burgersi</em></a></li>
+      <li><a href="../names/Uca_Boboruca_thayeri_thayeri.html"><em class="species">Uca (Boboruca) thayeri thayeri</em></a></li>
+      <li><a href="../names/Uca_Celuca__crenulata__cumulanta.html"><em class="species">Uca (Celuca) [crenulata] cumulanta</em></a></li>
+      <li><a href="../names/Uca_Celuca__crenulata__speciosa_speciosa.html"><em class="species">Uca (Celuca) [crenulata] speciosa speciosa</em></a></li>
+      <li><a href="../names/Uca_Celuca__leptodactyla__leptodactyla.html"><em class="species">Uca (Celuca) [leptodactyla] leptodactyla</em></a></li>
+      <li><a href="../names/Uca_Leptuca_spinicarpa.html"><em class="species">Uca (Leptuca) spinicarpa</em></a></li>
+      <li><a href="../names/Uca_Minuca__galapagensis__rapax_rapax.html"><em class="species">Uca (Minuca) [galapagensis] rapax rapax</em></a></li>
+      <li><a href="../names/Uca_Minuca__minax__mordax.html"><em class="species">Uca (Minuca) [minax] mordax</em></a></li>
+      <li><a href="../names/Uca_Minuca_burgersi.html"><em class="species">Uca (Minuca) burgersi</em></a></li>
+      <li><a href="../names/Uca_Minuca_cumulanta.html"><em class="species">Uca (Minuca) cumulanta</em></a></li>
+      <li><a href="../names/Uca_Minuca_mordax.html"><em class="species">Uca (Minuca) mordax</em></a></li>
+      <li><a href="../names/Uca_Minuca_pugnax.html"><em class="species">Uca (Minuca) pugnax</em></a></li>
+      <li><a href="../names/Uca_Minuca_rapax.html"><em class="species">Uca (Minuca) rapax</em></a></li>
+      <li><a href="../names/Uca_Minuca_thayeri.html"><em class="species">Uca (Minuca) thayeri</em></a></li>
+      <li><a href="../names/Uca_Minuca_thayeri_thayeri.html"><em class="species">Uca (Minuca) thayeri thayeri</em></a></li>
+      <li><a href="../names/Uca_Minuca_vocator.html"><em class="species">Uca (Minuca) vocator</em></a></li>
+      <li><a href="../names/Uca_Minuca_vocator_vocator.html"><em class="species">Uca (Minuca) vocator vocator</em></a></li>
+      <li><a href="../names/Uca_Uca__major__major.html"><em class="species">Uca (Uca) [major] major</em></a></li>
+      <li><a href="../names/Uca_Uca_maracoani_maracoani.html"><em class="species">Uca (Uca) maracoani maracoani</em></a></li>
+      <li><a href="../names/Uca_affinis.html"><em class="species">Uca affinis</em></a></li>
+      <li><a href="../names/Uca_bergersii.html"><em class="species">Uca bergersii</em></a></li>
+      <li><a href="../names/Uca_burgersi.html"><em class="species">Uca burgersi</em></a></li>
+      <li><a href="../names/Uca_cordata.html"><em class="species">Uca cordata</em></a></li>
+      <li><a href="../names/Uca_cumulanta.html"><em class="species">Uca cumulanta</em></a></li>
+      <li><a href="../names/Uca_heterochela.html"><em class="species">Uca heterochela</em></a></li>
+      <li><a href="../names/Uca_heterochelos.html"><em class="species">Uca heterochelos</em></a></li>
+      <li><a href="../names/Uca_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
+      <li><a href="../names/Uca_leptostyla.html"><em class="species">Uca leptostyla</em></a></li>
+      <li><a href="../names/Uca_longisignalis.html"><em class="species">Uca longisignalis</em></a></li>
+      <li><a href="../names/Uca_major.html"><em class="species">Uca major</em></a></li>
+      <li><a href="../names/Uca_maracoani.html"><em class="species">Uca maracoani</em></a></li>
+      <li><a href="../names/Uca_minax.html"><em class="species">Uca minax</em></a></li>
+      <li><a href="../names/Uca_mordax.html"><em class="species">Uca mordax</em></a></li>
+      <li><a href="../names/Uca_pilosipes.html"><em class="species">Uca pilosipes</em></a></li>
+      <li><a href="../names/Uca_platydactyla.html"><em class="species">Uca platydactyla</em></a></li>
+      <li><a href="../names/Uca_princeps.html"><em class="species">Uca princeps</em></a></li>
+      <li><a href="../names/Uca_pugilator.html"><em class="species">Uca pugilator</em></a></li>
+      <li><a href="../names/Uca_pugnax.html"><em class="species">Uca pugnax</em></a></li>
+      <li><a href="../names/Uca_pugnax_rapax.html"><em class="species">Uca pugnax rapax</em></a></li>
+      <li><a href="../names/Uca_rapax.html"><em class="species">Uca rapax</em></a></li>
+      <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
+      <li><a href="../names/Uca_speciosa.html"><em class="species">Uca speciosa</em></a></li>
+      <li><a href="../names/Uca_spinicarpa.html"><em class="species">Uca spinicarpa</em></a></li>
+      <li><a href="../names/Uca_spp.html"><em class="species">Uca spp.</em></a></li>
+      <li><a href="../names/Uca_stenodactyla.html"><em class="species">Uca stenodactyla</em></a></li>
+      <li><a href="../names/Uca_thayeri.html"><em class="species">Uca thayeri</em></a></li>
+      <li><a href="../names/Uca_una.html"><em class="species">Uca una</em></a></li>
+      <li><a href="../names/Uca_vocator.html"><em class="species">Uca vocator</em></a></li>
+      <li><a href="../names/Uca_vocator_var_minax.html"><em class="species">Uca vocator </em> var. <em class="species"> minax</em></a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
+    <ul class="splist">
+      <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
+      <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
+      <li><a href="../names/sn_cordata.html"><em class="species">cordata</em></a></li>
+      <li><a href="../names/sn_cumulanta.html"><em class="species">cumulanta</em></a></li>
+      <li><a href="../names/sn_grangeri.html"><em class="species">grangeri</em></a></li>
+      <li><a href="../names/sn_heterochela.html"><em class="species">heterochela</em></a></li>
+      <li><a href="../names/sn_leptodactyla.html"><em class="species">leptodactyla</em></a></li>
+      <li><a href="../names/sn_leptostyla.html"><em class="species">leptostyla</em></a></li>
+      <li><a href="../names/sn_longisignalis.html"><em class="species">longisignalis</em></a></li>
+      <li><a href="../names/sn_major.html"><em class="species">major</em></a></li>
+      <li><a href="../names/sn_maracoani.html"><em class="species">maracoani</em></a></li>
+      <li><a href="../names/sn_minax.html"><em class="species">minax</em></a></li>
+      <li><a href="../names/sn_minor.html"><em class="species">minor</em></a></li>
+      <li><a href="../names/sn_mordax.html"><em class="species">mordax</em></a></li>
+      <li><a href="../names/sn_palustris.html"><em class="species">palustris</em></a></li>
+      <li><a href="../names/sn_pilosipes.html"><em class="species">pilosipes</em></a></li>
+      <li><a href="../names/sn_platydactyla.html"><em class="species">platydactyla</em></a></li>
+      <li><a href="../names/sn_princeps.html"><em class="species">princeps</em></a></li>
+      <li><a href="../names/sn_pugilator.html"><em class="species">pugilator</em></a></li>
+      <li><a href="../names/sn_pugnax.html"><em class="species">pugnax</em></a></li>
+      <li><a href="../names/sn_rapax.html"><em class="species">rapax</em></a></li>
+      <li><a href="../names/sn_speciosa.html"><em class="species">speciosa</em></a></li>
+      <li><a href="../names/sn_spinicarpa.html"><em class="species">spinicarpa</em></a></li>
+      <li><a href="../names/sn_stenodactylus.html"><em class="species">stenodactylus</em></a></li>
+      <li><a href="../names/sn_thayeri.html"><em class="species">thayeri</em></a></li>
+      <li><a href="../names/sn_uca.html"><em class="species">uca</em></a></li>
+      <li><a href="../names/sn_una.html"><em class="species">una</em></a></li>
+      <li><a href="../names/sn_vocans.html"><em class="species">vocans</em></a></li>
+      <li><a href="../names/sn_vocator.html"><em class="species">vocator</em></a></li>
+    </ul>
+  </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Ahmed1976.1.html">Ahmed (1976)</a><sup>†</sup>, 
+<a href="../references/Ahmed1978.1.html">Ahmed (1978)</a><sup>†</sup>, 
+<a href="../references/Ahmed1978.2.html">Ahmed &amp; Khan (1978)</a><sup>†</sup>, 
+<a href="../references/Altevogt1959.1.html">Altevogt (1959)</a><sup>†</sup>, 
+<a href="../references/Altevogt1962.html">Altevogt (1962)</a><sup>†</sup>, 
+<a href="../references/Altevogt1969.html">Altevogt (1969)</a>, 
+<a href="../references/Aurivillius1893.html">Aurivillius (1893)</a>, 
+<a href="../references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a><sup>†</sup>, 
+<a href="../references/Baldwin1976.2.html">Baldwin &amp; Kirschener (1976)</a><sup>†</sup>, 
+<a href="../references/Barnwell1963.2.html">Barnwell (1963)</a><sup>†</sup>, 
+<a href="../references/Barnwell1968.2.html">Barnwell (1968)</a><sup>†</sup>, 
+<a href="../references/Beebe1928.html">Beebe (1928)</a>, 
+<a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
+<a href="../references/Benedict1892.html">Benedict (1892)</a>, 
+<a href="../references/Bliss1968.1.html">Bliss (1968)</a><sup>†</sup>, 
+<a href="../references/Boone1929.html">Boone (1929)</a><sup>†</sup>, 
+<a href="../references/Boone1930.html">Boone (1930)</a><sup>†</sup>, 
+<a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
+<a href="../references/Bott1973.1.html">Bott (1973)</a><sup>†</sup>, 
+<a href="../references/Bott1973.2.html">Bott (1973)</a><sup>†</sup>, 
+<a href="../references/Bourdon1970.html">Bourdon &amp; Bowman (1970)</a>, 
+<a href="../references/Brown1756.html">Brown (1756)</a>, 
+<a href="../references/Burgers1958.html">Burgers (1958)</a>, 
+<a href="../references/Cable1965.html">Cable (1956)</a>, 
+<a href="../references/Cano1889.2.html">Cano (1889)</a><sup>†</sup>, 
+<a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a>, 
+<a href="../references/Coelho1972.2.html">Coelho &amp; Ramos (1972)</a><sup>†</sup>, 
+<a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
+<a href="../references/Crane1943.2.html">Crane (1943)</a><sup>†</sup>, 
+<a href="../references/Crane1943.3.html">Crane (1943)</a><sup>†</sup>, 
+<a href="../references/Crane1957.html">Crane (1957)</a>, 
+<a href="../references/Crane1958.html">Crane (1958)</a>, 
+<a href="../references/Crane1967.html">Crane (1967)</a>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
+<a href="../references/Dunham1988.html">Dunham &amp; Gilchrist (1988)</a><sup>†</sup>, 
+<a href="../references/Estampador1937.html">Estampador (1937)</a><sup>†</sup>, 
+<a href="../references/Estampador1959.html">Estampador (1959)</a><sup>†</sup>, 
+<a href="../references/Fabricius1781.html">Fabricius (1781)</a>, 
+<a href="../references/Fabricius1797.html">Fabricius (1797)</a>, 
+<a href="../references/Fabricius1798.1.html">Fabricius (1798)</a>, 
+<a href="../references/Fabricius1798.2.html">Fabricius (1798)</a><sup>†</sup>, 
+<a href="../references/Fabricius1810.html">Fabricius (1810)</a>, 
+<a href="../references/Faxon1895.html">Faxon (1895)</a><sup>†</sup>, 
+<a href="../references/Feest1969.html">Feest (1969)</a><sup>†</sup>, 
+<a href="../references/Fowler1912.html">Fowler (1912)</a><sup>†</sup>, 
+<a href="../references/Garth1957.html">Garth (1957)</a><sup>†</sup>, 
+<a href="../references/Gibbs1974.html">Gibbs (1974)</a>, 
+<a href="../references/Gibbs1972.html">Gibbs &amp; Bryan (1972)</a>, 
+<a href="../references/Gill1858.html">Gill (1858)</a>, 
+<a href="../references/Gmitter1953.html">Gmitter &amp; Wotton (1953)</a>, 
+<a href="../references/Gosse1851.html">Gosse (1851)</a>, 
+<a href="../references/Greenspan1975.html">Greenspan (1975)</a>, 
+<a href="../references/Gundlach1887.html">Gundlach (1887)</a>, 
+<a href="../references/Gunther1963.html">Günther (1963)</a><sup>†</sup>, 
+<a href="../references/Hartnoll1969.html">Hartnoll (1969)</a><sup>†</sup>, 
+<a href="../references/Hartnoll1982.html">Hartnoll (1982)</a><sup>†</sup>, 
+<a href="../references/Hartnoll1988.2.html">Hartnoll (1988)</a><sup>†</sup>, 
+<a href="../references/Hartnoll1988.3.html">Hartnoll (1988)</a><sup>†</sup>, 
+<a href="../references/Hay1915.html">Hay &amp; Shore (1915-1916)</a><sup>†</sup>, 
+<a href="../references/Hazlett1972.html">Hazlett (1972)</a><sup>†</sup>, 
+<a href="../references/Heit1974.html">Heit (1974)</a><sup>†</sup>, 
+<a href="../references/Herbst1782.html">Herbst (1782)</a><sup>†</sup>, 
+<a href="../references/HernandezRoa2009.html">Hernández Roa <em>et al.</em> (2009)</a>, 
+<a href="../references/Herrick1887.html">Herrick (1887)</a><sup>†</sup>, 
+<a href="../references/Herrnkind1968.3.html">Herrnkind (1968)</a><sup>†</sup>, 
+<a href="../references/Herrnkind1968.2.html">Herrnkind (1968)</a><sup>†</sup>, 
+<a href="../references/Herrnkind1972.html">Herrnkind (1972)</a><sup>†</sup>, 
+<a href="../references/Herrnkind1983.html">Herrnkind (1983)</a><sup>†</sup>, 
+<a href="../references/Holthuis1959.1.html">Holthuis (1959)</a>, 
+<a href="../references/Holthuis1959.2.html">Holthuis (1959)</a>, 
+<a href="../references/Holthuis1967.html">Holthuis (1967)</a><sup>†</sup>, 
+<a href="../references/Jansen1970.html">Jansen (1970)</a><sup>†</sup>, 
+<a href="../references/Jones1968.html">Jones (1968)</a>, 
+<a href="../references/Kamran2015.html">Kamran &amp; Moore (2015)</a><sup>†</sup>, 
+<a href="../references/Kingsley1878.html">Kingsley (1878)</a><sup>†</sup>, 
+<a href="../references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="../references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a>, 
+<a href="../references/Lindblad1969.html">Lindblad (1969)</a>, 
+<a href="../references/Lockwood1967.html">Lockwood (1967)</a><sup>†</sup>, 
+<a href="../references/Luederwaldt1919.1.html">Luederwaldt (1919)</a><sup>†</sup>, 
+<a href="../references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="../references/Mantel1983.html">Mantel &amp; Farmer (1983)</a><sup>†</sup>, 
+<a href="../references/Mertens1940.html">Mertens (1940)</a>, 
+<a href="../references/Miller1968.html">Miller &amp; Vernberg (1968)</a><sup>†</sup>, 
+<a href="../references/MilneEdwards1837.2.html">Milne Edwards (1837)</a><sup>†</sup>, 
+<a href="../references/MilneEdwards1852.html">Milne Edwards (1852)</a><sup>†</sup>, 
+<a href="../references/MilneEdwards1854.2.html">Milne Edwards (1854)</a><sup>†</sup>, 
+<a href="../references/Miranda1997.html">Miranda &amp; Collazo (1997)</a>, 
+<a href="../references/Novak1974.html">Novak &amp; Salmon (1974)</a><sup>†</sup>, 
+<a href="../references/Nutting1919.html">Nutting (1919)</a>, 
+<a href="../references/Odhano2015.html">Odhano <em>et al.</em> (2015)</a><sup>†</sup>, 
+<a href="../references/Oliveira1939.1.html">Oliveira (1939)</a><sup>†</sup>, 
+<a href="../references/Olivier1811.2.html">Olivier (1811)</a><sup>†</sup>, 
+<a href="../references/Ortmann1894.1.html">Ortmann (1894)</a>, 
+<a href="../references/Ortmann1897.html">Ortmann (1897)</a><sup>†</sup>, 
+<a href="../references/Oyenekan1995.html">Oyenekan (1995)</a><sup>†</sup>, 
+<a href="../references/Parra1787.html">Parra (1787)</a>, 
+<a href="../references/Paulmier1905.html">Paulmier (1905)</a><sup>†</sup>, 
+<a href="../references/Porter1913.html">Porter (1913)</a><sup>†</sup>, 
+<a href="../references/Porter1917.html">Porter (1917)</a><sup>†</sup>, 
+<a href="../references/Powers1975.2.html">Powers (1975)</a><sup>†</sup>, 
+<a href="../references/Powers1977.html">Powers (1977)</a>, 
+<a href="../references/Powers1983.html">Powers &amp; Bliss (1983)</a><sup>†</sup>, 
+<a href="../references/Powers1976.html">Powers &amp; Cole (1976)</a><sup>†</sup>, 
+<a href="../references/Rankin1898.html">Rankin (1898)</a>, 
+<a href="../references/Rathbun1897.2.html">Rathbun (1897)</a>, 
+<a href="../references/Rathbun1900.3.html">Rathbun (1900)</a>, 
+<a href="../references/Rathbun1902.1.html">Rathbun (1902)</a>, 
+<a href="../references/Rathbun1911.html">Rathbun (1911)</a><sup>†</sup>, 
+<a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="../references/Rathbun1920.html">Rathbun (1920)</a>, 
+<a href="../references/Rathbun1921.4.html">Rathbun (1921)</a>, 
+<a href="../references/Rathbun1924.3.html">Rathbun (1924)</a>, 
+<a href="../references/Rathbun1924.2.html">Rathbun (1924)</a><sup>†</sup>, 
+<a href="../references/Rathbun1933.html">Rathbun (1933)</a>, 
+<a href="../references/Rathbun1935.3.html">Rathbun (1935)</a><sup>†</sup>, 
+<a href="../references/Rodriguez1959.html">Rodriguez (1959)</a><sup>†</sup>, 
+<a href="../references/Rodriguez1993.2.html">Rodriguez (1993)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2000.html">Rosenberg (2000)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2001.html">Rosenberg (2001)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2013.html">Rosenberg (2013)</a><sup>†</sup>, 
+<a href="../references/Salmon1965.html">Salmon (1965)</a><sup>†</sup>, 
+<a href="../references/Salmon1967.html">Salmon (1967)</a><sup>†</sup>, 
+<a href="../references/Salmon1968.2.html">Salmon &amp; Atsaides (1968)</a><sup>†</sup>, 
+<a href="../references/Salmon1972.html">Salmon &amp; Horch (1972)</a><sup>†</sup>, 
+<a href="../references/Salmon1983.2.html">Salmon &amp; Hyatt (1983)</a><sup>†</sup>, 
+<a href="../references/Salmon1988.2.html">Salmon &amp; Zucker (1988)</a><sup>†</sup>, 
+<a href="../references/SchmidtNielsen1968.html">Schmidt-Nielsen <em>et al.</em> (1968)</a>, 
+<a href="../references/Schone1961.html">Schöne (1961)</a><sup>†</sup>, 
+<a href="../references/Schramm1867.html">Schramm (1867)</a>, 
+<a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="../references/Sloane1725.html">Sloane (1725)</a>, 
+<a href="../references/Smith1870.2.html">Smith (1870)</a>, 
+<a href="../references/Smith1878.html">Smith (1878)</a>, 
+<a href="../references/Smith1973.html">Smith &amp; Miller (1973)</a><sup>†</sup>, 
+<a href="../references/Spaargaren1975.html">Spaargaren (1975)</a>, 
+<a href="../references/Stimpson1859.html">Stimpson (1859)</a><sup>†</sup>, 
+<a href="../references/Streets1872.html">Streets (1872)</a>, 
+<a href="../references/Sumner1911.html">Sumner <em>et al.</em> (1911)</a><sup>†</sup>, 
+<a href="../references/Tashian1956.html">Tashian (1956)</a>, 
+<a href="../references/Teal1959.html">Teal (1959)</a><sup>†</sup>, 
+<a href="../references/Thompson1901.html">Thompson (1901)</a>, 
+<a href="../references/Thorbjarnarson1988.html">Thorbjarnarson (1988)</a>, 
+<a href="../references/Thurman1981.1.html">Thurman (1981)</a><sup>†</sup>, 
+<a href="../references/vanDelft1968.html">van Delft (1968)</a>, 
+<a href="../references/Velez1967.html">Vélez (1967)</a>, 
+<a href="../references/Vernberg1959.2.html">Vernberg (1959)</a>, 
+<a href="../references/Vernberg1959.3.html">Vernberg (1959)</a>, 
+<a href="../references/Vernberg1960.html">Vernberg (1960)</a>, 
+<a href="../references/Vernberg1963.html">Vernberg (1963)</a><sup>†</sup>, 
+<a href="../references/Vernberg1969.2.html">Vernberg (1969)</a>, 
+<a href="../references/Vernberg1966.1.html">Vernberg &amp; Costlow (1966)</a>, 
+<a href="../references/Vernberg1966.2.html">Vernberg &amp; Costlow (1966)</a>, 
+<a href="../references/Vernberg1959.1.html">Vernberg &amp; Tashian (1959)</a>, 
+<a href="../references/Vernberg1964.html">Vernberg &amp; Vernberg (1964)</a><sup>†</sup>, 
+<a href="../references/Vernberg1966.7.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="../references/Vernberg1966.4.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="../references/Vernberg1966.5.html">Vernberg &amp; Vernberg (1966)</a><sup>†</sup>, 
+<a href="../references/Vernberg1967.2.html">Vernberg &amp; Vernberg (1967)</a>, 
+<a href="../references/Vernberg1967.1.html">Vernberg &amp; Vernberg (1967)</a><sup>†</sup>, 
+<a href="../references/Vernberg1969.1.html">Vernberg &amp; Vernberg (1969)</a><sup>†</sup>, 
+<a href="../references/Vernberg1970.html">Vernberg &amp; Vernberg (1970)</a><sup>†</sup>, 
+<a href="../references/Vernberg1975.html">Vernberg &amp; Vernberg (1975)</a>, 
+<a href="../references/Vernberg1975.2.html">Vernberg (1975)</a><sup>†</sup>, 
+<a href="../references/Vernberg1966.6.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="../references/Vernberg1966.3.html">Vernberg &amp; Vernberg (1966)</a>, 
+<a href="../references/Vernberg1968.1.html">Vernberg &amp; Vernberg (1968)</a>, 
+<a href="../references/Vernberg1968.2.html">Vernberg &amp; Vernberg (1968)</a>, 
+<a href="../references/Vernberg1972.4.html">Vernberg &amp; Vernberg (1972)</a><sup>†</sup>, 
+<a href="../references/Vernberg1974.3.html">Vernberg &amp; Vernberg (1974)</a><sup>†</sup>, 
+<a href="../references/Verrill1873.html">Verrill (1873)</a><sup>†</sup>, 
+<a href="../references/Verrill1874.html">Verrill &amp; Smith (1874)</a><sup>†</sup>, 
+<a href="../references/vonHagen1962.1.html">von Hagen (1962)</a><sup>†</sup>, 
+<a href="../references/vonHagen1967.1.html">von Hagen (1967)</a>, 
+<a href="../references/vonHagen1967.2.html">von Hagen (1967)</a>, 
+<a href="../references/vonHagen1968.2.html">von Hagen (1968)</a>, 
+<a href="../references/vonHagen1969.html">von Hagen (1969)</a>, 
+<a href="../references/vonHagen1970.4.html">von Hagen (1970)</a>, 
+<a href="../references/vonHagen1970.2.html">von Hagen (1970)</a>, 
+<a href="../references/vonHagen1970.1.html">von Hagen (1970)</a>, 
+<a href="../references/vonHagen1970.3.html">von Hagen (1970)</a><sup>†</sup>, 
+<a href="../references/vonHagen1975.html">von Hagen (1975)</a><sup>†</sup>, 
+<a href="../references/vonHagen1987.1.html">von Hagen (1987)</a><sup>†</sup>, 
+<a href="../references/vonMartens1872.html">von Martens (1872)</a>, 
+<a href="../references/Walker1972.html">Walker (1972)</a><sup>†</sup>, 
+<a href="../references/Warner1969.html">Warner (1969)</a>, 
+<a href="../references/Warner1977.html">Warner (1977)</a>, 
+<a href="../references/Weis1977.1.html">Weis (1977)</a><sup>†</sup>, 
+<a href="../references/Weygoldt1977.html">Weygoldt (1977)</a><sup>†</sup>, 
+<a href="../references/White1847.1.html">White (1847)</a>, 
+<a href="../references/Wilkens1965.html">Wilkens &amp; Fingerman (1965)</a><sup>†</sup>, 
+<a href="../references/Williams1965.html">Williams (1965)</a><sup>†</sup>, 
+<a href="../references/Williams1984.html">Williams (1984)</a><sup>†</sup>, 
+<a href="../references/Williams1981.html">Williams &amp; Heng (1981)</a><sup>†</sup>, 
+<a href="../references/Yamaguchi1970.html">Yamaguchi (1970)</a><sup>†</sup>, 
+<a href="../references/Yamaguchi1971.html">Yamaguchi (1971)</a><sup>†</sup>, 
+<a href="../references/Yamaguchi1977.html">Yamaguchi (1977)</a><sup>†</sup>, 
+<a href="../references/Young1900.html">Young (1900)</a>, 
+<a href="../references/Zucker1974.html">Zucker (1974)</a><sup>†</sup>, 
+<a href="../references/Zucker1976.html">Zucker (1976)</a><sup>†</sup>, 
+<a href="../references/Zucker1977.html">Zucker (1977)</a><sup>†</sup>, 
+<a href="../references/Zucker1973.html">Zucker (1973)</a><sup>†</sup>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2018.02.20.10.00 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

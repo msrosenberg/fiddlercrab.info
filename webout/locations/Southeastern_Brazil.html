@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Southeastern Brazil</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="../favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="../favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="../favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="../favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="../favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="../favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="../favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="../uca_style.css" />
+    <script defer src="../js/fa-solid.min.js"></script>
+    <script defer src="../js/fa-regular.min.js"></script>
+    <script defer src="../js/fa-brands.min.js"></script>
+    <script defer src="../js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Southeastern_Brazil_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        point_layer.setMap(point_map);
+        var necorner = new google.maps.LatLng(-15.381464000000001, -28.184756);
+        var swcorner = new google.maps.LatLng(-30.381464, -58.184756);
+        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
+        point_map.fitBounds(bounds);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="../index.html" class="home-title">Fiddler Crabs</a>
+      <a href="../index.html" class="home-link"><span class ="fa fa-home"></span> Home</a>
+      <a href="../blog" class="home-link"><span class ="fa fa-pencil-alt"></span> Blog</a>
+    </div>
+    <header id="Southeastern_Brazil.html">
+      <h1 class="nobookmark">Southeastern Brazil</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="fa fa-list"></span> Location Index</a></li>
+        </ul>
+      </nav>
+    </header>
+    <dl>
+    <dt>Included Within</dt>
+      <dd><a href="Brazil.html">Brazil</a></dd>
+    <dt>Note</dt>
+      <dd>The coastal states in the southeast and south regions</dd>
+    <dt>Approximate Coordinates</dt>
+      <dd>22.881464&deg;S, 43.184756&deg;W</dd>
+    <div class="map_section">
+           <div id="point_map_canvas" class="sp_map"></div>
+        <div class="map_download">
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+        </div>
+    </div>
+    </dl>
+  <section class="spsection">
+    <h3 class="nobookmark">Includes Subareas</h3>
+    <ul class="splist">
+    <li><a href="Espirito_Santo_-_Brazil.html">Espírito Santo</a></li>
+    <li><a href="Parana_-_Brazil.html">Paraná</a></li>
+    <li><a href="Rio_de_Janeiro_-_Brazil.html">Rio de Janeiro</a></li>
+    <li><a href="Sao_Paulo_-_Brazil.html">São Paulo</a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Currently Recognized Species</h3>
+    <ul class="splist">
+      <li><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></li>
+      <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
+      <li><a href="../u_maracoani.html"><em class="species">Uca maracoani</em></a></li>
+      <li><a href="../u_mordax.html"><em class="species">Uca mordax</em></a></li>
+      <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
+      <li><a href="../u_thayeri.html"><em class="species">Uca thayeri</em></a></li>
+      <li><a href="../u_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></li>
+      <li><a href="../u_victoriana.html"><em class="species">Uca victoriana</em></a></li>
+      <li><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
+    <ul class="splist">
+      <li><a href="../names/Gelasimus.html"><em class="species">Gelasimus</em></a></li>
+      <li><a href="../names/Gelasimus_Maracoani.html"><em class="species">Gelasimus Maracoani</em></a></li>
+      <li><a href="../names/Gelasimus_cunninghami.html"><em class="species">Gelasimus cunninghami</em></a></li>
+      <li><a href="../names/Gelasimus_moracoani.html"><em class="species">Gelasimus moracoani</em></a></li>
+      <li><a href="../names/Gelasimus_palustris.html"><em class="species">Gelasimus palustris</em></a></li>
+      <li><a href="../names/Gelasimus_vocans.html"><em class="species">Gelasimus vocans</em></a></li>
+      <li><a href="../names/Gelasimus_vocator.html"><em class="species">Gelasimus vocator</em></a></li>
+      <li><a href="../names/Leptuca_cumulanta.html"><em class="species">Leptuca cumulanta</em></a></li>
+      <li><a href="../names/Leptuca_leptodactyla.html"><em class="species">Leptuca leptodactyla</em></a></li>
+      <li><a href="../names/Leptuca_thayeri.html"><em class="species">Leptuca thayeri</em></a></li>
+      <li><a href="../names/Minuca_mordax.html"><em class="species">Minuca mordax</em></a></li>
+      <li><a href="../names/Minuca_victoriana.html"><em class="species">Minuca victoriana</em></a></li>
+      <li><a href="../names/Uca.html"><em class="species">Uca</em></a></li>
+      <li><a href="../names/Uca_Boboruca_thayeri_thayeri.html"><em class="species">Uca (Boboruca) thayeri thayeri</em></a></li>
+      <li><a href="../names/Uca_Celuca__crenulata__uruguayensis.html"><em class="species">Uca (Celuca) [crenulata] uruguayensis</em></a></li>
+      <li><a href="../names/Uca_Celuca__leptodactyla__leptodactyla.html"><em class="species">Uca (Celuca) [leptodactyla] leptodactyla</em></a></li>
+      <li><a href="../names/Uca_Gelasimus_moracoani.html"><em class="species">Uca (Gelasimus) moracoani</em></a></li>
+      <li><a href="../names/Uca_Minuca__galapagensis__rapax_rapax.html"><em class="species">Uca (Minuca) [galapagensis] rapax rapax</em></a></li>
+      <li><a href="../names/Uca_Minuca__minax__mordax.html"><em class="species">Uca (Minuca) [minax] mordax</em></a></li>
+      <li><a href="../names/Uca_Minuca_mordax.html"><em class="species">Uca (Minuca) mordax</em></a></li>
+      <li><a href="../names/Uca_Minuca_rapax.html"><em class="species">Uca (Minuca) rapax</em></a></li>
+      <li><a href="../names/Uca_Minuca_thayeri.html"><em class="species">Uca (Minuca) thayeri</em></a></li>
+      <li><a href="../names/Uca_Minuca_thayeri_thayeri.html"><em class="species">Uca (Minuca) thayeri thayeri</em></a></li>
+      <li><a href="../names/Uca_Minuca_victoriana.html"><em class="species">Uca (Minuca) victoriana</em></a></li>
+      <li><a href="../names/Uca_Minuca_vocator_vocator.html"><em class="species">Uca (Minuca) vocator vocator</em></a></li>
+      <li><a href="../names/Uca_Uca_maracoani_maracoani.html"><em class="species">Uca (Uca) maracoani maracoani</em></a></li>
+      <li><a href="../names/Uca_Cunninghami.html"><em class="species">Uca Cunninghami</em></a></li>
+      <li><a href="../names/Uca_affinis.html"><em class="species">Uca affinis</em></a></li>
+      <li><a href="../names/Uca_burgersi.html"><em class="species">Uca burgersi</em></a></li>
+      <li><a href="../names/Uca_cordata.html"><em class="species">Uca cordata</em></a></li>
+      <li><a href="../names/Uca_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
+      <li><a href="../names/Uca_longisignalis.html"><em class="species">Uca longisignalis</em></a></li>
+      <li><a href="../names/Uca_l_ae_vis.html"><em class="species">Uca lævis</em></a></li>
+      <li><a href="../names/Uca_maracoani.html"><em class="species">Uca maracoani</em></a></li>
+      <li><a href="../names/Uca_mordax.html"><em class="species">Uca mordax</em></a></li>
+      <li><a href="../names/Uca_olympioi.html"><em class="species">Uca olympioi</em></a></li>
+      <li><a href="../names/Uca_pugnax.html"><em class="species">Uca pugnax</em></a></li>
+      <li><a href="../names/Uca_pugnax_brasiliensis.html"><em class="species">Uca pugnax brasiliensis</em></a></li>
+      <li><a href="../names/Uca_pugnax_rapax.html"><em class="species">Uca pugnax rapax</em></a></li>
+      <li><a href="../names/Uca_pugnax_var_brasiliensis.html"><em class="species">Uca pugnax </em> var. <em class="species"> brasiliensis</em></a></li>
+      <li><a href="../names/Uca_rapax.html"><em class="species">Uca rapax</em></a></li>
+      <li><a href="../names/Uca_thayeri.html"><em class="species">Uca thayeri</em></a></li>
+      <li><a href="../names/Uca_una.html"><em class="species">Uca una</em></a></li>
+      <li><a href="../names/Uca_uruguayensis.html"><em class="species">Uca uruguayensis</em></a></li>
+      <li><a href="../names/Uca_victoriana.html"><em class="species">Uca victoriana</em></a></li>
+      <li><a href="../names/Uca_vocator.html"><em class="species">Uca vocator</em></a></li>
+      <li><a href="../names/U_c_a_una.html"><em class="species">Uça una</em></a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
+    <ul class="splist">
+      <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
+      <li><a href="../names/sn_brasiliensis.html"><em class="species">brasiliensis</em></a></li>
+      <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
+      <li><a href="../names/sn_cordata.html"><em class="species">cordata</em></a></li>
+      <li><a href="../names/sn_cumulanta.html"><em class="species">cumulanta</em></a></li>
+      <li><a href="../names/sn_cunninghami.html"><em class="species">cunninghami</em></a></li>
+      <li><a href="../names/sn_laevis.html"><em class="species">laevis</em></a></li>
+      <li><a href="../names/sn_leptodactyla.html"><em class="species">leptodactyla</em></a></li>
+      <li><a href="../names/sn_longisignalis.html"><em class="species">longisignalis</em></a></li>
+      <li><a href="../names/sn_maracoani.html"><em class="species">maracoani</em></a></li>
+      <li><a href="../names/sn_mordax.html"><em class="species">mordax</em></a></li>
+      <li><a href="../names/sn_olympioi.html"><em class="species">olympioi</em></a></li>
+      <li><a href="../names/sn_palustris.html"><em class="species">palustris</em></a></li>
+      <li><a href="../names/sn_pugnax.html"><em class="species">pugnax</em></a></li>
+      <li><a href="../names/sn_rapax.html"><em class="species">rapax</em></a></li>
+      <li><a href="../names/sn_thayeri.html"><em class="species">thayeri</em></a></li>
+      <li><a href="../names/sn_una.html"><em class="species">una</em></a></li>
+      <li><a href="../names/sn_uruguayensis.html"><em class="species">uruguayensis</em></a></li>
+      <li><a href="../names/sn_victoriana.html"><em class="species">victoriana</em></a></li>
+      <li><a href="../names/sn_vocans.html"><em class="species">vocans</em></a></li>
+      <li><a href="../names/sn_vocator.html"><em class="species">vocator</em></a></li>
+    </ul>
+  </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
+      <p>
+<a href="../references/Bate1868.html">Bate (1868)</a>, 
+<a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
+<a href="../references/Boone1929.html">Boone (1929)</a><sup>†</sup>, 
+<a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
+<a href="../references/Cardoso2004.html">Cardoso &amp; Negreiros-Fransozo (2004)</a>, 
+<a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a><sup>†</sup>, 
+<a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
+<a href="../references/Crane1943.2.html">Crane (1943)</a><sup>†</sup>, 
+<a href="../references/Crane1957.html">Crane (1957)</a>, 
+<a href="../references/Crane1958.html">Crane (1958)</a><sup>†</sup>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
+<a href="../references/Dana1852.html">Dana (1852)</a>, 
+<a href="../references/Dansereau1947.html">Dansereau (1947)</a>, 
+<a href="../references/Gerlach1958.2.html">Gerlach (1958)</a><sup>†</sup>, 
+<a href="../references/Gurney1960.html">Gurney (1960)</a><sup>†</sup>, 
+<a href="../references/Holthuis1959.1.html">Holthuis (1959)</a><sup>†</sup>, 
+<a href="../references/Holthuis1967.html">Holthuis (1967)</a><sup>†</sup>, 
+<a href="../references/Jobert1876.html">Jobert (1876)</a>, 
+<a href="../references/Jones1968.html">Jones (1968)</a><sup>†</sup>, 
+<a href="../references/Kingsley1880.html">Kingsley (1880)</a><sup>†</sup>, 
+<a href="../references/Lacerda1976.html">Lacerda (1976)</a>, 
+<a href="../references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a><sup>†</sup>, 
+<a href="../references/Luederwaldt1919.2.html">Luederwaldt (1919)</a>, 
+<a href="../references/Luederwaldt1919.1.html">Luederwaldt (1919)</a>, 
+<a href="../references/Luederwaldt1929.html">Luederwaldt (1929)</a>, 
+<a href="../references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="../references/Martins1959.html">Martins <em>et al.</em> (1959)</a>, 
+<a href="../references/Miers1886.html">Miers (1886)</a><sup>†</sup>, 
+<a href="../references/Novak1974.html">Novak &amp; Salmon (1974)</a><sup>†</sup>, 
+<a href="../references/Oliveira1939.2.html">Oliveira (1939)</a>, 
+<a href="../references/Oliveira1939.1.html">Oliveira (1939)</a><sup>†</sup>, 
+<a href="../references/Oliveira1939.3.html">Oliveira (1939)</a>, 
+<a href="../references/Oliveira1953.html">Oliveira &amp; Krau (1953)</a>, 
+<a href="../references/Powers1977.html">Powers (1977)</a><sup>†</sup>, 
+<a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>, 
+<a href="../references/Rathbun1921.4.html">Rathbun (1921)</a><sup>†</sup>, 
+<a href="../references/Rathbun1933.html">Rathbun (1933)</a><sup>†</sup>, 
+<a href="../references/Rodriguez1959.html">Rodriguez (1959)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2000.html">Rosenberg (2000)</a><sup>†</sup>, 
+<a href="../references/Rosenberg2001.html">Rosenberg (2001)</a><sup>†</sup>, 
+<a href="../references/Salmon1967.html">Salmon (1967)</a><sup>†</sup>, 
+<a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="../references/Smith1869.html">Smith (1869)</a><sup>†</sup>, 
+<a href="../references/Smith1870.2.html">Smith (1870)</a><sup>†</sup>, 
+<a href="../references/Stimpson1859.html">Stimpson (1859)</a><sup>†</sup>, 
+<a href="../references/Thurman1981.1.html">Thurman (1981)</a><sup>†</sup>, 
+<a href="../references/Velez1967.html">Vélez (1967)</a><sup>†</sup>, 
+<a href="../references/Vernberg1966.5.html">Vernberg &amp; Vernberg (1966)</a><sup>†</sup>, 
+<a href="../references/Villela1941.1.html">Villela &amp; Oliveira (1941)</a>, 
+<a href="../references/Villela1941.2.html">Villela &amp; Oliveira (1941)</a>, 
+<a href="../references/vonHagen1968.2.html">von Hagen (1968)</a><sup>†</sup>, 
+<a href="../references/vonHagen1970.1.html">von Hagen (1970)</a><sup>†</sup>, 
+<a href="../references/vonHagen1987.1.html">von Hagen (1987)</a>, 
+<a href="../references/vonIhering1897.html">von Ihering (1897)</a>, 
+<a href="../references/vonMartens1867.html">von Martens (1867)</a>, 
+<a href="../references/vonMartens1869.html">von Martens (1869)</a><sup>†</sup>, 
+<a href="../references/Warner1969.html">Warner (1969)</a><sup>†</sup>      </p>
+    </section>
+    <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2018.02.20.10.00 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
