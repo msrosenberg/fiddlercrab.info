@@ -23,6 +23,28 @@
     <script defer src="../js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca (Gelasimus) tetragonon_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -280,8 +302,8 @@
           ['2005', 0, 0],
           ['2006', 1, 1],
           ['2007', 0, 0],
-          ['2008', null, null],
-          ['2009', null, null],
+          ['2008', 1, 1],
+          ['2009', 0, 0],
           ['2010', null, null],
           ['2011', null, null],
           ['2012', null, null],
@@ -331,12 +353,14 @@
       <h1 class="nobookmark"><em class="species">Uca (Gelasimus) tetragonon</em></h1>
       <nav>
         <ul>
-          <li><a href="sn_tetragonon.html"><span class="fa fa-window-minimize"></span> <em class="species">tetragonon</em></a></li>
-          <li><a href="index.html"><span class="fa fa-list"></span> Full Name Index</a></li>
         </ul>
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
     <div class="chron_div">
       <div class="chronchart_title_top">Number of Uses of Name per Year</div>
       <div id="chronchart0_div" class="chronchart_top"></div>
@@ -358,6 +382,44 @@
       <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
       <td><span class="fa fa-cogs"></span> Computed</td>
     </tr>
+    <tr>
+      <td class="rowspacer" colspan="5">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Ng2008.html">Ng <em>et al.</em> (2008)</a></td>
+      <td>text p. 240</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/Herbst1790.html">Herbst (1790)</a> → <em class="species">Cancer tetragonon</em></td>
+      <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/GuerinMeneville1829.1.html">Guérin-Méneville (1829)</a> → <em class="species">Gelasimus affinis</em></td>
+      <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/GuerinMeneville1829.1.html">Guérin-Méneville (1829)</a> → <em class="species">Gelasimus Duperreyi</em></td>
+      <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/Kossmann1877.html">Kossmann (1877)</a> → <em class="species">Gelasimus tetragonon </em> var. <em class="species"> spinicarpa</em></td>
+      <td><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/Hess1865.html">Hess (1865)</a> → <em class="species">Gelasimus variatus</em></td>
+      <td><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+    </tr>
     </table>
     <p>
     </p>
@@ -366,7 +428,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.02.13.21.32 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>
