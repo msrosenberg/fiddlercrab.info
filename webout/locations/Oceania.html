@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Oceania_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Oceania_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(-16.499905, 179.736859);
-        var swcorner = new google.maps.LatLng(-31.499905, 149.736859);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -67,19 +63,19 @@
     </header>
     <dl>
     <dt>Included Within</dt>
-      <dd><a href="Western_Pacific_Ocean.html">Western Pacific Ocean</a></dd>
+      <dd><a href="Indo-West_Pacific_Oceans.html">Indo-West Pacific Oceans</a></dd>
     <dt>Approximate Coordinates</dt>
       <dd>23.999905&deg;S, 164.736859&deg;E</dd>
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Australasia.html">Australasia</a></li>
     <li><a href="Micronesia.html">Micronesia</a></li>
     <li><a href="Polynesia.html">Polynesia</a></li>
@@ -88,7 +84,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_bellator.html"><em class="species">Uca bellator</em></a></li>
       <li><a href="../u_capricornis.html"><em class="species">Uca capricornis</em></a></li>
@@ -117,7 +113,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Austruca_lactea.html"><em class="species">Austruca lactea</em></a></li>
       <li><a href="../names/Austruca_mjoebergi.html"><em class="species">Austruca mjoebergi</em></a></li>
       <li><a href="../names/Austruca_perplexa.html"><em class="species">Austruca perplexa</em></a></li>
@@ -262,6 +258,7 @@
       <li><a href="../names/Uca_chlorophtalmus_crassipes.html"><em class="species">Uca chlorophtalmus crassipes</em></a></li>
       <li><a href="../names/Uca_chlorophthalmus.html"><em class="species">Uca chlorophthalmus</em></a></li>
       <li><a href="../names/Uca_coarctata.html"><em class="species">Uca coarctata</em></a></li>
+      <li><a href="../names/Uca_coarctata_flammula.html"><em class="species">Uca coarctata flammula</em></a></li>
       <li><a href="../names/Uca_crassipes.html"><em class="species">Uca crassipes</em></a></li>
       <li><a href="../names/Uca_cullrimana.html"><em class="species">Uca cullrimana</em></a></li>
       <li><a href="../names/Uca_cultrimana.html"><em class="species">Uca cultrimana</em></a></li>
@@ -333,7 +330,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
       <li><a href="../names/sn_angustifrons.html"><em class="species">angustifrons</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
@@ -449,6 +446,7 @@
 <a href="../references/Filhol1885.html">Filhol (1885)</a>, 
 <a href="../references/Fingerman1959.html">Fingerman (1959)</a><sup>†</sup>, 
 <a href="../references/Forest1961.html">Forest &amp; Guinot (1961)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Frith1977.2.html">Frith &amp; Frith (1977)</a><sup>†</sup>, 
 <a href="../references/Frith1978.html">Frith &amp; Frith (1978)</a><sup>†</sup>, 
 <a href="../references/Frith1976.html">Frith <em>et al.</em> (1976)</a><sup>†</sup>, 
@@ -468,6 +466,7 @@
 <a href="../references/Herklots1861.html">Herklots (1861)</a>, 
 <a href="../references/Hess1865.html">Hess (1865)</a>, 
 <a href="../references/Hilgendorf1869.html">Hilgendorf (1869)</a><sup>†</sup>, 
+<a href="../references/Ho1993.html">Ho <em>et al.</em> (1993)</a><sup>†</sup>, 
 <a href="../references/Hoffmann1874.html">Hoffmann (1874)</a><sup>†</sup>, 
 <a href="../references/Hogue1971.html">Hogue &amp; Bright (1971)</a><sup>†</sup>, 
 <a href="../references/Holthuis1953.html">Holthuis (1953)</a>, 
@@ -571,6 +570,7 @@
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
 <a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a><sup>†</sup>, 
 <a href="../references/Snelling1959.html">Snelling (1959)</a>, 
 <a href="../references/Stebbing1905.html">Stebbing (1905)</a><sup>†</sup>, 
 <a href="../references/Stebbing1921.html">Stebbing (1921)</a><sup>†</sup>, 
@@ -610,7 +610,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

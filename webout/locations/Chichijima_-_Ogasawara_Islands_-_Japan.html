@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Chichijima_-_Ogasawara_Islands_-_Japan_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Chichijima_-_Ogasawara_Islands_-_Japan_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(34.566666999999995, 157.208333);
-        var swcorner = new google.maps.LatLng(19.566667, 127.20833300000001);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,19 +69,19 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_boninensis.html"><em class="species">Uca boninensis</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_annulipes.html"><em class="species">Gelasimus annulipes</em></a></li>
       <li><a href="../names/Gelasimus_lacteus.html"><em class="species">Gelasimus lacteus</em></a></li>
       <li><a href="../names/Paraleptuca_boninensis.html"><em class="species">Paraleptuca boninensis</em></a></li>
@@ -94,6 +90,7 @@
       <li><a href="../names/Uca_Minuca_lactea.html"><em class="species">Uca (Minuca) lactea</em></a></li>
       <li><a href="../names/Uca_Paraleptuca_boninensis.html"><em class="species">Uca (Paraleptuca) boninensis</em></a></li>
       <li><a href="../names/Uca_annulipes.html"><em class="species">Uca annulipes</em></a></li>
+      <li><a href="../names/Uca_crassipes.html"><em class="species">Uca crassipes</em></a></li>
       <li><a href="../names/Uca_gaimardi.html"><em class="species">Uca gaimardi</em></a></li>
       <li><a href="../names/Uca_lactea.html"><em class="species">Uca lactea</em></a></li>
       <li><a href="../names/Uca_pulchella.html"><em class="species">Uca pulchella</em></a></li>
@@ -101,9 +98,10 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_boninensis.html"><em class="species">boninensis</em></a></li>
+      <li><a href="../names/sn_crassipes.html"><em class="species">crassipes</em></a></li>
       <li><a href="../names/sn_gaimardi.html"><em class="species">gaimardi</em></a></li>
       <li><a href="../names/sn_lactea.html"><em class="species">lactea</em></a></li>
       <li><a href="../names/sn_pulchella.html"><em class="species">pulchella</em></a></li>
@@ -123,7 +121,8 @@
 <a href="../references/Serene1973.3.html">Serène (1973)</a><sup>†</sup>, 
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a><sup>†</sup>, 
-<a href="../references/Takeda1976.2.html">Takeda &amp; Miyake (1976)</a><sup>†</sup>      </p>
+<a href="../references/Takeda1976.2.html">Takeda &amp; Miyake (1976)</a><sup>†</sup>, 
+<a href="../references/Yoshigou2002.html">Yoshigou (2002)</a>      </p>
     </section>
     <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
 
@@ -131,7 +130,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

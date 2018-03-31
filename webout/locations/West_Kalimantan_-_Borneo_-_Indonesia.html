@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_West_Kalimantan_-_Borneo_-_Indonesia_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_West_Kalimantan_-_Borneo_-_Indonesia_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(6.90643, 124.388365);
-        var swcorner = new google.maps.LatLng(-8.09357, 94.388365);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,19 +71,19 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Pontianak_-_West_Kalimantan_-_Borneo_-_Indonesia.html">Pontianak</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_demani.html"><em class="species">Uca demani</em></a></li>
       <li><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></li>
@@ -96,7 +92,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a></li>
       <li><a href="../names/Gelasimus_acutus.html"><em class="species">Gelasimus acutus</em></a></li>
       <li><a href="../names/Gelasimus_annulipes.html"><em class="species">Gelasimus annulipes</em></a></li>
@@ -110,11 +106,12 @@
       <li><a href="../names/Uca_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../names/Uca_demani.html"><em class="species">Uca demani</em></a></li>
       <li><a href="../names/Uca_dussumieri.html"><em class="species">Uca dussumieri</em></a></li>
+      <li><a href="../names/Uca_rosea.html"><em class="species">Uca rosea</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_demani.html"><em class="species">demani</em></a></li>
@@ -129,6 +126,7 @@
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/deMan1895.html">De Man (1895)</a>, 
 <a href="../references/deMan1902.html">De Man (1902)</a><sup>†</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Lanchester1900.1.html">Lanchester (1900)</a><sup>†</sup>, 
 <a href="../references/Lenz1910.html">Lenz (1910)</a><sup>†</sup>, 
 <a href="../references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a><sup>†</sup>, 
@@ -141,7 +139,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

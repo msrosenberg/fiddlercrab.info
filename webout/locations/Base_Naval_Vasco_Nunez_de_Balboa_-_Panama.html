@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Base_Naval_Vasco_Nunez_de_Balboa_-_Panama_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Base_Naval_Vasco_Nunez_de_Balboa_-_Panama_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(10.4, -76.7);
-        var swcorner = new google.maps.LatLng(6.0, -83.4);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -69,19 +65,19 @@
     <dt>Also Known As</dt>
       <dd>Rodman Naval Base</dd>
     <dt>Included Within</dt>
-      <dd><a href="Canal_Zone_-_Panama.html">Canal Zone</a></dd>
+      <dd><a href="Pacific_coast_of_Panama.html">Pacific coast of Panama</a>, <a href="Panama_Canal_-_Panama.html">Panama Canal</a></dd>
     <dt>Approximate Coordinates</dt>
       <dd>8.948705&deg;N, 79.574039&deg;W</dd>
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../u_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../u_deichmanni.html"><em class="species">Uca deichmanni</em></a></li>
@@ -101,7 +97,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Minuca_herradurensis.html"><em class="species">Minuca herradurensis</em></a></li>
       <li><a href="../names/Uca_Leptuca_batuenta.html"><em class="species">Uca (Leptuca) batuenta</em></a></li>
       <li><a href="../names/Uca_Leptuca_beebei.html"><em class="species">Uca (Leptuca) beebei</em></a></li>
@@ -132,7 +128,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_batuenta.html"><em class="species">batuenta</em></a></li>
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a></li>
       <li><a href="../names/sn_deichmanni.html"><em class="species">deichmanni</em></a></li>
@@ -153,6 +149,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/CortesCarrasco2013.html">Cortes-Carrasco &amp; del Socorro Garcia-Madrigal (2013)</a><sup>†</sup>, 
 <a href="../references/Landstorfer2010.html">Landstorfer &amp; Schubart (2010)</a>, 
 <a href="../references/Moscoso2012.html">Moscoso (2012)</a><sup>†</sup>, 
 <a href="../references/Rosenberg2000.html">Rosenberg (2000)</a>, 
@@ -166,7 +163,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

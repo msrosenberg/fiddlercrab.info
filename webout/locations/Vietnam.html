@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Vietnam_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Vietnam_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(23.462079, 123.191863);
-        var swcorner = new google.maps.LatLng(8.462079, 93.191863);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Da_Nang_-_Vietnam.html">Da Nang</a></li>
     <li><a href="Ho_Chi_Minh_City_-_Vietnam.html">Ho Chi Minh City</a></li>
     <li><a href="Thanh_Hoa_Province_-_Vietnam.html">Thanh Hóa Province</a></li>
@@ -93,7 +89,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_acuta.html"><em class="species">Uca acuta</em></a></li>
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></li>
@@ -103,6 +99,7 @@
       <li><a href="../u_flammula.html"><em class="species">Uca flammula</em></a></li>
       <li><a href="../u_forcipata.html"><em class="species">Uca forcipata</em></a></li>
       <li><a href="../u_lactea.html"><em class="species">Uca lactea</em></a></li>
+      <li><a href="../u_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></li>
       <li><a href="../u_perplexa.html"><em class="species">Uca perplexa</em></a></li>
       <li><a href="../u_splendida.html"><em class="species">Uca splendida</em></a></li>
       <li><a href="../u_typhoni.html"><em class="species">Uca typhoni</em></a></li>
@@ -112,7 +109,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_Latreillei.html"><em class="species">Gelasimus Latreillei</em></a></li>
       <li><a href="../names/Paraleptuca_splendida.html"><em class="species">Paraleptuca splendida</em></a></li>
       <li><a href="../names/Uca.html"><em class="species">Uca</em></a></li>
@@ -134,6 +131,7 @@
       <li><a href="../names/Uca_lactea.html"><em class="species">Uca lactea</em></a></li>
       <li><a href="../names/Uca_lacté.html"><em class="species">Uca lacté</em></a></li>
       <li><a href="../names/Uca_latreillei.html"><em class="species">Uca latreillei</em></a></li>
+      <li><a href="../names/Uca_paradussumieri.html"><em class="species">Uca paradussumieri</em></a></li>
       <li><a href="../names/Uca_perplesca.html"><em class="species">Uca perplesca</em></a></li>
       <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
       <li><a href="../names/Uca_sp_5.html"><em class="species">Uca sp. 5</em></a></li>
@@ -146,7 +144,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_arcuata.html"><em class="species">arcuata</em></a></li>
@@ -157,6 +155,7 @@
       <li><a href="../names/sn_gaimardi.html"><em class="species">gaimardi</em></a></li>
       <li><a href="../names/sn_lactea.html"><em class="species">lactea</em></a></li>
       <li><a href="../names/sn_latreillei.html"><em class="species">latreillei</em></a></li>
+      <li><a href="../names/sn_paradussumieri.html"><em class="species">paradussumieri</em></a></li>
       <li><a href="../names/sn_perplexa.html"><em class="species">perplexa</em></a></li>
       <li><a href="../names/sn_splendida.html"><em class="species">splendida</em></a></li>
       <li><a href="../names/sn_typhoni.html"><em class="species">typhoni</em></a></li>
@@ -180,6 +179,7 @@
 <a href="../references/Serene1973.3.html">Serène (1973)</a><sup>†</sup>, 
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="../references/Takeda1976.2.html">Takeda &amp; Miyake (1976)</a><sup>†</sup>, 
 <a href="../references/Tue2012.html">Tue <em>et al.</em> (2012)</a>      </p>
     </section>
@@ -189,7 +189,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

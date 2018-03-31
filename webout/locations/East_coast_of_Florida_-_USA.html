@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_East_coast_of_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_East_coast_of_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(31.0, -79.5);
-        var swcorner = new google.maps.LatLng(23.9, -88.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Florida_Keys_-_Florida_-_USA.html">Florida Keys</a></li>
     <li><a href="Northeastern_Florida_-_USA.html">Northeastern Florida</a></li>
     <li><a href="Lake_Kissimmee_-_Florida_-_USA.html">Lake Kissimmee</a></li>
@@ -97,7 +93,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
       <li><a href="../u_minax.html"><em class="species">Uca minax</em></a></li>
@@ -106,12 +102,11 @@
       <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
       <li><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></li>
       <li><a href="../u_thayeri.html"><em class="species">Uca thayeri</em></a></li>
-      <li><a href="../u_virens.html"><em class="species">Uca virens</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_vocator.html"><em class="species">Gelasimus vocator</em></a></li>
       <li><a href="../names/Leptuca_thayeri.html"><em class="species">Leptuca thayeri</em></a></li>
       <li><a href="../names/Uca.html"><em class="species">Uca</em></a></li>
@@ -141,7 +136,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
       <li><a href="../names/sn_leptodactyla.html"><em class="species">leptodactyla</em></a></li>
       <li><a href="../names/sn_longisignalis.html"><em class="species">longisignalis</em></a></li>
@@ -159,10 +154,10 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a><sup>†</sup>, 
 <a href="../references/Ahmed1976.1.html">Ahmed (1976)</a><sup>†</sup>, 
 <a href="../references/deAlmeida2008.html">Almeida &amp; Coelho (2008)</a><sup>†</sup>, 
 <a href="../references/Aspey1971.html">Aspey (1971)</a><sup>†</sup>, 
-<a href="../references/Avent1974.html">Avent (1974)</a>, 
 <a href="../references/Avent1975.html">Avent (1975)</a>, 
 <a href="../references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a><sup>†</sup>, 
 <a href="../references/Barlow1977.html">Barlow (1977)</a><sup>†</sup>, 
@@ -184,6 +179,7 @@
 <a href="../references/Feest1969.html">Feest (1969)</a><sup>†</sup>, 
 <a href="../references/Fingerman1998.html">Fingerman <em>et al.</em> (1998)</a><sup>†</sup>, 
 <a href="../references/Forward1977.html">Forward (1977)</a><sup>†</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Gibbs1974.html">Gibbs (1974)</a><sup>†</sup>, 
 <a href="../references/Greenaway1988.html">Greenaway (1988)</a><sup>†</sup>, 
 <a href="../references/Gunther1963.html">Günther (1963)</a><sup>†</sup>, 
@@ -283,7 +279,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

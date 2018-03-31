@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Atlantic_and_Gulf_coasts_of_United_States_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Atlantic_and_Gulf_coasts_of_United_States_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(32.645078, -65.706459);
-        var swcorner = new google.maps.LatLng(17.645078, -95.706459);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -67,19 +63,19 @@
     </header>
     <dl>
     <dt>Included Within</dt>
-      <dd><a href="United_States.html">United States</a>, <a href="Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></dd>
+      <dd><a href="United_States.html">United States</a>, <a href="North_America.html">North America</a>, <a href="Atlantic_coast_of_North_America.html">Atlantic coast of North America</a></dd>
     <dt>Approximate Coordinates</dt>
       <dd>25.145078&deg;N, 80.706459&deg;W</dd>
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Atlantic_coast_of_United_States.html">Atlantic coast of United States</a></li>
     <li><a href="Gulf_coast_of_United_States.html">Gulf coast of United States</a></li>
     <li><a href="Florida_-_USA.html">Florida</a></li>
@@ -87,7 +83,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
       <li><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></li>
@@ -106,7 +102,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Cancer_Vocans.html"><em class="species">Cancer Vocans</em></a></li>
       <li><a href="../names/Cancer_arenarius.html"><em class="species">Cancer arenarius</em></a></li>
       <li><a href="../names/Cancer_vocans_major.html"><em class="species">Cancer vocans major</em></a></li>
@@ -197,7 +193,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
       <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
       <li><a href="../names/sn_cultrimana.html"><em class="species">cultrimana</em></a></li>
@@ -227,6 +223,7 @@
       <p>
 <a href="../references/Abbott1913.html">Abbott (1913)</a>, 
 <a href="../references/Abbott1966.html">Abbott &amp; Dawson (1966)</a>, 
+<a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a>, 
 <a href="../references/Abramowitz1936.1.html">Abramowitz (1936)</a>, 
 <a href="../references/Abramowitz1937.html">Abramowitz (1937)</a>, 
 <a href="../references/Abramowitz1937.2.html">Abramowitz (1937)</a>, 
@@ -496,6 +493,7 @@
 <a href="../references/Fingerman1966.3.html">Fingerman <em>et al.</em> (1966)</a>, 
 <a href="../references/Fingerman1966.2.html">Fingerman <em>et al.</em> (1966)</a>, 
 <a href="../references/Fingerman1972.html">Fingerman &amp; Fingerman (1972)</a>, 
+<a href="../references/Fingerman1974.1.html">Fingerman &amp; Fingerman (1974)</a>, 
 <a href="../references/Fingerman1975.html">Fingerman &amp; Fingerman (1975)</a>, 
 <a href="../references/Fingerman1977.1.html">Fingerman &amp; Fingerman (1977)</a>, 
 <a href="../references/Fingerman1974.3.html">Fingerman <em>et al.</em> (1974)</a><sup>†</sup>, 
@@ -529,8 +527,10 @@
 <a href="../references/Fowler1911.html">Fowler (1911)</a>, 
 <a href="../references/Fowler1912.html">Fowler (1912)</a>, 
 <a href="../references/Frankenberg1963.html">Frankenberg &amp; Burbanck (1963)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Frey1973.html">Frey <em>et al.</em> (1973)</a>, 
 <a href="../references/Frey1970.html">Frey &amp; Mayou (1970)</a>, 
+<a href="../references/Gamble2011.1.html">Gamble &amp; Lovell (2011)</a>, 
 <a href="../references/Garcia2001.html">Garcia (2001)</a>, 
 <a href="../references/George1957.html">George <em>et al.</em> (1957)</a>, 
 <a href="../references/Geraert2013.html">Geraert (2013)</a><sup>†</sup>, 
@@ -738,6 +738,8 @@
 <a href="../references/Manwell1963.html">Manwell &amp; Baker (1963)</a>, 
 <a href="../references/Maris1984.html">Maris (1984)</a>, 
 <a href="../references/Maris1983.html">Maris &amp; McConaugha (1983)</a>, 
+<a href="../references/Markham2002.html">Markham (2002)</a><sup>†</sup>, 
+<a href="../references/Marples1966.html">Marples (1966)</a>, 
 <a href="../references/Martin2008.html">Martin &amp; Rindsberg (2008)</a>, 
 <a href="../references/Martin2010.html">Martin &amp; Rindsberg (2010)</a>, 
 <a href="../references/Martins1959.html">Martins <em>et al.</em> (1959)</a><sup>†</sup>, 
@@ -805,6 +807,7 @@
 <a href="../references/Ortmann1897.html">Ortmann (1897)</a><sup>†</sup>, 
 <a href="../references/Overstreet1983.html">Overstreet (1983)</a><sup>†</sup>, 
 <a href="../references/Packard1881.html">Packard (1881)</a>, 
+<a href="../references/Packard2012.html">Packard (2012)</a><sup>†</sup>, 
 <a href="../references/Palmer1962.html">Palmer (1962)</a>, 
 <a href="../references/Palmer1963.html">Palmer (1963)</a>, 
 <a href="../references/Palmer1964.html">Palmer (1964)</a>, 
@@ -818,6 +821,7 @@
 <a href="../references/Pearse1914.2.html">Pearse (1914)</a>, 
 <a href="../references/Pearse1928.html">Pearse (1928)</a>, 
 <a href="../references/Pearse1947.html">Pearse (1947)</a>, 
+<a href="../references/Pearse1951.html">Pearse (1951)</a><sup>†</sup>, 
 <a href="../references/Peery1990.html">Peery <em>et al.</em> (1990)</a>, 
 <a href="../references/Pequeux1979.html">Péqueux <em>et al.</em> (1979)</a>, 
 <a href="../references/PerezGonzalez1957.html">Pérez-González (1957)</a>, 
@@ -866,6 +870,7 @@
 <a href="../references/Rathbun1933.html">Rathbun (1933)</a><sup>†</sup>, 
 <a href="../references/Rathbun1935.3.html">Rathbun (1935)</a>, 
 <a href="../references/Rathbun1884.html">Rathbun (1884)</a>, 
+<a href="../references/Rawson1976.html">Rawson &amp; DeCoursey (1976)</a>, 
 <a href="../references/Reichmuth2009.html">Reichmuth <em>et al.</em> (2009)</a>, 
 <a href="../references/Reimold1975.html">Reimold <em>et al.</em> (1975)</a>, 
 <a href="../references/Reinsel1991.html">Reinsel (1991)</a>, 
@@ -881,6 +886,7 @@
 <a href="../references/Robertson1980.2.html">Robertson (1980)</a>, 
 <a href="../references/Robertson1982.3.html">Robertson &amp; Pfeiffer (1982)</a>, 
 <a href="../references/Rodriguez1959.html">Rodriguez (1959)</a><sup>†</sup>, 
+<a href="../references/RomeroRodriguez2017.html">Romero-Rodríguez <em>et al.</em> (2017)</a><sup>†</sup>, 
 <a href="../references/Rosenberg1997.html">Rosenberg (1997)</a>, 
 <a href="../references/Rosenberg2000.html">Rosenberg (2000)</a>, 
 <a href="../references/Rosenberg2001.html">Rosenberg (2001)</a>, 
@@ -925,6 +931,7 @@
 <a href="../references/Schwing1981.html">Schwing (1981)</a>, 
 <a href="../references/Scott1974.html">Scott &amp; Mote (1974)</a>, 
 <a href="../references/Sears1990.html">Sears (1990)</a>, 
+<a href="../references/Seed1997.html">Seed &amp; Hughes (1997)</a>, 
 <a href="../references/Selander1971.html">Selander <em>et al.</em> (1971)</a>, 
 <a href="../references/Sendler1912.html">Sendler (1912)</a>, 
 <a href="../references/ShaganasBanu2012.html">Shaganas Banu (2007)</a><sup>†</sup>, 
@@ -969,6 +976,7 @@
 <a href="../references/Tabb1961.html">Tabb &amp; Manning (1961)</a>, 
 <a href="../references/Tagatz1968.html">Tagatz (1968)</a>, 
 <a href="../references/Takeda1973.html">Takeda &amp; Yamaguchi (1973)</a><sup>†</sup>, 
+<a href="../references/Talapatra2014.html">Talapatra <em>et al.</em> (2014)</a><sup>†</sup>, 
 <a href="../references/Tashian1956.html">Tashian (1956)</a>, 
 <a href="../references/Tashian1958.html">Tashian &amp; Vernberg (1958)</a>, 
 <a href="../references/Tazelaar1933.html">Tazelaar (1933)</a>, 
@@ -1129,6 +1137,7 @@
 <a href="../references/Wong1990.html">Wong &amp; Anderson (1990)</a>, 
 <a href="../references/Wong1989.html">Wong <em>et al.</em> (1989)</a>, 
 <a href="../references/Woods1958.html">Woods <em>et al.</em> (1958)</a>, 
+<a href="../references/Wunderlich2017.html">Wunderlich <em>et al.</em> (2017)</a><sup>†</sup>, 
 <a href="../references/Wurtz1955.html">Wurtz &amp; Roback (1955)</a>, 
 <a href="../references/Xie2009.html">Xie &amp; Gao (2009)</a>, 
 <a href="../references/Yamaguchi1970.html">Yamaguchi (1970)</a><sup>†</sup>, 
@@ -1154,7 +1163,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

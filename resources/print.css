@@ -5,14 +5,14 @@
     margin: 10pt 0 30pt 0;
     border-top: 0.1pt solid #333;
     content: "Fiddler Crabs";
-    font-size: 9pt;
+    font-size: 8pt;
     color: #333;
   }
   @bottom-right {
     content: "Page " counter(page) " of " counter(pages);
     margin: 10pt 0 30pt 0;
     border-top: 0.1pt solid #333;
-	font-size: 9pt;
+	font-size: 8pt;
 	color: #333;
   }
 }
@@ -39,8 +39,8 @@
 }
 
 body {
-   font-size: 11pt;
-   font-family: "Lora", serif;
+   font-size: 10pt;
+   font-family: "Noto Serif", "Lora", serif;
 }
 
 .nobookmark { prince-bookmark-level: none; }
@@ -64,8 +64,7 @@ header {
   }
 
 header h1 {
-  font-size: 16pt;
-
+  font-size: 1.5em;
   color: black;
   padding: 0;
   margin: 0;
@@ -108,11 +107,11 @@ nav a:visited {
 
  
 h2 {
-  font-size: 12pt;
+  font-size: 1.25em;
  }
 
 h3 {
-	font-size: 11pt;
+	font-size: 1em;
 }
  
 img {
@@ -320,7 +319,8 @@ img {
 .fullpic {
 	padding-top: 0.25in;
 }
-  
+
+.locpagelist,  
 .splist {
    font-size: 1em;
    column-count: 3;
@@ -336,9 +336,25 @@ img {
 .namecol {
    font-size: 1em;
 }
- 
+
+.hlocationlist {
+   font-size: 0.875em;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   column-count: 2;
+   column-gap: 0.25in;	
+}
+
+.hlocationlist ul {
+   list-style: none;
+   padding-left: 0.25in;
+   margin: 0;
+}
+
+.locationlist,
 .namelist {
-   font-size: 10pt;
+   font-size: 0.875em;
    column-count: 2;
    column-gap: 0.25in;	
    list-style: none;
@@ -347,7 +363,7 @@ img {
 }
 
 .spnamelist {
-   font-size: 10pt;
+   font-size: 0.875em;
    column-count: 4;
    column-gap: 0.25in;	
    list-style: none;
@@ -369,7 +385,7 @@ img {
  }
 
 .morphlist {
-   font-size: 10pt;
+   font-size: 0.875em;
    column-count: 2;
    column-gap: 0.25in;	
    list-style: none;
@@ -384,6 +400,8 @@ img {
   padding-bottom: 0;	
 }
 
+.hlocationlist a::after,
+.locationlist a::after,
 .namelist a::after,
 .spnamelist a::after,
 .splist a::after,
@@ -448,6 +466,9 @@ sup {
 
 }
 
+.map_section  {
+	width: 6.5in;
+}
 
 @media print {
 

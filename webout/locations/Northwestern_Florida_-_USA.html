@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Northwestern_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Northwestern_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(31.0, -79.5);
-        var swcorner = new google.maps.LatLng(23.9, -88.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -67,19 +63,19 @@
     </header>
     <dl>
     <dt>Included Within</dt>
-      <dd><a href="Florida_-_USA.html">Florida</a>, <a href="West_coast_of_Florida_-_USA.html">West coast of Florida</a></dd>
+      <dd><a href="Florida_-_USA.html">Florida</a>, <a href="West_coast_of_Florida_-_USA.html">West coast of Florida</a>, <a href="Northeastern_Gulf_of_Mexico.html">Northeastern Gulf of Mexico</a></dd>
     <dt>Approximate Coordinates</dt>
       <dd>30.129954&deg;N, 85.667686&deg;W</dd>
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Escambia_River_-_Florida_-_USA.html">Escambia River</a></li>
     <li><a href="Wakulla_County_-_Florida_-_USA.html">Wakulla County</a></li>
     <li><a href="Levy_County_-_Florida_-_USA.html">Levy County</a></li>
@@ -93,7 +89,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_longisignalis.html"><em class="species">Uca longisignalis</em></a></li>
       <li><a href="../u_minax.html"><em class="species">Uca minax</em></a></li>
       <li><a href="../u_panacea.html"><em class="species">Uca panacea</em></a></li>
@@ -107,7 +103,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Leptuca_panacea.html"><em class="species">Leptuca panacea</em></a></li>
       <li><a href="../names/Leptuca_pugilator.html"><em class="species">Leptuca pugilator</em></a></li>
       <li><a href="../names/Leptuca_speciosa.html"><em class="species">Leptuca speciosa</em></a></li>
@@ -136,7 +132,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_longisignalis.html"><em class="species">longisignalis</em></a></li>
       <li><a href="../names/sn_minax.html"><em class="species">minax</em></a></li>
       <li><a href="../names/sn_panacea.html"><em class="species">panacea</em></a></li>
@@ -151,11 +147,14 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a><sup>†</sup>, 
 <a href="../references/Adiyodi1985.html">Adiyodi (1985)</a><sup>†</sup>, 
 <a href="../references/Adiyodi1988.html">Adiyodi (1988)</a><sup>†</sup>, 
 <a href="../references/Andrews1973.html">Andrews (1973)</a>, 
 <a href="../references/Aoki2003.html">Aoki <em>et al.</em> (2003)</a><sup>†</sup>, 
 <a href="../references/Aspey1978.html">Aspey (1978)</a><sup>†</sup>, 
+<a href="../references/Avent1974.html">Avent (1974)</a>, 
+<a href="../references/Avent1975.html">Avent (1975)</a><sup>†</sup>, 
 <a href="../references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a><sup>†</sup>, 
 <a href="../references/Barber1978.html">Barber <em>et al.</em> (1978)</a>, 
 <a href="../references/BarclayTerwilliger1991.html">Barclay Terwilliger (1991)</a><sup>†</sup>, 
@@ -189,6 +188,7 @@
 <a href="../references/Fingerman1973.2.html">Fingerman &amp; Bartell (1973)</a>, 
 <a href="../references/Fingerman1971.1.html">Fingerman <em>et al.</em> (1971)</a>, 
 <a href="../references/Fingerman1972.html">Fingerman &amp; Fingerman (1972)</a>, 
+<a href="../references/Fingerman1974.1.html">Fingerman &amp; Fingerman (1974)</a>, 
 <a href="../references/Fingerman1975.html">Fingerman &amp; Fingerman (1975)</a>, 
 <a href="../references/Fingerman1977.1.html">Fingerman &amp; Fingerman (1977)</a>, 
 <a href="../references/Fingerman1974.3.html">Fingerman <em>et al.</em> (1974)</a><sup>†</sup>, 
@@ -313,6 +313,7 @@
 <a href="../references/Webb1977.1.html">Webb (1977)</a>, 
 <a href="../references/Webb1977.2.html">Webb &amp; Stokes Lewis (1977)</a>, 
 <a href="../references/Weis1976.2.html">Weis (1976)</a><sup>†</sup>, 
+<a href="../references/Weis1977.2.html">Weis (1977)</a><sup>†</sup>, 
 <a href="../references/Whiting1974.html">Whiting &amp; Moshiri (1974)</a>, 
 <a href="../references/Williams1965.html">Williams (1965)</a><sup>†</sup>, 
 <a href="../references/Williams1984.html">Williams (1984)</a><sup>†</sup>, 
@@ -328,7 +329,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

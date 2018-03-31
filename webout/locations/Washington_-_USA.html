@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Washington_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Washington_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(52.877827, -108.991418);
-        var swcorner = new google.maps.LatLng(37.877827, -138.991418);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -69,43 +65,45 @@
     <dt>Included Within</dt>
       <dd><a href="United_States.html">United States</a>, <a href="Pacific_coast_of_United_States.html">Pacific coast of United States</a></dd>
     <dt>Approximate Coordinates</dt>
-      <dd>45.377827&deg;N, 123.991418&deg;W</dd>
+      <dd>46.966978&deg;N, 123.882291&deg;W</dd>
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="King_County_-_Washington_-_USA.html">King County</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_musica.html"><em class="species">Uca musica</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Uca_Celuca_musica_musica.html"><em class="species">Uca (Celuca) musica musica</em></a></li>
+      <li><a href="../names/Uca_Leptuca_musica.html"><em class="species">Uca (Leptuca) musica</em></a></li>
       <li><a href="../names/Uca_Leptuca_musica_musica.html"><em class="species">Uca (Leptuca) musica musica</em></a></li>
       <li><a href="../names/Uca_musica.html"><em class="species">Uca musica</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_musica.html"><em class="species">musica</em></a></li>
     </ul>
   </section>
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/CortesCarrasco2013.html">Cortes-Carrasco &amp; del Socorro Garcia-Madrigal (2013)</a><sup>†</sup>, 
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>, 
@@ -119,7 +117,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

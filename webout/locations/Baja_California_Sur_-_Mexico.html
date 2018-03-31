@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Baja_California_Sur_-_Mexico_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Baja_California_Sur_-_Mexico_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(30.548625, -94.681744);
-        var swcorner = new google.maps.LatLng(15.548625000000001, -124.681744);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,20 +71,20 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Gulf_coast_of_Baja_California_Sur_-_Mexico.html">Gulf coast of Baja California Sur</a></li>
     <li><a href="Pacific_coast_of_Baja_California_Sur_-_Mexico.html">Pacific coast of Baja California Sur</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_brevifrons.html"><em class="species">Uca brevifrons</em></a></li>
       <li><a href="../u_coloradensis.html"><em class="species">Uca coloradensis</em></a></li>
       <li><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></li>
@@ -99,7 +95,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_annulipes.html"><em class="species">Gelasimus annulipes</em></a></li>
       <li><a href="../names/Gelasimus_brevifrons.html"><em class="species">Gelasimus brevifrons</em></a></li>
       <li><a href="../names/Gelasimus_crenulatus.html"><em class="species">Gelasimus crenulatus</em></a></li>
@@ -144,7 +140,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_brevifrons.html"><em class="species">brevifrons</em></a></li>
       <li><a href="../names/sn_crenulata.html"><em class="species">crenulata</em></a></li>
@@ -171,6 +167,8 @@
 <a href="../references/Bott1973.2.html">Bott (1973)</a><sup>†</sup>, 
 <a href="../references/Buitendijk1950.html">Buitendijk (1950)</a>, 
 <a href="../references/Burkenroad1947.html">Burkenroad (1947)</a><sup>†</sup>, 
+<a href="../references/Campos1989.html">Campos &amp; de Campos (1989)</a>, 
+<a href="../references/CortesCarrasco2013.html">Cortes-Carrasco &amp; del Socorro Garcia-Madrigal (2013)</a><sup>†</sup>, 
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
 <a href="../references/Crane1958.html">Crane (1958)</a><sup>†</sup>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
@@ -216,7 +214,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

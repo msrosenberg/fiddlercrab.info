@@ -23,6 +23,28 @@
     <script defer src="../js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Micronesia_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
   </head>
 
   <body onload="initialize()">
@@ -41,13 +63,21 @@
     </header>
     <dl>
     <dt>Included Within</dt>
-      <dd><a href="Oceania.html">Oceania</a></dd>
-    <dt>Location Could not be Identified</dt>
+      <dd><a href="Oceania.html">Oceania</a>, <a href="Western_Pacific_Ocean.html">Western Pacific Ocean</a></dd>
+    <dt>Note</dt>
       <dd>This refers to the broad island region and not the country with the same name.</dd>
+    <dt>Approximate Coordinates</dt>
+      <dd>13.051350&deg;N, 156.627579&deg;E</dd>
+    <div class="map_section">
+           <div id="point_map_canvas" class="sp_map"></div>
+        <div class="map_download">
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
+        </div>
+    </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Caroline_Islands_-_Micronesia.html">Caroline Islands</a></li>
     <li><a href="Kiribati.html">Kiribati</a></li>
     <li><a href="Mariana_Islands.html">Mariana Islands</a></li>
@@ -58,7 +88,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_coarctata.html"><em class="species">Uca coarctata</em></a></li>
       <li><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></li>
@@ -73,7 +103,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a></li>
       <li><a href="../names/Gelasimus_annulipes.html"><em class="species">Gelasimus annulipes</em></a></li>
       <li><a href="../names/Gelasimus_coarctatus.html"><em class="species">Gelasimus coarctatus</em></a></li>
@@ -117,7 +147,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_chlorophthalmus.html"><em class="species">chlorophthalmus</em></a></li>
       <li><a href="../names/sn_coarctata.html"><em class="species">coarctata</em></a></li>
@@ -187,7 +217,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

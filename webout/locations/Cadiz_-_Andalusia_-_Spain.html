@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Cadiz_-_Andalusia_-_Spain_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Cadiz_-_Andalusia_-_Spain_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(44.037478, 8.701132000000001);
-        var swcorner = new google.maps.LatLng(29.037478, -21.298868);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,44 +71,49 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="El_Puerto_de_Santa_Maria_-_Cadiz_-_Andalusia_-_Spain.html">El Puerto de Santa Maria</a></li>
     <li><a href="Bay_of_Cadiz_-_Cadiz_-_Andalusia_-_Spain.html">Bay of Cádiz</a></li>
     <li><a href="Puerto_Real_-_Cadiz_-_Andalusia_-_Spain.html">Puerto Real</a></li>
+    <li><a href="Sanlucar_de_Barrameda_-_Cadiz_-_Andalusia_-_Spain.html">Sanlúcar de Barrameda</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Afruca_tangeri.html"><em class="species">Afruca tangeri</em></a></li>
       <li><a href="../names/Gelasimus_Tangeri.html"><em class="species">Gelasimus Tangeri</em></a></li>
+      <li><a href="../names/Uca_Afruca_tangeri.html"><em class="species">Uca (Afruca) tangeri</em></a></li>
       <li><a href="../names/Uca_tangeri.html"><em class="species">Uca tangeri</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_tangeri.html"><em class="species">tangeri</em></a></li>
     </ul>
   </section>
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Altevogt1969.2.html">Altevogt (1969)</a>, 
 <a href="../references/Bolivar1892.html">Bolivar (1892)</a>, 
+<a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/MirandayRivera1933.1.html">de Miranda y Rivera (1933)</a><sup>†</sup>, 
 <a href="../references/MirandayRivera1933.2.html">de Miranda y Rivera (1933)</a><sup>†</sup>, 
+<a href="../references/GonzalezOrtiz2014.html">González-Ortiz <em>et al.</em> (2014)</a>, 
 <a href="../references/Mourente1994.html">Mourente <em>et al.</em> (1994)</a>, 
 <a href="../references/OdondeBuen1887.html">Odon de Buen (1887)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>      </p>
@@ -123,7 +124,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

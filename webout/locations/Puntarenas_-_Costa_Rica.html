@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Puntarenas_-_Costa_Rica_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Puntarenas_-_Costa_Rica_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(11.4, -82.0);
-        var swcorner = new google.maps.LatLng(7.8, -86.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Bahia_Cana_Blanca_-_Puntarenas_-_Costa_Rica.html">Bahia Cana Blanca</a></li>
     <li><a href="Ballena_Bay_-_Puntarenas_-_Costa_Rica.html">Ballena Bay</a></li>
     <li><a href="Canos_Island_-_Puntarenas_-_Costa_Rica.html">Canos Island</a></li>
@@ -98,7 +94,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_argillicola.html"><em class="species">Uca argillicola</em></a></li>
       <li><a href="../u_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../u_beebei.html"><em class="species">Uca beebei</em></a></li>
@@ -131,7 +127,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Leptuca_batuenta.html"><em class="species">Leptuca batuenta</em></a></li>
       <li><a href="../names/Leptuca_beebei.html"><em class="species">Leptuca beebei</em></a></li>
       <li><a href="../names/Leptuca_limicola.html"><em class="species">Leptuca limicola</em></a></li>
@@ -230,6 +226,7 @@
       <li><a href="../names/Uca_stylifera.html"><em class="species">Uca stylifera</em></a></li>
       <li><a href="../names/Uca_tenuipedis.html"><em class="species">Uca tenuipedis</em></a></li>
       <li><a href="../names/Uca_terpsichores.html"><em class="species">Uca terpsichores</em></a></li>
+      <li><a href="../names/Uca_thayeri_umbratila.html"><em class="species">Uca thayeri umbratila</em></a></li>
       <li><a href="../names/Uca_tomentosa.html"><em class="species">Uca tomentosa</em></a></li>
       <li><a href="../names/Uca_umbratila.html"><em class="species">Uca umbratila</em></a></li>
       <li><a href="../names/Uca_zacae.html"><em class="species">Uca zacae</em></a></li>
@@ -238,7 +235,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_argillicola.html"><em class="species">argillicola</em></a></li>
       <li><a href="../names/sn_batuenta.html"><em class="species">batuenta</em></a></li>
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a></li>
@@ -276,6 +273,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1989.html">Abele &amp; Kim (1989)</a><sup>†</sup>, 
 <a href="../references/Altevogt1955.2.html">Altevogt (1955)</a><sup>†</sup>, 
 <a href="../references/Altevogt1955.1.html">Altevogt (1955)</a><sup>†</sup>, 
 <a href="../references/Altevogt1957.2.html">Altevogt (1957)</a><sup>†</sup>, 
@@ -341,7 +339,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

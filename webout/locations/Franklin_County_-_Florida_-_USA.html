@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Franklin_County_-_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Franklin_County_-_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(31.0, -79.5);
-        var swcorner = new google.maps.LatLng(23.9, -88.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,41 +69,44 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Carabelle_-_Franklin_County_-_Florida_-_USA.html">Carabelle</a></li>
+    <li><a href="Florida_State_Marine_Lab_-_Franklin_County_-_Florida_-_USA.html">Florida State Marine Lab</a></li>
     <li><a href="Alligator_Harbor_-_Franklin_County_-_Florida_-_USA.html">Alligator Harbor</a></li>
     <li><a href="Alligator_Point_-_Franklin_County_-_Florida_-_USA.html">Alligator Point (Florida)</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_minax.html"><em class="species">Uca minax</em></a></li>
       <li><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></li>
       <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
       <li><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></li>
+      <li><a href="../u_virens.html"><em class="species">Uca virens</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Leptuca_speciosa.html"><em class="species">Leptuca speciosa</em></a></li>
       <li><a href="../names/Uca_minax.html"><em class="species">Uca minax</em></a></li>
       <li><a href="../names/Uca_pugilator.html"><em class="species">Uca pugilator</em></a></li>
       <li><a href="../names/Uca_pugnax_rapax.html"><em class="species">Uca pugnax rapax</em></a></li>
       <li><a href="../names/Uca_rapax.html"><em class="species">Uca rapax</em></a></li>
+      <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
       <li><a href="../names/Uca_speciosa.html"><em class="species">Uca speciosa</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_minax.html"><em class="species">minax</em></a></li>
       <li><a href="../names/sn_pugilator.html"><em class="species">pugilator</em></a></li>
       <li><a href="../names/sn_rapax.html"><em class="species">rapax</em></a></li>
@@ -117,6 +116,8 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Avent1974.html">Avent (1974)</a>, 
+<a href="../references/Avent1975.html">Avent (1975)</a><sup>†</sup>, 
 <a href="../references/Fingerman1970.3.html">Fingerman (1970)</a><sup>†</sup>, 
 <a href="../references/Fingerman1967.1.html">Fingerman &amp; Yamamoto (1967)</a>, 
 <a href="../references/Lockwood1967.html">Lockwood (1967)</a><sup>†</sup>, 
@@ -149,7 +150,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

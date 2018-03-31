@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Belize_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Belize_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(19.5, -86.6);
-        var swcorner = new google.maps.LatLng(15.0, -90.4);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,19 +69,20 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Turneffe_Atoll_-_Belize.html">Turneffe Atoll</a></li>
+    <li><a href="Twin_Cays_-_Belize.html">Twin Cays</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
       <li><a href="../u_vocator.html"><em class="species">Uca vocator</em></a></li>
@@ -93,7 +90,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Uca_Minuca_mordax.html"><em class="species">Uca (Minuca) mordax</em></a></li>
       <li><a href="../names/Uca_Minuca_vocator_vocator.html"><em class="species">Uca (Minuca) vocator vocator</em></a></li>
       <li><a href="../names/Uca_affinis.html"><em class="species">Uca affinis</em></a></li>
@@ -101,12 +98,13 @@
       <li><a href="../names/Uca_mordax.html"><em class="species">Uca mordax</em></a></li>
       <li><a href="../names/Uca_rapax.html"><em class="species">Uca rapax</em></a></li>
       <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
+      <li><a href="../names/Uca_spp.html"><em class="species">Uca spp.</em></a></li>
       <li><a href="../names/Uca_vocator.html"><em class="species">Uca vocator</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
       <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
       <li><a href="../names/sn_mordax.html"><em class="species">mordax</em></a></li>
@@ -117,6 +115,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a><sup>†</sup>, 
 <a href="../references/Boone1929.html">Boone (1929)</a><sup>†</sup>, 
 <a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
@@ -126,6 +125,7 @@
 <a href="../references/Holthuis1967.html">Holthuis (1967)</a><sup>†</sup>, 
 <a href="../references/Jones1968.html">Jones (1968)</a><sup>†</sup>, 
 <a href="../references/Maccagno1928.html">Maccagno (1928)</a><sup>†</sup>, 
+<a href="../references/McKeon2004.html">McKeon &amp; Feller (2004)</a>, 
 <a href="../references/Oliveira1939.1.html">Oliveira (1939)</a><sup>†</sup>, 
 <a href="../references/Platt2002.html">Platt <em>et al.</em> (2002)</a>, 
 <a href="../references/Powers1977.html">Powers (1977)</a>, 
@@ -143,7 +143,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

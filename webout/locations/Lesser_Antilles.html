@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Lesser_Antilles_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Lesser_Antilles_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(21.733333000000002, -46.35);
-        var swcorner = new google.maps.LatLng(6.733333, -76.35);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,28 +69,23 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Leeward_Antilles.html">Leeward Antilles</a></li>
-    <li><a href="Antigua_and_Barbuda.html">Antigua and Barbuda</a></li>
+    <li><a href="Leeward_Islands_-_Lesser_Antilles.html">Leeward Islands (Lesser Antilles)</a></li>
+    <li><a href="Windward_Islands_-_Lesser_Antilles.html">Windward Islands (Lesser Antilles)</a></li>
     <li><a href="Barbados.html">Barbados</a></li>
-    <li><a href="British_Virgin_Islands.html">British Virgin Islands</a></li>
-    <li><a href="Dominica.html">Dominica</a></li>
-    <li><a href="Guadeloupe.html">Guadeloupe</a></li>
-    <li><a href="Saint_Barthelemy.html">Saint Barthélemy</a></li>
-    <li><a href="Saint_Martin.html">Saint Martin</a></li>
     <li><a href="Trinidad_and_Tobago.html">Trinidad and Tobago</a></li>
-    <li><a href="U.S._Virgin_Islands.html">U.S. Virgin Islands</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_cumulanta.html"><em class="species">Uca cumulanta</em></a></li>
       <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
@@ -108,7 +99,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_affinis.html"><em class="species">Gelasimus affinis</em></a></li>
       <li><a href="../names/Gelasimus_grangeri.html"><em class="species">Gelasimus grangeri</em></a></li>
       <li><a href="../names/Gelasimus_rapax.html"><em class="species">Gelasimus rapax</em></a></li>
@@ -134,6 +125,7 @@
       <li><a href="../names/Uca_Minuca_vocator_vocator.html"><em class="species">Uca (Minuca) vocator vocator</em></a></li>
       <li><a href="../names/Uca_Uca__major__major.html"><em class="species">Uca (Uca) [major] major</em></a></li>
       <li><a href="../names/Uca_Uca_major.html"><em class="species">Uca (Uca) major</em></a></li>
+      <li><a href="../names/Uca_Uca_maracoani.html"><em class="species">Uca (Uca) maracoani</em></a></li>
       <li><a href="../names/Uca_Uca_maracoani_maracoani.html"><em class="species">Uca (Uca) maracoani maracoani</em></a></li>
       <li><a href="../names/Uca_affinis.html"><em class="species">Uca affinis</em></a></li>
       <li><a href="../names/Uca_burgersi.html"><em class="species">Uca burgersi</em></a></li>
@@ -158,7 +150,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
       <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
       <li><a href="../names/sn_cumulanta.html"><em class="species">cumulanta</em></a></li>
@@ -183,6 +175,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1986.html">Abele &amp; Kim (1986)</a><sup>†</sup>, 
 <a href="../references/deAlmeida2008.html">Almeida &amp; Coelho (2008)</a><sup>†</sup>, 
 <a href="../references/Altevogt1959.1.html">Altevogt (1959)</a><sup>†</sup>, 
 <a href="../references/Altevogt1962.html">Altevogt (1962)</a><sup>†</sup>, 
@@ -207,6 +200,7 @@
 <a href="../references/Dunham1988.html">Dunham &amp; Gilchrist (1988)</a><sup>†</sup>, 
 <a href="../references/Feest1969.html">Feest (1969)</a><sup>†</sup>, 
 <a href="../references/Fowler1912.html">Fowler (1912)</a><sup>†</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Gibbs1974.html">Gibbs (1974)</a>, 
 <a href="../references/Gibbs1972.html">Gibbs &amp; Bryan (1972)</a>, 
 <a href="../references/Gill1858.html">Gill (1858)</a>, 
@@ -247,6 +241,7 @@
 <a href="../references/Rathbun1924.3.html">Rathbun (1924)</a>, 
 <a href="../references/Rathbun1933.html">Rathbun (1933)</a><sup>†</sup>, 
 <a href="../references/Rodriguez1993.2.html">Rodriguez (1993)</a><sup>†</sup>, 
+<a href="../references/RomeroRodriguez2017.html">Romero-Rodríguez <em>et al.</em> (2017)</a><sup>†</sup>, 
 <a href="../references/Rosenberg2000.html">Rosenberg (2000)</a><sup>†</sup>, 
 <a href="../references/Salmon1965.html">Salmon (1965)</a><sup>†</sup>, 
 <a href="../references/Salmon1967.html">Salmon (1967)</a><sup>†</sup>, 
@@ -262,6 +257,7 @@
 <a href="../references/Teal1959.html">Teal (1959)</a><sup>†</sup>, 
 <a href="../references/Thompson1901.html">Thompson (1901)</a>, 
 <a href="../references/Thurman1981.1.html">Thurman (1981)</a><sup>†</sup>, 
+<a href="../references/UtreraLopez2013.html">Utrera-López &amp; Capistrán-Barradas (2013)</a><sup>†</sup>, 
 <a href="../references/vanDelft1968.html">van Delft (1968)</a>, 
 <a href="../references/Velez1967.html">Vélez (1967)</a><sup>†</sup>, 
 <a href="../references/Vernberg1959.2.html">Vernberg (1959)</a><sup>†</sup>, 
@@ -285,6 +281,7 @@
 <a href="../references/Williams1965.html">Williams (1965)</a><sup>†</sup>, 
 <a href="../references/Williams1984.html">Williams (1984)</a><sup>†</sup>, 
 <a href="../references/Williams1981.html">Williams &amp; Heng (1981)</a><sup>†</sup>, 
+<a href="../references/Wunderlich2017.html">Wunderlich <em>et al.</em> (2017)</a><sup>†</sup>, 
 <a href="../references/Yamaguchi1971.html">Yamaguchi (1971)</a><sup>†</sup>, 
 <a href="../references/Yamaguchi1977.html">Yamaguchi (1977)</a><sup>†</sup>, 
 <a href="../references/Young1900.html">Young (1900)</a>, 
@@ -299,7 +296,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

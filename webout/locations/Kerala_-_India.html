@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Kerala_-_India_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Kerala_-_India_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(17.423079, 91.249552);
-        var swcorner = new google.maps.LatLng(2.4230789999999995, 61.249551999999994);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -69,7 +65,7 @@
     <dt>Also Known As</dt>
       <dd>Travancore</dd>
     <dt>Included Within</dt>
-      <dd><a href="India.html">India</a>, <a href="Southwestern_India.html">Southwestern India</a></dd>
+      <dd><a href="India.html">India</a>, <a href="Southwestern_India.html">Southwestern India</a>, <a href="Arabian_Sea.html">Arabian Sea</a></dd>
     <dt>Note</dt>
       <dd>State</dd>
     <dt>Approximate Coordinates</dt>
@@ -77,13 +73,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Kollam_District_-_Kerala_-_India.html">Kollam District</a></li>
     <li><a href="Kannur_District_-_Kerala_-_India.html">Kannur District</a></li>
     <li><a href="Ernakulam_District_-_Kerala_-_India.html">Ernakulam District</a></li>
@@ -91,7 +87,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_bengali.html"><em class="species">Uca bengali</em></a></li>
       <li><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></li>
@@ -100,7 +96,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a></li>
       <li><a href="../names/Gelasimus_Marionis.html"><em class="species">Gelasimus Marionis</em></a></li>
       <li><a href="../names/Gelasimus_annulipes.html"><em class="species">Gelasimus annulipes</em></a></li>
@@ -119,7 +115,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_dussumieri.html"><em class="species">dussumieri</em></a></li>
       <li><a href="../names/sn_lactea.html"><em class="species">lactea</em></a></li>
@@ -143,6 +139,7 @@
 <a href="../references/Pillay1971.2.html">Pillay &amp; Nair (1971)</a>, 
 <a href="../references/Pillary1973.1.html">Pillay &amp; Nair (1973)</a>, 
 <a href="../references/Pillary1973.2.html">Pillay &amp; Nair (1973)</a>, 
+<a href="../references/Prasadan2001.html">Prasadan &amp; Janardanan (2001)</a>, 
 <a href="../references/Sankarankutty1961.html">Sankarankutty (1961)</a><sup>†</sup>, 
 <a href="../references/Sastry1983.html">Sastry (1983)</a><sup>†</sup>, 
 <a href="../references/Vijayan2004.html">Vijayan (2004)</a>, 
@@ -154,7 +151,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Taiwan_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Taiwan_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(25.6, 122.2);
-        var swcorner = new google.maps.LatLng(21.7, 119.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Bazhang_River_-_Taiwan.html">Bazhang River</a></li>
     <li><a href="Dongsha_Islands_-_Taiwan.html">Dongsha Islands</a></li>
     <li><a href="Kaohsiung_-_Taiwan.html">Kaohsiung</a></li>
@@ -98,7 +94,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_acuta.html"><em class="species">Uca acuta</em></a></li>
       <li><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a></li>
       <li><a href="../u_borealis.html"><em class="species">Uca borealis</em></a></li>
@@ -117,7 +113,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Austruca_lactea.html"><em class="species">Austruca lactea</em></a></li>
       <li><a href="../names/Austruca_perplexa.html"><em class="species">Austruca perplexa</em></a></li>
       <li><a href="../names/Gelasimus.html"><em class="species">Gelasimus</em></a></li>
@@ -162,13 +158,14 @@
       <li><a href="../names/Uca_perplexa.html"><em class="species">Uca perplexa</em></a></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a></li>
       <li><a href="../names/Uca_triangularis.html"><em class="species">Uca triangularis</em></a></li>
+      <li><a href="../names/Uca_trianqularis.html"><em class="species">Uca trianqularis</em></a></li>
       <li><a href="../names/Uca_vocans_borealis.html"><em class="species">Uca vocans borealis</em></a></li>
       <li><a href="../names/Xeruca_formosensis.html"><em class="species">Xeruca formosensis</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a></li>
       <li><a href="../names/sn_arcuata.html"><em class="species">arcuata</em></a></li>
       <li><a href="../names/sn_borealis.html"><em class="species">borealis</em></a></li>
@@ -201,6 +198,7 @@
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/Crosnier1965.html">Crosnier (1965)</a><sup>†</sup>, 
 <a href="../references/Forest1961.html">Forest &amp; Guinot (1961)</a><sup>†</sup>, 
+<a href="../references/Ho1993.html">Ho <em>et al.</em> (1993)</a>, 
 <a href="../references/Hsueh1995.html">Hsueh (1995)</a>, 
 <a href="../references/Hsueh1996.html">Hsueh (1996)</a>, 
 <a href="../references/Hung2015.html">Hung &amp; Lin (2015)</a>, 
@@ -228,8 +226,10 @@
 <a href="../references/Serene1973.3.html">Serène (1973)</a><sup>†</sup>, 
 <a href="../references/Shen1932.html">Shen (1932)</a><sup>†</sup>, 
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="../references/Shih2008.2.html">Shih <em>et al.</em> (2008)</a>, 
 <a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a><sup>†</sup>, 
 <a href="../references/Takahasi1934.1.html">Takahasi (1934)</a>, 
 <a href="../references/Takahasi1934.2.html">Takahasi (1934)</a>, 
 <a href="../references/Takahasi1935.html">Takahasi (1935)</a>, 
@@ -250,7 +250,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Guayas_-_Ecuador_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Guayas_-_Ecuador_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(2.5, -75.0);
-        var swcorner = new google.maps.LatLng(-5.0, -81.5);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Guayaquil_-_Guayas_-_Ecuador.html">Guayaquil</a></li>
     <li><a href="La_Puntilla_-_Guayas_-_Ecuador.html">La Puntilla</a></li>
     <li><a href="Puerto_El_Morro_-_Guayas_-_Ecuador.html">Puerto El Morro</a></li>
@@ -91,20 +87,21 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_argillicola.html"><em class="species">Uca argillicola</em></a></li>
       <li><a href="../u_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></li>
       <li><a href="../u_festae.html"><em class="species">Uca festae</em></a></li>
       <li><a href="../u_galapagensis.html"><em class="species">Uca galapagensis</em></a></li>
       <li><a href="../u_inaequalis.html"><em class="species">Uca inaequalis</em></a></li>
       <li><a href="../u_insignis.html"><em class="species">Uca insignis</em></a></li>
+      <li><a href="../u_ornata.html"><em class="species">Uca ornata</em></a></li>
       <li><a href="../u_stenodactylus.html"><em class="species">Uca stenodactylus</em></a></li>
       <li><a href="../u_stylifera.html"><em class="species">Uca stylifera</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_princeps.html"><em class="species">Gelasimus princeps</em></a></li>
       <li><a href="../names/Gelasimus_stenodactylus.html"><em class="species">Gelasimus stenodactylus</em></a></li>
       <li><a href="../names/Gelasimus_styliferus.html"><em class="species">Gelasimus styliferus</em></a></li>
@@ -132,6 +129,7 @@
       <li><a href="../names/Uca_insignis.html"><em class="species">Uca insignis</em></a></li>
       <li><a href="../names/Uca_macrodactyla.html"><em class="species">Uca macrodactyla</em></a></li>
       <li><a href="../names/Uca_macrodactylus.html"><em class="species">Uca macrodactylus</em></a></li>
+      <li><a href="../names/Uca_ornata.html"><em class="species">Uca ornata</em></a></li>
       <li><a href="../names/Uca_platydactyla_var_stylifera.html"><em class="species">Uca platydactyla </em> var. <em class="species"> stylifera</em></a></li>
       <li><a href="../names/Uca_stylifera.html"><em class="species">Uca stylifera</em></a></li>
       <li><a href="../names/Uca_una.html"><em class="species">Uca una</em></a></li>
@@ -140,7 +138,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_argillicola.html"><em class="species">argillicola</em></a></li>
       <li><a href="../names/sn_ecuadoriensis.html"><em class="species">ecuadoriensis</em></a></li>
       <li><a href="../names/sn_festae.html"><em class="species">festae</em></a></li>
@@ -149,6 +147,7 @@
       <li><a href="../names/sn_inaequalis.html"><em class="species">inaequalis</em></a></li>
       <li><a href="../names/sn_insignis.html"><em class="species">insignis</em></a></li>
       <li><a href="../names/sn_macrodactyla.html"><em class="species">macrodactyla</em></a></li>
+      <li><a href="../names/sn_ornata.html"><em class="species">ornata</em></a></li>
       <li><a href="../names/sn_princeps.html"><em class="species">princeps</em></a></li>
       <li><a href="../names/sn_stenodactylus.html"><em class="species">stenodactylus</em></a></li>
       <li><a href="../names/sn_stylifera.html"><em class="species">stylifera</em></a></li>
@@ -159,6 +158,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1989.html">Abele &amp; Kim (1989)</a><sup>†</sup>, 
 <a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
 <a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
 <a href="../references/Bott1973.2.html">Bott (1973)</a><sup>†</sup>, 
@@ -168,6 +168,7 @@
 <a href="../references/Crane1947.html">Crane (1947)</a>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/Doflein1899.html">Doflein (1899)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Garth1948.html">Garth (1948)</a><sup>†</sup>, 
 <a href="../references/Garth1957.html">Garth (1957)</a><sup>†</sup>, 
 <a href="../references/Kingsley1880.html">Kingsley (1880)</a>, 
@@ -194,7 +195,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

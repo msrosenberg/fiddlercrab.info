@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Pacific_Ocean_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Pacific_Ocean_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(28.966667, -142.983333);
-        var swcorner = new google.maps.LatLng(13.966667000000001, -172.983333);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -71,20 +67,20 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Eastern_Pacific_Ocean.html">Eastern Pacific Ocean</a></li>
     <li><a href="Western_Pacific_Ocean.html">Western Pacific Ocean</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_acuta.html"><em class="species">Uca acuta</em></a><sup>*</sup></li>
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a><sup>*</sup></li>
       <li><a href="../u_arcuata.html"><em class="species">Uca arcuata</em></a><sup>*</sup></li>
@@ -164,7 +160,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Acanthoplax_insignis.html"><em class="species">Acanthoplax insignis</em></a><sup>*</sup></li>
       <li><a href="../names/Austruca_annulipes.html"><em class="species">Austruca annulipes</em></a><sup>*</sup></li>
       <li><a href="../names/Austruca_cryptica.html"><em class="species">Austruca cryptica</em></a><sup>*</sup></li>
@@ -205,7 +201,6 @@
       <li><a href="../names/Gelasimus_brevifrons.html"><em class="species">Gelasimus brevifrons</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_brevipes.html"><em class="species">Gelasimus brevipes</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_chlorophthalmus.html"><em class="species">Gelasimus chlorophthalmus</em></a><sup>*</sup></li>
-      <li><a href="../names/Gelasimus_coarctata.html"><em class="species">Gelasimus coarctata</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_coarctatus.html"><em class="species">Gelasimus coarctatus</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_coloradensis.html"><em class="species">Gelasimus coloradensis</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_cordiformis.html"><em class="species">Gelasimus cordiformis</em></a><sup>*</sup></li>
@@ -216,7 +211,6 @@
       <li><a href="../names/Gelasimus_cultrimanus_var_marionis.html"><em class="species">Gelasimus cultrimanus </em> var. <em class="species"> marionis</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_dampieri.html"><em class="species">Gelasimus dampieri</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_dubius.html"><em class="species">Gelasimus dubius</em></a><sup>*</sup></li>
-      <li><a href="../names/Gelasimus_forceps.html"><em class="species">Gelasimus forceps</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_forcipatus.html"><em class="species">Gelasimus forcipatus</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_formosensis.html"><em class="species">Gelasimus formosensis</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_gibbosus.html"><em class="species">Gelasimus gibbosus</em></a><sup>*</sup></li>
@@ -255,7 +249,6 @@
       <li><a href="../names/Gelasimus_stenodactylus.html"><em class="species">Gelasimus stenodactylus</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_styliferus.html"><em class="species">Gelasimus styliferus</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_telescopicus.html"><em class="species">Gelasimus telescopicus</em></a><sup>*</sup></li>
-      <li><a href="../names/Gelasimus_tenuimanus.html"><em class="species">Gelasimus tenuimanus</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_tetragonon.html"><em class="species">Gelasimus tetragonon</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_tetragonum.html"><em class="species">Gelasimus tetragonum</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_thomsoni.html"><em class="species">Gelasimus thomsoni</em></a><sup>*</sup></li>
@@ -331,7 +324,6 @@
       <li><a href="../names/Planuca_zilchi.html"><em class="species">Planuca zilchi</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_acuta.html"><em class="species">Tubuca acuta</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_arcuata.html"><em class="species">Tubuca arcuata</em></a><sup>*</sup></li>
-      <li><a href="../names/Tubuca_australiae.html"><em class="species">Tubuca australiae</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_bellator.html"><em class="species">Tubuca bellator</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_capricornis.html"><em class="species">Tubuca capricornis</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_coarctata.html"><em class="species">Tubuca coarctata</em></a><sup>*</sup></li>
@@ -339,7 +331,6 @@
       <li><a href="../names/Tubuca_dussumieri.html"><em class="species">Tubuca dussumieri</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_elegans.html"><em class="species">Tubuca elegans</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_flammula.html"><em class="species">Tubuca flammula</em></a><sup>*</sup></li>
-      <li><a href="../names/Tubuca_flamula.html"><em class="species">Tubuca flamula</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_forceps.html"><em class="species">Tubuca forceps</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_forcipata.html"><em class="species">Tubuca forcipata</em></a><sup>*</sup></li>
       <li><a href="../names/Tubuca_hirsutimanus.html"><em class="species">Tubuca hirsutimanus</em></a><sup>*</sup></li>
@@ -386,7 +377,6 @@
       <li><a href="../names/Uca_Celuca_inaequalis.html"><em class="species">Uca (Celuca) inaequalis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Celuca_lactea.html"><em class="species">Uca (Celuca) lactea</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Celuca_lactea_lactea.html"><em class="species">Uca (Celuca) lactea lactea</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Celuca_lactea_mjobergi.html"><em class="species">Uca (Celuca) lactea mjobergi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Celuca_latimanus.html"><em class="species">Uca (Celuca) latimanus</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Celuca_leptochela.html"><em class="species">Uca (Celuca) leptochela</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Celuca_musica_musica.html"><em class="species">Uca (Celuca) musica musica</em></a><sup>*</sup></li>
@@ -408,10 +398,8 @@
       <li><a href="../names/Uca_Deltuca__coarctata__urvillei.html"><em class="species">Uca (Deltuca) [coarctata] urvillei</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_arcuata.html"><em class="species">Uca (Deltuca) arcuata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_coarctata_coarctata.html"><em class="species">Uca (Deltuca) coarctata coarctata</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Deltuca_demani_australiae.html"><em class="species">Uca (Deltuca) demani australiae</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_demani_demani.html"><em class="species">Uca (Deltuca) demani demani</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_demani_typhoni.html"><em class="species">Uca (Deltuca) demani typhoni</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Deltuca_dussumieri_capricornis.html"><em class="species">Uca (Deltuca) dussumieri capricornis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_dussumieri_dussumieri.html"><em class="species">Uca (Deltuca) dussumieri dussumieri</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Deltuca_dussumieri_spinata.html"><em class="species">Uca (Deltuca) dussumieri spinata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Gelasimus_borealis.html"><em class="species">Uca (Gelasimus) borealis</em></a><sup>*</sup></li>
@@ -469,7 +457,6 @@
       <li><a href="../names/Uca_Minuca_macrodactyla_glabromana.html"><em class="species">Uca (Minuca) macrodactyla glabromana</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Minuca_macrodactyla_macrodactyla.html"><em class="species">Uca (Minuca) macrodactyla macrodactyla</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Minuca_mertensi.html"><em class="species">Uca (Minuca) mertensi</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Minuca_mjobergi.html"><em class="species">Uca (Minuca) mjobergi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Minuca_mordax.html"><em class="species">Uca (Minuca) mordax</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Minuca_oerstedi.html"><em class="species">Uca (Minuca) oerstedi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Minuca_orthomana.html"><em class="species">Uca (Minuca) orthomana</em></a><sup>*</sup></li>
@@ -490,10 +477,9 @@
       <li><a href="../names/Uca_Paraleptuca_boninensis.html"><em class="species">Uca (Paraleptuca) boninensis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Paraleptuca_crassipes.html"><em class="species">Uca (Paraleptuca) crassipes</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Paraleptuca_lactea.html"><em class="species">Uca (Paraleptuca) lactea</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Paraleptuca_mjobergi.html"><em class="species">Uca (Paraleptuca) mjobergi</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Paraleptuca_mjoebergi.html"><em class="species">Uca (Paraleptuca) mjoebergi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Paraleptuca_splendida.html"><em class="species">Uca (Paraleptuca) splendida</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Paraleptuca_triangularis.html"><em class="species">Uca (Paraleptuca) triangularis</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_Thalassuca_borealis.html"><em class="species">Uca (Thalassuca) borealis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Thalassuca_formosensis.html"><em class="species">Uca (Thalassuca) formosensis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Thalassuca_vocans_borealis.html"><em class="species">Uca (Thalassuca) vocans borealis</em></a><sup>*</sup></li>
@@ -503,7 +489,6 @@
       <li><a href="../names/Uca_Thalassuca_vocans_vomeris.html"><em class="species">Uca (Thalassuca) vocans vomeris</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Tubuca_acuta.html"><em class="species">Uca (Tubuca) acuta</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Tubuca_arcuata.html"><em class="species">Uca (Tubuca) arcuata</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_Tubuca_australiae.html"><em class="species">Uca (Tubuca) australiae</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Tubuca_capricornis.html"><em class="species">Uca (Tubuca) capricornis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Tubuca_coarctata.html"><em class="species">Uca (Tubuca) coarctata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_Tubuca_demani.html"><em class="species">Uca (Tubuca) demani</em></a><sup>*</sup></li>
@@ -547,7 +532,6 @@
       <li><a href="../names/Uca_arcuata.html"><em class="species">Uca arcuata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_arcuatus.html"><em class="species">Uca arcuatus</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_argillicola.html"><em class="species">Uca argillicola</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_australiae.html"><em class="species">Uca australiae</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_batuenta.html"><em class="species">Uca batuenta</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_beebei.html"><em class="species">Uca beebei</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_bellator.html"><em class="species">Uca bellator</em></a><sup>*</sup></li>
@@ -560,6 +544,7 @@
       <li><a href="../names/Uca_chlorophtalmus_crassipes.html"><em class="species">Uca chlorophtalmus crassipes</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_chlorophthalmus.html"><em class="species">Uca chlorophthalmus</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_coarctata.html"><em class="species">Uca coarctata</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_coarctata_flammula.html"><em class="species">Uca coarctata flammula</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_coloradensis.html"><em class="species">Uca coloradensis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_crassipes.html"><em class="species">Uca crassipes</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_crenulata.html"><em class="species">Uca crenulata</em></a><sup>*</sup></li>
@@ -570,21 +555,21 @@
       <li><a href="../names/Uca_dampieri.html"><em class="species">Uca dampieri</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_deichmanni.html"><em class="species">Uca deichmanni</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_demani.html"><em class="species">Uca demani</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_demani_demani.html"><em class="species">Uca demani demani</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_demani_typhony.html"><em class="species">Uca demani typhony</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_dorotheae.html"><em class="species">Uca dorotheae</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_dubia.html"><em class="species">Uca dubia</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_duperryi.html"><em class="species">Uca duperryi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_dussmieri_dussmieri.html"><em class="species">Uca dussmieri dussmieri</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_dussumieri.html"><em class="species">Uca dussumieri</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_dussumieri_dussumieri.html"><em class="species">Uca dussumieri dussumieri</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_dussumieri_spinata.html"><em class="species">Uca dussumieri spinata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_elegans.html"><em class="species">Uca elegans</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_fest_ae_.html"><em class="species">Uca festæ</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_flammula.html"><em class="species">Uca flammula</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_forceps.html"><em class="species">Uca forceps</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_forceps_var_angustifrons.html"><em class="species">Uca forceps </em> var. <em class="species"> angustifrons</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_forcipata.html"><em class="species">Uca forcipata</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_forcipatus.html"><em class="species">Uca forcipatus</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_formosensis.html"><em class="species">Uca formosensis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_gaimardi.html"><em class="species">Uca gaimardi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_galapagensis.html"><em class="species">Uca galapagensis</em></a><sup>*</sup></li>
@@ -640,16 +625,12 @@
       <li><a href="../names/Uca_minor.html"><em class="species">Uca minor</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_mjobergi.html"><em class="species">Uca mjobergi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_mjoebergi.html"><em class="species">Uca mjoebergi</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_mj_o_bergi.html"><em class="species">Uca mjöbergi</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_molinifera.html"><em class="species">Uca molinifera</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_monilifera.html"><em class="species">Uca monilifera</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_mordax.html"><em class="species">Uca mordax</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_musica.html"><em class="species">Uca musica</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_musica_musica.html"><em class="species">Uca musica musica</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_musica_terpsichores.html"><em class="species">Uca musica terpsichores</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_n_sp_a.html"><em class="species">Uca n. sp. a</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_n_sp_b.html"><em class="species">Uca n. sp. b</em></a><sup>*</sup></li>
-      <li><a href="../names/Uca_n_sp_c.html"><em class="species">Uca n. sp. c</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_narionis.html"><em class="species">Uca narionis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_neocultrimana.html"><em class="species">Uca neocultrimana</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_nitidus.html"><em class="species">Uca nitidus</em></a><sup>*</sup></li>
@@ -714,8 +695,10 @@
       <li><a href="../names/Uca_thomsoni.html"><em class="species">Uca thomsoni</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_tomentosa.html"><em class="species">Uca tomentosa</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_triangularis.html"><em class="species">Uca triangularis</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_triangularis_triangularis.html"><em class="species">Uca triangularis triangularis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_triangularis_var_variabilis.html"><em class="species">Uca triangularis </em> var. <em class="species"> variabilis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_triangularis_variabilis.html"><em class="species">Uca triangularis variabilis</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_trianqularis.html"><em class="species">Uca trianqularis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_typhoni.html"><em class="species">Uca typhoni</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_umbratila.html"><em class="species">Uca umbratila</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_una.html"><em class="species">Uca una</em></a><sup>*</sup></li>
@@ -737,7 +720,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a><sup>*</sup></li>
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a><sup>*</sup></li>
       <li><a href="../names/sn_angustifrons.html"><em class="species">angustifrons</em></a><sup>*</sup></li>
@@ -745,7 +728,6 @@
       <li><a href="../names/sn_arcuata.html"><em class="species">arcuata</em></a><sup>*</sup></li>
       <li><a href="../names/sn_argillicola.html"><em class="species">argillicola</em></a><sup>*</sup></li>
       <li><a href="../names/sn_armatus.html"><em class="species">armatus</em></a><sup>*</sup></li>
-      <li><a href="../names/sn_australiae.html"><em class="species">australiae</em></a><sup>*</sup></li>
       <li><a href="../names/sn_batuenta.html"><em class="species">batuenta</em></a><sup>*</sup></li>
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a><sup>*</sup></li>
       <li><a href="../names/sn_bellator.html"><em class="species">bellator</em></a><sup>*</sup></li>
@@ -853,7 +835,6 @@
       <li><a href="../names/sn_stylifera.html"><em class="species">stylifera</em></a><sup>*</sup></li>
       <li><a href="../names/sn_tallanica.html"><em class="species">tallanica</em></a><sup>*</sup></li>
       <li><a href="../names/sn_telescopicus.html"><em class="species">telescopicus</em></a><sup>*</sup></li>
-      <li><a href="../names/sn_tenuimanus.html"><em class="species">tenuimanus</em></a><sup>*</sup></li>
       <li><a href="../names/sn_tenuipedis.html"><em class="species">tenuipedis</em></a><sup>*</sup></li>
       <li><a href="../names/sn_terpsichores.html"><em class="species">terpsichores</em></a><sup>*</sup></li>
       <li><a href="../names/sn_tetragonon.html"><em class="species">tetragonon</em></a><sup>*</sup></li>
@@ -878,6 +859,7 @@
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
+<a href="../references/Abele1989.html">Abele &amp; Kim (1989)</a><sup>*</sup>, 
 <a href="../references/Adams1848.html">Adams &amp; White (1848)</a><sup>*</sup>, 
 <a href="../references/Agassiz_nd.html">Agassiz (?)</a><sup>*</sup>, 
 <a href="../references/Aikawa1942.html">Aikawa (1942)</a><sup>*</sup>, 
@@ -899,6 +881,7 @@
 <a href="../references/Ansell1988.html">Ansell (1988)</a><sup>*</sup>, 
 <a href="../references/Aoki2009.html">Aoki <em>et al.</em> (2009)</a><sup>*</sup>, 
 <a href="../references/Artal2008.html">Artal (2008)</a><sup>*</sup>, 
+<a href="../references/Ashton2003.2.html">Ashton <em>et al.</em> (2003)</a><sup>*</sup>, 
 <a href="../references/Aspey1978.html">Aspey (1978)</a><sup>*</sup>, 
 <a href="../references/Backwell2004.html">Backwell &amp; Jennions (2004)</a><sup>*</sup>, 
 <a href="../references/Backwell1998.2.html">Backwell <em>et al.</em> (1998)</a><sup>*</sup>, 
@@ -934,6 +917,7 @@
 <a href="../references/Bott1958.html">Bott (1958)</a><sup>*</sup>, 
 <a href="../references/Bott1973.2.html">Bott (1973)</a><sup>*</sup>, 
 <a href="../references/Bouvier1895.html">Bouvier (1895)</a><sup>*</sup>, 
+<a href="../references/Bowlus1979.html">Bowlus &amp; Somero (1979)</a><sup>*</sup>, 
 <a href="../references/Brusca1973.html">Brusca (1973)</a><sup>*</sup>, 
 <a href="../references/Brusca1980.html">Brusca (1980)</a><sup>*</sup>, 
 <a href="../references/Buitendijk1950.html">Buitendijk (1950)</a><sup>*</sup>, 
@@ -945,11 +929,16 @@
 <a href="../references/Bywater2010.2.html">Bywater &amp; Wilson (2010)</a><sup>*</sup>, 
 <a href="../references/Bywater2010.1.html">Bywater &amp; Wilson (2010)</a><sup>*</sup>, 
 <a href="../references/Calman1900.html">Calman (1900)</a><sup>*</sup>, 
+<a href="../references/Campos1989.html">Campos &amp; de Campos (1989)</a><sup>*</sup>, 
+<a href="../references/Campos1998.html">Campos &amp; Lopez (1998)</a><sup>*</sup>, 
 <a href="../references/Cano1889.1.html">Cano (1889)</a><sup>*</sup>, 
 <a href="../references/Cano1889.2.html">Cano (1889)</a><sup>*</sup>, 
 <a href="../references/Carlisle1959.html">Carlisle &amp; Knowles (1959)</a><sup>*</sup>, 
 <a href="../references/Chace1942.html">Chace (1942)</a><sup>*</sup>, 
 <a href="../references/Chang1963.html">Chang (1963)</a><sup>*</sup>, 
+<a href="../references/Chavez1999.html">Chavez &amp; Cedillo (1999)</a><sup>*</sup>, 
+<a href="../references/Chen2011.html">Chen &amp; Ye (2011)</a><sup>*</sup>, 
+<a href="../references/Chen2007.html">Chen <em>et al.</em> (2007)</a><sup>*</sup>, 
 <a href="../references/Chhapgar1957.html">Chhapgar (1957)</a><sup>*</sup>, 
 <a href="../references/Chilton1929.html">Chilton &amp; Bennett (1929)</a><sup>*</sup>, 
 <a href="../references/Chirichigno1970.html">Chirichigno Fonseca (1970)</a><sup>*</sup>, 
@@ -958,6 +947,7 @@
 <a href="../references/Christy1988.3.html">Christy (1988)</a><sup>*</sup>, 
 <a href="../references/Christy2006.2.html">Christy &amp; Dennenmoser (2006)</a><sup>*</sup>, 
 <a href="../references/Christy1996.html">Christy <em>et al.</em> (1996)</a><sup>*</sup>, 
+<a href="../references/CortesCarrasco2013.html">Cortes-Carrasco &amp; del Socorro Garcia-Madrigal (2013)</a><sup>*</sup>, 
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>*</sup>, 
 <a href="../references/Crane1943.2.html">Crane (1943)</a><sup>*</sup>, 
 <a href="../references/Crane1943.3.html">Crane (1943)</a><sup>*</sup>, 
@@ -1016,6 +1006,7 @@
 <a href="../references/Fingerman1988.html">Fingerman (1988)</a><sup>*</sup>, 
 <a href="../references/Forest1961.html">Forest &amp; Guinot (1961)</a><sup>*</sup>, 
 <a href="../references/Fowler1912.html">Fowler (1912)</a><sup>*</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a><sup>*</sup>, 
 <a href="../references/Frith1977.2.html">Frith &amp; Frith (1977)</a><sup>*</sup>, 
 <a href="../references/Frith1977.3.html">Frith &amp; Frith (1977)</a><sup>*</sup>, 
 <a href="../references/Frith1978.html">Frith &amp; Frith (1978)</a><sup>*</sup>, 
@@ -1071,6 +1062,7 @@
 <a href="../references/Hess1865.html">Hess (1865)</a><sup>*</sup>, 
 <a href="../references/Hilgendorf1869.html">Hilgendorf (1869)</a><sup>*</sup>, 
 <a href="../references/Hinton1969.html">Hinton (1969)</a><sup>*</sup>, 
+<a href="../references/Ho1993.html">Ho <em>et al.</em> (1993)</a><sup>*</sup>, 
 <a href="../references/Hoffmann1874.html">Hoffmann (1874)</a><sup>*</sup>, 
 <a href="../references/Hogue1971.html">Hogue &amp; Bright (1971)</a><sup>*</sup>, 
 <a href="../references/Holmes1900.html">Holmes (1900)</a><sup>*</sup>, 
@@ -1136,6 +1128,7 @@
 <a href="../references/Lin1949.html">Lin (1949)</a><sup>*</sup>, 
 <a href="../references/Lin2015.html">Lin &amp; Lin (2015)</a><sup>*</sup>, 
 <a href="../references/Linnaeus1766.html">Linnaeus (1766)</a><sup>*</sup>, 
+<a href="../references/Liu2014.html">Liu <em>et al.</em> (2014)</a><sup>*</sup>, 
 <a href="../references/Lockington1877.2.html">Lockington (1877)</a><sup>*</sup>, 
 <a href="../references/Lockwood1962.html">Lockwood (1962)</a><sup>*</sup>, 
 <a href="../references/Lockwood1967.html">Lockwood (1967)</a><sup>*</sup>, 
@@ -1190,7 +1183,6 @@
 <a href="../references/Naiyanetr2007.html">Naiyanetr (2007)</a><sup>*</sup>, 
 <a href="../references/Nemec1939.html">Nemec (1939)</a><sup>*</sup>, 
 <a href="../references/Neuffer2001.html">Neuffer <em>et al.</em> (2001)</a><sup>*</sup>, 
-<a href="../references/Neumann1878.html">Neumann (1878)</a><sup>*</sup>, 
 <a href="../references/Ng2002.html">Ng &amp; Davie (2002)</a><sup>*</sup>, 
 <a href="../references/Ng2008.html">Ng <em>et al.</em> (2008)</a><sup>*</sup>, 
 <a href="../references/Ng2009.html">Ng <em>et al.</em> (2009)</a><sup>*</sup>, 
@@ -1279,7 +1271,6 @@
 <a href="../references/Rathbun1923.html">Rathbun (1923)</a><sup>*</sup>, 
 <a href="../references/Rathbun1924.2.html">Rathbun (1924)</a><sup>*</sup>, 
 <a href="../references/Rathbun1924.4.html">Rathbun (1924)</a><sup>*</sup>, 
-<a href="../references/Rathbun1924.1.html">Rathbun (1924)</a><sup>*</sup>, 
 <a href="../references/Rathbun1926.2.html">Rathbun (1926)</a><sup>*</sup>, 
 <a href="../references/Rathbun1926.1.html">Rathbun (1926)</a><sup>*</sup>, 
 <a href="../references/Rathbun1931.html">Rathbun (1931)</a><sup>*</sup>, 
@@ -1315,7 +1306,6 @@
 <a href="../references/Sastry1983.html">Sastry (1983)</a><sup>*</sup>, 
 <a href="../references/Sato1936.1.html">Sato (1936)</a><sup>*</sup>, 
 <a href="../references/Saussure1853.html">Saussure (1853)</a><sup>*</sup>, 
-<a href="../references/SavilleKent1897.html">Saville-Kent (1897)</a><sup>*</sup>, 
 <a href="../references/Schenkel1902.html">Schenkel (1902)</a><sup>*</sup>, 
 <a href="../references/Schmitt1921.html">Schmitt (1921)</a><sup>*</sup>, 
 <a href="../references/Schnee1904.html">Schnee &amp; Doflein (1904)</a><sup>*</sup>, 
@@ -1332,8 +1322,10 @@
 <a href="../references/Shen1940.1.html">Shen (1940)</a><sup>*</sup>, 
 <a href="../references/Shen1940.2.html">Shen (1940)</a><sup>*</sup>, 
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a><sup>*</sup>, 
+<a href="../references/Shih2008.2.html">Shih <em>et al.</em> (2008)</a><sup>*</sup>, 
 <a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a><sup>*</sup>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a><sup>*</sup>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a><sup>*</sup>, 
 <a href="../references/Silvertsen1934.html">Sivertsen (1934)</a><sup>*</sup>, 
 <a href="../references/Smith1869.html">Smith (1869)</a><sup>*</sup>, 
 <a href="../references/Smith1870.2.html">Smith (1870)</a><sup>*</sup>, 
@@ -1361,6 +1353,7 @@
 <a href="../references/Takeda1976.2.html">Takeda &amp; Miyake (1976)</a><sup>*</sup>, 
 <a href="../references/Takeda1973.html">Takeda &amp; Yamaguchi (1973)</a><sup>*</sup>, 
 <a href="../references/Tan1994.html">Tan &amp; Ng (1994)</a><sup>*</sup>, 
+<a href="../references/Tang2007.html">Tang <em>et al.</em> (2007)</a><sup>*</sup>, 
 <a href="../references/TargioniTozzetti1877.html">Targioni Tozzetti (1877)</a><sup>*</sup>, 
 <a href="../references/TenisonWoods1881.html">Tenison-Woods (1881)</a><sup>*</sup>, 
 <a href="../references/Terada1979.html">Terada (1979)</a><sup>*</sup>, 
@@ -1418,11 +1411,14 @@
 <a href="../references/Yamaguchi2001.1.html">Yamaguchi &amp; Holthuis (2001)</a><sup>*</sup>, 
 <a href="../references/Yamaguchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a><sup>*</sup>, 
 <a href="../references/Yoritaka.html">Yoritaka (~1762-1770)</a><sup>*</sup>, 
+<a href="../references/Yoshigou2002.html">Yoshigou (2002)</a><sup>*</sup>, 
 <a href="../references/Yoshiwara1901.html">Yoshiwara (1901)</a><sup>*</sup>, 
 <a href="../references/Young1900.html">Young (1900)</a><sup>*</sup>, 
 <a href="../references/Yun2015.html">Yun <em>et al.</em> (2015)</a><sup>*</sup>, 
 <a href="../references/Zehntner1894.html">Zehntner (1894)</a><sup>*</sup>, 
 <a href="../references/Zeil2006.2.html">Zeil <em>et al.</em> (2006)</a><sup>*</sup>, 
+<a href="../references/Zhou2006.html">Zhou <em>et al.</em> (2006)</a><sup>*</sup>, 
+<a href="../references/Zou1999.7.html">Zou <em>et al.</em> (1999)</a><sup>*</sup>, 
 <a href="../references/Zucker1972.html">Zucker (1972)</a><sup>*</sup>, 
 <a href="../references/Zucker1974.html">Zucker (1974)</a><sup>*</sup>, 
 <a href="../references/Zucker1976.html">Zucker (1976)</a><sup>*</sup>, 
@@ -1435,7 +1431,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

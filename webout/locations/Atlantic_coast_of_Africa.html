@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Atlantic_coast_of_Africa_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Atlantic_coast_of_Africa_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(22.263933, -2.3647750000000016);
-        var swcorner = new google.maps.LatLng(7.263933, -32.364775);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Angola.html">Angola</a></li>
     <li><a href="Cameroon.html">Cameroon</a></li>
     <li><a href="Democratic_Republic_of_the_Congo.html">Democratic Republic of the Congo</a></li>
@@ -101,14 +97,14 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_tangeri.html"><em class="species">Uca tangeri</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Afruca_tangeri.html"><em class="species">Afruca tangeri</em></a></li>
       <li><a href="../names/Gelasimus_Tangeri.html"><em class="species">Gelasimus Tangeri</em></a></li>
       <li><a href="../names/Gelasimus_atlanticus.html"><em class="species">Gelasimus atlanticus</em></a></li>
@@ -129,6 +125,7 @@
       <li><a href="../names/Uca_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../names/Uca_mordax.html"><em class="species">Uca mordax</em></a></li>
       <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
+      <li><a href="../names/Uca_spp.html"><em class="species">Uca spp.</em></a></li>
       <li><a href="../names/Uca_tangeri.html"><em class="species">Uca tangeri</em></a></li>
       <li><a href="../names/Uca_tangeri_var_matandensis.html"><em class="species">Uca tangeri </em> var. <em class="species"> matandensis</em></a></li>
       <li><a href="../names/Uca_tangieri.html"><em class="species">Uca tangieri</em></a></li>
@@ -137,7 +134,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_affinis.html"><em class="species">affinis</em></a></li>
       <li><a href="../names/sn_africana.html"><em class="species">africana</em></a></li>
       <li><a href="../names/sn_atlanticus.html"><em class="species">atlanticus</em></a></li>
@@ -164,6 +161,7 @@
 <a href="../references/Altevogt1964.1.html">Altevogt (1964)</a>, 
 <a href="../references/Altevogt1965.2.html">Altevogt (1965)</a><sup>†</sup>, 
 <a href="../references/Altevogt1965.1.html">Altevogt (1965)</a>, 
+<a href="../references/Altevogt1969.2.html">Altevogt (1969)</a>, 
 <a href="../references/Altevogt1970.html">Altevogt (1970)</a>, 
 <a href="../references/Altevogt1964.2.html">Altevogt &amp; von Hagen (1964)</a>, 
 <a href="../references/Alvarez1968.html">Alvarez (1968)</a><sup>†</sup>, 
@@ -173,7 +171,6 @@
 <a href="../references/Baudouin1906.html">Baudouin (1906)</a>, 
 <a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
 <a href="../references/Benedict1893.html">Benedict (1893)</a>, 
-<a href="../references/Benedict1894.html">Benedict (1894)</a>, 
 <a href="../references/Biljlsma1991.html">Biljlsma &amp; de Roder (1991)</a><sup>†</sup>, 
 <a href="../references/Boone1929.html">Boone (1929)</a><sup>†</sup>, 
 <a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
@@ -202,6 +199,7 @@
 <a href="../references/Edney1968.html">Edney <em>et al.</em> (1968)</a><sup>†</sup>, 
 <a href="../references/EwaOboho1993.html">Ewa-Oboho (1993)</a>, 
 <a href="../references/Eydoux1835.html">Eydoux (1835)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Freminville1822.html">Fréminville (1822)</a>, 
 <a href="../references/Galat1976.html">Galat &amp; Galat-Luong (1976)</a>, 
 <a href="../references/Gerstaeker1901.html">Gerstaecker &amp; Ortmann (1901)</a>, 
@@ -209,6 +207,7 @@
 <a href="../references/Hediger1933.html">Hediger (1933)</a>, 
 <a href="../references/Hediger1934.1.html">Hediger (1934)</a>, 
 <a href="../references/Hediger1934.2.html">Hediger (1934)</a>, 
+<a href="../references/Heinrich1971.html">Heinrich (1971)</a><sup>†</sup>, 
 <a href="../references/Heller1863.html">Heller (1863)</a><sup>†</sup>, 
 <a href="../references/Herklots1851.html">Herklots (1851)</a>, 
 <a href="../references/Herrnkind1968.3.html">Herrnkind (1968)</a><sup>†</sup>, 
@@ -246,6 +245,7 @@
 <a href="../references/Monod1959.html">Monod &amp; Nicou (1959)</a>, 
 <a href="../references/Morrier1991.html">Morrier &amp; McNeil (1991)</a><sup>†</sup>, 
 <a href="../references/Ng2008.html">Ng <em>et al.</em> (2008)</a><sup>†</sup>, 
+<a href="../references/NgoMassou2012.html">Ngo-Massou <em>et al.</em> (2012)</a>, 
 <a href="../references/Nicou1959.html">Nicou (1959)</a>, 
 <a href="../references/Nicou1960.html">Nicou (1960)</a>, 
 <a href="../references/Nobili1906.1.html">Nobili (1906)</a>, 
@@ -309,7 +309,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

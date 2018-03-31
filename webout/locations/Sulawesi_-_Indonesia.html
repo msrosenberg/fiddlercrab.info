@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Sulawesi_-_Indonesia_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Sulawesi_-_Indonesia_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(5.818536, 135.40306800000002);
-        var swcorner = new google.maps.LatLng(-9.181464, 105.403068);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="South_Sulawesi_-_Sulawesi_-_Indonesia.html">South Sulawesi</a></li>
     <li><a href="North_Sulawesi_-_Sulawesi_-_Indonesia.html">North Sulawesi</a></li>
     <li><a href="Southeast_Sulawesi_-_Sulawesi_-_Indonesia.html">Southeast Sulawesi</a></li>
@@ -90,7 +86,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_coarctata.html"><em class="species">Uca coarctata</em></a></li>
       <li><a href="../u_crassipes.html"><em class="species">Uca crassipes</em></a></li>
@@ -105,7 +101,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Austruca_cryptica.html"><em class="species">Austruca cryptica</em></a></li>
       <li><a href="../names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a></li>
       <li><a href="../names/Gelasimus_Gaimardi.html"><em class="species">Gelasimus Gaimardi</em></a></li>
@@ -141,6 +137,7 @@
       <li><a href="../names/Uca_coarctata.html"><em class="species">Uca coarctata</em></a></li>
       <li><a href="../names/Uca_cultrimana.html"><em class="species">Uca cultrimana</em></a></li>
       <li><a href="../names/Uca_demani.html"><em class="species">Uca demani</em></a></li>
+      <li><a href="../names/Uca_demani_demani.html"><em class="species">Uca demani demani</em></a></li>
       <li><a href="../names/Uca_dussumieri.html"><em class="species">Uca dussumieri</em></a></li>
       <li><a href="../names/Uca_forcipata.html"><em class="species">Uca forcipata</em></a></li>
       <li><a href="../names/Uca_gaimardi.html"><em class="species">Uca gaimardi</em></a></li>
@@ -157,7 +154,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_chlorophthalmus.html"><em class="species">chlorophthalmus</em></a></li>
@@ -195,6 +192,7 @@
 <a href="../references/Estampador1937.html">Estampador (1937)</a><sup>†</sup>, 
 <a href="../references/Estampador1959.html">Estampador (1959)</a><sup>†</sup>, 
 <a href="../references/Forest1961.html">Forest &amp; Guinot (1961)</a><sup>†</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Kawaida2017.html">Kawaida <em>et al.</em> (2017)</a><sup>†</sup>, 
 <a href="../references/Laurie1915.html">Laurie (1915)</a><sup>†</sup>, 
 <a href="../references/Miers1884.2.html">Miers (1884)</a>, 
@@ -214,6 +212,7 @@
 <a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a><sup>†</sup>, 
 <a href="../references/Shih2010.1.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a><sup>†</sup>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a>, 
 <a href="../references/Tesch1918.html">Tesch (1918)</a>, 
 <a href="../references/Thallwitz1891.html">Thallwitz (1891)</a>, 
 <a href="../references/Yamaguchi1973.2.html">Yamaguchi &amp; Takeda (1973)</a><sup>†</sup>      </p>
@@ -224,7 +223,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

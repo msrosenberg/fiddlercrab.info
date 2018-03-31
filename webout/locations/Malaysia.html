@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Malaysia_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Malaysia_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(9.793179, 118.942086);
-        var swcorner = new google.maps.LatLng(-5.206821, 88.942086);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -71,13 +67,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Borneo_-_Malaysia.html">Borneo (Malaysia)</a></li>
     <li><a href="Eastern_Malaysia.html">Eastern Malaysia</a></li>
     <li><a href="Johor_-_Malaysia.html">Johor</a></li>
@@ -88,11 +84,12 @@
     <li><a href="Selangor_-_Malaysia.html">Selangor</a></li>
     <li><a href="Terengganu_-_Malaysia.html">Terengganu</a></li>
     <li><a href="Western_Malaysia.html">Western Malaysia</a></li>
+    <li><a href="Perak_-_Malaysia.html">Perak</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a><sup>*</sup></li>
       <li><a href="../u_bellator.html"><em class="species">Uca bellator</em></a><sup>*</sup></li>
       <li><a href="../u_bengali.html"><em class="species">Uca bengali</em></a><sup>*</sup></li>
@@ -110,7 +107,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Austruca_annulipes.html"><em class="species">Austruca annulipes</em></a><sup>*</sup></li>
       <li><a href="../names/Austruca_bengali.html"><em class="species">Austruca bengali</em></a><sup>*</sup></li>
       <li><a href="../names/Austruca_orientalis.html"><em class="species">Austruca orientalis</em></a><sup>*</sup></li>
@@ -177,13 +174,14 @@
       <li><a href="../names/Uca_spinata.html"><em class="species">Uca spinata</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_triangularis.html"><em class="species">Uca triangularis</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_triangularis_bengali.html"><em class="species">Uca triangularis bengali</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_triangularis_variabilis.html"><em class="species">Uca triangularis variabilis</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_vocans.html"><em class="species">Uca vocans</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a><sup>*</sup></li>
       <li><a href="../names/sn_angustifrons.html"><em class="species">angustifrons</em></a><sup>*</sup></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a><sup>*</sup></li>
@@ -212,6 +210,7 @@
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
 <a href="../references/Alcock1900.html">Alcock (1900)</a><sup>†</sup>, 
+<a href="../references/Ashton2003.2.html">Ashton <em>et al.</em> (2003)</a><sup>*</sup>, 
 <a href="../references/Balss1922.1.html">Balss (1922)</a><sup>*</sup>, 
 <a href="../references/Barnard1950.html">Barnard (1950)</a><sup>*</sup>, 
 <a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>*</sup>, 
@@ -227,6 +226,7 @@
 <a href="../references/Estampador1937.html">Estampador (1937)</a><sup>†</sup>, 
 <a href="../references/Estampador1959.html">Estampador (1959)</a><sup>†</sup>, 
 <a href="../references/Forest1961.html">Forest &amp; Guinot (1961)</a><sup>*</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a><sup>*</sup>, 
 <a href="../references/Frith1977.2.html">Frith &amp; Frith (1977)</a><sup>*</sup>, 
 <a href="../references/Frith1978.html">Frith &amp; Frith (1978)</a><sup>*</sup>, 
 <a href="../references/Hartnoll1988.1.html">Hartnoll (1988)</a><sup>*</sup>, 
@@ -254,6 +254,7 @@
 <a href="../references/Sakai1936.2.html">Sakai (1936 [1935])</a><sup>*</sup>, 
 <a href="../references/Sakai1939.html">Sakai (1939)</a><sup>*</sup>, 
 <a href="../references/Sasekumar1974.html">Sasekumar (1974)</a><sup>*</sup>, 
+<a href="../references/Sasekumar1998.html">Sasekumar &amp; Chong (1998)</a><sup>*</sup>, 
 <a href="../references/Schone1961.html">Schöne (1961)</a><sup>*</sup>, 
 <a href="../references/Schone1963.html">Schöne &amp; Schöne (1963)</a><sup>*</sup>, 
 <a href="../references/Serene1973.3.html">Serène (1973)</a><sup>*</sup>, 
@@ -276,7 +277,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

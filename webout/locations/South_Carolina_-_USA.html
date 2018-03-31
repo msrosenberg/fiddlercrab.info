@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_South_Carolina_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_South_Carolina_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(40.8675, -64.293889);
-        var swcorner = new google.maps.LatLng(25.8675, -94.293889);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Charleston_County_-_South_Carolina_-_USA.html">Charleston County</a></li>
     <li><a href="Georgetown_County_-_South_Carolina_-_USA.html">Georgetown County</a></li>
     <li><a href="Beaufort_County_-_South_Carolina_-_USA.html">Beaufort County</a></li>
@@ -87,7 +83,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_minax.html"><em class="species">Uca minax</em></a></li>
       <li><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></li>
       <li><a href="../u_pugnax.html"><em class="species">Uca pugnax</em></a></li>
@@ -95,7 +91,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasima_pugillator.html"><em class="species">Gelasima pugillator</em></a></li>
       <li><a href="../names/Gelasimus_pugilator.html"><em class="species">Gelasimus pugilator</em></a></li>
       <li><a href="../names/Gelasimus_pugillator.html"><em class="species">Gelasimus pugillator</em></a></li>
@@ -122,7 +118,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_cultrimana.html"><em class="species">cultrimana</em></a></li>
       <li><a href="../names/sn_minax.html"><em class="species">minax</em></a></li>
       <li><a href="../names/sn_panacea.html"><em class="species">panacea</em></a></li>
@@ -167,6 +163,7 @@
 <a href="../references/DeCoursey1976.html">DeCoursey (1976)</a>, 
 <a href="../references/DeCoursey1980.html">DeCoursey (1980)</a>, 
 <a href="../references/DeCoursey1981.html">DeCoursey (1981)</a>, 
+<a href="../references/DeCoursey1983.html">DeCoursey (1983)</a><sup>†</sup>, 
 <a href="../references/DeCoursey1972.html">DeCoursey &amp; Vernberg (1972)</a>, 
 <a href="../references/Demeusy1957.html">Démeusy (1957)</a><sup>†</sup>, 
 <a href="../references/Desmarest1823.html">Desmarest (1823)</a><sup>†</sup>, 
@@ -176,6 +173,7 @@
 <a href="../references/Elango1990.html">Elango (1990)</a><sup>†</sup>, 
 <a href="../references/Ellis1979.html">Ellis &amp; Claybrook (1979)</a>, 
 <a href="../references/Ellis1980.1.html">Ellis &amp; Claybrook (1980)</a>, 
+<a href="../references/Gamble2011.1.html">Gamble &amp; Lovell (2011)</a>, 
 <a href="../references/Giblock2013.html">Giblock &amp; Crain (2013)</a>, 
 <a href="../references/Gilles1983.html">Gilles &amp; Péqueux (1983)</a><sup>†</sup>, 
 <a href="../references/Gould1841.html">Gould (1841)</a><sup>†</sup>, 
@@ -215,6 +213,7 @@
 <a href="../references/Powers1977.html">Powers (1977)</a><sup>†</sup>, 
 <a href="../references/Rathbun1918.2.html">Rathbun (1918)</a>, 
 <a href="../references/Rathbun1935.3.html">Rathbun (1935)</a><sup>†</sup>, 
+<a href="../references/Rawson1976.html">Rawson &amp; DeCoursey (1976)</a>, 
 <a href="../references/Salmon1967.html">Salmon (1967)</a><sup>†</sup>, 
 <a href="../references/Schwing1981.html">Schwing (1981)</a>, 
 <a href="../references/ShaganasBanu2012.html">Shaganas Banu (2007)</a><sup>†</sup>, 
@@ -265,7 +264,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

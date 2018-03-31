@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Red_Sea_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Red_Sea_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(27.750231, 53.641593);
-        var swcorner = new google.maps.LatLng(12.750231, 23.641593);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Gulf_of_Aqaba_-_Red_Sea.html">Gulf of Aqaba</a></li>
     <li><a href="Egypt.html">Egypt</a></li>
     <li><a href="Eritrea.html">Eritrea</a></li>
@@ -90,7 +86,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_albimana.html"><em class="species">Uca albimana</em></a></li>
       <li><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></li>
       <li><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></li>
@@ -100,7 +96,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Austruca_albimana.html"><em class="species">Austruca albimana</em></a></li>
       <li><a href="../names/Cancer_serratus.html"><em class="species">Cancer serratus</em></a></li>
       <li><a href="../names/Cranuca_inversa.html"><em class="species">Cranuca inversa</em></a></li>
@@ -143,11 +139,12 @@
       <li><a href="../names/Uca_tangeri.html"><em class="species">Uca tangeri</em></a></li>
       <li><a href="../names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a></li>
+      <li><a href="../names/Uca_vocans__hesperiae.html"><em class="species">Uca vocans  hesperiae</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_albimana.html"><em class="species">albimana</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_hesperiae.html"><em class="species">hesperiae</em></a></li>
@@ -167,6 +164,7 @@
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
 <a href="../references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="../references/Apel1999.html">Apel &amp; Türkay (1999)</a><sup>†</sup>, 
 <a href="../references/Balss1924.html">Balss (1924)</a>, 
 <a href="../references/Barnard1950.html">Barnard (1950)</a><sup>†</sup>, 
 <a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
@@ -184,6 +182,7 @@
 <a href="../references/Eydoux1835.html">Eydoux (1835)</a><sup>†</sup>, 
 <a href="../references/Fishelson1971.html">Fishelson (1971)</a>, 
 <a href="../references/Forsskal1775.html">Forsskål (1775)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/GuerinMeneville1830.html">Guérin-Méneville (1830)</a><sup>†</sup>, 
 <a href="../references/Heller1861.html">Heller (1861)</a>, 
 <a href="../references/Heller1862.2.html">Heller (1862)</a>, 
@@ -245,7 +244,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

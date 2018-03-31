@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Jalisco_-_Mexico_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Jalisco_-_Mexico_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(27.251741, -90.307419);
-        var swcorner = new google.maps.LatLng(12.251740999999999, -120.307419);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,19 +69,19 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Tenacatita_Bay_-_Jalisco_-_Mexico.html">Tenacatita Bay</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></li>
       <li><a href="../u_herradurensis.html"><em class="species">Uca herradurensis</em></a></li>
       <li><a href="../u_latimanus.html"><em class="species">Uca latimanus</em></a></li>
@@ -93,7 +89,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Uca_Celuca__crenulata__crenulata_crenulata.html"><em class="species">Uca (Celuca) [crenulata] crenulata crenulata</em></a></li>
       <li><a href="../names/Uca_Celuca_latimanus.html"><em class="species">Uca (Celuca) latimanus</em></a></li>
       <li><a href="../names/Uca_Minuca__galapagensis__galapagensis_herradurensis.html"><em class="species">Uca (Minuca) [galapagensis] galapagensis herradurensis</em></a></li>
@@ -107,7 +103,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_crenulata.html"><em class="species">crenulata</em></a></li>
       <li><a href="../names/sn_latimanus.html"><em class="species">latimanus</em></a></li>
       <li><a href="../names/sn_macrodactyla.html"><em class="species">macrodactyla</em></a></li>
@@ -139,7 +135,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

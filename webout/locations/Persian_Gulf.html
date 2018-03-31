@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Persian_Gulf_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Persian_Gulf_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(34.582272, 66.398815);
-        var swcorner = new google.maps.LatLng(19.582272, 36.398815);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -66,6 +62,8 @@
       </nav>
     </header>
     <dl>
+    <dt>Also Known As</dt>
+      <dd>Arabian Gulf</dd>
     <dt>Included Within</dt>
       <dd><a href="Middle_East.html">Middle East</a></dd>
     <dt>Approximate Coordinates</dt>
@@ -73,54 +71,85 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
+    <li><a href="Iraq.html">Iraq</a></li>
+    <li><a href="Kuwait.html">Kuwait</a></li>
     <li><a href="Persian_Gulf_coast_of_Saudi_Arabia.html">Persian Gulf coast of Saudi Arabia</a></li>
+    <li><a href="Persian_Gulf_coast_of_United_Arab_Emirates.html">Persian Gulf coast of United Arab Emirates</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
+      <li><a href="../u_albimana.html"><em class="species">Uca albimana</em></a></li>
+      <li><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></li>
+      <li><a href="../u_inversa.html"><em class="species">Uca inversa</em></a></li>
       <li><a href="../u_iranica.html"><em class="species">Uca iranica</em></a></li>
+      <li><a href="../u_sindensis.html"><em class="species">Uca sindensis</em></a></li>
+      <li><a href="../u_tetragonon.html"><em class="species">Uca tetragonon</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
+      <li><a href="../names/Austruca_sindensis.html"><em class="species">Austruca sindensis</em></a></li>
+      <li><a href="../names/Uca_Austruca_albimana.html"><em class="species">Uca (Austruca) albimana</em></a></li>
       <li><a href="../names/Uca_Austruca_annulipes.html"><em class="species">Uca (Austruca) annulipes</em></a></li>
+      <li><a href="../names/Uca_Austruca_iranica.html"><em class="species">Uca (Austruca) iranica</em></a></li>
+      <li><a href="../names/Uca_Austruca_sindensis.html"><em class="species">Uca (Austruca) sindensis</em></a></li>
       <li><a href="../names/Uca_Celuca_lactea_lactea.html"><em class="species">Uca (Celuca) lactea lactea</em></a></li>
       <li><a href="../names/Uca_Minuca_annulipes.html"><em class="species">Uca (Minuca) annulipes</em></a></li>
+      <li><a href="../names/Uca_Paraleptuca_sindensis.html"><em class="species">Uca (Paraleptuca) sindensis</em></a></li>
       <li><a href="../names/Uca_Thalassuca_tetragonon.html"><em class="species">Uca (Thalassuca) tetragonon</em></a></li>
       <li><a href="../names/Uca_annulipes.html"><em class="species">Uca annulipes</em></a></li>
+      <li><a href="../names/Uca_annulipes_albimana.html"><em class="species">Uca annulipes albimana</em></a></li>
+      <li><a href="../names/Uca_annulipes_iranica.html"><em class="species">Uca annulipes iranica</em></a></li>
+      <li><a href="../names/Uca_hesperiae.html"><em class="species">Uca hesperiae</em></a></li>
+      <li><a href="../names/Uca_inversa.html"><em class="species">Uca inversa</em></a></li>
+      <li><a href="../names/Uca_sindensis.html"><em class="species">Uca sindensis</em></a></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a></li>
+      <li><a href="../names/Uca_vocans_forma_excisa.html"><em class="species">Uca vocans forma excisa</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
+      <li><a href="../names/sn_albimana.html"><em class="species">albimana</em></a></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
+      <li><a href="../names/sn_excisa.html"><em class="species">excisa</em></a></li>
+      <li><a href="../names/sn_hesperiae.html"><em class="species">hesperiae</em></a></li>
+      <li><a href="../names/sn_inversa.html"><em class="species">inversa</em></a></li>
+      <li><a href="../names/sn_iranica.html"><em class="species">iranica</em></a></li>
+      <li><a href="../names/sn_sindensis.html"><em class="species">sindensis</em></a></li>
       <li><a href="../names/sn_tetragonon.html"><em class="species">tetragonon</em></a></li>
     </ul>
   </section>
     <section class="spsection">
       <h3 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h3>
       <p>
-<a href="../references/AlGhais1996.html">Al-Ghais &amp; Cooper (1996)</a><sup>†</sup>, 
+<a href="../references/AlGhais1996.html">Al-Ghais &amp; Cooper (1996)</a>, 
+<a href="../references/Apel1999.html">Apel &amp; Türkay (1999)</a>, 
 <a href="../references/Balss1924.html">Balss (1924)</a><sup>†</sup>, 
 <a href="../references/Barnard1950.html">Barnard (1950)</a><sup>†</sup>, 
+<a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
 <a href="../references/Boone1934.html">Boone (1934)</a><sup>†</sup>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
+<a href="../references/Hornby1997.html">Hornby (1997)</a>, 
 <a href="../references/Laurie1915.html">Laurie (1915)</a><sup>†</sup>, 
 <a href="../references/Lewinsohn1977.html">Lewinsohn (1977)</a><sup>†</sup>, 
 <a href="../references/Maccagno1928.html">Maccagno (1928)</a>, 
 <a href="../references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a><sup>†</sup>, 
 <a href="../references/Nobili1906.2.html">Nobili (1906)</a>, 
+<a href="../references/Saher2014.html">Saher <em>et al.</em> (2014)</a><sup>†</sup>, 
 <a href="../references/Serene1973.3.html">Serène (1973)</a><sup>†</sup>, 
+<a href="../references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a><sup>†</sup>, 
+<a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
 <a href="../references/Stella1953.html">Stella (1953)</a><sup>†</sup>      </p>
     </section>
     <p>Entries marked with <sup>†</sup> represent indirect references to location through citation.</p>
@@ -129,7 +158,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

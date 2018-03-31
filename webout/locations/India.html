@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_India_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_India_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(15.61885, 92.528185);
-        var swcorner = new google.maps.LatLng(0.6188500000000001, 62.52818499999999);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Bombay_State_-_India.html">Bombay State</a></li>
     <li><a href="Southeastern_India.html">Southeastern India</a></li>
     <li><a href="Andaman_and_Nicobar_Islands_-_India.html">Andaman and Nicobar Islands</a></li>
@@ -98,7 +94,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_annulipes.html"><em class="species">Uca annulipes</em></a></li>
       <li><a href="../u_bengali.html"><em class="species">Uca bengali</em></a></li>
       <li><a href="../u_hesperiae.html"><em class="species">Uca hesperiae</em></a></li>
@@ -113,7 +109,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_Uca_annulipes.html"><em class="species">Gelasimus (Uca) annulipes</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_Dussumieri.html"><em class="species">Gelasimus Dussumieri</em></a><sup>*</sup></li>
       <li><a href="../names/Gelasimus_Marionis.html"><em class="species">Gelasimus Marionis</em></a></li>
@@ -194,6 +190,7 @@
       <li><a href="../names/Uca_nitidus.html"><em class="species">Uca nitidus</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_paradussumieri.html"><em class="species">Uca paradussumieri</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_rectilatus.html"><em class="species">Uca rectilatus</em></a><sup>*</sup></li>
+      <li><a href="../names/Uca_rosea.html"><em class="species">Uca rosea</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_spp.html"><em class="species">Uca spp.</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_tetragona.html"><em class="species">Uca tetragona</em></a><sup>*</sup></li>
       <li><a href="../names/Uca_tetragonon.html"><em class="species">Uca tetragonon</em></a><sup>*</sup></li>
@@ -208,7 +205,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_acuta.html"><em class="species">acuta</em></a><sup>*</sup></li>
       <li><a href="../names/sn_annulipes.html"><em class="species">annulipes</em></a></li>
       <li><a href="../names/sn_bengali.html"><em class="species">bengali</em></a><sup>*</sup></li>
@@ -374,6 +371,7 @@
 <a href="../references/Pillay1971.1.html">Pillay &amp; Nair (1971)</a><sup>*</sup>, 
 <a href="../references/Pillary1973.1.html">Pillay &amp; Nair (1973)</a><sup>*</sup>, 
 <a href="../references/Pillary1973.2.html">Pillay &amp; Nair (1973)</a><sup>*</sup>, 
+<a href="../references/Prasadan2001.html">Prasadan &amp; Janardanan (2001)</a><sup>*</sup>, 
 <a href="../references/Przibram1905.html">Przibram (1905)</a>, 
 <a href="../references/Rajendran1972.html">Rajendran (1972)</a><sup>*</sup>, 
 <a href="../references/Rao1967.1.html">Rao <em>et al.</em> (1967)</a><sup>*</sup>, 
@@ -390,6 +388,7 @@
 <a href="../references/Ravichandran2001.html">Ravichandran <em>et al.</em> (2001)</a><sup>*</sup>, 
 <a href="../references/Rosenberg2000.html">Rosenberg (2000)</a><sup>*</sup>, 
 <a href="../references/Rosenberg2001.html">Rosenberg (2001)</a><sup>*</sup>, 
+<a href="../references/Saher2014.html">Saher <em>et al.</em> (2014)</a><sup>†</sup>, 
 <a href="../references/Sakai1934.html">Sakai (1934)</a><sup>*</sup>, 
 <a href="../references/Sakai1936.html">Sakai (1936)</a><sup>†</sup>, 
 <a href="../references/Sakai1936.2.html">Sakai (1936 [1935])</a><sup>*</sup>, 
@@ -406,12 +405,14 @@
 <a href="../references/Shen1940.1.html">Shen (1940)</a><sup>*</sup>, 
 <a href="../references/Shen1940.2.html">Shen (1940)</a><sup>*</sup>, 
 <a href="../references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a><sup>*</sup>, 
+<a href="../references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a><sup>*</sup>, 
 <a href="../references/Soundarapandian2008.html">Soundarapandian <em>et al.</em> (2008)</a><sup>*</sup>, 
 <a href="../references/Stebbing1910.html">Stebbing (1910)</a><sup>*</sup>, 
 <a href="../references/Stebbing1917.html">Stebbing (1917)</a><sup>†</sup>, 
 <a href="../references/Stebbing1921.html">Stebbing (1921)</a><sup>*</sup>, 
 <a href="../references/Stephensen1946.html">Stephensen (1946)</a><sup>†</sup>, 
 <a href="../references/Subramanian1984.html">Subramanian (1984)</a><sup>*</sup>, 
+<a href="../references/Talapatra2014.html">Talapatra <em>et al.</em> (2014)</a><sup>*</sup>, 
 <a href="../references/Terada1979.html">Terada (1979)</a><sup>*</sup>, 
 <a href="../references/Tesch1918.html">Tesch (1918)</a><sup>*</sup>, 
 <a href="../references/Thallwitz1891.html">Thallwitz (1891)</a><sup>*</sup>, 
@@ -436,7 +437,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

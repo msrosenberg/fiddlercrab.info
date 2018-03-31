@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Peru_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Peru_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(1.5, -68.0);
-        var swcorner = new google.maps.LatLng(-18.5, -82.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,13 +69,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Piura_Region_-_Peru.html">Piura Region</a></li>
     <li><a href="Tumbes_Region_-_Peru.html">Tumbes Region</a></li>
     <li><a href="Estero_La_Yarnina_-_Peru.html">Estero La Yarnina</a></li>
@@ -87,7 +83,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../u_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../u_dorotheae.html"><em class="species">Uca dorotheae</em></a></li>
@@ -111,7 +107,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_macrodactylus.html"><em class="species">Gelasimus macrodactylus</em></a></li>
       <li><a href="../names/Gelasimus_stenodactylus.html"><em class="species">Gelasimus stenodactylus</em></a></li>
       <li><a href="../names/Leptuca_dorotheae.html"><em class="species">Leptuca dorotheae</em></a></li>
@@ -157,6 +153,7 @@
       <li><a href="../names/Uca_batuenta.html"><em class="species">Uca batuenta</em></a></li>
       <li><a href="../names/Uca_beebei.html"><em class="species">Uca beebei</em></a></li>
       <li><a href="../names/Uca_dorotheae.html"><em class="species">Uca dorotheae</em></a></li>
+      <li><a href="../names/Uca_ecuadoriensis.html"><em class="species">Uca ecuadoriensis</em></a></li>
       <li><a href="../names/Uca_galapagensis.html"><em class="species">Uca galapagensis</em></a></li>
       <li><a href="../names/Uca_galapagensis_galapagensis.html"><em class="species">Uca galapagensis galapagensis</em></a></li>
       <li><a href="../names/Uca_helleri.html"><em class="species">Uca helleri</em></a></li>
@@ -185,10 +182,11 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_batuenta.html"><em class="species">batuenta</em></a></li>
       <li><a href="../names/sn_beebei.html"><em class="species">beebei</em></a></li>
       <li><a href="../names/sn_dorotheae.html"><em class="species">dorotheae</em></a></li>
+      <li><a href="../names/sn_ecuadoriensis.html"><em class="species">ecuadoriensis</em></a></li>
       <li><a href="../names/sn_galapagensis.html"><em class="species">galapagensis</em></a></li>
       <li><a href="../names/sn_helleri.html"><em class="species">helleri</em></a></li>
       <li><a href="../names/sn_heteropleura.html"><em class="species">heteropleura</em></a></li>
@@ -226,6 +224,7 @@
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
 <a href="../references/DominguezAlonso2008.html">Domínguez Alonso (2008)</a>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Garth1946.html">Garth (1946)</a><sup>†</sup>, 
 <a href="../references/Garth1948.html">Garth (1948)</a><sup>†</sup>, 
 <a href="../references/Garth1957.html">Garth (1957)</a><sup>†</sup>, 
@@ -265,7 +264,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Gulf_coast_of_Baja_California_Sur_-_Mexico_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Gulf_coast_of_Baja_California_Sur_-_Mexico_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(33.189392, -96.220237);
-        var swcorner = new google.maps.LatLng(18.189392, -126.220237);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -73,26 +69,25 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Bahia_Agua_Verde_-_Baja_California_Sur_-_Mexico.html">Bahía Agua Verde</a></li>
     <li><a href="Bahia_de_Concepcion_-_Baja_California_Sur_-_Mexico.html">Bahia de Concepcion</a></li>
     <li><a href="Ballandra_Bay_-_Baja_California_Sur_-_Mexico.html">Ballandra Bay</a></li>
     <li><a href="Isla_Espirito_Santo_-_Baja_California_Sur_-_Mexico.html">Isla Espirito Santo</a></li>
     <li><a href="Isla_San_Jose_-_Baja_California_Sur_-_Mexico.html">Isla San José (Mexico)</a></li>
     <li><a href="La_Paz_-_Baja_California_Sur_-_Mexico.html">La Paz (Mexico)</a></li>
-    <li><a href="San_Luis_Gonzales_Bay_-_Baja_California_Sur_-_Mexico.html">San Luis Gonzales Bay</a></li>
     <li><a href="Isla_Carmen_-_Baja_California_Sur_-_Mexico.html">Isla Carmen</a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_coloradensis.html"><em class="species">Uca coloradensis</em></a></li>
       <li><a href="../u_crenulata.html"><em class="species">Uca crenulata</em></a></li>
       <li><a href="../u_latimanus.html"><em class="species">Uca latimanus</em></a></li>
@@ -102,7 +97,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_gibbosus.html"><em class="species">Gelasimus gibbosus</em></a></li>
       <li><a href="../names/Gelasimus_latimanus.html"><em class="species">Gelasimus latimanus</em></a></li>
       <li><a href="../names/Leptuca_latimanus.html"><em class="species">Leptuca latimanus</em></a></li>
@@ -111,6 +106,7 @@
       <li><a href="../names/Uca_Celuca_musica_musica.html"><em class="species">Uca (Celuca) musica musica</em></a></li>
       <li><a href="../names/Uca_Leptuca_crenulata_coloradensis.html"><em class="species">Uca (Leptuca) crenulata coloradensis</em></a></li>
       <li><a href="../names/Uca_Leptuca_latimanus.html"><em class="species">Uca (Leptuca) latimanus</em></a></li>
+      <li><a href="../names/Uca_Leptuca_musica.html"><em class="species">Uca (Leptuca) musica</em></a></li>
       <li><a href="../names/Uca_Leptuca_musica_musica.html"><em class="species">Uca (Leptuca) musica musica</em></a></li>
       <li><a href="../names/Uca_Minuca_latimana.html"><em class="species">Uca (Minuca) latimana</em></a></li>
       <li><a href="../names/Uca_Uca_princeps_princeps.html"><em class="species">Uca (Uca) princeps princeps</em></a></li>
@@ -124,7 +120,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_crenulata.html"><em class="species">crenulata</em></a></li>
       <li><a href="../names/sn_gibbosa.html"><em class="species">gibbosa</em></a></li>
       <li><a href="../names/sn_latimanus.html"><em class="species">latimanus</em></a></li>
@@ -139,6 +135,7 @@
 <a href="../references/Barnwell1990.html">Barnwell &amp; Stillman (1990)</a>, 
 <a href="../references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a><sup>†</sup>, 
 <a href="../references/Bott1954.html">Bott (1954)</a><sup>†</sup>, 
+<a href="../references/CortesCarrasco2013.html">Cortes-Carrasco &amp; del Socorro Garcia-Madrigal (2013)</a><sup>†</sup>, 
 <a href="../references/Crane1941.html">Crane (1941)</a><sup>†</sup>, 
 <a href="../references/Crane1958.html">Crane (1958)</a><sup>†</sup>, 
 <a href="../references/Crane1975.html">Crane (1975)</a><sup>†</sup>, 
@@ -168,7 +165,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>

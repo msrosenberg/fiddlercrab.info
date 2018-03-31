@@ -1,0 +1,455 @@
+@page { 
+  size: letter portrait;
+  margin: 1in;
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.1pt solid #333;
+    content: "Fiddler Crabs";
+    font-size: 9pt;
+    color: #333;
+  }
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    margin: 10pt 0 30pt 0;
+    border-top: 0.1pt solid #333;
+	font-size: 9pt;
+	color: #333;
+  }
+}
+
+@page blank {
+	@bottom-left {content: normal;}
+	@bottom-right {content: normal;}	
+}
+
+@page tabular {
+	size: letter landscape;
+}
+
+@page cover {
+    margin: 0;
+	@bottom-left {content: normal;}
+	@bottom-right {content: normal;}	
+}
+
+.synonym_page,
+.name_page,
+.ref_page {
+	page: tabular
+}
+
+body {
+   font-size: 11pt;
+   font-family: "Lora", serif;
+}
+
+.nobookmark { prince-bookmark-level: none; }
+.bookmark1 { prince-bookmark-level: 1; }
+.bookmark2 { prince-bookmark-level: 2; }
+.bookmark3 { prince-bookmark-level: 3; }
+
+nav a::after {
+	content: " (p. " target-counter(attr(href), page) ")"
+}
+
+header {
+  page-break-before: always;
+
+  background-color: white;
+  color: black;
+  border: 0;
+  border-bottom: 3px black solid;
+  border-radius: 0;
+  margin-bottom: 0.125em;
+  }
+
+header h1 {
+  font-size: 16pt;
+
+  color: black;
+  padding: 0;
+  margin: 0;
+ }
+
+header h2 {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  padding: 0;
+  min-height: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+nav li {
+  float: left;
+  margin: 0;
+  padding: 0 0 5px 0.25in;
+ }
+
+nav a,
+nav a:visited {
+
+  border-radius: 0;
+  float: none;
+  display: inline;
+  color: blue;
+  background: white;
+  border: 0;
+  padding: 0;
+  margin: 0;
+ }
+
+ 
+h2 {
+  font-size: 12pt;
+ }
+
+h3 {
+	font-size: 11pt;
+}
+ 
+img {
+  max-height: 6in;
+ }
+ 
+#title_page,
+#copyright_page,
+#table_of_contents {
+	page: blank;
+	page-break-after: always;
+}
+
+#cover_page {
+	page: cover;
+	page-break-after: always;
+	background: black;
+	color: white;
+	overflow: auto;
+	height: 11in;
+	width: 8.5in;
+}
+
+.cover_img {
+	height: 1.375in;
+	width: 2.125in;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+#cover_img1,
+#cover_img5,
+#cover_img9,
+#cover_img13,
+#cover_img15,
+#cover_img17,
+#cover_img21,
+#cover_img25 { left: 0}
+
+#cover_img2,
+#cover_img6,
+#cover_img10,
+#cover_img18,
+#cover_img22,
+#cover_img26 { left: 2.125in}
+
+#cover_img3,
+#cover_img7,
+#cover_img11,
+#cover_img19,
+#cover_img23,
+#cover_img27 { left: 4.25in}
+
+#cover_img4,
+#cover_img8,
+#cover_img12,
+#cover_img14,
+#cover_img16,
+#cover_img20,
+#cover_img24,
+#cover_img28 { left: 6.375in}
+
+#cover_img1,
+#cover_img2,
+#cover_img3,
+#cover_img4 { top: 0 }
+
+#cover_img5,
+#cover_img6,
+#cover_img7,
+#cover_img8 { top: 1.375in }
+
+#cover_img9,
+#cover_img10,
+#cover_img11,
+#cover_img12 { top: 2.75in }
+
+#cover_img13,
+#cover_img14 { top: 4.125in }
+
+#cover_img15,
+#cover_img16 { top: 5.5in }
+
+#cover_img17,
+#cover_img18,
+#cover_img19,
+#cover_img20 { top: 6.875in }
+
+#cover_img21,
+#cover_img22,
+#cover_img23,
+#cover_img24 { top: 8.25in }
+ 
+#cover_img25,
+#cover_img26,
+#cover_img27,
+#cover_img28 { top: 9.625in }
+
+.cover_title {
+   text-align: center;
+   font-size: 40pt;
+   font-weight: bold;
+   font-variant: small-caps;
+   position: absolute;
+   top: 4.5in;
+   width: 4.25in;
+   left: 2.125in;
+   margin: 0;
+   padding: 0; 
+}
+
+.cover_author {
+   text-align: center;
+   font-size: 24pt;
+   font-weight: bold;
+   position: absolute;
+   top: 5.75in;
+   width: 4.25in;
+   left: 2.125in;
+   margin: 0;
+   padding: 0; 
+}
+
+#table_of_contents ul a::after {
+	content: leader('.') target-counter(attr(href), page);
+}
+ 
+#title_page {
+	background-image: url(../media/art/Pearse_Uca_pugilator1.png);
+	background-repeat: no-repeat;
+	background-size: 4in;
+	background-position: 0 3in;
+}
+ 
+.book_title {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	padding-top: 1.5in;
+	font-variant: small-caps;
+	}
+	
+.book_subtitle {
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: italic;
+	}
+
+.book_author {
+	text-align: center;
+	padding-top: 1.5in;
+	padding-bottom: 2.5in;
+	padding-left: 2in;
+	font-size: 16pt;
+}
+
+.title_image {
+		text-align: center;
+		width: 100%;
+		background-color: black;
+}
+
+.book_address {
+		text-align: center;
+}
+
+#copyright_page {
+	padding-top: 2in;
+}
+
+.copy_cite {
+	padding-top: 1in;
+}
+	
+.spsection {
+  box-decoration-break: slice;
+ }
+
+.photosection {
+  box-decoration-break: slice;
+ }
+ 
+.thumbnail {
+	height: 1.25in;
+}
+
+.sppic {
+	  float: left;
+	  text-align: left;
+}
+
+.lcpic {
+	text-align: center;
+	float: left;
+	max-width: 45%;
+}
+
+.morphimg  {
+   text-align: center;
+  } 
+
+.fullpic {
+	padding-top: 0.25in;
+}
+  
+.splist {
+   font-size: 1em;
+   column-count: 3;
+   column-gap: 0.25in;
+   padding: 0;
+   margin: 0;
+ }
+
+.pagebreak {
+    page-break-before: always;
+}
+
+.namecol {
+   font-size: 1em;
+}
+ 
+.namelist {
+   font-size: 10pt;
+   column-count: 2;
+   column-gap: 0.25in;	
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.spnamelist {
+   font-size: 10pt;
+   column-count: 4;
+   column-gap: 0.25in;	
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+ 
+.namelist li {
+  padding-left: 0.25in;
+  text-indent: -0.25in;
+ }
+ 
+.spnamelist li,
+.splist li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  padding-bottom: 0;
+ }
+
+.morphlist {
+   font-size: 10pt;
+   column-count: 2;
+   column-gap: 0.25in;	
+   list-style: none;
+   padding: 0.25in 0 0 0;
+   margin: 0;
+}
+
+.morphlist li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  padding-bottom: 0;	
+}
+
+.namelist a::after,
+.spnamelist a::after,
+.splist a::after,
+.morphlist a::after {
+	content: leader('.') target-counter(attr(href), page);
+}
+
+.tree_figure {
+   max-height: 8in;
+} 
+
+sup {
+	font-size: 0.75em;
+}
+
+.citetable {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.name_col,
+.citation_col { width: 1in }
+.common_col { }
+.where_col { width: 1.5in }
+.applied_col { width: 2in}
+.accepted_col { width: 1.5in }
+.source_col { width: 1in }
+.notes_col { max-width: 1.5in }
+
+.graph { text-align: center; }
+
+.bar_chart {}
+.line_chart {}
+.pie_chart { 
+   }
+
+.chron_div {
+	margin-bottom: 0.25in;
+	page-break-inside: avoid;
+}
+
+.chronchart_title_top {
+
+}
+
+.chronchart_title_left {
+	width: 2in;
+	font-size: 10pt;
+	padding-top: 0.5in;
+}
+
+.chronchart_left,
+.chronchart_top {
+	width: 6.5in;
+	height: 1.5in;	
+}
+   
+.chronchart_top {
+  text-align: center;
+}
+.chronchart_left {
+
+}
+
+
+@media print {
+
+}
+

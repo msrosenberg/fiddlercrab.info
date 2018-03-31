@@ -272,10 +272,12 @@ dd {
 	clear: both;
 }
  
+.locpagelist,
 .splist {
    font-size: 1.25em;
  }
  
+.locpagelist li,
 .splist li {
   list-style-type: none;
   padding-left: 20px;
@@ -557,6 +559,7 @@ a:visited.vidlink {
 		float: left;
 	}
 
+    .locpagelist,
 	.splist {
 	  -moz-column-count: 3; /* Firefox */
 	  -webkit-column-count: 3; /* Safari and Chrome */
@@ -571,6 +574,7 @@ a:visited.vidlink {
 	 }
 
  
+    .locpagelist li,
 	.splist li {
 	  padding-bottom: 0;
 	 }

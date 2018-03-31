@@ -41,12 +41,8 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
-        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Southern_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false, preserveViewport: true});
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/location_Southern_Florida_-_USA_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
-        var necorner = new google.maps.LatLng(31.0, -79.5);
-        var swcorner = new google.maps.LatLng(23.9, -88.0);
-        var bounds = new google.maps.LatLngBounds(swcorner, necorner);
-        point_map.fitBounds(bounds);
       }
     </script>
   </head>
@@ -75,13 +71,13 @@
     <div class="map_section">
            <div id="point_map_canvas" class="sp_map"></div>
         <div class="map_download">
-         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location.
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
         </div>
     </div>
     </dl>
   <section class="spsection">
     <h3 class="nobookmark">Includes Subareas</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
     <li><a href="Florida_Keys_-_Florida_-_USA.html">Florida Keys</a></li>
     <li><a href="Northern_Florida_Bay_-_Florida_-_USA.html">Northern Florida Bay</a></li>
     <li><a href="Miami-Dade_County_-_Florida_-_USA.html">Miami-Dade County</a></li>
@@ -89,7 +85,7 @@
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Currently Recognized Species</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../u_burgersi.html"><em class="species">Uca burgersi</em></a></li>
       <li><a href="../u_leptodactyla.html"><em class="species">Uca leptodactyla</em></a></li>
       <li><a href="../u_minax.html"><em class="species">Uca minax</em></a></li>
@@ -98,12 +94,11 @@
       <li><a href="../u_rapax.html"><em class="species">Uca rapax</em></a></li>
       <li><a href="../u_speciosa.html"><em class="species">Uca speciosa</em></a></li>
       <li><a href="../u_thayeri.html"><em class="species">Uca thayeri</em></a></li>
-      <li><a href="../u_virens.html"><em class="species">Uca virens</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/Gelasimus_vocator.html"><em class="species">Gelasimus vocator</em></a></li>
       <li><a href="../names/Uca_Celuca__crenulata__speciosa_speciosa.html"><em class="species">Uca (Celuca) [crenulata] speciosa speciosa</em></a></li>
       <li><a href="../names/Uca_Celuca_pugilator.html"><em class="species">Uca (Celuca) pugilator</em></a></li>
@@ -118,14 +113,13 @@
       <li><a href="../names/Uca_pugnax.html"><em class="species">Uca pugnax</em></a></li>
       <li><a href="../names/Uca_pugnax_rapax.html"><em class="species">Uca pugnax rapax</em></a></li>
       <li><a href="../names/Uca_rapax.html"><em class="species">Uca rapax</em></a></li>
-      <li><a href="../names/Uca_sp.html"><em class="species">Uca sp.</em></a></li>
       <li><a href="../names/Uca_speciosa.html"><em class="species">Uca speciosa</em></a></li>
       <li><a href="../names/Uca_thayeri.html"><em class="species">Uca thayeri</em></a></li>
     </ul>
   </section>
   <section class="spsection">
     <h3 class="nobookmark">Specific Names Which Have Been Used in This Area</h3>
-    <ul class="splist">
+    <ul class="locpagelist">
       <li><a href="../names/sn_burgersi.html"><em class="species">burgersi</em></a></li>
       <li><a href="../names/sn_leptodactyla.html"><em class="species">leptodactyla</em></a></li>
       <li><a href="../names/sn_longisignalis.html"><em class="species">longisignalis</em></a></li>
@@ -145,8 +139,6 @@
 <a href="../references/deAlmeida2008.html">Almeida &amp; Coelho (2008)</a><sup>†</sup>, 
 <a href="../references/Altevogt1959.1.html">Altevogt (1959)</a><sup>†</sup>, 
 <a href="../references/Altevogt1962.html">Altevogt (1962)</a><sup>†</sup>, 
-<a href="../references/Avent1974.html">Avent (1974)</a>, 
-<a href="../references/Avent1975.html">Avent (1975)</a><sup>†</sup>, 
 <a href="../references/Baldwin1976.3.html">Baldwin &amp; Kirschener (1976)</a><sup>†</sup>, 
 <a href="../references/Barnwell1968.1.html">Barnwell (1968)</a><sup>†</sup>, 
 <a href="../references/Chace1969.html">Chace &amp; Hobbs (1969)</a><sup>†</sup>, 
@@ -163,6 +155,7 @@
 <a href="../references/Evans1976.html">Evans <em>et al.</em> (1976)</a>, 
 <a href="../references/Feest1969.html">Feest (1969)</a><sup>†</sup>, 
 <a href="../references/Forward1977.html">Forward (1977)</a><sup>†</sup>, 
+<a href="../references/Fransen1997.html">Fransen <em>et al.</em> (1997)</a>, 
 <a href="../references/Greenaway1988.html">Greenaway (1988)</a><sup>†</sup>, 
 <a href="../references/Gunther1963.html">Günther (1963)</a><sup>†</sup>, 
 <a href="../references/Hannan1973.html">Hannan &amp; Evans (1973)</a>, 
@@ -236,7 +229,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.01.09.40 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>
