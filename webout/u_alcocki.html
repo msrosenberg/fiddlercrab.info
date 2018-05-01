@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uca alcocki / Alcock's Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="uca_style.css" />
+    <script defer src="js/fa-solid.min.js"></script>
+    <script defer src="js/fa-regular.min.js"></script>
+    <script defer src="js/fa-brands.min.js"></script>
+    <script defer src="js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_alcocki_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/u_alcocki_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="home">
+      <a href="index.html" class="home-title">Fiddler Crabs</a>
+      <a href="index.html" class="home-link"><span class="fa fa-home"></span> Home</a>
+      <a href="blog" class="home-link"><span class="fa fa-pencil-alt"></span> Blog</a>
+    </div>
+    <header id="u_alcocki.html">
+      <h1 class="species bookmark2">Uca alcocki</h1>
+      <h2 class="nobookmark">Alcock's Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span class="fa fa-info-circle"></span> Information</a></li>
+          <li><a href="#pics"><span class="fa fa-camera-alt"></span> Photos</a></li>
+          <li><a href="#video"><span class="fa fa-video"></span> Video</a></li>
+          <li><a href="#art"><span class="fa fa-paint-brush"></span> Art</a></li>
+          <li><a href="#references"><span class="fa fa-book"></span> References</a></li>
+          <li><a href="uca_species.html"><span class="fa fa-list"></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2 id="type" class="nobookmark">Type Description</h2>
+      <dl>
+        <dt><em class="species">Tubuca alcocki</em></dt>
+        <dd>Shih, H.-T., B.K.K. Chan, and P.K.L. Ng (2018) <em>Tubuca alcocki, </em> a new pseudocryptic species of fiddler crab from the Indian Ocean, sister to the southeastern African <em>T. urvillei</em> (H. Milne Edwards, 1852) (Crustacea, Decapoda, Brachyura, Ocypodidae). <em>ZooKeys</em> 747:41&ndash;62.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2 id="info" class="nobookmark"><span class="fa fa-info-circle"></span> Information</h2>
+      <dl>
+       <dt>Subgenus</dt>
+         <dd><a href="uca_systematics.html#Tubuca"><em class="species">Tubuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Alcock's Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_alcocki.html">Chronology</a>)</dt>
+         <dd><em class="species"><a href="names/Tubuca_alcocki.html"><em class="species">Tubuca alcocki</em></a></em></dd>
+       <dt class="pagebreak">Geographic Range</dt>
+         <dd>Indo-West Pacific: Northern Indian Ocean (Red Sea through western Thailand)</dd>
+         <dd>
+           <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
+           <div class="map_download">
+             <a href="maps/u_alcocki_range_map.png"><span class="fa fa-download"></span> Download PNG line map of ranges.</a> 
+             <a href="maps/u_alcocki_point_map.png"><span class="fa fa-download"></span> Download PNG line map of point locations.</a>
+           </div>
+         </dd>
+         <dd class="map_data">
+           Range map data derived from: <a href="references/Shih2018.1.html">Shih <em>et al.</em> (2018)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="http://en.wikipedia.org/wiki/Uca_alcocki">Wikipedia</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2 id="pics" class="nobookmark"><span class="fa fa-camera-alt"></span> Photos</h2>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki01.html"><img class="thumbnail" src="photos/U_alcocki01tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki02.html"><img class="thumbnail" src="photos/U_alcocki02tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki03.html"><img class="thumbnail" src="photos/U_alcocki03tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki04.html"><img class="thumbnail" src="photos/U_alcocki04tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki05.html"><img class="thumbnail" src="photos/U_alcocki05tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki06.html"><img class="thumbnail" src="photos/U_alcocki06tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki07.html"><img class="thumbnail" src="photos/U_alcocki07tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki08.html"><img class="thumbnail" src="photos/U_alcocki08tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki09.html"><img class="thumbnail" src="photos/U_alcocki09tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki10.html"><img class="thumbnail" src="photos/U_alcocki10tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="photos/photo_u_alcocki11.html"><img class="thumbnail" src="photos/U_alcocki11tn.jpg" alt="Uca alcocki thumbnail" title="Uca alcocki" /></a>
+      </figure>
+    </section>
+
+    <section class="spsection">
+      <h2 id="video" class="nobookmark"><span class="fa fa-video"></span> Video</h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2 id="art" class="nobookmark"><span class="fa fa-paint-brush"></span> Art</h2>
+      <figure class="sppic">
+        <a href="art/Crane_Uca_urvillei5.html"><img class="thumbnail" src="art/Crane_Uca_urvillei5_tn.png" alt="Uca urvillei thumbnail" title="Uca urvillei" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="art/Crane_Uca_urvillei8.html"><img class="thumbnail" src="art/Crane_Uca_urvillei8_tn.png" alt="Uca urvillei thumbnail" title="Uca urvillei" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="art/Shih_Tubuca_alcocki1.html"><img class="thumbnail" src="art/Shih_Tubuca_alcocki1_tn.png" alt="Tubuca alcocki thumbnail" title="Tubuca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="art/Shih_Tubuca_alcocki2.html"><img class="thumbnail" src="art/Shih_Tubuca_alcocki2_tn.png" alt="Tubuca alcocki thumbnail" title="Tubuca alcocki" /></a>
+      </figure>
+      <figure class="sppic">
+        <a href="art/Shih_Tubuca_alcocki3.html"><img class="thumbnail" src="art/Shih_Tubuca_alcocki3_tn.png" alt="Tubuca alcocki thumbnail" title="Tubuca alcocki" /></a>
+      </figure>
+    </section>
+
+    <section class="spsection">
+      <h2 id="references" class="nobookmark"><span class="fa fa-book"></span> References</h2>
+      <p>
+<a href="references/Akash2017.html">Akash &amp; Chowdhury (2017)</a>, 
+<a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/Altevogt1978.html">Altevogt (1978)</a>, 
+<a href="references/Altevogt1979.html">Altevogt &amp; Davis (1979)</a>, 
+<a href="references/Chandy1973.html">Chandy (1973)</a>, 
+<a href="references/Chhapgar1957.html">Chhapgar (1957)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Deb1999.html">Deb (1999)</a>, 
+<a href="references/DevRoy2001.html">Dev Roy &amp; Bhadra (2001)</a>, 
+<a href="references/Frith1977.2.html">Frith &amp; Frith (1977)</a>, 
+<a href="references/Frith1977.3.html">Frith &amp; Frith (1977)</a>, 
+<a href="references/Frith1978.html">Frith &amp; Frith (1978)</a>, 
+<a href="references/Frith1976.html">Frith <em>et al.</em> (1976)</a>, 
+<a href="references/Ghory2006.html">Ghory &amp; Siddiqui (2006)</a>, 
+<a href="references/Hogarth1986.html">Hogarth (1986)</a>, 
+<a href="references/IUCNBangladesh2015.html">IUCN Bangladesh (2015)</a>, 
+<a href="references/Khan1995.html">Khan (1995)</a>, 
+<a href="references/Khan2003.html">Khan (2003)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Kon2007.html">Kon <em>et al.</em> (2007)</a>, 
+<a href="references/Lundoer1974.html">Lundoer (1974)</a>, 
+<a href="references/Mandal1989.html">Mandal &amp; Nandi (1989)</a>, 
+<a href="references/MilneEdwards1852.html">Milne Edwards (1852)</a>, 
+<a href="references/Mitra2006.html">Mitra &amp; Misra (2006)</a>, 
+<a href="references/Mitra2010.html">Mitra <em>et al.</em> (2010)</a>, 
+<a href="references/Naiyanetr2007.html">Naiyanetr (2007)</a>, 
+<a href="references/Ng2002.html">Ng &amp; Davie (2002)</a>, 
+<a href="references/Odhano2015.html">Odhano <em>et al.</em> (2015)</a>, 
+<a href="references/Ramakrishna2007.html">Ramakrishna &amp; Alfred (2007)</a>, 
+<a href="references/Ramakrishna2003.html">Ramakrishna <em>et al.</em> (2003)</a>, 
+<a href="references/Saher2014.html">Saher <em>et al.</em> (2014)</a>, 
+<a href="references/Serene1973.3.html">Serène (1973)</a>, 
+<a href="references/Shih2018.1.html">Shih <em>et al.</em> (2018)</a>, 
+<a href="references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="references/Trivedi2015.html">Trivedi <em>et al.</em> (2015)</a>, 
+<a href="references/Tue2012.html">Tue <em>et al.</em> (2012)</a>, 
+<a href="references/Vijayan2004.html">Vijayan (2004)</a>, 
+<a href="references/Yeragi1988.html">Yeragi (1988)</a>      </p>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2018.05.01.12.14 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

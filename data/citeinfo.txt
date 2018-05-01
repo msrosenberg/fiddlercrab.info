@@ -285,6 +285,10 @@ Latreille1818	1	Gelasima Maracoani	.	text p. 1; plate 275: figure 7	specimen	?	1
 Latreille1818	2	Gelasima Maracoani	.	text p. 3; plate 296: figure 1	specimen	?	1	maracoani	<	.	.
 Latreille1818	3.1	Cancer uca	.	text p. 1; plate 269: figure 4	citation	Linnaeus1766	2	=	=	.	The figure is an uncited reproduction from Seba (1758).
 Latreille1818	3.2	Cancer uca	.	text p. 1; plate 269: figure 4	citation	Latreille ???	.	=	=	.	.
+Latreille1820	1	Gelasimus	Gélasime	text p. 286-287	n/a	.	.	>Uca	<	.	.
+Latreille1820	2	Gelasima Maracoani	Gelasime maracoani	text p. 287	citation	Herbst1782	2.1	=	=	.	.
+Latreille1820	3	Gelasima pugillator	Gélasime combattante	text p. 287	citation	Bosc1802	2	=	=	.	.
+Latreille1820	4	Gelasima vocans	Gélasime appelante	text p. 287	citation	DeGeer1778	1	=	=	.	.
 Freminville1822	1	Gonoplax speciosus	.	text p. 15; plate 11	location	Senegal	.	tangeri	Monod1833	.	An (apparently) unpublished manuscript in the library of the National Musuem of Natural History in Paris.
 Desmarest1822	1.1	Gelasima nitida	Gélasime luisante	text p. 106-107; plate 8: figures 7-8	citation	Desmarest1817	1	=	=	.	Partial fossil, now missing, and impossible to place to a specific species
 Desmarest1822	1.2	Gelasima nitida	Gélasime luisante	text p. 106-107; plate 8: figures 7-8	citation	Latreille1817.2	1	=	=	.	.
@@ -628,7 +632,7 @@ MilneEdwards1852	9.6	Gelasimus tetragonon	.	text p. 147-148; plate 3: figure 9	c
 MilneEdwards1852	9.7	Gelasimus tetragonon	.	text p. 147-148; plate 3: figure 9	citation	GuerinMeneville1830	1	=	=	.	.
 MilneEdwards1852	10	Gelasimus forceps	.	text p. 148; plate 3: figure 11	citation	MilneEdwards1837.2	4	=	=	.	.
 MilneEdwards1852	11	Gelasimus Urvillei	.	text p. 148; plate 3: figure 10	specimen	Solomon Islands <!>	.	urvillei	<	type description; the location is completely outside the accepted range of the species, but Crane (1975) claims this is clearly just a reporting error in where the specimen was collected.	.
-MilneEdwards1852	12.1	Gelasimus Dussumieri	.	text p. 148; plate 4: figure 12	specimen	Southwestern India	.	paradussumieri	>MSR:geography	.	.
+MilneEdwards1852	12.1	Gelasimus Dussumieri	.	text p. 148; plate 4: figure 12	specimen	Southwestern India	.	alcocki	Shih2018.1	.	.
 MilneEdwards1852	12.2	Gelasimus Dussumieri	.	text p. 148; plate 4: figure 12	specimen	Semarang, Central Java, Java, Indonesia	.	dussumieri	<	.	.
 MilneEdwards1852	13.1	Gelasimus palustris	.	text p. 145, 148-149; plate 4: figure 13	citation	Sloane1725	1.1	=	=	.	.
 MilneEdwards1852	13.2	Gelasimus palustris	.	text p. 145, 148-149; plate 4: figure 13	citation	DeGeer1778	1	=	=	.	.
@@ -1465,7 +1469,7 @@ Kingsley1880	18.2	Gelasimus Urvillei	.	text p. 145; plate 9: figure 15	location	
 Kingsley1880	19.1	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	citation	MilneEdwards1852	12	=	=	.	.
 Kingsley1880	19.2	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	citation	Hilgendorf1869	3	=	=	.	.
 Kingsley1880	19.3	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	citation	MilneEdwards1873	5	=	=	.	.
-Kingsley1880	19.4	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	location	Southwestern India	.	paradussumieri	>MSR:geography	.	.
+Kingsley1880	19.4	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	location	Southwestern India	.	alcocki	Shih2018.1	.	.
 Kingsley1880	19.5	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	location	New Caledonia	.	dussumieri	<	.	.
 Kingsley1880	19.6	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	location	Tanzania	.	urvillei	>MSR:geography	.	.
 Kingsley1880	19.7	Gelasimus dussumieri	.	text p. 145; plate 10: figure 16	location	Semarang, Central Java, Java, Indonesia	.	dussumieri	<	.	.
@@ -2706,8 +2710,8 @@ Alcock1900	10.08	Gelasimus acutus	.	text p. 353, 360-362	citation	Ortmann1894.1	
 Alcock1900	10.09	Gelasimus acutus	.	text p. 353, 360-362	citation	Doflein1899	9	=	=	.	.
 Alcock1900	10.1	Gelasimus acutus	.	text p. 353, 360-362	specimen	Sundarbans, Bangladesh	.	rosea	Bairagi1988	.	.
 Alcock1900	10.11	Gelasimus acutus	.	text p. 353, 360-362	specimen	Mergui Archipelago, Myanmar	.	rosea	Bairagi1988	.	.
-Alcock1900	10.12	Gelasimus acutus	.	text p. 353, 360-362	specimen	Karachi, Sindh, Pakistan	.	urvillei	Crane1975	.	.
-Alcock1900	10.13	Gelasimus acutus	.	text p. 353, 360-362	specimen	Andaman Islands	.	.	.	.	.
+Alcock1900	10.12	Gelasimus acutus	.	text p. 353, 360-362	specimen	Karachi, Sindh, Pakistan	.	alcocki	Shih2018.1	.	.
+Alcock1900	10.13	Gelasimus acutus	.	text p. 353, 360-362	specimen	Andaman Islands	.	alcocki	Shih2018.1	.	.
 Alcock1900	11.01	Gelasimus Dussumieri	.	text p. 353, 361-363	citation	MilneEdwards1852	12	=	=	.	.
 Alcock1900	11.02	Gelasimus Dussumieri	.	text p. 353, 361-363	citation	MilneEdwards1868	2	=	=	.	.
 Alcock1900	11.03	Gelasimus Dussumieri	.	text p. 353, 361-363	citation	MilneEdwards1873	5	=	=	.	.
@@ -2735,9 +2739,9 @@ Alcock1900	12.2	Gelasimus Urvillei	.	text p. 353, 363-364	citation	Kingsley1880	
 Alcock1900	12.3	Gelasimus Urvillei	.	text p. 353, 363-364	citation	deMan1891	8	=	=	.	.
 Alcock1900	12.4	Gelasimus Urvillei	.	text p. 353, 363-364	citation	Ortmann1894.1	23	=	=	.	.
 Alcock1900	12.5	Gelasimus Urvillei	.	text p. 353, 363-364	citation	Hilgendorf1869	3.2	=	=	.	.
-Alcock1900	12.6	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Karachi, Sindh, Pakistan	.	urvillei	<	.	.
-Alcock1900	12.7	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Chennai, Tamil Nadu, India	.	.	.	.	.
-Alcock1900	12.8	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Nicobar Islands	.	.	.	.	.
+Alcock1900	12.6	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Karachi, Sindh, Pakistan	.	alcocki	Shih2018.1	.	.
+Alcock1900	12.7	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Chennai, Tamil Nadu, India	.	alcocki	Shih2018.1	.	.
+Alcock1900	12.8	Gelasimus Urvillei	.	text p. 353, 363-364	specimen	Nicobar Islands	.	alcocki	Shih2018.1	.	.
 Borradaile1900	1.1	Uca cultrimana	.	text p. 569-570, 595	citation	White1847.2	3	=	=	.	.
 Borradaile1900	1.2	Uca cultrimana	.	text p. 569-570, 595	citation	Kingsley1880	8	=	=	.	.
 Borradaile1900	1.3	Uca cultrimana	.	text p. 569-570, 595	citation	MilneEdwards1852	4	=	=	.	.
@@ -3117,7 +3121,7 @@ Stebbing1905	1.2	Uca arcuata	.	text p. 40	citation	MilneEdwards1837.2	3	=	=	.	.
 Stebbing1905	1.3	Uca arcuata	.	text p. 40	citation	Krauss1843	1	=	=	.	.
 Stebbing1905	1.4	Uca arcuata	.	text p. 40	citation	Haswell1882	2	=	=	.	.
 Stebbing1905	1.5	Uca arcuata	.	text p. 40	citation	Ortmann1894.1	6	=	=	.	.
-Stebbing1905	1.6	Uca arcuata	.	text p. 40	location	South Africa	.	urvillei	>MSR:geography	.	.
+Stebbing1905	1.6	Uca arcuata	.	text p. 40	location	South Africa	.	urvillei	Shih2018.1	.	.
 Zeleny1905.1	1	Gelasimus pugilator	.	text p. 152-155	location	Long Island, New York, USA	.	pugilator	<	.	.
 Zeleny1905.2	1.1	Gelasimus pugilator	.	text p. 5, 81-85, 88, 96, 98-100	n/a	.	.	pugilator	<	.	.
 Zeleny1905.2	1.2	Gelasimus pugilator	.	text p. 5, 81-85, 88, 96, 98-100	citation	Zeleny1905.1	1	=	=	.	.
@@ -3344,7 +3348,7 @@ Stebbing1910	1.1	Uca arcuata	.	text p. 327	citation	deHaan1835	6	=	=	.	.
 Stebbing1910	1.2	Uca arcuata	.	text p. 327	citation	Krauss1843	1	=	=	.	.
 Stebbing1910	1.3	Uca arcuata	.	text p. 327	citation	deMan1891	4	=	=	.	.
 Stebbing1910	1.4	Uca arcuata	.	text p. 327	citation	Stebbing1905	1	=	=	.	.
-Stebbing1910	1.5	Uca arcuata	.	text p. 327	location	South Africa	.	urvillei	>MSR:geography	.	.
+Stebbing1910	1.5	Uca arcuata	.	text p. 327	location	South Africa	.	urvillei	Shih2018.1	.	.
 Stebbing1910	2.1	Uca lactea	.	text p. 327	citation	deHaan1835	7	=	=	.	.
 Stebbing1910	2.2	Uca lactea	.	text p. 327	citation	Krauss1843	2	=	=	.	.
 Stebbing1910	2.3	Uca lactea	.	text p. 327	citation	Ortmann1897	22	=	=	.	.
@@ -3702,7 +3706,7 @@ Roux1917	3	Uca signatus var. angustifrons	.	text p. 614	location	Merauke, Papua,
 Stebbing1917	1.1	Uca arcuatus	.	text p. 15-16	citation	deHaan1835	6	=	=	.	.
 Stebbing1917	1.2	Uca arcuatus	.	text p. 15-16	citation	MilneEdwards1852	8	=	=	.	.
 Stebbing1917	1.3	Uca arcuatus	.	text p. 15-16	citation	Stebbing1905	1	=	=	.	.
-Stebbing1917	1.4	Uca arcuatus	.	text p. 15-16	location	South Africa	.	urvillei	>MSR:geography	.	.
+Stebbing1917	1.4	Uca arcuatus	.	text p. 15-16	location	South Africa	.	urvillei	Shih2018.1	.	.
 Stebbing1917	2.1	Uca lacteus	.	text p. 16; plate 4	location	South Africa	.	occidentalis	>MSR:geography	.	.
 Stebbing1917	2.2	Uca lacteus	.	text p. 16; plate 4	citation	deHaan1835	7	=	=	.	.
 Stebbing1917	2.3	Uca lacteus	.	text p. 16; plate 4	citation	Stebbing1910	2	=	=	.	.
@@ -4161,6 +4165,8 @@ Luederwaldt1919.2	3	Uca vocator	.	text p. 435	location	Santos, São Paulo, Brazi
 Rathbun1919	1	Uca	fiddler crabs	text p. 162, 180	n/a	.	.	>Uca	.	.	.
 Nutting1919	1	Uca leptostyla	.	text p. 182	location	Antigua, Antigua and Barbuda	.	burgersi	>MSR	A strange typo mixing up multiple names. The author refers to figures from Rathbun (1918) and was clearly not attempting to create a new name. While geographically, it could be a reference to <em class="species">Uca leptodactyla,</em> Rathbun (1921) later identifies a few specimens from the same expedition as <em class="species">U. mordax,</em> although we now know that the correct identification for Rathbun's specimens should be <em class="species">U. burgersi.</em>	.
 Morgan1919	1	.	fiddler crab	text p. 89, 91	n/a	.	0	>Uca	<	.	.
+Kemp1919	1	Gelasimus	.	text p. 307	n/a	.	.	>Uca	>MSR:synonymy	.	.
+Kemp1919	2	Gelasimus acutus	.	text p. 308	location	India	.	?	>MSR	multiple possible species	.
 Gravier1920	1.1	Gelasimus tetragonon	.	text p. 472	citation	Alcock1900	7	=	=	.	.
 Gravier1920	1.2	Gelasimus tetragonon	.	text p. 472	specimen	Madagascar	.	tetragonon	<	.	.
 Hyman1920.1	1	Uca pugilator	sand fiddler	text p. 443-459	location	Atlantic coast of United States	.	pugilator	<	.	.
@@ -4368,6 +4374,7 @@ Rathbun1924.4	2.5	Uca crenulata	.	text p. 377	specimen	Ballandra Bay, Baja Calif
 Rathbun1924.4	3.1	Uca musica	.	text p. 377	citation	Rathbun1915	3	=	=	.	.
 Rathbun1924.4	3.2	Uca musica	.	text p. 377	specimen	Bahía de Tepoca, Sonora, Mexico	.	musica	<	.	.
 Kinghorn1924	1	Uca	fiddler crab	text p. 31-32	location	Trial Bay, New South Wales, Australia	.	>Uca	<	.	.
+Moses1924	1	Gelasimus annulipes	Othaikalnandu;Dhoby crab	text p. 171	location	Southern India	.	annulipes	<	.	.
 Barnard1925	1	Uca vocans	.	text p. 120	location	Maputo Bay, Mozambique	.	hesperiae	>MSR:geography	.	.
 Fish1925	1	Uca pugnax	.	text p. 159-160	location	Massachusetts, USA	.	pugnax	<	.	.
 Fish1925	2	Uca pugilator	.	text p. 159-160	location	Massachusetts, USA	.	pugilator	<	.	.
@@ -4934,6 +4941,7 @@ Takahasi1934.2	3	Uca marionis	.	text p. 73-74	location	Tamsui, New Taipei City, 
 Takahasi1934.2	4	Uca lactea	.	text p. 73-74	location	Tamsui, New Taipei City, Taiwan	.	lactea	<	Could also be <em class="species">Uca perplexa</em> or <em class="species">U. splendida</em>	.
 Seurat1934	1	Gelasimus (Uca) tetrazonon	.	text p. 59	location	Mangareva, Gambier Islands, French Polynesia	.	tetragonon	<	.	.
 Seurat1934	2	Gelasimus (Uca) chlorophthalmus	.	text p. 59	location	Tahiti, Windward Islands, Society Islands, French Polynesia	.	crassipes	Poupin1996	.	.
+Sewell1934	1	Gelasimus annulipes	.	text p. 54	location	Hooghly River, West Bengal, India	.	annulipes	<	.	.
 Carlson1935	1	Uca pugilator	fiddler crab	text p. 549-551	location	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugilator	<	.	.
 Carlson1935	2.1	Uca pugnax	.	text p. 549, 551	citation	Megusar1912	1	=	=	.	.
 Carlson1935	2.2	Uca pugnax	.	text p. 549, 551	location	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	<	.	.
@@ -5500,6 +5508,7 @@ Sakai1939	10.2	Gelasimus latreillei	.	text p. 618, 727	citation	MilneEdwards1873
 Sakai1939	10.3	Gelasimus latreillei	.	text p. 618, 727	citation	Ortmann1894.1	13	=	=	.	.
 Sakai1939	10.4	Gelasimus latreillei	.	text p. 618, 727	citation	Gordon1934	2	=	=	.	.
 Sakai1939	10.5	Gelasimus latreillei	.	text p. 618, 727	citation	Balss1922.1	2	=	=	.	.
+Baylis1939	1	Uca manii	.	text p. 176, 265	location	Canning, South 24 Parganas, West Bengal, India	.	rosea	>MSR	.	.
 Abramowitz1940	1	Uca pugilator	.	text p. 179-188	location	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugilator	<	.	.
 Abramowitz1940.2	1.1	Uca pugilator	.	text p. 502, 504-505	location	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	Webb1977.1	.	.
 Abramowitz1940.2	1.2	Uca pugilator	.	text p. 502, 504-505	citation	Abramowitz1938	1	=	=	.	.
@@ -6646,7 +6655,7 @@ Chhapgar1957	4.4	Gelasimus dussumieri	.	text p. 510-511; plate 14	citation	Tweed
 Chhapgar1957	4.5	Gelasimus dussumieri	.	text p. 510-511; plate 14	citation	Haswell1882	3	=	=	.	.
 Chhapgar1957	4.6	Gelasimus dussumieri	.	text p. 510-511; plate 14	citation	Alcock1900	11	=	=	.	.
 Chhapgar1957	4.7	Gelasimus dussumieri	.	text p. 510-511; plate 14	citation	Shen1940.2	6	=	=	.	.
-Chhapgar1957	4.8	Gelasimus dussumieri	.	text p. 510-511; plate 14	location	"Bombay State", India	.	urvillei	>MSR:geography	.	.
+Chhapgar1957	4.8	Gelasimus dussumieri	.	text p. 510-511; plate 14	location	"Bombay State", India	.	alcocki	>MSR:geography	.	.
 Chhapgar1957	5	Gelasimus urvillei	.	text p. 511	n/a	.	.	urvillei	<	.	.
 Altevogt1957.1	1	Uca marionis nitidus	.	text p. 2, 4-5, 51-52, 56, 103; figure 2	location	Mumbai, Maharashtra, India	.	hesperiae	>MSR:synonymy/geography	.	.
 Altevogt1957.1	2.1	Uca annulipes	.	text p. 2-3, 5, 7, 9-12, 15, 19, 23, 25-27, 38-45, 48, 50-51, 54-62, 67-68, 70-76, 78, 84-86, 88-93, 95, 97-99, 101-107; figures 4, 6, 8-11, 20, 30, 34-36, 43, 59	location	Mumbai, Maharashtra, India	.	annulipes	<	.	.
@@ -10180,6 +10189,10 @@ Olivier1972	1.1	Uca uruguayensis	.	text p. 243, 250-251, 254-256, 259-260	locati
 Olivier1972	1.2	Uca uruguayensis	.	text p. 243, 250-251, 254-256, 259-260	citation	Boschi1964	.	=	=	.	.
 Goldsmith1972	1	Uca pugnax	.	text p. 696	n/a	.	.	pugnax	<	.	.
 Goldsmith1972	2	Uca pugilator	.	text p. 696	n/a	.	.	pugilator	<	.	.
+Neethling1972	1	Uca chlorophthalmus	.	text p. 2-3	location	Kariega River, Eastern Cape, South Africa	.	chlorophthalmus	<	.	.
+Ummerkutty1972	1.1	Uca annulipes	.	text p. 195	specimen	Malpe, Karnataka, India	.	occidentalis	>MSR:geography	.	.
+Ummerkutty1972	1.2	Uca annulipes	.	text p. 195	citation	MilneEdwards1852	17	=	=	.	.
+Vishnoi1972	1	Gelasimus annulippes	.	text p. 46-47, 49	location	India	.	annulipes	<	.	.
 Bott1973.1	1.1	Uca tangeri	.	text p. 312-314	citation	Herbst1782	2.1	=	=	.	.
 Bott1973.1	1.2	Uca tangeri	.	text p. 312-314	citation	Lamarck1801	1	=	=	.	.
 Bott1973.1	1.3	Uca tangeri	.	text p. 312-314	citation	Leach1814	2	=	=	.	.
@@ -10641,7 +10654,7 @@ Brusca1973	6	Uca mordax	.	text p. 265	location	Gulf of California, Mexico	.	ecua
 Brusca1973	7	Uca monilifera	.	text p. 266; figure 7.61	location	Gulf of California, Mexico	.	monilifera	<	.	.
 Brusca1973	8	Uca princeps	.	text p. 266; figure 7.62	location	Gulf of California, Mexico	.	princeps	<	.	.
 Brusca1973	9	Uca pugnax	.	text p. 264	citation	Brown1953.1	1	=	=	.	.
-Chandy1973	1	Gelasimus dussumieri	.	text p. 402	location	Gulf of Kutch, Gujarat, India	.	urvillei	>MSR:geography	.	.
+Chandy1973	1	Gelasimus dussumieri	.	text p. 402	location	Gulf of Kutch, Gujarat, India	.	alcocki	Shih2018.1	.	.
 Dame1973	1	Uca pugilator	sand fiddler crab	text p. 1292	location	South Carolina, USA	.	pugilator	<	.	.
 Heit1973	1	Uca pugilator	.	text p. 1275	n/a	.	.	pugilator	<	No location given for specimens.	.
 Herman1973	1	Uca	.	text p. 1276	citation	Brown1941	0	>Uca	<	.	.
@@ -10797,11 +10810,11 @@ Krebs1974	1.2	Uca pugnax	.	text p. 140-142	citation	Nimmo1971	2	=	=	.	.
 Krebs1974	1.3	Uca pugnax	.	text p. 140-142	location	West Falmouth, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	<	.	.
 Krebs1974	2	Uca minax	.	text p. 142	citation	Sanborn1973	1	=	=	.	.
 Lundoer1974	1	Uca coarctata	.	text p. 8	specimen	Phuket Island, Thailand	.	forcipata	Frith1977.3	.	.
-Lundoer1974	2	Uca angustifrons	.	text p. 8	specimen	Phuket Island, Thailand	.	urvillei	Frith1977.3	.	.
+Lundoer1974	2	Uca angustifrons	.	text p. 8	specimen	Phuket Island, Thailand	.	alcocki	Shih2018.1	.	.
 Lundoer1974	3	Uca tetragonon	.	text p. 8	specimen	Phuket Island, Thailand	.	tetragonon	<	.	.
 Lundoer1974	4	Uca vocans	.	text p. 8	specimen	Phuket Island, Thailand	.	vocans	<	Could also be <em class="species">Uca hesperiae.</em>	.
 Lundoer1974	5	Uca mani	.	text p. 8	specimen	Phuket Island, Thailand	.	forcipata	Frith1977.3	.	.
-Lundoer1974	6	Uca dussumieri	.	text p. 8	specimen	Phuket Island, Thailand	.	urvillei	>MSR:geography	Could also be <em class="species">Uca paradussumieri.</em>	.
+Lundoer1974	6	Uca dussumieri	.	text p. 8	specimen	Phuket Island, Thailand	.	alcocki	>MSR:geography	Could also be <em class="species">Uca paradussumieri.</em>	.
 Lundoer1974	7	Uca rosea	.	text p. 8	specimen	Phuket Island, Thailand	.	forcipata	Frith1977.3	.	.
 Lundoer1974	8	Uca annulipes	.	text p. 8	specimen	Phuket Island, Thailand	.	annulipes	<	.	.
 Lundoer1974	9	Uca triangularis	.	text p. 8	specimen	Phuket Island, Thailand	.	bengali	>MSR:geography	.	.
@@ -12691,7 +12704,7 @@ Evans1976	1.2	Uca pugilator	.	text p. 203-216	citation	Green1959	2	=	=	.	.
 Evans1976	1.3	Uca pugilator	.	text p. 203-216	location	Biscayne Bay, Miami-Dade County, Florida, USA	.	pugilator	<	.	.
 Frith1976	1.1	Uca lactea annulipes	.	text p. 14-15, 18-19, 23, 35	location	Phuket Island, Thailand	.	annulipes	<	.	.
 Frith1976	1.2	Uca lactea annulipes	.	text p. 14-15, 18-19, 23, 35	citation	Macnae1968	2	=	=	.	.
-Frith1976	2.1	Uca urvillei	.	text p. 14, 19, 23-24, 35	location	Phuket Island, Thailand	.	urvillei	<	.	.
+Frith1976	2.1	Uca urvillei	.	text p. 14, 19, 23-24, 35	location	Phuket Island, Thailand	.	alcocki	Shih2018.1	.	.
 Frith1976	2.2	Uca urvillei	.	text p. 14, 19, 23-24, 35	citation	Macnae1968	10	=	=	.	.
 Frith1976	2.3	Uca urvillei	.	text p. 14, 19, 23-24, 35	citation	Crane1975	16	=	=	.	.
 Frith1976	2.4	Uca urvillei	.	text p. 14, 19, 23-24, 35	citation	Macnae1962	2	=	=	.	.
@@ -13081,7 +13094,7 @@ Fingerman1977.1	1.6	Uca pugilator	.	text p. 121-126	citation	Fingerman1977.3	1.5
 Fingerman1977.1	1.7	Uca pugilator	.	text p. 121-126	location	Panacea, Wakulla County, Florida, USA	.	?	>MSR:geography	Could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
 Fingerman1977.2	1	Uca pugilator	.	text p. 554	n/a	.	.	?	>MSR:geography	No location specified, but based on other studies, likely collected from Panacea, Florida, which means it could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
 Frith1977.3	1	Uca	.	text p. 100	citation	Crane1975	0	>Uca	<	.	.
-Frith1977.3	2.1	Uca (Deltuca) [coarctata] urvillei	.	text p. 100-101	location	Phuket Island, Thailand	.	urvillei	<	.	.
+Frith1977.3	2.1	Uca (Deltuca) [coarctata] urvillei	.	text p. 100-101	location	Phuket Island, Thailand	.	alcocki	Shih2018.1	.	.
 Frith1977.3	2.2	Uca (Deltuca) [coarctata] urvillei	.	text p. 100-101	citation	Crane1975	16	=	=	.	.
 Frith1977.3	2.3	Uca (Deltuca) [coarctata] urvillei	.	text p. 100-101	citation	Lundoer1974	2	=	=	.	.
 Frith1977.3	3.1	Uca (Deltuca) [coarctata] forcipata	.	text p. 101	location	Phuket Island, Thailand	.	forcipata	<	.	.
@@ -13117,7 +13130,7 @@ Frith1977.2	6.1	Uca lactea	.	text p. 10-11	citation	Ono1965	1	=	=	.	.
 Frith1977.2	6.2	Uca lactea	.	text p. 10-11	citation	Macnae1968	2	=	=	.	.
 Frith1977.2	6.3	Uca lactea	.	text p. 10-11	citation	Crane1975	95	=	=	.	.
 Frith1977.2	6.4	Uca lactea	.	text p. 10-11	citation	Frith1980	.	lactea	<	.	.
-Frith1977.2	7.1	Uca urvillei	.	text p. 13	citation	Frith1980	.	urvillei	<	.	.
+Frith1977.2	7.1	Uca urvillei	.	text p. 13	citation	Frith1980	.	alcocki	>MSR:geography	.	.
 Frith1977.1	1.1	Uca lactea annulipes	.	text p. 6-8, 13	location	Surin Islands, Phang-nga, Thailand	.	annulipes	<	.	.
 Frith1977.1	1.2	Uca lactea annulipes	.	text p. 6-8, 13	citation	Frith1977.2	3	=	=	.	.
 Frith1977.1	2.1	Uca dussumieri dussumieri	.	text p. 7, 9, 13	location	Surin Islands, Phang-nga, Thailand	.	dussumieri	<	.	.
@@ -14068,10 +14081,10 @@ Frith1978	14.4	Uca vocans vocans	.	text p. 1-2, 8-11	location	Yao Yai Island, Ph
 Frith1978	14.5	Uca vocans vocans	.	text p. 1-2, 8-11	location	Surin Islands, Phang-nga, Thailand	.	vocans	<	.	.
 Frith1978	16	Uca (Deltuca) dussumieri dussumieri	.	text p. 1	citation	Frith1977.3	4	=	=	.	.
 Frith1978	17	Uca (Deltuca) (coarctata) urvillei	.	text p. 1	citation	Frith1977.3	2	=	=	.	.
-Frith1978	18.1	Uca urvillei	.	text p. 2, 8-11	location	Phuket Island, Thailand	.	urvillei	<	.	.
+Frith1978	18.1	Uca urvillei	.	text p. 2, 8-11	location	Phuket Island, Thailand	.	alcocki	>MSR:geography	.	.
 Frith1978	18.2	Uca urvillei	.	text p. 2, 8-11	citation	Frith1977.3	2	=	=	.	.
 Frith1978	18.3	Uca urvillei	.	text p. 2, 8-11	citation	Frith1976	2	=	=	.	.
-Frith1978	18.4	Uca urvillei	.	text p. 2, 8-11	location	Yao Yai Island, Phang-nga, Thailand	.	urvillei	<	.	.
+Frith1978	18.4	Uca urvillei	.	text p. 2, 8-11	location	Yao Yai Island, Phang-nga, Thailand	.	alcocki	>MSR:geography	.	.
 Frith1978	18.5	Uca urvillei	.	text p. 2, 8-11	citation	Macnae1968	10	=	=	.	.
 Frith1978	18.6	Uca urvillei	.	text p. 2, 8-11	citation	Frith1980	.	=	=	.	.
 Frith1978	19.1	Uca forcipata	.	text p. 2, 8-11	location	Phuket Island, Thailand	.	forcipata	<	.	.
@@ -14087,6 +14100,57 @@ Frith1978	23.1	Uca lactea	.	text p. 11	citation	Crane1975	95	=	=	Authors referri
 Frith1978	23.2	Uca lactea	.	text p. 11	citation	Edney1962	2	=	=	.	.
 Frith1978	23.3	Uca lactea	.	text p. 11	citation	Ono1965	1	=	=	.	.
 Frith1978	23.4	Uca lactea	.	text p. 11	citation	Macnae1968	2	=	=	.	.
+Fingerman1978.2	1.1	Uca pugilator	.	text p. 37-44	citation	Nimmo1971	2	=	=	.	.
+Fingerman1978.2	1.2	Uca pugilator	.	text p. 37-44	citation	Fingerman1977.4	1	=	=	.	.
+Fingerman1978.2	1.3	Uca pugilator	.	text p. 37-44	location	Panacea, Wakulla County, Florida, USA	.	pugilator	.	.	.
+Fingerman1978.2	1.4	Uca pugilator	.	text p. 37-44	citation	Abramowitz1937	1	=	=	.	.
+Fingerman1978.2	1.5	Uca pugilator	.	text p. 37-44	citation	Sandeen1950	1	=	=	.	.
+Fingerman1978.2	2.1	.	fiddler crabs	text p. 37, 39	citation	Sandeen1950	0	>Uca	<	.	.
+Fingerman1978.2	2.2	.	fiddler crabs	text p. 37, 39	citation	Carlson1935	0	>Uca	<	.	.
+Fingerman1978.2	2.3	.	fiddler crabs	text p. 37, 39	citation	Brown1953.3	0	>Uca	<	.	.
+Fingerman1978.2	2.4	.	fiddler crabs	text p. 37, 39	citation	Fingerman1956.1	0	>Uca	<	.	.
+Fingerman1978.2	2.5	.	fiddler crabs	text p. 37, 39	citation	Fingerman1972	0	>Uca	<	.	.
+Fingerman1978.2	2.6	.	fiddler crabs	text p. 37, 39	citation	Rao1970.1	0	>Uca	<	.	.
+Fingerman1978.2	2.7	.	fiddler crabs	text p. 37, 39	citation	Rao1970.3	0	>Uca	<	.	.
+Maurer1978	1	Uca sp.	.	text p. 149, 152-153	location	Delaware Bay, USA	.	>Uca	<	.	.
+Pamatmat1978	1.1	Uca pugnax	.	text p. 317-318, 320, 322-324	citation	Teal1967	1	=	=	.	.
+Pamatmat1978	1.2	Uca pugnax	.	text p. 317-318, 320, 322-324	location	Savannah, Chatham County, Georgia, USA	.	pugnax	<	.	.
+Pamatmat1978	2	Uca pugilator	.	text p. 319-320	n/a	.	.	pugilator	<	collection location of single mentioned specimen not specified	.
+Pezalla1978	1	Uca pugnax	.	text p. 148	citation	Brown1941	1	=	=	.	.
+Pezalla1978	2	Uca pugilator	.	text p. 148-149, 152, 154-155	location	Panacea, Wakulla County, Florida, USA	.	pugilator	.	.	.
+Altevogt1978	1.01	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Alcock1892	0	>Uca	<	.	.
+Altevogt1978	1.02	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Alcock1902	0	>Uca	<	.	.
+Altevogt1978	1.03	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Crane1975	0	>Uca	<	.	.
+Altevogt1978	1.04	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	vonHagen1962.1	0	>Uca	<	.	.
+Altevogt1978	1.05	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Gunther1963	0	>Uca	<	.	.
+Altevogt1978	1.06	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Nosler1963	0	>Uca	<	.	.
+Altevogt1978	1.07	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Korte1966	0	>Uca	<	.	.
+Altevogt1978	1.08	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Feest1969	0	>Uca	<	.	.
+Altevogt1978	1.09	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Jansen1970	0	>Uca	<	.	.
+Altevogt1978	1.1	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Heinrich1971	0	>Uca	<	.	.
+Altevogt1978	1.11	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	vonHagen1968.2	0	>Uca	<	.	.
+Altevogt1978	1.12	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Altevogt1969	0	>Uca	<	.	.
+Altevogt1978	1.13	Uca	fiddler crabs	text p. 800-801, 803, 805	citation	Altevogt1972	0	>Uca	<	.	.
+Altevogt1978	2	Uca marionis nitidus	.	text p. 800	citation	Altevogt1955.1	1.1	=	=	later in the paper he notes the name change	.
+Altevogt1978	3.1	Uca annulipes	.	text p. 800-801, 803	citation	Altevogt1955.1	2	=	=	.	.
+Altevogt1978	3.2	Uca annulipes	.	text p. 800-801, 803	citation	Altevogt1957.1	2	=	=	.	.
+Altevogt1978	4	Uca batuenta	.	text p. 800	location	South America	.	batuenta	<	citation to film	.
+Altevogt1978	5	Uca insignis	.	text p. 800, 803	location	Eastern Pacific Ocean	.	insignis	<	citation to film	.
+Altevogt1978	6.1	Uca urvillei	.	text p. 801, 805-807	location	Vypin, Kochi, Ernakulam District, Kerala, India	.	alcocki	>MSR:geography	.	.
+Altevogt1978	6.2	Uca urvillei	.	text p. 801, 805-807	location	Vallarpadam, Kochi, Ernakulam District, Kerala, India	.	alcocki	>MSR:geography	.	.
+Altevogt1978	6.3	Uca urvillei	.	text p. 801, 805-807	location	Panaji, Goa, India	.	alcocki	>MSR:geography	.	.
+Altevogt1978	6.4	Uca urvillei	.	text p. 801, 805-807	citation	Crane1975	16	=	=	.	.
+Altevogt1978	6.5	Uca urvillei	.	text p. 801, 805-807	citation	Macnae1958	4	=	=	.	.
+Altevogt1978	7.1	Uca vocans	.	text p. 807	citation	Holthuis1959.3	1	=	=	.	.
+Altevogt1978	7.2	Uca vocans	.	text p. 807	location	Goa, India	.	hesperiae	>MSR:geography	.	.
+Altevogt1978	7.3	Uca vocans	.	text p. 807	location	Kochi, Ernakulam District, Kerala, India	.	hesperiae	>MSR:geography	.	.
+Altevogt1978	7.4	Uca vocans	.	text p. 807	citation	Altevogt1955.1	1.1	=	=	.	.
+Altevogt1978	7.5	Uca vocans	.	text p. 807	citation	Altevogt1957.1	3	=	=	.	.
+Altevogt1978	7.6	Uca vocans	.	text p. 807	citation	Altevogt1957.2	1	=	=	.	.
+Altevogt1978	7.7	Uca vocans	.	text p. 807	citation	Altevogt1959.3	2	=	=	.	.
+TrinkausRandall1978	1.1	Uca pugnax	.	text p. 275-280	n/a	.	.	pugnax	<	collection location of specimens not specified	.
+TrinkausRandall1978	1.2	Uca pugnax	.	text p. 275-280	citation	Rhodes1977.1	.	=	=	.	.
+TrinkausRandall1978	2	Uca pugilator	.	text p. 275-280	n/a	.	.	pugilator	<	collection location of specimens not specified	.
 Christy1979	1	Uca pugilator	.	text p. 933	location	South Carolina, USA	.	pugilator	<	.	.
 Dietrich1979	1	Uca pugilator	.	text p. 972	location	North Carolina, USA	.	pugilator	<	.	.
 Dores1979	1	Uca	.	text p. 917	n/a	.	.	>Uca	<	.	The particular studied species is never named.
@@ -14142,7 +14206,7 @@ WagnerMerner1979	1.3	Uca pugilator	.	text p. 669-671	location	Tampa Bay, Florida
 Spencer1979	1	Uca	.	text p. 2	citation	Mantel1976	1	>Uca	<	.	.
 Cowley1979	1	Uca pugilator	.	text p. 405-406	location	South Carolina, USA	.	pugilator	<	.	.
 Nagabhushanam1979	1.1	Uca pugilator	.	text p. 1083-1084	citation	Nimmo1971	2	=	=	.	.
-Nagabhushanam1979	1.2	Uca pugilator	.	text p. 1083-1084	citation	Fingerman1978.2	.	=	=	.	.
+Nagabhushanam1979	1.2	Uca pugilator	.	text p. 1083-1084	citation	Fingerman1978.2	1	=	=	.	.
 Nagabhushanam1979	1.3	Uca pugilator	.	text p. 1083-1084	location	Panacea, Wakulla County, Florida, USA	.	?	>MSR:geography	Could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
 Nagabhushanam1979	1.4	Uca pugilator	.	text p. 1083-1084	citation	Brown1948.1	1	=	=	.	.
 Altevogt1979	1.1	Uca vocans	.	text p. 342-343	citation	Dana1852	1	=	=	.	.
@@ -14160,10 +14224,10 @@ Altevogt1979	3.2	Uca lactea	.	text p. 342-343	location	Kochi, Ernakulam District
 Altevogt1979	3.3	Uca lactea	.	text p. 342-343	location	Goa, India	.	annulipes	>MSR:geography	.	.
 Altevogt1979	3.4	Uca lactea	.	text p. 342-343	location	Mumbai, Maharashtra, India	.	annulipes	>MSR:geography	.	.
 Altevogt1979	3.5	Uca lactea	.	text p. 342-343	location	Chennai, Tamil Nadu, India	.	annulipes	>MSR:geography	.	.
-Altevogt1979	4.1	Uca urvillei	.	text p. 342-343	location	Andheri, Mumbai, Maharashtra, India	.	urvillei	<	.	.
-Altevogt1979	4.2	Uca urvillei	.	text p. 342-343	location	Goa, India	.	urvillei	<	.	.
-Altevogt1979	4.3	Uca urvillei	.	text p. 342-343	location	Vallarpadam, Kochi, Ernakulam District, Kerala, India	.	urvillei	<	.	.
-Altevogt1979	4.4	Uca urvillei	.	text p. 342-343	location	Vypin, Kochi, Ernakulam District, Kerala, India	.	urvillei	<	.	.
+Altevogt1979	4.1	Uca urvillei	.	text p. 342-343	location	Andheri, Mumbai, Maharashtra, India	.	alcocki	>MSR:geography	.	.
+Altevogt1979	4.2	Uca urvillei	.	text p. 342-343	location	Goa, India	.	alcocki	>MSR:geography	.	.
+Altevogt1979	4.3	Uca urvillei	.	text p. 342-343	location	Vallarpadam, Kochi, Ernakulam District, Kerala, India	.	alcocki	>MSR:geography	.	.
+Altevogt1979	4.4	Uca urvillei	.	text p. 342-343	location	Vypin, Kochi, Ernakulam District, Kerala, India	.	alcocki	>MSR:geography	.	.
 Altevogt1979	5.1	Uca triangularis	.	text p. 342-343	location	Kanyakumari, Kanyakumari District, Tamil Nadu, India	.	bengali	>MSR:geography	.	.
 Altevogt1979	5.2	Uca triangularis	.	text p. 342-343	location	Kochi, Ernakulam District, Kerala, India	.	bengali	>MSR:geography	.	.
 Altevogt1979	5.3	Uca triangularis	.	text p. 342-343	location	Goa, India	.	bengali	>MSR:geography	.	.
@@ -14316,7 +14380,7 @@ Graszynski1981.2	1	Uca pugilator	.	text p. 11-12	n/a	.	.	pugilator	<	No location
 Johnsgard1981	1	.	fiddler crabs	text p. 170-171, 306	citation	Tomkins1944	0	=	=	.	.
 Dores1981	1.1	Uca pugilator	.	text p. 76-82	location	Panacea, Wakulla County, Florida, USA	.	?	>MSR:geography	Could be either <em class="species">Uca pugilator, U. panacea,</em> or a mix of both.	.
 Dores1981	1.2	Uca pugilator	.	text p. 76-82	citation	Herman1975.1	1	=	=	.	.
-Dores1981	1.3	Uca pugilator	.	text p. 76-82	citation	Pezalla1978	.	=	=	.	.
+Dores1981	1.3	Uca pugilator	.	text p. 76-82	citation	Pezalla1978	2	=	=	.	.
 Dores1981	1.4	Uca pugilator	.	text p. 76-82	citation	Abramowitz1940.2	1	=	=	.	.
 Dores1981	1.5	Uca pugilator	.	text p. 76-82	citation	Bartell1971	1	=	=	.	.
 Grissell1981	1	Uca rapax	.	text p. 16-18	location	Cedar Key, Levy County, Florida, USA	.	rapax	<	.	.
@@ -14344,6 +14408,14 @@ Lee1981.1	3	Uca puglicator	.	text p. 356	location	Tampa Bay, Florida, USA	.	pugi
 Lee1981.1	4	Uca ripax	.	text p. 362	location	Bahía Sucia, Puerto Rico	.	rapax	<	typo	.
 Lee1981.2	1.1	Uca pugnax	.	text p. 125, 129, 137-139, 141	location	Wilmington River, Chatham County, Georgia, USA	.	pugnax	<	.	.
 Lee1981.2	1.2	Uca pugnax	.	text p. 125, 129, 137-139, 141	citation	Krebs1977	1	=	=	.	.
+Daniel1981	1.1	Uca annulipes	.	text p. 191-192	location	Voyalur, Kanchipuram District, Tamil Nadu, India	.	annulipes	<	.	.
+Daniel1981	1.2	Uca annulipes	.	text p. 191-192	location	Manginapudi, Krishna District, Andhra Pradesh, India	.	annulipes	<	.	.
+Kensley1981	1	Uca	.	text p. 9, 49	location	Southeastern Africa	.	>Uca	<	.	.
+Kensley1981	2	Uca annulipes	.	text p. 49	citation	Crosnier1965	8	=	=	.	.
+Kensley1981	3	Uca gaimardi	.	text p. 49	citation	Crosnier1965	9	=	=	.	.
+Kensley1981	4	Uca inversa	.	text p. 49	citation	Crosnier1965	7	=	=	.	.
+Kensley1981	5	Uca marionis	.	text p. 49	citation	Crosnier1965	1	=	=	.	.
+Kensley1981	6	Uca urvillei	.	text p. 49	citation	Crosnier1965	4	=	=	.	.
 George1982	1.1	Uca elegans	.	text p. 5-6, 8-9, 13, 22-25, 28-30; figure 37	specimen	Western Australia, Australia	.	elegans	<	type description	.
 George1982	1.2	Uca elegans	.	text p. 5-6, 8-9, 13, 22-25, 28-30; figure 37	specimen	Northern Territory, Australia	.	elegans	<	.	.
 George1982	2.1	Uca pavo	.	text p. 5-6, 9, 14, 21, 25-31, 34, 36, 43; figure 38	specimen	Western Australia, Australia	.	capricornis	vonHagen1989	type description	.
@@ -14777,7 +14849,7 @@ Vernberg1983.2	2.6	Uca pugilator	.	text p. 5, 7, 16, 25, 30	citation	Vernberg197
 Vernberg1983.2	3	Uca rapax	.	text p. 7	citation	Vernberg1968.3	0	rapax	<	.	.
 Vernberg1983.2	4.1	Uca pugnax	.	text p. 7, 16, 19, 28	citation	Vernberg1968.3	2	=	=	.	.
 Vernberg1983.2	4.2	Uca pugnax	.	text p. 7, 16, 19, 28	citation	Teal1967	1	=	=	.	.
-Vernberg1983.2	4.3	Uca pugnax	.	text p. 7, 16, 19, 28	citation	Pamatmat1978	.	=	=	.	.
+Vernberg1983.2	4.3	Uca pugnax	.	text p. 7, 16, 19, 28	citation	Pamatmat1978	1	=	=	.	.
 Vernberg1983.2	4.4	Uca pugnax	.	text p. 7, 16, 19, 28	citation	Vernberg1959.3	2	=	=	.	.
 Sastry1983	1	Uca lactea annulipes	.	text p. 187, 190, 195, 238	citation	Pillay1971.2	1	=	=	.	.
 Sastry1983	2.1	Uca tangeri	.	text p. 203, 220	citation	vonHagen1962.1	1	=	=	.	.
@@ -15407,6 +15479,10 @@ Guinot1985	1.4	Uca (Amphiuca) chlorophthalmus crassipes	.	text p. 453	location	S
 Guinot1985	2.1	Uca (Thalassuca) tetragonon	.	text p. 453	location	Gambier Islands, French Polynesia	.	crassipes	<	.	.
 Guinot1985	2.2	Uca (Thalassuca) tetragonon	.	text p. 453	location	Society Islands, French Polynesia	.	tetragonon	<	.	.
 Guinot1985	2.3	Uca (Thalassuca) tetragonon	.	text p. 453	location	Tuamotu Islands, French Polynesia	.	tetragonon	<	.	.
+Tikader1985	1	Uca lactea annulipes	.	text p. 103	location	Andaman and Nicobar Islands, India	.	annulipes	<	.	.
+Tikader1985	2	Uca dussumieri	.	text p. 103	location	Andaman and Nicobar Islands, India	.	paradussumieri	>MSR:geography	.	.
+Tikader1985	3.1	Uca vocans	.	text p. 103	location	Andaman and Nicobar Islands, India	.	vocans	<	.	.
+Tikader1985	3.3	Uca vocans	.	text p. 103	citation	Das 1985	.	=	=	This book lacks a bibliography so I do not know what reference this refers to.	.
 Por1986	1	Uca inversa	.	text p. 78	citation	Por1977	3	=	=	.	.
 Por1986	2	Uca tetragonon	.	text p. 78	citation	Por1977	2	=	=	.	.
 Bishop1986	1	Uca	.	text p. 112	n/a	.	.	>Uca	<	.	.
@@ -15420,9 +15496,9 @@ Riehm1986	1	Uca	.	text p. 55A	n/a	.	.	>Uca	<	.	.
 Aiyun1986	1	Uca (Deltuca) arcuata	.	text p. 60	location	Beibu Gulf, Guangxi, China	.	arcuata	<	.	.
 Aiyun1986	2	Uca (Thalassuca) vocans vocans	.	text p. 60	location	Beibu Gulf, Guangxi, China	.	vocans	<	.	.
 Aiyun1986	3	Uca (Celuca) lactea lactea	.	text p. 60	location	Beibu Gulf, Guangxi, China	.	lactea	<	.	.
-Hogarth1986	1.1	Uca (Deltuca) urvillei	.	text p. 222-223	location	Shi'b Abu Al Liqa', Saudi Arabia	.	urvillei	<	.	.
-Hogarth1986	1.2	Uca (Deltuca) urvillei	.	text p. 222-223	location	Sawarmah, Saudi Arabia	.	urvillei	<	.	.
-Hogarth1986	1.3	Uca (Deltuca) urvillei	.	text p. 222-223	location	Oreste Point, Hajjah Governorate, Yemen	.	urvillei	<	.	.
+Hogarth1986	1.1	Uca (Deltuca) urvillei	.	text p. 222-223	location	Shi'b Abu Al Liqa', Saudi Arabia	.	alcocki	Shih2018.1	.	.
+Hogarth1986	1.2	Uca (Deltuca) urvillei	.	text p. 222-223	location	Sawarmah, Saudi Arabia	.	alcocki	Shih2018.1	.	.
+Hogarth1986	1.3	Uca (Deltuca) urvillei	.	text p. 222-223	location	Oreste Point, Hajjah Governorate, Yemen	.	alcocki	Shih2018.1	.	.
 Hogarth1986	1.4	Uca (Deltuca) urvillei	.	text p. 222-223	citation	Crane1975	16	=	=	.	.
 Hogarth1986	1.5	Uca (Deltuca) urvillei	.	text p. 222-223	citation	Crosnier1965	4	=	=	.	.
 Hogarth1986	1.6	Uca (Deltuca) urvillei	.	text p. 222-223	citation	Hartnoll1975	3	=	=	.	.
@@ -15482,6 +15558,9 @@ Abele1986	13.1	Uca vocator	.	text p. 67, 708, 712-713	citation	Crane1975	57	=	=	
 Abele1986	13.2	Uca vocator	.	text p. 67, 708, 712-713	citation	Chace1969	12	=	=	.	.
 Abele1986	13.3	Uca vocator	.	text p. 67, 708, 712-713	location	Florida, USA	.	vocator	<	.	.
 Abele1986	14	Uca	.	text p. 707	n/a	.	.	>Uca	<	.	.
+Tikader1986	1	Uca	fiddler crabs	text p . 29, 32, 34-35, 74-76	location	Andaman and Nicobar Islands, India	.	>Uca	<	.	.
+Tikader1986	2	Uca vocans	.	text p. 75	location	Andaman and Nicobar Islands, India	.	vocans	<	.	.
+Tikader1986	3	Uca annulipes	.	text p. 80	location	Andaman and Nicobar Islands, India	.	annulipes	<	.	.
 vonHagen1987.1	1	Uca victoriana	.	text p. 81-93; figures 1a-e, 2a, 3a-c, 4c,g	specimen	Espírito Santo, Brazil	.	victoriana	<	type description	.
 vonHagen1987.1	2.1	Uca rapax	.	text p. 81-83, 85-90, 92-93; figures 2b, 3e, 4b,f	citation	Crane1975	65	=	=	.	.
 vonHagen1987.1	2.2	Uca rapax	.	text p. 81-83, 85-90, 92-93; figures 2b, 3e, 4b,f	citation	vonHagen1970.1	5	=	=	.	.
@@ -15517,7 +15596,7 @@ Vernberg1987	1.3	Uca	fiddler crabs	text p. 304, 312, 320, 360-361	citation	Vernb
 Vernberg1987	1.4	Uca	fiddler crabs	text p. 304, 312, 320, 360-361	citation	Vernberg1970	0	>Uca	<	.	.
 Vernberg1987	1.5	Uca	fiddler crabs	text p. 304, 312, 320, 360-361	citation	Vernberg1956	0	>Uca	<	.	.
 Vernberg1987	1.6	Uca	fiddler crabs	text p. 304, 312, 320, 360-361	citation	Dame1978	0	>Uca	<	.	.
-Vernberg1987	2.1	Uca pugnax	.	text p. 320, 322, 360-363	citation	Pamatmat1978	.	=	=	.	.
+Vernberg1987	2.1	Uca pugnax	.	text p. 320, 322, 360-363	citation	Pamatmat1978	1	=	=	.	.
 Vernberg1987	2.2	Uca pugnax	.	text p. 320, 322, 360-363	citation	Vernberg1959.3	2	=	=	.	.
 Vernberg1987	2.3	Uca pugnax	.	text p. 320, 322, 360-363	citation	Cammen1980.2	.	=	=	.	.
 Vernberg1987	2.4	Uca pugnax	.	text p. 320, 322, 360-363	citation	Vernberg1959.2	1	=	=	.	.
@@ -15597,7 +15676,7 @@ Snowden1987	1.1	Uca tangeri	.	text p. 595-599	location	Bonny Estuary, Nigeria	.	
 Snowden1987	1.2	Uca tangeri	.	text p. 595-599	citation	Ekweozor1985	.	=	=	.	.
 Hodgson1987	1.1	Uca urvillei	.	text p. 153, 156, 159	location	Kariega River, Eastern Cape, South Africa	.	urvillei	<	.	.
 Hodgson1987	1.2	Uca urvillei	.	text p. 153, 156, 159	citation	Day1981	.	=	=	.	.
-Hodgson1987	1.3	Uca urvillei	.	text p. 153, 156, 159	citation	Neethling1972	.	=	=	.	.
+Hodgson1987	1.3	Uca urvillei	.	text p. 153, 156, 159	citation	Neethling1972	1	=	=	.	.
 Hodgson1987	2.1	Uca annulipes	.	text p. 156, 159	location	Kariega River, Eastern Cape, South Africa	.	orientalis	>MSR:geography	.	.
 Hodgson1987	2.2	Uca annulipes	.	text p. 156, 159	citation	Day1981	.	=	=	.	.
 Hodgson1987	3	Uca chlorophthalmus	.	text p. 159	citation	Day1981	.	=	=	.	.
@@ -15975,7 +16054,7 @@ Bairagi1988	3	Uca (Deltuca) acuta	.	text p. 450	citation	Crane1975	3	=	=	.	.
 Formanowicz1988	1	Uca panacea	.	text p. 1836-1837	location	Aransas County, Texas, USA	.	panacea	<	.	.
 Formanowicz1988	2	.	fiddler crabs	text p. 1837	citation	Full1984.2	0	>Uca	<	.	.
 Jacob1988	1.1	Uca pugilator	.	text p. 22	citation	Fingerman1977.4	1	=	=	.	.
-Jacob1988	1.2	Uca pugilator	.	text p. 22	citation	Fingerman1978.2	.	=	=	.	.
+Jacob1988	1.2	Uca pugilator	.	text p. 22	citation	Fingerman1978.2	1	=	=	.	.
 Jacob1988	1.3	Uca pugilator	.	text p. 22	citation	Fingerman1979.1	.	=	=	.	.
 Jacob1988	1.4	Uca pugilator	.	text p. 22	citation	Fingerman1979.2	.	=	=	.	.
 Jacob1988	2.1	.	fiddler crabs	text p. 22-23	citation	Fingerman1980	.	=	=	.	.
@@ -15983,7 +16062,7 @@ Jacob1988	2.2	.	fiddler crabs	text p. 22-23	citation	Fingerman1979.3	.	=	=	.	.
 Yeragi1988	1	Gelasimus spp.	.	text p. 215-216	location	Mithbav Creek, Sindhudurg District, Maharashtra, India	.	>Uca	<	.	.
 Yeragi1988	2	Gelasimus annulipes	.	text p. 215-216	location	Mithbav Creek, Sindhudurg District, Maharashtra, India	.	annulipes	<	.	.
 Yeragi1988	3	Gelasimus marionis	.	text p. 215-216	location	Mithbav Creek, Sindhudurg District, Maharashtra, India	.	hesperiae	>MSR:synonymy/geography	.	.
-Yeragi1988	4	Gelasimus dussumieri	.	text p. 215-216	location	Mithbav Creek, Sindhudurg District, Maharashtra, India	.	urvillei	>MSR:geography	.	.
+Yeragi1988	4	Gelasimus dussumieri	.	text p. 215-216	location	Mithbav Creek, Sindhudurg District, Maharashtra, India	.	alcocki	>MSR:geography	.	.
 Goshima1988	1.1	Uca lactea	.	text p. 1249-1251	citation	Yamaguchi1971	1	=	=	.	.
 Goshima1988	1.2	Uca lactea	.	text p. 1249-1251	citation	Murai1987.1	.	=	=	.	.
 Goshima1988	1.3	Uca lactea	.	text p. 1249-1251	location	Nagaura Island, Kami-Amakusa, Kumamoto, Kyūshū, Japan	.	lactea	<	.	.
@@ -16087,6 +16166,54 @@ Abele1989	5.1	Uca tomentosa	.	text p. 3, 40-41	citation	Crane1941	12	=	=	.	.
 Abele1989	5.2	Uca tomentosa	.	text p. 3, 40-41	citation	Crane1975	85	=	=	.	.
 Abele1989	5.3	Uca tomentosa	.	text p. 3, 40-41	location	Miraflores Locks Spillway, Panama Canal, Panama	.	tomentosa	<	.	.
 Abele1989	6	Uca	.	text p. 40	location	Panama Canal, Panama	.	>Uca	<	.	.
+Das1989	1.1	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	location	Andaman and Nicobar Islands, India	.	>Uca	<	.	.
+Das1989	1.2	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	location	Corbyn's Cove, South Andaman, Andaman Islands	.	>Uca	<	.	.
+Das1989	1.3	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Teal1958	0	>Uca	<	.	.
+Das1989	1.4	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Kerwin1971	0	>Uca	<	.	.
+Das1989	1.5	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Macintosh1977	0	>Uca	<	.	.
+Das1989	1.6	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Macintosh1982	0	>Uca	<	.	.
+Das1989	1.7	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Macintosh1984	0	>Uca	<	.	.
+Das1989	1.8	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Miller1973.2	0	>Uca	<	.	.
+Das1989	1.9	Uca	fiddler crabs	text p. 11, 16, 44-45, 48-49, 114, 124-125	citation	Dwivedi1974	0	>Uca	<	.	.
+Das1989	2.1	Uca vocans	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Andaman and Nicobar Islands, India	.	vocans	<	.	.
+Das1989	2.2	Uca vocans	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Corbyn's Cove, South Andaman, Andaman Islands	.	vocans	<	.	.
+Das1989	2.3	Uca vocans	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Chidya Tapu, South Andaman, Andaman Islands	.	vocans	<	.	.
+Das1989	3.1	Uca lactea lactea	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Andaman and Nicobar Islands, India	.	annulipes	>MSR:geography	.	.
+Das1989	3.2	Uca lactea lactea	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Corbyn's Cove, South Andaman, Andaman Islands	.	annulipes	>MSR:geography	.	.
+Das1989	3.3	Uca lactea lactea	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Chidya Tapu, South Andaman, Andaman Islands	.	annulipes	>MSR:geography	.	.
+Das1989	4.1	Uca dussumieri spinata	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Andaman and Nicobar Islands, India	.	paradussumieri	>MSR:geography	.	.
+Das1989	4.2	Uca dussumieri spinata	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Corbyn's Cove, South Andaman, Andaman Islands	.	paradussumieri	>MSR:geography	.	.
+Das1989	4.3	Uca dussumieri spinata	.	text p. 44-45, 48, 58-59, 110, 114-123	location	Chidya Tapu, South Andaman, Andaman Islands	.	paradussumieri	>MSR:geography	.	.
+Das1989	5.1	Uca tetragonon	.	text p. 44-45, 110, 114-123	location	Andaman and Nicobar Islands, India	.	tetragonon	<	.	.
+Das1989	5.2	Uca tetragonon	.	text p. 44-45, 110, 114-123	location	Chidya Tapu, South Andaman, Andaman Islands	.	tetragonon	<	.	.
+Das1989	6	Uca (Thalassuca) tetragonon	.	text p. 47, 147; Figure 37	location	Andaman and Nicobar Islands, India	.	tetragonon	<	.	.
+Das1989	7	Uca (Thalassuca) vocans	.	text p. 46, 132, 147; Figure 35	location	Andaman and Nicobar Islands, India	.	vocans	<	.	.
+Das1989	8	Uca (Celuca) lactea lactea	.	text p. 46, 132, 147; Figure 36	location	Andaman and Nicobar Islands, India	.	annulipes	>MSR:geography	.	.
+Das1989	9	Uca (Deltuca) dussumieri spinata	.	text p. 47, 132, 147; Figure 38	location	Andaman and Nicobar Islands, India	.	paradussumieri	>MSR:geography	.	.
+Das1989	10.1	Uca lactea annulipes	.	text p. 46	citation	Chakraborty1985	.	=	=	.	.
+Das1989	10.2	Uca lactea annulipes	.	text p. 46	citation	Mandal1985	.	=	=	.	.
+Das1989	11.1	Uca dussumieri dussumieri	.	text p. 46	citation	Chakraborty1985	.	=	=	.	.
+Das1989	11.2	Uca dussumieri dussumieri	.	text p. 46	citation	Mandal1985	.	=	=	.	.
+Das1989	13.1	Uca triangularis bengali	.	text p. 46	citation	Chakraborty1985	.	=	=	.	.
+Das1989	13.2	Uca triangularis bengali	.	text p. 46	citation	Mandal1985	.	=	=	.	.
+Das1989	14.1	Uca acuta acuta	.	text p. 46	citation	Chakraborty1985	.	=	=	.	.
+Das1989	14.2	Uca acuta acuta	.	text p. 46	citation	Mandal1985	.	=	=	.	.
+Das1989	15	Uca consobrinus	.	text p. 124	citation	Verwey1930	2	=	=	.	.
+Das1989	16	Uca signatus	.	text p. 124	citation	Verwey1930	1	=	=	.	.
+Mandal1989	1.1	Uca acuta	.	text p. 27, 93	location	Sundarbans, South 24 Parganas, West Bengal, India	.	rosea	>MSR:geography	.	.
+Mandal1989	1.2	Uca acuta	.	text p. 27, 93	citation	Mandal1985	.	=	=	.	.
+Mandal1989	2.1	Uca dussumieri	.	text p. 27, 66, 93	location	Sundarbans, South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Mandal1989	2.2	Uca dussumieri	.	text p. 27, 66, 93	citation	Chakraborty1985	.	=	=	.	.
+Mandal1989	3	Uca annulipes	.	text p. 27, 66	location	Sundarbans, South 24 Parganas, West Bengal, India	.	annulipes	<	.	.
+Mandal1989	4.1	Uca triangularis	.	text p. 27, 66, 93	location	Sundarbans, South 24 Parganas, West Bengal, India	.	bengali	>MSR:geography	.	.
+Mandal1989	4.2	Uca triangularis	.	text p. 27, 66, 93	citation	Chakraborty1985	.	=	=	.	.
+Mandal1989	4.3	Uca triangularis	.	text p. 27, 66, 93	citation	Mandal1985	.	=	=	.	.
+Mandal1989	5.1	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	location	Sundarbans, South 24 Parganas, West Bengal, India	.	>Uca	<	.	.
+Mandal1989	5.2	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	citation	Verwey1930	0	>Uca	<	.	.
+Mandal1989	5.3	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	citation	Mandal1985	0	>Uca	<	.	.
+Mandal1989	5.4	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	citation	Chakraborty1985	0	>Uca	<	.	.
+Mandal1989	6	Uca acutus	.	text p. 66	location	Sundarbans, South 24 Parganas, West Bengal, India	.	rosea	>MSR:geography	.	.
+Mandal1989	7	Uca acuta acuta	.	text p. 93	citation	Chakraborty1985	.	=	=	.	.
 Barnwell1990	1.1	Uca princeps	.	text p. 138A	location	Puntarenas, Costa Rica	.	princeps	<	.	.
 Barnwell1990	1.2	Uca princeps	.	text p. 138A	location	Manzanillo, Colima, Mexico	.	princeps	<	.	.
 Barnwell1990	1.3	Uca princeps	.	text p. 138A	location	La Paz, Baja California Sur, Mexico	.	princeps	<	.	.
@@ -16341,6 +16468,8 @@ Weis1992.3	2.2	Uca	.	text p. 496-497	citation	Weis1986.1	0	>Uca	<	.	.
 Weis1992.3	2.3	Uca	.	text p. 496-497	citation	Weis1978.1	0	>Uca	<	.	.
 Weis1992.3	2.4	Uca	.	text p. 496-497	citation	Weis1980	0	>Uca	<	.	.
 Weis1992.3	3	Uca pugnax	.	text p. 496	citation	Callahan1983	.	=	=	.	.
+RamaRao1992	1	Uca annulipes	.	text p. 18	location	Ganjam, Odisha, India	.	annulipes	<	.	.
+RamaRao1992	2	Uca triangularis	.	text p. 18	location	Ganjam, Odisha, India	.	bengali	>MSR:geography	.	.
 Yamaguchi1993.1	1	Uca arcuata	.	text p. 85; figure 15	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.1	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.2	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	Parisi1918	3	=	=	.	.
@@ -16514,6 +16643,7 @@ Ho1993	11.1	Uca	.	text p. 17, 19-20	citation	Yamaguchi1977	0	>Uca	<	.	.
 Ho1993	11.11	Uca	.	text p. 17, 19-20	citation	Jones1982	0	>Uca	<	.	.
 Ho1993	12.1	Uca trianqularis	.	text p. 20	location	Dulan Forest, Taitung, Taiwan	.	triangularis	<	typo	.
 Ho1993	12.2	Uca trianqularis	.	text p. 20	location	Houwan, Pingtung, Taiwan	.	triangularis	<	.	.
+Singh1993	1	Gelasimus annulipes	.	text p. 63	citation	Vishnoi1972	1	=	=	.	.
 Thurman1994	1	Uca	.	text p. 31A	location	Southern Texas, USA	.	>Uca	<	Mentions there were 5 species studied, but only specifies 3	.
 Thurman1994	2	Uca subcylindrica	.	text p. 31A	location	Southern Texas, USA	.	subcylindrica	<	.	.
 Thurman1994	3	Uca panacea	.	text p. 31A	location	Southern Texas, USA	.	panacea	<	.	.
@@ -16613,6 +16743,8 @@ Poupin1994	2.19	Uca (Thalassuca) tetragonon	.	text p. 71-73; Figure 68; Plate 8h
 Poupin1994	2.2	Uca (Thalassuca) tetragonon	.	text p. 71-73; Figure 68; Plate 8h	citation	Guinot1985	2	=	=	.	.
 Poupin1994	3	Uca vocans	.	text p. 72	n/a	.	.	vocans	<	.	.
 Poupin1994	4	Uca	.	text p. 73	citation	Crane1975	0	>Uca	<	.	.
+Krishnan1994	1	Uca lactea annulipes	.	text p. 223	location	Adyar River, Chennai, Tamil Nadu, India	.	annulipes	<	.	.
+Krishnan1994	2	Uca triangularis bengali	.	text p. 223	location	Adyar River, Chennai, Tamil Nadu, India	.	bengali	<	.	.
 Reinsel1995.1	1	Uca pugilator	.	text p. 139A	location	Beaufort, Carteret County, North Carolina, USA	.	pugilator	<	.	.
 Chung1995	1	Uca pugilator	.	text p. 92A	n/a	.	.	pugilator	<	.	.
 Duval1995	1	Uca pugilator	.	text p. 110A	location	Beaufort, Carteret County, North Carolina, USA	.	pugilator	<	.	.
@@ -16724,6 +16856,54 @@ Kim1995	2.2	Uca arcuata	.	text p. 506	citation	Kamita1941	.	=	=	.	.
 Kim1995	2.3	Uca arcuata	.	text p. 506	citation	Kim1982	.	=	=	.	.
 Hsueh1995	1	Uca lactea	.	text p. 144	location	Dajia River, Taichung, Taiwan	.	lactea	<	.	.
 Hsueh1995	2	Uca arcuata	.	text p. 144	location	Dajia River, Taichung, Taiwan	.	arcuata	<	.	.
+Deb1995	1	Uca annulipes	.	text p. 346	location	Chilka Lake, Odisha, India	.	annulipes	<	.	.
+Deb1995	2.1	Uca (Celuca) lactea annulipes	.	text p. 353-354	location	Chilka Lake, Odisha, India	.	annulipes	<	.	.
+Deb1995	2.2	Uca (Celuca) lactea annulipes	.	text p. 353-354	citation	MilneEdwards1837.2	10	=	=	.	.
+Deb1995	2.3	Uca (Celuca) lactea annulipes	.	text p. 353-354	citation	Balss1922.1	1	=	=	.	.
+Deb1995	2.4	Uca (Celuca) lactea annulipes	.	text p. 353-354	citation	Sakai1976.1	.	=	=	.	.
+Deb1995	3.1	Uca	.	text p. 351, 353	citation	Leach1814	3	>Uca	<	.	.
+Deb1995	3.2	Uca	.	text p. 351, 353	citation	Latreille1820	0	>Uca	<	.	.
+Deb1995	3.3	Uca	.	text p. 351, 353	citation	Alcock1900	0	>Uca	<	.	.
+Deb1995	3.4	Uca	.	text p. 351, 353	citation	Sakai1976.1	0	>Uca	<	.	.
+Deb1995	4	Celuca	.	text p. 353	citation	Crane1975	71	=	=	.	.
+Bairagi1995	1.1	Uca	fiddler crab; calling crab	text p. 263, 266, 268-272	location	Hugli-Matla Estuarine Area, West Bengal. India	.	>Uca	<	.	.
+Bairagi1995	1.2	Uca	fiddler crab; calling crab	text p. 263, 266, 268-272	citation	Crane1975	0	>Uca	<	.	.
+Bairagi1995	1.3	Uca	fiddler crab; calling crab	text p. 263, 266, 268-272	citation	Leach1814	0	>Uca	<	.	.
+Bairagi1995	2	Deltuca	.	text p. 270-271	location	Hugli-Matla Estuarine Area, West Bengal. India	.	>Tubuca	>MSR:synonymy	.	.
+Bairagi1995	3	Celuca	.	text p. 270-271	location	Hugli-Matla Estuarine Area, West Bengal. India	.	>Austruca	>MSR:synonymy	.	.
+Bairagi1995	4.1	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	location	Bakkhali, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Bairagi1995	4.2	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	location	Haldia, Purba Medinipur District, West Bengal, India	.	rosea	<	.	.
+Bairagi1995	4.3	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	location	Jharkhali, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Bairagi1995	4.4	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	citation	Tweedie1937	9	=	=	.	.
+Bairagi1995	4.5	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	citation	Bairagi1988	2	=	=	.	.
+Bairagi1995	4.6	Uca (Deltuca) rosea	.	text p. 265-266, 271, 285	citation	Chakraborty1986	.	=	=	.	.
+Bairagi1995	5.1	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	location	Bakkhali, South 24 Parganas, West Bengal, India	.	paradussumieri	>MSR:synonymy	.	.
+Bairagi1995	5.2	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	location	Iswaripur, South 24 Parganas, West Bengal, India	.	paradussumieri	>MSR:synonymy	.	.
+Bairagi1995	5.3	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	citation	Crane1975	8	=	=	.	.
+Bairagi1995	5.4	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	citation	Chakraborty1986	.	=	=	.	.
+Bairagi1995	5.5	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	location	Jharkhali, South 24 Parganas, West Bengal, India	.	paradussumieri	>MSR:synonymy	.	.
+Bairagi1995	5.6	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	location	Andhra Pradesh, India	.	paradussumieri	>MSR:synonymy	.	.
+Bairagi1995	5.7	Uca (Deltuca) dussumieri spinata	.	text p. 265, 267, 271, 273, 285	location	Tamil Nadu, India	.	paradussumieri	>MSR:synonymy	.	.
+Bairagi1995	6.1	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	citation	MilneEdwards1837.2	10	=	=	.	.
+Bairagi1995	6.2	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	citation	Crane1975	96	=	=	.	.
+Bairagi1995	6.3	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	citation	Chakraborty1986	.	=	=	.	.
+Bairagi1995	6.4	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Bakkhali, South 24 Parganas, West Bengal, India	.	annulipes	<	.	.
+Bairagi1995	6.5	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Haldia, Purba Medinipur District, West Bengal, India	.	annulipes	<	.	.
+Bairagi1995	6.6	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Odisha, India	.	annulipes	<	.	.
+Bairagi1995	6.7	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Tamil Nadu, India	.	annulipes	<	.	.
+Bairagi1995	6.8	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Puducherry, India	.	annulipes	<	.	.
+Bairagi1995	6.9	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Kerala, India	.	annulipes	<	.	.
+Bairagi1995	6.10	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Maharashtra, India	.	annulipes	<	.	.
+Bairagi1995	6.11	Uca (Celuca) lactea annulipes	.	text p. 267, 271, 273-274, 285	location	Andaman and Nicobar Islands, India	.	annulipes	<	.	.
+Bairagi1995	7.1	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	citation	Crane1975	94	=	=	.	.
+Bairagi1995	7.2	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	citation	Chakraborty1986	.	=	=	.	.
+Bairagi1995	7.3	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	location	Jhingekhali, South 24 Parganas, West Bengal, India	.	bengali	<	.	.
+Bairagi1995	7.4	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	location	Bakkhali, South 24 Parganas, West Bengal, India	.	bengali	<	.	.
+Bairagi1995	7.5	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	location	Jharkhali, South 24 Parganas, West Bengal, India	.	bengali	<	.	.
+Bairagi1995	7.6	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	location	Tamil Nadu, India	.	bengali	<	.	.
+Bairagi1995	7.7	Uca (Celuca) triangularis bengali	.	text p. 267, 271, 274, 285	location	Puducherry, India	.	bengali	<	.	.
+Khan1995	1	Uca acuta	.	text p. 487-488	location	Nazat, North 24 Parganas, West Bengal, India	.	rosea	>MSR:geography	.	.
+Khan1995	2	Uca dussumieri	.	text p. 487	location	Nazat, North 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
 Hsueh1996	1	Uca arcuata	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	arcuata	<	.	.
 Hsueh1996	2	Uca borealis	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	borealis	<	.	.
 Hsueh1996	3	Uca lactea	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	lactea	<	.	.
@@ -17040,7 +17220,7 @@ Fingerman1998	1.04	Uca pugilator	.	text p. 344-347	citation	Fingerman1956.2	1	=	
 Fingerman1998	1.05	Uca pugilator	.	text p. 344-347	citation	Fingerman1977.1	1	=	=	.	.
 Fingerman1998	1.06	Uca pugilator	.	text p. 344-347	citation	Fingerman1981.2	.	=	=	.	.
 Fingerman1998	1.07	Uca pugilator	.	text p. 344-347	citation	Fingerman1977.4	1	=	=	.	.
-Fingerman1998	1.08	Uca pugilator	.	text p. 344-347	citation	Fingerman1978.2	.	=	=	.	.
+Fingerman1998	1.08	Uca pugilator	.	text p. 344-347	citation	Fingerman1978.2	1	=	=	.	.
 Fingerman1998	1.09	Uca pugilator	.	text p. 344-347	citation	Fingerman1980	.	=	=	.	.
 Fingerman1998	1.1	Uca pugilator	.	text p. 344-347	citation	Hanumante1981.4	.	=	=	.	.
 Fingerman1998	1.11	Uca pugilator	.	text p. 344-347	citation	Kulkarni1986.2	.	=	=	.	.
@@ -17070,6 +17250,36 @@ Campos1998	1.2	Uca princeps princeps	.	text p. 113	citation	VillalobosHiriart198
 Campos1998	1.3	Uca princeps princeps	.	text p. 113	location	Laguna Percebú, San Felipe, Baja California, Mexico	.	princeps	<	.	.
 Sasekumar1998	1	Uca rosea	.	text p. 59	location	Matang Mangrove Forest Reserve, Perak, Malaysia	.	rosea	<	.	.
 Sasekumar1998	2	Uca sp.	.	text p. 59	location	Matang Mangrove Forest Reserve, Perak, Malaysia	.	>Uca	<	.	.
+Deb1998	1.1	Uca annulipes	.	text p. 131, 150-151	location	Mahanadi River Estuary, Odisha, India	.	annulipes	<	.	.
+Deb1998	1.2	Uca annulipes	.	text p. 131, 150-151	citation	MilneEdwards1837.2	10	=	=	.	.
+Deb1998	1.3	Uca annulipes	.	text p. 131, 150-151	citation	Alcock1900	1	=	=	.	.
+Deb1998	1.4	Uca annulipes	.	text p. 131, 150-151	citation	Sakai1939	2	=	=	.	.
+Deb1998	1.5	Uca annulipes	.	text p. 131, 150-151	citation	Sakai1936	3	=	=	.	.
+Deb1998	1.6	Uca annulipes	.	text p. 131, 150-151	citation	Crosnier1965	8	=	=	.	.
+Deb1998	1.7	Uca annulipes	.	text p. 131, 150-151	citation	Sakai1976.1	.	=	=	.	.
+Deb1998	2.1	Uca acutus	.	text p. 131, 150	location	Mahanadi River Estuary, Odisha, India	.	rosea	<	.	.
+Deb1998	2.2	Uca acutus	.	text p. 131, 150	citation	Stimpson1858	6	=	=	.	.
+Deb1998	2.3	Uca acutus	.	text p. 131, 150	citation	Alcock1900	10	=	=	.	.
+Deb1998	2.4	Uca acutus	.	text p. 131, 150	citation	Crane1975	3	=	=	.	.
+Deb1998	3.1	Uca lacteus	.	text p. 131, 150-152	location	Mahanadi River Estuary, Odisha, India	.	annulipes	<	.	.
+Deb1998	3.2	Uca lacteus	.	text p. 131, 150-152	citation	deHaan1835	7	=	=	.	.
+Deb1998	3.3	Uca lacteus	.	text p. 131, 150-152	citation	Alcock1900	3	=	=	.	.
+Deb1998	3.4	Uca lacteus	.	text p. 131, 150-152	citation	Ortmann1897	22	=	=	.	.
+Deb1998	3.5	Uca lacteus	.	text p. 131, 150-152	citation	Sakai1936.2	2	=	=	.	.
+Deb1998	3.6	Uca lacteus	.	text p. 131, 150-152	citation	Crane1975	95	=	=	.	.
+Deb1998	3.7	Uca lacteus	.	text p. 131, 150-152	citation	Sakai1976.1	.	=	=	.	.
+Deb1998	4.1	Uca triangularis	.	text p. 131, 150-151	location	Mahanadi River Estuary, Odisha, India	.	bengali	<	.	.
+Deb1998	4.2	Uca triangularis	.	text p. 131, 150-151	citation	MilneEdwards1873	8	=	=	.	.
+Deb1998	4.3	Uca triangularis	.	text p. 131, 150-151	citation	Miyake1963	3	=	=	.	.
+Deb1998	4.4	Uca triangularis	.	text p. 131, 150-151	citation	Crane1975	93	=	=	.	.
+Deb1998	4.5	Uca triangularis	.	text p. 131, 150-151	citation	Sakai1976.1	.	=	=	.	.
+Deb1998	5.1	Uca	.	text p. 148, 150	citation	Leach1814	3	>Uca	<	.	.
+Deb1998	5.2	Uca	.	text p. 148, 150	citation	Latreille1817.2	0	>Uca	<	.	.
+Deb1998	5.3	Uca	.	text p. 148, 150	citation	Sakai1976.1	0	>Uca	<	.	.
+Deb1998	5.4	Uca	.	text p. 148, 150	citation	Crane1975	0	>Uca	<	.	.
+Deb1998	5.5	Uca	.	text p. 148, 150	citation	Alcock1900	0	>Uca	<	.	.
+Deb1998	5.6	Uca	.	text p. 148, 150	citation	Sakai1939	0	>Uca	<	.	.
+Venkataraman1998	1	.	fiddler crabs	text p. 143	location	India	.	>Uca	<	.	.
 Croll1999	1	Uca sp.	.	text p. 113A	n/a	.	.	>Uca	<	.	.
 Zou1999.6	1	Uca pugilator	.	text p. 137A	n/a	.	.	pugilator	<	.	.
 Wu1999	1	Uca pugilator	.	text p. 27A	n/a	.	.	pugilator	<	.	.
@@ -17128,6 +17338,53 @@ Suner1999	1.1	Uca tangeri	.	text p. 261, 263-268	location	La Salina, Guadalquivi
 Suner1999	1.2	Uca tangeri	.	text p. 261, 263-268	location	El Puntal, Guadalquivir, Andalusia, Spain	.	tangeri	<	.	.
 Zou1999.7	1	Uca (Thalassuca) borealis	.	text p. 177	location	Dongzhaigang Mangrove Nature Reserve, Meilan, Haikou, Hainan Island, China	.	borealis	<	.	.
 Zou1999.7	2	Uca (Deltuca) arcuata	.	text p. 179	citation	Yu1995	.	=	=	.	.
+Deb1999	1	Uca annulipes	.	text p. 351	location	West Bengal, India	.	annulipes	<	.	.
+Deb1999	2.2	Uca (Celuca) laceta annulipes	.	text p. 397	citation	MilneEdwards1837.2	10	=	=	.	.
+Deb1999	2.2	Uca (Celuca) laceta annulipes	.	text p. 397	citation	Crane1975	96	=	=	.	.
+Deb1999	2.3	Uca (Celuca) laceta annulipes	.	text p. 397	specimen	Bakkhali, South 24 Parganas, West Bengal, India	.	annulipes	<	.	.
+Deb1999	2.4	Uca (Celuca) laceta annulipes	.	text p. 397	specimen	Sagar Island, South 24 Parganas, West Bengal, India	.	annulipes	<	.	.
+Deb1999	3.1	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Rumphius1705	1	=	=	.	.
+Deb1999	3.2	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Linnaeus1758	1	=	=	.	.
+Deb1999	3.3	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Desmarest1825	4	=	=	.	.
+Deb1999	3.4	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Alcock1900	8	=	=	.	.
+Deb1999	3.5	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Alcock1900	9	=	=	.	.
+Deb1999	3.6	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Sankarankutty1961	2	=	=	.	.
+Deb1999	3.7	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Crane1975	30	=	=	.	.
+Deb1999	3.8	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	specimen	Sagar Island, South 24 Parganas, West Bengal, India	.	hesperiae	<	.	.
+Deb1999	3.9	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	specimen	South 24 Parganas, West Bengal, India	.	hesperiae	<	.	.
+Deb1999	3.10	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	MilneEdwards1852	5	=	=	.	.
+Deb1999	3.11	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Raj1927	.	=	=	marionis	.
+Deb1999	3.12	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Raj1927	.	=	=	marionis nitidus	.
+Deb1999	3.13	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Chopra1937	2	=	=	.	.
+Deb1999	3.14	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Chhapgar1957	2	=	=	.	.
+Deb1999	3.15	Uca (Thalassuca) vocans hesperiae	.	text p. 351, 397, 399-400	citation	Chhapgar1957	3	=	=	.	.
+Deb1999	4.1	Uca acuta acuta	.	text p. 351, 397-398	citation	Stimpson1858	6	=	=	.	.
+Deb1999	4.2	Uca acuta acuta	.	text p. 351, 397-398	citation	Chakraborty1986	.	=	=	.	.
+Deb1999	4.3	Uca acuta acuta	.	text p. 351, 397-398	specimen	Sundarbans, South 24 Parganas, West Bengal, India	.	?	>MSR	Almost certainly a different species, but not entirely clear which one given the others also listed in the publication	.
+Deb1999	5.1	Uca dussumieri dussumieri	.	text p. 351, 397-398	citation	MilneEdwards1852	12	=	=	.	.
+Deb1999	5.2	Uca dussumieri dussumieri	.	text p. 351, 397-398	citation	Chakraborty1986	.	=	=	.	.
+Deb1999	5.3	Uca dussumieri dussumieri	.	text p. 351, 397-398	specimen	South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Deb1999	5.4	Uca dussumieri dussumieri	.	text p. 351, 397-398	specimen	Sagar Island, South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Deb1999	5.5	Uca dussumieri dussumieri	.	text p. 351, 397-398	specimen	Prentice Island, South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Deb1999	5.6	Uca dussumieri dussumieri	.	text p. 351, 397-398	specimen	Lothian Island, South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Deb1999	6.1	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	Tweedie1937	9	=	=	.	.
+Deb1999	6.2	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	deMan1895	2	=	=	.	.
+Deb1999	6.3	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	Chopra1937	3	=	=	.	.
+Deb1999	6.4	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	Tweedie1954	1	=	=	.	.
+Deb1999	6.5	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	Crane1975	5	=	=	.	.
+Deb1999	6.6	Uca (Deltuca) rosea	.	text p. 351, 397, 399	citation	Bairagi1988	2	=	=	.	.
+Deb1999	6.7	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Sajnekhali, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Deb1999	6.8	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Basirhat, North 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Deb1999	6.9	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Jharkhali, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Deb1999	6.10	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Gosaba, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Deb1999	6.11	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Tamluk, Purba Medinipur District, West Bengal, India	.	rosea	<	.	.
+Deb1999	6.12	Uca (Deltuca) rosea	.	text p. 351, 397, 399	specimen	Canning, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Deb1999	7.1	Uca triangularis bengali	.	text p. 351, 397-399	citation	MilneEdwards1873	8	=	=	.	.
+Deb1999	7.2	Uca triangularis bengali	.	text p. 351, 397-399	citation	Chakraborty1986	.	=	=	.	.
+Deb1999	7.3	Uca triangularis bengali	.	text p. 351, 397-399	location	Sagar Island, South 24 Parganas, West Bengal, India	.	bengali	<	.	.
+Deb1999	8.1	Uca	.	text p. 389, 396-397	citation	Leach1815	0	>Uca	<	.	.
+Deb1999	8.2	Uca	.	text p. 389, 396-397	citation	Crane1975	0	>Uca	<	.	.
+Deb1999	8.3	Uca	.	text p. 389, 396-397	location	West Bengal, India	.	>Uca	<	.	.
 Croll2000.1	1	Uca longisignalis	.	text p. 984	location	Gulf of Mexico	.	longisignalis	<	.	.
 Croll2000.1	2	Uca minax	.	text p. 984	location	South Carolina, USA	.	minax	<	.	.
 Croll2000.1	3.1	Uca pugnax	.	text p. 984	location	Virginia, USA	.	pugnax	<	.	.
@@ -18463,6 +18720,32 @@ Simoes2001	1.2	Uca inversa	.	text p. 81, 86, 88, 90, 93-94	citation	Wranik1998	.
 Simoes2001	2	Uca annulipes albimana	.	text p. 86, 90, 94-95	location	Socotra, Yemen	.	albimana	<	.	.
 Simoes2001	3	Uca lactea albimana	.	text p. 93	location	Socotra, Yemen	.	albimana	<	Some confusion over which parent species name to use.	.
 Prasadan2001	1	Uca annulipes	.	text p. 303, 308-309	location	Kerala, India	.	annulipes	<	.	.
+Das2001	1.1	Uca sp.	fiddler crabs	text p. 247, 252-253, 255	location	India	.	>Uca	<	.	.
+Das2001	1.2	Uca sp.	fiddler crabs	text p. 247, 252-253, 255	location	Andaman Islands	.	>Uca	<	.	.
+Das2001	1.3	Uca sp.	fiddler crabs	text p. 247, 252-253, 255	citation	DevRoy2000	0	>Uca	<	.	.
+Das2001	2	Uca vocans	.	text p. 253, 255	location	Andaman Islands	.	vocans	<	.	.
+Das2001	3	Uca dussumieri	.	text p. 255	location	Andaman Islands	.	paradussumieri	>MSR:geography	.	.
+Das2001	4	Uca lactea	.	text p. 255	location	Andaman Islands	.	annulipes	>MSR:geography	.	.
+Das2001	5	Uca tetragonon	.	text p. 255	location	Andaman Islands	.	tetragonon	<	.	.
+Das2001	6	Uca consobrinus	.	text p. 254	citation	Verwey1930	2	=	=	.	.
+Das2001	7	Uca signatus	.	text p. 254	citation	Verwey1930	1	=	=	.	.
+DevRoy2001	1.1	Uca dussumieri	.	text p. 35-36, 51-52	citation	Alcock1900	11	=	=	.	.
+DevRoy2001	1.2	Uca dussumieri	.	text p. 35-36, 51-52	citation	MilneEdwards1852	12	=	=	.	.
+DevRoy2001	1.3	Uca dussumieri	.	text p. 35-36, 51-52	citation	Crane1975	8	=	=	.	.
+DevRoy2001	1.4	Uca dussumieri	.	text p. 35-36, 51-52	citation	George1982	5	=	=	.	.
+DevRoy2001	1.5	Uca dussumieri	.	text p. 35-36, 51-52	location	Godavari-Krishna Rivers, Andhra Pradesh, India	.	alcocki	>MSR:geography	.	.
+DevRoy2001	2.1	Uca lactea	.	text p. 36, 51-52	location	Chollangi, Andhra Pradesh, India	.	annulipes	>MSR:geography	.	.
+DevRoy2001	2.2	Uca lactea	.	text p. 36, 51-52	location	Yanam, Puducherry, India	.	annulipes	>MSR:geography	.	.
+DevRoy2001	2.3	Uca lactea	.	text p. 36, 51-52	citation	deHaan1835	7	=	=	.	.
+DevRoy2001	2.4	Uca lactea	.	text p. 36, 51-52	citation	Alcock1900	3	=	=	.	.
+DevRoy2001	2.5	Uca lactea	.	text p. 36, 51-52	citation	Sankarankutty1961	1	=	=	.	.
+DevRoy2001	2.6	Uca lactea	.	text p. 36, 51-52	citation	Crane1975	95	=	=	.	.
+DevRoy2001	3.1	Uca	.	text p. 50-51	location	Godavari-Krishna Rivers, Andhra Pradesh, India	0	>Uca	<	.	.
+DevRoy2001	3.2	Uca	.	text p. 50-51	citation	Leach1814	3	>Uca	=	.	.
+DevRoy2001	3.3	Uca	.	text p. 50-51	citation	Latreille1817.2	0	>Uca	=	.	.
+DevRoy2001	3.4	Uca	.	text p. 50-51	citation	vonHagen1976	0	>Uca	=	.	.
+DevRoy2001	3.5	Uca	.	text p. 50-51	citation	DevRoy2000	0	>Uca	=	.	.
+DevRoy2001	3.6	Uca	.	text p. 50-51	citation	George1982	0	>Uca	=	.	.
 Curran2002	1	.	fiddler crabs	text p. 62	location	The Bahamas	.	>Uca	<	.	.
 Koretsky2002.2	1	.	fiddler crabs	text p. 58	location	Sapelo Island, McIntosh County, Georgia, USA	.	>Uca	<	.	.
 Allen2002	1	Uca	fiddler crabs	text p. 1184	n/a	.	.	>Uca	<	.	.
@@ -18744,7 +19027,7 @@ Whitelaw2002	2.2	Uca pugnax	.	text p. 409-411	location	Charles E. Wheeler Salt M
 Whitelaw2002	3	Gelasimus	.	text p. 409	citation	Tucker1995	0	>Uca	<	.	.
 Whitelaw2002	4	Uca minax	.	text p. 410-411	location	Charles E. Wheeler Salt Marsh, Milford, New Haven County, Connecticut, USA	.	minax	<	.	.
 Holthuis2002	1	Gelasimus rubripes	.	text p. 415, 421	citation	Jacquinot1846	1	=	=	.	He is not using these names as valid, simply discussing a variant printing of the earlier work.
-Ng2002	1	Uca angustifrons	.	text p. 378	location	West coast of Thailand	.	bellator	>MSR:synonymy	.	.
+Ng2002	1	Uca angustifrons	.	text p. 378	location	West coast of Thailand	.	alcocki	Shih2018.1	.	.
 Ng2002	2	Uca annulipes	.	text p. 378	location	West coast of Thailand	.	annulipes	<	.	.
 Ng2002	3.1	Uca coarctata	.	text p. 378	location	West coast of Thailand	.	coarctata	<	.	.
 Ng2002	3.2	Uca coarctata	.	text p. 378	citation	Pearse1912.1	1	=	=	.	.
@@ -18775,6 +19058,7 @@ Yoshigou2002	2.2	Uca lactea	.	text p. 16	citation	Takeda1976.2	3	=	=	.	.
 Markham2002	1	Uca pugilator	.	text p. 329	citation	Leidy1855	1	=	=	.	.
 Markham2002	2	Uca	.	text p. 330	citation	Bourdon1970	0	>Uca	<	.	.
 Markham2002	3	Uca forcipata	.	text p. 330, 336	citation	Pearse1930	.	=	=	.	.
+Alfred2002	1	.	fiddler crabs	text p. 118	n/a	.	.	>Uca	<	.	.
 Brodie2003	1	Uca pugilator	.	text p. 1080	location	South Carolina, USA	.	pugilator	<	.	.
 Brodie2003	2	Uca pugnax	.	text p. 1080	location	South Carolina, USA	.	pugnax	<	.	.
 Brodie2003	3	Uca minax	.	text p. 1080	location	South Carolina, USA	.	minax	<	.	.
@@ -18872,6 +19156,13 @@ Ashton2003.2	2	Uca rosea	.	text p. 131, 134, 141	location	Sungai Sematan, Sarawa
 Ashton2003.2	3	Uca	.	text p. 137	citation	Olafsson1997	0	>Uca	<	.	.
 Ashton2003.2	4	Uca sp.	.	text p. 141	location	Sungai Sematan, Sarawak, Borneo, Malaysia	.	?	<	Unidentified species	.
 Ashton2003.2	5	Uca sp.	.	text p. 141	location	Sungai Sematan, Sarawak, Borneo, Malaysia	.	?	<	Unidentified species	.
+Khan2003	1	Uca (Deltuca) dussumieri	.	text p. 191	location	Sundarbans, South 24 Parganas, West Bengal, India	.	alcocki	>MSR:geography	.	.
+Khan2003	2	Uca (Deltuca) rosea	.	text p. 191	location	Sundarbans, South 24 Parganas, West Bengal, India	.	rosea	<	.	.
+Khan2003	3	Uca (Deltuca triangularis	.	text p. 191	location	Sundarbans, South 24 Parganas, West Bengal, India	.	bengali	>MSR:geography	.	.
+Ramakrishna2003	1	Uca (Celuca) triangularis bengali	.	text p. 11	location	Digha, Purba Medinipur District, West Bengal, India	.	bengali	<	.	.
+Ramakrishna2003	2	Uca (Celuca) lactea annulipes	.	text p. 11	location	Digha, Purba Medinipur District, West Bengal, India	.	annulipes	<	.	.
+Ramakrishna2003	3	Uca (Deltuca) rosea	.	text p. 11	location	Digha, Purba Medinipur District, West Bengal, India	.	rosea	<	.	.
+Ramakrishna2003	4	Uca acuteus	.	text p. 11	location	Digha, Purba Medinipur District, West Bengal, India	.	alcocki	>MSR:geography	.	.
 Brodie2004.2	1	Uca pugilator	.	text p. 64	location	Southeastern United States	.	pugilator	<	.	.
 Brodie2004.2	2	Uca pugnax	.	text p. 64	location	Southeastern United States	.	pugnax	<	.	.
 Brodie2004.2	3	Uca minax	.	text p. 64	location	Southeastern United States	.	minax	<	.	.
@@ -18921,7 +19212,7 @@ Cardoso2004	2.5	Uca	.	text p. 733, 735	citation	Benetti2004	0	>Uca	<	.	.
 Cardoso2004	2.6	Uca	.	text p. 733, 735	citation	Colpo2003	0	>Uca	<	.	.
 Cardoso2004	2.7	Uca	.	text p. 733, 735	citation	Zucker1986	0	>Uca	<	.	.
 Vijayan2004	1	Uca	fiddler crabs	text p. 208-209	citation	Chakraborty1985	0	>Uca	<	.	.
-Vijayan2004	2	Gelasimus dussumieri	.	text p. 215, Plate 11	location	Ayiramthengu, Kollam District, Kerala, India	.	urvillei	>MSR:geography	.	.
+Vijayan2004	2	Gelasimus dussumieri	.	text p. 215, Plate 11	location	Ayiramthengu, Kollam District, Kerala, India	.	alcocki	>MSR:geography	.	.
 Vijayan2004	3	Gelasimus sp.	.	text p. 216	location	Ayiramthengu, Kollam District, Kerala, India	.	>Uca	<	.	.
 Vijayan2004	4	Uca uca	.	text p. 216	location	Ayiramthengu, Kollam District, Kerala, India	.	>Uca	<	.	.
 McKeon2004	1.1	Uca spp.	.	text p. 1, 3-5, 7-9	location	Twin Cays, Belize	0	>Uca	<	.	.
@@ -19097,7 +19388,7 @@ Beinlich2006	102	Uca (Minuca) pugnax	.	text p. 27	citation	Smith1870.2	14	=	=	.	
 Beinlich2006	103	Uca (Minuca) zacae	.	text p. 27	citation	Crane1941	6	=	=	.	.
 Beinlich2006	104	Uca (Uca) maracoani antiqua	.	text p. 28-29	citation	Brito1972	1	=	=	.	.
 Ghory2006	1.1	Uca urvillei	.	text p. 161-166; figure 1	citation	Hashmi1970	.	=	=	.	.
-Ghory2006	1.2	Uca urvillei	.	text p. 161-166; figure 1	specimen	Sandspit, Karachi, Sindh, Pakistan	.	urvillei	<	.	.
+Ghory2006	1.2	Uca urvillei	.	text p. 161-166; figure 1	specimen	Sandspit, Karachi, Sindh, Pakistan	.	alcocki	>MSR:geography	.	.
 Ghory2006	2.1	Uca annulipes	.	text p. 161-166; figure 2	citation	Hashmi1970	.	=	=	.	.
 Ghory2006	2.2	Uca annulipes	.	text p. 161-166; figure 2	specimen	Sandspit, Karachi, Sindh, Pakistan	.	annulipes	Naderloo2010	.	.
 Ghory2006	3.1	Uca tangeri	.	text p. 161, 164, 166	citation	Paula1985	.	=	=	.	.
@@ -19170,6 +19461,20 @@ Bergey2006	5	Uca vocans	.	text p. 82-83; figure 1	location	Kaledupa, Southeast S
 Bergey2006	6	Uca tetragonon	.	text p. 82-83	location	Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	.	tetragonon	<	.	.
 Zhou2006	1	Uca dussumieri	.	text p. 168	location	Jiuduansha Mudflat, Yangtze River Estuary, Shanghai, China	.	paradussumieri	Shih2010.2	.	.
 Zhou2006	2	Uca arcuata	.	text p. 168	location	Jiuduansha Mudflat, Yangtze River Estuary, Shanghai, China	.	arcuata	<	.	.
+Das2006	1	Uca spp.	fiddler crabs	text p. 117	location	India	.	>Uca	<	.	.
+Mitra2006	1	Uca (Deltuca) rosea	.	text p. 135	location	Talsari, Balasore, Odisha, India	.	rosea	<	.	.
+Mitra2006	2	Uca (Celuca) triangularis Bengali	.	text p. 135	location	Talsari, Balasore, Odisha, India	.	bengali	<	.	.
+Mitra2006	3	Uca (Celuca) lactea annulipes	.	text p. 135	location	Talsari, Balasore, Odisha, India	.	annulipes	<	.	.
+Mitra2006	4	Uca acuteus	.	text p. 135	location	Talsari, Balasore, Odisha, India	.	alcocki	>MSR	.	.
+Radhakrishnan2006	1	Uca sp.	fiddler crabs	text p. 11, 28; Plate 2	location	Kerala, India	.	>Uca	<	.	.
+Radhakrishnan2006	2.1	Uca lactea	.	text p. 29, 48	location	Kasaragod District, Kerala, India	.	annulipes	<	.	.
+Radhakrishnan2006	2.2	Uca lactea	.	text p. 29, 48	location	Kannur District, Kerala, India	.	annulipes	<	.	.
+Radhakrishnan2006	2.3	Uca lactea	.	text p. 29, 48	location	Kozhikode District, Kerala, India	.	annulipes	<	.	.
+Radhakrishnan2006	2.4	Uca lactea	.	text p. 29, 48	location	Malappuram District, Kerala, India	.	annulipes	<	.	.
+Alves2006	1	Uca maracoani	.	text p. 263, 270	location	Maranhão, Brazil	.	maracoani	<	.	.
+Alves2007.1	1	Uca	.	text p. 951	location	Brazil	.	>Uca	<	.	.
+Alves2007.2	1.1	Uca maracoani	.	text p. 86	location	Maranhão, Brazil	.	maracoani	<	.	.
+Alves2007.2	1.2	Uca maracoani	.	text p. 86	location	Piauí , Brazil	.	maracoani	<	.	.
 Otani2007	1	Uca lactea	.	text p. 199	location	Japan	.	lactea	<	.	.
 Borgianini2007.2	1	Uca minax	red-jointed fiddler crab	text p. e11	location	South Carolina, USA	.	minax	<	.	.
 Borgianini2007.1	1	Uca minax	red-jointed fiddler crab	text p. e161	location	South Carolina, USA	.	minax	<	.	.
@@ -19194,12 +19499,12 @@ Thurman2007	12	Leptuca	.	text p. e234	location	Caribbean	.	>Leptuca	<	.	.
 Meng2007	1	Uca pugilator	.	text p. e208	n/a	.	.	pugilator	<	.	.
 Kon2007	1.1	Uca	.	text p. 59-61	location	Sikao Creek Estuary, Trang, Thailand	.	>Uca	<	.	.
 Kon2007	1.2	Uca	.	text p. 59-61	citation	Meziane2002	0	>Uca	<	.	.
-Kon2007	2	Uca urvillei	.	text p. 59-61	location	Sikao Creek Estuary, Trang, Thailand	.	urvillei	<	.	.
+Kon2007	2	Uca urvillei	.	text p. 59-61	location	Sikao Creek Estuary, Trang, Thailand	.	alcocki	>MSR:geography	.	.
 Kon2007	3	Uca bengali	.	text p. 60	location	Sikao Creek Estuary, Trang, Thailand	.	bengali	<	.	.
 Kon2007	4	Uca forcipata	.	text p. 60	location	Sikao Creek Estuary, Trang, Thailand	.	forcipata	<	.	.
 Kon2007	5	Uca annulipes	.	text p. 60	location	Sikao Creek Estuary, Trang, Thailand	.	annulipes	<	.	.
-Naiyanetr2007	1.1	Uca angustifrons	.	text p. 131	location	Phuket Island, Thailand	.	urvillei	>MSR	Based on logic of Frith and Frith (1977).	.
-Naiyanetr2007	1.2	Uca angustifrons	.	text p. 131	location	West coast of Thailand	.	urvillei	>MSR	Based on logic of Frith and Frith (1977).	.
+Naiyanetr2007	1.1	Uca angustifrons	.	text p. 131	location	Phuket Island, Thailand	.	alcocki	>MSR:geography	.	.
+Naiyanetr2007	1.2	Uca angustifrons	.	text p. 131	location	West coast of Thailand	.	alcocki	>MSR:geography	.	.
 Naiyanetr2007	2.01	Uca annulipes	.	text p. 131	location	Chon Buri, Thailand	.	annulipes	<	.	.
 Naiyanetr2007	2.02	Uca annulipes	.	text p. 131	location	Rayong, Thailand	.	annulipes	<	.	.
 Naiyanetr2007	2.03	Uca annulipes	.	text p. 131	location	Trat, Thailand	.	annulipes	<	.	.
@@ -19216,7 +19521,7 @@ Naiyanetr2007	2.13	Uca annulipes	.	text p. 131	location	Ranong, Thailand	.	annul
 Naiyanetr2007	2.14	Uca annulipes	.	text p. 131	location	Phuket Island, Thailand	.	annulipes	<	.	.
 Naiyanetr2007	2.15	Uca annulipes	.	text p. 131	location	Phang-nga, Thailand	.	annulipes	<	.	.
 Naiyanetr2007	2.16	Uca annulipes	.	text p. 131	location	Krabi, Thailand	.	annulipes	<	.	.
-Naiyanetr2007	3	Uca bellator	.	text p. 132	location	Phuket Island, Thailand	.	urvillei	>MSR	Based on logic of Frith and Frith (1977).	.
+Naiyanetr2007	3	Uca bellator	.	text p. 132	location	Phuket Island, Thailand	.	alcocki	>MSR:geography	Based on logic of Frith and Frith (1977).	.
 Naiyanetr2007	4.1	Uca bengali	.	text p. 132	location	Trang, Thailand	.	bengali	<	.	.
 Naiyanetr2007	4.2	Uca bengali	.	text p. 132	location	Satun, Thailand	.	bengali	<	.	.
 Naiyanetr2007	4.3	Uca bengali	.	text p. 132	location	Ranong, Thailand	.	bengali	<	.	.
@@ -19276,13 +19581,13 @@ Naiyanetr2007	12.01	Uca tetragonon	.	text p. 133	location	Ranong, Thailand	.	tet
 Naiyanetr2007	12.02	Uca tetragonon	.	text p. 133	location	Phuket Island, Thailand	.	tetragonon	<	.	.
 Naiyanetr2007	13.01	Uca triangularis	.	text p. 133	location	Chon Buri, Thailand	.	triangularis	<	.	.
 Naiyanetr2007	13.02	Uca triangularis	.	text p. 133	location	Phuket Island, Thailand	.	bengali	>MSR:geography	.	.
-Naiyanetr2007	14.01	Uca urvillei	.	text p. 133	location	Chumphon, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.02	Uca urvillei	.	text p. 133	location	Songkhla, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.03	Uca urvillei	.	text p. 133	location	Trat, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.04	Uca urvillei	.	text p. 133	location	Ranong, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.05	Uca urvillei	.	text p. 133	location	Phuket Island, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.06	Uca urvillei	.	text p. 133	location	Phang-nga, Thailand	.	urvillei	<	.	.
-Naiyanetr2007	14.07	Uca urvillei	.	text p. 133	location	Krabi, Thailand	.	urvillei	<	.	.
+Naiyanetr2007	14.01	Uca urvillei	.	text p. 133	location	Chumphon, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.02	Uca urvillei	.	text p. 133	location	Songkhla, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.03	Uca urvillei	.	text p. 133	location	Trat, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.04	Uca urvillei	.	text p. 133	location	Ranong, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.05	Uca urvillei	.	text p. 133	location	Phuket Island, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.06	Uca urvillei	.	text p. 133	location	Phang-nga, Thailand	.	alcocki	Shih2018.1	.	.
+Naiyanetr2007	14.07	Uca urvillei	.	text p. 133	location	Krabi, Thailand	.	alcocki	Shih2018.1	.	.
 Naiyanetr2007	15.01	Uca vocans	.	text p. 133	location	Chon Buri, Thailand	.	vocans	<	.	.
 Naiyanetr2007	15.02	Uca vocans	.	text p. 133	location	Rayong, Thailand	.	vocans	<	.	.
 Naiyanetr2007	15.03	Uca vocans	.	text p. 133	location	Chanthaburi, Thailand	.	vocans	<	.	.
@@ -19303,6 +19608,9 @@ Chen2007	2.4	Uca	.	text p. 222	citation	Hyatt1975	0	>Uca	<	.	.
 Tang2007	1	Uca arcuata	.	text p. 259	location	Zhanjiang Mangrove Nature Reserve, Zhanjiang, Guangdong, China	.	arcuata	<	.	.
 Tang2007	2	Uca vocans borealis	.	text p. 259	location	Zhanjiang Mangrove Nature Reserve, Zhanjiang, Guangdong, China	.	borealis	<	.	.
 Tang2007	3	Uca triangularis triangularis	.	text p. 259	location	Zhanjiang Mangrove Nature Reserve, Zhanjiang, Guangdong, China	.	triangularis	<	.	.
+Ramakrishna2007	1	Uca spp.	fiddler crabs	text p. 260-262	location	India	.	>Uca	<	.	.
+Ramakrishna2007	2	Uca (Deltuca) dussumieri	.	text p. 262	location	India	.	alcocki	>MSR:geography	.	.
+Ramakrishna2007	3	Uca (Thalassuca) vocans	.	text p. 262	location	India	.	hesperiae	>MSR:geography	.	.
 DominguezAlonso2008	1	Uca (Uca) marinae	.	text p. 663-673; figures 1, 3-4	specimen	Honduras [Plio-Pleistocene]	.	marinae	.	fossil; type description	.
 DominguezAlonso2008	2.1	Uca (Uca) ornata	.	text p. 663, 665, 668, 670-673	location	El Salvador	.	ornata	<	.	.
 DominguezAlonso2008	2.2	Uca (Uca) ornata	.	text p. 663, 665, 668, 670-673	location	Pacific coast of Honduras	.	ornata	<	.	.
@@ -19759,6 +20067,56 @@ Shih2008.2	8	Uca lactea	.	text p. 42	citation	Shen1997	.	=	=	.	.
 Shih2008.2	9	Uca perplexa	.	text p. 42	citation	Shen1997	.	=	=	.	.
 Shih2008.2	10	Uca tetragonon	.	text p. 42	citation	Shen1997	.	=	=	.	.
 Shih2008.2	11	Uca triangularis	.	text p. 42	citation	Hung1997	.	=	=	.	.
+Rath2008	1.01	Uca lactea	.	text p. 46, 76-77	citation	deHaan1835	7	=	=	.	.
+Rath2008	1.02	Uca lactea	.	text p. 46, 76-77	citation	Alcock1900	3	=	=	.	.
+Rath2008	1.03	Uca lactea	.	text p. 46, 76-77	citation	Sankarankutty1961	1	=	=	.	.
+Rath2008	1.04	Uca lactea	.	text p. 46, 76-77	citation	Crane1975	95	=	=	.	.
+Rath2008	1.05	Uca lactea	.	text p. 46, 76-77	citation	DevRoy2005	.	=	=	.	.
+Rath2008	1.06	Uca lactea	.	text p. 46, 76-77	specimen	Lankevanidibba, Guntur District, Andhra Pradesh, India [CR-4934]	.	annulipes	<	.	.
+Rath2008	1.07	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4991]	.	annulipes	<	.	.
+Rath2008	1.08	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4933]	.	annulipes	<	.	.
+Rath2008	1.09	Uca lactea	.	text p. 46, 76-77	specimen	Pallethummalapalem, Krishna District, Andhra Pradesh, India [CR-4936]	.	annulipes	<	.	.
+Rath2008	1.1	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4932]	.	annulipes	<	.	.
+Rath2008	1.11	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4919]	.	annulipes	<	.	.
+Rath2008	1.12	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4922]	.	annulipes	<	.	.
+Rath2008	1.13	Uca lactea	.	text p. 46, 76-77	specimen	Lankevanidibba, Guntur District, Andhra Pradesh, India [CR-4901]	.	annulipes	<	.	.
+Rath2008	1.14	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4925]	.	annulipes	<	.	.
+Rath2008	1.15	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4918]	.	annulipes	<	.	.
+Rath2008	1.16	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4926]	.	annulipes	<	.	.
+Rath2008	1.17	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4915]	.	annulipes	<	.	.
+Rath2008	1.18	Uca lactea	.	text p. 46, 76-77	specimen	Lankevanidibba, Guntur District, Andhra Pradesh, India [CR-4935]	.	annulipes	<	.	.
+Rath2008	1.19	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4917]	.	annulipes	<	.	.
+Rath2008	1.2	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4981]	.	annulipes	<	.	.
+Rath2008	1.21	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4982]	.	annulipes	<	.	.
+Rath2008	1.22	Uca lactea	.	text p. 46, 76-77	specimen	Pallethummalapalem, Krishna District, Andhra Pradesh, India [CR-4983]	.	annulipes	<	.	.
+Rath2008	1.23	Uca lactea	.	text p. 46, 76-77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4916]	.	annulipes	<	.	.
+Rath2008	1.24	Uca lactea	.	text p. 46, 76-77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4908]	.	annulipes	<	.	.
+Rath2008	1.25	Uca lactea	.	text p. 46, 76-77	specimen	Sangameswara, Krishna District, Andhra Pradesh, India [CR-4984]	.	annulipes	<	.	.
+Rath2008	1.26	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4912]	.	annulipes	<	.	.
+Rath2008	1.27	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4928]	.	annulipes	<	.	.
+Rath2008	1.28	Uca lactea	.	text p. 46, 76-77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4923]	.	annulipes	<	.	.
+Rath2008	1.29	Uca lactea	.	text p. 46, 76-77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4910]	.	annulipes	<	.	.
+Rath2008	1.3	Uca lactea	.	text p. 46, 76-77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4924]	.	annulipes	<	.	.
+Rath2008	1.31	Uca lactea	.	text p. 46, 76-77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4900]	.	annulipes	<	.	.
+Rath2008	1.32	Uca lactea	.	text p. 46, 76-77	specimen	Pallethummalapalem, Krishna District, Andhra Pradesh, India [CR-4921]	.	annulipes	<	.	.
+Rath2008	1.33	Uca lactea	.	text p. 46, 76-77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4907]	.	annulipes	<	.	.
+Rath2008	1.34	Uca lactea	.	text p. 46, 76-77	specimen	Kamaveicheruvu, Andhra Pradesh, India [CR-4911] 	.	annulipes	<	.	.
+Rath2008	2.01	Uca triangularis	.	text p. 46, 77	citation	Crane1975	94	=	=	.	.
+Rath2008	2.02	Uca triangularis	.	text p. 46, 77	citation	DevRoy2005	.	=	=	.	.
+Rath2008	2.03	Uca triangularis	.	text p. 46, 77	citation	MilneEdwards1873	8	=	=	.	.
+Rath2008	2.04	Uca triangularis	.	text p. 46, 77	citation	Alcock1900	6	=	=	.	.
+Rath2008	2.05	Uca triangularis	.	text p. 46, 77	specimen	Lankevanidibba, Guntur District, Andhra Pradesh, India [CR-4929]	.	bengali	<	.	.
+Rath2008	2.06	Uca triangularis	.	text p. 46, 77	specimen	Kanur Creek, Krishna District, Andhra Pradesh, India [CR-4914]	.	bengali	<	.	.
+Rath2008	2.07	Uca triangularis	.	text p. 46, 77	specimen	Lankevanidibba, Guntur District, Andhra Pradesh, India [CR-4913]	.	bengali	<	.	.
+Rath2008	2.08	Uca triangularis	.	text p. 46, 77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4920]	.	bengali	<	.	.
+Rath2008	2.09	Uca triangularis	.	text p. 46, 77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4927]	.	bengali	<	.	.
+Rath2008	2.1	Uca triangularis	.	text p. 46, 77	specimen	Pallethummalapalem, Krishna District, Andhra Pradesh, India [CR-4931]	.	bengali	<	.	.
+Rath2008	2.11	Uca triangularis	.	text p. 46, 77	specimen	Palakayatippa, Krishna District, Andhra Pradesh, India [CR-4899]	.	bengali	<	.	.
+Rath2008	2.12	Uca triangularis	.	text p. 46, 77	specimen	Gullalamoda, Krishna District, Andhra Pradesh, India [CR-4930]	.	bengali	<	.	.
+Rath2008	3.1	Uca	.	text p. 74-76	citation	Leach1814	3	>Uca	=	.	.
+Rath2008	3.2	Uca	.	text p. 74-76	citation	Latreille1817.2	0	>Uca	=	.	.
+Rath2008	3.3	Uca	.	text p. 74-76	citation	Crane1975	71	>Uca	=	.	.
+Rath2008	3.4	Uca	.	text p. 74-76	citation	DevRoy2005	0	>Uca	=	.	.
 Meng2009.3	1	Uca pugilator	.	text p. e114	n/a	.	.	pugilator	<	.	.
 Aoki2009	1.1	Uca arcuata	.	text p. 10-13	location	Japan	.	arcuata	<	.	.
 Aoki2009	1.2	Uca arcuata	.	text p. 10-13	citation	Ono1965	2	=	=	.	.
@@ -19891,6 +20249,16 @@ PenhaLopes2009.2	2.07	Uca	fiddler crabs	text p. 26, 29	citation	Litulo2005.2	0	>
 PenhaLopes2009.2	2.08	Uca	fiddler crabs	text p. 26, 29	citation	Litulo2005.3	0	>Uca	<	.	.
 PenhaLopes2009.2	2.09	Uca	fiddler crabs	text p. 26, 29	citation	Torres2009	0	>Uca	<	.	.
 PenhaLopes2009.2	2.1	Uca	fiddler crabs	text p. 26, 29	citation	Torres2008	0	>Uca	<	.	.
+Khan2009	1	.	fiddler crabs	text p. 8	location	Vypin, Kochi, Ernakulam District, Kerala, India	.	>Uca	<	.	.
+Satyanarayana2009	1	.	fiddler crabs	text p. 99	n/a	.	.	>Uca	<	.	.
+Krishnamoorthy2009	1.1	Uca (Thalassuca) vocans vocans	.	text p. 7, 40	citation	Alcock1900	8	=	=	.	.
+Krishnamoorthy2009	1.2	Uca (Thalassuca) vocans vocans	.	text p. 7, 40	citation	Chopra1937	2	=	=	.	.
+Krishnamoorthy2009	1.3	Uca (Thalassuca) vocans vocans	.	text p. 7, 40	citation	Crane1975	27	=	=	.	.
+Krishnamoorthy2009	1.4	Uca (Thalassuca) vocans vocans	.	text p. 7, 40	specimen	Adyar River, Chennai, Tamil Nadu, India [4133]	.	hesperiae	>MSR:geography	.	.
+Krishnamoorthy2009	2.1	Uca (Celuca) lactea annulipes	.	text p. 7, 40	citation	Alcock1900	1	=	=	.	.
+Krishnamoorthy2009	2.2	Uca (Celuca) lactea annulipes	.	text p. 7, 40	citation	Kemp1915	1	=	=	.	.
+Krishnamoorthy2009	2.3	Uca (Celuca) lactea annulipes	.	text p. 7, 40	citation	Crane1975	96	=	=	.	.
+Krishnamoorthy2009	2.4	Uca (Celuca) lactea annulipes	.	text p. 7, 40	specimen	Adyar River, Chennai, Tamil Nadu, India [4031]	.	annulipes	<	.	.
 Landstorfer2010	1.1	Uca vocator	.	text p. 213-218	citation	Crane1975	57	=	=	.	.
 Landstorfer2010	1.2	Uca vocator	.	text p. 213-218	specimen	Trinidad	.	vocator	<	.	.
 Landstorfer2010	2.1	Uca ecuadoriensis	.	text p. 213-218	citation	Crane1975	58	=	=	.	.
@@ -20684,6 +21052,47 @@ Shih2010.2	26.2	Uca demani	.	text p. 13-16; Figure 4D-F	citation	Yamaguchi1994	.
 Shih2010.2	26.3	Uca demani	.	text p. 13-16; Figure 4D-F	specimen	Zamboanga, Minanao, Philippines [NCHUZOOL 13373]	.	demani	<	.	.
 Shih2010.2	26.4	Uca demani	.	text p. 13-16; Figure 4D-F	specimen	Sulawesi, Indonesia [ZRC 2000.1731]	.	demani	<	.	.
 Shih2010.2	26.5	Uca demani	.	text p. 13-16; Figure 4D-F	specimen	Cebu, Philippines [NCHUZOOL 13372]	.	demani	<	.	.
+Mitra2010	1.1	Uca (Deltuca) rosea	.	text p. 9, 39-40, 119; Plate VII, Figure B	citation	Tweedie1937	9	=	=	.	.
+Mitra2010	1.2	Uca (Deltuca) rosea	.	text p. 9, 39-40, 119; Plate VII, Figure B	citation	Bairagi1995	4	=	=	.	.
+Mitra2010	1.3	Uca (Deltuca) rosea	.	text p. 9, 39-40, 119; Plate VII, Figure B	location	Talsari, Balasore, Odisha, India	.	rosea	<	.	.
+Mitra2010	1.4	Uca (Deltuca) rosea	.	text p. 9, 39-40, 119; Plate VII, Figure B	location	Kankrapal, Balasore, Odisha, India	.	rosea	<	.	.
+Mitra2010	1.5	Uca (Deltuca) rosea	.	text p. 9, 39-40, 119; Plate VII, Figure B	location	Kirtania, Balasore, Odisha, India	.	rosea	<	.	.
+Mitra2010	2.1	Uca (Deltuca) dussumieri	.	text p. 9, 40, 119; Plate VII, Figure C	citation	MilneEdwards1852	12	=	=	.	.
+Mitra2010	2.2	Uca (Deltuca) dussumieri	.	text p. 9, 40, 119; Plate VII, Figure C	citation	Crane1975	8	=	=	.	.
+Mitra2010	2.3	Uca (Deltuca) dussumieri	.	text p. 9, 40, 119; Plate VII, Figure C	citation	Bairagi1995	5	=	=	.	.
+Mitra2010	2.4	Uca (Deltuca) dussumieri	.	text p. 9, 40, 119; Plate VII, Figure C	location	Talsari, Balasore, Odisha, India	.	alcocki	>MSR:geography	.	.
+Mitra2010	2.5	Uca (Deltuca) dussumieri	.	text p. 9, 40, 119; Plate VII, Figure C	location	Kirtania, Balasore, Odisha, India	.	alcocki	>MSR:geography	.	.
+Mitra2010	3.1	Uca (Celuca ) lactea	.	text p. 9, 41, 199; Plate VII, Figures D, F	citation	deHaan1835	7	=	=	.	.
+Mitra2010	3.2	Uca (Celuca ) lactea	.	text p. 9, 41, 199; Plate VII, Figures D, F	citation	Crane1975	96	=	=	.	.
+Mitra2010	3.3	Uca (Celuca ) lactea	.	text p. 9, 41, 199; Plate VII, Figures D, F	citation	DevRoy2005	.	=	=	.	.
+Mitra2010	3.4	Uca (Celuca ) lactea	.	text p. 9, 41, 199; Plate VII, Figures D, F	location	Kankrapal, Balasore, Odisha, India	.	annulipes	>MSR:geography	.	.
+Mitra2010	3.5	Uca (Celuca ) lactea	.	text p. 9, 41, 199; Plate VII, Figures D, F	location	Kirtania, Balasore, Odisha, India	.	annulipes	>MSR:geography	.	.
+Mitra2010	4.1	Uca (Celuca) triangularis	.	text p. 9, 41-42, 119; Plate VII, Figure E	citation	MilneEdwards1873	8	=	=	.	.
+Mitra2010	4.2	Uca (Celuca) triangularis	.	text p. 9, 41-42, 119; Plate VII, Figure E	citation	Crane1975	94	=	=	.	.
+Mitra2010	4.3	Uca (Celuca) triangularis	.	text p. 9, 41-42, 119; Plate VII, Figure E	citation	DevRoy2005	.	=	=	.	.
+Mitra2010	4.4	Uca (Celuca) triangularis	.	text p. 9, 41-42, 119; Plate VII, Figure E	location	Talsari, Balasore, Odisha, India	.	bengali	>MSR:geography	.	.
+Mitra2010	4.5	Uca (Celuca) triangularis	.	text p. 9, 41-42, 119; Plate VII, Figure E	location	Kirtania, Balasore, Odisha, India	.	bengali	>MSR:geography	.	.
+Rath2010	1.1	Uca	.	text p. 38	citation	Leach1814	3	>Uca	<	.	.
+Rath2010	1.2	Uca	.	text p. 38	citation	Crane1975	71	>Uca	<	.	.
+Rath2010	1.3	Uca	.	text p. 38	citation	DevRoy2005	0	>Uca	<	.	.
+Rath2010	1.4	Uca	.	text p. 38	location	Srikakulam District, Andhra Pradesh, India	.	>Uca	<	.	.
+Rath2010	2.01	Uca lactea	.	text p. 25, 38-39, 41, 43	citation	deHaan1835	7	=	=	.	.
+Rath2010	2.02	Uca lactea	.	text p. 25, 38-39, 41, 43	citation	Alcock1900	3	=	=	.	.
+Rath2010	2.03	Uca lactea	.	text p. 25, 38-39, 41, 43	citation	Crane1975	95	=	=	.	.
+Rath2010	2.04	Uca lactea	.	text p. 25, 38-39, 41, 43	citation	DevRoy2005	.	=	=	.	.
+Rath2010	2.05	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5382]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.06	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5383]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.07	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5384]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.08	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5385]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.09	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Pukkalapeta, Srikakulam District, Andhra Pradesh, India [CR-5386]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.1	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5387]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.11	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5398]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.12	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Pukkalapeta, Srikakulam District, Andhra Pradesh, India [CR-5389]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.13	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Nagavali River, Srikakulam District, Andhra Pradesh, India [CR-5404]	.	annulipes	>MSR:geography	.	.
+Rath2010	2.14	Uca lactea	.	text p. 25, 38-39, 41, 43	specimen	Kalingapatnam, Srikakulam District, Andhra Pradesh, India [CR-5405]	.	annulipes	>MSR:geography	.	.
+Rath2010	3	Uca dussumieri	.	text p. 43	citation	DevRoy2005	.	=	=	.	.
+Rath2010	4	Uca triangularis	.	text p. 43	citation	Rath2011	2	bengali	=	.	.
+Ramakrishna2010	1	Gelasimus annulipes	.	text p. 83	citation	Kemp1915	1	=	=	.	.
 Imamura2011	1	Uca tetragonon	.	text p. 45	citation	Koga1995	3	=	=	.	.
 Bywater2011	1	Uca vomeris	.	text p. e19	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
 Das2011	1	Uca pugilator	.	text p. e181	n/a	.	.	pugilator	<	.	.
@@ -20718,6 +21127,33 @@ Gamble2011.1	2.6	Uca pugnax	.	text p. 3703	citation	Kostka2002.1	.	=	=	.	.
 Gamble2011.1	3.1	Uca	.	text p. 3703, 3705-3706, 3708, 3711, 3713	location	Southeastern United States	.	>Uca	<	.	.
 Gamble2011.1	3.2	Uca	.	text p. 3703, 3705-3706, 3708, 3711, 3713	citation	Jones1994.2	0	>Uca	<	.	.
 Gamble2011.1	3.3	Uca	.	text p. 3703, 3705-3706, 3708, 3711, 3713	citation	Bertics2009.2	0	>Uca	<	.	.
+Alves2011	1.1	Uca maracoani	.	text p. 5	citation	Alves2006	1	=	=	.	.
+Alves2011	1.2	Uca maracoani	.	text p. 5	citation	Alves2007.1	1	=	=	.	.
+Alves2011	1.3	Uca maracoani	.	text p. 5	citation	Alves2007.2	1	=	=	.	.
+Rath2011	1.01	Uca lactea	.	text p. 48, 57, 60	citation	deHaan1835	7	=	=	.	.
+Rath2011	1.02	Uca lactea	.	text p. 48, 57, 60	citation	Alcock1900	3	=	=	.	.
+Rath2011	1.03	Uca lactea	.	text p. 48, 57, 60	citation	Crane1975	95	=	=	.	.
+Rath2011	1.04	Uca lactea	.	text p. 48, 57, 60	citation	DevRoy2005	.	=	=	.	.
+Rath2011	1.05	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5713]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.06	Uca lactea	.	text p. 48, 57, 60	specimen	Sorala, Ganjam, Odisha, India [CR-5714]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.07	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5719]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.08	Uca lactea	.	text p. 48, 57, 60	specimen	Sonapur, Ganjam, Odisha, India [CR-5740]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.09	Uca lactea	.	text p. 48, 57, 60	specimen	Sonapur, Ganjam, Odisha, India [CR-5745]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.1	Uca lactea	.	text p. 48, 57, 60	specimen	Sonapur, Ganjam, Odisha, India [CR-5749]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.11	Uca lactea	.	text p. 48, 57, 60	specimen	Bahuda River, Ganjam, Odisha, India [CR-5758]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.12	Uca lactea	.	text p. 48, 57, 60	specimen	Bahuda River, Ganjam, Odisha, India [CR-5762]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.13	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5768]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.14	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5769]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.15	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5770]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.16	Uca lactea	.	text p. 48, 57, 60	specimen	Bahuda River, Ganjam, Odisha, India [CR-5773]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.17	Uca lactea	.	text p. 48, 57, 60	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5785]	.	annulipes	>MSR:geography	.	.
+Rath2011	1.18	Uca lactea	.	text p. 48, 57, 60	citation	DevRoy2009	.	=	=	.	.
+Rath2011	2.1	Uca triangularis	.	text p. 48, 59-60; Plate 4, Figure 2	citation	Crane1975	94	=	=	.	.
+Rath2011	2.2	Uca triangularis	.	text p. 48, 59-60; Plate 4, Figure 2	citation	Bairagi1995	7	=	=	.	.
+Rath2011	2.2	Uca triangularis	.	text p. 48, 59-60; Plate 4, Figure 2	citation	DevRoy2005	.	=	=	.	.
+Rath2011	2.4	Uca triangularis	.	text p. 48, 59-60; Plate 4, Figure 2	specimen	Keuta Sonepur, Ganjam, Odisha, India [CR-5720]	.	bengali	>MSR:geography	.	.
+Rath2011	2.5	Uca triangularis	.	text p. 48, 59-60; Plate 4, Figure 2	citation	DevRoy2009	.	=	=	.	.
+Rath2011	3	Uca	.	text p. 57	location	Bahuda River, Ganjam, Odisha, India [CR-5773]	.	>Uca	<	.	.
 Bailey2012	1	Uca beebei	.	Figure 1C	n/a	.	.	beebei	<	.	.
 Bailey2012	2	Uca terpsichores	.	text p. 563	citation	Kim2007	.	terpsichores	<	.	.
 Portell2012	1	Uca ornata	.	text p. 268	location	Bahia Bique, Panama	.	ornata	<	fossils	.
@@ -20749,7 +21185,7 @@ Milner2012.2	5	Uca tangeri	.	text p. 176	citation	Burford1998	.	=	=	.	.
 Tue2012	1	Uca acuta	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	acuta	<	.	.
 Tue2012	2	Uca borealis	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	borealis	<	.	.
 Tue2012	3	Uca flammula	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	flammula	<	.	.
-Tue2012	4	Uca urvillei	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	urvillei	<	.	.
+Tue2012	4	Uca urvillei	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	alcocki	>MSR:geography	.	.
 Tue2012	5	Uca arcuata	.	text p. 16-17, 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	arcuata	<	.	.
 Tue2012	6.1	Uca spp.	fiddler crabs	text p. 19	location	Xuan Thuy National Park, Nam Định Province, Vietnam	.	>Uca	<	.	.
 Tue2012	6.2	Uca spp.	fiddler crabs	text p. 19	citation	Hogarth2007	.	=	=	.	.
@@ -21005,6 +21441,7 @@ NgoMassou2012	4	Uca annulipes	.	text p. 356	citation	Lim2010	.	=	=	.	.
 Packard2012	1.1	Uca pugnax	.	text p. 569-572	citation	Huxley1924.1	1	=	=	.	.
 Packard2012	1.2	Uca pugnax	.	text p. 569-572	citation	Huxley1927	1	=	=	.	.
 Packard2012	1.3	Uca pugnax	.	text p. 569-572	citation	Huxley1932	1	=	=	.	.
+Venkataraman2012	1	Uca tetragonon	.	text p. 112	location	India	.	tetragonon	<	.	.
 Smith2013	1	Uca pugnax	.	text p. 66	location	Barnstable County, Massachusetts, USA	.	pugnax	<	.	.
 Giblock2013	1.1	Uca pugilator	.	text p. 1-8	location	Beaufort, Beaufort County, South Carolina, USA	.	pugilator	<	.	.
 Giblock2013	1.2	Uca pugilator	.	text p. 1-8	citation	Wilkens1965	1	=	=	.	.
@@ -21379,6 +21816,13 @@ CortesCarrasco2013	2.3	Uca terpsichores	.	text p. 5	citation	Ng2008	47	=	=	.	.
 GuillenHernandez2013	1	Uca spinicarpa	.	text p. 74	location	Yucatan Peninsula, Mexico	.	spinicarpa	<	.	.
 Glazier2013	1.1	Uca pugnax	.	text p. 201	citation	Huxley1932	1	=	=	.	.
 Glazier2013	1.2	Uca pugnax	.	text p. 201	citation	Packard2012	1	=	=	.	.
+Rao2013	1.1	Uca lactea	.	text p. 46	citation	deHaan1835	7	=	=	.	.
+Rao2013	1.2	Uca lactea	.	text p. 46	citation	DevRoy2005	.	=	=	.	.
+Rao2013	1.3	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6321]	.	annulipes	>MSR:geography	.	.
+Rao2013	1.4	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6373]	.	annulipes	>MSR:geography	.	.
+Rao2013	1.5	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6391]	.	annulipes	>MSR:geography	.	.
+Rao2013	1.6	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6539]	.	annulipes	>MSR:geography	.	.
+Rao2013	2	Uca lacteal	.	text p. 48	location	River Nua Nai Estuary, Odisha, India	.	annulipes	>MSR:geography	typo	.
 Brody2014	1	.	Fiddler Crab	text p. 577; photo	n/a	.	.	crassipes	>MSR	.	Fiddler crabs are used in this letter as a metaphor. The unlabeled accompanying photo is likely <em class="species">Uca crassipes.</em>
 Yang2014	1	Uca pugilator	.	text p. 3885, 3890, 3892; figures 2-3	citation	Tsu1996	1.1	=	=	The citation is to Genbank sequence AAC47030.1, which is associated with Tsu &amp; Craik (1996).	.
 Grunbaum2014	1	Uca pugilator	Atlantic Sand Fiddler	text p. 42-43, 247	location	Atlantic coast of United States	.	pugilator	<	.	.
@@ -21531,7 +21975,7 @@ Saher2014	6.2	Uca annulipes	.	text p. 667, 672	citation	Naderloo2010	12	=	=	.	.
 Saher2014	6.3	Uca annulipes	.	text p. 667, 672	citation	Shih2013	.	=	=	.	.
 Saher2014	6.4	Uca annulipes	.	text p. 667, 672	location	Pakistan	.	annulipes	<	.	.
 Saher2014	6.5	Uca annulipes	.	text p. 667, 672	citation	Alcock1900	1	=	=	.	.
-Saher2014	7.1	Uca urvillei	.	text p. 671; Figure 4B	location	Pakistan	.	urvillei	<	.	.
+Saher2014	7.1	Uca urvillei	.	text p. 671; Figure 4B	location	Pakistan	.	alcocki	>MSR:geography	.	.
 Saher2014	7.2	Uca urvillei	.	text p. 671; Figure 4B	citation	Alcock1900	10.12	=	=	.	.
 Saher2014	8.1	Uca sindensis	.	text p. 672	location	Pakistan	.	sindensis	<	.	.
 Saher2014	8.2	Uca sindensis	.	text p. 672	citation	Alcock1900	5	=	=	.	.
@@ -21571,6 +22015,47 @@ Talapatra2014	10	Uca triangularis bengali	.	text p. 909	citation	Soundarapandian
 Talapatra2014	11	Uca iranica	.	text p. 909	citation	Shih2009	.	=	=	.	.
 Talapatra2014	12	Uca albimana	.	text p. 909	citation	Shih2009	.	=	=	.	.
 Talapatra2014	13	Uca pugnax	.	text p. 909	citation	Burns1976	1	=	=	.	.
+Rao2014	1.1	Uca lactea	.	text p. 87-88	citation	deHaan1835	7	=	=	.	.
+Rao2014	1.2	Uca lactea	.	text p. 87-88	citation	Alcock1900	3	=	=	.	.
+Rao2014	1.3	Uca lactea	.	text p. 87-88	citation	Sankarankutty1961	1	=	=	.	.
+Rao2014	1.4	Uca lactea	.	text p. 87-88	citation	Crane1975	95	=	=	.	.
+Rao2014	1.5	Uca lactea	.	text p. 87-88	citation	DevRoy2005	.	=	=	.	.
+Rao2014	1.6	Uca lactea	.	text p. 87-88	specimen	Brahmani-Baitarani Estuarine Complex, Odisha, India [CR-6485]	.	annulipes	>MSR:geography	.	.
+Rao2014	2.1	Uca triangularis	.	text p. 88	citation	MilneEdwards1873	8	=	=	.	.
+Rao2014	2.2	Uca triangularis	.	text p. 88	citation	Alcock1900	6	=	=	.	.
+Rao2014	2.3	Uca triangularis	.	text p. 88	citation	Crane1975	94	=	=	.	.
+Rao2014	2.4	Uca triangularis	.	text p. 88	citation	DevRoy2005	.	=	=	.	.
+Rao2014	2.5	Uca triangularis	.	text p. 88	location	Brahmani-Baitarani Estuarine Complex, Odisha, India [CR-6486]	.	bengali	<	.	.
+DevRoy2014	1.1	Uca maracoani	.	text p. 129, 132	citation	Alves2006	1	=	=	.	.
+DevRoy2014	1.2	Uca maracoani	.	text p. 129, 132	citation	Alves2011	1	=	=	.	.
+DevRoy2014	2	Uca annulipes	.	text p. 129	citation	Moses1924	1	=	=	.	.
+Peer2014	1.1	Uca spp.	.	text p. 43, 48, 52-53	citation	Skov2002	0	>Uca	<	.	.
+Peer2014	1.2	Uca spp.	.	text p. 43, 48, 52-53	citation	Nagelkerken2008	0	>Uca	<	.	.
+Peer2014	1.3	Uca spp.	.	text p. 43, 48, 52-53	citation	Papadopoulos2002	0	>Uca	<	.	.
+Peer2014	2.1	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	location	St Lucia, KwaZulu-Natal, South Africa	.	hesperiae	>MSR:geography	.	.
+Peer2014	2.2	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Branch2010	.	=	=	.	.
+Peer2014	2.3	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Millard1970	.	=	=	.	.
+Peer2014	2.4	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Barnard1950	2	=	=	.	.
+Peer2014	2.5	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Linnaeus1758	1	=	=	.	.
+Peer2014	2.6	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	White1847.1	5	=	=	.	.
+Peer2014	2.7	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Desmarest1823	5	=	=	.	.
+Peer2014	2.8	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Dana1851	1	=	=	.	.
+Peer2014	2.9	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Nobili1906.3	7	=	=	.	.
+Peer2014	2.10	Uca (Gelasimus) vocans	.	text p. 43, 45, 60; Figure 16	citation	Crane1975	30	=	=	.	.
+Peer2014	3.1	Uca (Tubuca) urvillei	.	text p. 43, 45, 60; Figure 15	location	St Lucia, KwaZulu-Natal, South Africa	.	urvillei	<	.	.
+Peer2014	3.2	Uca (Tubuca) urvillei	.	text p. 43, 45, 60; Figure 15	citation	Branch2010	.	=	=	.	.
+Peer2014	3.3	Uca (Tubuca) urvillei	.	text p. 43, 45, 60; Figure 15	citation	Millard1970	.	=	=	.	.
+Peer2014	3.4	Uca (Tubuca) urvillei	.	text p. 43, 45, 60; Figure 15	citation	Barnard1950	3	=	=	.	.
+Peer2014	3.5	Uca (Tubuca) urvillei	.	text p. 43, 45, 60; Figure 15	citation	MilneEdwards1852	11	=	=	.	.
+Peer2014	4.1	Uca (Paraleptuca) chlorophthalmus	.	text p. 43, 45, 51, 59; Figure 14	location	St Lucia, KwaZulu-Natal, South Africa	.	chlorophthalmus	<	.	.
+Peer2014	4.2	Uca (Paraleptuca) chlorophthalmus	.	text p. 43, 45, 51, 59; Figure 14	citation	Branch2010	.	=	=	.	.
+Peer2014	4.3	Uca (Paraleptuca) chlorophthalmus	.	text p. 43, 45, 51, 59; Figure 14	citation	Millard1970	.	=	=	.	.
+Peer2014	4.4	Uca (Paraleptuca) chlorophthalmus	.	text p. 43, 45, 51, 59; Figure 14	citation	MilneEdwards1837.2	9	=	=	.	.
+Peer2014	4.5	Uca (Paraleptuca) chlorophthalmus	.	text p. 43, 45, 51, 59; Figure 14	citation	Doflein1899	13	=	=	.	.
+Peer2014	5.1	Uca (Austruca) annulipes	.	text p. 45, 49, 51, 59; Figure 13	location	St Lucia, KwaZulu-Natal, South Africa	.	occidentalis	>MSR:geography	.	.
+Peer2014	5.2	Uca (Austruca) annulipes	.	text p. 45, 49, 51, 59; Figure 13	citation	Branch2010	.	=	=	.	.
+Peer2014	5.3	Uca (Austruca) annulipes	.	text p. 45, 49, 51, 59; Figure 13	citation	Millard1970	.	=	=	.	.
+Peer2014	5.4	Uca (Austruca) annulipes	.	text p. 45, 49, 51, 59; Figure 13	citation	MilneEdwards1837.2	10	=	=	.	.
 Luque2015	1	Uca ornata	.	text p. 423	location	Panama	.	ornata	<	fossils	.
 Hung2015	1	Uca formosensis	.	text p. 161-163	location	Taiwan	.	formosensis	<	.	.
 Lin2015	1	Uca lactea	清白招潮蟹	text p. 157-158	location	Taiwan	.	lactea	<	.	.
@@ -21619,7 +22104,7 @@ Tedore2015	1	Uca annulipes	.	text p. 517	citation	Backwell2000	.	=	=	.	.
 Odhano2015	1.1	Uca urvillei	blue fiddler crab	text p. 170-171; Figure 2	citation	Saher2008	.	=	=	.	.
 Odhano2015	1.2	Uca urvillei	blue fiddler crab	text p. 170-171; Figure 2	citation	Saher2014.2	.	=	=	.	.
 Odhano2015	1.3	Uca urvillei	blue fiddler crab	text p. 170-171; Figure 2	citation	Litulo2005.2	.	=	=	.	.
-Odhano2015	1.4	Uca urvillei	blue fiddler crab	text p. 170-171; Figure 2	specimen	Sandspit, Karachi, Sindh, Pakistan [BRAC 758]	.	urvillei	<	.	.
+Odhano2015	1.4	Uca urvillei	blue fiddler crab	text p. 170-171; Figure 2	specimen	Sandspit, Karachi, Sindh, Pakistan [BRAC 758]	.	alcocki	Shih2018.1	.	.
 Odhano2015	2.1	Uca	fiddler crabs	text p. 170	citation	Crane1975	0	>Uca	<	.	.
 Odhano2015	2.2	Uca	fiddler crabs	text p. 170	citation	Takeda1993	0	>Uca	<	.	.
 Odhano2015	2.3	Uca	fiddler crabs	text p. 170	citation	Croll2002	0	>Uca	<	.	.
@@ -21668,13 +22153,13 @@ IUCNBangladesh2015	3.1	Uca annulipes	Behala Badok Kakra	text p. 8, 199, 244	loca
 IUCNBangladesh2015	3.2	Uca annulipes	Behala Badok Kakra	text p. 8, 199, 244	citation	Rosenberg2014	.	=	=	.	.
 IUCNBangladesh2015	3.3	Uca annulipes	Behala Badok Kakra	text p. 8, 199, 244	citation	Vannini1981	.	=	=	.	.
 IUCNBangladesh2015	3.4	Uca annulipes	Behala Badok Kakra	text p. 8, 199, 244	citation	Icely1978	.	=	=	.	.
-IUCNBangladesh2015	4.1	Uca dussumieri	.	text p. 200, 244	location	Bangladesh	.	urvillei	>MSR:geography	They are presuming it is in Bangladesh due to old records, but more than likely those records refer to other species.	.
+IUCNBangladesh2015	4.1	Uca dussumieri	.	text p. 200, 244	location	Bangladesh	.	alcocki	>MSR:geography	They are presuming it is in Bangladesh due to old records, but more than likely those records refer to other species.	.
 IUCNBangladesh2015	4.2	Uca dussumieri	.	text p. 200, 244	citation	Crane1975	6	=	=	.	.
 IUCNBangladesh2015	4.3	Uca dussumieri	.	text p. 200, 244	citation	Ng2008	88	=	=	.	.
 IUCNBangladesh2015	5.1	Uca triangularis	.	text p. 202, 244	location	Sundarbans, Bangladesh	.	bengali	>MSR:geography	They are presuming it is in Bangladesh due to old records, but more than likely those records refer to other species. The photo on p. 202 does not appear to be a fiddler crab.	.
 IUCNBangladesh2015	5.2	Uca triangularis	.	text p. 202, 244	citation	Crane1975	93	=	=	.	.
 IUCNBangladesh2015	5.3	Uca triangularis	.	text p. 202, 244	citation	Sakai1976.1	.	=	=	.	.
-IUCNBangladesh2015	6.1	Uca urvillei	.	text p. 203, 244	location	Bangladesh	.	urvillei	<	They are presuming it is in Bangladesh due to old records. The photo on p. 203 is probably <em class="species">Uca bengali.</em>	.
+IUCNBangladesh2015	6.1	Uca urvillei	.	text p. 203, 244	location	Bangladesh	.	alcocki	Shih2018.1	They are presuming it is in Bangladesh due to old records. The photo on p. 203 is probably <em class="species">Uca bengali.</em>	.
 IUCNBangladesh2015	6.2	Uca urvillei	.	text p. 203, 244	citation	Crane1975	16	=	=	.	.
 IUCNBangladesh2015	6.3	Uca urvillei	.	text p. 203, 244	citation	Hartnoll1975	3	=	=	.	.
 IUCNBangladesh2015	6.4	Uca urvillei	.	text p. 203, 244	citation	Ghory2006	1	=	=	.	.
@@ -21682,6 +22167,14 @@ IUCNBangladesh2015	7.1	Uca vocans	.	text p. 204, 244	location	Bangladesh	.	hespe
 IUCNBangladesh2015	7.2	Uca vocans	.	text p. 204, 244	citation	Crane1975	27	=	=	.	.
 IUCNBangladesh2015	7.3	Uca vocans	.	text p. 204, 244	citation	Vannini1981	.	=	=	.	.
 IUCNBangladesh2015	7.4	Uca vocans	.	text p. 204, 244	citation	Serene1973.1	1	=	=	.	.
+Trivedi2015	1.1	Uca (Austruca) annulipes	.	text p. 27	location	Gulf of Kutch, Gujarat, India	.	annulipes	<	.	.
+Trivedi2015	1.2	Uca (Austruca) annulipes	.	text p. 27	location	Gulf of Khambhat, Gujarat, India	.	annulipes	<	.	.
+Trivedi2015	2.1	Uca (Gelasimus) vocans	.	text p. 27	location	Gulf of Kutch, Gujarat, India	.	hesperiae	>MSR:geography	.	.
+Trivedi2015	2.2	Uca (Gelasimus) vocans	.	text p. 27	location	Gulf of Khambhat, Gujarat, India	.	hesperiae	>MSR:geography	.	.
+Trivedi2015	3	Uca (Paraleptuca) sindensis	.	text p. 27	location	Gulf of Kutch, Gujarat, India	.	sindensis	<	.	.
+Trivedi2015	4	Uca (Tubuca) acuta	.	text p. 27	location	Saurashtra, Gujarat, India	.	alcocki	Shih2018.1	.	.
+Trivedi2015	5.1	Uca (Tubuca) dussumieri	.	text p. 27	location	Gulf of Kutch, Gujarat, India	.	alcocki	>MSR:geography	.	.
+Trivedi2015	5.2	Uca (Tubuca) dussumieri	.	text p. 27		Gulf of Khambhat, Gujarat, India	.	alcocki	>MSR:geography	.	.
 Durica2016	1	Uca pugilator	.	text p. E59	n/a	.	.	pugilator	<	.	.
 Shyamal2016	1	Uca pugilator	.	text p. E202	n/a	.	.	pugilator	<	.	.
 Smith2016	1	.	fiddler crabs	text p. 672	citation	Kronstadt2013	0	>Uca	<	.	.
@@ -21742,7 +22235,7 @@ Shih2016.2	8.3	Austruca iranica	.	text p. 140, 142, 152-153, 168; Figure 8C	loca
 Shih2016.2	9.1	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	specimen	Hong Kong, China [NCHUZOOL 13250]	.	lactea	<	.	.
 Shih2016.2	9.2	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	location	Taiwan	.	lactea	<	.	.
 Shih2016.2	9.3	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	deHaan1835	7	=	=	.	.
-Shih2016.2	9.4	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	MilneEdwards1837.2	4	=	=	.	.
+Shih2016.2	9.4	Shih2016.2	6	=	=	.	.	=	=	.	.
 Shih2016.2	9.5	Austruca lactea	.	text p. 142, 152-153, 168; Figure 8D	citation	Beinlich2006	46	=	=	.	.
 Shih2016.2	10.1	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	specimen	Bedford Islands, Kimberley, Western Australia, Australia [QM W20253]	.	mjoebergi	<	.	.
 Shih2016.2	10.2	Austruca mjoebergi	.	text p. 142, 152-153, 168; Figure 8E	location	Northern Territory, Australia	.	mjoebergi	<	.	.
@@ -22058,9 +22551,9 @@ Shih2016.2	76.3	Tubuca rosea	.	text p. 142, 158-159, 174; Figure 11G	citation	Tw
 Shih2016.2	77.1	Tubuca typhoni	.	text p. 142, 159, 174	specimen	Hainan Island, China [NCHUZOOL 13371]	.	typhoni	<	.	.
 Shih2016.2	77.2	Tubuca typhoni	.	text p. 142, 159, 174	citation	Crane1975	10	=	=	.	.
 Shih2016.2	78.1	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	specimen	Poroani, Mayotte [ZRC 1999.1107]	.	urvillei	<	.	.
-Shih2016.2	78.2	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14925]	.	urvillei	<	.	.
+Shih2016.2	78.2	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14925]	.	alcocki	Shih2018.1	.	.
 Shih2016.2	78.3	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	citation	MilneEdwards1852	11	=	=	.	.
-Shih2016.2	78.4	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	location	Ranong, Thailand	.	urvillei	<	.	.
+Shih2016.2	78.4	Tubuca urvillei	.	text p. 142, 159-160, 174; Figure 12A	location	Ranong, Thailand	.	alcocki	Shih2018.1	.	.
 Shih2016.2	79.1	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	specimen	Labuan, Borneo, Malaysia [NCHUZOOL 13649]	.	bellator	<	.	.
 Shih2016.2	79.2	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	location	Labuan, Borneo, Malaysia	.	bellator	<	.	.
 Shih2016.2	79.3	Tubuca bellator	.	text p. 142, 157, 159, 174; Figure 10H	citation	White1847.1	10	=	=	.	.
@@ -22269,14 +22762,14 @@ Akash2017	1.12	Uca	fiddler crabs	text p. 199, 202	citation	Shih2010.2	0	>Uca	<	.
 Akash2017	1.13	Uca	fiddler crabs	text p. 199, 202	citation	Shih2012.3	0	>Uca	<	.	.
 Akash2017	2.1	Uca annulipes	.	text p. 199	location	Bangladesh	.	annulipes	<	.	.
 Akash2017	2.2	Uca annulipes	.	text p. 199	citation	IUCNBangladesh2015	3	=	=	.	.
-Akash2017	3.1	Uca dussumieri	.	text p. 199	location	Bangladesh	.	urvillei	>MSR:geography	.	.
+Akash2017	3.1	Uca dussumieri	.	text p. 199	location	Bangladesh	.	alcocki	>MSR:geography	.	.
 Akash2017	3.2	Uca dussumieri	.	text p. 199	citation	IUCNBangladesh2015	4	=	=	.	.
 Akash2017	4.1	Uca rosea	.	text p. 199	location	Bangladesh	.	rosea	<	.	.
 Akash2017	4.2	Uca rosea	.	text p. 199	citation	IUCNBangladesh2015	2	=	=	.	.
 Akash2017	5.1	Uca triangularis	.	text p. 199, 201-202	citation	IUCNBangladesh2015	5	=	=	.	.
 Akash2017	5.2	Uca triangularis	.	text p. 199, 201-202	citation	Ahmed2008	.	=	=	.	.
 Akash2017	5.3	Uca triangularis	.	text p. 199, 201-202	location	Bangladesh	.	bengali	>MSR:geography	.	.
-Akash2017	6.1	Uca urvillei	.	text p. 199	location	Bangladesh	.	urvillei	<	.	.
+Akash2017	6.1	Uca urvillei	.	text p. 199	location	Bangladesh	.	alcocki	>MSR:geography	.	.
 Akash2017	6.2	Uca urvillei	.	text p. 199	citation	IUCNBangladesh2015	6	=	=	.	.
 Akash2017	7.1	Uca vocans	.	text p. 199	location	Bangladesh	.	hesperiae	>MSR:geography	.	.
 Akash2017	7.2	Uca vocans	.	text p. 199	citation	IUCNBangladesh2015	7	=	=	.	.
@@ -22314,3 +22807,187 @@ Siegenthaler2018	2	Uca vomeris	.	text p. 8	citation	Hemmi2006	.	=	=	.	.
 Siegenthaler2018	3.1	.	fiddler crabs	text p. 2	citation	Brown1948.1	0	>Uca	<	.	.
 Siegenthaler2018	3.2	.	fiddler crabs	text p. 2	citation	Hemmi2006	0	>Uca	<	.	.
 Rosa2018	1	Uca pennipes	.	text p. 65	citation	Jennions1996	.	=	=	typo	.
+Shih2018.1	1.01	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14899, LC150445]	.	alcocki	<	.	.
+Shih2018.1	1.02	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14925, LC150445]	.	alcocki	<	.	.
+Shih2018.1	1.03	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14901, LC150445]	.	alcocki	<	.	.
+Shih2018.1	1.04	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14902, LC150445]	.	alcocki	<	.	.
+Shih2018.1	1.05	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Mumbai, Maharashtra, India [NCHUZOOL 14903, LC150445]	.	alcocki	<	.	.
+Shih2018.1	1.06	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong, Thailand [ZRC, LC369625]	.	alcocki	<	.	.
+Shih2018.1	1.07	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong Mangrove Forest, Ranong, Thailand [NCHUZOOL 14896, LC369625]	.	alcocki	<	.	.
+Shih2018.1	1.08	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong Mangrove Forest, Ranong, Thailand [ZRC 2017.1278, LC369625]	.	alcocki	<	.	.
+Shih2018.1	1.09	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Phuket Island, Thailand [ZRC 1999.1131, LC369625]	.	alcocki	<	.	.
+Shih2018.1	1.1	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Phuket Island, Thailand [ZRC 1999.1131, LC369626]	.	alcocki	<	.	.
+Shih2018.1	1.11	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Alcock1900	10	=	=	.	.
+Shih2018.1	1.12	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Crane1975	16	=	=	in part	.
+Shih2018.1	1.13	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Lundoer1974	2	=	=	.	.
+Shih2018.1	1.14	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Frith1976	2.1	=	=	.	.
+Shih2018.1	1.15	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Frith1977.3	2.1	=	=	.	.
+Shih2018.1	1.16	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Frith1978	17	=	=	.	.
+Shih2018.1	1.17	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Frith1980	.	=	=	.	.
+Shih2018.1	1.18	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Frith1983	.	=	=	.	.
+Shih2018.1	1.19	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Jaroensutasinee2003.2	.	=	=	.	.
+Shih2018.1	1.2	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Jaroensutasinee2004	.	=	=	.	.
+Shih2018.1	1.21	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	MilneEdwards1852	12.1	=	=	.	.
+Shih2018.1	1.22	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Kingsley1880	19.4	=	=	.	.
+Shih2018.1	1.23	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Chandy1973	1	=	=	.	.
+Shih2018.1	1.24	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Alcock1900	12.6	=	=	.	.
+Shih2018.1	1.25	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Alcock1900	12.7	=	=	.	.
+Shih2018.1	1.26	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Alcock1900	12.8	=	=	.	.
+Shih2018.1	1.27	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Ng2002	1	=	=	.	.
+Shih2018.1	1.28	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Tirmizi1996	.	=	=	.	.
+Shih2018.1	1.29	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Naiyanetr2007	14	=	=	.	.
+Shih2018.1	1.3	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Saher2008	.	=	=	.	.
+Shih2018.1	1.31	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	DevRoy2012	.	=	=	.	.
+Shih2018.1	1.32	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	IUCNBangladesh2015	6.1	=	=	.	.
+Shih2018.1	1.33	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Odhano2015	1.4	=	=	.	.
+Shih2018.1	1.34	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Hogarth1986	1	=	=	.	.
+Shih2018.1	1.35	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Price1987	.	=	=	.	.
+Shih2018.1	1.36	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Krishnan1992.1	.	=	=	urvillei	.
+Shih2018.1	1.37	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Krishnan1992.1	.	=	=	dussumieri	.
+Shih2018.1	1.38	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Beinlich2006	14	=	=	in part	.
+Shih2018.1	1.39	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Trivedi2015	4	=	=	.	.
+Shih2018.1	1.4	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Shih2016.2	78.2	=	=	.	.
+Shih2018.1	1.41	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	citation	Shih2016.2	78.4	=	=	.	.
+Shih2018.1	1.42	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong Mangrove Forest, Ranong, Thailand [NCHUZOOL 13361]	.	alcocki	<	.	.
+Shih2018.1	1.43	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong Mangrove Forest, Ranong, Thailand [NCHUZOOL 14905]	.	alcocki	<	.	.
+Shih2018.1	1.44	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Kamphuan Mangrove Forest, Ranong, Thailand [ZRC 2017.1279]	.	alcocki	<	.	.
+Shih2018.1	1.45	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Ranong, Thailand [ZRC 2001.2347]	.	alcocki	<	.	.
+Shih2018.1	1.46	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Diu District, Daiman and Diu, India [NCHUZOOL 14900]	.	alcocki	<	.	.
+Shih2018.1	1.47	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Phuket Island, Thailand [ZRC 1988.616-617]	.	alcocki	<	.	.
+Shih2018.1	1.48	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Chalong Bay, Phuket Island, Thailand [NCHUZOOL 14897]	.	alcocki	<	.	.
+Shih2018.1	1.49	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Chalong Bay, Phuket Island, Thailand [NCHUZOOL 14906]	.	alcocki	<	.	.
+Shih2018.1	1.5	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Laem Tukkae, Phuket Island, Thailand [NCHUZOOL 14898]	.	alcocki	<	.	.
+Shih2018.1	1.51	Tubuca alcocki	.	text p. 41-43, 45, 47-57; Figures 3, 4A, 4C, 5A-D, 6, 7A, 7C, 7E, 7G	specimen	Tha Thiap Ruea Bang Rong, Phuket Island, Thailand [NCHUZOOL 14907]	.	alcocki	<	.	.
+Shih2018.1	2.01	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Shih2009	.	=	=	.	.
+Shih2018.1	2.02	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Shih2012	.	=	=	.	.
+Shih2018.1	2.03	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Shih2013	.	=	=	.	.
+Shih2018.1	2.04	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Shih2015	.	=	=	.	.
+Shih2018.1	2.05	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Shih2016.2	78.1	=	=	.	.
+Shih2018.1	2.06	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	2.07	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Crane1975	16	=	=	in part	.
+Shih2018.1	2.08	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Litulo2005.2	.	=	=	.	.
+Shih2018.1	2.09	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Peer2015	.	=	=	.	.
+Shih2018.1	2.1	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Ghory2006	1	=	=	.	.
+Shih2018.1	2.13	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Poroani, Mayotte [ZRC 1999.1107, LC053375]	.	urvillei	<	.	.
+Shih2018.1	2.14	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Shimo la Tewa, Mombasa, Kenya [SMF 19985, LC053375]	.	urvillei	<	.	.
+Shih2018.1	2.15	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Mida Creek, Kilifi County, Kenya [NCHUZOOL 14895, LC053375]	.	urvillei	<	.	.
+Shih2018.1	2.16	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Krauss1843	1.1	=	=	.	.
+Shih2018.1	2.17	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	MilneEdwards1852	11	=	=	.	.
+Shih2018.1	2.18	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Kingsley1880	18	=	=	.	.
+Shih2018.1	2.19	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	deMan1891	8.3	=	=	.	.
+Shih2018.1	2.2	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Ortmann1894.2	2.1	=	=	.	.
+Shih2018.1	2.21	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	MilneEdwards1868	2	=	=	.	.
+Shih2018.1	2.22	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Hilgendorf1869	3.2	=	=	.	.
+Shih2018.1	2.23	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Hoffmann1874	4.1	=	=	in part	.
+Shih2018.1	2.24	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	deMan1880	3	=	=	in part	.
+Shih2018.1	2.25	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Kingsley1880	19	=	=	in part	.
+Shih2018.1	2.26	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Lenz1881	2	=	=	.	.
+Shih2018.1	2.27	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Pfeffer1889	2.4	=	=	.	.
+Shih2018.1	2.28	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	deMan1891	3.4	=	=	.	.
+Shih2018.1	2.29	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Lenz1910	3.6	=	=	.	.
+Shih2018.1	2.3	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Stebbing1905	1.6	=	=	.	.
+Shih2018.1	2.31	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Stebbing1910	1.5	=	=	.	.
+Shih2018.1	2.32	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Stebbing1917	1.4	=	=	.	.
+Shih2018.1	2.33	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Maccagno1928	3	=	=	in part	.
+Shih2018.1	2.34	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Barnard1950	3	=	=	.	.
+Shih2018.1	2.35	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Fourmanoir1956	.	=	=	.	.
+Shih2018.1	2.36	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Macnae1963	3	=	=	.	.
+Shih2018.1	2.37	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Richmond1997	5	=	=	.	.
+Shih2018.1	2.38	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Crosnier1965	4	=	=	.	.
+Shih2018.1	2.39	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Kensley1981	6	=	=	.	.
+Shih2018.1	2.4	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Rosenberg2001	103.2	=	=	.	.
+Shih2018.1	2.41	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Serbino2008	.	=	=	.	.
+Shih2018.1	2.42	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Bott1973.2	12	=	=	.	.
+Shih2018.1	2.43	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Hartnoll1975	3.4	=	=	.	.
+Shih2018.1	2.44	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Hartnoll1975	1	=	=	.	.
+Shih2018.1	2.45	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Vannini1981	.	=	=	.	.
+Shih2018.1	2.46	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Bouchard2013	.	=	=	.	.
+Shih2018.1	2.47	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Peer2014	3	=	=	.	.
+Shih2018.1	2.48	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Vanikoro, Solomon Islands [MNHN B.12073]<!>	.	urvillei	<	.	.
+Shih2018.1	2.49	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Vanikoro, Solomon Islands [MNHN B.3208]<!>	.	urvillei	<	.	.
+Shih2018.1	2.5	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Hogarth1986	1	=	=	.	.
+Shih2018.1	2.51	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Price1987	.	=	=	.	.
+Shih2018.1	3.1	Austruca albimana	.	text p. 42	citation	Shih2009	.	=	=	.	.
+Shih2018.1	3.2	Austruca albimana	.	text p. 42	citation	Shih2010.1	19	=	=	.	.
+Shih2018.1	3.3	Austruca albimana	.	text p. 42	citation	Shih2012	.	=	=	.	.
+Shih2018.1	3.4	Austruca albimana	.	text p. 42	citation	Shih2013.2	9	=	=	.	.
+Shih2018.1	3.5	Austruca albimana	.	text p. 42	citation	Shih2013	.	=	=	.	.
+Shih2018.1	3.6	Austruca albimana	.	text p. 42	citation	Shih2015	.	=	=	.	.
+Shih2018.1	3.7	Austruca albimana	.	text p. 42	citation	Shih2016.2	4	=	=	.	.
+Shih2018.1	3.8	Austruca albimana	.	text p. 42	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	4.1	Austruca bengali	.	text p. 42, 53	citation	Shih2009	.	=	=	.	.
+Shih2018.1	4.2	Austruca bengali	.	text p. 42, 53	citation	Shih2012	.	=	=	.	.
+Shih2018.1	4.3	Austruca bengali	.	text p. 42, 53	citation	Shih2013.2	11	=	=	.	.
+Shih2018.1	4.4	Austruca bengali	.	text p. 42, 53	citation	Shih2013	.	=	=	.	.
+Shih2018.1	4.5	Austruca bengali	.	text p. 42, 53	citation	Shih2015	.	=	=	.	.
+Shih2018.1	4.6	Austruca bengali	.	text p. 42, 53	citation	Shih2016.2	7	=	=	.	.
+Shih2018.1	4.7	Austruca bengali	.	text p. 42, 53	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	4.8	Austruca bengali	.	text p. 42, 53	citation	Frith1977.3	9	=	=	.	.
+Shih2018.1	4.9	Austruca bengali	.	text p. 42, 53	citation	Frith1978	10	=	=	.	.
+Shih2018.1	4.10	Austruca bengali	.	text p. 42, 53	location	West coast of Thailand	.	bengali	<	.	.
+Shih2018.1	5.1	Austruca iranica	.	text p. 42, 53	citation	Shih2009	.	=	=	.	.
+Shih2018.1	5.2	Austruca iranica	.	text p. 42, 53	citation	Shih2010.1	18	=	=	.	.
+Shih2018.1	5.3	Austruca iranica	.	text p. 42, 53	citation	Shih2012	.	=	=	.	.
+Shih2018.1	5.4	Austruca iranica	.	text p. 42, 53	citation	Shih2013	.	=	=	.	.
+Shih2018.1	5.5	Austruca iranica	.	text p. 42, 53	citation	Shih2015	.	=	=	.	.
+Shih2018.1	5.6	Austruca iranica	.	text p. 42, 53	citation	Shih2016.2	8	=	=	.	.
+Shih2018.1	5.7	Austruca iranica	.	text p. 42, 53	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	5.8	Austruca iranica	.	text p. 42, 53	citation	Saher2014	1	=	=	.	.
+Shih2018.1	6.1	Austruca occidentalis	.	text p. 42	citation	Shih2009	.	=	=	.	.
+Shih2018.1	6.2	Austruca occidentalis	.	text p. 42	citation	Shih2012	.	=	=	.	.
+Shih2018.1	6.3	Austruca occidentalis	.	text p. 42	citation	Shih2013	.	=	=	.	.
+Shih2018.1	6.4	Austruca occidentalis	.	text p. 42	citation	Shih2015	.	=	=	.	.
+Shih2018.1	6.5	Austruca occidentalis	.	text p. 42	citation	Shih2016.2	6	=	=	.	.
+Shih2018.1	6.6	Austruca occidentalis	.	text p. 42	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	7.1	Austruca sindensis	.	text p. 42	citation	Shih2009	.	=	=	.	.
+Shih2018.1	7.2	Austruca sindensis	.	text p. 42	citation	Shih2012	.	=	=	.	.
+Shih2018.1	7.3	Austruca sindensis	.	text p. 42	citation	Shih2013.2	7	=	=	.	.
+Shih2018.1	7.4	Austruca sindensis	.	text p. 42	citation	Shih2013	.	=	=	.	.
+Shih2018.1	7.5	Austruca sindensis	.	text p. 42	citation	Shih2015	.	=	=	.	.
+Shih2018.1	7.6	Austruca sindensis	.	text p. 42	citation	Shih2016.2	12	=	=	.	.
+Shih2018.1	7.7	Austruca sindensis	.	text p. 42	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	8.1	Cranuca inversa	.	text p. 42	citation	Shih2009	.	=	=	.	.
+Shih2018.1	8.2	Cranuca inversa	.	text p. 42	citation	Shih2012	.	=	=	.	.
+Shih2018.1	8.3	Cranuca inversa	.	text p. 42	citation	Shih2013.2	6	=	=	.	.
+Shih2018.1	8.4	Cranuca inversa	.	text p. 42	citation	Shih2013	.	=	=	.	.
+Shih2018.1	8.5	Cranuca inversa	.	text p. 42	citation	Shih2015	.	=	=	.	.
+Shih2018.1	8.6	Cranuca inversa	.	text p. 42	citation	Shih2016.2	12	=	=	.	.
+Shih2018.1	8.7	Cranuca inversa	.	text p. 42	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	9.1	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2009	.	=	=	.	.
+Shih2018.1	9.2	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2012	.	=	=	.	.
+Shih2018.1	9.3	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2013.2	4	=	=	.	.
+Shih2018.1	9.4	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2013	.	=	=	.	.
+Shih2018.1	9.5	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2015	.	=	=	.	.
+Shih2018.1	9.6	Paraleptuca chlorophthalmus	.	text p. 42	citation	Shih2016.2	62	=	=	.	.
+Shih2018.1	9.7	Paraleptuca chlorophthalmus	.	text p. 42	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	10.1	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2009	.	=	=	.	.
+Shih2018.1	10.2	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2010.1	8	=	=	.	.
+Shih2018.1	10.3	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2012	.	=	=	.	.
+Shih2018.1	10.4	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2013	.	=	=	.	.
+Shih2018.1	10.5	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2015	.	=	=	.	.
+Shih2018.1	10.6	Gelasimus hesperiae	.	text p. 42, 56	citation	Shih2016.2	19	=	=	.	.
+Shih2018.1	10.7	Gelasimus hesperiae	.	text p. 42, 56	citation	Naderloo2016	.	=	=	.	.
+Shih2018.1	11.1	Tubuca dussumieri	.	text p. 42, 49, 56	citation	Shih2016.2	71	=	=	.	.
+Shih2018.1	11.2	Tubuca dussumieri	.	text p. 42, 49, 56	citation	Crane1975	6	=	=	.	.
+Shih2018.1	11.3	Tubuca dussumieri	.	text p. 42, 49, 56	citation	Frith1977.3	4	=	=	.	.
+Shih2018.1	11.4	Tubuca dussumieri	.	text p. 42, 49, 56	citation	Frith1977.2	2	=	=	.	.
+Shih2018.1	11.5	Tubuca dussumieri	.	text p. 42, 49, 56	citation	Frith1978	16	=	=	.	.
+Shih2018.1	12.1	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	citation	Shih2016.2	74	=	=	.	.
+Shih2018.1	12.2	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	citation	Crane1975	8	=	=	.	.
+Shih2018.1	12.3	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	citation	Krishnan1992.1	.	=	=	.	.
+Shih2018.1	12.4	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	citation	Frith1977.3	5	=	=	.	.
+Shih2018.1	12.5	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	citation	Frith1978	6	=	=	.	.
+Shih2018.1	12.6	Tubuca paradussumieri	.	text p. 42, 49, 53, 56	location	West coast of Thailand	.	paradussumieri	<	.	.
+Shih2018.1	13	Tubuca capricornis	.	text p. 42, 56	citation	Shih2016.2	68	=	=	.	.
+Shih2018.1	14.1	Tubuca	.	text p. 43, 45, 49, 55	citation	Bott1973.2	57	=	=	.	.
+Shih2018.1	14.2	Tubuca	.	text p. 43, 45, 49, 55	citation	Crane1975	2	=	=	.	.
+Shih2018.1	14.3	Tubuca	.	text p. 43, 45, 49, 55	citation	Beinlich2006	7	=	=	.	.
+Shih2018.1	14.4	Tubuca	.	text p. 43, 45, 49, 55	citation	vonHagen1989	0	>Tubuca	<	.	.
+Shih2018.1	15.1	Austruca annulipes	.	text p. 53	citation	Frith1977.3	8	=	=	.	.
+Shih2018.1	15.2	Austruca annulipes	.	text p. 53	citation	Frith1978	11	=	=	.	.
+Shih2018.1	15.3	Austruca annulipes	.	text p. 53	location	West coast of Thailand	.	annulipes	<	.	.
+Shih2018.1	16.1	Tubuca forcipata	.	text p. 53	citation	Frith1977.3	3	=	=	.	.
+Shih2018.1	16.2	Tubuca forcipata	.	text p. 53	citation	Frith1978	7	=	=	.	.
+Shih2018.1	16.3	Tubuca forcipata	.	text p. 53	location	West coast of Thailand	.	forcipata	<	.	.
+Shih2018.1	17	Paraleptuca crassipes	.	text p. 56	citation	Shih2012	.	=	=	.	.
+Shih2018.1	18	Paraleptuca splendida	.	text p. 56	citation	Shih2012	.	=	=	.	.

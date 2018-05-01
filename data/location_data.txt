@@ -520,10 +520,10 @@ Bheemunipatnam, Visakhapatnam, Andhra Pradesh, India	17.886385	83.447109	.	.	Bhe
 Chennai, Tamil Nadu, India	13.083333	80.266667	.	.	Chennai	Madras	Tamil Nadu, India	.	.	.	.	.	.
 Chilka Lake, Odisha, India	19.716667	85.316667	.	.	Chilka Lake	.	Odisha, India	.	.	.	.	.	.
 Goa, India	15.414050	73.900395	State	.	Goa	.	India	.	.	.	.	.	.
-Gulf of Kutch, Gujarat, India	22.628521	69.737978	.	.	Gulf of Kutch	.	Gujarat, India	.	.	.	.	.	.
+Gulf of Kutch, Gujarat, India	22.628521	69.737978	.	.	Gulf of Kutch	Gulf of Kachchh	Gujarat, India	.	.	.	.	.	.
 Gulf of Mannar, Tamil Nadu, India	8.470000	79.020000	.	.	Gulf of Mannar	.	Tamil Nadu, India	.	.	.	.	.	.
 Kannur, Kannur District, Kerala, India	11.852296	75.367443	.	.	Kannur	.	Kannur District, Kerala, India	.	.	.	.	.	.
-Kerala, India	9.923079	76.249552	State	Using Kochi	Kerala	Travancore	India	Southwestern India;Arabian Sea	.	.	.	.	.
+Kerala, India	9.923079	76.249552	State	Using Kochi	Kerala	Travancore	India	Southwestern India;Arabian Sea;Southern India	.	.	.	.	.
 Maharashtra, India	18.975000	72.825833	State	Using Mumbai	Maharashtra	.	India	Arabian Sea	.	.	.	.	.
 Mahé, India	11.702657	75.535604	.	.	Mahé (India)	.	India	.	.	.	.	.	.
 Malta River, South 24 Parganas, West Bengal, India	22.081670	88.639218	.	.	Malta River	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
@@ -532,7 +532,7 @@ Parangipettai, Cuddalore District, Tamil Nadu, India	11.490000	79.760000	.	.	Par
 Puducherry, India	11.930000	79.130000	.	.	Puducherry	Pondicherry	India	Bay of Bengal	.	.	.	.	.
 Rameswaram, Ramanathapuram District, Tamil Nadu, India	9.285956	79.315410	.	.	Rameswaram	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
 Southwestern India	10.918729	75.899094	.	.	Southwestern India	Malabar Coast	India	Bay of Bengal	.	.	.	.	.
-Tamil Nadu, India	9.996005	79.192886	State	.	Tamil Nadu	.	India	Southeastern India;Bay of Bengal	.	.	.	.	.
+Tamil Nadu, India	9.996005	79.192886	State	.	Tamil Nadu	.	India	Southeastern India;Bay of Bengal;Southern India	.	.	.	.	.
 Thoothukudi, Thoothukudi District, Tamil Nadu, India	8.797139	78.159235	.	.	Thoothukudi	Tuticorin	Thoothukudi District, Tamil Nadu, India	.	.	.	.	.	.
 Vellar Estuary, Parangipettai, Cuddalore District, Tamil Nadu, India	11.492751	79.771487	.	.	Vellar Estuary	.	Parangipettai, Cuddalore District, Tamil Nadu, India	.	.	.	.	.	.
 Visakhapatnam Harbor, Visakhapatnam, Andhra Pradesh, India	17.688333	83.218611	.	.	Visakhapatnam Harbor	.	Visakhapatnam, Andhra Pradesh, India	.	.	.	.	.	.
@@ -1273,7 +1273,7 @@ Cuddalore District, Tamil Nadu, India	11.588399	79.757146	District	.	Cuddalore D
 Ramanathapuram District, Tamil Nadu, India	9.280569	79.189892	District	.	Ramanathapuram District	.	Tamil Nadu, India	.	.	.	.	.	.
 Thoothukudi District, Tamil Nadu, India	8.745719	78.217908	District	.	Thoothukudi District	.	Tamil Nadu, India	.	.	.	.	.	.
 South 24 Parganas, West Bengal, India	21.605819	88.396304	District	.	South 24 Parganas	.	West Bengal, India	.	.	.	.	.	.
-Odisha, India	19.986232	86.363576	State	.	Odisha	.	India	Bay of Bengal	.	.	.	.	.
+Odisha, India	19.986232	86.363576	State	.	Odisha	Orissa	India	Bay of Bengal	.	.	.	.	.
 Kollam District, Kerala, India	8.934494	76.535052	District	.	Kollam District	.	Kerala, India	.	.	.	.	.	.
 Kannur District, Kerala, India	11.852296	75.367443	District	.	Kannur District	.	Kerala, India	.	.	.	.	.	.
 Ernakulam District, Kerala, India	9.972960	76.238324	District	.	Ernakulam District	.	Kerala, India	.	.	.	.	.	.
@@ -1581,3 +1581,73 @@ Sonari, Karachi, Sindh, Pakistan	24.884603	66.697238	.	.	Sonari	.	Karachi, Sindh
 Sonmiani, Balochistan, Pakistan	25.423664	66.593349	.	.	Sonmiani	.	Balochistan, Pakistan	.	.	.	.	.	.
 Sindh, Pakistan	24.260274	67.339763	Province	.	Sindh	.	Pakistan	.	.	.	.	.	.
 Balochistan, Pakistan	25.248843	64.592338	Province	.	Balochistan	.	Pakistan	.	.	.	.	.	.
+Vypin, Kochi, Ernakulam District, Kerala, India	9.972375	76.242915	.	.	Vypin	Vypeen	Kochi, Ernakulam District, Kerala, India	.	.	.	.	.	.
+Panaji, Goa, India	15.496553	73.817748	.	.	Panaji	.	Goa, India	.	.	.	.	.	.
+Kanchipuram District, Tamil Nadu, India	12.475816	80.129238	District	.	Kanchipuram District	Chingleput District	Tamil Nadu, India	.	.	.	.	.	.
+Krishna District, Andhra Pradesh, India	16.198695	81.209497	District	.	Krishna District	.	Andhra Pradesh, India	.	.	.	.	.	.
+Manginapudi, Krishna District, Andhra Pradesh, India	16.225198	81.205187	.	.	Manginapudi	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Voyalur, Kanchipuram District, Tamil Nadu, India	12.965830	79.880450	.	.	Voyalur	.	Kanchipuram District, Tamil Nadu, India	.	.	.	.	.	.
+Canning, South 24 Parganas, West Bengal, India	22.304602	88.677720	.	.	Canning	Port Canning	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Hugli-Matla Estuarine Area, West Bengal. India	22.035862	88.141389	.	.	Hugli-Matla Estuarine Area	.	West Bengal, India	.	.	.	.	.	.
+Bakkhali, South 24 Parganas, West Bengal, India	21.560496	88.258221	.	.	Bakkhali	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Purba Medinipur District, West Bengal, India	21.828514	87.943602	District	.	Purba Medinipur District	.	West Bengal, India	.	.	.	.	.	.
+Haldia, Purba Medinipur District, West Bengal, India	22.015342	88.065095	.	.	Haldia	.	Purba Medinipur District, West Bengal, India	.	.	.	.	.	.
+Iswaripur, South 24 Parganas, West Bengal, India	21.752226	88.273862	.	.	Iswaripur	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Jharkhali, South 24 Parganas, West Bengal, India	22.024392	88.663623	.	.	Jharkhali	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Jhingekhali, South 24 Parganas, West Bengal, India	22.206783	89.018733	.	.	Jhingekhali	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+South Andaman, Andaman Islands	11.806067	92.629192	.	.	South Andaman	.	Andaman Islands	.	.	13.9	94.0	10.3	91.5
+Corbyn's Cove, South Andaman, Andaman Islands	11.643280	92.746992	.	.	Corbyn's Cove	.	South Andaman, Andaman Islands	.	.	13.9	94.0	10.3	91.5
+Chidya Tapu, South Andaman, Andaman Islands	11.505548	92.700596	.	.	Chidya Tapu	.	South Andaman, Andaman Islands	.	.	13.9	94.0	10.3	91.5
+Mahanadi River Estuary, Odisha, India	20.299356	86.696111	.	.	Mahanadi River Estuary	.	Odisha, India	.	.	.	.	.	.
+Shimo la Tewa, Mombasa, Kenya	-3.955621	39.730125	.	.	Shimo la Tewa	.	Mombasa, Kenya	.	.	.	.	.	.
+Kamphuan Mangrove Forest, Ranong, Thailand	9.381001	98.401967	.	.	Kamphuan Mangrove Forest	.	Ranong, Thailand	.	.	.	.	.	.
+Daiman and Diu, India	20.420000	27.830000	.	.	Daiman and Diu	.	India	.	.	.	.	.	.
+Diu District, Daiman and Diu, India	20.710000	70.960000	.	.	Diu Distrit	.	Daiman and Diu, India	.	.	.	.	.	.
+Chalong Bay, Phuket Island, Thailand	7.815136	98.363759	.	.	Chalong Bay	.	Phuket Island, Thailand	.	.	.	.	.	.
+Laem Tukkae, Phuket Island, Thailand	7.867536	98.435447	.	.	Laem Tukkae	.	Phuket Island, Thailand	.	.	.	.	.	.
+Tha Thiap Ruea Bang Rong, Phuket Island, Thailand	8.049609	98.416017	.	.	Tha Thiap Ruea Bang Rong	.	Phuket Island, Thailand	.	.	.	.	.	.
+Hooghly River, West Bengal, India	21.896637	88.066716	.	.	Hooghly River	.	West Bengal, India	.	.	.	.	.	.
+Karnataka, India	13.956143	74.510136	State	.	Karnataka	.	India	Arabian Sea	.	.	.	.	.
+Malpe, Karnataka, India	13.344923	74.703727	.	.	Malpe	.	Karnataka, India	.	.	.	.	.	.
+Gulf of Khambhat, Gujarat, India	21.915114	72.401951	.	.	Gulf of Khambat	.	Gujarat, India	.	.	.	.	.	.
+Saurashtra, Gujarat, India	20.949594	70.289346	.	.	Saurashtra	.	Gujarat, India	.	.	.	.	.	.
+River Nua Nai Estuary, Odisha, India	19.823391	85.907142	.	.	River Nua Nai Estuary	.	Odisha, India	.	.	.	.	.	.
+Brahmani-Baitarani Estuarine Complex, Odisha, India	20.698858	86.800034	.	.	Brahmani-Baitarani Estuarine Complex	.	Odisha, India	.	.	.	.	.	.
+Talsari, Balasore, Odisha, India	21.600916	87.462621	.	.	Talsari	.	Balasore, Odisha, India	.	.	.	.	.	.
+Kirtania, Balasore, Odisha, India	21.576158	87.373281	.	.	Kirtania	.	Balasore, Odisha, India	.	.	.	.	.	.
+Kankrapal, Balasore, Odisha, India	21.558870	87.358324	.	.	Kankrapal	.	Balasore, Odisha, India	.	.	.	.	.	.
+Malappuram District, Kerala, India	10.901415	75.883859	District	.	Malappuram District	.	Kerala, India	.	.	.	.	.	.
+Kasaragod District, Kerala, India	12.419095	75.012449	District	.	Kasaragod District	.	Kerala, India	.	.	.	.	.	.
+Kozhikode District, Kerala, India	11.427340	75.695562	District	.	Kozhikode District	Calicut District	Kerala, India	.	.	.	.	.	.
+Ganjam, Odisha, India	19.381923	85.041768	.	.	Ganjam	.	Odisha, India	.	.	.	.	.	.
+Yanam, Puducherry, India	16.724986	82.220564	.	.	Yanam	.	Puducherry, India	.	.	.	.	.	.
+Chollangi, Andhra Pradesh, India	16.895086	82.249703	.	.	Chollangi	.	Andhra Pradesh, India	.	.	.	.	.	.
+Sagar Island, South 24 Parganas, West Bengal, India	21.724272	88.108955	.	.	Sagar Island	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Lothian Island, South 24 Parganas, West Bengal, India	21.667571	88.330053	.	.	Lothian Island	Luthian Island	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Prentice Island, South 24 Parganas, West Bengal, India	21.741834	88.290891	.	.	Prentice Island	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Sajnekhali, South 24 Parganas, West Bengal, India	21.124591	88.829938	.	.	Sajnekhali	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+North 24 Parganas, West Bengal, India	22.302447	88.938039	District	.	North 24 Parganas	.	West Bengal, India	.	.	.	.	.	.
+Basirhat, North 24 Parganas, West Bengal, India	22.663552	88.865405	.	.	Basirhat	.	North 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Gosaba, South 24 Parganas, West Bengal, India	22.179819	88.809763	.	.	Gosaba	.	South 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Tamluk, Purba Medinipur District, West Bengal, India	22.281271	87.933412	.	.	Tamluk	.	Purba Medinipur District, West Bengal, India	.	.	.	.	.	.
+Krishna River, Andhra Pradesh, India	15.866659	80.876642	.	.	Krishna River	.	Andhra Pradesh, India	.	.	.	.	.	.
+Palakayatippa, Krishna District, Andhra Pradesh, India	15.978856	81.108150	.	.	Palakayatippa	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Gullalamoda, Krishna District, Andhra Pradesh, India	15.825881	80.923158	.	.	Gullalamoda	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Guntur District, Andhra Pradesh, India	15.880520	80.662136	District	.	Guntur Distict	.	Andhra Pradesh, India	.	.	.	.	.	.
+Lankevanidibba, Guntur District, Andhra Pradesh, India	15.791059	80.845969	District	.	Lankevanidibba	Lankevenitippa	Guntur District, Andhra Pradesh, India	.	.	.	.	.	.
+Kanur Creek, Krishna District, Andhra Pradesh, India	16.278066	81.267051	.	.	Kanur Creek	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Pallethummalapalem, Krishna District, Andhra Pradesh, India	16.011313	81.096848	.	.	Pallethummalapalem	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Sangameswara, Krishna District, Andhra Pradesh, India	15.902703	81.018155	.	.	Sangameswara	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
+Kamaveicheruvu, Andhra Pradesh, India	15.866659	80.876642	Precise location unknown, but part of the Krishna River Estuary	.	Kamaveicheruvu	.	Andhra Pradesh, India	.	.	.	.	.	.
+Nazat, North 24 Parganas, West Bengal, India	22.437679	88.838275	.	.	Nazat	Najat	North 24 Parganas, West Bengal, India	.	.	.	.	.	.
+Sorala, Ganjam, Odisha, India	19.116662	84.748217	.	.	Sorala	.	Ganjam, Odisha, India	.	.	.	.	.	.
+Keuta Sonepur, Ganjam, Odisha, India	19.103846	84.770567	.	.	Keuta Sonepur	.	Ganjam, Odisha, India	.	.	.	.	.	.
+Sonapur, Ganjam, Odisha, India	19.086626	84.770181	.	.	Sonapur	.	Ganjam, Odisha, India	.	.	.	.	.	.
+Bahuda River, Ganjam, Odisha, India	19.117044	84.786076	.	.	Bahuda River	.	Ganjam, Odisha, India	.	.	.	.	.	.
+Srikakulam District, Andhra Pradesh, India	18.520403	84.296921	District	.	Srikakulam District	.	Andhra Pradesh, India	.	.	.	.	.	.
+Kalingapatnam, Srikakulam District, Andhra Pradesh, India	18.342687	84.123500	.	.	Kalingapatnam	.	Srikakulam District, Andhra Pradesh, India	.	.	.	.	.	.
+Nagavali River, Srikakulam District, Andhra Pradesh, India	18.213973	83.837575	.	.	Nagavali River	.	Srikakulam District, Andhra Pradesh, India	.	.	.	.	.	.
+Pukkalapeta, Srikakulam District, Andhra Pradesh, India	18.221911	83.929594	Exact location  unclear, but fishing village near mouth of Nagavali River.	.	Pukkalapeta	.	Srikakulam District, Andhra Pradesh, India	.	.	.	.	.	.
+Digha, Purba Medinipur District, West Bengal, India	21.619062	87.510040	.	.	Digha	.	Purba Medinipur District, West Bengal, India	.	.	.	.	.	.
+St Lucia, KwaZulu-Natal, South Africa	-28.388821	32.409217	.	.	St Lucia	.	KwaZulu-Natal, South Africa	.	.	.	.	.	.
+Southern India	8.078930	77.543691	.	.	Southern India	.	India	.	.	.	.	.	.

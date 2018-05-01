@@ -23,6 +23,28 @@
     <script defer src="../js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="mailto:msr@asu.edu" />
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("http://www.fiddlercrab.info/maps/name_Uca (Celuca) triangularis_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -281,9 +303,9 @@
           ['2006', null, null],
           ['2007', null, null],
           ['2008', null, null],
-          ['2009', null, null],
-          ['2010', null, null],
-          ['2011', null, null],
+          ['2009', 0, 0],
+          ['2010', 1, 1],
+          ['2011', 0, 0],
           ['2012', null, null],
           ['2013', null, null],
           ['2014', null, null],
@@ -324,8 +346,8 @@
   <body onload="initialize()">
     <div id="home">
       <a href="../index.html" class="home-title">Fiddler Crabs</a>
-      <a href="../index.html" class="home-link"><span class ="fa fa-home"></span> Home</a>
-      <a href="../blog" class="home-link"><span class ="fa fa-pencil-alt"></span> Blog</a>
+      <a href="../index.html" class="home-link"><span class="fa fa-home"></span> Home</a>
+      <a href="../blog" class="home-link"><span class="fa fa-pencil-alt"></span> Blog</a>
     </div>
     <header id="Uca_Celuca_triangularis.html" class="tabular_page">
       <h1 class="nobookmark"><em class="species">Uca (Celuca) triangularis</em></h1>
@@ -335,6 +357,10 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
     <div class="chron_div">
       <div class="chronchart_title_top">Number of Uses of Name per Year</div>
       <div id="chronchart0_div" class="chronchart_top"></div>
@@ -348,13 +374,58 @@
         <th class="applied_col">Applied to...</th>
         <th class="accepted_col">Accepted Name</th>
         <th class="source_col">Source of Accepted</th>
+        <th class="notes_col">Note(s)</th>
       </tr>
     <tr>
       <td><a href="../references/Murai1987.2.html">Murai &amp; Goshima (1987)</a></td>
       <td>text p. 639</td>
       <td>&nbsp;</td>
       <td><a href="../u_triangularis.html"><em class="species">Uca triangularis</em></a></td>
-      <td><span class="fa fa-arrow-left"></span> Original</td>
+      <td><span class="fa fa-arrow-alt-left"></span> Original</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Mitra2010.html">Mitra <em>et al.</em> (2010)</a></td>
+      <td>text p. 9, 41-42, 119; Plate VII, Figure E</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/MilneEdwards1873.html">Milne-Edwards (1873)</a> → <em class="species">Gelasimus triangularis</em></td>
+      <td><a href="../u_triangularis.html"><em class="species">Uca triangularis</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/Crane1975.html">Crane (1975)</a> → <em class="species">Uca (Celuca) triangularis bengali</em></td>
+      <td><a href="../u_bengali.html"><em class="species">Uca bengali</em></a></td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+      <td>in part</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-edit"></span> citation: <a href="../references/DevRoy2005.html">Dev Roy &amp; Bhadra (2005)</a></td>
+      <td>TBD</td>
+      <td><span class="fa fa-cogs"></span> Computed</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker-alt"></span> location: <a href="../locations/Talsari_-_Balasore_-_Odisha_-_India.html">Talsari, Balasore, Odisha, India</a></td>
+      <td><a href="../u_bengali.html"><em class="species">Uca bengali</em></a></td>
+      <td><span class="far fa-map"></span> Geography</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span class="fa fa-map-marker-alt"></span> location: <a href="../locations/Kirtania_-_Balasore_-_Odisha_-_India.html">Kirtania, Balasore, Odisha, India</a></td>
+      <td><a href="../u_bengali.html"><em class="species">Uca bengali</em></a></td>
+      <td><span class="far fa-map"></span> Geography</td>
+      <td>&nbsp;</td>
     </tr>
     </table>
     <p>
@@ -364,7 +435,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span class="fa fa-pencil-alt"></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msr@asu.edu"><span class="fa fa-envelope"></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2018.03.30.17.23 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
+       <p id="copyright">Release: 2018.05.01.12.14 &mdash; Copyright &copy; 2003&ndash;2018 All Rights Reserved</p>
     </footer>
   </body>
 </html>
