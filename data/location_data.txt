@@ -16,7 +16,7 @@ Belize	17.190845	-88.318569	.	.	Belize	.	.	Central America;Atlantic coast of Cen
 Borneo	1.000000	114.000000	The island in general, rather than belonging under one of the three countries on the island.	.	Borneo	.	.	Western Pacific Ocean;Malay Archipelago	.	8.7	120.2	-5.0	107.8
 Brazil	-5.773939	-35.205500	.	Using Natal	Brazil	.	.	Atlantic coast of South America	.	9.6	-31.0	-35.7	-65.5
 British Virgin Islands	18.431001	-64.626969	.	.	British Virgin Islands	.	.	Caribbean;Leeward Islands, Lesser Antilles	.	25.0	-59.0	10.0	-77.0
-Cameroon	4.051828	9.767382	.	.	Cameroon	.	.	Africa;Atlantic coast of Africa	.	7.6	12.2	0.8	7.1
+Cameroon	4.051828	9.767382	.	.	Cameroon	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	7.6	12.2	0.8	7.1
 Canada	48.428197	-123.466956	.	Using Vancouver Island	Canada	.	.	North America	X	60.0	-121.0	47.2	-137.0
 Caribbean	19.067361	-72.798457	.	Using Haiti	Caribbean	.	.	Western Atlantic Ocean	.	25.0	-61.0	4.7	-90.0
 Central America	13.000000	-85.300000	.	.	Central America	.	.	.	.	.	.	.	.
@@ -38,7 +38,7 @@ Ecuador	-0.967795	-80.707970	.	Using Manta	Ecuador	.	.	Pacific coast of South Am
 Egypt	25.967297	34.357588	.	.	Egypt	.	.	Middle East;Red Sea;Africa	.	32.0	37.5	22.0	24.5
 El Salvador	13.355678	-89.036220	.	.	El Salvador	.	.	Central America;Pacific coast of Central America	.	14.7	-87.4	12.8	-90.3
 England	51.541388	0.580856	Couch (1838) reported a fiddler crab from Cornwall, England, but the species turned out to be from the genus <em class="species">Goneplax</em>	.	England	.	.	Europe	X	.	.	.	.
-Equatorial Guinea	1.853792	9.778701	.	Using Bata	Equatorial Guinea	.	.	Africa;Atlantic coast of Africa	.	2.5	11.5	0.5	9.0
+Equatorial Guinea	1.853792	9.778701	.	Using Bata	Equatorial Guinea	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	2.5	11.5	0.5	9.0
 Eritrea	15.609722	39.450000	.	Includes Ethiopia. Using Massawa	Eritrea	.	.	Red Sea;Africa	.	18.0	44.0	12.5	36.0
 Europe	36.022659	-5.607196	.	Using Andalusia, Spain	Europe	.	.	Eastern Atlantic Ocean	.	.	.	.	.
 Fiji	-18.000000	179.000000	.	.	Fiji	.	.	Melanesia	.	-15.0	180.0	-21.0	176.0
@@ -46,7 +46,7 @@ French Guiana	5.198095	-52.694248	.	.	French Guiana	.	.	Atlantic coast of South 
 French Polynesia	-17.533333	-149.566667	.	.	French Polynesia	.	.	Polynesia	.	-13.7	-145.1	-21.3	-154.0
 Gabon	0.416894	9.473080	.	Using Libreville	Gabon	.	.	Africa;Atlantic coast of Africa	.	3.0	15.0	-4.0	8.0
 Galápagos Islands	-0.666667	-90.550000	.	.	Galápagos Islands	.	.	Eastern Pacific Ocean	.	1.2	-88.7	-2.0	-93.0
-Ghana	5.203376	-1.074352	.	.	Ghana	Gold Coast	.	Africa;Atlantic coast of Africa	.	12.0	2.0	4.0	-4.0
+Ghana	5.203376	-1.074352	.	.	Ghana	Gold Coast	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	12.0	2.0	4.0	-4.0
 Guadeloupe	16.245455	-61.548555	.	.	Guadeloupe	.	.	Caribbean;Leeward Islands, Lesser Antilles	.	21.0	-59.0	10.4	-69.0
 Guam	13.451944	144.765478	.	.	Guam	.	.	Western Pacific Ocean	.	.	.	.	.
 Guatemala	14.023968	-91.335411	.	Using Pacific coast	Guatemala	.	.	Central America	.	.	.	.	.
@@ -64,7 +64,7 @@ Iran	26.560003	54.551290	.	.	Iran	.	.	Middle East	.	40.3	63.5	24.7	43.7
 Iraq	29.906593	48.453944	.	.	Iraq	.	.	Middle East;Persian Gulf	.	.	.	.	.
 Isola di Chojama	.	.	Presumably an island in or near southern Somalia	.	Isola di Chojama	.	.	.	.	.	.	.	.
 Isole Key	.	.	An island of the Indo West Pacific, but could be almost anywhere from east Africa through the central Pacific	.	Isole Key	.	.	.	.	.	.	.	.
-Ivory Coast	5.357523	-4.012824	.	Using Abidjian	Ivory Coast	.	.	Africa;Atlantic coast of Africa	.	.	.	.	.
+Ivory Coast	5.357523	-4.012824	.	Using Abidjian	Ivory Coast	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	.	.	.	.
 Jamaica	18.188113	-77.361859	.	.	Jamaica	.	.	Caribbean;Greater Antilles	.	.	.	.	.
 Japan	34.221423	135.138759	.	Using Wakayma	Japan	.	.	Western Pacific Ocean	.	.	.	.	.
 Kenya	-2.679131	40.226366	.	.	Kenya	.	.	Africa;Indian coast of Africa	.	5.0	42.5	-5.5	33.5
@@ -93,7 +93,7 @@ New Caledonia	-21.250000	165.300000	.	.	New Caledonia	.	.	Melanesia	.	.	.	.	.
 New Guinea	-5.401399	140.965951	.	Middle of Island	New Guinea	.	.	Melanesia	.	.	.	.	.
 New Zealand	-42.000000	174.000000	Kirk (1880) and Filhol (1885) describe new species of fiddler crabs from New Zeland, but there is no subsequent evidence of fiddler crabs there. More than likely, these specimens (which have been subsequently lost) were collected elsewhere or were stray individuals that washed up on New Zeland during storms without representing an established population.	.	New Zealand	.	.	Polynesia;Australasia	.	-32.0	180.0	-48.0	165.0
 Nicaragua	13.009537	-85.088325	.	.	Nicaragua	.	.	Central America	.	.	.	.	.
-Nigeria	4.712213	5.651727	.	Using Niger Delta	Nigeria	.	.	Africa;Atlantic coast of Africa	.	14.5	15.5	3.0	2.0
+Nigeria	4.712213	5.651727	.	Using Niger Delta	Nigeria	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	14.5	15.5	3.0	2.0
 North America	37.000000	-100.000000	.	.	North America	.	.	.	.	.	.	.	.
 Northern Africa	35.766667	-5.800000	.	Using Tangier	Northern Africa	.	Africa	.	.	.	.	.	.
 Eastern Pacific Ocean	11.125208	-85.805854	.	Nicaragua/Costa Rica border	Eastern Pacific Ocean	Pacific coast of the Americas	Pacific Ocean	.	.	.	.	.	.
@@ -114,7 +114,7 @@ Reunion Island	-21.123586	55.529219	.	.	Reunion Island	.	.	Mascarene Islands	.	-
 Saint Barthélemy	17.900000	-62.833333	.	.	Saint Barthélemy	.	.	Caribbean;Leeward Islands, Lesser Antilles	.	.	.	.	.
 Saint Martin	18.066667	-63.050000	.	.	Saint Martin	.	.	Caribbean;Leeward Islands, Lesser Antilles	.	.	.	.	.
 Samoa	-13.833333	-171.750000	.	.	Samoa	Navigator Islands	.	Polynesia	.	.	.	.	.
-São Tomé and Príncipe	1.000000	7.000000	.	.	São Tomé and Príncipe	.	.	Africa;Atlantic coast of Africa	.	1.8	7.5	-0.5	6.5
+São Tomé and Príncipe	1.000000	7.000000	.	.	São Tomé and Príncipe	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	1.8	7.5	-0.5	6.5
 Saudi Arabia	24.267514	46.019311	.	.	Saudi Arabia	.	.	Middle East	.	.	.	.	.
 Sea of Japan	39.895520	133.785243	.	.	Sea of Japan	.	.	Western Pacific Ocean	.	.	.	.	.
 Senegal	14.763933	-17.364775	.	Using Dakar	Senegal	.	.	Africa;Atlantic coast of Africa	.	17.0	-10.0	12.0	-18.0
@@ -338,7 +338,7 @@ La Paz, El Salvador	13.324894	-88.962076	Department	.	La Paz (El Salvador)	.	El 
 La Unión, El Salvador	13.339189	-87.844010	Department	.	La Union	.	El Salvador	.	.	14.7	-87.4	12.8	-90.3
 Usulután, El Salvador	13.272169	-88.552298	Department	.	Usulután	.	El Salvador	.	.	14.7	-87.4	12.8	-90.3
 Cornwall, England	50.300000	-4.900000	Couch (1838) reported a fiddler crab from Cornwall, England, but the species turned out to be from the genus <em class="species">Goneplax</em>	.	Cornwall	.	England	.	X	.	.	.	.
-Bioko, Equitorial Guinea	3.500000	8.700000	.	.	Bioko	.	Equatorial Guinea	.	.	.	.	.	.
+Bioko, Equatorial Guinea	3.500000	8.700000	.	.	Bioko	.	Equatorial Guinea	.	.	.	.	.	.
 Dahlak Archipelago, Eritrea	15.833333	40.200000	.	Red Sea	Dahlak Archipelago	.	Eritrea	.	.	.	.	.	.
 Dissei, Eritrea	15.465000	39.749167	.	.	Dissei	.	Eritrea	.	.	.	.	.	.
 Isola Nocra, Dahlak Archipelago, Eritrea	15.700000	39.933330	.	.	Isola Nocra	.	Dahlak Archipelago, Eritrea	.	.	.	.	.	.
@@ -1654,7 +1654,7 @@ Southern India	8.078930	77.543691	.	.	Southern India	.	India	.	.	.	.	.	.
 Ensenada, Baja California, Mexico	31.850000	-116.630000	.	.	Ensenada	.	Pacific coast of Baja California	.	.	.	.	.	.
 Bolsa Chica Ecological Reserve, Huntington Beach, Orange County, California, USA	33.700000	-118.050000	.	.	Bolsa Chica Ecological Reserve	.	Huntington Beach, Orange County, California, USA	.	.	.	.	.	.
 Huntington Beach, Orange County, California, USA	33.679611	-118.031884	.	.	Huntington Beach	.	Orange County, California, USA	.	.	.	.	.	.
-San Diego Bay National Wildlife Refuge, San Diego Bay, San Diego County, California, USA	32.643070	-117.114982	.	.	San Diego Bay National Wildlife Refuge	.	San Diego Bay, San Diego County, California, USA	Chula Vista, San Diego County, California, USA	.	.	.	.	.
+San Diego Bay National Wildlife Refuge, San Diego Bay, San Diego County, California, USA	32.643070	-117.114982	.	.	San Diego Bay National Wildlife Refuge	Sweetwater Marsh National Wildlife Refuge	San Diego Bay, San Diego County, California, USA	Chula Vista, San Diego County, California, USA	.	.	.	.	.
 San Diego Bay, San Diego County, California, USA	32.652721	-117.132677	.	.	San Diego Bay	.	San Diego County, California, USA	.	.	.	.	.	.
 Santa Rosa Island, Escambia County, Florida, USA	30.346411	-87.078518	.	.	Santa Rosa Island (Escambia)	.	Escambia County, Florida, USA	Santa Rosa Island, Florida, USA	.	.	.	.	.
 Santa Rosa Island, Florida, USA	30.380948	-86.847771	.	.	Santa Rosa Island	.	Florida, USA	.	.	.	.	.	.
@@ -1686,3 +1686,51 @@ Bergen County, New Jersey, USA	40.889008	-73.940614	.	.	Bergen County	.	New Jers
 Great Sippewisset Marsh, Falmouth, Barnstable County, Massachusetts, USA	41.588399	-70.643328	.	.	Great Sippewisset Marsh	.	Falmouth, Barnstable County, Massachusetts, USA	.	.	.	.	.	.
 West coast of Madagascar	-17.608816	43.957824	.	.	West coast of Madagascar	.	Madagascar	.	.	.	.	.	.
 Weifang, Shandong, China	37.165308	119.235431	.	.	Weifang	.	Shandong, China	.	.	.	.	.	.
+Channel Island Bridge, Darwin, Northern Territory, Australia	-12.554034	130.874507	.	.	Channel Island Bridge	.	Darwin, Northern Territory, Australia	.	.	.	.	.	.
+Lamu Island, Lamu County, Kenya	-2.285021	40.858454	.	.	Lamu Island	.	Lamu County, Kenya	.	.	.	.	.	.
+Lamu County, Kenya	-1.966781	40.822922	.	.	Lamu County	.	Kenya	.	.	.	.	.	.
+Lampi Island, Myanmar	10.879286	98.220807	.	.	Lampi Island	.	Myanmar	.	.	.	.	.	.
+Las Canteras Beach, Gran Canaria, Canary Islands, Spain	28.127164	-15.438205	.	.	Las Canteras Beach	.	Gran Canaria, Canary Islands, Spain	.	.	.	.	.	.
+Gran Canaria, Canary Islands, Spain	27.958845	-15.585447	.	.	Gran Canaria	.	Canary Islands, Spain	.	.	.	.	.	.
+Canary Islands, Spain	28.342519	-15.744339	.	.	Canary Islands	Canarias	Spain	Africa;Atlantic coast of Africa	.	.	.	.	.
+Cape Verde	16.081212	-24.075060	.	.	Cape Verde	.	.	Africa;Atlantic coast of Africa	.	.	.	.	.
+Gulf of Guinea	3.571985	4.802117	.	.	Gulf of Guinea	.	Atlantic coast of Africa	.	.	.	.	.	.
+Chek Keng, Hong Kong, China	22.422605	114.351359	.	.	Chek Keng	.	Hong Kong, China	.	.	.	.	.	.
+Chi Ma Wan, Hong Kong, China	22.243656	114.003394	.	.	Chi Ma Wan	.	Hong Kong, China	.	.	.	.	.	.
+Ho Chung, Hong Kong, China	22.354624	114.245824	.	.	Ho Chung	.	Hong Kong, China	.	.	.	.	.	.
+Kei Ling Ha Hoi, Hong Kong, China	22.431801	114.269497	.	.	Kei Ling Ha Hoi	.	Hong Kong, China	.	.	.	.	.	.
+Kei Ling Ha Lo Wai, Hong Kong, China	22.411915	114.274436	.	.	Kei Ling Ha Lo Wai	.	Hong Kong, China	.	.	.	.	.	.
+Lai Chi Chong, Hong Kong, China	22.453879	114.299896	.	.	Lai Chi Chong	.	Hong Kong, China	.	.	.	.	.	.
+Lai Chi Wo, Hong Kong, China	22.527396	114.262165	.	.	Lai Chi Wo	.	Hong Kong, China	.	.	.	.	.	.
+Ma Wan, Hong Kong, China	22.350023	114.059203	.	.	Ma Wan	.	Hong Kong, China	.	.	.	.	.	.
+Mai Po, Hong Kong, China	22.495672	114.030004	.	.	Mai Po	.	Hong Kong, China	.	.	.	.	.	.
+Nam Chung Yeung Uk, Hong Kong, China	22.523130	114.208184	.	.	Nam Chung Yeung Uk	.	Hong Kong, China	.	.	.	.	.	.
+Pak Sha Wan, Hong Kong, China	22.278959	114.240998	.	.	Pak Sha Wan	.	Hong Kong, China	.	.	.	.	.	.
+Pui O Wan, Hong Kong, China	22.236173	113.974454	.	.	Pui O Wan	.	Hong Kong, China	.	.	.	.	.	.
+Sai Keng, Hong Kong, China	22.419776	114.268492	.	.	Sai Keng	.	Hong Kong, China	.	.	.	.	.	.
+Sam A Chung, Hong Kong, China	22.510205	114.278950	.	.	Sam A Chung	.	Hong Kong, China	.	.	.	.	.	.
+Sam Mun Tsai, Hong Kong, China	22.457310	114.212415	.	.	Sam Mun Tsai	.	Hong Kong, China	.	.	.	.	.	.
+San Tau, Hong Kong, China	22.289726	113.923759	.	.	San Tau	.	Hong Kong, China	.	.	.	.	.	.
+Sham Wat, Hong Kong, China	22.269740	113.887657	.	.	Sham Wat	.	Hong Kong, China	.	.	.	.	.	.
+Sheung Pak Nai, Hong Kong, China	22.451343	113.961702	.	.	Sheung Pak Nai	.	Hong Kong, China	.	.	.	.	.	.
+Shuen Wan, Hong Kong, China	22.507352	114.253053	.	.	Shuen Wan	.	Hong Kong, China	.	.	.	.	.	.
+Shui Hau, Hong Kong, China	22.354538	114.245695	.	.	Shui Hau	.	Hong Kong, China	.	.	.	.	.	.
+Tai Ho Wan, Hong Kong, China	22.299672	113.977757	.	.	Tai Ho Wan	.	Hong Kong, China	.	.	.	.	.	.
+Tai Tan, Hong Kong, China	22.439949	114.332944	.	.	Tai Tan	.	Hong Kong, China	.	.	.	.	.	.
+Tai Wan, Hong Kong, China	22.308343	114.193900	.	.	Tai Wan	.	Hong Kong, China	.	.	.	.	.	.
+Ting Kok, Hong Kong, China	22.469469	114.210622	.	.	Ting Kok	.	Hong Kong, China	.	.	.	.	.	.
+To Kwa Peng, Hong Kong, China	22.428571	114.337747	.	.	To Kwa Peng	.	Hong Kong, China	.	.	.	.	.	.
+Tsim Bei Tsui, Hong Kong, China	22.486624	114.011804	.	.	Tsim Bei Tsui	.	Hong Kong, China	.	.	.	.	.	.
+Tung Wan, Hong Kong, China	22.287439	114.042300	.	.	Tung Wan	.	Hong Kong, China	.	.	.	.	.	.
+Wong Yi Chau, Hong Kong, China	22.388552	114.318050	.	.	Wong Yi Chau	.	Hong Kong, China	.	.	.	.	.	.
+Wu Shek Kok, Hong Kong, China	22.534135	114.212219	.	.	Wu Shek Kok	.	Hong Kong, China	.	.	.	.	.	.
+Yam O, Hong Kong, China	22.328699	114.023861	.	.	Yam O	.	Hong Kong, China	.	.	.	.	.	.
+Yi O, Hong Kong, China	22.237329	113.848102	.	.	Yi O	.	Hong Kong, China	.	.	.	.	.	.
+Hong Kong Wetland Park, Hong Kong, China	22.470646	114.007176	.	.	Hong Kong Wetland Park	.	Hong Kong, China	.	.	.	.	.	.
+Lo Fu Wat, Hong Kong, China	22.487387	114.309901	.	.	Lo Fu Wat	.	Hong Kong, China	.	.	.	.	.	.
+Tai Sham Chung, Hong Kong, China	22.442202	114.283655	.	.	Tai Sham Chung	.	Hong Kong, China	.	.	.	.	.	.
+Tolo Pond, Hong Kong, China	22.440250	114.192456	.	.	Tolo Pond	.	Hong Kong, China	.	.	.	.	.	.
+Siu Tan, Hong Kong, China	22.525699	114.265202	.	.	Siu Tan	.	Hong Kong, China	.	.	.	.	.	.
+St. John, U.S. Virgin Islands	18.345565	-64.744870	.	.	St. John	.	U.S. Virgin Islands	.	.	.	.	.	.
+Lieutenant River, Old Lyme, New London County, Connecticut, USA	41.310012	-72.339932	.	.	Lieutenant River	.	Old Lyme, New London County, Connecticut, USA	.	.	.	.	.	.
+Old Lyme, New London County, Connecticut, USA	41.282695	72.323402	.	.	Old Lyme	.	New London County, Connecticut, USA	.	.	.	.	.	.
