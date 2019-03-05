@@ -354,8 +354,8 @@ Kandavu, Fiji	-19.050000	178.250000	.	.	Kandavu	.	Fiji	.	.	-15.0	180.0	-21.0	176
 Matuku, Fiji	-19.166667	179.766667	.	.	Matuku	.	Fiji	.	.	-15.0	180.0	-21.0	176.0
 Rotuma, Fiji	-12.500000	177.080000	.	.	Rotuma	.	Fiji	.	.	-15.0	180.0	-21.0	176.0
 Punta Cormorant, Floreana Island, Galápagos Islands	-1.221017	-90.423460	.	.	Punta Cormorant	Punta Cormoran	Floreana Island, Galápagos Islands	.	.	1.2	-88.7	-2.0	-93.0
-Labuan Bajo, Flores, Indonesia	-8.500000	119.883333	.	.	Labuan Bajo	.	Flores, Indonesia	.	.	.	.	.	.
-Western Flores, Indonesia	-8.500000	119.883333	.	Using Labuan Bajo	Western Flores	.	Flores, Indonesia	.	.	.	.	.	.
+Labuan Bajo, Flores, East Nusa Tenggara, Indonesia	-8.500000	119.883333	.	.	Labuan Bajo	.	Flores, East Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Western Flores, East Nusa Tenggara, Indonesia	-8.500000	119.883333	.	Using Labuan Bajo	Western Flores	.	Flores, East Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Pensacola, Escambia County, Florida, USA	30.414601	-87.205771	.	.	Pensacola	.	Escambia County, Florida, USA	.	.	31.0	-79.5	23.9	-88.0
 Escambia River, Florida, USA	30.554431	-87.184537	.	.	Escambia River	.	Florida, USA	West coast of Florida, USA;Northwestern Florida, USA	.	31.0	-79.5	23.9	-88.0
 Gulf Breeze, Santa Rosa County, Florida, USA	30.358022	-87.169390	.	.	Gulf Breeze	.	Santa Rosa County, Florida, USA	.	.	31.0	-79.5	23.9	-88.0
@@ -540,23 +540,23 @@ West Bengal, India	21.716593	88.334090	State	.	West Bengal	.	India	Bay of Bengal
 Ganges Delta	21.727896	89.085485	.	.	Ganges Delta	.	Bay of Bengal	.	.	.	.	.	.
 Godavari-Krishna Rivers, Andhra Pradesh, India	15.802483	80.871854	.	.	Godavari-Krishna Rivers	.	Andhra Pradesh, India	.	.	.	.	.	.
 Aru Islands, Maluku Province, Maluku Islands, Indonesia	-6.166667	134.500000	.	.	Aru Islands	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
-Bali, Indonesia	-8.650000	115.216667	.	.	Bali	.	Indonesia	Indian Ocean	.	.	.	.	.
+Bali, Indonesia	-8.650000	115.216667	Province and Island	.	Bali	.	Indonesia	Indian Ocean	.	.	.	.	.
 Banda Sea, Indonesia	-6.000000	127.000000	.	.	Banda Sea	.	Indonesia	Western Pacific Ocean	.	4.8	137.6	-14.0	114.5
 Borneo, Indonesia	-0.539114	114.539209	.	.	Borneo (Indonesia)	.	Indonesia	Borneo	.	.	.	.	.
 Buru, Maluku Province, Maluku Islands, Indonesia	-3.400000	126.666667	.	.	Buru	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
-Flores, Indonesia	-8.672893	121.134743	.	Center of island	Flores	.	Indonesia	Indian Ocean	.	.	.	.	.
-Great Natuna Island, Indonesia	3.933960	108.160062	.	.	Great Natuna Island	.	Indonesia	Western Pacific Ocean	.	.	.	.	.
+Flores, East Nusa Tenggara, Indonesia	-8.672893	121.134743	.	Center of island	Flores	.	East Nusa Tenggara, Indonesia	Indian Ocean	.	.	.	.	.
+Great Natuna Island, Riau Islands, Indonesia	3.933960	108.160062	.	.	Great Natuna Island	.	Riau Islands, Indonesia	.	.	.	.	.	.
 Java, Indonesia	-7.382737	110.541175	.	Center of island	Java	.	Indonesia	Indian Ocean	.	.	.	.	.
 Karakelong, North Sulawesi, Sulawesi, Indonesia	4.258889	126.800000	.	.	Karakelong	.	North Sulawesi, Sulawesi, Indonesia	.	.	.	.	.	.
-Lombok, Indonesia	-8.615300	116.316835	.	Center of Island	Lombok	.	Indonesia	Indian Ocean	.	.	.	.	.
+Lombok, West Nusa Tenggara, Indonesia	-8.615300	116.316835	.	Center of Island	Lombok	.	West Nusa Tenggara, Indonesia	Indian Ocean	.	.	.	.	.
 Maluku Islands, Indonesia	-2.000000	128.000000	.	.	Maluku Islands	.	Indonesia	Western Pacific Ocean	.	.	.	.	.
 Morotai, North Maluku Province, Maluku Islands, Indonesia	2.316667	128.533333	.	.	Morotai	.	North Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
 New Guinea, Indonesia	-3.500535	137.547548	.	.	New Guinea (Indonesia)	.	Indonesia	New Guinea	.	.	.	.	.
 Pulau Kur, Maluku Province, Maluku Islands, Indonesia	-5.345180	131.991171	.	.	Pulau Kur	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
 Sulawesi, Indonesia	-1.681464	120.403068	.	.	Sulawesi	Celebes	Indonesia	Western Pacific Ocean	.	.	.	.	.
 Sumatra, Indonesia	0.103182	101.480135	.	Center of island	Sumatra	.	Indonesia	Indian Ocean	.	.	.	.	.
-Sumba, Indonesia	-9.698673	119.961171	.	.	Sumba	.	Indonesia	Indian Ocean	.	.	.	.	.
-Sumbawa, Indonesia	-8.783333	118.083333	.	.	Sumbawa	.	Indonesia	Indian Ocean	.	.	.	.	.
+Sumba, East Nusa Tenggara, Indonesia	-9.698673	119.961171	.	.	Sumba	.	East Nusa Tenggara, Indonesia	Indian Ocean	.	.	.	.	.
+Sumbawa, West Nusa Tenggara, Indonesia	-8.783333	118.083333	.	.	Sumbawa	.	West Nusa Tenggara, Indonesia	Indian Ocean	.	.	.	.	.
 Tanimbar Islands, Maluku Province, Maluku Islands, Indonesia	-7.500000	131.500000	.	.	Tanimbar Islands	Timur Lant	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
 West Papua, New Guinea, Indonesia	-2.280064	133.759920	.	.	West Papua	Irian Jaya	New Guinea, Indonesia	.	.	.	.	.	.
 Sweeney Creek, Ipswich, Essex County, Massachusetts, USA	42.721111	-70.847500	.	coords from paper	Sweeney Creek	.	Ipswich, Essex County, Massachusetts, USA	.	.	.	.	.	.
@@ -601,7 +601,7 @@ Gilbert Islands, Kiribati	-1.351184	176.444887	.	.	Gilbert Islands	.	Kiribati	.	
 Tabuaeran, Kiribati Line Islands, Kiribati	3.860000	-159.364444	.	.	Tabuaeran	Fanning Island	Kiribati Line Islands, Kiribati	.	.	.	.	.	.
 Vallarpadam, Kochi, Ernakulam District, Kerala, India	9.997196	76.248164	.	.	Vallarpadam	.	Kochi, Ernakulam District, Kerala, India	.	.	.	.	.	.
 Vypin, Kochi, Ernakulam District, Kerala, India	10.085326	76.208586	.	.	Vypin	Vypeen	Kochi, Ernakulam District, Kerala, India	.	.	.	.	.	.
-Pero, Kodi, Sumba, Indonesia	-9.597575	118.971526	.	.	Pero	.	Kodi, Sumba, Indonesia	.	.	.	.	.	.
+Pero, Kodi, Sumba, East Nusa Tenggara, Indonesia	-9.597575	118.971526	.	.	Pero	.	Kodi, Sumba, East Nusa Tenggara, Indonesia	.	.	.	.	.	.
 South Korea	34.908948	128.083548	.	.	South Korea	.	.	Korea	.	.	.	.	.
 Western Korea	37.398801	126.620379	.	.	Western Korea	.	Korea	.	.	.	.	.	.
 Amakusa, Kumamoto, Kyūshū, Japan	32.467153	130.205650	.	.	Amakusa	.	Kumamoto, Kyūshū, Japan	.	.	.	.	.	.
@@ -622,8 +622,8 @@ Bora Bora, Leeward Islands, Society Islands, French Polynesia	-16.494444	-151.73
 Maupiti, Leeward Islands, Society Islands, French Polynesia	-16.440083	-152.274250	.	.	Maupiti	.	Leeward Islands, Society Islands, French Polynesia	.	.	.	.	.	.
 Raiatea, Leeward Islands, Society Islands, French Polynesia	-16.816667	-151.450000	.	.	Raiatea	.	Leeward Islands, Society Islands, French Polynesia	.	.	.	.	.	.
 Puerto Limón, Limon, Costa Rica	9.999661	-83.024624	.	.	Puerto Limón	.	Limon, Costa Rica	.	.	11.4	-82.0	7.8	-86.0
-Kuta, Lombok, Indonesia	-8.894290	116.286233	.	Southern Lombok	Kuta	.	Lombok, Indonesia	.	.	.	.	.	.
-Labuan Tereng, Lombok, Indonesia	-8.741538	116.071130	.	.	Labuan Tereng	.	Lombok, Indonesia	.	.	.	.	.	.
+Kuta, Lombok, West Nusa Tenggara, Indonesia	-8.894290	116.286233	.	Southern Lombok	Kuta	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Labuan Tereng, Lombok, West Nusa Tenggara, Indonesia	-8.741538	116.071130	.	.	Labuan Tereng	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Cold Spring Harbor, Huntington, Suffolk County, New York, USA	40.861944	-73.467222	.	.	Cold Spring Harbor	.	Huntington, Suffolk County, New York, USA	.	.	.	.	.	.
 Flax Pond, Old Field, Suffolk County, New York, USA	40.961748	-73.139930	.	.	Flax Pond	.	Old Field, Suffolk County, New York, USA	.	.	.	.	.	.
 North Sea, Suffolk County, New York, USA	40.952477	-72.403469	.	.	North Sea	.	Suffolk County, New York, USA	.	.	.	.	.	.
@@ -872,7 +872,7 @@ Shihcyuan, Penghu, Taiwan	23.552252	119.590960	.	.	Shihcyuan	.	Penghu, Taiwan	.	
 Cocoanut Island, Pernambuco, Brazil	-8.055228	-34.863790	.	Supposed to be close to Recife	Cocoanut Island	.	Pernambuco, Brazil	.	.	.	.	.	.
 Itapissuma, Pernambuco, Brazil	-7.723699	-34.903760	.	.	Itapissuma	.	Pernambuco, Brazil	.	.	.	.	.	.
 Rio Jaboatão, Pernambuco, Brazil	-8.231328	-34.932935	.	.	Rio Jaboatão	.	Pernambuco, Brazil	.	.	.	.	.	.
-Bondokodi River, Pero, Kodi, Sumba, Indonesia	-9.607565	118.985982	.	.	Bondokodi River	.	Pero, Kodi, Sumba, Indonesia	.	.	.	.	.	.
+Bondokodi River, Pero, Kodi, Sumba, East Nusa Tenggara, Indonesia	-9.607565	118.985982	.	.	Bondokodi River	.	Pero, Kodi, Sumba, East Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Swan River, Perth, Western Australia, Australia	-32.073611	115.714444	.	.	Swan River	.	Perth, Western Australia, Australia	.	.	.	.	.	.
 Bay of Sechura, Sechura Province, Piura Region, Peru	-5.704917	-80.858087	.	.	Bay of Sechura	.	Sechura Province, Piura Region, Peru	.	.	-5.0	-80.0	-6.5	-81.5
 Paita Province, Piura Region, Peru	-5.082902	-81.093543	.	.	Paita Province	.	Piura Region, Peru	.	.	-4.8	-81.0	-5.3	-81.3
@@ -1051,8 +1051,8 @@ Eastern Sumatra, Indonesia	-4.152042	105.842492	.	Eastern edge of island	Eastern
 Lampung, Sumatra, Indonesia	-5.449324	105.276349	.	.	Lampung	.	Sumatra, Indonesia	.	.	.	.	.	.
 Sibolga, North Sumatra, Sumatra, Indonesia	1.734940	98.780198	.	.	Sibolga	Siboga	North Sumatra, Sumatra, Indonesia	.	.	.	.	.	.
 Simalur Island, Sumatra, Indonesia	2.625788	96.079054	.	Island SW of NW end; could not find current/modern name, but positiviely ID'd from old map	Simalur Island	.	Sumatra, Indonesia	.	.	.	.	.	.
-Kodi, Sumba, Indonesia	-9.607521	118.985381	.	.	Kodi	.	Sumba, Indonesia	.	.	.	.	.	.
-Bay of Bima, Sumbawa, Indonesia	-8.460488	118.695828	.	.	Bay of Bima	.	Sumbawa, Indonesia	.	.	.	.	.	.
+Kodi, Sumba, East Nusa Tenggara, Indonesia	-9.607521	118.985381	.	.	Kodi	.	Sumba, East Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Bay of Bima, Sumbawa, West Nusa Tenggara, Indonesia	-8.460488	118.695828	.	.	Bay of Bima	.	Sumbawa, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Ko Phaluai, Surat Thani, Thailand	9.533333	99.683333	.	.	Ko Phaluai	Taluei Island	Surat Thani, Thailand	.	.	.	.	.	.
 Paramaribo, Suriname	5.899834	-55.203948	.	.	Paramaribo	.	Suriname	.	.	6.6	-53.3	1.2	-58.5
 Rehoboth Beach, Sussex County, Delaware, USA	38.720403	-75.075686	.	.	Rehoboth Beach	.	Sussex County, Delaware, USA	.	FOSSIL	.	.	.	.
@@ -1601,7 +1601,7 @@ Chidya Tapu, South Andaman, Andaman Islands	11.505548	92.700596	.	.	Chidya Tapu	
 Mahanadi River Estuary, Odisha, India	20.299356	86.696111	.	.	Mahanadi River Estuary	.	Odisha, India	.	.	.	.	.	.
 Shimo la Tewa, Mombasa, Kenya	-3.955621	39.730125	.	.	Shimo la Tewa	.	Mombasa, Kenya	.	.	.	.	.	.
 Kamphuan Mangrove Forest, Ranong, Thailand	9.381001	98.401967	.	.	Kamphuan Mangrove Forest	.	Ranong, Thailand	.	.	.	.	.	.
-Daiman and Diu, India	20.420000	27.830000	.	.	Daiman and Diu	.	India	.	.	.	.	.	.
+Daiman and Diu, India	20.420000	72.830000	.	.	Daiman and Diu	.	India	.	.	.	.	.	.
 Diu District, Daiman and Diu, India	20.710000	70.960000	.	.	Diu Distrit	.	Daiman and Diu, India	.	.	.	.	.	.
 Chalong Bay, Phuket Island, Thailand	7.815136	98.363759	.	.	Chalong Bay	.	Phuket Island, Thailand	.	.	.	.	.	.
 Laem Tukkae, Phuket Island, Thailand	7.867536	98.435447	.	.	Laem Tukkae	.	Phuket Island, Thailand	.	.	.	.	.	.
@@ -1734,3 +1734,15 @@ Siu Tan, Hong Kong, China	22.525699	114.265202	.	.	Siu Tan	.	Hong Kong, China	.	
 St. John, U.S. Virgin Islands	18.345565	-64.744870	.	.	St. John	.	U.S. Virgin Islands	.	.	.	.	.	.
 Lieutenant River, Old Lyme, New London County, Connecticut, USA	41.310012	-72.339932	.	.	Lieutenant River	.	Old Lyme, New London County, Connecticut, USA	.	.	.	.	.	.
 Old Lyme, New London County, Connecticut, USA	41.282695	72.323402	.	.	Old Lyme	.	New London County, Connecticut, USA	.	.	.	.	.	.
+Ambeua, Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	-5.497500	125.755833	.	.	Ambeua	.	Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	.	.	.	.	.	.
+Segara Anakan Lagoon, Central Java, Java, Indonesia	-7.683333	108.916667	.	.	Segara Anakan Lagoon	.	Central Java, Java, Indonesia	.	.	.	.	.	.
+Teluk Kodek, Lombok, West Nusa Tenggara, Indonesia	-8.393850	116.099750	.	.	Teluk Kodek	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Teluk Kombal, Lombok, West Nusa Tenggara, Indonesia	-8.400424	116.086707	.	.	Teluk Kombal	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Teluk Rasu, Lombok, West Nusa Tenggara, Indonesia	-8.728547	116.082919	.	.	Teluk Rasu	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Teluk Eka, Lombok, West Nusa Tenggara, Indonesia	-8.899117	116.448594	.	.	Teluk Eka	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Desa Sariwe, Lombok, West Nusa Tenggara, Indonesia	-8.823854	116.469658	.	.	Desa Sariwe	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Teluk Telong Elong, Lombok, West Nusa Tenggara, Indonesia	-8.823854	116.469658	.	.	Teluk Telong Elong	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Tanjung Luar, Lombok, West Nusa Tenggara, Indonesia	-8.776797	116.513504	.	.	Tanjung Luar	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+West Nusa Tenggara, Indonesia	-8.583333	116.116667	Province	.	West Nusa Tenggara	.	Indonesia	Indian Ocean	.	.	.	.	.
+East Nusa Tenggara, Indonesia	-10.183333	123.583333	Province	.	East Nusa Tenggara	.	Indonesia	Indian Ocean	.	.	.	.	.
+Riau Islands, Indonesia	3.933333	108.150000	Province	.	Riau Islands	.	Indonesia	Western Pacific Ocean	.	.	.	.	.
