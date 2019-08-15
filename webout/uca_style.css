@@ -12,6 +12,8 @@ a:visited {
   text-decoration: none;
  }
 
+a:hover { text-decoration: underline }
+
 h2 a,
 h3 a {
   color: black;
@@ -29,7 +31,29 @@ img {
 figure {
   max-width: 100%;
 }
-  
+
+#skip-links { 
+   position: absolute;
+   left: 0; 
+   top: 0;
+   width: 100%;
+   margin-left: 0; }
+
+#skip-links a {
+	position: absolute; 
+	left: 15px;
+    top: -100px;
+    z-index: 10000;
+	font-weight: bold;
+    padding: 10px 15px;
+    color: blue;
+    outline: none; 
+	border: 2px solid black }
+
+#skip-links a:active,
+#skip-links a:focus { top:0; background-color: white }
+
+
 #home {
   font-family: "Merienda One", "Monotype Corsiva", cursive;
   background: black;
@@ -56,9 +80,9 @@ footer {
   clear: both;
   font-style: italic;
   font-size: 0.75em;
-  background-color: seagreen;
-  color: #D4FEE7;
-  border: 3px #20613C inset;
+  background-color: #005B27;
+  color: white;
+  border: 3px #003B07 inset;
   padding-left: 0 20px;
  }
 
@@ -88,7 +112,7 @@ footer figcaption {text-align: center}
  }
 
 header {
-  background-color: seagreen;
+  background-color: #005B27;
   color: #D4FEE7;
   padding: 0 20px;
   border: 5px #20613C solid;
@@ -130,8 +154,8 @@ nav a,
 nav a:visited {
   float: left;
   display: block;
-  color: #20613C;
-  background: #AAFECF;
+  color: #005B27;
+  background: #D4FEE7;
   border-radius: 8px;
   border: 1px #20613C solid;
   padding: 4px 8px;
@@ -146,8 +170,8 @@ nav a:visited {
 #chart5_div,
 #chart6_div {width: 100%}
  
-#subgenera_phylogeny {width: 100%}
-#species_phylogeny {width: 100%}
+#xsubgenera_phylogeny {width: 100%}
+#xspecies_phylogeny {width: 100%}
 
 .lcpic,
 .sppic {
@@ -205,7 +229,7 @@ dt {
 
 dd blockquote {
   background: #D4FEE7;
-  color: #20613C;
+  color: #005B27;
   border-radius: 8px;
   padding: 10px;
   margin-right: 5em;
@@ -221,11 +245,16 @@ dd {
 
 .spsection blockquote {
   border: 3px solid #20613C;
-  background: seagreen;
+  background: #005B27;
   color: white;
   border-radius: 8px;
   padding: 10px;
  } 
+
+.spsection blockquote a,
+.spsection blockquote a:visited
+ { color: yellow }
+
  
 .fossilImg {
   height: 1em;
@@ -506,11 +535,11 @@ a:visited.vidlink {
 		height: 300px;
 		}
 
-	#subgenera_phylogeny {
+	#xsubgenera_phylogeny {
 		width: 600px;
 		height: 450px;
 	}
-	#species_phylogeny {
+	#xspecies_phylogeny {
 		width: 600px;
 		height: 2500px;
 		}
@@ -564,9 +593,9 @@ a:visited.vidlink {
 	  -moz-column-count: 3; /* Firefox */
 	  -webkit-column-count: 3; /* Safari and Chrome */
 	  column-count: 3;
-	  -moz-column-rule: 2px groove seagreen; /* Firefox */
-	  -webkit-column-rule: 2px groove seagreen; /* Safari and Chrome */
-	  column-rule: 2px groove seagreen;  
+	  -moz-column-rule: 2px groove #005B27; /* Firefox */
+	  -webkit-column-rule: 2px groove #005B27; /* Safari and Chrome */
+	  column-rule: 2px groove #005B27;  
 	  -moz-column-gap: 1em; /* Firefox */
 	  -webkit-column-gap: 1em; /* Safari and Chrome */
 	  column-gap: 1em;

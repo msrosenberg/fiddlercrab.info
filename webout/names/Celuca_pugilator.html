@@ -22,7 +22,7 @@
     <script defer src="../js/brands.min.js"></script>
     <script defer src="../js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
-    <link rel="author" href="mailto:msrosenberg@vcu.edu" />
+    <link rel="author" href="msrosenberg@vcu.edu" />
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -287,8 +287,8 @@
           ['2012', 0, 0],
           ['2013', 1, 1],
           ['2014', 0, 0],
-          ['2015', null, null],
-          ['2016', null, null],
+          ['2015', 2, 2],
+          ['2016', 0, 0],
           ['2017', null, null],
           ['2018', null, null],
           ['2019', null, null],
@@ -304,8 +304,8 @@
           vAxes: { 1: { direction: -1}},
           vAxis: { gridlines: {count: 0},
                    baselineColor: 'none',
-                   minValue: -1,
-                   maxValue: 1
+                   minValue: -2,
+                   maxValue: 2
                  },
           hAxis: { showTextEvery: 20},
           chartArea: { left:50,
@@ -323,17 +323,18 @@
   </head>
 
   <body onload="initialize()">
+    <div id="skip-links" role="complementary" aria-label="Skip links menu"><a href="#Main" tabindex="1">Skip to content</a></div>
     <div id="home">
       <a href="../index.html" class="home-title">Fiddler Crabs</a>
-      <a href="../index.html" class="home-link"><span class="fa fa-home" aria-hidden></span> Home</a>
-      <a href="../blog" class="home-link"><span class="fa fa-pencil-alt" aria-hidden></span> Blog</a>
+      <a href="../index.html" class="home-link"><span  role="presentation" class="fa fa-home" aria-hidden></span> Home</a>
+      <a href="../blog" class="home-link"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> Blog</a>
     </div>
     <header id="Celuca_pugilator.html" class="tabular_page">
       <h1 class="nobookmark"><em class="species">Celuca pugilator</em></h1>
       <nav>
         <ul>
-          <li><a href="sn_pugilator.html"><span class="fa fa-window-minimize" aria-hidden></span> <em class="species">pugilator</em></a></li>
-          <li><a href="index.html"><span class="fa fa-list" aria-hidden></span> Full Name Index</a></li>
+          <li><a href="sn_pugilator.html"><span  role="presentation" class="fa fa-window-minimize" aria-hidden></span> <em class="species">pugilator</em></a></li>
+          <li><a href="index.html"><span  role="presentation" class="fa fa-list" aria-hidden></span> Full Name Index</a></li>
         </ul>
       </nav>
     </header>
@@ -357,8 +358,8 @@
       <td><a href="../references/Sturmbauer1996.html">Sturmbauer <em>et al.</em> (1996)</a></td>
       <td>text p. 10856</td>
       <td>&nbsp;</td>
-      <td><a href="../u_pugilator.html"><em class="species">Uca pugilator</em></a></td>
-      <td><span class="fa fa-arrow-alt-left" aria-hidden></span> Original</td>
+      <td><a href="../u_pugilator.html"><em class="species">Leptuca pugilator</em></a></td>
+      <td><span  role="presentation" class="fa fa-arrow-alt-left" aria-hidden></span> Original</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -367,18 +368,48 @@
     <tr>
       <td><a href="../references/Techa2013.html">Techa &amp; Chung (2013)</a></td>
       <td>text p. 140, 143-145, 147, 150</td>
-      <td><span class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Durica2002.html">Durica <em>et al.</em> (2002)</a></td>
+      <td><span  role="presentation" class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Durica2002.html">Durica <em>et al.</em> (2002)</a></td>
       <td>TBD</td>
-      <td><span class="fa fa-cogs" aria-hidden></span> Computed</td>
+      <td><span  role="presentation" class="fa fa-cogs" aria-hidden></span> Computed</td>
       <td>The citation is to Genbank sequence AAC32789, which is associated with Durica <em>et al.</em> (2002).</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Chung1998.1.html">Chung <em>et al.</em> (1998)</a></td>
+      <td><span  role="presentation" class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Chung1998.1.html">Chung <em>et al.</em> (1998)</a></td>
       <td>TBD</td>
-      <td><span class="fa fa-cogs" aria-hidden></span> Computed</td>
+      <td><span  role="presentation" class="fa fa-cogs" aria-hidden></span> Computed</td>
       <td>The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Girish2015.html">Girish <em>et al.</em> (2015)</a></td>
+      <td>text p. 40-41</td>
+      <td><span  role="presentation" class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Chung1998.1.html">Chung <em>et al.</em> (1998)</a></td>
+      <td>TBD</td>
+      <td><span  role="presentation" class="fa fa-cogs" aria-hidden></span> Computed</td>
+      <td>The citation is to Genbank sequence AF032983, which is associated with Chung <em>et al.</em> (1998).</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span  role="presentation" class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Chung1998.1.html">Chung <em>et al.</em> (1998)</a></td>
+      <td>TBD</td>
+      <td><span  role="presentation" class="fa fa-cogs" aria-hidden></span> Computed</td>
+      <td>The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/Gong2015.1.html">Gong <em>et al.</em> (2015)</a></td>
+      <td>text p. 279</td>
+      <td><span  role="presentation" class="fa fa-edit" aria-hidden></span> citation: <a href="../references/Durica2002.html">Durica <em>et al.</em> (2002)</a></td>
+      <td>TBD</td>
+      <td><span  role="presentation" class="fa fa-cogs" aria-hidden></span> Computed</td>
+      <td>The citation is to Genbank sequence AAC32789, which is associated with Durica <em>et al.</em> (2002).</td>
     </tr>
     </table>
     <p>
@@ -386,9 +417,9 @@
 
     <footer>
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
-       <p id="citation"><a href="../citation.html"><span class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
-       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2019.03.05.11.34 &mdash; Copyright &copy; 2003&ndash;2019 All Rights Reserved</p>
+       <p id="citation"><a href="../citation.html"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span  role="presentation" class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2019.08.05.12.54 &mdash; Copyright &copy; 2003&ndash;2019 All Rights Reserved</p>
     </footer>
   </body>
 </html>

@@ -7,7 +7,7 @@ Antigua and Barbuda	17.385287	-61.786240	.	.	Antigua and Barbuda	.	.	Caribbean;L
 Antilles	19.067361	-72.798457	.	Using Haiti	Antilles	.	West Indies	.	.	30.0	-55.0	8.5	-86.0
 Argentina	-34.591311	-58.366439	.	Using Buenos Aires	Argentina	.	.	Atlantic coast of South America	.	-21.5	-51.3	-55.6	-75.0
 Atlantic Ocean	16.700000	-41.000000	.	.	Atlantic Ocean	.	.	.	.	.	.	.	.
-Australasia	-38.107483	160.544277	.	.	Australasia	.	Oceania	.	.	8.0	180.0	-48.5	106.0
+Australasia	-38.107483	160.544277	Region consisting of Australia, New Zealand, and some neighboring islands	.	Australasia	.	Oceania	.	.	8.0	180.0	-48.5	106.0
 Australia	-17.578723	140.219637	.	.	Australia	.	.	Australasia	.	-9.0	157.0	-45.0	111.0
 Bangladesh	22.653716	90.782039	.	.	Bangladesh	.	.	Bay of Bengal	.	25.5	94.3	20.2	86.8
 Barbados	13.177048	-59.536211	.	.	Barbados	.	.	Caribbean;Lesser Antilles	.	17.7	-57.5	9.8	-69.3
@@ -129,7 +129,7 @@ Southeastern Africa	-25.983333	32.700000	.	Using Maputo Bay	Southeastern Africa	
 Spain	36.529167	-6.191944	.	Using Puerto Real	Spain	.	.	Europe	.	45.0	4.0	35.0	-11.0
 Sri Lanka	6.922942	79.846627	.	Using Colombo	Sri Lanka	Ceylon	.	Bay of Bengal	.	.	.	.	.
 Sudan	19.606495	37.228945	.	Using Port Sudan	Sudan	.	.	Red Sea;Africa	.	22.0	39.0	9.5	21.5
-Suriname	5.899834	-55.203948	.	Using Paramaribo	Suriname	.	.	Atlantic coast of South America	.	6.6	-53.3	1.2	-58.5
+Suriname	5.899834	-55.203948	.	Using Paramaribo	Suriname	Surinam	.	Atlantic coast of South America	.	6.6	-53.3	1.2	-58.5
 Taiwan	23.830101	120.891862	.	.	Taiwan	Formosa	.	Western Pacific Ocean	.	25.6	122.2	21.7	119.0
 Tanzania	-6.800000	39.283333	.	Also known as Zanzibar; using Dar es Salaam	Tanzania	Zanzibar	.	Africa;Indian coast of Africa	.	-0.5	40.5	-12.0	28.5
 Thailand	8.362382	99.291912	.	Middle of peninsular region	Thailand	Siam	.	.	.	.	.	.	.
@@ -326,11 +326,11 @@ Santo Domingo, Dominican Republic	18.466667	-69.950000	.	.	Santo Domingo (Domini
 Umgeni River, Durban, KwaZulu-Natal, South Africa	-29.811787	31.039456	.	.	Umgeni River	.	Durban, KwaZulu-Natal, South Africa	.	.	.	.	.	.
 Esmeraldas, Ecuador	0.950000	-79.666667	Province	.	Esmeraldas	.	Ecuador	.	.	2.5	-75.0	-5.0	-81.5
 Guayas, Ecuador	-2.183333	-79.883333	Province	Using Guayaquil	Guayas	.	Ecuador	.	.	2.5	-75.0	-5.0	-81.5
-El-Monqatea, South Sinai Governorate, Egypt	28.208651	34.420970	.	.	El-Monqatea	Shora el Monqata	South Sinai Governorate, Egypt	.	.	.	.	.	.
-El-Tor, South Sinai Governorate, Egypt	28.241667	33.622222	.	.	El-Tor	.	South Sinai Governorate, Egypt	.	.	.	.	.	.
+El-Monqatea, South Sinai Governorate, Egypt	28.208651	34.420970	.	.	El-Monqatea	Shora el Monqata	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
+El-Tor, South Sinai Governorate, Egypt	28.241667	33.622222	.	.	El-Tor	.	South Sinai Governorate, Egypt	Gulf of Suez, Egypt	.	.	.	.	.
 Gulf of Suez, Egypt	28.750000	33.000000	.	.	Gulf of Suez	.	Egypt	.	.	.	.	.	.
-Marsa Al Zabad, South Sinai Governorate, Egypt	28.165971	34.448243	.	.	Marsa Al Zabad	.	South Sinai Governorate, Egypt	.	.	.	.	.	.
-Ras Gharib, Red Sea Governorate, Egypt	28.367884	33.077293	.	.	Ras Gharib	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
+Marsa Al Zabad, South Sinai Governorate, Egypt	28.165971	34.448243	.	.	Marsa Al Zabad	.	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
+Ras Gharib, Red Sea Governorate, Egypt	28.367884	33.077293	.	.	Ras Gharib	.	Red Sea Governorate, Egypt	Gulf of Suez, Egypt	.	.	.	.	.
 Ras Mohammed, South Sinai Governorate, Egypt	27.740450	34.247181	.	.	Ras Mohammed	.	South Sinai Governorate, Egypt	.	.	.	.	.	.
 South Sinai Governorate, Egypt	27.724446	34.245068	.	.	South Sinai Governorate	.	Egypt	.	.	.	.	.	.
 La Libertad, El Salvador	13.493416	-89.393171	Department	.	La Libertad	.	El Salvador	.	.	14.7	-87.4	12.8	-90.3
@@ -514,7 +514,7 @@ Wakayama, Honshu, Japan	34.228114	135.154210	Prefecture	.	Wakayama	Wakanoura	Hon
 Piermont Marsh, Hudson River, New York, USA	41.027695	-73.903972	.	.	Piermont Marsh	.	Hudson River, New York, USA	.	.	.	.	.	.
 Chikusa River Estuary, Hyogo, Honshu, Japan	34.740808	134.391969	.	.	Chikusa River Estuary	.	Hyogo, Honshu, Japan	.	.	.	.	.	.
 "Bombay State", India	18.975000	72.825833	An old administrative district that is not aligned with modern subdivisions	Using Mumbai	Bombay State	.	India	.	.	.	.	.	.
-Southeastern India	10.309486	79.852225	.	.	Southeastern India	Coromandel Coast	India	Bay of Bengal	.	.	.	.	.
+Southeastern India	10.309486	79.852225	.	.	Southeastern India	Coromandel Coast	India	Bay of Bengal;East coast of India	.	.	.	.	.
 Andaman and Nicobar Islands, India	11.680000	92.770000	.	.	Andaman and Nicobar Islands	.	India	Bay of Bengal	.	.	.	.	.
 Bheemunipatnam, Visakhapatnam, Andhra Pradesh, India	17.886385	83.447109	.	.	Bheemunipatnam	Bimlipatam	Visakhapatnam, Andhra Pradesh, India	.	.	.	.	.	.
 Chennai, Tamil Nadu, India	13.083333	80.266667	.	.	Chennai	Madras	Tamil Nadu, India	.	.	.	.	.	.
@@ -532,11 +532,11 @@ Parangipettai, Cuddalore District, Tamil Nadu, India	11.490000	79.760000	.	.	Par
 Puducherry, India	11.930000	79.130000	.	.	Puducherry	Pondicherry	India	Bay of Bengal	.	.	.	.	.
 Rameswaram, Ramanathapuram District, Tamil Nadu, India	9.285956	79.315410	.	.	Rameswaram	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
 Southwestern India	10.918729	75.899094	.	.	Southwestern India	Malabar Coast	India	Bay of Bengal	.	.	.	.	.
-Tamil Nadu, India	9.996005	79.192886	State	.	Tamil Nadu	.	India	Southeastern India;Bay of Bengal;Southern India	.	.	.	.	.
+Tamil Nadu, India	9.996005	79.192886	State	.	Tamil Nadu	.	India	Southeastern India;Bay of Bengal;Southern India;East coast of India	.	.	.	.	.
 Thoothukudi, Thoothukudi District, Tamil Nadu, India	8.797139	78.159235	.	.	Thoothukudi	Tuticorin	Thoothukudi District, Tamil Nadu, India	.	.	.	.	.	.
 Vellar Estuary, Parangipettai, Cuddalore District, Tamil Nadu, India	11.492751	79.771487	.	.	Vellar Estuary	.	Parangipettai, Cuddalore District, Tamil Nadu, India	.	.	.	.	.	.
 Visakhapatnam Harbor, Visakhapatnam, Andhra Pradesh, India	17.688333	83.218611	.	.	Visakhapatnam Harbor	.	Visakhapatnam, Andhra Pradesh, India	.	.	.	.	.	.
-West Bengal, India	21.716593	88.334090	State	.	West Bengal	.	India	Bay of Bengal	.	.	.	.	.
+West Bengal, India	21.716593	88.334090	State	.	West Bengal	.	India	Bay of Bengal;East coast of India	.	.	.	.	.
 Ganges Delta	21.727896	89.085485	.	.	Ganges Delta	.	Bay of Bengal	.	.	.	.	.	.
 Godavari-Krishna Rivers, Andhra Pradesh, India	15.802483	80.871854	.	.	Godavari-Krishna Rivers	.	Andhra Pradesh, India	.	.	.	.	.	.
 Aru Islands, Maluku Province, Maluku Islands, Indonesia	-6.166667	134.500000	.	.	Aru Islands	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
@@ -560,9 +560,9 @@ Sumbawa, West Nusa Tenggara, Indonesia	-8.783333	118.083333	.	.	Sumbawa	.	West N
 Tanimbar Islands, Maluku Province, Maluku Islands, Indonesia	-7.500000	131.500000	.	.	Tanimbar Islands	Timur Lant	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
 West Papua, New Guinea, Indonesia	-2.280064	133.759920	.	.	West Papua	Irian Jaya	New Guinea, Indonesia	.	.	.	.	.	.
 Sweeney Creek, Ipswich, Essex County, Massachusetts, USA	42.721111	-70.847500	.	coords from paper	Sweeney Creek	.	Ipswich, Essex County, Massachusetts, USA	.	.	.	.	.	.
-Bandar Abbas, Iran	27.183333	56.266667	.	.	Bandar Abbas	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	40.3	63.5	24.7	43.7
-Gav Bandi, Iran	25.815000	57.505000	.	.	Gav Bandi	.	Hormozgan Province, Iran	Gulf of Oman coast of Iran	.	40.3	63.5	24.7	43.7
-Qeshm, Iran	26.802807	55.908400	.	.	Qeshm	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	40.3	63.5	24.7	43.7
+Bandar Abbas, Hormozgan Province, Iran	27.183333	56.266667	.	.	Bandar Abbas	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	40.3	63.5	24.7	43.7
+Gav Bandi, Hormozgan Province, Iran	25.815000	57.505000	.	.	Gav Bandi	.	Hormozgan Province, Iran	Gulf of Oman coast of Iran	.	40.3	63.5	24.7	43.7
+Qeshm, Hormozgan Province, Iran	26.802807	55.908400	.	.	Qeshm	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	40.3	63.5	24.7	43.7
 Khor Al-Zubair, Iraq	30.189840	47.889520	.	.	Khor Al-Zubair	.	Iraq	.	.	.	.	.	.
 Urauchi River, Iriomote-jima, Okinawa, Ryukyu Islands, Japan	24.400000	123.766667	.	coords from paper	Urauchi River	.	Iriomote-jima, Okinawa, Ryukyu Islands, Japan	.	.	.	.	.	.
 Caleta Black, Isabela Island, Galápagos Islands	-0.199577	-91.383597	.	.	Caleta Black	.	Isabela Island, Galápagos Islands	.	.	1.2	-88.7	-2.0	-93.0
@@ -589,7 +589,7 @@ Sandspit, Karachi, Sindh, Pakistan	24.840235	66.910143	.	.	Sandspit	.	Karachi, S
 Gazi, Kwale County, Kenya	-4.430110	39.514107	.	.	Gazi	.	Kwale County, Kenya	.	.	.	.	.	.
 Gongoni, Kilifi County, Kenya	-3.830000	39.770000	.	.	Gongoni	.	Kilifi County, Kenya	.	.	.	.	.	.
 Kilifi Creek, Kilifi County, Kenya	-3.629666	39.822649	.	.	Kilifi Creek	.	Kilifi County, Kenya	.	.	.	.	.	.
-Mida Creek, Kilifi County, Kenya	-3.370846	39.966498	.	.	Mida Creek	.	Kilifi County, Kenya	.	.	.	.	.	.
+Mida Creek, Kilifi County, Kenya	-3.370846	39.966498	.	.	Mida Creek	Watamu Marine National Park	Kilifi County, Kenya	.	.	.	.	.	.
 Mombasa, Kenya	-4.050000	39.666667	.	.	Mombasa	.	Kenya	.	.	.	.	.	.
 Ayiramthengu, Kollam District, Kerala, India	9.120680	76.484788	.	.	Ayiramthengu	.	Kollam District, Kerala, India	.	.	.	.	.	.
 Kochi, Ernakulam District, Kerala, India	9.966667	76.283333	.	.	Kochi	Cochin	Ernakulam District, Kerala, India	.	.	.	.	.	.
@@ -622,7 +622,7 @@ Bora Bora, Leeward Islands, Society Islands, French Polynesia	-16.494444	-151.73
 Maupiti, Leeward Islands, Society Islands, French Polynesia	-16.440083	-152.274250	.	.	Maupiti	.	Leeward Islands, Society Islands, French Polynesia	.	.	.	.	.	.
 Raiatea, Leeward Islands, Society Islands, French Polynesia	-16.816667	-151.450000	.	.	Raiatea	.	Leeward Islands, Society Islands, French Polynesia	.	.	.	.	.	.
 Puerto Limón, Limon, Costa Rica	9.999661	-83.024624	.	.	Puerto Limón	.	Limon, Costa Rica	.	.	11.4	-82.0	7.8	-86.0
-Kuta, Lombok, West Nusa Tenggara, Indonesia	-8.894290	116.286233	.	Southern Lombok	Kuta	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Kuta, Lombok, West Nusa Tenggara, Indonesia	-8.894290	116.286233	.	Southern Lombok	Kuta (Lombok)	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Labuan Tereng, Lombok, West Nusa Tenggara, Indonesia	-8.741538	116.071130	.	.	Labuan Tereng	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
 Cold Spring Harbor, Huntington, Suffolk County, New York, USA	40.861944	-73.467222	.	.	Cold Spring Harbor	.	Huntington, Suffolk County, New York, USA	.	.	.	.	.	.
 Flax Pond, Old Field, Suffolk County, New York, USA	40.961748	-73.139930	.	.	Flax Pond	.	Old Field, Suffolk County, New York, USA	.	.	.	.	.	.
@@ -686,8 +686,8 @@ West Falmouth, Falmouth, Barnstable County, Massachusetts, USA	41.605585	-70.647
 West Harwich, Harwich, Barnstable County, Massachusetts, USA	41.658179	-70.114952	.	.	West Harwich	.	Harwich, Barnstable County, Massachusetts, USA	.	.	.	.	.	.
 Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	41.524841	-70.672411	.	.	Woods Hole	.	Falmouth, Barnstable County, Massachusetts, USA	.	.	.	.	.	.
 Green Island, Massawa, Eritrea	15.593889	39.478875	.	.	Green Island	Isola Verde	Massawa, Eritrea	.	.	.	.	.	.
-Banc d'Aguin, Mauritania	20.233333	-16.100000	.	.	Banc d'Aguin	.	Mauritania	.	.	.	.	.	.
-Iouik, Banc d'Aguin, Mauritania	19.849444	-16.330833	.	.	Iouik	Iwik	Banc d'Aguin, Mauritania	.	.	.	.	.	.
+Banc d'Arguin, Mauritania	20.233333	-16.100000	.	.	Banc d'Arguin	.	Mauritania	.	.	.	.	.	.
+Iouik, Banc d'Arguin, Mauritania	19.849444	-16.330833	.	.	Iouik	Iwik	Banc d'Arguin, Mauritania	.	.	.	.	.	.
 Nouadhibou, Mauritania	20.933333	-17.033333	.	.	Nouadhibou	Port-Etienne	Mauritania	.	.	.	.	.	.
 Grand Gaube, Mauritius, Mauritius (Republic)	-20.007881	57.674298	.	.	Grand Gaube	.	Mauritius, Mauritius (Republic)	.	.	.	.	.	.
 Port Louis, Mauritius, Mauritius (Republic)	-20.166667	57.516667	.	.	Port Louis	.	Mauritius, Mauritius (Republic)	.	.	.	.	.	.
@@ -721,7 +721,7 @@ Shanyu Tidal Marsh, Min River, Fuzhou, Fujian, China	26.033333	119.616667	.	.	Sh
 Davao Gulf, Mindanao, Philippines	6.500000	125.916667	.	.	Davao Gulf	.	Mindanao, Philippines	.	.	.	.	.	.
 Davao Province, Mindanao, Philippines	7.085413	125.626525	.	.	Davao Province	.	Mindanao, Philippines	.	.	.	.	.	.
 Naawan, Mindanao, Philippines	8.433333	124.300000	.	.	Naawan	.	Mindanao, Philippines	.	.	.	.	.	.
-Zamboanga, Minanao, Philippines	6.916667	122.083333	.	.	Zamboanga	Samboangan	Mindanao, Philippines	.	.	.	.	.	.
+Zamboanga, Mindanao, Philippines	6.916667	122.083333	.	.	Zamboanga	Samboangan	Mindanao, Philippines	.	.	.	.	.	.
 Calapan, Mindoro, Philippines	13.414924	121.179281	.	.	Calapan	.	Mindoro, Philippines	.	.	.	.	.	.
 Puerto Galera, Mindoro, Philippines	13.502942	120.954131	.	.	Puerto Galera	.	Mindoro, Philippines	.	.	.	.	.	.
 Bay St Louis, Mississippi, USA	30.349631	-89.318494	.	.	Bay St Louis	.	Mississippi, USA	.	.	.	.	.	.
@@ -980,8 +980,8 @@ São Sebastião, São Paulo, Brazil	-23.819684	-45.416444	.	.	São Sebastião	.	
 Buntal, Sarawak, Borneo, Malaysia	1.715977	110.354123	.	.	Buntal	.	Sarawak, Borneo, Malaysia	.	.	.	.	.	.
 Kuching, Sarawak, Borneo, Malaysia	1.707179	110.234973	.	.	Kuching	.	Sarawak, Borneo, Malaysia	.	.	.	.	.	.
 Santubong, Sarawak, Borneo, Malaysia	1.680065	110.337303	.	.	Santubong	.	Sarawak, Borneo, Malaysia	.	.	.	.	.	.
-Sawarmah, Saudi Arabia	16.670278	42.728056	.	coords from paper	Sawarmah	.	Saudi Arabia	Red Sea coast of Saudi Arabia	.	.	.	.	.
-Shi'b Abu Al Liqa', Saudi Arabia	17.452222	42.287778	.	coords from paper	Shi'b Abu Al Liqa'	.	Saudi Arabia	Red Sea coast of Saudi Arabia	.	.	.	.	.
+Sawarmah, Saudi Arabia	16.670278	42.728056	.	coords from paper	Sawarmah	.	Saudi Arabia	Southern Red Sea coast of Saudi Arabia	.	.	.	.	.
+Shi'b Abu Al Liqa', Saudi Arabia	17.452222	42.287778	.	coords from paper	Shi'b Abu Al Liqa'	.	Saudi Arabia	Southern Red Sea coast of Saudi Arabia	.	.	.	.	.
 Port Klang, Selangor, Malaysia	3.004490	101.379726	.	.	Port Klang	Port Swettenham	Selangor, Malaysia	.	.	.	.	.	.
 Dakar, Senegal	14.692778	-17.446667	.	.	Dakar	.	Senegal	.	.	.	.	.	.
 Goree Island, Dakar, Senegal	14.666944	-17.398333	.	.	Goree Island	.	Dakar, Senegal	.	.	.	.	.	.
@@ -995,7 +995,7 @@ Saint Joseph Atoll, Seychelles	-5.436643	53.359609	.	.	Saint Joseph Atoll	.	Seyc
 Southern coast of Shandong Peninsula, China	36.693707	121.203856	.	.	Southern coast of Shandong Peninsula	Shantung	Shandong Peninsula, Shandong, China	.	.	42.4	126.4	17.4	104.6
 Shandong Peninsula, Shandong, China	36.693707	121.203856	.	.	Shandong Peninsula	.	Shandong, China	.	.	42.4	126.4	17.4	104.6
 Tosa Bay, Shikoku, Japan	33.460038	133.478262	.	.	Tosa Bay	.	Shikoku, Japan	.	.	.	.	.	.
-Nabq, South Sinai Governorate, Egypt	28.041312	34.436759	.	.	Nabq	.	South Sinai Governorate, Egypt	.	.	.	.	.	.
+Nabq, South Sinai Governorate, Egypt	28.041312	34.436759	.	.	Nabq	.	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
 Bay of Altata, Sinaloa, Mexico	24.627679	-107.937975	.	.	Bay of Altata	.	Sinaloa, Mexico	.	.	.	.	.	.
 El Huizache, Sinaloa, Mexico	22.951715	-106.063556	.	.	El Huizache	.	Sinaloa, Mexico	.	.	.	.	.	.
 Estero el Verde, Sinaloa, Mexico	23.419602	-106.556270	.	.	Estero el Verde	.	Sinaloa, Mexico	.	.	.	.	.	.
@@ -1069,7 +1069,7 @@ Pingtung, Taiwan	22.425271	120.503968	.	.	Pingtung	.	Taiwan	.	.	25.6	122.2	21.7	
 Southern Taiwan	21.973132	120.743547	.	.	Southern Taiwan	.	Taiwan	.	.	25.6	122.2	21.7	119.0
 Tainan, Taiwan	23.133964	120.075295	.	.	Tainan	.	Taiwan	.	.	25.6	122.2	21.7	119.0
 Taitung, Taiwan	22.766970	121.172770	.	.	Taitung	.	Taiwan	.	.	25.6	122.2	21.7	119.0
-Tamsui, New Taipei City, Taiwan	25.172922	121.437792	.	.	Tamsui	Tansui	New Taipei City, Taiwan	.	.	25.6	122.2	21.7	119.0
+Tamsui, New Taipei City, Taiwan	25.172922	121.437792	.	.	Tamsui	Tansui;Tanshui	New Taipei City, Taiwan	.	.	25.6	122.2	21.7	119.0
 Yilan, Taiwan	24.714859	121.775952	.	.	Yilan	.	Taiwan	.	.	25.6	122.2	21.7	119.0
 Matamoros, Tamaulipas, Mexico	25.956996	-97.146196	.	.	Matamoros	.	Tamaulipas, Mexico	.	.	.	.	.	.
 Tampico, Tamaulipas, Mexico	22.232511	-97.837843	.	.	Tampico	.	Tamaulipas, Mexico	.	.	.	.	.	.
@@ -1080,7 +1080,7 @@ Kilwa-Kiwindje, Lindi Region, Tanzania	-8.750000	39.400000	.	.	Kilwa-Kiwindje	.	
 Lindi, Lindi Region, Tanzania	-9.987761	39.710622	.	.	Lindi	.	Lindi Region, Tanzania	.	.	.	.	.	.
 Pangani, Tanga Region, Tanzania	-5.429274	38.974643	.	.	Pangani	.	Tanga Region, Tanzania	.	.	.	.	.	.
 Pemba Island, Tanzania	-5.166667	39.783333	.	.	Pemba Island	.	Tanzania	.	.	.	.	.	.
-Zanzibar, Tanzania	-6.163624	39.185733	City (not former name of country)	.	Zanzibar (City)	.	Tanzania	.	.	.	.	.	.
+Zanzibar, Unguja, Tanzania	-6.163624	39.185733	City (not former name of country)	.	Zanzibar (City)	.	Unguja, Tanzania	.	.	.	.	.	.
 Aransas County, Texas, USA	28.066286	-96.990616	.	.	Aransas County	.	Texas, USA	.	.	.	.	.	.
 Aransas National Wildlife Refuge, Aransas County, Texas, USA	28.187086	-96.856677	.	.	Aransas National Wildlife Refuge	.	Aransas County, Texas, USA	.	.	.	.	.	.
 Beaumont, Jefferson County, Texas, USA	30.071397	-94.058073	.	.	Beaumont	.	Jefferson County, Texas, USA	.	.	.	.	.	.
@@ -1222,7 +1222,7 @@ Oreste Point, Hajjah Governorate, Yemen	16.386389	42.768889	.	coords from paper	
 Perim Island, Taizz Governorate, Yemen	12.660000	43.420000	.	.	Perim Island	Mayyun	Taizz Governorate, Yemen	.	.	.	.	.	.
 Socotra, Yemen	12.510000	53.920000	.	Island in Indian Ocean, near Somalia	Socotra	.	Yemen	Arabian Sea	.	.	.	.	.
 Lanyang River, Yilan, Taiwan	24.714859	121.775952	.	.	Lanyang River	.	Yilan, Taiwan	.	.	25.6	122.2	21.7	119.0
-Chukwani, Zanzibar, Tanzania	-6.222047	39.203767	.	.	Chukwani	.	Zanzibar, Tanzania	.	.	.	.	.	.
+Chukwani, Zanzibar, Unguja, Tanzania	-6.222047	39.203767	.	.	Chukwani	.	Zanzibar, Unguja, Tanzania	.	.	.	.	.	.
 Ningbo, Zhejiang, China	29.971445	121.751173	.	.	Ningbo	Ninpo	Zhejiang, China	.	.	.	.	.	.
 Wenzhou, Zhejiang, China	28.021397	120.674950	.	.	Wenzhou	Wenchow	Zhejiang, China	.	.	.	.	.	.
 Yanting, Wenzhou, Zhejiang, China	27.431664	120.650947	.	.	Yanting	.	Wenzhou, Zhejiang, China	.	.	.	.	.	.
@@ -1258,7 +1258,7 @@ Red Sea coast of Saudi Arabia	21.714335	38.964365	.	.	Red Sea coast of Saudi Ara
 Persian Gulf coast of Saudi Arabia	27.054961	49.599131	.	.	Persian Gulf coast of Saudi Arabia	.	Saudi Arabia	Persian Gulf	.	.	.	.	.
 Red Sea coast of Yemen	14.717237	42.935923	.	.	Red Sea coast of Yemen	.	Yemen	Red Sea	.	.	.	.	.
 Red Sea Governorate, Egypt	26.014917	34.321405	.	.	Red Sea Governorate	.	Egypt	.	.	.	.	.	.
-Suez Governorate, Egypt	29.595039	32.339746	.	.	Suez Governorate	.	Egypt	.	.	.	.	.	.
+Suez Governorate, Egypt	29.595039	32.339746	.	.	Suez Governorate	.	Egypt	Gulf of Suez, Egypt	.	.	.	.	.
 Far East Tuamotu Group, Tuamotu Islands, French Polynesia	-21.833333	-138.833333	.	.	Far East Tuamotu Group	.	Tuamotu Islands, French Polynesia	.	.	.	.	.	.
 Kiribati Line Islands, Kiribati	-2.000000	-156.500000	.	.	Kiribati Line Islands	.	Kiribati	Line Islands	.	.	.	.	.
 Mauritius (Republic)	-20.200000	57.500000	.	.	Mauritius (Republic)	.	.	Mascarene Islands	.	-19.4	63.5	-20.5	57.0
@@ -1266,14 +1266,14 @@ Line Islands	-2.000000	-156.500000	.	.	Line Islands	.	.	Western Pacific Ocean	.	
 Polynesia	-10.000000	-150.000000	.	.	Polynesia	.	Oceania	Western Pacific Ocean	.	.	.	.	.
 Melanesia	-9.000000	160.000000	.	.	Melanesia	.	Oceania	Western Pacific Ocean	.	.	.	.	.
 Federated States of Micronesia	6.916667	158.183333	.	.	Federated States of Micronesia	.	.	Micronesia	.	.	.	.	.
-Oceania	-23.999905	164.736859	.	.	Oceania	.	Indo-West Pacific Oceans	.	.	.	.	.	.
-Andhra Pradesh, India	16.318982	81.719763	State	.	Andhra Pradesh	.	India	Southeastern India;Bay of Bengal	.	.	.	.	.
+Oceania	-23.999905	164.736859	Region comprising Australasia, Melanesia, Micronesia and Polynesia	.	Oceania	.	Indo-West Pacific Oceans	.	.	.	.	.	.
+Andhra Pradesh, India	16.318982	81.719763	State	.	Andhra Pradesh	.	India	Southeastern India;Bay of Bengal;East coast of India	.	.	.	.	.
 Visakhapatnam, Andhra Pradesh, India	17.688622	83.291429	.	.	Visakhapatnam	.	Andhra Pradesh, India	.	.	.	.	.	.
 Cuddalore District, Tamil Nadu, India	11.588399	79.757146	District	.	Cuddalore District	.	Tamil Nadu, India	.	.	.	.	.	.
 Ramanathapuram District, Tamil Nadu, India	9.280569	79.189892	District	.	Ramanathapuram District	.	Tamil Nadu, India	.	.	.	.	.	.
 Thoothukudi District, Tamil Nadu, India	8.745719	78.217908	District	.	Thoothukudi District	.	Tamil Nadu, India	.	.	.	.	.	.
 South 24 Parganas, West Bengal, India	21.605819	88.396304	District	.	South 24 Parganas	.	West Bengal, India	.	.	.	.	.	.
-Odisha, India	19.986232	86.363576	State	.	Odisha	Orissa	India	Bay of Bengal	.	.	.	.	.
+Odisha, India	19.986232	86.363576	State	.	Odisha	Orissa	India	Bay of Bengal;East coast of India	.	.	.	.	.
 Kollam District, Kerala, India	8.934494	76.535052	District	.	Kollam District	.	Kerala, India	.	.	.	.	.	.
 Kannur District, Kerala, India	11.852296	75.367443	District	.	Kannur District	.	Kerala, India	.	.	.	.	.	.
 Ernakulam District, Kerala, India	9.972960	76.238324	District	.	Ernakulam District	.	Kerala, India	.	.	.	.	.	.
@@ -1634,7 +1634,7 @@ Krishna River, Andhra Pradesh, India	15.866659	80.876642	.	.	Krishna River	.	And
 Palakayatippa, Krishna District, Andhra Pradesh, India	15.978856	81.108150	.	.	Palakayatippa	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
 Gullalamoda, Krishna District, Andhra Pradesh, India	15.825881	80.923158	.	.	Gullalamoda	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
 Guntur District, Andhra Pradesh, India	15.880520	80.662136	District	.	Guntur Distict	.	Andhra Pradesh, India	.	.	.	.	.	.
-Lankevanidibba, Guntur District, Andhra Pradesh, India	15.791059	80.845969	District	.	Lankevanidibba	Lankevenitippa	Guntur District, Andhra Pradesh, India	.	.	.	.	.	.
+Lankevanidibba, Guntur District, Andhra Pradesh, India	15.791059	80.845969	.	.	Lankevanidibba	Lankevenitippa	Guntur District, Andhra Pradesh, India	.	.	.	.	.	.
 Kanur Creek, Krishna District, Andhra Pradesh, India	16.278066	81.267051	.	.	Kanur Creek	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
 Pallethummalapalem, Krishna District, Andhra Pradesh, India	16.011313	81.096848	.	.	Pallethummalapalem	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
 Sangameswara, Krishna District, Andhra Pradesh, India	15.902703	81.018155	.	.	Sangameswara	.	Krishna District, Andhra Pradesh, India	.	.	.	.	.	.
@@ -1658,7 +1658,7 @@ San Diego Bay National Wildlife Refuge, San Diego Bay, San Diego County, Califor
 San Diego Bay, San Diego County, California, USA	32.652721	-117.132677	.	.	San Diego Bay	.	San Diego County, California, USA	.	.	.	.	.	.
 Santa Rosa Island, Escambia County, Florida, USA	30.346411	-87.078518	.	.	Santa Rosa Island (Escambia)	.	Escambia County, Florida, USA	Santa Rosa Island, Florida, USA	.	.	.	.	.
 Santa Rosa Island, Florida, USA	30.380948	-86.847771	.	.	Santa Rosa Island	.	Florida, USA	.	.	.	.	.	.
-Gulf Specimen Supply Company, Panacea, Wakulla County, Florida, USA	30.029294	-84.386913	Enough experimental crabs were obtained from this company that it seemed worthwhile to make it an independent entry.	.	Gulf Specimen Supply Company	.	Panacea, Wakulla County, Florida, USA	.	.	.	.	.	.
+Gulf Specimen Supply Company, Panacea, Wakulla County, Florida, USA	30.029294	-84.386913	Enough experimental crabs were obtained from this company that it seemed worthwhile to make it an independent entry.	.	Gulf Specimen Supply Company	Gulf Specimen Marine Laboratories;Gulf Specimen Company	Panacea, Wakulla County, Florida, USA	.	.	.	.	.	.
 Bragança, Pará, Brazil	-0.856139	-46.646025	.	.	Bragança	.	Pará, Brazil	.	.	.	.	.	.
 Marapanim, Pará, Brazil	-0.608292	-47.700719	.	.	Marapanim	.	Pará, Brazil	.	.	.	.	.	.
 Ilha de Canelas, Bragança, Pará, Brazil	-0.785368	-46.723663	.	.	Ilha de Canelas	.	Bragança, Pará, Brazil	.	.	.	.	.	.
@@ -1746,3 +1746,108 @@ Tanjung Luar, Lombok, West Nusa Tenggara, Indonesia	-8.776797	116.513504	.	.	Tan
 West Nusa Tenggara, Indonesia	-8.583333	116.116667	Province	.	West Nusa Tenggara	.	Indonesia	Indian Ocean	.	.	.	.	.
 East Nusa Tenggara, Indonesia	-10.183333	123.583333	Province	.	East Nusa Tenggara	.	Indonesia	Indian Ocean	.	.	.	.	.
 Riau Islands, Indonesia	3.933333	108.150000	Province	.	Riau Islands	.	Indonesia	Western Pacific Ocean	.	.	.	.	.
+Kuwait Bay, Kuwait	29.475132	47.966351	.	.	Kuwait Bay	.	Kuwait	.	.	.	.	.	.
+East coast of India	15.753473	80.801352	.	.	East coast of India	.	India	Bay of Bengal	.	.	.	.	.
+Mtoni Estuary, Dar es Salaam, Tanzania	-6.822801	39.294192	.	.	Mtoni Estuary	.	Dar es Salaam, Tanzania	.	.	.	.	.	.
+Unguja, Tanzania	-6.117598	39.341183	.	.	Unguja	.	Tanzania	.	.	.	.	.	.
+Chwaka Bay, Unguja, Tanzania	-6.160727	39.458683	.	.	Chwaka Bay	.	Unguja, Tanzania	.	.	.	.	.	.
+Pinoñes Mangrove Forest, Puerto Rico	18.451329	-65.957537	.	.	Pinoñes Mangrove Forest	.	Puerto Rico	.	.	.	.	.	.
+Vista Bahia Golf Course, Rio Grande, Puerto Rico	18.406168	-65.797524	.	.	Vista Bahia Golf Course	.	Rio Grande, Puerto Rico	.	.	.	.	.	.
+Rio Grande, Puerto Rico	18.412197	-65.818301	.	.	Rio Grande	.	Puerto Rico	.	.	.	.	.	.
+Selangor River, Selangor, Malaysia	3.350000	101.250000	.	coords from paper	Selangor River	.	Selangor, Malaysia	.	.	.	.	.	.
+Orient Beach State Park, Suffolk County, New York, USA	41.129276	-72.267117	.	.	Orient Beach State Park	.	Suffolk County, New York, USA	.	.	.	.	.	.
+Mote Marine Laboratory, Placida, Charlotte County, Florida, USA	26.834102	-82.262201	This lab has since been relocated to Sarasota.	.	Mote Marine Laboratory	Cape Haze Marine Laboratory	Placida, Charlotte County, Florida, USA	.	.	31.0	-79.5	23.9	-88.0
+Bell Creek, Beaufort, Carteret County, North Carolina, USA	34.785607	-76.679621	.	.	Bell Creek	Belle Creek	Beaufort, Carteret County, North Carolina, USA	.	.	.	.	.	.
+Skipper's Cove, Panacea, Wakulla County, Florida, USA	30.048086	-84.359946	.	.	Skipper's Cove	.	Panacea, Wakulla County, Florida, USA	.	.	.	.	.	.
+Levy Bay, Panacea, Wakulla County, Florida, USA	30.005684	-84.380272	.	.	Levy Bay	.	Panacea, Wakulla County, Florida, USA	.	.	.	.	.	.
+Altamaha River, McIntosh County, Georgia, USA	31.339469	-81.426839	.	.	Altamaha River	.	McIntosh County, Georgia, USA	.	.	.	.	.	.
+Clambank Creek, Georgetown County, South Carolina, USA	33.332592	-79.189070	.	.	Clambank Creek	.	Georgetown County, South Carolina, USA	.	.	.	.	.	.
+Totness, Suriname	5.890946	-56.329654	.	.	Totness	.	Suriname	.	.	.	.	.	.
+Weg naar See, Paramaibo, Suriname	5.900531	-55.209670	.	.	Weg naar See	Weg naar Zee	Paramaribo, Suriname	.	.	.	.	.	.
+Krofajapasi Creek, Suriname	5.963944	-54.616733	Location approximate based on map in publication	.	Krofajapasi Creek	.	Suriname	.	.	.	.	.	.
+Muni Lagoon, Ghana	5.329662	-0.644241	.	.	Muni Lagoon	.	Ghana	.	.	.	.	.	.
+Southern Red Sea coast of Saudi Arabia	17.576733	42.135740	Coastal region south of Khor Amiq (18°27'44" N)	.	Southern Red Sea coast of Saudi Arabia	.	Saudi Arabia	Red Sea coast of Saudi Arabia	.	.	.	.	.
+Ras Hatiba, Saudi Arabia	21.977672	38.934740	.	.	Ras Hatiba	.	Saudi Arabia	Red Sea coast of Saudi Arabia	.	.	.	.	.
+Farasan Island, Saudi Arabia	16.777089	41.939572	Specifically at &ldquo;Gettlah&rdquo;	.	Farasan Island	.	Saudi Arabia	Southern Red Sea coast of Saudi Arabia	.	.	.	.	.
+Jazan, Saudi Arabia	16.883614	42.539040	Specifically at &ldquo;Midaya&rdquo;	.	Jazan	.	Saudi Arabia	Southern Red Sea coast of Saudi Arabia	.	.	.	.	.
+Pomene, Mozambique	-23.000031	35.575028	.	.	Pomene	.	Mozambique	.	.	.	.	.	.
+Al Khiran, Kuwait	28.659936	48.349107	.	.	Al Khiran	.	Kuwait	.	.	.	.	.	.
+Al Jahra, Kuwait	29.360254	47.704970	.	.	Al Jahra	.	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
+Sulaibikhat, Kuwait	29.319733	47.847136	.	.	Sulaibikhat	.	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
+Kathmah, Kuwait	29.415172	47.756102	Location approximate based on map in publication	.	Kathmah	.	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
+Al Memlahah, Kuwait	29.366667	47.700000	.	.	Al Memlahah	Doha	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
+Kuwait Towers, Kuwait City, Kuwait	29.392778	48.003056	.	.	Kuwait Towers	.	Kuwait City, Kuwait	.	.	.	.	.	.
+Kuwait City, Kuwait	29.384853	47.975172	.	.	Kuwait City	.	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
+Sinnamary Estuary, French Guiana	5.477500	-53.000556	.	coords from paper	Sinnamary Estuary	.	French Guiana	.	.	6.2	-51.0	1.8	-55.0
+Al-Gharqana, Nabq, South Sinai Governorate, Egypt	28.120001	34.442538	.	.	Al-Gharqana	.	Nabq, South Sinai Governorate, Egypt	.	.	.	.	.	.
+Al-Rewaissia, Nabq, South Sinai Governorate, Egypt	28.041312	34.436759	Located near Nabq	.	Al-Rewaissia	.	Nabq, South Sinai Governorate, Egypt	.	.	.	.	.	.
+Mangrove 17 km south of Safaga, Red Sea Governorate, Egypt	26.625270	33.997201	Location approximate	.	Safaga	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
+El Hamraween Mangrove, Red Sea Governorate, Egypt	26.398467	34.117618	Location approximate (36km north of Qusier)	.	El Hamraween Mangrove	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
+Hamata, Red Sea Governorate, Egypt	24.288315	35.377430	.	.	Hamata	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
+Abi Estuary, Bandar Abbas, Hormozgan Province, Iran	27.183333	56.400000	.	coords from paper	Abi Estuary	.	Bandar Abbas, Hormozgan Province, Iran	.	.	.	.	.	.
+Sirik Mangrove Forest, Hormozgan Province, Iran	26.316667	57.083333	.	coords from paper	Sirik Mangrove Forest	.	Hormozgan Province, Iran	Gulf of Oman coast of Iran	.	.	.	.	.
+Holor, Qeshm, Hormozgan Province, Iran	26.978231	56.091313	.	.	Holor	.	Qeshm, Hormozgan Province, Iran	.	.	.	.	.	.
+Bandar Khamir, Hormozgan Province, Iran	26.940346	55.591144	.	.	Bandar Khamir	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Bandar Kong, Hormozgan Province, Iran	26.603210	54.954084	.	.	Bandar Kong	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Kolāhi, Hormozgan Province, Iran	27.056855	56.860020	.	.	Kolāhi	.	Hormozgan Province, Iran	Gulf of Oman coast of Iran	.	.	.	.	.
+Bandar-Tiab, Hormozgan Province, Iran	27.113057	56.860578	.	.	Bandar-Tiab	.	Hormozgan Province, Iran	Gulf of Oman coast of Iran	.	.	.	.	.
+Bandar-Pohl, Hormozgan Province, Iran	26.974069	55.747692	.	.	Bandar-Pohl	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Mahtabi, Hormozgan Province, Iran	26.786686	55.331641	.	.	Mahtabi	.	Hormozgan Province, Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Noghasha, Qeshm, Hormozgan Province, Iran	26.732490	55.847550	.	.	Noghasha	Naghasheh	Qeshm, Hormozgan Province, Iran	.	.	.	.	.	.
+Band-Chapi, Qeshm, Hormozgan Province, Iran	26.713489	55.911000	.	.	Band-Chapi	.	Qeshm, Hormozgan Province, Iran	.	.	.	.	.	.
+Bushehr Province, Iran	28.515900	51.087188	.	.	Bushehr Province	.	Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Khuzestan Province, Iran	30.424486	49.086503	.	.	Khuzestan Province	.	Iran	Persian Gulf coast of Iran	.	.	.	.	.
+Bandar Imam Khomeini, Khuzestan Province, Iran	30.459457	49.076512	.	.	Bandar Imam Khomeini	Bandar Emam	Khuzestan Province, Iran	.	.	.	.	.	.
+Mahshahr, Khuzestan Province, Iran	30.507824	49.206209	Majidieh Fishery Jetty	.	Mahshahr	.	Khuzestan Province, Iran	.	.	.	.	.	.
+Arvandroud River, Khuzestan Province, Iran	29.935988	48.608375	River on border of Iran and Kuwait	.	Arvandroud River	.	Khuzestan Province, Iran	.	.	.	.	.	.
+Delvar, Bushehr Province, Iran	28.750178	51.047652	.	.	Delvar	.	Bushehr Province, Iran	.	.	.	.	.	.
+Mond, Bushehr Province, Iran	28.015482	51.371845	.	.	Mond	.	Bushehr Province, Iran	.	.	.	.	.	.
+Bandar Rig, Bushehr Province, Iran	29.486323	50.623810	.	.	Bandar Rig	.	Bushehr Province, Iran	.	.	.	.	.	.
+Bandar-Dayyer, Bushehr Province, Iran	27.830199	51.927371	.	.	Bandar-Dayyer	.	Bushehr Province, Iran	.	.	.	.	.	.
+Bandar-Banak, Bushehr Province, Iran	27.842139	52.016833	.	.	Bandar-Banak	.	Bushehr Province, Iran	.	.	.	.	.	.
+Emamzadeh Shah Abdolah, Bushehr Province, Iran	30.175961	50.096461	.	.	Emamzadeh Shah Abdolah	.	Bushehr Province, Iran	.	.	.	.	.	.
+Ramleh, Bushehr Province, Iran	29.196333	50.664440	.	.	Ramleh	.	Bushehr Province, Iran	.	.	.	.	.	.
+Chah Shur, Bushehr Province, Iran	29.691656	50.370258	.	.	Chah Shur	.	Bushehr Province, Iran	.	.	.	.	.	.
+Nayband Gulf, Bushehr Province, Iran	27.428108	52.637750	.	.	Nayband Gulf	Khalij-Nayband	Bushehr Province, Iran	.	.	.	.	.	.
+Boveyrat, Bushehr Province, Iran	29.939946	50.156688	.	.	Boveyrat	Bavirat	Bushehr Province, Iran	.	.	.	.	.	.
+Lilitin, Bushehr Province, Iran	29.873377	50.200304	.	.	Lilitin	Laylatayn	Bushehr Province, Iran	.	.	.	.	.	.
+Pohl Port Mangrove, Bandar Abbas, Hormozgan Province, Iran	27.030694	55.748778		coords from paper	Pohl Port Mangrove	.	Bandar Abbas, Hormozgan Province, Iran	.	.	.	.	.	.
+Contai, Purba Medinipur District, West Bengal, India	21.699987	87.760478	.	.	Contai	.	Purba Medinipur District, West Bengal, India	.	.	.	.	.	.
+Kolkata, West Bengal, India	22.579586	88.347226	.	.	Kolkata	Calcutta	West Bengal, India	.	.	.	.	.	.
+Matā'utu, Wallis, Wallis and Futuna	-13.284137	-176.175269	.	.	Matā'utu	.	Wallis, Wallis and Futuna	.	.	.	.	.	.
+Al Darb, Jazan, Saudi Arabia	17.636119	42.100236	.	.	Al Darb	.	Jazan, Saudi Arabia	.	.	.	.	.	.
+Bang Rin, Ranong, Thailand	9.934362	98.603507	.	.	Bang Rin	.	Ranong, Thailand	.	.	.	.	.	.
+Kampung Perepat Kapar, Selangor, Malaysia	3.093051	101.343312	.	.	Kampung Perepat Kapar	.	Selangor, Malaysia	.	.	.	.	.	.
+Sungai Sementa Besar, Kampung Perepat Kapar, Selangor, Malaysia	3.076711	101.356570	.	.	Sungai Sementa Besar	.	Kampung Perepat Kapar, Selangor, Malaysia	.	.	.	.	.	.
+Thomatis Creek, Queensland, Australia	-16.830211	145.732478	.	.	Thomatis Creek	.	Queensland, Australia	Northeastern Queensland, Australia	.	.	.	.	.
+Badung Regency, Bali, Indonesia	-8.681359	115.149051	.	.	Badung Regency	.	Bali, Indonesia	.	.	.	.	.	.
+Kuta, Badung Regency, Bali, Indonesia	-8.722249	115.169129	.	.	Kuta (Bali)	.	Badung Regency, Bali, Indonesia	.	.	.	.	.	.
+Pantuan, East Kalimantan, Borneo, Indonesia	-0.592712	117.475218	.	.	Pantuan	.	East Kalimantan, Borneo, Indonesia	.	.	.	.	.	.
+Matutinao R. Badian, Cebu, Philippines	9.819868	123.371930	.	.	Matutinao R. Badian	.	Cebu, Philippines	.	.	.	.	.	.
+Yanshui, Tainan, Taiwan	23.298559	120.108952	.	.	Yanshui	.	Tainan, Taiwan	.	.	25.6	122.2	21.7	119.0
+East Godavari District, Andhra Pradesh, India	16.930659	82.247908	District	.	East Godavari District	.	Andhra Pradesh, India	.	.	.	.	.	.
+Kakinada, East Godavari District, Andhra Pradesh, India	16.983828	82.277278	.	.	Kakinada	.	East Godavari District, Andhra Pradesh, India	.	.	.	.	.	.
+Sakhinetipalli, East Godavari District, Andhra Pradesh, India	16.441682	81.712490	.	.	Sakhinetipalli	.	East Godavari District, Andhra Pradesh, India	.	.	.	.	.	.
+Nizampatnam, Guntur District, Andhra Pradesh, India	15.898812	80.667049	.	.	Nizapatnam	.	Guntur District, Andhra Pradesh, India	.	.	.	.	.	.
+Nellore District, Andhra Pradesh, India	14.581695	80.184487	District	.	Nellore District	.	Andhra Pradesh, India	.	.	.	.	.	.
+Kottha Koduru, Nellore District, Andhra Pradesh, India	14.411833	80.174938	.	.	Kottha Koduru	.	Nellore District, Andhra Pradesh, India	.	.	.	.	.	.
+Muthukur, Nellore District, Andhra Pradesh, India	14.266700	80.100000	.	.	Muthukur	.	Nellore District, Andhra Pradesh, India	.	.	.	.	.	.
+Vizianagaram District, Andhra Pradesh, India	18.013257	83.569926	District	.	Vizianagaram District	.	Andhra Pradesh, India	.	.	.	.	.	.
+Konada, Vizianagaram District, Andhra Pradesh, India	18.012131	83.570866	.	.	Konada	.	Vizianagaram District, Andhra Pradesh, India	.	.	.	.	.	.
+Puluguvari Palem, Guntur District, Andhra Pradesh, India	15.872059	80.615423	Exact location unknown	.	Puluguvari Palem	.	Guntur District, Andhra Pradesh, India	.	.	.	.	.	.
+Krishnapatnam, Nellore District, Andhra Pradesh, India	14.252371	80.118889	.	.	Krishnapatnam	.	Andhra Pradesh, India	.	.	.	.	.	.
+Divar Island, Goa, India	15.525018	73.907297	.	.	Divar Island	Diwadi Island	Goa, India	.	.	.	.	.	.
+Canacona, Goa, India	14.989167	74.046716	.	.	Canacona	.	Goa, India	.	.	.	.	.	.
+Zuari River, Goa, India	15.409200	73.919215	.	.	Zuari River	.	Goa, India	.	.	.	.	.	.
+Agaçaim, Goa, India	15.414351	73.911156	.	.	Agaçaim	.	Goa, India	Zuari River, Goa, India	.	.	.	.	.
+Rassaim, Goa, India	15.368020	73.964076	.	.	Rassaim	.	Goa, India	Zuari River, Goa, India	.	.	.	.	.
+Chorão Island, Goa, India	15.539446	73.884646	.	.	Chorão Island	.	Goa, India	.	.	.	.	.	.
+Betim, Goa, India	15.506379	73.831611	.	.	Betim	.	Goa, India	.	.	.	.	.	.
+Cooum River, Chennai, Tamil Nadu, India	13.068675	80.285066	.	.	Cooum River	.	Chennai, Tamil Nadu, India	.	.	.	.	.	.
+Napier Bridge, Cooum River, Chennai, Tamil Nadu, India	13.068892	80.284265	.	.	Napier Bridge	Iron Bridge	Cooum River, Chennai, Tamil Nadu, India	.	.	.	.	.	.
+Adyar Beach, Chennai, Tamil Nadu, India	13.000827	80.273461	.	.	Adyar Beach	.	Chennai, Tamil Nadu, India	.	.	.	.	.	.
+Parangipettai, Cuddalore District, Tamil Nadu, India	11.518491	79.769853	.	.	Parangipettai	.	Cuddalore District, Tamil Nadu, India	.	.	.	.	.	.
+Manauli Island, Ramanathapuram District, Tamil Nadu, India	9.215551	79.129377	.	.	Manauli Island	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
+Mandapam, Ramanathapuram District, Tamil Nadu, India	9.277173	79.126453	.	.	Mandapam	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
+Kundugal Point, Ramanathapuram District, Tamil Nadu, India	9.257617	79.214478	.	.	Kundugal Point	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
+Vaigai River, Ramanathapuram District, Tamil Nadu, India	9.346105	78.998380	.	.	Vaigai River	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.

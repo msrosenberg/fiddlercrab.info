@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Austruca variegata / Motley Fiddler Crab</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="uca_style.css" />
+    <script defer src="js/solid.min.js"></script>
+    <script defer src="js/regular.min.js"></script>
+    <script defer src="js/brands.min.js"></script>
+    <script defer src="js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="images/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="author" href="msrosenberg@vcu.edu" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
+        var range_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/u_variegata_range_map.kmz",{suppressInfoWindows: true});
+        range_layer.setMap(range_map);
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/u_variegata_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="skip-links" role="complementary" aria-label="Skip links menu"><a href="#Main" tabindex="1">Skip to content</a></div>
+    <div id="home">
+      <a href="index.html" class="home-title">Fiddler Crabs</a>
+      <a href="index.html" class="home-link"><span  role="presentation" class="fa fa-home" aria-hidden></span> Home</a>
+      <a href="blog" class="home-link"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> Blog</a>
+    </div>
+    <header id="u_variegata.html">
+      <h1 class="species bookmark2">Austruca variegata</h1>
+      <h2 class="nobookmark">Motley Fiddler Crab</h2>
+      <nav>
+        <ul>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#info"><span  role="presentation" class="fa fa-info-circle" aria-hidden></span> Information</a></li>
+          <li><a href="#pics"><span  role="presentation" class="fa fa-camera-alt" aria-hidden></span> Photos</a></li>
+          <li><a href="#video"><span  role="presentation" class="fa fa-video" aria-hidden></span> Video</a></li>
+          <li><a href="#art"><span  role="presentation" class="fa fa-paint-brush" aria-hidden></span> Art</a></li>
+          <li><a href="#references"><span  role="presentation" class="fa fa-book" aria-hidden></span> References</a></li>
+          <li><a href="uca_species.html"><span  role="presentation" class="fa fa-list" aria-hidden></span> Species List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topspsection">
+      <h2 id="type" class="nobookmark">Type Description</h2>
+      <dl>
+        <dt><em class="species">Gelasimus variegatus</em></dt>
+        <dd>Heller, C. (1862) Neue Crustaceen, gesammelt während der Weltumseglung der k. k. Fregatte Novara. Zweiter vorläufiger Bericht. <em>Verhandlungen der Kaiserlich-Königlichen Zoologisch-Botanischen Gesellschaft in Wien</em> 12:519&ndash;528.</dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2 id="info" class="nobookmark"><span  role="presentation" class="fa fa-info-circle" aria-hidden></span> Information</h2>
+      <dl>
+       <dt>Taxonomy</dt>
+       <dd><a href="uca_systematics.html#subfamily_Gelasiminae">Subfamily Gelasiminae</a> &rarr; <a href="uca_systematics.html#supertribe_Gelasimitae">Supertribe Gelasimitae</a> &rarr; <a href="uca_systematics.html#tribe_Gelasimini">Tribe Gelasimini</a> &rarr; <a href="uca_systematics.html#genus_Austruca">Genus <em class="species">Austruca</em></a> &rarr; <a href="uca_systematics.html#subgenus_Cuneatuca">Subgenus <em class="species">Cuneatuca</em></a></dd>
+       <dt>Common Names</dt>
+         <dd>Motley Fiddler Crab</dd>
+       <dt>Synonyms, Alternate Spellings, &amp; Name Forms (<a href="names/synonyms_variegata.html">Chronology</a>)</dt>
+         <dd><em class="species"><a href="names/Austruca_variegata.html"><em class="species">Austruca variegata</em></a>, <a href="names/Gelasimus_variegata.html"><em class="species">Gelasimus variegata</em></a>, <a href="names/Gelasimus_variegatus.html"><em class="species">Gelasimus variegatus</em></a></em></dd>
+       <dt class="pagebreak">Geographic Range</dt>
+         <dd>Indo-West Pacific: Eastern Bay of Bengal</dd>
+         <dd>
+           <div id="range_map_canvas" class="sp_map"></div>
+           <div id="point_map_canvas" class="sp_map"></div>
+           <div class="map_download">
+             <a href="maps/u_variegata_range_map.png"><span  role="presentation" class="fa fa-download" aria-hidden></span> Download PNG line map of ranges.</a> 
+             <a href="maps/u_variegata_point_map.png"><span  role="presentation" class="fa fa-download" aria-hidden></span> Download PNG line map of point locations.</a>
+           </div>
+         </dd>
+         <dd class="map_data">
+           Red markers indicate locations where this species is found according to the scientific record; blue markers represent false or mistaken observations from the scientific record; green markers represent &ldquo;research grade&rdquo; observations imported from <a href="https://www.inaturalist.org/taxa/905592">iNaturalist</a>.
+         </dd>
+         <dd class="map_data">
+           Range map data derived from: <a href="references/Shih2019.html">Shih <em>et al.</em> (2019)</a>
+         </dd>
+       <dt>External Links</dt>
+         <dd><a href="https://en.wikipedia.org/wiki/Uca_variegata">Wikipedia</a></dd>
+         <dd><a href="https://www.inaturalist.org/taxa/905592">iNaturalist</a></dd>
+      </dl>
+    </section>
+
+    <section class="spsection">
+      <h2 id="pics" class="nobookmark"><span  role="presentation" class="fa fa-camera-alt" aria-hidden></span> Photos</h2>
+      <p>
+        <em>No pictures available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2 id="video" class="nobookmark"><span  role="presentation" class="fa fa-video" aria-hidden></span> Video</h2>
+      <p>
+        <em>No videos available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2 id="art" class="nobookmark"><span  role="presentation" class="fa fa-paint-brush" aria-hidden></span> Art</h2>
+      <p>
+        <em>No art available at this time.</em>
+      </p>
+    </section>
+
+    <section class="spsection">
+      <h2 id="references" class="nobookmark"><span  role="presentation" class="fa fa-book" aria-hidden></span> References</h2>
+      <p>
+<a href="references/Akash2017.html">Akash &amp; Chowdhury (2017)</a>, 
+<a href="references/Alcock1900.html">Alcock (1900)</a>, 
+<a href="references/Altevogt1957.1.html">Altevogt (1957)</a>, 
+<a href="references/Altevogt1959.3.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1959.1.html">Altevogt (1959)</a>, 
+<a href="references/Altevogt1964.1.html">Altevogt (1964)</a>, 
+<a href="references/Altevogt1972.html">Altevogt (1972)</a>, 
+<a href="references/Altevogt1979.html">Altevogt &amp; Davis (1979)</a>, 
+<a href="references/Bairagi1995.html">Bairagi (1995)</a>, 
+<a href="references/Beinlich2006.html">Beinlich &amp; von Hagen (2006)</a>, 
+<a href="references/Crane1975.html">Crane (1975)</a>, 
+<a href="references/Deb1998.html">Deb (1998)</a>, 
+<a href="references/Deb1999.html">Deb (1999)</a>, 
+<a href="references/DevRoy2005.html">Dev Roy &amp; Bhadra (2005)</a>, 
+<a href="references/DevRoy2011.html">Dev Roy &amp; Bhadra (2011)</a>, 
+<a href="references/Estampador1959.html">Estampador (1959)</a>, 
+<a href="references/Feest1969.html">Feest (1969)</a>, 
+<a href="references/Frith1978.html">Frith &amp; Frith (1978)</a>, 
+<a href="references/Heller1862.1.html">Heller (1862)</a>, 
+<a href="references/Heller1865.html">Heller (1865)</a>, 
+<a href="references/Henderson1893.html">Henderson (1893)</a>, 
+<a href="references/IUCNBangladesh2015.html">IUCN Bangladesh (2015)</a>, 
+<a href="references/Jansen1970.html">Jansen (1970)</a>, 
+<a href="references/Khan2003.html">Khan (2003)</a>, 
+<a href="references/Kingsley1880.html">Kingsley (1880)</a>, 
+<a href="references/Krishnan1990.1.html">Krishnan (1990)</a>, 
+<a href="references/Krishnan1990.2.html">Krishnan (1990)</a>, 
+<a href="references/Krishnan1992.3.html">Krishnan (1992)</a>, 
+<a href="references/Krishnan1994.html">Krishnan (1994)</a>, 
+<a href="references/Krishnan1990.3.html">Krishnan &amp; Ramachandran (1990)</a>, 
+<a href="references/Maccagno1928.html">Maccagno (1928)</a>, 
+<a href="references/Mandal1989.html">Mandal &amp; Nandi (1989)</a>, 
+<a href="references/Mitra2006.html">Mitra &amp; Misra (2006)</a>, 
+<a href="references/Mitra2010.html">Mitra <em>et al.</em> (2010)</a>, 
+<a href="references/Naderloo2010.html">Naderloo <em>et al.</em> (2010)</a>, 
+<a href="references/Ng2008.html">Ng <em>et al.</em> (2008)</a>, 
+<a href="references/Nobili1903.2.html">Nobili (1903)</a>, 
+<a href="references/Panikkar1937.html">Panikkar &amp; Aiyar (1937)</a>, 
+<a href="references/RamaRao1992.html">Rama Rao <em>et al.</em> (1992)</a>, 
+<a href="references/Ramakrishna2003.html">Ramakrishna <em>et al.</em> (2003)</a>, 
+<a href="references/Rao2014.html">Rao &amp; Rath (2014)</a>, 
+<a href="references/Rath2008.html">Rath &amp; Dev Roy (2008)</a>, 
+<a href="references/Rath2011.html">Rath &amp; Dev Roy (2011)</a>, 
+<a href="references/Ravichandran2001.html">Ravichandran <em>et al.</em> (2001)</a>, 
+<a href="references/Rosenberg2000.html">Rosenberg (2000)</a>, 
+<a href="references/Rosenberg2001.html">Rosenberg (2001)</a>, 
+<a href="references/Salmon1965.html">Salmon (1965)</a>, 
+<a href="references/Sarojini1966.html">Sarojini (1966)</a>, 
+<a href="references/Shih2018.1.html">Shih <em>et al.</em> (2018)</a>, 
+<a href="references/Shih2013.2.html">Shih <em>et al.</em> (2013)</a>, 
+<a href="references/Shih2016.2.html">Shih <em>et al.</em> (2016)</a>, 
+<a href="references/Shih2010.2.html">Shih <em>et al.</em> (2010)</a>, 
+<a href="references/Shih2019.html">Shih <em>et al.</em> (2019)</a>, 
+<a href="references/Soundarapandian2008.html">Soundarapandian <em>et al.</em> (2008)</a>, 
+<a href="references/Talapatra2014.html">Talapatra <em>et al.</em> (2014)</a>, 
+<a href="references/vonHagen1970.4.html">von Hagen (1970)</a>, 
+<a href="references/Walker1972.html">Walker (1972)</a>, 
+<a href="references/Wheeler1978.html">Wheeler (1978)</a>, 
+<a href="references/Zucker1978.html">Zucker (1978)</a>      </p>
+    </section>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span  role="presentation" class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2019.08.05.12.54 &mdash; Copyright &copy; 2003&ndash;2019 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
