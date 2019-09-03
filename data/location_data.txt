@@ -1,5 +1,9 @@
 Full Location Name	Latitude	Longitude	Public Notes	Private Notes	Trimmed Name	Alternate Names	Parent	Secondary Parents	Validity	NE Lat	NE Lon	SW Lat	SW Lon
 Abdel Kader	.	.	Presumably a town or island along the southern part of the Red Sea or Gulf of Aden (perhaps in Eritrea, Djibouti, or Somalia)	.	Abdel Kader	.	.	.	.	.	.	.	.
+Divers	.	.	Presumably a town or island on the Atlantic coast of Africa	.	Divers	.	.	.	.	.	.	.	.
+Isola di Chojama	.	.	Presumably an island in or near southern Somalia	.	Isola di Chojama	.	.	.	.	.	.	.	.
+Isole Key	.	.	An island of the Indo West Pacific, but could be almost anywhere from east Africa through the central Pacific	.	Isole Key	.	.	.	.	.	.	.	.
+Lelemboli	.	.	Probably somewhere in or near Indonesia, the Philippines, or New Guinea	.	Lelemboli	.	.	.	.	.	.	.	.
 Adriatic Sea	43.000000	15.000000	Stossich (1878) reported a fiddler crab from the Adriatic Sea, but this appears to be a clear error. Either the species was not a fiddler crab (most likely explanation) or the collection location was very wrong.	.	Adriatic Sea	.	.	Europe	X	46.0	20.0	39.0	11.0
 Africa	10.800000	19.500000	.	.	Africa	.	.	.	.	.	.	.	.
 Angola	-6.140734	12.352117	.	Using Soyo	Angola	.	.	Africa;Atlantic coast of Africa	.	-4.0	25.0	-18.0	9.5
@@ -30,7 +34,6 @@ Costa Rica	9.907572	-83.925784	.	.	Costa Rica	.	.	Central America	.	11.4	-82.0	7
 Cuba	22.064379	-79.476363	.	.	Cuba	.	.	Caribbean;Greater Antilles	.	23.6	-73.0	19.5	-86.0
 Curaçao	12.183333	-69.000000	.	.	Curaçao	.	.	Caribbean;ABC Islands, Leeward Antilles	.	12.5	-68.7	12.0	-69.3
 Democratic Republic of the Congo	-6.028319	12.459611	.	Using Parc marin des mangroves	Democratic Republic of the Congo	.	.	Africa;Atlantic coast of Africa	.	6.5	32.5	-14.0	10.0
-Divers	.	.	Presumably a town or island on the Atlantic coast of Africa	.	Divers	.	.	.	.	.	.	.	.
 Djibouti	11.588333	43.145000	.	.	Djibouti	.	.	Africa;Indian coast of Africa;Gulf of Aden	.	12.5	43.6	11.0	41.5
 Dominica	15.429909	-61.338679	.	.	Dominica	.	.	Caribbean;Windward Islands, Lesser Antilles	.	19.3	-58.3	10.0	-66.7
 Indian coast of Africa	-6.800000	39.283333	.	Using Dar es Salaam	Indian coast of Africa	.	Africa	Indian Ocean	.	.	.	.	.
@@ -62,8 +65,6 @@ Indonesia	-5.115918	119.410800	.	Using Makassar	Indonesia	.	.	Malay Archipelago	
 Indo-West Pacific Oceans	-2.933333	107.916667	.	.	Indo-West Pacific Oceans	.	.	.	.	.	.	.	.
 Iran	26.560003	54.551290	.	.	Iran	.	.	Middle East	.	40.3	63.5	24.7	43.7
 Iraq	29.906593	48.453944	.	.	Iraq	.	.	Middle East;Persian Gulf	.	.	.	.	.
-Isola di Chojama	.	.	Presumably an island in or near southern Somalia	.	Isola di Chojama	.	.	.	.	.	.	.	.
-Isole Key	.	.	An island of the Indo West Pacific, but could be almost anywhere from east Africa through the central Pacific	.	Isole Key	.	.	.	.	.	.	.	.
 Ivory Coast	5.357523	-4.012824	.	Using Abidjian	Ivory Coast	.	.	Africa;Atlantic coast of Africa;Gulf of Guinea	.	.	.	.	.
 Jamaica	18.188113	-77.361859	.	.	Jamaica	.	.	Caribbean;Greater Antilles	.	.	.	.	.
 Japan	34.221423	135.138759	.	Using Wakayma	Japan	.	.	Western Pacific Ocean	.	.	.	.	.
@@ -71,7 +72,6 @@ Kenya	-2.679131	40.226366	.	.	Kenya	.	.	Africa;Indian coast of Africa	.	5.0	42.5
 Kiribati	1.857194	-157.384859	.	.	Kiribati	.	.	Micronesia	.	.	.	.	.
 Korea	34.765422	127.687029	The entire Korean peninsula, primarily used for non-specific records prior to the split between the North and South.	.	Korea	.	.	Western Pacific Ocean	.	.	.	.	.
 Kuwait	29.376214	47.977851	.	.	Kuwait	.	.	Middle East;Persian Gulf	.	30.0	47.0	28.5	46.0
-Lelemboli	.	.	Probably somewhere in or near Indonesia, the Philippines, or New Guinea	.	Lelemboli	.	.	.	.	.	.	.	.
 Liberia	6.313333	-10.801389	.	.	Liberia	.	.	Africa;Atlantic coast of Africa	.	9.0	-6.0	3.0	-13.0
 Madagascar	-16.185357	44.458806	.	.	Madagascar	.	.	Africa;Indian Ocean	.	.	.	.	.
 Malay Archipelago	-2.933333	107.916667	.	.	Malay Archipelago	East Indies;Eastern Seas	.	.	.	.	.	.	.
@@ -830,7 +830,6 @@ Gulf of Panama, Panama	8.086420	-79.282840	.	.	Gulf of Panama	.	Pacific coast of
 Honda Bay, Panama	7.749285	-81.524702	.	.	Honda Bay	.	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
 Isla Flamenco, Panama	8.909328	-79.520225	.	.	Isla Flamenco	.	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
 Isla Naos, Panama	8.913822	-79.531809	.	.	Isla Naos	Naos Island;Culebra Island;Isla Culebra	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
-Isla Parida, Panama	8.125879	-82.336157	.	.	Isla Parida	.	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
 Isla Parida, Panama	8.120071	-82.339612	.	.	Isla Parida	.	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
 Marraganti, Panama	8.372243	-78.062448	.	.	Marraganti	.	Pacific coast of Panama	.	.	10.4	-76.7	6.0	-83.4
 Pacific coast of Panama	8.942285	-79.563552	.	.	Pacific coast of Panama	.	Panama	Pacific coast of Central America	.	10.4	-76.7	6.0	-83.4
@@ -1851,3 +1850,30 @@ Manauli Island, Ramanathapuram District, Tamil Nadu, India	9.215551	79.129377	.	
 Mandapam, Ramanathapuram District, Tamil Nadu, India	9.277173	79.126453	.	.	Mandapam	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
 Kundugal Point, Ramanathapuram District, Tamil Nadu, India	9.257617	79.214478	.	.	Kundugal Point	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
 Vaigai River, Ramanathapuram District, Tamil Nadu, India	9.346105	78.998380	.	.	Vaigai River	.	Ramanathapuram District, Tamil Nadu, India	.	.	.	.	.	.
+Dare County, North Carolina, USA	35.772801	-75.738978	.	.	Dare County	.	North Carolina, USA	.	.	.	.	.	.
+Duck, Dare County, North Carolina, USA	36.186243	-75.760330	.	.	Duck	.	Dare County, North Carolina, USA	.	.	.	.	.	.
+Middle Atlantic Bight	40.217269	-73.402133	.	.	Middle Atlantic Bight	New York/New Jersey Bight	Atlantic coast of United States	.	.	.	.	.	.
+Great Marsh, Sussex County, Delaware, USA	38.799122	-75.193984	.	.	Great Marsh	.	Sussex County, Delaware, USA	.	.	.	.	.	.
+W.E. Honey Park, Wilmington River, Chatham County, Georgia, USA	32.037278	-81.048103	.	.	W.E. Honey Park	.	Wilmington River, Chatham County, Georgia, USA	.	.	.	.	.	.
+McQueens Island, Chatham County, Georgia, USA	32.040606	-80.952942	.	.	McQueens Island	.	Chatham County, Georgia, USA	.	.	.	.	.	.
+Gloucester County, Virginia, USA	37.404424	-76.491263	.	.	Gloucester County	.	Virginia, USA	.	.	.	.	.	.
+King's Creek, Gloucester County, Virginia, USA	37.308611	-76.418056			King's Creek	.	Gloucester County, Virginia, USA	.	.	.	.	.	.
+Jaguaribe River, Ceará, Brazil	-4.449138	-37.792888	.	.	Jaguaribe River	.	Ceará, Brazil	.	.	.	.	.	.
+Vembanad Lake, Kerala, India	9.596210	76.399346	.	.	Vembanad Lake	.	Kerala, India	.	.	.	.	.	.
+Mandovi River, Goa, India	15.506200	73.908142	.	.	Mandovi River	.	Goa, India	.	.	.	.	.	.
+Ela Dhauji, Goa, India	15.514171	73.922270	.	.	Ela Dhauji	.	Goa, India	.	.	.	.	.	.
+Nancowry, Nicobar Islands	7.975509	93.557203			Nancowry	.	Nicobar Islands	.	.	.	.	.	.
+Great Nicobar, Nicobar Islands	7.026931	93.821754			Great Nicobar	.	Nicobar Islands	.	.	.	.	.	.
+Car Nicobar, Nicobar Islands	9.174095	92.777255			Car Nicobar	.	Nicobar Islands	.	.	.	.	.	.
+Little Andaman, Andaman Islands	10.701536	92.483248	.	.	Little Andaman	.	Andaman Islands	.	.	.	.	.	.
+Middle Andaman, Andaman Islands	12.535910	92.818381	.	.	Middle Andaman	.	Andaman Islands	.	.	.	.	.	.
+North Andaman, Andaman Islands	13.211948	92.910514	.	.	North Andaman	.	Andaman Islands	.	.	.	.	.	.
+Chongming Island, Shanghai, China	31.641800	121.565400	.	.	Chongming Island	.	Shanghai, China	.	.	.	.	.	.
+Catalina Harbor, Catalina Island, Los Angeles County, California, USA	33.430712	-118.507240	.	.	Catalina Harbor	.	Catalina Island, Los Angeles County, California, USA	.	.	.	.	.	.
+Baía do Caeté, Pará, Brazil	-0.906664	-46.589683	.	.	Baía do Caeté	Caeté Bay	Pará, Brazil	.	.	.	.	.	.
+Furo do Meio, Baía do Caeté, Pará, Brazil	-0.875565	-46.633100	.	.	Furo do Meio	.	Baía do Caeté, Pará, Brazil	.	.	.	.	.	.
+Weedon Island Preserve, St. Petersburg, Pinellas County, Florida, USA	27.884976	-82.600739	.	.	Weedon Island Preserve	.	St. Petersburg, Pinellas County, Florida, USA	Tampa Bay, Florida, USA	.	.	.	.	.
+Sabaki, Malindi, Kilifi County, Kenya	-3.188471	40.129436	.	.	Sabaki	.	Malindi, Kilifi County, Kenya	.	.	.	.	.	.
+Malindi, Kilifi County, Kenya	-3.223894	40.129799	.	.	Malindi	.	Kilifi County, Kenya	.	.	.	.	.	.
+Klong Ngao, Phang Nga, Thailand	9.092145	98.340202	.	.	Klong Ngao	.	Phang Nga, Thailand	.	.	.	.	.	.
+Phang Nga, Thailand	8.560954	98.229381	.	.	Phang Nga	.	West coast of Thailand	.	.	.	.	.	.
