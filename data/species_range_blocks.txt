@@ -2,7 +2,7 @@ species	lower left lat	lower left lon	upper right lat	upper right lon
 acuta	26.3	118.5	35.7	122.9
 acuta	24.6	117.9	26.3	120.3
 acuta	18	105.2	25	119
-acuta	10.4	105.8	18	110.5
+				
 				
 albimana	12.6	30.3	30.5	45.8
 albimana	10	41	16.5	50.5
@@ -20,18 +20,19 @@ alcocki	7.3	97.8	9	99.5
 alcocki	16.4	42.3	17.6	43
 				
 annulipes	11.9	66.9	26.6	75.6
-annulipes	5.5	75.4	26.6	98.4
+annulipes	5.5	75.4	26.6	91.2
 annulipes	-9.2	87.6	8.4	119.1
 annulipes	17.7	105	20.2	111.3
 annulipes	-3	97	17.7	110.5
 annulipes	-3.8	112.4	14.7	129.2
 annulipes	-6.4	116.3	5.7	129.4
-annulipes	6.4	133.1	8.8	135.9
+annulipes	5.7	91.5	14.1	94.8
 				
 arcuata	30.2	128	34.67	136.97
 arcuata	30.56	116.73	37.83	130.17
 arcuata	20.17	105.52	35.64	123.35
 arcuata	18.06	108.4	20.35	111.32
+arcuata	25.8	127.2	27.2	129.1
 				
 argillicola	9.5	-85.1	10.6	-84
 argillicola	8	-85	9.5	-82.8
@@ -45,6 +46,7 @@ boninensis	26.9	141.9	27.3	142.3
 				
 chlorophthalmus	-33.7	26.4	-11	59.3
 chlorophthalmus	-11	36.2	-1.7	43
+chlorophthalmus	-2.2	40.4	0.1	43.1
 				
 cumulanta	-5.2	-76.7	11.66	-35
 cumulanta	6.3	-76.7	13.9	-63.3
@@ -62,7 +64,14 @@ iranica	28.55	47.5	30.88	52.1
 iranica	26.4	50.9	30.4	56
 iranica	25.5	55.44	27.8	60
 iranica	25	56.2	26.45	56.9
-iranica	23.54	58.8	28	68.9
+iranica	23.54	58.8	28	68.1
+				
+leptodactyla	-24.82	-68	26	-33
+leptodactyla	16.6	-85	23.5	-57
+leptodactyla	22	-79.41	27.45	-71.7
+leptodactyla	18.9	-88.54	21.3	-86.24
+leptodactyla	8.81	-72.23	14	-62.45
+leptodactyla	25.2	-80.5	26.3	-80
 				
 minax	29	-81.75	41.95	-69.3
 minax	27.24	-95	31.3	-82.11
@@ -76,7 +85,7 @@ panacea	25	-99	31.4	-84
 				
 pugilator	29	-81.75	41.95	-69.3
 pugilator	24.47	-87.51	31.8	-79.63
-pugilator	24.86	-77.6	25.31	-77.06
+				
 				
 pugnax	29	-81.75	42.95	-69.3
 				
@@ -93,8 +102,675 @@ uruguayensis	-38.1	-64.55	-22.52	-42.93
 virens	25.79	-98.26	31.25	-84.51
 virens	21.24	-98.6	29.22	-95.71
 				
-leptodactyla	-24.82	-68	26	-33
-leptodactyla	16.6	-85	26.1	-57
-leptodactyla	24.58	-79.41	27.45	-76.41
-leptodactyla	18.73	-88.54	22.48	-86.24
-leptodactyla	8.81	-72.23	14	-62.45
+spinicarpa	25	-101	31.4	-84.5
+spinicarpa	17.7	-98.3	25.1	-89.8
+				
+subcylindrica	22	-99.5	28	-96.6
+				
+longisignalis	28.9	-98.5	31.4	-82.3
+longisignalis	26	-98	30.5	-93.5
+				
+marguerita	18	-98.7	22.6	-91.5
+				
+victoriana	-13.6	-38.6	-3.4	-33
+victoriana	-24.2	-47.4	-12	-36
+				
+maracoani	11.2	-70.6	12.3	-69.5
+maracoani	9.5	-69.9	11.6	-61.8
+maracoani	8.4	-64.1	11	-60.7
+maracoani	-25.8	-65	10	-33.5
+				
+thayeri	-29	-60	12	-33.5
+thayeri	4	-75.5	24.5	-58
+thayeri	19.8	-90	21.8	-85.9
+thayeri	14.3	-89.4	23.9	-75
+thayeri	10.1	-84.3	23.9	-75
+thayeri	8.7	-83.1	13	-80
+thayeri	9.2	-80.1	10.2	-77.2
+thayeri	7.4	-77.4	15.1	-70
+thayeri	23	-82.3	30.7	-74
+thayeri	24.4	-83	27.3	-80.8
+thayeri	8.3	-78	9.9	-76.5
+				
+vocator	-29	-60	12	-33.5
+vocator	4	-73.7	20.3	-58
+vocator	8.7	-83.1	13	-80
+vocator	9.2	-80.1	10.2	-77.2
+vocator	7.4	-77.4	15.1	-70
+vocator	8.3	-78	9.9	-76.5
+vocator	9.7	-84.3	16.4	-82.4
+vocator	15.2	-91.7	21.9	-86.1
+vocator	17.5	-98.9	22.2	-89.3
+vocator	14.7	-89.3	16.8	-82.4
+vocator	17.8	-74.6	19.3	-72.8
+vocator	21	-100	27.9	-96.8
+				
+major	16	-79.3	27.2	-57
+major	17.4	-96.5	19.3	-91.4
+major	9.2	-80.1	10.2	-77.2
+major	8.3	-78	9.9	-76.5
+major	4.1	-77.2	16.5	-51.7
+				
+rapax	-29	-60	12	-33.5
+rapax	4	-75.5	24.5	-58
+rapax	19.8	-90	21.8	-85.9
+rapax	14.3	-89.4	23.9	-75
+rapax	10.1	-84.3	23.9	-75
+rapax	8.7	-83.1	13	-80
+rapax	9.2	-80.1	10.2	-77.2
+rapax	7.4	-77.4	15.1	-70
+rapax	23	-82.3	30.7	-74
+rapax	24.4	-83	27.3	-80.8
+rapax	8.3	-78	9.9	-76.5
+rapax	17.6	-96.2	22.5	-87.9
+				
+mordax	-29	-60	12	-33.5
+mordax	4	-75.5	11.4	-59.9
+mordax	14.3	-89.4	17.5	-82.8
+mordax	10.1	-84.3	16.3	-82.5
+mordax	8.7	-83.1	9.75	-80.1
+mordax	9.2	-80.1	10.2	-77.2
+mordax	7.4	-77.4	15.1	-69.4
+mordax	8.3	-78	9.9	-76.5
+				
+burgersi	-29	-60	12	-33.5
+burgersi	4	-75.5	24.5	-58
+burgersi	19.8	-90	21.8	-85.9
+burgersi	14.3	-89.4	24.2	-75
+burgersi	10.1	-84.3	23.9	-75
+burgersi	8.7	-83.1	13	-80
+burgersi	9.2	-80.1	10.2	-77.2
+burgersi	7.4	-77.4	15.1	-70
+burgersi	23.3	-79.6	30.7	-74
+burgersi	17.8	-97	21.7	-88.7
+burgersi	8.3	-78	9.9	-76.5
+burgersi	26.1	-80	25.2	-80.6
+				
+speciosa	18.9	-91.5	21.8	-86.4
+speciosa	21.6	-85	23.2	-83.4
+speciosa	22.1	-83.5	23.4	-82.4
+speciosa	23	-79	27.4	-71.3
+speciosa	24.2	-84.4	30.2	-78.9
+speciosa	29.5	-88.8	31.3	-82
+speciosa	18.4	-92.3	19.9	-90.7
+speciosa	22	-76.7	25.1	-73.3
+				
+monilifera	31	-115.4	32.3	-112
+monilifera	29.5	-113.2	31.4	-111
+monilifera	28.8	-112.8	30	-111
+monilifera	27.8	-112.1	30	-110.1
+monilifera	28.6	-112.5	28.9	-112.1
+				
+coloradensis	29.5	-115	32.3	-112
+coloradensis	27.8	-112.1	30	-110.1
+coloradensis	26.6	-112.6	27.9	-111.4
+coloradensis	24.8	-111.8	27.3	-110.8
+coloradensis	24.4	-111	25.8	-109.9
+coloradensis	29.2	-114.2	29.7	-113.1
+coloradensis	27.4	-113.7	30.4	-110.8
+				
+crenulata	19.1	-110.7	34.4	-104.2
+crenulata	20.6	-114.1	34.4	-104.2
+crenulata	26.4	-117.6	34.4	-104.2
+crenulata	33.2	-118.7	34.4	-104.2
+crenulata	33.8	-119.3	34.7	-118.1
+crenulata	34.2	-119.8	36	-118
+				
+batuenta	9.2	-90.1	13.7	-84
+batuenta	7.9	-84.9	9.4	-82.9
+batuenta	7.1	-83	8.7	-77.7
+batuenta	7.6	-80.1	9.1	-78.1
+batuenta	-5.9	-81.5	7.4	-74.8
+				
+beebei	9.2	-90.1	13.7	-84
+beebei	7.9	-84.9	9.4	-82.9
+beebei	7.1	-83	8.7	-77.7
+beebei	7.6	-80.1	9.1	-78.1
+beebei	-5.9	-81.5	7.4	-74.8
+				
+festae	9.2	-90.1	13.7	-84
+festae	7.9	-84.9	9.4	-82.9
+festae	7.1	-83	8.7	-77.7
+festae	7.6	-80.1	9.1	-78.1
+festae	-3.4	-81.5	7.4	-74.8
+				
+inaequalis	9.2	-90.1	13.7	-84
+inaequalis	7.9	-84.9	9.4	-82.9
+inaequalis	7.1	-83	8.7	-77.7
+inaequalis	7.6	-80.1	9.1	-78.1
+inaequalis	-5.9	-81.5	7.4	-74.8
+				
+limicola	9.2	-90.1	13.7	-84
+limicola	7.9	-84.9	9.4	-82.9
+limicola	7.1	-83	8.7	-77.7
+limicola	7.6	-80.1	9.1	-78.1
+				
+latimanus	9.2	-90.1	13.7	-84
+latimanus	7.9	-84.9	9.4	-82.9
+latimanus	7.1	-83	8.7	-77.7
+latimanus	7.6	-80.1	9.1	-78.1
+latimanus	-3.4	-81.5	7.4	-74.8
+latimanus	13.6	-101.4	16.9	-89.3
+latimanus	16.7	-109.2	30	-100
+latimanus	22.8	-112.7	26	-104
+latimanus	26.3	-115.4	27.9	-112.9
+latimanus	25.6	-113.6	26.8	-112.1
+latimanus	28.6	-112.7	29.9	-111
+latimanus	27.6	-112.2	28.7	-109.5
+latimanus	25.9	-110.8	27.7	-108
+				
+deichmanni	9.2	-88	13.1	-84
+deichmanni	7.9	-84.9	9.4	-82.9
+deichmanni	7.1	-83	8.7	-77.7
+deichmanni	7.6	-80.1	9.1	-78.1
+deichmanni	5.5	-78.4	7.6	-76.8
+				
+dorotheae	9.2	-85.4	10.4	-84
+dorotheae	7.9	-84.9	9.4	-82.9
+dorotheae	7.1	-83	8.7	-77.7
+dorotheae	7.6	-80.1	9.1	-78.1
+dorotheae	-5.9	-81.5	7.4	-74.8
+				
+helleri	-1.6	-92	1.1	-88.7
+				
+musica	19.1	-110.7	34.4	-104.2
+musica	22.5	-113.8	34.4	-104.2
+musica	29.8	-115.6	32.4	-112.5
+musica	26	-115.3	28	-113.3
+musica	14.6	-106	18	-92.3
+musica	15.7	-104.7	20.4	-99
+musica	29.3	-114.8	31.3	-112
+				
+oerstedi	9.2	-90.1	13.7	-84
+oerstedi	7.9	-84.9	9.4	-82.9
+oerstedi	7.1	-83	8.7	-77.7
+oerstedi	7.6	-80.1	9.1	-78.1
+				
+saltitanta	9.2	-90.1	13.7	-84
+saltitanta	7.9	-84.9	9.4	-82.9
+saltitanta	7.1	-83	8.7	-77.7
+saltitanta	7.6	-80.1	9.1	-78.1
+saltitanta	3.7	-78.3	7.4	-74.8
+				
+tenuipedis	9.2	-90.1	13.7	-84
+tenuipedis	7.9	-84.9	9.4	-82.9
+tenuipedis	7.1	-83	8.7	-77.7
+tenuipedis	7.6	-80.1	9.1	-78.1
+tenuipedis	-5.9	-81.5	7.4	-74.8
+				
+terpsichores	9.2	-90.3	13.8	-84
+terpsichores	7.9	-84.9	9.4	-82.9
+terpsichores	7.1	-83	8.7	-77.7
+terpsichores	7.6	-80.1	9.1	-78.1
+terpsichores	-5.9	-81.5	7.4	-74.8
+				
+tomentosa	9.2	-90.1	13.7	-84
+tomentosa	7.9	-84.9	9.4	-82.9
+tomentosa	7.1	-83	8.7	-77.7
+tomentosa	7.6	-80.1	9.1	-78.1
+tomentosa	-5.9	-81.5	7.4	-74.8
+				
+umbratila	9.2	-90.1	13.7	-84
+umbratila	7.9	-84.9	9.4	-82.9
+umbratila	7.1	-83	8.7	-77.7
+umbratila	7.6	-80.1	9.1	-78.1
+umbratila	1.4	-79	7.4	-74.8
+				
+ecuadoriensis	9.2	-90.1	13.7	-84
+ecuadoriensis	7.9	-84.9	9.4	-82.9
+ecuadoriensis	7.1	-83	8.7	-77.7
+ecuadoriensis	7.6	-80.1	9.1	-78.1
+ecuadoriensis	-5.9	-81.5	7.4	-74.8
+ecuadoriensis	13.6	-103.3	18	-89.8
+ecuadoriensis	17.9	-109.3	28.3	-100
+ecuadoriensis	27	-111.6	28.6	-109
+ecuadoriensis	26.1	-110.6	27.1	-108.2
+ecuadoriensis	25.5	-109.6	26.6	-108.3
+				
+brevifrons	9.2	-90.1	13.7	-84
+brevifrons	7.9	-84.9	9.4	-82.9
+brevifrons	7.1	-83	8.7	-77.7
+brevifrons	7.6	-80.1	9.1	-78.1
+brevifrons	22.7	-112.4	24.7	-109.3
+brevifrons	13.6	-103.3	18	-89.8
+brevifrons	17.9	-108.8	28.3	-100
+				
+stenodactylus	9.2	-90.1	13.7	-84
+stenodactylus	7.9	-84.9	9.4	-82.9
+stenodactylus	7.1	-83	8.7	-77.7
+stenodactylus	7.6	-80.1	9.1	-78.1
+stenodactylus	-5.9	-81.5	7.4	-74.8
+stenodactylus	-33.1	-72.6	-17.9	-69.4
+stenodactylus	-18.6	-81.5	-5.6	-69.4
+				
+pygmaea	8.5	-83.5	9.4	-82.9
+pygmaea	7.1	-83.3	8.7	-77.7
+pygmaea	7.6	-80.1	9.1	-78.1
+pygmaea	3.8	-78.4	7.4	-76
+				
+tallanica	-3.9	-80.9	-3.05	-79.6
+				
+panamensis	9.2	-90.1	13.7	-84
+panamensis	7.9	-84.9	9.4	-82.9
+panamensis	7.1	-83	8.7	-77.7
+panamensis	7.6	-80.1	9.1	-78.1
+panamensis	-5.9	-81.5	7.4	-74.8
+				
+heteropleura	9.2	-90.1	13.7	-84
+heteropleura	7.9	-84.9	9.4	-82.9
+heteropleura	7.1	-83	8.7	-77.7
+heteropleura	7.6	-80.1	9.1	-78.1
+heteropleura	-5.9	-81.5	7.4	-74.8
+				
+insignis	9.2	-90.1	13.7	-84
+insignis	7.9	-84.9	9.4	-82.9
+insignis	7.1	-83	8.7	-77.7
+insignis	7.6	-80.1	9.1	-78.1
+insignis	-5.9	-81.5	7.4	-74.8
+				
+ornata	9.2	-90.1	13.7	-84
+ornata	7.9	-84.9	9.4	-82.9
+ornata	7.1	-83	8.7	-77.7
+ornata	7.6	-80.1	9.1	-78.1
+ornata	-5.9	-81.5	7.4	-74.8
+				
+stylifera	9.2	-90.1	13.7	-84
+stylifera	7.9	-84.9	9.4	-82.9
+stylifera	7.1	-83	8.7	-77.7
+stylifera	7.6	-80.1	9.1	-78.1
+stylifera	-5.9	-81.5	7.4	-74.8
+				
+zacae	9.2	-90.1	13.7	-84
+zacae	7.9	-84.9	9.4	-82.9
+zacae	13.6	-103.3	18	-89.8
+zacae	17.9	-109.3	28.3	-100
+zacae	25.5	-109.6	26.6	-108.3
+				
+princeps	9.2	-90.1	13.7	-84
+princeps	7.9	-84.9	9.4	-82.9
+princeps	7.1	-83	8.7	-77.7
+princeps	7.6	-80.1	9.1	-78.1
+princeps	-18.4	-81.5	7.4	-70
+princeps	13.6	-103.3	18	-89.8
+princeps	17.9	-109.3	28.3	-100
+princeps	22.6	-115.5	32.5	-109
+princeps	27.8	-117.3	32.5	-109
+princeps	32	-117.3	33.1	-116.8
+				
+intermedia	6.8	-79.6	9.1	-77.9
+intermedia	3.5	-78.7	7.7	-76.9
+				
+herradurensis	9.2	-90.1	13.7	-84
+herradurensis	7.9	-84.9	9.4	-82.9
+herradurensis	7.1	-83	8.7	-77.7
+herradurensis	7.6	-80.1	9.1	-78.1
+				
+galapagensis	-18.4	-81.5	7.1	-70
+galapagensis	-1.6	-92	1.1	-88.7
+galapagensis	7.9	-84.9	9.4	-82.9
+galapagensis	7.1	-83	8.7	-77.7
+galapagensis	7.6	-80.1	9.1	-78.1
+galapagensis	9.1	-85.4	10.3	-83.8
+				
+variegata	5.8	77.6	19.2	85.5
+variegata	19	80	23.5	90
+				
+bengali	6	97.1	15.9	98.9
+bengali	6	98	8.2	100
+bengali	3	100	6.1	102
+bengali	2.3	101.1	3.2	103.2
+bengali	1.7	102	2.5	103.6
+bengali	1.2	102.9	1.9	103.8
+bengali	6	99.6	6.8	100.7
+				
+capricornis	-22.6	114	-18.9	123
+capricornis	-19.2	121.6	-13.1	131
+capricornis	-18	129	-10.7	137.4
+capricornis	-18	134.3	-13.3	142.2
+				
+hirsutimanus	-22.6	116.3	-18.9	123
+hirsutimanus	-19.2	121.6	-13.1	131
+hirsutimanus	-18	129	-10.7	137.4
+hirsutimanus	-18	134.3	-10.9	142.2
+				
+elegans	-22.6	114	-18.9	123
+elegans	-19.2	121.6	-13.1	131
+elegans	-18	129	-10.7	137.4
+elegans	-26.8	112.7	-21.4	114.6
+				
+polita	-22.6	114	-18.9	123
+polita	-19.2	121.6	-13.1	131
+polita	-18	129	-10.7	137.4
+polita	-18	134.3	-13.3	142.2
+polita	-27.4	150	-24	153.3
+polita	-24.2	149	-22	152.2
+polita	-22.2	148	-20	150
+polita	-19	144.8	-13.6	147
+polita	-17.6	141	-10.4	145
+polita	-26	152.4	-24.6	154
+polita	-21	144.8	-18.3	149.6
+				
+signata	-19.2	123	-13.1	131
+signata	-18	129	-10.7	137.4
+signata	-18	134.3	-13.3	142.2
+signata	-27.4	150	-24	154
+signata	-24.2	149	-22	152.2
+signata	-22.2	148	-20	150
+signata	-19	144.8	-13.6	147
+signata	-17.6	141	-10.4	145
+signata	-26	152.4	-24.6	154
+signata	-21	144.8	-18.3	149.6
+signata	-33.9	151	-27.3	154
+				
+seismella	-22.6	117	-18.9	123
+seismella	-19.2	121.6	-13.1	131
+seismella	-18	129	-10.7	137.4
+seismella	-18	134.3	-13.3	142.2
+seismella	-27.4	150	-24	153.3
+seismella	-24.2	149	-22	152.2
+seismella	-22.2	148	-20	150
+seismella	-19	144.8	-13.6	147
+seismella	-17.6	141	-10.4	145
+seismella	-26	152.4	-24.6	154
+seismella	-21	144.8	-18.3	149.6
+				
+longidigitum	-27.4	150	-24	153.3
+longidigitum	-24.2	149	-22	152.2
+longidigitum	-22.2	148	-20	150
+longidigitum	-19	144.8	-16.8	147
+longidigitum	-26	152.4	-24.6	154
+longidigitum	-21	144.8	-18.3	149.6
+				
+urvillei	-33.7	26.6	-16.5	39.1
+urvillei	-17.3	37.6	-1.7	41.6
+urvillei	-1.7	41.5	-0.2	42.8
+urvillei	-26.3	42.1	-18.4	51.6
+urvillei	-14.7	46.7	-11.6	50.9
+urvillei	-18.5	43.7	-14.6	51.6
+urvillei	-13.2	44.8	-12.2	46
+				
+occidentalis	-33.7	26.6	-16.5	39.1
+occidentalis	-17.3	37.6	-1.7	41.6
+occidentalis	-1.7	41.5	-0.2	42.8
+occidentalis	-26.3	42.1	-18.4	51.6
+occidentalis	-14.7	46.7	-11.6	50.9
+occidentalis	-18.5	43.7	-14.6	51.6
+occidentalis	-22.5	53.5	-18.8	65
+occidentalis	-14.3	41.7	-7.8	49.2
+occidentalis	-7.2	52	-1.9	58.6
+occidentalis	-1.8	40.9	2	45.4
+				
+inversa	-30	31	-16.5	39.1
+inversa	-17.3	37.6	-1.7	41.6
+inversa	-26.3	42.1	-18.4	51.6
+inversa	-14.7	46.7	-11.6	50.9
+inversa	-18.5	43.7	-14.6	51.6
+inversa	-14.3	41.7	-7.8	49.2
+inversa	-1.8	40.9	2	45.4
+inversa	1.6	44.4	13.4	55.6
+inversa	10	34	24.1	46.2
+inversa	21.4	32.1	28.3	34.5
+inversa	27.6	32.2	30.1	34
+inversa	12.9	44.3	22.6	60.8
+inversa	24.9	55.5	26.4	56.7
+inversa	22.5	56	25	60.8
+inversa	26.7	56	27	56.3
+inversa	26.6	55.7	27	56
+inversa	26.5	55.2	26.75	55.8
+inversa	21.7	32.1	25.8	36.3
+				
+				
+				
+bellator	-4.5	108.6	2.3	118.3
+bellator	0.5	110.3	7.4	119.6
+bellator	5.2	115.2	15	128.6
+bellator	3.9	118.2	7	122.5
+bellator	-6.5	106	-5.6	108.8
+bellator	-7.5	108.3	-6.2	114.4
+				
+borealis	18.1	105.4	24.7	117.3
+borealis	21.8	119	25.7	122.6
+borealis	25	117.7	27.2	122.4
+borealis	23.1	115.3	25.7	120.1
+borealis	30.9	129.3	33.8	132.2
+				
+formosensis	21.7	119.3	23.8	121.7
+formosensis	23.6	120.1	25.4	122.1
+				
+lactea	29.3	130.7	35.2	137.4
+lactea	32.8	125	38.2	130
+lactea	20.1	112.3	32.3	123.1
+lactea	23.7	121.7	34.4	132
+lactea	18	108.3	26.8	117.8
+lactea	14.4	104.3	22.4	109
+				
+dampieri	-22.7	114	-18.9	123
+dampieri	-19.2	121.6	-13.1	131
+dampieri	-13.4	129	-10.7	137.4
+				
+jocelynae	-23.5	153.2	14	171
+jocelynae	4.8	125.1	16.2	147.4
+jocelynae	-9.8	129	4	155
+jocelynae	-6.9	118	-0.2	131.7
+jocelynae	-1.7	120	5.9	129.8
+jocelynae	5.6	120	22.6	129
+jocelynae	21.7	119.3	23.8	121.7
+jocelynae	23.6	120.1	25.4	122.1
+jocelynae	23.6	121.8	27.1	129.3
+jocelynae	-12.6	146	-4.5	163.5
+jocelynae	-1.3	119.3	1.6	121.6
+jocelynae	14.6	119	17.2	121
+				
+vocans	-11.1	94.9	15.1	121.9
+vocans	-6.5	116	20	128
+vocans	23.7	123	29.1	131.4
+vocans	18.1	108.5	20.2	111.2
+				
+sindensis	28.5	47.5	31.6	51.5
+sindensis	26.4	50.9	28.6	56
+sindensis	26.5	55.5	27.5	57.7
+sindensis	24.9	56.7	27.4	67.8
+sindensis	22.2	66.6	25.5	70.7
+				
+rhizophorae	1.2	103.6	2.5	104.3
+rhizophorae	1.2	109.6	3	112
+				
+cryptica	-8.9	119.8	-8	121.3
+cryptica	-6.5	118.6	-2.3	124
+cryptica	8.2	122.5	10.7	124.7
+				
+crassipes	-25.4	157	-8.3	180
+crassipes	-25.4	-180	-8.3	-133.3
+crassipes	-27.4	150	-24	154
+crassipes	-24.2	149	-22	152.2
+crassipes	-22.2	148	-20	150
+crassipes	-19	144.8	-13.6	147
+crassipes	-21	144.8	-18.3	149.6
+crassipes	-33.9	151	-27.3	154
+crassipes	-11.3	143.8	10.7	165
+crassipes	-9.5	129	14.3	146.7
+crassipes	-11.3	109.1	-5.8	128.4
+crassipes	5.6	120.3	19.6	129.2
+crassipes	21.6	120.2	25.5	123.8
+crassipes	23.8	123	28.7	132
+crassipes	-5.4	125.6	4.6	133.7
+crassipes	13.6	119	23.9	127
+				
+demani	5.5	121.6	10.9	127.3
+demani	-6.4	118	4.2	125.8
+demani	-9.1	115.8	-7.4	119.3
+demani	-4.4	114.4	1.1	119.2
+				
+flammula	-22.7	114	-18.9	123
+flammula	-19.2	121.6	-13.1	131
+flammula	-18	129	-10.7	137.4
+flammula	-4.7	133.4	0.3	138.2
+flammula	-9.5	135	-3.3	141
+flammula	-18.2	136.1	-11.2	142.2
+				
+hesperiae	-30	30.9	-9	59.5
+hesperiae	-10	37	9.3	52.6
+hesperiae	9.2	42.2	12.2	51.7
+hesperiae	25.4	55.4	26.4	56.8
+hesperiae	12.4	68.1	23.2	82.4
+hesperiae	5.5	75.1	23	90.5
+hesperiae	7.5	97.6	10	99
+hesperiae	7	99	8	100
+hesperiae	9	96.7	18.1	99
+hesperiae	-1.8	99.8	1	100.8
+				
+mjoebergi	-22.7	114	-18.9	123
+mjoebergi	-19.2	121.6	-13.1	131
+mjoebergi	-18	129	-10.7	133.6
+mjoebergi	-6.4	122.1	-4.3	124.6
+mjoebergi	-5.1	133.7	-3.4	138.5
+mjoebergi	-4.3	125.8	-2.8	127.4
+				
+perplexa	-27.4	150	-24	154
+perplexa	-24.2	149	-22	152.2
+perplexa	-22.2	148	-20	150
+perplexa	-19	144.8	-13.6	147
+perplexa	-21	144.8	-18.3	149.6
+perplexa	-33.9	151	-27.3	154
+perplexa	-25.4	155	-5.6	180
+perplexa	-25.4	-180	-5.6	-166
+perplexa	-12	144	2	156
+perplexa	-9.3	128.4	3.4	147
+perplexa	-11.2	92.5	9	128.2
+perplexa	5.3	115.3	19.5	128.5
+perplexa	21.7	120	25.5	122.3
+perplexa	24	123.6	32.1	132.8
+perplexa	8.8	99	13.6	107.7
+perplexa	2.5	125.4	16.7	163
+				
+splendida	12.3	105.4	24.6	114.4
+splendida	21.7	114.2	26.4	122.2
+				
+triangularis	-19	144.8	-13.6	147
+triangularis	21.7	119.3	23.8	121.7
+triangularis	23.6	120.1	25.4	122.1
+triangularis	20.4	109.3	22.2	110.9
+triangularis	-12.1	130	-10.8	131.6
+triangularis	23.5	122.8	27.2	129
+triangularis	-3.5	108.4	8.1	120.4
+triangularis	-6.1	115.3	3.8	129.1
+triangularis	3.7	114.3	20.2	126.6
+triangularis	-23.8	163.1	-19	168.6
+triangularis	-6.5	122.5	1.5	133.7
+triangularis	-11.1	105	-0.3	128
+				
+tetragonon	-4.7	38.9	12.7	52
+tetragonon	9.9	31.3	30.3	44.7
+tetragonon	-16.5	42	-4.6	52.2
+tetragonon	-21.7	53.6	-18.7	59.2
+tetragonon	-9.5	49.6	2.3	75.9
+tetragonon	6	89.5	14.9	99.1
+tetragonon	-24.3	-180	-12.9	-133.8
+tetragonon	-26	157	-4.9	180
+tetragonon	0.1	127	19.6	167.1
+tetragonon	-6.7	118.4	5.2	133.3
+tetragonon	4.9	119.6	21.9	127.5
+tetragonon	21.8	119.3	23.8	122.7
+tetragonon	23.6	120.3	26.1	122.4
+tetragonon	24	122.9	27.1	128.8
+tetragonon	18.2	108.4	20.2	111.1
+tetragonon	-0.5	100.4	5.5	105.3
+tetragonon	5.3	97.9	9	99.8
+tetragonon	-6.1	105.6	-4.3	107.5
+tetragonon	-27.4	150	-24	154
+tetragonon	-24.2	149	-22	152.2
+tetragonon	-22.2	148	-20	150
+tetragonon	-19	144.8	-13.6	147
+tetragonon	-26	152.4	-24.6	154
+tetragonon	-21	144.8	-18.3	149.6
+tetragonon	-33.9	151	-27.3	154
+tetragonon	-10.9	143.3	2.1	160.2
+tetragonon	-9.4	127.5	1.8	143.1
+tetragonon	-8.6	118.4	-8.1	118.9
+tetragonon	3	100.2	6	102.4
+tetragonon	25.4	55.2	26	56.1
+tetragonon	4.9	98.6	7	100.7
+				
+vomeris	-27.4	150	-24	154
+vomeris	-24.2	149	-22	152.2
+vomeris	-22.2	148	-20	150
+vomeris	-19	144.8	-13.6	147
+vomeris	-26	152.4	-24.6	154
+vomeris	-21	144.8	-18.3	149.6
+vomeris	-33.9	151	-27.3	154
+vomeris	-24	163.1	-19.4	168.6
+				
+typhoni	18.1	108.4	20.2	111.2
+typhoni	13.4	119	19.8	125.3
+				
+rosea	19.6	84.8	22.9	91.3
+rosea	7.4	97.3	13.2	98.9
+rosea	5.8	98.1	9	99.8
+rosea	3.2	100.1	6.5	101.5
+rosea	5	95	6.3	97.9
+rosea	2.4	100.6	5.2	102.9
+rosea	2.2	101.3	3.7	103.2
+rosea	1.7	101.9	2.8	103.3
+rosea	1.3	102.6	2	104
+rosea	5	99.4	7	100.7
+rosea	0.6	108.6	2.2	110.1
+				
+forcipata	2.7	98	10	103.9
+forcipata	9.3	99.1	13.8	102.7
+forcipata	-7.1	107.2	7.6	118
+forcipata	-3.3	102.2	6.4	109
+forcipata	2.2	115.9	15.3	123
+forcipata	0.2	99.8	3.5	103.2
+forcipata	-7.2	115.8	2.8	125.6
+				
+coarctata	-19.2	176.4	-14.4	180
+coarctata	-23.6	163.2	-19.6	168.5
+coarctata	-27.4	150	-24	153.3
+coarctata	-24.2	149	-22	152.2
+coarctata	-22.2	148	-20	150
+coarctata	-19	144.8	-16.8	147
+coarctata	-26	152.4	-24.6	154
+coarctata	-21	144.8	-18.3	149.6
+coarctata	-11.3	107	-6.3	129.1
+coarctata	-6.5	117.3	5.2	134.3
+coarctata	5	119.6	19.7	128.6
+coarctata	21.7	119.2	24.6	122.6
+coarctata	23.9	120.2	25.5	123.2
+coarctata	23.8	123.3	27	129.2
+coarctata	-19.2	-180	-14.4	-179
+coarctata	-9.3	126.2	0.3	135.5
+coarctata	-7.6	104.1	-3.4	111.2
+				
+dussumieri	-10.3	126.3	1.1	153.8
+dussumieri	-27.4	150	-24	153.3
+dussumieri	-24.2	149	-22	152.2
+dussumieri	-22.2	148	-20	150
+dussumieri	-19	144.8	-16.8	147
+dussumieri	-26	152.4	-24.6	154
+dussumieri	-21	144.8	-18.3	149.6
+dussumieri	-12.2	116.9	6.1	129.4
+dussumieri	-10.6	104.9	-4.8	126.8
+dussumieri	-21.2	144.1	-13.7	145.9
+dussumieri	-12.3	146.1	-8.2	154.9
+dussumieri	-5.2	112.4	2.6	121.4
+dussumieri	5.6	114.3	19.6	128.7
+dussumieri	21.8	119.3	24.5	122.6
+dussumieri	24.1	120.6	25.8	122.5
+dussumieri	24	123	27.1	128.8
+dussumieri	-6.3	99.3	-3.2	105.7
+dussumieri	-4.3	96.3	0.6	102.3
+dussumieri	0.5	94.9	3	99.5
+				
+paradussumieri	19.5	104.8	33.4	123.1
+paradussumieri	5.2	101	21	111.7
+paradussumieri	-4.4	108.7	7.7	117.3
+paradussumieri	-1.2	114.3	7.3	119.4
+paradussumieri	5.7	97.2	12	109.9
+paradussumieri	6	97.1	15.9	103.7
+paradussumieri	6	98	8.2	100
+paradussumieri	3	100	6.1	102
+paradussumieri	2.3	101.1	3.2	103.2
+paradussumieri	1.7	102	2.5	103.6
+paradussumieri	1.2	102.9	1.9	103.8
+paradussumieri	6	99.6	6.8	100.7
+paradussumieri	1.3	102.8	5.9	105.1
