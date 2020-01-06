@@ -20,7 +20,7 @@ Lawson1709	1	.	Fiddler; Fidlars	text p. 121, 153, 162	location	Atlantic coast of
 Rumphius1711	1	Cancer Vocans	Cattam Pangel; Roeper; Roepende Krabbe	text p. 2; plate 10: figure E	citation	Rumphius1705	1	=	=	.	This book is predominantly a reproduction of the plates from his 1705 work.
 Ryoan1712	1	.	つまじろ, 望潮蟹	Volume 46, entry in lower right corner of page with crabs	location	Japan	.	>&ldquo;fiddler crabs&rdquo;	Harada1993	.	An illustrated encylopedia from 1713, volume 46 inludes a crab called &ldquo;tumajiro&rdquo; which Harada (1993) has stated might be a fiddler crab (and I can concur). The Chinese name in the entry "望潮蟹" roughly translates to "hope tide crabs" and is still used as a Chinese term for fiddler crabs today.
 Petiver1713	1	Cancer vocans	Cattam Pangel; Roeper; Roepende Krabbe	text p. 2; Plate 9: figure 5	citation	Rumphius1705	1	=	=	.	This is essentially a reproduction of the figures from Rumphius (1705).
-Lawson1714	1	.	Fiddler; Fidlars	text p. 121, 162	location	Atlantic coast of United States	.	?	.	Likely refers to both {{pugilator}} and {{pugnax}}.	 An updated edition of his 1709 book.
+Lawson1714	1	.	Fiddler; Fidlars	text p. 121, 153, 162	location	Atlantic coast of United States	.	?	.	Likely refers to both {{pugilator}} and {{pugnax}}.	 An updated edition of his 1709 book.
 Sloane1725	1.1	Cancer palustris	Maracoani	text p. 269-270: 2	location	Jamaica	.	major	>MSR:synonymy/geography	.	The Latin means &ldquo;marsh crab.&rdquo;
 Sloane1725	1.2	Cancer palustris	Maracoani	text p. 269-270: 2	citation	Marcgrave1648	1	=	=	.	.
 Brickell1737	1	.	Fiddlers	text p. 123-124, 246	location	North Carolina, USA	.	?	.	Likely refers to both {{pugilator}} and {{pugnax}}.	A moderately-plagiarized rewrite of Lawson's books
@@ -570,6 +570,10 @@ White1847.2	1	Gelasimus crassipes	.	text p. 84	citation	White1847.1	15	=	=	.	.
 White1847.2	2	Gelasimus bellator	.	text p. 84	citation	White1847.1	10	=	=	.	.
 White1847.2	3	Gelasimus cultrimanus	.	text p. 84-85	citation	White1847.1	5	=	=	.	.
 White1847.2	4	Gelasimus porcellanus	.	text p. 85	citation	White1847.1	16	=	=	.	.
+White1847.3	1	Gelasimus crassipes	.	text p. 205	citation	White1847.1	15	=	=	.	Essentially a reprint of the earlier 1847 article
+White1847.3	2	Gelasimus bellator	.	text p. 205	citation	White1847.1	10	=	=	.	.
+White1847.3	3	Gelasimus cultrimanus	.	text p. 205-206	citation	White1847.1	5	=	=	.	.
+White1847.3	4	Gelasimus porcellanus	.	text p. 206	citation	White1847.1	16	=	=	.	.
 Adams1848	1	Gelasimus cultrimanus	.	text p. 49	location	Philippines	.	vocans	>MSR:synonymy	.	.
 Adams1848	2	Gelasimus crassipes	.	text p. 49	location	Philippines	.	crassipes	<	type description	.
 Adams1848	3	Gelasimus bellator	.	text p. 49-50	location	Philippines	.	bellator	<	type description	.
@@ -8705,6 +8709,7 @@ Sankarankutty1967	1.2	Uca annulipes	.	text p. 350, 360	location	Kundugal Point, 
 Sankarankutty1967	1.3	Uca annulipes	.	text p. 350, 360	location	Vaigai River, Ramanathapuram District, Tamil Nadu, India	.	annulipes	<	.	.
 Sankarankutty1967	2.1	Uca marinois var. nitidus	.	text p. 350, 360	location	Mandapam, Ramanathapuram District, Tamil Nadu, India	.	hesperiae	>MSR:geography	.	.
 Sankarankutty1967	2.2	Uca marinois var. nitidus	.	text p. 350, 360	location	Manauli Island, Ramanathapuram District, Tamil Nadu, India	.	hesperiae	>MSR:geography	.	.
+Stevenson1967	1	Uca	.	text p. 1809	citation	Summers1967	1	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Alvarez1968	1.1	Uca tangeri	.	text p. 415, 419; figure 138	location	Spain	.	tangeri	<	.	.
 Alvarez1968	1.2	Uca tangeri	.	text p. 415, 419; figure 138	citation	Eydoux1835	1	=	=	.	.
 Alvarez1968	1.3	Uca tangeri	.	text p. 415, 419; figure 138	citation	Heller1863	2	=	=	.	.
@@ -15016,6 +15021,12 @@ Albrecht1981	11.2	Uca mordax	.	text p. 393-394, 396-397	location	L'Ebranche Rive
 Albrecht1981	12	Minuca	.	text p. 396	citation	Bott1954	40	=	=	.	.
 Albrecht1981	13	Uca	.	text p. 396	citation	Bott1954	41	=	=	narrower definition	.
 Albrecht1981	14	Uca umbratila	.	text p. 398	citation	Crane1975	40	=	=	.	.
+Breteler1981	1.1	Uca pugnax	.	text p. 157, 159-160	location	Great Sippewisset Marsh, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	<	.	.
+Breteler1981	1.2	Uca pugnax	.	text p. 157, 159-160	location	Muskeget Island, Nantucket County, Massachusetts, USA	.	pugnax	<	.	.
+Breteler1981	1.3	Uca pugnax	.	text p. 157, 159-160	location	Hackensack Meadowlands, Bergen County, New Jersey, USA	.	pugnax	<	.	.
+Breteler1981	2.1	Uca pugilator	.	text p. 157, 160	location	Great Sippewisset Marsh, Falmouth, Barnstable County, Massachusetts, USA	.	pugilator	<	.	.
+Breteler1981	2.2	Uca pugilator	.	text p. 157, 160	location	Muskeget Island, Nantucket County, Massachusetts, USA	.	pugilator	<	.	.
+Breteler1981	2.3	Uca pugilator	.	text p. 157, 160	location	Hackensack Meadowlands, Bergen County, New Jersey, USA	.	pugilator	<	.	.
 George1982	1.1	Uca elegans	.	text p. 5-6, 8-9, 13, 22-25, 28-30; figure 37	specimen	Western Australia, Australia	.	elegans	<	type description	.
 George1982	1.2	Uca elegans	.	text p. 5-6, 8-9, 13, 22-25, 28-30; figure 37	specimen	Northern Territory, Australia	.	elegans	<	.	.
 George1982	2.1	Uca pavo	.	text p. 5-6, 9, 14, 21, 25-31, 34, 36, 43; figure 38	specimen	Western Australia, Australia	.	capricornis	vonHagen1989	type description	.
@@ -16173,6 +16184,10 @@ Tikader1985	3.1	Uca vocans	.	text p. 103	location	Andaman and Nicobar Islands, I
 Tikader1985	3.3	Uca vocans	.	text p. 103	citation	Das 1985	.	=	=	This book lacks a bibliography so I do not know what reference this refers to.	.
 Bursey1985	1	Uca pugnax	.	text p. 38-40	location	Wallops Island, Accomack County, Virginia, USA	.	pugnax	<	.	.
 Bursey1985	2	Uca sp.	.	text p. 39	location	Wallops Island, Accomack County, Virginia, USA	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Paula1985	1	Uca tangeri	.	text p. 137, 144-146; Figure 4	location	Mira River, Beja, Portugal	.	tangeri	<	.	.
+Paula1985	2	Uca	.	text p. 146	citation	Rice1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Paula1985	3	Uca annulipes	.	text p. 146	n/a	.	.	annulipes	<	.	.
+Paula1985	4	Uca marionis	.	text p. 146	n/a	.	.	vocans	>MSR:synonymy	.	.
 Por1986	1	Uca inversa	.	text p. 78	citation	Por1977	3	=	=	.	.
 Por1986	2	Uca tetragonon	.	text p. 78	citation	Por1977	2	=	=	.	.
 Bishop1986	1	Uca	.	text p. 112	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -16385,6 +16400,23 @@ Price1987	3	Uca lactea albimana	.	text p. 454, 456, 464	location	Southern Red Se
 Price1987	4	Uca tetragonon	.	text p. 454, 456	location	Southern Red Sea coast of Saudi Arabia	.	tetragonon	<	.	.
 Price1987	5	Uca inversa inversa	.	text p. 454, 456, 464	location	Southern Red Sea coast of Saudi Arabia	.	inversa	<	.	.
 Price1987	6	Uca sp.	.	text p. 464	location	Southern Red Sea coast of Saudi Arabia	.	tetragonon	>MSR	Given the rest of the paper, this is probably meant to be {{tetragonon}}.	.
+Drews1987	1.1	Uca tangeri	.	text p. 345-351	citation	Drews1985	.	=	=	.	.
+Drews1987	1.2	Uca tangeri	.	text p. 345-351	citation	Drews1983	.	=	=	.	.
+Drews1987	1.3	Uca tangeri	.	text p. 345-351	location	Guadalquivir, Andalusia, Spain	.	tangeri	<	.	.
+vonHagen1987.2	1.1	Uca tangeri	.	text p. 443-451	citation	Altevogt1959.1	1	=	=	.	.
+vonHagen1987.2	1.2	Uca tangeri	.	text p. 443-451	citation	vonHagen1962.1	1	=	=	.	.
+vonHagen1987.2	1.3	Uca tangeri	.	text p. 443-451	citation	Gunther1963	1	=	=	.	.
+vonHagen1987.2	1.4	Uca tangeri	.	text p. 443-451	citation	Muller1983	.	=	=	.	.
+vonHagen1987.2	1.5	Uca tangeri	.	text p. 443-451	location	Salina San Carlos, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+vonHagen1987.2	1.6	Uca tangeri	.	text p. 443-451	location	Chipiona, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+vonHagen1987.2	2.1	Uca	fiddler crabs	text p. 443-444	citation	Huxley1924.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	2.2	Uca	fiddler crabs	text p. 443-444	citation	Huxley1932	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	2.3	Uca	fiddler crabs	text p. 443-444	citation	vonHagen1970.3	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	2.5	Uca	fiddler crabs	text p. 443-444	citation	Miller1973.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	2.6	Uca	fiddler crabs	text p. 443-444	citation	Teissier1960	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	2.7	Uca	fiddler crabs	text p. 443-444	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+vonHagen1987.2	3	Uca rapax	.	text p. 444	citation	Greenspan1975	1	=	=	.	.
+vonHagen1987.2	4	Uca maracoani	.	text p. 447, 451	n/a	.	.	maracoani	<	.	.
 Rao1988.2	1.1	Uca pugilator	.	text p. 410-413	citation	Fingerman1973.1	1	=	=	.	.
 Rao1988.2	1.2	Uca pugilator	.	text p. 410-413	citation	Rao1973	1	=	=	.	.
 Rao1988.2	1.3	Uca pugilator	.	text p. 410-413	citation	Kulkarni1986.2	.	=	=	.	.
@@ -16920,6 +16952,9 @@ Mandal1989	5.3	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	citation	Mandal1985	0
 Mandal1989	5.4	Uca	fiddler crabs	text p. 64, 66, 81, 92-93	citation	Chakraborty1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Mandal1989	6	Uca acutus	.	text p. 66	location	Sundarbans, South 24 Parganas, West Bengal, India	.	rosea	>MSR:geography	.	.
 Mandal1989	7	Uca acuta acuta	.	text p. 93	citation	Chakraborty1985	.	=	=	.	.
+KrippeitDrews1989	1.1	Uca tangeri	.	text p. 43-48	citation	Drews1987	1	=	=	.	.
+KrippeitDrews1989	1.2	Uca tangeri	.	text p. 43-48	location	Guadalquivir, Andalusia, Spain	.	tangeri	<	.	.
+KrippeitDrews1989	1.3	Uca tangeri	.	text p. 43-48	citation	Drews1985	.	=	=	.	.
 Barnwell1990	1.1	Uca princeps	.	text p. 138A	location	Puntarenas, Costa Rica	.	princeps	<	.	.
 Barnwell1990	1.2	Uca princeps	.	text p. 138A	location	Manzanillo, Colima, Mexico	.	princeps	<	.	.
 Barnwell1990	1.3	Uca princeps	.	text p. 138A	location	La Paz, Baja California Sur, Mexico	.	princeps	<	.	.
@@ -17289,6 +17324,29 @@ Krishnan1992.3	9	Uca rapax	.	text p. 277	citation	Vernberg1966.1	1	=	=	.	.
 Krishnan1992.3	10	Uca lactea	.	text p. 277	citation	Yamaguchi1977	1	=	=	.	.
 Krishnan1992.3	11	Uca marionis	.	text p. 277	citation	Yamaguchi1973.2	1	=	=	.	.
 Mangum1992	1	Uca pugilator	.	text p. 467	citation	Graszynski1979	.	=	=	.	.
+Medina1992.3	1	Uca tangeri	.	text p. 161-165	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+Medina1992.1	1.1	Uca tangeri	.	text p. 610-613	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+Medina1992.1	1.2	Uca tangeri	.	text p. 610-613	citation	Medina1992.3	1	=	=	.	.
+Medina1992.2	1.1	Uca tangeri	.	text p. 195-200	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+Medina1992.2	1.2	Uca tangeri	.	text p. 195-200	citation	Medina1992.3	1	=	=	.	.
+Wolfrath1992.1	1.1	Uca	.	text p. 237, 240	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	1.2	Uca	.	text p. 237, 240	citation	Powers1976	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	1.3	Uca	.	text p. 237, 240	citation	Ringold1979.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	1.4	Uca	.	text p. 237, 240	citation	Robertson1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	1.5	Uca	.	text p. 237, 240	citation	Bertness1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	1.6	Uca	.	text p. 237, 240	citation	Bertness1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.1	2.1	Uca tangeri	.	text p. 237-242	citation	Altevogt1957.1	0	tangeri	<	Author cites the wrong publication	.
+Wolfrath1992.1	2.2	Uca tangeri	.	text p. 237-242	citation	vonHagen1962.1	1	=	=	.	.
+Wolfrath1992.1	2.3	Uca tangeri	.	text p. 237-242	location	Ria Formosa, Faro, Portugal	.	tangeri	<	.	.
+Wolfrath1992.1	3	Uca pugnax	.	text p. 241	citation	Montague1982	.	=	=	.	.
+Wolfrath1992.2	1.1	Uca tangeri	.	text p. 39-43	citation	Altevogt1959.2	.	=	=	.	.
+Wolfrath1992.2	1.2	Uca tangeri	.	text p. 39-43	location	Ria Formosa, Faro, Portugal	.	tangeri	<	.	.
+Wolfrath1992.2	1.3	Uca tangeri	.	text p. 39-43	citation	Wolfrath1992.1	2	=	=	.	.
+Wolfrath1992.2	2.1	Uca	.	text p. 39, 42	citation	Altevogt1957.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.2	2.2	Uca	.	text p. 39, 42	citation	Miller1961	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.2	2.3	Uca	.	text p. 39, 42	citation	Valiela1974	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.2	2.4	Uca	.	text p. 39, 42	citation	Robertson1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1992.2	2.5	Uca	.	text p. 39, 42	citation	Robertson1982.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Yamaguchi1993.1	1	Uca arcuata	.	text p. 85; figure 15	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.1	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.2	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	Parisi1918	3	=	=	.	.
@@ -17465,6 +17523,30 @@ Ho1993	12.2	Uca trianqularis	.	text p. 20	location	Houwan, Pingtung, Taiwan	.	tr
 Singh1993	1	Gelasimus annulipes	.	text p. 63	citation	Vishnoi1972	1	=	=	.	.
 Nagabhushanam1993	1	Uca sp.	fiddler crabs	text p. 455	location	East coast of India	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Nagabhushanam1993	2	Uca (Celuca) lactea annulipes	.	text p. 476	location	East coast of India	.	annulipes	<	.	.
+Ens1993	1.1	Uca tangeri	.	text p. 477-493	citation	Crane1975	42	=	=	.	.
+Ens1993	1.2	Uca tangeri	.	text p. 477-493	citation	Altevogt1959.1	1	=	=	.	.
+Ens1993	1.3	Uca tangeri	.	text p. 477-493	citation	vonHagen1962.1	1	=	=	.	.
+Ens1993	1.4	Uca tangeri	.	text p. 477-493	citation	Gunther1963	1	=	=	.	.
+Ens1993	1.5	Uca tangeri	.	text p. 477-493	citation	Zwarts1985	2	=	=	.	.
+Ens1993	1.6	Uca tangeri	.	text p. 477-493	citation	Wolfrath1992.2	1	=	=	.	.
+Ens1993	1.7	Uca tangeri	.	text p. 477-493	citation	Hootsmans1993	1	=	=	.	.
+Ens1993	1.8	Uca tangeri	.	text p. 477-493	location	Iouik, Banc d'Arguin, Mauritania	.	tangeri	<	.	.
+Ens1993	1.9	Uca tangeri	.	text p. 477-493	citation	Zwarts1990.1	1	=	=	.	.
+Ens1993	1.10	Uca tangeri	.	text p. 477-493	citation	Wolfrath1993	.	=	=	.	.
+Ens1993	2.01	Uca	.	text p. 478, 480, 493	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.02	Uca	.	text p. 478, 480, 493	citation	Salmon1983.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.03	Uca	.	text p. 478, 480, 493	citation	Zwarts1990.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.04	Uca	.	text p. 478, 480, 493	citation	Christy1978	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.05	Uca	.	text p. 478, 480, 493	citation	Greenspan1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.06	Uca	.	text p. 478, 480, 493	citation	Salmon1987.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.07	Uca	.	text p. 478, 480, 493	citation	Christy1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.08	Uca	.	text p. 478, 480, 493	citation	Wolfrath1992.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.09	Uca	.	text p. 478, 480, 493	citation	Weissburg1993.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.1	Uca	.	text p. 478, 480, 493	citation	Zwarts1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	2.11	Uca	.	text p. 478, 480, 493	citation	Colby1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ens1993	3	Uca pugilator	.	text p. 480, 492	citation	Crane1975	73	=	=	.	.
+Ens1993	4	Uca vocans	.	text p. 491	citation	Murai1982	.	=	=	.	.
+Ens1993	5	Uca vocans vocans	.	text p. 492	citation	Murai1982	.	=	=	.	.
 Thurman1994	1	Uca	.	text p. 31A	location	Southern Texas, USA	.	>&ldquo;fiddler crabs&rdquo;	<	Mentions there were 5 species studied, but only specifies 3	.
 Thurman1994	2	Uca subcylindrica	.	text p. 31A	location	Southern Texas, USA	.	subcylindrica	<	.	.
 Thurman1994	3	Uca panacea	.	text p. 31A	location	Southern Texas, USA	.	panacea	<	.	.
@@ -17483,8 +17565,8 @@ Weissburg1994.1	1	Uca pugnax	.	text p. 572	location	Georgia, USA	.	pugnax	<	.	.
 Weissburg1994.1	2	Uca pugilator	.	text p. 572	location	Georgia, USA	.	pugilator	<	.	.
 Mourente1994	1.1	Uca tangeri	.	text p. 187-196	citation	vonHagen1962.2	1	=	=	.	.
 Mourente1994	1.2	Uca tangeri	.	text p. 187-196	citation	Muller1983	.	=	=	.	.
-Mourente1994	1.3	Uca tangeri	.	text p. 187-196	citation	vonHagen1987.2	.	=	=	.	.
-Mourente1994	1.4	Uca tangeri	.	text p. 187-196	citation	Wolfrath1992.1	.	=	=	.	.
+Mourente1994	1.3	Uca tangeri	.	text p. 187-196	citation	vonHagen1987.2	1	=	=	.	.
+Mourente1994	1.4	Uca tangeri	.	text p. 187-196	citation	Wolfrath1992.1	2	=	=	.	.
 Mourente1994	1.5	Uca tangeri	.	text p. 187-196	citation	Rodriguez1993.1	.	=	=	.	.
 Mourente1994	1.6	Uca tangeri	.	text p. 187-196	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
 Mourente1994	2.1	Uca	fiddler crabs	text p. 188	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -17570,6 +17652,25 @@ Balasubrahmanyan1994	1	Uca (Celuca) lactea annulipes	.	text p. 258-259	location	
 Thibault1994	1.1	Uca cumulanta	.	text p. 299, 308	citation	Morrier1991	1	=	=	.	.
 Thibault1994	1.2	Uca cumulanta	.	text p. 299, 308	location	Chacopata Lagoon Complex, Araya Peninsula, Sucre, Venezuela	.	cumulanta	<	.	.
 Thibault1994	2	.	fiddler crabs	text p. 308	citation	DiazD1993	0	>&ldquo;fiddler crabs&rdquo;	=	.	.
+ElSerehy1994	1.1	Uca	fiddler crabs	text p. 461-463, 472	citation	Macintosh1977	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	1.2	Uca	fiddler crabs	text p. 461-463, 472	citation	Icely1978	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	1.3	Uca	fiddler crabs	text p. 461-463, 472	citation	Thurman1984.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	1.4	Uca	fiddler crabs	text p. 461-463, 472	citation	Thurman1987.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	1.5	Uca	fiddler crabs	text p. 461-463, 472	citation	Por1977	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	1.6	Uca	fiddler crabs	text p. 461-463, 472	citation	Colby1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElSerehy1994	2	Uca pugnax	.	text p. 462	citation	Katz1980	.	=	=	.	.
+ElSerehy1994	3	Uca pugilator	.	text p. 462	citation	Colby1984	.	=	=	.	.
+ElSerehy1994	4.1	Uca inversa	.	text p. 465, 468-473, 482-483, 485, 487, 491	location	Al-Rewaissia, South Sinai Governorate, Egypt	.	inversa	<	.	.
+ElSerehy1994	4.2	Uca inversa	.	text p. 465, 468-473, 482-483, 485, 487, 491	location	El-Monqatea, South Sinai Governorate, Egypt	.	inversa	<	.	.
+ElSerehy1994	4.3	Uca inversa	.	text p. 465, 468-473, 482-483, 485, 487, 491	citation	Macnae1968	3	=	=	.	.
+ElSerehy1994	5	Uca tetragonon	.	text p. 465, 468-469, 471-473, 482, 485, 489, 493	location	Al-Rewaissia, South Sinai Governorate, Egypt	.	tetragonon	<	.	.
+ElSerehy1994	6	Uca minax	.	text p. 473	citation	Kerwin1971	1	=	=	.	.
+ElSerehy1994	7.1	Uca dussumieri	.	text p. 473-474	citation	Macintosh1984	.	=	=	.	.
+ElSerehy1994	7.2	Uca dussumieri	.	text p. 473-474	citation	Sasekumar1974	2	=	=	.	.
+ElSerehy1994	8	Uca marionis	.	text p. 473	citation	Vohra1971	1	=	=	.	.
+ElSerehy1994	9	Uca thayeri	.	text p. 473	citation	Warner1969	2	=	=	.	.
+ElSerehy1994	10	Uca rapax	.	text p. 473	citation	Warner1969	1	=	=	.	.
+ElSerehy1994	11	Uca vocans	.	text p. 473	citation	Day1956	3	=	=	.	.
 Reinsel1995.1	1	Uca pugilator	.	text p. 139A	location	Beaufort, Carteret County, North Carolina, USA	.	pugilator	<	.	.
 Chung1995	1	Uca pugilator	.	text p. 92A	n/a	.	.	pugilator	<	.	.
 Duval1995	1	Uca pugilator	.	text p. 110A	location	Beaufort, Carteret County, North Carolina, USA	.	pugilator	<	.	.
@@ -17953,6 +18054,8 @@ Rebach1996	1.3	Uca pugilator	.	text p. 280-281	citation	Hester1985	.	=	=	.	.
 Hockey1996	1.1	Uca tangeri	.	text p. 162-164	citation	Altenburg1982	.	=	=	.	.
 Hockey1996	1.2	Uca tangeri	.	text p. 162-164	citation	Zwarts1985	2	=	=	.	.
 Hockey1996	2	Uca spp.	.	text p. 163	location	Sabaki, Malindi, Kilifi County, Kenya	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Durica1996	1.1	Uca pugilator	.	text p. 237-240	citation	Hopkins1992	.	=	=	.	.
+Durica1996	1.2	Uca pugilator	.	text p. 237-240	n/a	.	.	?	>MSR	Never specifies where the sample came from, although it was almost certainly the Gulf Specimen Supply Company of Panacea, Florida.	.
 Balbort1997	1	Uca longisignalis	.	text p. 186A	location	Southern Texas, USA	.	longisignalis	<	.	.
 Balbort1997	2	Uca panacea	.	text p. 186A	location	Southern Texas, USA	.	panacea	<	.	.
 Balbort1997	3	Uca rapax	.	text p. 186A	location	Southern Texas, USA	.	virens	>MSR:geography	.	.
@@ -18256,6 +18359,21 @@ Shanks1998	1.7	Uca spp.	.	text p. 57-58, 62-65, 67	citation	Mense1995	0	>&ldquo;
 Shanks1998	1.8	Uca spp.	.	text p. 57-58, 62-65, 67	citation	Wrona1995	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Shanks1998	1.9	Uca spp.	.	text p. 57-58, 62-65, 67	citation	Jones1995	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Friel1998	1	Uca sp.	fiddler crabs	text p. 161	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Chung1998.1	1.1	Uca pugilator	.	text p. 209-224	citation	Hopkins1988.2	.	=	=	.	.
+Chung1998.1	1.2	Uca pugilator	.	text p. 209-224	citation	Durica1996	1	=	=	.	.
+Chung1998.1	1.3	Uca pugilator	.	text p. 209-224	citation	Hopkins1995	.	=	=	.	.
+Chung1998.1	1.4	Uca pugilator	.	text p. 209-224	location	Gulf Specimen Supply Company, Panacea, Wakulla County, Florida, USA	.	?	>MSR	Specimens obtained from this source are not distinguished correctly between closely related species; Could be either {{pugilator}}, {{panacea}}, or a mix of both.	.
+Chung1998.2	1.1	Uca pugilator	.	text p. 375-387	citation	Chung1994	1	=	=	.	.
+Chung1998.2	1.2	Uca pugilator	.	text p. 375-387	citation	Durica1996	1	=	=	.	.
+Chung1998.2	1.3	Uca pugilator	.	text p. 375-387	citation	Hopkins1982.1	.	=	=	.	.
+Chung1998.2	1.4	Uca pugilator	.	text p. 375-387	citation	Hopkins1988.2	.	=	=	.	.
+Chung1998.2	1.5	Uca pugilator	.	text p. 375-387	citation	Hopkins1983.1	.	=	=	.	.
+Chung1998.2	1.6	Uca pugilator	.	text p. 375-387	citation	Hopkins1986.1	.	=	=	.	.
+Chung1998.2	1.7	Uca pugilator	.	text p. 375-387	citation	Hopkins1989.1	.	=	=	.	.
+Chung1998.2	1.8	Uca pugilator	.	text p. 375-387	citation	Hopkins1992	.	=	=	.	.
+Chung1998.2	1.9	Uca pugilator	.	text p. 375-387	location	Gulf Specimen Supply Company, Panacea, Wakulla County, Florida, USA	.	?	>MSR	Specimens obtained from this source are not distinguished correctly between closely related species; Could be either {{pugilator}}, {{panacea}}, or a mix of both.	.
+Chung1998.2	1.10	Uca pugilator	.	text p. 375-387	citation	Hopkins1988	.	=	=	.	.
+Chung1998.2	2	Uca pugnax	.	text p. 385	citation	Ismail1992	.	=	=	.	.
 Croll1999	1	Uca sp.	.	text p. 113A	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Zou1999.6	1	Uca pugilator	.	text p. 137A	n/a	.	.	pugilator	<	.	.
 Wu1999	1	Uca pugilator	.	text p. 27A	n/a	.	.	pugilator	<	.	.
@@ -18264,7 +18382,7 @@ Merz1999	1	Uca pugnax	.	text p. 40A	n/a	.	.	pugnax	<	.	.
 Grubich1999	1	.	fiddler crabs	text p. 100A	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Zimmer1999	1	Uca pugilator	.	text p. 1432-1433, 1435-1436, 1438-1443	location	Oyster Landing, North Inlet, Georgetown County, South Carolina, USA	.	pugilator	<	.	.
 Morrisey1999	1	Uca pugnax	.	text p. 232	citation	Bertness1984	.	=	=	.	.
-Morrisey1999	2	Uca tangeri	.	text p. 232	citation	Wolfrath1992.1	.	=	=	.	.
+Morrisey1999	2	Uca tangeri	.	text p. 232	citation	Wolfrath1992.1	2	=	=	.	.
 Morrisey1999	3	Uca rapax	.	text p. 239	citation	Genoni1991	.	=	=	.	.
 Morrisey1999	4	Uca spp.	.	text p. 241	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Iribarne1999	1.1	Uca uruguayensis	.	text p. 47-53	location	Bahía Samborombón, Buenos Aires Province, Argentina	.	uruguayensis	<	.	.
@@ -18970,7 +19088,7 @@ Aizawa2000	1.1	Uca lactea lactea	.	text p. 947-948	citation	Crane1975	95	=	=	.	.
 Aizawa2000	1.2	Uca lactea lactea	.	text p. 947-948	location	Chikusa River Estuary, Hyogo, Honshu, Japan	.	lactea	<	.	.
 Aizawa2000	2	Uca annulipes	.	text p. 948	citation	Backwell1998.1	1	=	=	.	.
 Lourenco2000	1.1	Uca tangeri	.	text p. 437-439	citation	Nobre1931.1	1	=	=	.	.
-Lourenco2000	1.2	Uca tangeri	.	text p. 437-439	citation	Wolfrath1992.1	.	=	=	.	.
+Lourenco2000	1.2	Uca tangeri	.	text p. 437-439	citation	Wolfrath1992.1	2	=	=	.	.
 Lourenco2000	1.3	Uca tangeri	.	text p. 437-439	location	Ria Formosa, Faro, Portugal	.	tangeri	<	.	.
 Lourenco2000	2.1	Uca	.	text p. 437	citation	Christy1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Lourenco2000	2.2	Uca	.	text p. 437	citation	Altevogt1959.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -19739,6 +19857,27 @@ Macia2001	2.3	Uca	fiddler crabs	text p. 213, 217	citation	Frith1977.2	0	>&ldquo;
 Macia2001	3	Uca inversa	.	text p. 217	location	Saco, Inhaca Island, Mozambique	.	inversa	<	.	.
 Macia2001	4	Uca thayeri	.	text p. 218	citation	Salmon1987.1	.	=	=	.	.
 DahdouhGuebas2001	1	Uca tangeri	.	text p. 244, 248-249, 251	location	Banc d'Arguin, Mauritania	.	tangeri	<	.	.
+Clark2001	1	Gelasimus bellatrix	.	text p. 157	citation	White1847.1	20	=	=	.	.
+Clark2001	2.1	Gelasimus bellator	.	text p. 157	citation	White1847.1	10	=	=	.	.
+Clark2001	2.2	Gelasimus bellator	.	text p. 157	citation	White1847.2	2	=	=	.	.
+Clark2001	2.3	Gelasimus bellator	.	text p. 157	citation	White1847.3	2	=	=	.	.
+Clark2001	2.4	Gelasimus bellator	.	text p. 157	citation	Adams1848	3	=	=	.	.
+Clark2001	3.1	Gelasimus crassipes	.	text p. 157	citation	White1847.1	15	=	=	.	.
+Clark2001	3.2	Gelasimus crassipes	.	text p. 157	citation	White1847.2	1	=	=	.	.
+Clark2001	3.3	Gelasimus crassipes	.	text p. 157	citation	White1847.3	1	=	=	.	.
+Clark2001	3.4	Gelasimus crassipes	.	text p. 157	citation	Adams1848	2	=	=	.	.
+Clark2001	4.1	Gelasimus cultrimanus	.	text p. 157	citation	White1847.1	5	=	=	.	.
+Clark2001	4.2	Gelasimus cultrimanus	.	text p. 157	citation	White1847.2	3	=	=	.	.
+Clark2001	4.3	Gelasimus cultrimanus	.	text p. 157	citation	White1847.3	3	=	=	.	.
+Clark2001	4.4	Gelasimus cultrimanus	.	text p. 157	citation	Adams1848	1	=	=	.	.
+Clark2001	5.1	Gelasimus porcellanus	.	text p. 157	citation	White1847.1	16	=	=	.	.
+Clark2001	5.2	Gelasimus porcellanus	.	text p. 157	citation	White1847.2	4	=	=	.	.
+Clark2001	5.3	Gelasimus porcellanus	.	text p. 157	citation	White1847.3	4	=	=	.	.
+Clark2001	5.4	Gelasimus porcellanus	.	text p. 157	citation	Adams1848	4	=	=	.	.
+Clark2001	6.1	Gelasimus forcipatus	.	text p. 157	citation	White1847.1	8	=	=	.	.
+Clark2001	6.2	Gelasimus forcipatus	.	text p. 157	citation	Adams1848	5	=	=	.	.
+Clark2001	7	Gelasimus robustus	.	text p. 157	citation	White1847.1	17	=	=	.	.
+Clark2001	8	Gelasimus tenuimanus	.	text p. 157	citation	White1847.1	4	=	=	.	.
 Curran2002	1	.	fiddler crabs	text p. 62	location	The Bahamas	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Koretsky2002.2	1	.	fiddler crabs	text p. 58	location	Sapelo Island, McIntosh County, Georgia, USA	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Allen2002	1	Uca	fiddler crabs	text p. 1184	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -20480,7 +20619,7 @@ Ghory2006	1.1	Uca urvillei	.	text p. 161-166; figure 1	citation	Hashmi1970	.	=	=
 Ghory2006	1.2	Uca urvillei	.	text p. 161-166; figure 1	specimen	Sandspit, Karachi, Sindh, Pakistan	.	alcocki	>MSR:geography	.	.
 Ghory2006	2.1	Uca annulipes	.	text p. 161-166; figure 2	citation	Hashmi1970	.	=	=	.	.
 Ghory2006	2.2	Uca annulipes	.	text p. 161-166; figure 2	specimen	Sandspit, Karachi, Sindh, Pakistan	.	annulipes	Naderloo2010	.	.
-Ghory2006	3.1	Uca tangeri	.	text p. 161, 164, 166	citation	Paula1985	.	=	=	.	.
+Ghory2006	3.1	Uca tangeri	.	text p. 161, 164, 166	citation	Paula1985	1	=	=	.	.
 Ghory2006	3.2	Uca tangeri	.	text p. 161, 164, 166	citation	Litulo2004.3	.	=	=	.	.
 Ohno2006	1.1	Uca arcuata	.	text p. 21-25	location	Japan	.	arcuata	<	.	.
 Ohno2006	1.2	Uca arcuata	.	text p. 21-25	citation	Ono1965	2	=	=	.	.
@@ -20707,6 +20846,22 @@ Rupp2006	3	Minuca	.	text p. 72	n/a	.	.	#genus#Minuca	<	.	.
 Rupp2006	4	Uca pugilator	.	text p. 72, 74	n/a	.	.	pugilator	<	.	.
 Rupp2006	5	Uca rapax	.	text p. 72, 74	n/a	.	.	rapax	<	.	.
 Rupp2006	6	Uca subcylindrica	.	text p. 74	n/a	.	.	subcylindrica	<	.	.
+Pratiwi2006	1.1	Uca annulipes	.	text p. 132	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	annulipes	<	Assuming ID is correct	.
+Pratiwi2006	1.2	Uca annulipes	.	text p. 132	location	Beji, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	annulipes	<	Assuming ID is correct	.
+Pratiwi2006	2.1	Uca arcuata	.	text p. 132	location	Kaeli, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Pratiwi2006	2.2	Uca arcuata	.	text p. 132	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Pratiwi2006	3.1	Uca bellator minima	.	text p. 132	location	Kaeli, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Pratiwi2006	3.2	Uca bellator minima	.	text p. 132	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Pratiwi2006	4.1	Uca coarctata	.	text p. 132-133	location	Ilu, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	coarctata	<	Assuming ID is correct	.
+Pratiwi2006	4.2	Uca coarctata	.	text p. 132-133	location	Kaeli, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	coarctata	<	Assuming ID is correct	.
+Pratiwi2006	4.3	Uca coarctata	.	text p. 132-133	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	coarctata	<	Assuming ID is correct	.
+Pratiwi2006	4.4	Uca coarctata	.	text p. 132-133	location	Beji, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	coarctata	<	Assuming ID is correct	.
+Pratiwi2006	5.1	Uca dussumieri	.	text p. 132-133	location	Ilu, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	dussumieri	<	Assuming ID is correct	.
+Pratiwi2006	5.2	Uca dussumieri	.	text p. 132-133	location	Kaeli, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	dussumieri	<	Assuming ID is correct	.
+Pratiwi2006	5.3	Uca dussumieri	.	text p. 132-133	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	dussumieri	<	Assuming ID is correct	.
+Pratiwi2006	5.4	Uca dussumieri	.	text p. 132-133	location	Beji, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	dussumieri	<	Assuming ID is correct	.
+Pratiwi2006	6	Uca flammula	.	text p. 132	location	Bayor, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Pratiwi2006	7	Uca spp.	.	text p. 134-135	location	Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Alves2007.1	1	Uca	.	text p. 951	location	Brazil	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Alves2007.2	1.1	Uca maracoani	.	text p. 86	location	Maranhão, Brazil	.	maracoani	<	.	.
 Alves2007.2	1.2	Uca maracoani	.	text p. 86	location	Piauí , Brazil	.	maracoani	<	.	.
@@ -21446,7 +21601,7 @@ Torres2008	6.5	Uca vocans	.	text p. 307-311	citation	Dye1986	.	=	=	.	.
 Torres2008	7	Uca tetragonon	.	text p. 308	location	Indian coast of Africa	.	tetragonon	<	.	.
 Stienen2008	1.1	Uca tangeri	.	text p. 243-250	citation	Altenburg1982	.	=	=	.	.
 Stienen2008	1.2	Uca tangeri	.	text p. 243-250	citation	Altenburg1992	.	=	=	.	.
-Stienen2008	1.3	Uca tangeri	.	text p. 243-250	citation	Ens1993	.	=	=	.	.
+Stienen2008	1.3	Uca tangeri	.	text p. 243-250	citation	Ens1993	1	=	=	.	.
 Stienen2008	1.4	Uca tangeri	.	text p. 243-250	citation	Zwarts1990.2	1	=	=	.	.
 Stienen2008	1.5	Uca tangeri	.	text p. 243-250	location	Bijagós Archipelago, Guinea-Bissau	.	tangeri	<	.	.
 Stienen2008	1.6	Uca tangeri	.	text p. 243-250	citation	Zwarts1985	2	=	=	.	.
@@ -22621,6 +22776,14 @@ Diele2010.2	4.1	Uca rapax	.	text p. 276-281	location	Caeté River, Pará, Brazil
 Diele2010.2	4.2	Uca rapax	.	text p. 276-281	citation	Koch2005	.	=	=	.	.
 Diele2010.2	5.1	Uca vocator	.	text p. 276-279, 281	location	Caeté River, Pará, Brazil	.	vocator	<	.	.
 Diele2010.2	5.2	Uca vocator	.	text p. 276-279, 281	citation	Koch2005	.	=	=	.	.
+Tavora2010	1.1	Uca maracoani	.	text p. 213	citation	Tavora2001	.	=	=	.	.
+Tavora2010	1.2	Uca maracoani	.	text p. 213	citation	Brito1972	1	=	=	.	.
+Pratiwi2010	1.1	Uca spp.	.	text p. 86-89	location	Lampung Bay, Lampung, Sumatra, Indonesia	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2010	1.2	Uca spp.	.	text p. 86-89	citation	Pratiwi2006.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2010	1.3	Uca spp.	.	text p. 86-89	citation	Smith2003.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2010	1.4	Uca spp.	.	text p. 86-89	citation	Smith1973	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2010	2	Uca (celuca) lactea annulipes	.	text p. 86, 92	location	Muntun, Lampung, Sumatra, Indonesia	.	annulipes	<	.	.
+Pratiwi2010	3	Uca (Amphiuca) chornpthalmus crassipes	.	text p. 94	location	Suamalu, Lampung, Sumatra, Indonesia	.	crassipes	<	.	.
 Imamura2011	1	Uca tetragonon	.	text p. 45	citation	Koga1995	3	=	=	.	.
 Bywater2011	1	Uca vomeris	.	text p. e19	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
 Das2011	1	Uca pugilator	.	text p. e181	n/a	.	.	pugilator	<	.	.
@@ -23517,9 +23680,9 @@ Benetti2013	2.1	Uca dussumieri	.	text p. 67	citation	Jamieson1991	.	=	=	.	.
 Benetti2013	2.2	Uca dussumieri	.	text p. 67	citation	Jamieson1994	.	=	=	.	.
 Benetti2013	3	Uca polita	.	text p. 67	citation	Jamieson2000	.	=	=	.	.
 Benetti2013	4	Uca pugilator	.	text p. 67	citation	Jamieson2000	.	=	=	.	.
-Benetti2013	5.1	Uca tangeri	.	text p. 67	citation	Medina1992.1	.	=	=	.	.
-Benetti2013	5.2	Uca tangeri	.	text p. 67	citation	Medina1992.2	.	=	=	.	.
-Benetti2013	5.3	Uca tangeri	.	text p. 67	citation	Medina1992.3	.	=	=	.	.
+Benetti2013	5.1	Uca tangeri	.	text p. 67	citation	Medina1992.1	1	=	=	.	.
+Benetti2013	5.2	Uca tangeri	.	text p. 67	citation	Medina1992.2	1	=	=	.	.
+Benetti2013	5.3	Uca tangeri	.	text p. 67	citation	Medina1992.3	1	=	=	.	.
 Benetti2013	5.4	Uca tangeri	.	text p. 67	citation	Lautenschlager2010	.	=	=	.	.
 Benetti2013	6	Uca uruguayensis	.	text p. 67	citation	Cuartas2007.2	.	=	=	.	.
 Benetti2013	7	Uca maracoani	.	text p. 67	citation	Benetti2008	.	=	=	.	.
@@ -23655,14 +23818,14 @@ Rao2013	1.4	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, Indi
 Rao2013	1.5	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6391]	.	annulipes	>MSR:geography	.	.
 Rao2013	1.6	Uca lactea	.	text p. 46	specimen	River Nua Nai Estuary, Odisha, India [CR-6539]	.	annulipes	>MSR:geography	.	.
 Rao2013	2	Uca lacteal	.	text p. 48	location	River Nua Nai Estuary, Odisha, India	.	annulipes	>MSR:geography	typo	.
-Techa2013	1.1	Uca pugilator	.	text p. 139, 147-151	citation	Chung1998.1	.	=	=	.	.
-Techa2013	1.2	Uca pugilator	.	text p. 139, 147-151	citation	Chung1998.2	.	=	=	.	.
+Techa2013	1.1	Uca pugilator	.	text p. 139, 147-151	citation	Chung1998.1	1	=	=	.	.
+Techa2013	1.2	Uca pugilator	.	text p. 139, 147-151	citation	Chung1998.2	1	=	=	.	.
 Techa2013	1.3	Uca pugilator	.	text p. 139, 147-151	citation	Kim2005.1	.	=	=	.	.
 Techa2013	1.4	Uca pugilator	.	text p. 139, 147-151	citation	Kim2005.3	.	=	=	.	.
 Techa2013	1.5	Uca pugilator	.	text p. 139, 147-151	citation	Durica2002	.	=	=	The citation is to Genbank sequence AAC32789, which is associated with Durica <em>et al.</em> (2002).	.
 Techa2013	1.6	Uca pugilator	.	text p. 139, 147-151	citation	Wu2004.2	.	=	=	.	.
 Techa2013	2.1	Celuca pugilator	.	text p. 140, 143-145, 147, 150	citation	Durica2002	.	=	=	The citation is to Genbank sequence AAC32789, which is associated with Durica <em>et al.</em> (2002).	.
-Techa2013	2.2	Celuca pugilator	.	text p. 140, 143-145, 147, 150	citation	Chung1998.1	.	=	=	The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).	.
+Techa2013	2.2	Celuca pugilator	.	text p. 140, 143-145, 147, 150	citation	Chung1998.1	1.4	=	=	The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).	.
 Hotard2013.1	1.1	Uca pugilator	.	text p. 2345-2347	citation	Zou1999.4	.	=	=	.	.
 Hotard2013.1	1.2	Uca pugilator	.	text p. 2345-2347	citation	Toups2009	.	=	=	.	.
 Hotard2013.1	1.3	Uca pugilator	.	text p. 2345-2347	location	Gulf Specimen Supply Company, Panacea, Wakulla County, Florida, USA	.	?	>MSR	Specimens obtained from this source are not distinguished correctly between closely related species; Could be either {{pugilator}}, {{panacea}}, or a mix of both.	.
@@ -23801,6 +23964,7 @@ Moscoso2013	21.1	Uca (Minuca) ecuadoriensis	.	text p. 120; Figure 285	citation	C
 Moscoso2013	21.2	Uca (Minuca) ecuadoriensis	.	text p. 120; Figure 285	location	Peru	.	ecuadoriensis	<	.	.
 Moscoso2013	22.1	Uca (Minuca) galapagensis	.	text p. 120; Figure 286	citation	Rathbun1918.2	16	=	=	.	.
 Moscoso2013	22.2	Uca (Minuca) galapagensis	.	text p. 120; Figure 286	location	Peru	.	galapagensis	<	.	.
+Pratiwi2013	1	Uca spp.	.	text p. 63-64, 69-70	citation	Smith1973	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Brody2014	1	.	Fiddler Crab	text p. 577; photo	n/a	.	.	crassipes	>MSR	.	Fiddler crabs are used in this letter as a metaphor. The unlabeled accompanying photo is likely {{crassipes}}.
 Yang2014	1	Uca pugilator	.	text p. 3885, 3890, 3892; figures 2-3	citation	Tsu1996	1.1	=	=	The citation is to Genbank sequence AAC47030.1, which is associated with Tsu &amp; Craik (1996).	.
 Grunbaum2014	1	Uca pugilator	Atlantic Sand Fiddler	text p. 42-43, 247	location	Atlantic coast of United States	.	pugilator	<	.	.
@@ -23899,11 +24063,11 @@ PerezMozqueda2014	16.1	Uca thayeri	.	text p. 969	citation	Barnwell1984.1	.	=	=	.
 PerezMozqueda2014	16.2	Uca thayeri	.	text p. 969	citation	Felder2009	.	=	=	.	.
 PerezMozqueda2014	17.1	Uca subcylindrica	.	text p. 969-970	citation	Barnwell1984.1	.	=	=	.	.
 PerezMozqueda2014	17.2	Uca subcylindrica	.	text p. 969-970	citation	Felder2009	.	=	=	.	.
-GonzalezOrtiz2014	1.1	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.1	.	=	=	.	.
+GonzalezOrtiz2014	1.1	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.1	2	=	=	.	.
 GonzalezOrtiz2014	1.2	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1993	.	=	=	.	.
 GonzalezOrtiz2014	1.3	Uca tangeri	.	text p. 20-23, 25	citation	Cummings2008	.	=	=	.	.
 GonzalezOrtiz2014	1.4	Uca tangeri	.	text p. 20-23, 25	citation	diVirgilio2013	.	=	=	.	.
-GonzalezOrtiz2014	1.5	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.2	.	=	=	.	.
+GonzalezOrtiz2014	1.5	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.2	1	=	=	.	.
 GonzalezOrtiz2014	1.6	Uca tangeri	.	text p. 20-23, 25	citation	Wang2010	.	=	=	.	.
 GonzalezOrtiz2014	1.7	Uca tangeri	.	text p. 20-23, 25	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
 GonzalezOrtiz2014	2.1	Uca spp.	fiddler crabs	text p. 20-21, 23-24	citation	Kristensen2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -24124,6 +24288,12 @@ Pulmanns2014	1.1	Uca spp.	.	text p. 8, 10	citation	Kristensen2008.3	0	>&ldquo;fi
 Pulmanns2014	1.2	Uca spp.	.	text p. 8, 10	citation	Gribsholt2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Pulmanns2014	1.3	Uca spp.	.	text p. 8, 10	citation	Nielsen2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Michelangeli2014	1	Uca beebei	.	text p. 931	citation	Koga1998	.	=	=	.	.
+Hebets2014	1.1	.	fiddler crabs	text p. 1013	citation	Land1995.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Hebets2014	1.2	.	fiddler crabs	text p. 1013	citation	Zeil1998	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Hebets2014	1.3	.	fiddler crabs	text p. 1013	citation	Layne2003.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Hebets2014	1.4	.	fiddler crabs	text p. 1013	citation	Layne2003.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Sarika2014	1.1	Uca pugilator	.	text p. 52-55	citation	Durica1996	1	=	=	.	.
+Sarika2014	1.2	Uca pugilator	.	text p. 52-55	citation	Chung1998.1	1	=	=	.	.
 Luque2015	1	Uca ornata	.	text p. 423	location	Panama	.	ornata	<	fossils	.
 Hung2015	1	Uca formosensis	.	text p. 161-163	location	Taiwan	.	formosensis	<	.	.
 Lin2015	1	Uca lactea	清白招潮蟹	text p. 157-158	location	Taiwan	.	lactea	<	.	.
@@ -24320,15 +24490,15 @@ Rupp2015	11	Minuca	.	text p. 44	n/a	.	.	#genus#Minuca	<	.	.
 Rupp2015	12	Uca tetragonon	.	text p. 43, 48	n/a	.	.	tetragonon	<	.	.
 Rupp2015	13	Uca lactea	.	text p. 48	citation	Kim2010.1	.	=	=	.	.
 Rupp2015	14	Uca capricornis	.	text p. 48	citation	Slatyer2008	1	=	=	.	.
-Girish2015	1.1	Celuca pugilator	.	text p. 40-41	citation	Chung1998.1	.	=	=	The citation is to Genbank sequence AF032983, which is associated with Chung <em>et al.</em> (1998).	.
-Girish2015	1.2	Celuca pugilator	.	text p. 40-41	citation	Chung1998.1	.	=	=	The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).	.
-Gong2015.1	1.1	Uca pugilator	.	text p. 274, 282-283, 285	citation	Chung1998.1	.	=	=	.	.
-Gong2015.1	1.2	Uca pugilator	.	text p. 274, 282-283, 285	citation	Chung1998.2	.	=	=	.	.
+Girish2015	1.1	Celuca pugilator	.	text p. 40-41	citation	Chung1998.1	1.4	=	=	The citation is to Genbank sequence AF032983, which is associated with Chung <em>et al.</em> (1998).	.
+Girish2015	1.2	Celuca pugilator	.	text p. 40-41	citation	Chung1998.1	1.4	=	=	The citation is to Genbank sequence AF034086, which is associated with Chung <em>et al.</em> (1998).	.
+Gong2015.1	1.1	Uca pugilator	.	text p. 274, 282-283, 285	citation	Chung1998.1	1	=	=	.	.
+Gong2015.1	1.2	Uca pugilator	.	text p. 274, 282-283, 285	citation	Chung1998.2	1	=	=	.	.
 Gong2015.1	1.3	Uca pugilator	.	text p. 274, 282-283, 285	citation	Durica2002	.	=	=	.	.
 Gong2015.1	1.4	Uca pugilator	.	text p. 274, 282-283, 285	citation	Durica2014	.	=	=	.	.
 Gong2015.1	1.5	Uca pugilator	.	text p. 274, 282-283, 285	citation	Das2013.1	.	=	=	.	.
 Gong2015.1	2	Celuca pugilator	.	text p. 279	citation	Durica2002	.	=	=	The citation is to Genbank sequence AAC32789, which is associated with Durica <em>et al.</em> (2002).	.
-Gong2015.2	1.1	Uca pugilator	.	text p. 11-12	citation	Chung1998.2	.	=	=	.	.
+Gong2015.2	1.1	Uca pugilator	.	text p. 11-12	citation	Chung1998.2	1	=	=	.	.
 Gong2015.2	1.2	Uca pugilator	.	text p. 11-12	citation	Hopkins2001	.	=	=	.	.
 Ragionieri2015	1	Uca	fiddler crabs	text p. 186	location	Gazi, Kwale County, Kenya	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Ragionieri2015	2	Uca annulipes	.	text p. 186-188	location	Gazi, Kwale County, Kenya	.	occidentalis	>MSR:geography	.	.
@@ -24369,6 +24539,39 @@ Michie2015	16	Uca lactea	.	text p. 293	citation	Shih2013	.	=	=	.	.
 Michie2015	17	Uca bengali	.	text p. 293	citation	Shih2013	.	=	=	.	.
 Michie2015	18	Uca sindensis	.	text p. 293	citation	Shih2013	.	=	=	.	.
 TulioDiaz2015	1	Uca rapax	.	text p. 260-263, 265	location	Cajigal, Sucre, Venezuela	.	rapax	<	.	.
+Pratiwi2015.2	1.1	Uca spp.	.	text p. 196, 199, 201	citation	Smith1973	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2015.2	1.2	Uca spp.	.	text p. 196, 199, 201	citation	Nontji1987	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2015.2	1.3	Uca spp.	.	text p. 196, 199, 201	citation	Sari2004	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2015.2	1.4	Uca spp.	.	text p. 196, 199, 201	citation	Smith2003.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2015.2	2	Uca (Uca) annulipes	.	text p. 197	location	Makassar, South Sulawesi, Sulawesi, Indonesia	.	annulipes	<	.	.
+Pratiwi2015.2	3.1	Uca (Uca) demani	.	text p. 197	location	Liang Island, Sumbawa, West Nusa Tenggara, Indonesia	.	demani	<	.	.
+Pratiwi2015.2	3.2	Uca (Uca) demani	.	text p. 197	location	Piru Bay, Seram Island, Maluku Province, Maluku Islands, Indonesia	.	demani	<	.	.
+Pratiwi2015.2	4.1	Uca (Deltuca) dussumieri	.	text p. 197	location	Makassar, South Sulawesi, Sulawesi, Indonesia	.	dussumieri	<	.	.
+Pratiwi2015.2	4.2	Uca (Deltuca) dussumieri	.	text p. 197	location	Kolseer, Kai Islands, Maluku Province, Maluku Islands, Indonesia	.	dussumieri	<	.	.
+Pratiwi2015.2	5.1	Uca (Amphiuca) inversa	.	text p. 197	location	Seram Island, Maluku Province, Maluku Islands, Indonesia	.	?	.	.	.
+Pratiwi2015.2	5.2	Uca (Amphiuca) inversa	.	text p. 197	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	?	.	.	.
+Pratiwi2015.2	6.1	Uca (Celuca) mjoebergi	.	text p. 197, 200	location	Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	.	mjoebergi	<	.	.
+Pratiwi2015.2	6.2	Uca (Celuca) mjoebergi	.	text p. 197, 200	location	Makassar, South Sulawesi, Sulawesi, Indonesia	.	mjoebergi	<	.	.
+Pratiwi2015.2	7	Uca (Deltuca) coarctata	.	text p. 197	location	Makassar, South Sulawesi, Sulawesi, Indonesia	.	coarctata	<	.	.
+Pratiwi2015.2	8	Uca (Deltuca) rosea	.	text p. 197	location	Kepulauan Seribu, Jakarta, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.2	9.1	Uca (Deltuca) acuta	.	text p. 197	location	Makassar, South Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Pratiwi2015.2	9.2	Uca (Deltuca) acuta	.	text p. 197	location	Parigi, West Java, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.2	9.3	Uca (Deltuca) acuta	.	text p. 197	location	Cilacap, West Java, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.2	10	Uca (Gelasimus) tetragonon	.	text p. 197	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	tetragonon	<	.	.
+Pratiwi2015.2	11.1	Uca (Gelasimus) vocans	.	text p. 197	location	Haruku Island, Maluku Province, Maluku Islands, Indonesia	.	vocans	<	.	.
+Pratiwi2015.2	11.2	Uca (Gelasimus) vocans	.	text p. 197	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	vocans	<	.	.
+Pratiwi2015.2	12	Uca (Gelasimus) vocan	.	text p. 200	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	vocan	<	typo	.
+Pratiwi2015.1	1.1	Uca dussumieri	.	text p. 294-296	location	East Kalimantan, Borneo, Indonesia	.	dussumieri	<	.	.
+Pratiwi2015.1	1.2	Uca dussumieri	.	text p. 294-296	location	Lampung Bay, Lampung, Sumatra, Indonesia	.	dussumieri	<	.	.
+Pratiwi2015.1	1.3	Uca dussumieri	.	text p. 294-296	location	Trenggalek, East Java, Java, Indonesia	.	dussumieri	<	.	.
+Pratiwi2015.1	2	Uca spp.	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Pratiwi2015.1	3	Uca arcuata	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.1	4	Uca tetragonon	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	tetragonon	<	.	.
+Pratiwi2015.1	5	Uca coarctata	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	coarctata	<	.	.
+Pratiwi2015.1	6	Uca vocans	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	vocans	<	.	.
+Pratiwi2015.1	7	Uca lactea	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.1	8	Uca urvillei	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	?	.	.	.
+Pratiwi2015.1	9	Uca annulipes	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	annulipes	<	.	.
 Durica2016	1	Uca pugilator	.	text p. E59	n/a	.	.	pugilator	<	.	.
 Shyamal2016	1	Uca pugilator	.	text p. E202	n/a	.	.	pugilator	<	.	.
 Smith2016	1	.	fiddler crabs	text p. 672	citation	Kronstadt2013	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -24957,9 +25160,9 @@ ElSayed2016	9.12	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E
 ElSayed2016	9.13	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	citation	Bott1973.2	16	=	=	.	.
 ElSayed2016	9.14	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	citation	Crane1975	36	=	=	.	.
 ElSayed2016	9.15	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	citation	Lewinsohn1977	3	=	=	.	.
-ElSayed2016	9.16	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Al-Gharqana, Nabq, South Sinai Governorate, Egypt	.	inversa	<	.	.
+ElSayed2016	9.16	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Al-Gharqana, South Sinai Governorate, Egypt	.	inversa	<	.	.
 ElSayed2016	9.17	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Marsa Al Zabad, South Sinai Governorate, Egypt	.	inversa	<	.	.
-ElSayed2016	9.18	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Al-Rewaissia, Nabq, South Sinai Governorate, Egypt	.	inversa	<	.	.
+ElSayed2016	9.18	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Al-Rewaissia, South Sinai Governorate, Egypt	.	inversa	<	.	.
 ElSayed2016	9.19	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Ras Mohammed, South Sinai Governorate, Egypt	.	inversa	<	.	.
 ElSayed2016	9.2	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	location	Mangrove 17 km south of Safaga, Red Sea Governorate, Egypt	.	inversa	<	.	.
 ElSayed2016	9.21	Uca (Cranuca) inversa	.	text p. 9-14, 22-23, Plates 3C-D, 4B, E, H, K	citation	Hartnoll1975	8	=	=	.	.
@@ -25411,7 +25614,7 @@ Malave2018	2.4	Uca	fiddler crabs	text p. 316	citation	Bywater2015	0	>&ldquo;fidd
 Lourenco2018	1.1	Afruca tangeri	.	text p. 197, 200, 202-203, 205, 208	citation	Zwarts1985	2	=	=	.	.
 Lourenco2018	1.2	Afruca tangeri	.	text p. 197, 200, 202-203, 205, 208	location	Bijagós Archipelago, Guinea-Bissau	.	tangeri	<	.	.
 Lourenco2018	1.3	Afruca tangeri	.	text p. 197, 200, 202-203, 205, 208	citation	Lourenco2017	1	=	=	.	.
-Lourenco2018	1.4	Afruca tangeri	.	text p. 197, 200, 202-203, 205, 208	citation	Ens1993	.	=	=	.	.
+Lourenco2018	1.4	Afruca tangeri	.	text p. 197, 200, 202-203, 205, 208	citation	Ens1993	1	=	=	.	.
 Liu2018.1	1	Tubuca arcuata	.	text p. 29-30, 32-35	location	Weifang, Shandong, China	.	arcuata	<	.	.
 Liu2018.1	2	Uca arcuata	.	text p. 30	location	Weifang, Shandong, China	.	arcuata	<	Both genera used as if separate species	.
 Liu2018.1	3	Uca spinicarpa	.	text p. 30	location	Weifang, Shandong, China <!>	.	?	>MSR	Clearly an error; no idea what species they are referring to	.
@@ -25669,3 +25872,21 @@ Shih2019	17.1	Tubuca rosea	.	text p. 7	citation	Talapatra2014	2	=	=	.	.
 Shih2019	17.2	Tubuca rosea	.	text p. 7	citation	Sen2015	.	=	=	.	.
 Shih2019	18	Gelasimus hesperiae	.	text p. 7	citation	Sen2015	.	=	=	.	.
 dosSantos2019	1	Uca pugilator	.	text p. 152	citation	Hotard2008	1	=	=	.	.
+Asano2019	1.1	Uca pugnax	.	text p. 66	citation	Stevenson1967	1	=	=	.	.
+Asano2019	1.2	Uca pugnax	.	text p. 66	citation	Summers1967	1	=	=	.	.
+Asano2019	1.3	Uca pugnax	.	text p. 66	citation	Stevenson1985	2	=	=	.	.
+Asano2019	2.1	Uca pugilator	.	text p. 66	citation	Stevenson1985	3	=	=	.	.
+Asano2019	2.2	Uca pugilator	.	text p. 66	citation	Vacca1975.1	1	=	=	.	.
+Asano2019	2.3	Uca pugilator	.	text p. 66	citation	Vacca1975.2	1	=	=	.	.
+Asano2019	2.4	Uca pugilator	.	text p. 66	citation	Summers1968	1	=	=	.	.
+Angilletta2019	1	.	fiddler crabs	text p. 1470	citation	Bywater2012.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	1.1	Uca tangeri	.	text p. 753-762	location	Zira, Banc d'Arguin, Mauritania	.	tangeri	<	.	.
+ElHacen2019	1.2	Uca tangeri	.	text p. 753-762	location	Agheneiver, Banc d'Arguin, Mauritania	.	tangeri	<	.	.
+ElHacen2019	2.1	.	fiddler crabs	text p. 754	citation	Kristensen2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.2	.	fiddler crabs	text p. 754	citation	Smith2009	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.3	.	fiddler crabs	text p. 754	citation	Holdredge2010	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.4	.	fiddler crabs	text p. 754	citation	Kristensen2006	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.5	.	fiddler crabs	text p. 754	citation	Ens1993	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.6	.	fiddler crabs	text p. 754	citation	Zwarts1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.7	.	fiddler crabs	text p. 754	citation	Zwarts1990.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ElHacen2019	2.8	.	fiddler crabs	text p. 754	citation	Stienen2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.

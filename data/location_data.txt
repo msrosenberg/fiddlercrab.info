@@ -326,10 +326,10 @@ Santo Domingo, Dominican Republic	18.466667	-69.950000	.	.	Santo Domingo (Domini
 Umgeni River, Durban, KwaZulu-Natal, South Africa	-29.811787	31.039456	.	.	Umgeni River	.	Durban, KwaZulu-Natal, South Africa	.	.	.	.	.	.
 Esmeraldas, Ecuador	0.950000	-79.666667	Province	.	Esmeraldas	.	Ecuador	.	.	2.5	-75.0	-5.0	-81.5
 Guayas, Ecuador	-2.183333	-79.883333	Province	Using Guayaquil	Guayas	.	Ecuador	.	.	2.5	-75.0	-5.0	-81.5
-El-Monqatea, South Sinai Governorate, Egypt	28.208651	34.420970	.	.	El-Monqatea	Shora el Monqata	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
+El-Monqatea, South Sinai Governorate, Egypt	28.208651	34.420970	.	Location from El Serehy	El-Monqatea	Shora el Monqata	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
 El-Tor, South Sinai Governorate, Egypt	28.241667	33.622222	.	.	El-Tor	.	South Sinai Governorate, Egypt	Gulf of Suez, Egypt	.	.	.	.	.
 Gulf of Suez, Egypt	28.750000	33.000000	.	.	Gulf of Suez	.	Egypt	.	.	.	.	.	.
-Marsa Al Zabad, South Sinai Governorate, Egypt	28.165971	34.448243	.	.	Marsa Al Zabad	.	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
+Marsa Al Zabad, South Sinai Governorate, Egypt	28.141604	34.440826	.	Location from El Serehy	Marsa Al Zabad	.	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
 Ras Gharib, Red Sea Governorate, Egypt	28.367884	33.077293	.	.	Ras Gharib	.	Red Sea Governorate, Egypt	Gulf of Suez, Egypt	.	.	.	.	.
 Ras Mohammed, South Sinai Governorate, Egypt	27.740450	34.247181	.	.	Ras Mohammed	.	South Sinai Governorate, Egypt	.	.	.	.	.	.
 South Sinai Governorate, Egypt	27.724446	34.245068	.	.	South Sinai Governorate	.	Egypt	.	.	.	.	.	.
@@ -1777,8 +1777,8 @@ Al Memlahah, Kuwait	29.366667	47.700000	.	.	Al Memlahah	Doha	Kuwait	Kuwait Bay, 
 Kuwait Towers, Kuwait City, Kuwait	29.392778	48.003056	.	.	Kuwait Towers	.	Kuwait City, Kuwait	.	.	.	.	.	.
 Kuwait City, Kuwait	29.384853	47.975172	.	.	Kuwait City	.	Kuwait	Kuwait Bay, Kuwait	.	.	.	.	.
 Sinnamary Estuary, French Guiana	5.477500	-53.000556	.	coords from paper	Sinnamary Estuary	.	French Guiana	.	.	6.2	-51.0	1.8	-55.0
-Al-Gharqana, Nabq, South Sinai Governorate, Egypt	28.120001	34.442538	.	.	Al-Gharqana	.	Nabq, South Sinai Governorate, Egypt	.	.	.	.	.	.
-Al-Rewaissia, Nabq, South Sinai Governorate, Egypt	28.041312	34.436759	Located near Nabq	.	Al-Rewaissia	.	Nabq, South Sinai Governorate, Egypt	.	.	.	.	.	.
+Al-Gharqana, South Sinai Governorate, Egypt	28.105308	34.437909	.	Location from El Serehy	Al-Gharqana	Shura El Gharqana	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
+Al-Rewaissia, South Sinai Governorate, Egypt	28.178459	34.447631	.	Location from El Serehy	Al-Rewaissia	Shura El Ruwaysia	South Sinai Governorate, Egypt	Gulf of Aqaba, Red Sea	.	.	.	.	.
 Mangrove 17 km south of Safaga, Red Sea Governorate, Egypt	26.625270	33.997201	Location approximate	.	Safaga	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
 El Hamraween Mangrove, Red Sea Governorate, Egypt	26.398467	34.117618	Location approximate (36km north of Qusier)	.	El Hamraween Mangrove	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
 Hamata, Red Sea Governorate, Egypt	24.288315	35.377430	.	.	Hamata	.	Red Sea Governorate, Egypt	.	.	.	.	.	.
@@ -1886,3 +1886,21 @@ Ilu, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	-0.419494	117.54465
 Kaeli, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	-0.492515	117.568990	.	.	Kaeli	.	Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	.	.	.	.	.
 Beji, Mahakam River Delta, East Kalimantan, Borneo, Indonesia	-0.810978	117.491400	.	.	Beji	.	Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	.	.	.	.	.
 Cajigal, Sucre, Venezuela	10.549402	-62.804592	.	.	Cajigal	.	Sucre, Venezuela	.	.	.	.	.	.
+Muskeget Island, Nantucket County, Massachusetts, USA	41.335776	-70.299878	.	.	Muskeget Island	.	Nantucket County, Massachusetts, USA	.	.	.	.	.	.
+Nantucket County, Massachusetts, USA	41.269261	-70.084150	.	.	Nantucket County	.	Massachusetts, USA	.	.	.	.	.	.
+Lampung Bay, Lampung, Sumatra, Indonesia	-5.652060	105.338301	.	.	Lampung Bay	.	Lampung, Sumatra, Indonesia	.	.	.	.	.	.
+Muntun, Lampung, Sumatra, Indonesia	-5.513791	105.262425	.	.	Muntun	.	Lampung, Sumatra, Indonesia	Lampung Bay, Lampung, Sumatra, Indonesia	.	.	.	.	.
+Suamalu, Lampung, Sumatra, Indonesia	-5.729773	105.196651	.	.	Suamalu	.	Lampung, Sumatra, Indonesia	Lampung Bay, Lampung, Sumatra, Indonesia	.	.	.	.	.
+Liang Island, Sumbawa, West Nusa Tenggara, Indonesia	-8.492360	117.657939	.	.	Liang Island	.	Sumbawa, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
+Kai Islands, Maluku Province, Maluku Islands, Indonesia	-5.756638	132.742091	.	.	Kai Islands	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
+Kolseer, Kai Islands, Maluku Province, Maluku Islands, Indonesia	-5.660615	132.717641	.	.	Kolseer	.	Kai Islands, Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
+Seram Island, Maluku Province, Maluku Islands, Indonesia	-3.093776	129.545188	.	.	Seram Island	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
+Piru Bay, Seram Island, Maluku Province, Maluku Islands, Indonesia	-3.106772	128.157565	.	.	Piru Bay	.	Seram Island, Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
+Parigi, West Java, Java, Indonesia	-7.689630	108.532643	.	.	Parigi	.	West Java, Java, Indonesia	.	.	.	.	.	.
+Cilacap, West Java, Java, Indonesia	-7.708880	109.038658	.	.	Cilacap	.	West Java, Java, Indonesia	.	.	.	.	.	.
+Kepulauan Seribu, Jakarta, Java, Indonesia	-5.658640	106.571639	.	.	Kepulauan Seribu	Thousand Islands	Jakarta, Java, Indonesia	.	.	.	.	.	.
+Haruku Island, Maluku Province, Maluku Islands, Indonesia	-3.568514	128.481957	.	.	Haruku Island	.	Maluku Province, Maluku Islands, Indonesia	.	.	.	.	.	.
+Trenggalek, East Java, Java, Indonesia	-8.328456	111.578521	.	.	Trenggalek	.	East Java, Java, Indonesia	.	.	.	.	.	.
+Zira, Banc d'Arguin, Mauritania	19.868834	-16.296017	.	.	Zira	.	Banc d'Arguin, Mauritania	.	.	.	.	.	.
+Agheneiver, Banc d'Arguin, Mauritania	19.868041	-16.389780	.	.	Agheneiver	.	Banc d'Arguin, Mauritania	.	.	.	.	.	.
+Salina San Carlos, Cádiz, Andalusia, Spain	36.854978	-6.348306	.	.	Salina San Carlos	.	Cádiz, Andalusia, Spain	.	.	.	.	.	.
