@@ -1062,6 +1062,9 @@ Smith1871	6	Gelasimus gibbosus	.	text p. 91	citation	Smith1870.2	22	=	=	.	.
 Coues1871	1	Gelasimus pugilator	fiddler crabs	text p. 121-122	location	Fort Macon, Carteret County, North Carolina, USA	.	pugilator	<	.	.
 Coues1871	2	Gelasimus pugnax	fiddler crabs	text p. 121-122	location	Fort Macon, Carteret County, North Carolina, USA	.	pugnax	<	.	.
 Coues1871	3	Gelasimus minax	fiddler crabs	text p. 121-122	location	Fort Macon, Carteret County, North Carolina, USA	.	minax	<	.	.
+Darwin1871	1.1	Gelasimus	.	text p. 315, 331, 333-336	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Darwin1871	1.2	Gelasimus	.	text p. 315, 331, 333-336	citation	Gardner1846	1	=	=	.	.
+Darwin1871	1.3	Gelasimus	.	text p. 315, 331, 333-336	citation	MilneEdwards1837.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Streets1872	1	Gelasimus affinis	.	text p. 131-133	location	Saint Martin	.	burgersi	Crane1975	The author did not know the name <em class="species">Gelasimus affinis</em> had already been used by Guérin-Méneville (1829).	.
 Streets1872	2	Gelasimus mordax	.	text p. 131	n/a	.	.	mordax	<	.	.
 Streets1872	3	Gelasimus pugnax	.	text p. 132	n/a	.	.	pugnax	<	.	.
@@ -2492,7 +2495,7 @@ Doflein1899	9	Uca acuta	.	text p. 193	specimen	Sri Lanka	.	.	.	.	.
 Doflein1899	10	Uca annulipes	.	text p. 193	specimen	Indian Ocean	.	annulipes	<	.	.
 Doflein1899	11	Uca dussumieri	.	text p. 193	specimen	Indian Ocean	.	.	.	.	.
 Doflein1899	12	Uca tetragonon	.	text p. 193	specimen	El-Tor, South Sinai Governorate, Egypt	.	tetragonon	<	.	.
-Doflein1899	13	Uca amazonensis	.	text p. 193-195	specimen	Tefé, Brazil	.	chlorophthalmus	Crane1975	locality is incorrect	.
+Doflein1899	13	Uca amazonensis	.	text p. 193-195	specimen	Tefé, Brazil <!>	.	chlorophthalmus	Crane1975	locality is incorrect	.
 Doflein1899	14	Uca dussumieri	.	text p. 192	n/a	.	.	dussumieri	<	.	.
 Rathbun1899	1.1	Uca gracilis	.	text p. 603	citation	Rathbun1893	1	=	=	.	.
 Rathbun1899	1.2	Uca gracilis	.	text p. 603	location	Pichilinque, Baja California Sur, Mexico	.	crenulata	Crane1975	.	.
@@ -4514,7 +4517,7 @@ Maccagno1928	11.11	Uca inversa	.	text p.12, 26-27; figure 13	specimen	Gulf of Ad
 Maccagno1928	11.12	Uca inversa	.	text p.12, 26-27; figure 13	specimen	Dissei, Eritrea	.	inversa	<	.	.
 Maccagno1928	11.13	Uca inversa	.	text p.12, 26-27; figure 13	specimen	Isola Nocra, Dahlak Archipelago, Eritrea	.	inversa	<	.	.
 Maccagno1928	12.1	Uca amazonensis	.	text p.12, 27-28; figure 14	citation	Doflein1899	13	=	=	.	.
-Maccagno1928	12.2	Uca amazonensis	.	text p.12, 27-28; figure 14	specimen	Tefé, Brazil	.	chlorophthalmus	Crane1975	locality is incorrect	.
+Maccagno1928	12.2	Uca amazonensis	.	text p.12, 27-28; figure 14	specimen	Tefé, Brazil <!>	.	chlorophthalmus	Crane1975	locality is incorrect	.
 Maccagno1928	13.1	Uca lactea	.	text p.12, 29; figure 15	citation	deHaan1835	7	=	=	.	.
 Maccagno1928	13.2	Uca lactea	.	text p.12, 29; figure 15	citation	Kingsley1880	29	=	=	.	.
 Maccagno1928	13.3	Uca lactea	.	text p.12, 29; figure 15	citation	Alcock1900	3	=	=	.	.
@@ -11496,7 +11499,7 @@ Crane1975	36.21	Uca (Amphiuca) inversa inversa	.	text p. 13, 97, 99, 105-108, 29
 Crane1975	36.22	Uca (Amphiuca) inversa inversa	.	text p. 13, 97, 99, 105-108, 294, 297, 326, 360, 383, 406, 417, 432, 437, 442, 452, 467, 505, 532, 553; figures 39G, 69I, 99; map 7; plate 16A-D	citation	Macnae1958	3	=	=	.	.
 Crane1975	36.23	Uca (Amphiuca) inversa inversa	.	text p. 13, 97, 99, 105-108, 294, 297, 326, 360, 383, 406, 417, 432, 437, 442, 452, 467, 505, 532, 553; figures 39G, 69I, 99; map 7; plate 16A-D	citation	Macnae1963	5	=	=	.	.
 Crane1975	37	Uca (Amphiuca) inversa sindensis	.	text p. 97, 106-108, 383, 406, 417, 553; figures 69J, 99; map 7; plate 16E-H	citation	Alcock1900	5	=	=	.	.
-Crane1975	38	Boboruca	.	text p. 109-115	n/a	.	.	#genus#Minuca	.	Proposed as a subgenus, with {{thayeri}} as the type.	.
+Crane1975	38	Boboruca	.	text p. 109-115	n/a	.	.	#genus#Leptuca	>MSR:synonymy	Proposed as a subgenus, with {{thayeri}} as the type.	.
 Crane1975	39.01	Uca (Boboruca) thayeri thayeri	.	text p. 19, 109, 112-115, 145-146, 163, 183, 195, 238, 242, 325, 367, 372, 375, 385, 391, 393, 406, 421, 432, 436, 442, 461, 463, 500, 505, 513, 533, 554; figures 46K, 56E, 60H-I, 73A, 81I, 82I, 99; map 11; plate 17E-H	citation	Bott1954	7	=	=	.	.
 Crane1975	39.02	Uca (Boboruca) thayeri thayeri	.	text p. 19, 109, 112-115, 145-146, 163, 183, 195, 238, 242, 325, 367, 372, 375, 385, 391, 393, 406, 421, 432, 436, 442, 461, 463, 500, 505, 513, 533, 554; figures 46K, 56E, 60H-I, 73A, 81I, 82I, 99; map 11; plate 17E-H	citation	Marcgrave1648	2	=	=	.	.
 Crane1975	39.03	Uca (Boboruca) thayeri thayeri	.	text p. 19, 109, 112-115, 145-146, 163, 183, 195, 238, 242, 325, 367, 372, 375, 385, 391, 393, 406, 421, 432, 436, 442, 461, 463, 500, 505, 513, 533, 554; figures 46K, 56E, 60H-I, 73A, 81I, 82I, 99; map 11; plate 17E-H	citation	Rathbun1900.3	3	=	=	.	.
@@ -16734,8 +16737,8 @@ Salmon1988.2	4	Celuca	.	text p. 388-389, 392-396, 401	citation	Crane1975	71	#gen
 Salmon1988.2	5	Afruca	.	text p. 389, 393, 396	citation	Crane1975	41	#genus#Afruca	<	Used as subgenus	.
 Salmon1988.2	6	Amphiuca	.	text p. 389	citation	Crane1975	33	#genus#Paraleptuca	>MSR:synonymy	Used as subgenus	.
 Salmon1988.2	7	Australuca	.	text p. 389, 393	citation	Crane1975	17	#subgenus#Australuca	<	Used as subgenus	.
-Salmon1988.2	8.1	Boboruca	.	text p. 389, 396, 402	citation	Crane1975	38	#genus#Minuca	>MSR:synonymy	Used as subgenus	.
-Salmon1988.2	8.2	Boboruca	.	text p. 389, 396, 402	citation	Albrecht1981	12	#genus#Minuca	>MSR:synonymy	Used as subgenus	.
+Salmon1988.2	8.1	Boboruca	.	text p. 389, 396, 402	citation	Crane1975	38	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
+Salmon1988.2	8.2	Boboruca	.	text p. 389, 396, 402	citation	Albrecht1981	12	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 Salmon1988.2	9	Deltuca	.	text p. 389, 393, 395-396	citation	Crane1975	2	#genus#Tubuca	<	Used as subgenus	.
 Salmon1988.2	10	Thalassuca	.	text p. 389, 393 	citation	Crane1975	24	#genus#Gelasimus	>MSR:synonymy	Used as subgenus	.
 Salmon1988.2	11	Uca pugnax	.	text p. 395	citation	Greenspan1982	.	=	=	.	.
@@ -17124,6 +17127,7 @@ vanMontfrans1990	1.6	Uca spp.	.	text p. 215, 217-220, 223	citation	Sandifer1973	
 vanMontfrans1990	1.7	Uca spp.	.	text p. 215, 217-220, 223	citation	Hyman1920.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 vanMontfrans1990	1.8	Uca spp.	.	text p. 215, 217-220, 223	citation	Christy1986	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 vanMontfrans1990	1.9	Uca spp.	.	text p. 215, 217-220, 223	citation	Williams1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Dittel1990	1	Uca spp.	.	text p. 25, 27-32	location	Punta Morales, Puntarenas, Costa Rica	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Callicott1991	1	Uca pugilator	.	text p. 72A	n/a	.	.	pugilator	<	.	.
 deVries1991.4	1	Uca pugilator	.	text p. 43A	n/a	.	.	pugilator	<	.	.
 Moore1991	1	Uca pugilator	.	text p. 143A	location	North Carolina, USA	.	pugilator	<	.	.
@@ -17152,6 +17156,9 @@ Ismail1991	1.5	Uca annulipes	.	text p. 923-926	location	Kuala Perai, Penang, Mal
 Ismail1991	1.6	Uca annulipes	.	text p. 923-926	location	Kuala Jawi, Penang, Malaysia	.	annulipes	<	.	.
 Ismail1991	2	.	fiddler crabs	text p. 926	citation	Beinlich1989	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Fitz1991	1	Uca sp.	.	text p. 256	location	Sapelo Island, McIntosh County, Georgia, USA	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Dittel1991	1.1	Uca spp.	.	text p. 129, 134-136, 138-139	location	Punta Morales, Puntarenas, Costa Rica	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Dittel1991	1.2	Uca spp.	.	text p. 129, 134-136, 138-139	citation	Dittel1990	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Dittel1991	1.3	Uca spp.	.	text p. 129, 134-136, 138-139	citation	Christy1982.3	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Sarojini1992	1	Uca pugilator	.	text p. 64A	n/a	.	.	pugilator	<	.	.
 Grant1992	1	Uca minax	.	text p. 6	location	Sneads Ferry, Onslow County, North Carolina, USA	.	minax	<	.	.
 Gleeson1992	1	Uca	.	text p. 405	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -17347,6 +17354,10 @@ Wolfrath1992.2	2.2	Uca	.	text p. 39, 42	citation	Miller1961	0	>&ldquo;fiddler cr
 Wolfrath1992.2	2.3	Uca	.	text p. 39, 42	citation	Valiela1974	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Wolfrath1992.2	2.4	Uca	.	text p. 39, 42	citation	Robertson1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Wolfrath1992.2	2.5	Uca	.	text p. 39, 42	citation	Robertson1982.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Alvarez1992	1	Uca crenulata	.	text p. 1, 4	location	Laguna de Bara de Navidad, Jalisco, Mexico	.	crenulata	<	.	.
+Alvarez1992	2	Uca princeps	.	text p. 4	location	Laguna de Bara de Navidad, Jalisco, Mexico	.	princeps	<	.	.
+Alvarez1992	3	Uca crenulata crenulata	.	text p. 5	location	Laguna de Bara de Navidad, Jalisco, Mexico	.	crenulata	<	.	.
+Alvarez1992	4	Uca princeps princeps	.	text p. 6	location	Laguna de Bara de Navidad, Jalisco, Mexico	.	princeps	<	.	.
 Yamaguchi1993.1	1	Uca arcuata	.	text p. 85; figure 15	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.1	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	deHaan1835	6	=	=	.	.
 Yamaguchi1993.2	1.2	Uca arcuata	.	text & figure p. 499-502, 545; plate 14: figure 14a,b	citation	Parisi1918	3	=	=	.	.
@@ -17532,7 +17543,7 @@ Ens1993	1.6	Uca tangeri	.	text p. 477-493	citation	Wolfrath1992.2	1	=	=	.	.
 Ens1993	1.7	Uca tangeri	.	text p. 477-493	citation	Hootsmans1993	1	=	=	.	.
 Ens1993	1.8	Uca tangeri	.	text p. 477-493	location	Iouik, Banc d'Arguin, Mauritania	.	tangeri	<	.	.
 Ens1993	1.9	Uca tangeri	.	text p. 477-493	citation	Zwarts1990.1	1	=	=	.	.
-Ens1993	1.10	Uca tangeri	.	text p. 477-493	citation	Wolfrath1993	.	=	=	.	.
+Ens1993	1.10	Uca tangeri	.	text p. 477-493	citation	Wolfrath1993	1	=	=	.	.
 Ens1993	2.01	Uca	.	text p. 478, 480, 493	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Ens1993	2.02	Uca	.	text p. 478, 480, 493	citation	Salmon1983.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Ens1993	2.03	Uca	.	text p. 478, 480, 493	citation	Zwarts1990.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -17547,6 +17558,25 @@ Ens1993	2.11	Uca	.	text p. 478, 480, 493	citation	Colby1984	0	>&ldquo;fiddler cr
 Ens1993	3	Uca pugilator	.	text p. 480, 492	citation	Crane1975	73	=	=	.	.
 Ens1993	4	Uca vocans	.	text p. 491	citation	Murai1982	.	=	=	.	.
 Ens1993	5	Uca vocans vocans	.	text p. 492	citation	Murai1982	.	=	=	.	.
+Wolfrath1993	1.1	Uca tangeri	.	text p. 111-117; Figures 7-9	location	Ria Formosa, Faro, Portugal	.	tangeri	<	.	.
+Wolfrath1993	1.2	Uca tangeri	.	text p. 111-117; Figures 7-9	citation	Altevogt1957.1	0	tangeri	<	I think this is supposed to be a reference to one of his 1959 papers, not the 1957 paper.	.
+Wolfrath1993	1.3	Uca tangeri	.	text p. 111-117; Figures 7-9	citation	vonHagen1962.1	1	=	=	.	.
+Wolfrath1993	1.4	Uca tangeri	.	text p. 111-117; Figures 7-9	citation	Crane1975	42	=	=	.	.
+Wolfrath1993	1.5	Uca tangeri	.	text p. 111-117; Figures 7-9	citation	Zucker1986	.	=	=	.	.
+Wolfrath1993	2.01	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Altevogt1957.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.02	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Miller1961	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.03	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Krebs1978	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.04	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Bergin1981	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.05	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Robertson1982.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.06	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Robertson1982.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.07	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Hoffman1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.08	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Bertness1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.09	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Thurman1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.1	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Morgan1987.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.11	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Christy1989	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.12	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Vernberg1959.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	2.13	Uca	fiddler crabs	text p. 111-113, 115-117	citation	Greenspan1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Wolfrath1993	3	Uca pugnax	.	text p. 117	citation	Webb1961	1	=	=	.	.
 Thurman1994	1	Uca	.	text p. 31A	location	Southern Texas, USA	.	>&ldquo;fiddler crabs&rdquo;	<	Mentions there were 5 species studied, but only specifies 3	.
 Thurman1994	2	Uca subcylindrica	.	text p. 31A	location	Southern Texas, USA	.	subcylindrica	<	.	.
 Thurman1994	3	Uca panacea	.	text p. 31A	location	Southern Texas, USA	.	panacea	<	.	.
@@ -17862,6 +17892,18 @@ Thibault1995	2.1	Uca	.	text p. 74, 76	citation	Young1978	0	>&ldquo;fiddler crabs
 Thibault1995	2.2	Uca	.	text p. 74, 76	citation	Zucker1978	0	>&ldquo;fiddler crabs&rdquo;	=	.	.
 Thibault1995	3.1	Uca tangeri	.	text p. 74, 77	citation	Zwarts1990.1	1	=	=	.	.
 Thibault1995	3.2	Uca tangeri	.	text p. 74, 77	citation	Zwarts1990.3	1	=	=	.	.
+Heard1995	1	Uca spp.	.	text p. 97, 100	location	Gulf of Mexico	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Heard1995	2.1	Uca longisignalis	.	text p. 100-101	location	Little Dauphin Island, Dauphin Island, Mobile County, Alabama, USA	.	longisignalis	<	.	.
+Heard1995	2.2	Uca longisignalis	.	text p. 100-101	citation	Heard1976	10	=	=	.	.
+Heard1995	3.1	Uca panacea	.	text p. 100-101	location	Cedar Key, Levy County, Florida, USA	.	panacea	<	.	.
+Heard1995	3.2	Uca panacea	.	text p. 100-101	location	Horn Island, Jackson County, Mississippi, USA	.	panacea	<	.	.
+Heard1995	3.3	Uca panacea	.	text p. 100-101	citation	Heard1976	11	=	=	.	.
+Heard1995	4.1	Uca pugilator	.	text p. 100-101	location	Cedar Key, Levy County, Florida, USA	.	pugilator	<	.	.
+Heard1995	4.2	Uca pugilator	.	text p. 100-101	citation	Heard1976	2	=	=	.	.
+Heard1995	4.3	Uca pugilator	.	text p. 100-101	citation	Kinsella1988	.	=	=	.	.
+Heard1995	5.1	Uca rapax	.	text p. 100-101	citation	Heard1976	3	=	=	.	.
+Heard1995	5.2	Uca rapax	.	text p. 100-101	citation	Kinsella1988	.	=	=	.	.
+Heard1995	6	Uca sp.	.	text p. 101	citation	Cable1960	.	=	=	.	.
 Hsueh1996	1	Uca arcuata	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	arcuata	<	.	.
 Hsueh1996	2	Uca borealis	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	borealis	<	.	.
 Hsueh1996	3	Uca lactea	.	text p. 37, 39	location	Gaomei Wetlands, Taichung, Taiwan	.	lactea	<	.	.
@@ -18241,6 +18283,14 @@ Welch1997	2.1	Uca pugilator	.	text p. 143, 145-151	citation	Christy1989	.	=	=	.	
 Welch1997	2.2	Uca pugilator	.	text p. 143, 145-151	citation	OConnor1991	.	=	=	.	.
 Welch1997	2.3	Uca pugilator	.	text p. 143, 145-151	citation	Reinsel1995.2	.	=	=	.	.
 Welch1997	2.4	Uca pugilator	.	text p. 143, 145-151	location	Newport River, Carteret County, North Carolina, USA	.	pugilator	<	.	.
+Ferraris1997.1	1.1	Uca	.	text p. 128, 138-139, 141-142, 144	citation	Vernberg1983.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ferraris1997.1	1.2	Uca	.	text p. 128, 138-139, 141-142, 144	citation	Vernberg1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Ferraris1997.1	2	Uca galapagensis herradurensis	.	text p. 128-131, 134-135, 140-141	location	Diablo, Panama City, Panama	.	herradurensis	<	.	.
+Ferraris1997.1	3.1	Uca rapax rapax	.	text p. 128-131, 134-135, 140-141	location	Galeta Island, Coco Solo, Panama	.	rapax	<	.	.
+Ferraris1997.1	3.2	Uca rapax rapax	.	text p. 128-131, 134-135, 140-141	location	Belize	.	rapax	<	.	.
+Ferraris1997.1	3.3	Uca rapax rapax	.	text p. 128-131, 134-135, 140-141	location	Fort Pierce, St. Lucie County, Florida, USA	.	rapax	<	.	.
+Ferraris1997.1	3.4	Uca rapax rapax	.	text p. 128-131, 134-135, 140-141	citation	Vernberg1959.2	2	=	=	.	.
+Ferraris1997.1	3.5	Uca pugilator	.	text p. 139	citation	Dame1978	1	=	=	.	.
 Harris1998	1.1	Uca musica	.	text p. 102A	location	San Blas, Nayarit, Mexico	.	musica	<	.	.
 Harris1998	1.2	Uca musica	.	text p. 102A	location	Manzanillo, Colima, Mexico	.	musica	<	.	.
 Harris1998	2	Uca terpsichores	.	text p. 102A	n/a	.	.	terpsichores	<	.	.
@@ -18479,6 +18529,11 @@ Deb1999	7.3	Uca triangularis bengali	.	text p. 351, 397-399	location	Sagar Islan
 Deb1999	8.1	Uca	.	text p. 389, 396-397	citation	Leach1815	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Deb1999	8.2	Uca	.	text p. 389, 396-397	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Deb1999	8.3	Uca	.	text p. 389, 396-397	location	West Bengal, India	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Shih1999.4	1.1	Uca vocans borealis	.	text p. 458-465	citation	Shih1998.2	.	=	=	.	.
+Shih1999.4	1.2	Uca vocans borealis	.	text p. 458-465	location	Tamsui, New Taipei City, Taiwan	.	borealis	<	.	.
+Shih1999.4	1.3	Uca vocans borealis	.	text p. 458-465	citation	Tseng1996	.	=	=	.	.
+Shih1999.4	2.1	Uca arcuata	.	text p. 458-459, 463-464	citation	Shih1992.1	.	=	=	.	.
+Shih1999.4	2.2	Uca arcuata	.	text p. 458-459, 463-464	citation	Shih1993.2	.	=	=	.	.
 Croll2000.1	1	Uca longisignalis	.	text p. 984	location	Gulf of Mexico	.	longisignalis	<	.	.
 Croll2000.1	2	Uca minax	.	text p. 984	location	South Carolina, USA	.	minax	<	.	.
 Croll2000.1	3.1	Uca pugnax	.	text p. 984	location	Virginia, USA	.	pugnax	<	.	.
@@ -18739,7 +18794,7 @@ Rosenberg2000	1.238	Uca	fiddler crabs	text p. 2-7, 12-45, 59-65, 67-98, 107-146	
 Rosenberg2000	1.239	Uca	fiddler crabs	text p. 2-7, 12-45, 59-65, 67-98, 107-146	citation	Zucker1977	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Rosenberg2000	1.24	Uca	fiddler crabs	text p. 2-7, 12-45, 59-65, 67-98, 107-146	citation	Zucker1983	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Rosenberg2000	2	Thalassuca	.	text p. 86-87, 89-90, 121	citation	Crane1975	24	#genus#Gelasimus	<	Used as subgenus	.
-Rosenberg2000	3	Boboruca	.	text p. 86-87, 89-90	citation	Crane1975	38	#genus#Minuca	<	Used as subgenus	.
+Rosenberg2000	3	Boboruca	.	text p. 86-87, 89-90	citation	Crane1975	38	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 Rosenberg2000	4	Amphiuca	.	text p. 86-87, 89-90	citation	Crane1975	33	#genus#Paraleptuca	<	Used as subgenus	.
 Rosenberg2000	5	Afruca	.	text p. 86-87, 89-90, 125	citation	Crane1975	41	#genus#Afruca	<	Used as subgenus	.
 Rosenberg2000	6	Celuca	.	text p. 85-90, 125	citation	Crane1975	71	#genus#Leptuca	<	Used as subgenus	.
@@ -19878,6 +19933,7 @@ Clark2001	6.1	Gelasimus forcipatus	.	text p. 157	citation	White1847.1	8	=	=	.	.
 Clark2001	6.2	Gelasimus forcipatus	.	text p. 157	citation	Adams1848	5	=	=	.	.
 Clark2001	7	Gelasimus robustus	.	text p. 157	citation	White1847.1	17	=	=	.	.
 Clark2001	8	Gelasimus tenuimanus	.	text p. 157	citation	White1847.1	4	=	=	.	.
+Zhang2001	1	Uca arcuata	.	text p. 58	location	Jiaozhou, Qingdao, Shandong, China	.	arcuata	<	.	.
 Curran2002	1	.	fiddler crabs	text p. 62	location	The Bahamas	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Koretsky2002.2	1	.	fiddler crabs	text p. 58	location	Sapelo Island, McIntosh County, Georgia, USA	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Allen2002	1	Uca	fiddler crabs	text p. 1184	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -20202,7 +20258,7 @@ Wu2003.2	1	Uca pugilator	.	text p. 944	n/a	.	.	pugilator	<	.	.
 Hopkins2003.2	1	Uca pugilator	.	text p. 1058	n/a	.	.	pugilator	<	.	.
 Ikeda2003	1	Uca spp.	.	text p. 1546	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 McFaddon2003	1	Uca	fiddler crabs	text p. 1044	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
-McFaddon2003	2	Boboruca	.	text p. 1044	n/a	.	.	#genus#Minuca	>MSR:synonymy	Used as subgenus	.
+McFaddon2003	2	Boboruca	.	text p. 1044	n/a	.	.	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 McFaddon2003	3	Celuca	.	text p. 1044	n/a	.	.	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 McFaddon2003	4	Minuca	.	text p. 1044	n/a	.	.	#genus#Minuca	<	Used as subgenus	.
 McFaddon2003	5	Uca crenulata	.	text p. 1044	location	Mission Bay, San Diego County, California, USA	.	crenulata	<	.	.
@@ -20265,7 +20321,7 @@ Jordao2003	1.3	.	fiddler crabs	text p. 981	citation	Zucker1978	0	>&ldquo;fiddler
 Jordao2003	1.4	.	fiddler crabs	text p. 981	citation	Wolfrath1993	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Jordao2003	1.5	.	fiddler crabs	text p. 981	citation	Oliveira2000	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Jordao2003	2.1	Uca tangeri	.	text p. 981-982	location	Ria Formosa, Faro, Portugal	.	tangeri	<	.	.
-Jordao2003	2.2	Uca tangeri	.	text p. 981-982	citation	Wolfrath1993	.	=	=	.	.
+Jordao2003	2.2	Uca tangeri	.	text p. 981-982	citation	Wolfrath1993	1	=	=	.	.
 Jordao2003	2.3	Uca tangeri	.	text p. 981-982	citation	vonHagen1962.1	1	=	=	.	.
 Jordao2003	2.4	Uca tangeri	.	text p. 981-982	citation	Lourenco2000	1	=	=	.	.
 Jordao2003	3.1	Uca annulipes	.	text p. 981-982	citation	Macia2001	1	=	=	.	.
@@ -20312,6 +20368,12 @@ Ashton2003.1	2.3	Uca rosea	.	text p. 1466, 1468-1469	location	Matang Mangrove Fo
 Ashton2003.1	2.4	Uca rosea	.	text p. 1466, 1468-1469	location	Selangor River, Selangor, Malaysia	.	rosea	<	.	.
 Ashton2003.1	3	Uca lactea	.	text p. 1468	location	Klong Ngao, Phang Nga, Thailand	.	annulipes	>MSR:geography	.	.
 Ashton2003.1	4	Uca sp.	.	text p. 1468	location	Selangor River, Selangor, Malaysia	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Curran2003	1.1	Uca major	.	text p. 233, 239-240	location	Pigeon Creek, San Salvador, The Bahamas	.	major	<	.	.
+Curran2003	1.2	Uca major	.	text p. 233, 239-240	citation	Crane1975	48	=	=	.	.
+Curran2003	2	Uca spp.	.	text p. 233, 236, 239-241	location	Pigeon Creek, San Salvador, The Bahamas	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Curran2003	3	Uca pugilator	.	text p. 240	citation	Allen1974	1	=	=	.	.
+Curran2003	4	Uca leptodactyla	.	text p. 240	location	Pigeon Creek, San Salvador, The Bahamas	.	leptodactyla	<	.	.
+Curran2003	5	Uca rapax	.	text p. 240	location	Pigeon Creek, San Salvador, The Bahamas	.	rapax	<	.	.
 Brodie2004.2	1	Uca pugilator	.	text p. 64	location	Southeastern United States	.	pugilator	<	.	.
 Brodie2004.2	2	Uca pugnax	.	text p. 64	location	Southeastern United States	.	pugnax	<	.	.
 Brodie2004.2	3	Uca minax	.	text p. 64	location	Southeastern United States	.	minax	<	.	.
@@ -20320,7 +20382,7 @@ Brodie2004.1	1	Uca minax	.	text p. 530	location	South Carolina, USA	.	minax	<	.	
 Kim2004.2	1	Uca terpsichores	.	text p. 583	location	Panama	.	terpsichores	<	.	.
 Koch2004	1	Uca pugilator	.	text p. 715	n/a	.	.	pugilator	<	.	.
 Thurman2004.2	1	Uca	fiddler crabs	text p. 652	n/a	.	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
-Thurman2004.2	2	Boboruca	.	text p. 652	n/a	.	.	#genus#Minuca	>MSR:synonymy	Used as subgenus	.
+Thurman2004.2	2	Boboruca	.	text p. 652	n/a	.	.	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 Thurman2004.2	3	Celuca	.	text p. 652	n/a	.	.	#genus#Leptuca	>MSR:synonymy	Used as subgenus	.
 Thurman2004.2	4	Minuca	.	text p. 652	n/a	.	.	#genus#Minuca	<	Used as subgenus	.
 Thurman2004.2	5	Uca pugilator	.	text p. 652	n/a	.	.	pugilator	<	.	.
@@ -20650,7 +20712,7 @@ Ohno2006.2	5.2	Uca pugilator	.	text p. 13-14	citation	OConnor1993	.	=	=	.	.
 Ohno2006.2	5.3	Uca pugilator	.	text p. 13-14	citation	Knopf1966	1	=	=	.	.
 Ohno2006.2	6.1	Uca minax	.	text p. 13	citation	Ringold1979.1	2	=	=	.	.
 Ohno2006.2	6.2	Uca minax	.	text p. 13	citation	Croll2000.2	1	=	=	.	.
-Ohno2006.2	7	Uca tangeri	.	text p. 13-14	citation	Wolfrath1993	.	=	=	.	.
+Ohno2006.2	7	Uca tangeri	.	text p. 13-14	citation	Wolfrath1993	1	=	=	.	.
 Anilkumar2006.2	1	Uca pugilator	.	text p. e165	n/a	.	.	pugilator	<	.	.
 Anilkumar2006.2	2	Uca annulipes	.	text p. e165	location	Kannur, Kannur District, Kerala, India	.	annulipes	<	.	.
 Brodie2006.2	1	Uca pugilator	.	text p. e17	location	South Carolina, USA	.	pugilator	<	.	.
@@ -21657,6 +21719,11 @@ An2008	2	Uca dussumieri	.	text p. 581	location	Chongming Island, Shanghai, China
 Krumme2008	1.1	Uca spp.	fiddler crabs	text p. 91-92, 95-98	citation	Koch2002	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Krumme2008	1.2	Uca spp.	fiddler crabs	text p. 91-92, 95-98	location	Furo do Meio, Baía do Caeté, Pará, Brazil	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Krumme2008	1.3	Uca spp.	fiddler crabs	text p. 91-92, 95-98	citation	Koch1999	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+GuillenHernandez2008	1.1	Uca spinicarpa	.	text p. 61-63, 65	location	Progreso, Yucatan, Mexico	.	spinicarpa	<	.	.
+GuillenHernandez2008	1.2	Uca spinicarpa	.	text p. 61-63, 65	citation	Nickol2002	.	=	=	.	.
+GuillenHernandez2008	1.3	Uca spinicarpa	.	text p. 61-63, 65	citation	Barnwell1984.1	.	=	=	.	.
+GuillenHernandez2008	2.1	Uca rapax	.	text p. 65	citation	Nickol2002	.	=	=	.	.
+GuillenHernandez2008	2.2	Uca rapax	.	text p. 65	citation	Crane1975	65	=	=	.	.
 Meng2009.3	1	Uca pugilator	.	text p. e114	n/a	.	.	pugilator	<	.	.
 Aoki2009	1.1	Uca arcuata	.	text p. 10-13	location	Japan	.	arcuata	<	.	.
 Aoki2009	1.2	Uca arcuata	.	text p. 10-13	citation	Ono1965	2	=	=	.	.
@@ -21865,6 +21932,133 @@ Pratiwi2009	6	Uca coarctata flammula	.	text p. 68, 70	location	Mahakam River Del
 Pratiwi2009	7	Uca triangularis triangularis	.	text p. 68-69	location	Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	triangularis	<	.	.
 Pratiwi2009	8	Uca (Celuca) lactea annulipes	.	text p. 68	citation	Nadia2002	.	=	=	.	.
 Pratiwi2009	9	Uca urvillei	.	text p. 69	location	Mahakam River Delta, East Kalimantan, Borneo, Indonesia	.	?	.	Unclear what species this might be	.
+Spivak2009	1.01	Uca tangeri	.	text p. 297-304	citation	Burford2001.1	.	=	=	.	.
+Spivak2009	1.02	Uca tangeri	.	text p. 297-304	citation	Jordao2005	.	=	=	.	.
+Spivak2009	1.03	Uca tangeri	.	text p. 297-304	citation	Wolfrath1993	1	=	=	.	.
+Spivak2009	1.04	Uca tangeri	.	text p. 297-304	citation	KrippeitDrews1989	1	=	=	.	.
+Spivak2009	1.05	Uca tangeri	.	text p. 297-304	citation	Medina1992.2	1	=	=	.	.
+Spivak2009	1.06	Uca tangeri	.	text p. 297-304	citation	Rodriguez1997	.	=	=	.	.
+Spivak2009	1.07	Uca tangeri	.	text p. 297-304	citation	vonHagen1987.2	1	=	=	.	.
+Spivak2009	1.08	Uca tangeri	.	text p. 297-304	citation	Rodriguez1993.1	.	=	=	.	.
+Spivak2009	1.09	Uca tangeri	.	text p. 297-304	citation	Paula1985	1	=	=	.	.
+Spivak2009	1.1	Uca tangeri	.	text p. 297-304	citation	Beinlich2006	38	=	=	.	.
+Spivak2009	1.11	Uca tangeri	.	text p. 297-304	location	San Pedro River, Bay of Cádiz, Cádiz, Andalusia, Spain	.	tangeri	<	.	.
+Spivak2009	1.12	Uca tangeri	.	text p. 297-304	citation	EwaOboho1993	1	=	=	.	.
+Spivak2009	1.13	Uca tangeri	.	text p. 297-304	citation	Crane1975	42	=	=	.	.
+Spivak2009	1.14	Uca tangeri	.	text p. 297-304	citation	Costa2001.1	.	=	=	.	.
+Spivak2009	2	Afruca tangeri	.	text p. 297, 303	n/a	.	.	tangeri	<	.	.
+Spivak2009	3.1	Uca	.	text p. 297-298, 302	citation	Rosenberg2001	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Spivak2009	3.2	Uca	.	text p. 297-298, 302	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Spivak2009	3.3	Uca	.	text p. 297-298, 302	citation	Levinton1996	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Spivak2009	3.4	Uca	.	text p. 297-298, 302	citation	Sturmbauer1996	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Spivak2009	3.5	Uca	.	text p. 297-298, 302	citation	Christy2003.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Spivak2009	4	Uca minax	.	text p. 298, 302	citation	Brodie2007	.	=	=	.	.
+Spivak2009	5.1	Afruca	.	text p. 298, 303	citation	Crane1975	41	#genus#Afruca	<	Used as subgenus in this context	.
+Spivak2009	5.2	Afruca	.	text p. 298, 303	citation	Rosenberg2001	3.2	#genus#Afruca	<	Used as subgenus in this context	.
+Spivak2009	5.3	Afruca	.	text p. 298, 303	citation	Beinlich2006	8.3	#genus#Afruca	<	Used as subgenus in this context	.
+Spivak2009	5.4	Afruca	.	text p. 298, 303	citation	Levinton1996	.	#genus#Afruca	<	Used as subgenus in this context	.
+Spivak2009	5.5	Afruca	.	text p. 298, 303	citation	Sturmbauer1996	6	#genus#Afruca	<	Used as subgenus in this context	.
+Spivak2009	6.1	Amphiuca	.	text p. 298	citation	Crane1975	33	#genus#Paraleptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	6.2	Amphiuca	.	text p. 298	citation	Rosenberg2001	6	#genus#Paraleptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	7.1	Australuca	.	text p. 298	citation	Crane1975	17	#subgenus#Australuca	<	Used as subgenus in this context	.
+Spivak2009	7.2	Australuca	.	text p. 298	citation	Beinlich2006	1	#subgenus#Australuca	<	Used as subgenus in this context	.
+Spivak2009	7.3	Australuca	.	text p. 298	citation	Rosenberg2001	5	#subgenus#Australuca	<	Used as subgenus in this context	.
+Spivak2009	8.1	Boboruca	.	text p. 298	citation	Crane1975	38	#genus#Leptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	8.2	Boboruca	.	text p. 298	citation	Rosenberg2001	2.2	#genus#Leptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	9.1	Celuca	.	text p. 298	citation	Crane1975	71	#genus#Leptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	9.2	Celuca	.	text p. 298	citation	Rosenberg2001	8	#genus#Leptuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	10.1	Deltuca	.	text p. 298	citation	Crane1975	2	#genus#Tubuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	10.2	Deltuca	.	text p. 298	citation	Rosenberg2001	4	#genus#Tubuca	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	11.1	Minuca	.	text p. 298	citation	Crane1975	53	#genus#Minuca	<	Used as subgenus in this context	.
+Spivak2009	11.2	Minuca	.	text p. 298	citation	Rosenberg2001	2	#genus#Minuca	<	Used as subgenus in this context	.
+Spivak2009	11.3	Minuca	.	text p. 298	citation	Beinlich2006	5	#genus#Minuca	<	Used as subgenus in this context	.
+Spivak2009	12.1	Thalassuca	.	text p. 298	citation	Crane1975	24	#genus#Gelasimus	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	12.2	Thalassuca	.	text p. 298	citation	Rosenberg2001	7	#genus#Gelasimus	>MSR:synonymy	Used as subgenus in this context	.
+Spivak2009	13.1	Uca	.	text p. 298	citation	Crane1975	43	#genus#Uca	<	Used as subgenus in this context	.
+Spivak2009	13.2	Uca	.	text p. 298	citation	Rosenberg2001	3	#genus#Uca	<	Used as subgenus in this context	.
+Spivak2009	13.3	Uca	.	text p. 298	citation	Beinlich2006	8	#genus#Uca	<	Used as subgenus in this context	.
+Spivak2009	13.4	Uca	.	text p. 298	citation	Levinton1996	.	#genus#Uca	<	Used as subgenus in this context	.
+Spivak2009	13.5	Uca	.	text p. 298	citation	Sturmbauer1996	4	#genus#Uca	<	Used as subgenus in this context	.
+Spivak2009	14	Cranuca	.	text p. 298	citation	Beinlich2006	2	#genus#Cranuca	<	Used as subgenus in this context	.
+Spivak2009	15	Gelasimus	.	text p. 298	citation	Beinlich2006	3	#genus#Gelasimus	<	Used as subgenus in this context	.
+Spivak2009	16	Letpuca	.	text p. 298	citation	Beinlich2006	4	#genus#Leptuca	<	Used as subgenus in this context	.
+Spivak2009	17	Paraleptuca	.	text p. 298	citation	Beinlich2006	6	#genus#Paraleptuca	<	Used as subgenus in this context	.
+Spivak2009	18	Tubuca	.	text p. 298	citation	Beinlich2006	7	#genus#Tubuca	<	Used as subgenus in this context	.
+Spivak2009	19.1	Uca pugnax	.	text p. 302, 304	citation	OConnor1985	.	=	=	.	.
+Spivak2009	19.2	Uca pugnax	.	text p. 302, 304	citation	Sanford2006	.	=	=	.	.
+Spivak2009	20	Uca uruguayensis	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	21	Uca mordax	.	text p. 303	citation	Rieger1997	.	=	=	.	.
+Spivak2009	22	Uca burgersi	.	text p. 303	citation	Rieger1998	.	=	=	.	.
+Spivak2009	23.1	Uca pugilator	.	text p. 303	citation	Ko1989	.	=	=	.	.
+Spivak2009	23.2	Uca pugilator	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	24.1	Uca annulipes	.	text p. 303-304	citation	Ko1989	.	=	=	.	.
+Spivak2009	24.2	Uca annulipes	.	text p. 303-304	citation	Hashmi1968	.	=	=	.	.
+Spivak2009	24.3	Uca annulipes	.	text p. 303-304	citation	Rieger1996	.	=	=	.	.
+Spivak2009	25.1	Uca vocans	.	text p. 303	citation	Ko1989	.	=	=	.	.
+Spivak2009	25.2	Uca vocans	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	26.1	Uca triangularis	.	text p. 303	citation	Ko1989	.	=	=	.	.
+Spivak2009	26.2	Uca triangularis	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	27	Uca arcuata	.	text p. 303	citation	Ko1989	.	=	=	.	.
+Spivak2009	28	Uca thayeri	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	29.1	Uca lactea	.	text p. 303	citation	Ko1989	.	=	=	.	.
+Spivak2009	29.2	Uca lactea	.	text p. 303	citation	Rieger1996	.	=	=	.	.
+Spivak2009	30	Uca subcylindrica	.	text p. 303-304	citation	Rabalais1983.2	.	=	=	.	.
+Spivak2009	31.1	Uca (Uca)	.	text p. 303	citation	Levinton1996	.	#genus#Uca	<	.	.
+Spivak2009	31.2	Uca (Uca)	.	text p. 303	citation	Sturmbauer1996	4	#genus#Uca	<	.	.
+Spivak2009	32.1	Uca (Afruca) tangeri	.	text p. 303	citation	Levinton1996	.	=	=	.	.
+Spivak2009	32.2	Uca (Afruca) tangeri	.	text p. 303	citation	Sturmbauer1996	5	=	=	.	.
+Spivak2009	33	Uca speciosa	.	text p. 304	n/a	.	.	.	.	Uncited data	.
+Felder2009	1	.	fiddler crabs	text p. 1024	location	Gulf of Mexico	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Felder2009	2.1	Uca burgersi	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	2.2	Uca burgersi	.	text p. 1087	citation	Crane1975	59	=	=	.	.
+Felder2009	2.3	Uca burgersi	.	text p. 1087	citation	Melo1996	.	=	=	.	.
+Felder2009	2.4	Uca burgersi	.	text p. 1087	citation	Melo1998	.	=	=	.	.
+Felder2009	2.5	Uca burgersi	.	text p. 1087	citation	Powers1977	8	=	=	.	.
+Felder2009	3.1	Uca leptodactyla	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	3.2	Uca leptodactyla	.	text p. 1087	citation	Crane1975	99	=	=	.	.
+Felder2009	3.3	Uca leptodactyla	.	text p. 1087	citation	Melo1996	.	=	=	.	.
+Felder2009	3.4	Uca leptodactyla	.	text p. 1087	citation	Melo1998	.	=	=	.	.
+Felder2009	3.5	Uca leptodactyla	.	text p. 1087	citation	Powers1977	9	=	=	.	.
+Felder2009	4.1	Uca longisignalis	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	4.2	Uca longisignalis	.	text p. 1087	citation	Crane1975	66	=	=	.	.
+Felder2009	4.3	Uca longisignalis	.	text p. 1087	citation	Powers1977	6	=	=	.	.
+Felder2009	5.1	Uca marguerita	.	text p. 1087, 1103	citation	Alvarez2005	.	=	=	.	.
+Felder2009	5.2	Uca marguerita	.	text p. 1087, 1103	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	6.1	Uca minax	.	text p. 1087, 1103	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	6.2	Uca minax	.	text p. 1087, 1103	citation	Crane1975	61	=	=	.	.
+Felder2009	6.3	Uca minax	.	text p. 1087, 1103	citation	Felder1973	.	=	=	.	.
+Felder2009	6.4	Uca minax	.	text p. 1087, 1103	citation	Felder1994	.	=	=	.	.
+Felder2009	6.5	Uca minax	.	text p. 1087, 1103	citation	Powers1977	11	=	=	.	.
+Felder2009	7.1	Uca panacea	.	text p. 1087, 1103	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	7.2	Uca panacea	.	text p. 1087, 1103	citation	Powers1977	3	=	=	.	.
+Felder2009	8.1	Uca pugilator	.	text p. 1087, 1103	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	8.2	Uca pugilator	.	text p. 1087, 1103	citation	Powers1977	4	=	=	.	.
+Felder2009	9.1	Uca rapax	.	text p. 1087, 1103-1104	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	9.2	Uca rapax	.	text p. 1087, 1103-1104	citation	Crane1975	65	=	=	.	.
+Felder2009	9.3	Uca rapax	.	text p. 1087, 1103-1104	citation	Powers1977	10	=	=	.	.
+Felder2009	9.4	Uca rapax	.	text p. 1087, 1103-1104	citation	Salmon1987.2	.	=	=	.	.
+Felder2009	10.1	Uca speciosa	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	10.2	Uca speciosa	.	text p. 1087	citation	Powers1977	15	=	=	.	.
+Felder2009	11.1	Uca spinicarpa	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	11.2	Uca spinicarpa	.	text p. 1087	citation	Powers1977	16	=	=	.	.
+Felder2009	11.3	Uca spinicarpa	.	text p. 1087	citation	RazGuzman1996	.	=	=	.	.
+Felder2009	12.1	Uca subcylindrica	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	12.2	Uca subcylindrica	.	text p. 1087	citation	Powers1977	2	=	=	.	.
+Felder2009	13.1	Uca thayeri	.	text p. 1087	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	13.2	Uca thayeri	.	text p. 1087	citation	Melo1996	.	=	=	.	.
+Felder2009	13.3	Uca thayeri	.	text p. 1087	citation	Melo1998	.	=	=	.	.
+Felder2009	13.4	Uca thayeri	.	text p. 1087	citation	Powers1977	18	=	=	.	.
+Felder2009	14.1	Uca virens	.	text p. 1087, 1103-1104	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	14.2	Uca virens	.	text p. 1087, 1103-1104	citation	Crane1975	68	=	=	.	.
+Felder2009	14.3	Uca virens	.	text p. 1087, 1103-1104	citation	Powers1977	5	=	=	.	.
+Felder2009	14.4	Uca virens	.	text p. 1087, 1103-1104	citation	Salmon1987.2	.	=	=	.	.
+Felder2009	15.1	Uca vocator	.	text p. 1087, 1104	citation	Barnwell1984.1	.	=	=	.	.
+Felder2009	15.2	Uca vocator	.	text p. 1087, 1104	citation	Crane1975	57	=	=	.	.
+Felder2009	15.3	Uca vocator	.	text p. 1087, 1104	citation	Melo1996	.	=	=	.	.
+Felder2009	15.4	Uca vocator	.	text p. 1087, 1104	citation	Melo1998	.	=	=	.	.
+Felder2009	15.5	Uca vocator	.	text p. 1087, 1104	citation	Powers1977	14	=	=	.	.
+Felder2009	15.6	Uca vocator	.	text p. 1087, 1104	specimen	Copano Bay, Texas, USA [ULLZ 4597]	.	vocator	<	.	.
+Felder2009	16	Uca pugnax	.	text p. 1103	citation	Alvarez2005	.	=	=	.	.
 Barnes2010	1.01	Uca	.	text p. 249-253	location	Ambeua, Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Barnes2010	1.02	Uca	.	text p. 249-253	citation	Rosenberg2001	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Barnes2010	1.03	Uca	.	text p. 249-253	citation	Beinlich2006	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -21967,7 +22161,7 @@ Shih2010.1	2.3	Uca neocultrimana	.	text p. 47-50, 52-53, 56-60; figure 3G-I, 5A-
 Shih2010.1	2.4	Uca neocultrimana	.	text p. 47-50, 52-53, 56-60; figure 3G-I, 5A-D	specimen	Wallis, Wallis and Futuna	.	excisa	>MSR:synonymy	.	.
 Shih2010.1	3	Uca lactea	.	text p. 47, 57, 59	citation	Crane1975	95	=	=	.	.
 Shih2010.1	4	Uca formosensis	.	text p. 47	citation	Shih1999.3	.	=	=	.	.
-Shih2010.1	5	Uca tangeri	.	text p. 47	citation	Spivak2009	.	=	=	.	.
+Shih2010.1	5	Uca tangeri	.	text p. 47	citation	Spivak2009	1	=	=	.	.
 Shih2010.1	6.1	Uca borealis	.	text p. 48, 52, 56-60; figure 5G-H	citation	Crane1975	32	=	=	.	.
 Shih2010.1	6.2	Uca borealis	.	text p. 48, 52, 56-60; figure 5G-H	specimen	Taiwan	.	borealis	<	.	.
 Shih2010.1	6.3	Uca borealis	.	text p. 48, 52, 56-60; figure 5G-H	specimen	Hong Kong, China	.	borealis	<	.	.
@@ -22388,7 +22582,7 @@ Shih2010.2	3.23	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Chen
 Shih2010.2	3.24	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Yang1996	.	=	=	.	.
 Shih2010.2	3.25	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Cai1998	.	=	=	.	.
 Shih2010.2	3.26	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Ying1999	.	=	=	.	.
-Shih2010.2	3.27	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Zhang2001	.	=	=	.	.
+Shih2010.2	3.27	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Zhang2001	1	=	=	.	.
 Shih2010.2	3.28	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Chen2002	.	=	=	.	.
 Shih2010.2	3.29	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Xu2002	.	=	=	.	.
 Shih2010.2	3.3	Uca arcuata	.	text p. 1-2, 5-8, 16-17; Figure 2E-F	citation	Tang2007	1	=	=	.	.
@@ -22784,6 +22978,30 @@ Pratiwi2010	1.3	Uca spp.	.	text p. 86-89	citation	Smith2003.2	0	>&ldquo;fiddler 
 Pratiwi2010	1.4	Uca spp.	.	text p. 86-89	citation	Smith1973	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Pratiwi2010	2	Uca (celuca) lactea annulipes	.	text p. 86, 92	location	Muntun, Lampung, Sumatra, Indonesia	.	annulipes	<	.	.
 Pratiwi2010	3	Uca (Amphiuca) chornpthalmus crassipes	.	text p. 94	location	Suamalu, Lampung, Sumatra, Indonesia	.	crassipes	<	.	.
+ArzolaGonzalez2010	1	Uca	.	text p. 179-180, 186	location	Sinaloa, Mexico	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+ArzolaGonzalez2010	2.1	Uca crenulata	.	text p. 186, 189	location	Isla San Ignacio, Sinaloa, Mexico	.	crenulata	<	.	.
+ArzolaGonzalez2010	2.2	Uca crenulata	.	text p. 186, 189	citation	Brusca1980	1	=	=	.	.
+ArzolaGonzalez2010	3.1	Uca princeps	.	text p. 186, 189	location	Isla Tesobiate, Sinaloa, Mexico	.	princeps	<	.	.
+ArzolaGonzalez2010	3.2	Uca princeps	.	text p. 186, 189	location	Isla Guasayeye, Sinaloa, Mexico	.	princeps	<	.	.
+ArzolaGonzalez2010	3.3	Uca princeps	.	text p. 186, 189	location	Isla Las Chivas, Sinaloa, Mexico	.	princeps	<	.	.
+ArzolaGonzalez2010	3.4	Uca princeps	.	text p. 186, 189	location	Isla Altamura, Sinaloa, Mexico	.	princeps	<	.	.
+ArzolaGonzalez2010	3.5	Uca princeps	.	text p. 186, 189	location	Isla Talchichitle, Sinaloa, Mexico	.	princeps	<	.	.
+ArzolaGonzalez2010	3.6	Uca princeps	.	text p. 186, 189	citation	VillalobosHiriart1989	1	=	=	.	.
+ArzolaGonzalez2010	4.1	Uca vocator	.	text p. 186, 189	location	Isla Altamura, Sinaloa, Mexico	.	ecuadoriensis	>MSR:geography	.	.
+ArzolaGonzalez2010	4.2	Uca vocator	.	text p. 186, 189	location	Isla Talchichitle, Sinaloa, Mexico	.	ecuadoriensis	>MSR:geography	.	.
+ArzolaGonzalez2010	4.3	Uca vocator	.	text p. 186, 189	citation	Hendrickx1984	6	=	=	.	.
+ArzolaGonzalez2010	5.1	Uca zacae	.	text p. 186, 189	location	Isla Guasayeye, Sinaloa, Mexico	.	zacae	<	.	.
+ArzolaGonzalez2010	5.2	Uca zacae	.	text p. 186, 189	location	Isla Tesobiate, Sinaloa, Mexico	.	zacae	<	.	.
+ArzolaGonzalez2010	5.3	Uca zacae	.	text p. 186, 189	location	Isla Nescoco, Sinaloa, Mexico	.	zacae	<	.	.
+ArzolaGonzalez2010	5.4	Uca zacae	.	text p. 186, 189	location	Isla Altamura, Sinaloa, Mexico	.	zacae	<	.	.
+ArzolaGonzalez2010	5.5	Uca zacae	.	text p. 186, 189	citation	Crane1975	69	=	=	.	.
+ArzolaGonzalez2010	5.6	Uca zacae	.	text p. 186, 189	citation	Hendrickx1979	5	=	=	.	.
+Barba2010	1	Uca sp.	.	text p. S156-S162	location	Tabasco, Mexico	.	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Barba2010	2	Uca burgersi	.	text p. S161	citation	Alvarez2005	.	=	=	.	.
+Barba2010	3	Uca marguerita	.	text p. S161	citation	Alvarez2005	.	=	=	.	.
+Barba2010	4	Uca pugnax	.	text p. S161	citation	Alvarez2005	.	=	=	.	.
+Barba2010	5	Uca rapax	.	text p. S161	citation	Alvarez2005	.	=	=	.	.
+Barba2010	6	Uca vocator	.	text p. S161	citation	Alvarez2005	.	=	=	.	.
 Imamura2011	1	Uca tetragonon	.	text p. 45	citation	Koga1995	3	=	=	.	.
 Bywater2011	1	Uca vomeris	.	text p. e19	location	Southeastern Queensland, Australia	.	vomeris	<	.	.
 Das2011	1	Uca pugilator	.	text p. e181	n/a	.	.	pugilator	<	.	.
@@ -23141,7 +23359,7 @@ Moscoso2012	12.08	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	Rosenber
 Moscoso2012	12.09	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	Beinlich2006	100	=	=	.	.
 Moscoso2012	12.1	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	Ng2008	54	=	=	.	.
 Moscoso2012	12.11	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	Brusca1980	6	=	=	.	.
-Moscoso2012	12.12	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	ArzolaGonzalez2010	.	=	=	.	.
+Moscoso2012	12.12	Uca (Minuca) ecuadoriensis	.	text p. 23, 152	citation	ArzolaGonzalez2010	4	=	=	.	.
 Moscoso2012	13.01	Uca (Minuca) galapagensis	.	text p. 23, 152-153	location	Peru	.	galapagensis	<	.	.
 Moscoso2012	13.02	Uca (Minuca) galapagensis	.	text p. 23, 152-153	citation	Rathbun1902.3	1	=	=	.	.
 Moscoso2012	13.03	Uca (Minuca) galapagensis	.	text p. 23, 152-153	citation	Rathbun1911	8	=	=	.	.
@@ -23218,7 +23436,7 @@ Moscoso2012	17.08	Uca (Uca) princeps	.	text p. 23, 154	citation	delSolar1970	.	=
 Moscoso2012	17.09	Uca (Uca) princeps	.	text p. 23, 154	citation	Brusca1980	15	=	=	.	.
 Moscoso2012	17.1	Uca (Uca) princeps	.	text p. 23, 154	citation	Kameya1998	2	=	=	.	.
 Moscoso2012	17.11	Uca (Uca) princeps	.	text p. 23, 154	citation	Rosenberg2001	37	=	=	.	.
-Moscoso2012	17.12	Uca (Uca) princeps	.	text p. 23, 154	citation	ArzolaGonzalez2010	.	=	=	.	.
+Moscoso2012	17.12	Uca (Uca) princeps	.	text p. 23, 154	citation	ArzolaGonzalez2010	3	=	=	.	.
 Moscoso2012	17.13	Uca (Uca) princeps	.	text p. 23, 154	citation	Crane1975	45	=	=	.	.
 Moscoso2012	17.14	Uca (Uca) princeps	.	text p. 23, 154	citation	Hendrickx1984	1	=	=	.	.
 Moscoso2012	17.15	Uca (Uca) princeps	.	text p. 23, 154	citation	VillalobosHiriart1989	1	=	=	.	.
@@ -23257,7 +23475,7 @@ NgoMassou2012	2.3	Uca tangeri	.	text p. 351-352, 355-356	location	Tiko, Southwes
 NgoMassou2012	2.4	Uca tangeri	.	text p. 351-352, 355-356	location	Wouri, Littoral Cameroon, Cameroon	.	tangeri	<	.	.
 NgoMassou2012	2.5	Uca tangeri	.	text p. 351-352, 355-356	location	Mabeta Creek, Southwest Cameroon, Cameroon	.	tangeri	<	.	.
 NgoMassou2012	2.6	Uca tangeri	.	text p. 351-352, 355-356	location	Sanaga River, Littoral Cameroon, Cameroon	.	tangeri	<	.	.
-NgoMassou2012	2.7	Uca tangeri	.	text p. 351-352, 355-356	citation	Longonje2008	.	=	=	.	.
+NgoMassou2012	2.7	Uca tangeri	.	text p. 351-352, 355-356	citation	Simon2008	.	=	=	.	.
 NgoMassou2012	2.8	Uca tangeri	.	text p. 351-352, 355-356	citation	DahdouhGuebas2001	1	=	=	.	.
 NgoMassou2012	2.9	Uca tangeri	.	text p. 351-352, 355-356	citation	Boye1975	.	=	=	.	.
 NgoMassou2012	3	Uca vocans	.	text p. 356	citation	Lim2010	.	=	=	.	.
@@ -23761,7 +23979,7 @@ UtreraLopez2013	1.09	Uca (Uca) major	.	text p. 367-369	specimen	Laguna de La Man
 UtreraLopez2013	1.1	Uca (Uca) major	.	text p. 367-369	citation	vonHagen1970.4	2	=	=	.	.
 UtreraLopez2013	1.11	Uca (Uca) major	.	text p. 367-369	citation	Thurman1987.1	.	=	=	.	.
 UtreraLopez2013	1.12	Uca (Uca) major	.	text p. 367-369	citation	Thurman2010	.	=	=	.	.
-UtreraLopez2013	1.13	Uca (Uca) major	.	text p. 367-369	citation	Curran2003	.	=	=	.	.
+UtreraLopez2013	1.13	Uca (Uca) major	.	text p. 367-369	citation	Curran2003	1	=	=	.	.
 UtreraLopez2013	2.1	Uca	.	text p. 367	citation	Crane1975	43	=	=	Subgenus reference	.
 UtreraLopez2013	2.2	Uca	.	text p. 367	citation	Beinlich2006	8	=	=	.	.
 UtreraLopez2013	3.1	Uca (Uca) maracoani	.	text p. 367, 369	location	Atlantic Ocean	.	maracoani	<	.	.
@@ -24013,21 +24231,21 @@ Bywater2014	2.1	.	fiddler crab	text p. 2848-2849	citation	Backwell2000	0	>&ldquo
 Bywater2014	2.2	.	fiddler crab	text p. 2848-2849	citation	Lailvaux2009	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Bywater2014	2.3	.	fiddler crab	text p. 2848-2849	citation	Bywater2012.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 PerezMozqueda2014	1.1	Uca panacea	.	text p. 969-971; figure 1	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	1.2	Uca panacea	.	text p. 969-971; figure 1	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	1.2	Uca panacea	.	text p. 969-971; figure 1	citation	Felder2009	7	=	=	.	.
 PerezMozqueda2014	1.3	Uca panacea	.	text p. 969-971; figure 1	location	Laguna Tamiahua, Veracruz, Mexico	.	panacea	<	.	.
 PerezMozqueda2014	2.1	Uca rapax	.	text p. 969-971; figure 1	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	2.2	Uca rapax	.	text p. 969-971; figure 1	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	2.2	Uca rapax	.	text p. 969-971; figure 1	citation	Felder2009	9	=	=	.	.
 PerezMozqueda2014	2.3	Uca rapax	.	text p. 969-971; figure 1	citation	RazGuzman1992.2	.	=	=	.	.
 PerezMozqueda2014	2.4	Uca rapax	.	text p. 969-971; figure 1	citation	RazGuzman1996	.	=	=	.	.
 PerezMozqueda2014	2.6	Uca rapax	.	text p. 969-971; figure 1	location	Laguna Tamiahua, Veracruz, Mexico	.	virens	>MSR:geography	.	.
 PerezMozqueda2014	3.1	Uca spinicarpa	.	text p. 969-971; figure 1	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	3.2	Uca spinicarpa	.	text p. 969-971; figure 1	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	3.2	Uca spinicarpa	.	text p. 969-971; figure 1	citation	Felder2009	11	=	=	.	.
 PerezMozqueda2014	3.3	Uca spinicarpa	.	text p. 969-971; figure 1	location	Laguna Tamiahua, Veracruz, Mexico	.	spinicarpa	<	.	.
 PerezMozqueda2014	4.1	Uca virens	.	text p. 969-971; figure 1	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	4.2	Uca virens	.	text p. 969-971; figure 1	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	4.2	Uca virens	.	text p. 969-971; figure 1	citation	Felder2009	14	=	=	.	.
 PerezMozqueda2014	4.3	Uca virens	.	text p. 969-971; figure 1	location	Laguna Tamiahua, Veracruz, Mexico	.	virens	<	.	.
 PerezMozqueda2014	5.1	Uca vocator	.	text p. 969-971; figure 1	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	5.2	Uca vocator	.	text p. 969-971; figure 1	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	5.2	Uca vocator	.	text p. 969-971; figure 1	citation	Felder2009	15	=	=	.	.
 PerezMozqueda2014	5.3	Uca vocator	.	text p. 969-971; figure 1	citation	RazGuzman1992.2	.	=	=	.	.
 PerezMozqueda2014	5.4	Uca vocator	.	text p. 969-971; figure 1	citation	RazGuzman1996	.	=	=	.	.
 PerezMozqueda2014	5.5	Uca vocator	.	text p. 969-971; figure 1	citation	HernandezAguilera1996	5	=	=	.	.
@@ -24039,32 +24257,31 @@ PerezMozqueda2014	6.4	Uca	.	text p. 969-971	citation	Powers1977	0	>&ldquo;fiddle
 PerezMozqueda2014	6.5	Uca	.	text p. 969-971	citation	Abele1986	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 PerezMozqueda2014	6.6	Uca	.	text p. 969-971	citation	Thurman1987.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 PerezMozqueda2014	7.1	Uca burgersi	.	text p. 969-971	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	7.2	Uca burgersi	.	text p. 969-971	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	7.2	Uca burgersi	.	text p. 969-971	citation	Felder2009	2	=	=	.	.
 PerezMozqueda2014	8.1	Uca cordatus	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	8.2	Uca cordatus	.	text p. 969	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	8.2	Uca cordatus	.	text p. 969	citation	Felder2009	0	>Ucides cordatus	.	.	.
 PerezMozqueda2014	9.1	Uca leptodactylus	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	9.2	Uca leptodactylus	.	text p. 969	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	9.2	Uca leptodactylus	.	text p. 969	citation	Felder2009	3	=	=	.	.
 PerezMozqueda2014	10.1	Uca longisignalis	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	10.2	Uca longisignalis	.	text p. 969	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	10.2	Uca longisignalis	.	text p. 969	citation	Felder2009	4	=	=	.	.
 PerezMozqueda2014	11.1	Uca major	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	11.2	Uca major	.	text p. 969	citation	Felder2009	.	=	=	.	.
 PerezMozqueda2014	12.1	Uca marguerita	.	text p. 969-971	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	12.2	Uca marguerita	.	text p. 969-971	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	12.2	Uca marguerita	.	text p. 969-971	citation	Felder2009	5	=	=	.	.
 PerezMozqueda2014	12.3	Uca marguerita	.	text p. 969-971	citation	RazGuzman1992.2	.	=	=	.	.
 PerezMozqueda2014	12.4	Uca marguerita	.	text p. 969-971	citation	RazGuzman1996	.	=	=	.	.
 PerezMozqueda2014	12.5	Uca marguerita	.	text p. 969-971	citation	HernandezAguilera1996	4	=	=	.	.
 PerezMozqueda2014	13.1	Uca minax	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	13.2	Uca minax	.	text p. 969	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	13.2	Uca minax	.	text p. 969	citation	Felder2009	6	=	=	.	.
 PerezMozqueda2014	14.1	Uca pugilator	.	text p. 969, 971	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	14.2	Uca pugilator	.	text p. 969, 971	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	14.2	Uca pugilator	.	text p. 969, 971	citation	Felder2009	8	=	=	.	.
 PerezMozqueda2014	15.1	Uca speciosa	.	text p. 969, 971	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	15.2	Uca speciosa	.	text p. 969, 971	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	15.2	Uca speciosa	.	text p. 969, 971	citation	Felder2009	10	=	=	.	.
 PerezMozqueda2014	16.1	Uca thayeri	.	text p. 969	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	16.2	Uca thayeri	.	text p. 969	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	16.2	Uca thayeri	.	text p. 969	citation	Felder2009	13	=	=	.	.
 PerezMozqueda2014	17.1	Uca subcylindrica	.	text p. 969-970	citation	Barnwell1984.1	.	=	=	.	.
-PerezMozqueda2014	17.2	Uca subcylindrica	.	text p. 969-970	citation	Felder2009	.	=	=	.	.
+PerezMozqueda2014	17.2	Uca subcylindrica	.	text p. 969-970	citation	Felder2009	12	=	=	.	.
 GonzalezOrtiz2014	1.1	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.1	2	=	=	.	.
-GonzalezOrtiz2014	1.2	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1993	.	=	=	.	.
+GonzalezOrtiz2014	1.2	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1993	1	=	=	.	.
 GonzalezOrtiz2014	1.3	Uca tangeri	.	text p. 20-23, 25	citation	Cummings2008	.	=	=	.	.
 GonzalezOrtiz2014	1.4	Uca tangeri	.	text p. 20-23, 25	citation	diVirgilio2013	.	=	=	.	.
 GonzalezOrtiz2014	1.5	Uca tangeri	.	text p. 20-23, 25	citation	Wolfrath1992.2	1	=	=	.	.
@@ -24151,7 +24368,7 @@ Talapatra2014	4.14	Uca	fiddler crabs	text p. 907-910	citation	Burns1976	0	>&ldqu
 Talapatra2014	5	Uca gelasimus	.	text p. 907	citation	Shih1999.3	0	>&ldquo;fiddler crabs&rdquo;	<	Authors seemed confused about subgenera and species	.
 Talapatra2014	6	Uca formosensis	.	text p. 907	citation	Shih1999.3	.	=	=	.	.
 Talapatra2014	7	Uca afruca	.	text p. 907	citation	Spivak2009	0	tangeri	>MSR	Authors seemed confused about subgenera and species	.
-Talapatra2014	8	Uca tangeri	.	text p. 907	citation	Spivak2009	.	=	=	.	.
+Talapatra2014	8	Uca tangeri	.	text p. 907	citation	Spivak2009	1	=	=	.	.
 Talapatra2014	9	Uca lactea annulipes	.	text p. 909	citation	Soundarapandian2008	2	=	=	.	.
 Talapatra2014	10	Uca triangularis bengali	.	text p. 909	citation	Soundarapandian2008	1	=	=	.	.
 Talapatra2014	11	Uca iranica	.	text p. 909	citation	Shih2009	.	=	=	.	.
@@ -24294,6 +24511,37 @@ Hebets2014	1.3	.	fiddler crabs	text p. 1013	citation	Layne2003.1	0	>&ldquo;fiddl
 Hebets2014	1.4	.	fiddler crabs	text p. 1013	citation	Layne2003.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Sarika2014	1.1	Uca pugilator	.	text p. 52-55	citation	Durica1996	1	=	=	.	.
 Sarika2014	1.2	Uca pugilator	.	text p. 52-55	citation	Chung1998.1	1	=	=	.	.
+RodriguezTovar2014.2	1	Uca (Leptuca) seciosa	.	text p. 565-570	location	Pigeon Creek, San Salvador, The Bahamas	.	speciosa	<	.	.
+RodriguezTovar2014.2	2.01	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.02	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Lim2006	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.03	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Kristensen2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.04	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Qureshi2012	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.05	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Koretsky2002.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.06	Uca	fiddler crabs	text p. 565-566, 570-571	citation	deGibertt2013	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.07	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Lim2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.08	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Lim2007.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.09	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Teal1958	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.1	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Warren1986	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.11	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Allen1974	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.12	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Katz1980	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.13	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Retraubun1998	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.14	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Botto2000	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.15	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Gribsholt2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.16	Uca	fiddler crabs	text p. 565-566, 570-571	citation	MacCraith2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.17	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Smith2009	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.18	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Wang2010	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.19	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Bartolini2011	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.2	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Mouton1995	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.21	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Genoni1991	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.22	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Lim2007.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.23	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Curran2003	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.24	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Knaust2012	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.25	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Thurman2010	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.26	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Skov2002	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.27	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Milner2010.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	2.28	Uca	fiddler crabs	text p. 565-566, 570-571	citation	Brito1972	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+RodriguezTovar2014.2	3.1	Uca tangeri	.	text p. 566, 570	citation	RodriguezTovar2014.1	.	=	=	.	.
+RodriguezTovar2014.2	3.2	Uca tangeri	.	text p. 566, 570	citation	deGibertt2013	.	=	=	.	.
 Luque2015	1	Uca ornata	.	text p. 423	location	Panama	.	ornata	<	fossils	.
 Hung2015	1	Uca formosensis	.	text p. 161-163	location	Taiwan	.	formosensis	<	.	.
 Lin2015	1	Uca lactea	清白招潮蟹	text p. 157-158	location	Taiwan	.	lactea	<	.	.
@@ -24560,7 +24808,7 @@ Pratiwi2015.2	9.3	Uca (Deltuca) acuta	.	text p. 197	location	Cilacap, West Java,
 Pratiwi2015.2	10	Uca (Gelasimus) tetragonon	.	text p. 197	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	tetragonon	<	.	.
 Pratiwi2015.2	11.1	Uca (Gelasimus) vocans	.	text p. 197	location	Haruku Island, Maluku Province, Maluku Islands, Indonesia	.	vocans	<	.	.
 Pratiwi2015.2	11.2	Uca (Gelasimus) vocans	.	text p. 197	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	vocans	<	.	.
-Pratiwi2015.2	12	Uca (Gelasimus) vocan	.	text p. 200	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	vocan	<	typo	.
+Pratiwi2015.2	12	Uca (Gelasimus) vocan	.	text p. 200	location	Ambon Island, Maluku Province, Maluku Islands, Indonesia	.	vocans	<	typo	.
 Pratiwi2015.1	1.1	Uca dussumieri	.	text p. 294-296	location	East Kalimantan, Borneo, Indonesia	.	dussumieri	<	.	.
 Pratiwi2015.1	1.2	Uca dussumieri	.	text p. 294-296	location	Lampung Bay, Lampung, Sumatra, Indonesia	.	dussumieri	<	.	.
 Pratiwi2015.1	1.3	Uca dussumieri	.	text p. 294-296	location	Trenggalek, East Java, Java, Indonesia	.	dussumieri	<	.	.
@@ -24572,6 +24820,283 @@ Pratiwi2015.1	6	Uca vocans	.	text p. 296	location	Trenggalek, East Java, Java, I
 Pratiwi2015.1	7	Uca lactea	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	?	.	.	.
 Pratiwi2015.1	8	Uca urvillei	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	?	.	.	.
 Pratiwi2015.1	9	Uca annulipes	.	text p. 296	location	Trenggalek, East Java, Java, Indonesia	.	annulipes	<	.	.
+Peer2015	1.001	Uca	fiddler crabs	text p. 187-200	citation	Hodgson1987	0	>&ldquo;fiddler crabs&rdquo;	.	Used as genus	.
+Peer2015	1.002	Uca	fiddler crabs	text p. 187-200	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.003	Uca	fiddler crabs	text p. 187-200	citation	Rosenberg2001	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.004	Uca	fiddler crabs	text p. 187-200	citation	Edney1961	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.005	Uca	fiddler crabs	text p. 187-200	citation	Vernberg1967.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.006	Uca	fiddler crabs	text p. 187-200	citation	Sanford2006	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.007	Uca	fiddler crabs	text p. 187-200	citation	Macnae1963	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.008	Uca	fiddler crabs	text p. 187-200	citation	Vermeiren2015.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.009	Uca	fiddler crabs	text p. 187-200	citation	Naderloo2010	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.01	Uca	fiddler crabs	text p. 187-200	citation	Rosenberg2013	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.011	Uca	fiddler crabs	text p. 187-200	citation	Hyman1920.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.012	Uca	fiddler crabs	text p. 187-200	citation	Hyman1920.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.013	Uca	fiddler crabs	text p. 187-200	citation	Brown1948.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.014	Uca	fiddler crabs	text p. 187-200	citation	Bott1973.2	0	>&ldquo;fiddler crabs&rdquo;	.	This is clearly the 1973 paper by Bott the authors meant to cite, rather thant the one they list in their references	.
+Peer2015	1.015	Uca	fiddler crabs	text p. 187-200	citation	Rabalais1983.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.016	Uca	fiddler crabs	text p. 187-200	citation	Salmon1987.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.017	Uca	fiddler crabs	text p. 187-200	citation	vonHagen1989	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.018	Uca	fiddler crabs	text p. 187-200	citation	OConnor1993	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.019	Uca	fiddler crabs	text p. 187-200	citation	Levinton1996	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.02	Uca	fiddler crabs	text p. 187-200	citation	Sturmbauer1996	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.021	Uca	fiddler crabs	text p. 187-200	citation	Backwell1999	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.022	Uca	fiddler crabs	text p. 187-200	citation	Yamaguchi2001.3	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.023	Uca	fiddler crabs	text p. 187-200	citation	Takeda2004.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.024	Uca	fiddler crabs	text p. 187-200	citation	Beinlich2006	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.025	Uca	fiddler crabs	text p. 187-200	citation	Shih2013	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.026	Uca	fiddler crabs	text p. 187-200	citation	Peer2014	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.027	Uca	fiddler crabs	text p. 187-200	citation	Millard1970	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.028	Uca	fiddler crabs	text p. 187-200	citation	Ng2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.029	Uca	fiddler crabs	text p. 187-200	citation	Abramowitz1937	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.03	Uca	fiddler crabs	text p. 187-200	citation	Detto2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.031	Uca	fiddler crabs	text p. 187-200	citation	Hemmi2006	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.032	Uca	fiddler crabs	text p. 187-200	citation	Hartnoll1969	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.033	Uca	fiddler crabs	text p. 187-200	citation	Vernberg1975	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.034	Uca	fiddler crabs	text p. 187-200	citation	Mokhtari2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.035	Uca	fiddler crabs	text p. 187-200	citation	Yamaguchi1971	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.036	Uca	fiddler crabs	text p. 187-200	citation	Christy1984	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.037	Uca	fiddler crabs	text p. 187-200	citation	Christy1978	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.038	Uca	fiddler crabs	text p. 187-200	citation	Christy1987.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.039	Uca	fiddler crabs	text p. 187-200	citation	Koga1998	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.04	Uca	fiddler crabs	text p. 187-200	citation	Kim2003.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.041	Uca	fiddler crabs	text p. 187-200	citation	Kim2004.3	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.042	Uca	fiddler crabs	text p. 187-200	citation	Croll2000.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.043	Uca	fiddler crabs	text p. 187-200	citation	Araujo2013	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.044	Uca	fiddler crabs	text p. 187-200	citation	Detto2009.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.045	Uca	fiddler crabs	text p. 187-200	citation	deVries1991.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.046	Uca	fiddler crabs	text p. 187-200	citation	Christy2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.047	Uca	fiddler crabs	text p. 187-200	citation	Emmerson1994	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.048	Uca	fiddler crabs	text p. 187-200	citation	Emmerson1999	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.049	Uca	fiddler crabs	text p. 187-200	citation	Papadopoulos2002	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.05	Uca	fiddler crabs	text p. 187-200	citation	Herrnkind1968.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.051	Uca	fiddler crabs	text p. 187-200	citation	Feest1969	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.052	Uca	fiddler crabs	text p. 187-200	citation	Christy1989	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.053	Uca	fiddler crabs	text p. 187-200	citation	Rodriguez1993.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.054	Uca	fiddler crabs	text p. 187-200	citation	Armendariz2005	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.055	Uca	fiddler crabs	text p. 187-200	citation	Spivak2009	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.056	Uca	fiddler crabs	text p. 187-200	citation	Tankersley1994	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.057	Uca	fiddler crabs	text p. 187-200	citation	Brodie2005	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.058	Uca	fiddler crabs	text p. 187-200	citation	OConnor1991	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.059	Uca	fiddler crabs	text p. 187-200	citation	Montague1980.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.06	Uca	fiddler crabs	text p. 187-200	citation	Dye1986	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.061	Uca	fiddler crabs	text p. 187-200	citation	France1998	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.062	Uca	fiddler crabs	text p. 187-200	citation	Griffen2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.063	Uca	fiddler crabs	text p. 187-200	citation	Miller1961	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.064	Uca	fiddler crabs	text p. 187-200	citation	Maitland1990	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.065	Uca	fiddler crabs	text p. 187-200	citation	Mokhlesi2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.066	Uca	fiddler crabs	text p. 187-200	citation	Valiela1974	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.067	Uca	fiddler crabs	text p. 187-200	citation	Morgan1992	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.068	Uca	fiddler crabs	text p. 187-200	citation	Morgan1996.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.069	Uca	fiddler crabs	text p. 187-200	citation	Backwell1998.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.07	Uca	fiddler crabs	text p. 187-200	citation	Carlton2003	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.071	Uca	fiddler crabs	text p. 187-200	citation	Steinke1993	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.072	Uca	fiddler crabs	text p. 187-200	citation	Koga1995	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.073	Uca	fiddler crabs	text p. 187-200	citation	Koga2001	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.074	Uca	fiddler crabs	text p. 187-200	citation	Jordao2001.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.075	Uca	fiddler crabs	text p. 187-200	citation	Layne1998	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.076	Uca	fiddler crabs	text p. 187-200	citation	Chiussi2002	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.077	Uca	fiddler crabs	text p. 187-200	citation	Hazlett2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.078	Uca	fiddler crabs	text p. 187-200	citation	Bergey2006	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.079	Uca	fiddler crabs	text p. 187-200	citation	Mace2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.08	Uca	fiddler crabs	text p. 187-200	citation	Hoadley1937	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.081	Uca	fiddler crabs	text p. 187-200	citation	Retraubun1998	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.082	Uca	fiddler crabs	text p. 187-200	citation	Katz1980	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.083	Uca	fiddler crabs	text p. 187-200	citation	Wolfrath1992.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.084	Uca	fiddler crabs	text p. 187-200	citation	Smith2009	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.085	Uca	fiddler crabs	text p. 187-200	citation	Nielsen2003	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.086	Uca	fiddler crabs	text p. 187-200	citation	Araujo2012	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.087	Uca	fiddler crabs	text p. 187-200	citation	Michaels2013	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.088	Uca	fiddler crabs	text p. 187-200	citation	Botto2000	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.089	Uca	fiddler crabs	text p. 187-200	citation	Smith2012	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.09	Uca	fiddler crabs	text p. 187-200	citation	Olafsson1997	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.091	Uca	fiddler crabs	text p. 187-200	citation	Weis2004	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.092	Uca	fiddler crabs	text p. 187-200	citation	Hoffman1984	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.093	Uca	fiddler crabs	text p. 187-200	citation	Dame1978	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.094	Uca	fiddler crabs	text p. 187-200	citation	Miller1968	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.095	Uca	fiddler crabs	text p. 187-200	citation	Mouton1995	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.096	Uca	fiddler crabs	text p. 187-200	citation	Litulo2004.3	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.097	Uca	fiddler crabs	text p. 187-200	citation	Miller1973.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.098	Uca	fiddler crabs	text p. 187-200	citation	Palmer1962	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.099	Uca	fiddler crabs	text p. 187-200	citation	Thurman2003.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.1	Uca	fiddler crabs	text p. 187-200	citation	Wilkens1965	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.101	Uca	fiddler crabs	text p. 187-200	citation	PenhaLopes2009.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.102	Uca	fiddler crabs	text p. 187-200	citation	Cannicci2009	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.103	Uca	fiddler crabs	text p. 187-200	citation	Bartolini2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.104	Uca	fiddler crabs	text p. 187-200	citation	Morgan1995	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.105	Uca	fiddler crabs	text p. 187-200	citation	Wieman2014	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.106	Uca	fiddler crabs	text p. 187-200	citation	Nabout2010.1	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.107	Uca	fiddler crabs	text p. 187-200	citation	Booksmythe2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.108	Uca	fiddler crabs	text p. 187-200	citation	Milner2010.3	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.109	Uca	fiddler crabs	text p. 187-200	citation	Callander2013.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.11	Uca	fiddler crabs	text p. 187-200	citation	Amaral2009.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.111	Uca	fiddler crabs	text p. 187-200	citation	Benetti2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.112	Uca	fiddler crabs	text p. 187-200	citation	Simith2010	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.113	Uca	fiddler crabs	text p. 187-200	citation	Colpo2011	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.114	Uca	fiddler crabs	text p. 187-200	citation	Martins2013	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.115	Uca	fiddler crabs	text p. 187-200	citation	Bertness1985	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.116	Uca	fiddler crabs	text p. 187-200	citation	Branch2010	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.117	Uca	fiddler crabs	text p. 187-200	citation	Vernberg1969.2	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	1.118	Uca	fiddler crabs	text p. 187-200	citation	Kristensen2008	0	>&ldquo;fiddler crabs&rdquo;	.	.	.
+Peer2015	2.01	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	location	Knysna Lagoon, Western Cape, South Africa	.	occidentalis	>MSR:geography	.	.
+Peer2015	2.02	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Hodgson1987	2	=	=	.	.
+Peer2015	2.03	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Macnae1963	1	=	=	.	.
+Peer2015	2.04	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	location	Mfolozi, KwaZulu-Natal, South Africa	.	occidentalis	>MSR:geography	.	.
+Peer2015	2.05	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	location	St Lucia, KwaZulu-Natal, South Africa	.	occidentalis	>MSR:geography	.	.
+Peer2015	2.06	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Cannicci2009	.	=	=	.	.
+Peer2015	2.07	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Hartnoll1975	6	=	=	.	.
+Peer2015	2.08	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Skov2001	.	=	=	.	.
+Peer2015	2.09	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Kochey2013	.	=	=	.	.
+Peer2015	2.1	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Silva2010	.	=	=	.	.
+Peer2015	2.11	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Crane1975	96	=	=	.	.
+Peer2015	2.12	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Emmerson1994	.	=	=	.	.
+Peer2015	2.13	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Yamaguchi2001.3	.	=	=	.	.
+Peer2015	2.14	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Litulo2005.1	.	=	=	.	.
+Peer2015	2.15	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Ghory2006	2	=	=	.	.
+Peer2015	2.16	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Lim2004	.	=	=	.	.
+Peer2015	2.17	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Kristensen2008	.	=	=	.	.
+Peer2015	2.18	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Olafsson1997	.	=	=	.	.
+Peer2015	2.19	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Weis2004	.	=	=	.	.
+Peer2015	2.2	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Milner2010.3	2	=	=	.	.
+Peer2015	2.21	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Peer2016	.	=	=	.	.
+Peer2015	2.22	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Edney1961	4	=	=	.	.
+Peer2015	2.23	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Khanyile2012	.	=	=	.	.
+Peer2015	2.24	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Millard1970	1	=	=	.	.
+Peer2015	2.25	Uca (Austruca) annulipes	.	text p. 187-198; Figure 4a, 6	citation	Peer2014	5	=	=	.	.
+Peer2015	3.01	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Hodgson1987	3	=	=	.	.
+Peer2015	3.02	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	location	Mfolozi, KwaZulu-Natal, South Africa	.	chlorophthalmus	<	.	.
+Peer2015	3.03	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Macnae1963	2	=	=	.	.
+Peer2015	3.04	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Cannicci2009	.	=	=	.	.
+Peer2015	3.05	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Hartnoll1975	7	=	=	.	.
+Peer2015	3.06	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Skov2001	.	=	=	.	.
+Peer2015	3.07	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Kochey2013	.	=	=	.	.
+Peer2015	3.08	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Shih2009	.	=	=	.	.
+Peer2015	3.09	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Branch2010	.	=	=	.	.
+Peer2015	3.1	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Crane1975	34	=	=	.	.
+Peer2015	3.11	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Emmerson1994	.	=	=	.	.
+Peer2015	3.12	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Yamaguchi2001.3	.	=	=	.	.
+Peer2015	3.13	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Edney1961	3	=	=	.	.
+Peer2015	3.14	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Khanyile2012	.	=	=	.	.
+Peer2015	3.15	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Millard1970	3	=	=	.	.
+Peer2015	3.16	Uca (Paraleptuca) chlorophthalmus	.	text p. 187-188, 190-191, 194-195, 198; Figure 4b	citation	Peer2014	4	=	=	.	.
+Peer2015	4.01	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Hodgson1987	1	=	=	.	.
+Peer2015	4.02	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Macnae1963	3	=	=	.	.
+Peer2015	4.03	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	location	Mfolozi, KwaZulu-Natal, South Africa	.	urvillei	<	.	.
+Peer2015	4.04	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Cannicci2009	.	=	=	.	.
+Peer2015	4.05	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Hartnoll1975	3	=	=	.	.
+Peer2015	4.06	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Skov2001	.	=	=	.	.
+Peer2015	4.07	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Kochey2013	.	=	=	.	.
+Peer2015	4.08	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Crane1975	16	=	=	.	.
+Peer2015	4.09	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Branch2010	.	=	=	.	.
+Peer2015	4.1	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Emmerson1994	.	=	=	.	.
+Peer2015	4.11	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Yamaguchi2001.3	.	=	=	.	.
+Peer2015	4.12	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Ghory2006	1	=	=	.	.
+Peer2015	4.13	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Edney1961	1	=	=	.	.
+Peer2015	4.14	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Khanyile2012	.	=	=	.	.
+Peer2015	4.15	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Millard1970	2	=	=	.	.
+Peer2015	4.16	Uca (Tubuca) urvillei	.	text p. 187-188, 190-191, 194-195, 198; Figure 4d	citation	Peer2014	3	=	=	.	.
+Peer2015	5.01	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Macnae1963	4	=	=	.	.
+Peer2015	5.02	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	location	Mlalazi, KwaZulu-Natal, South Africa	.	hesperiae	<	.	.
+Peer2015	5.03	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Cannicci2009	.	=	=	.	.
+Peer2015	5.04	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Hartnoll1975	4	=	=	.	.
+Peer2015	5.05	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Skov2001	.	=	=	.	.
+Peer2015	5.06	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Kochey2013	.	=	=	.	.
+Peer2015	5.07	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Crane1975	30	=	=	.	.
+Peer2015	5.08	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Branch2010	.	=	=	.	.
+Peer2015	5.09	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Emmerson1994	.	=	=	.	.
+Peer2015	5.1	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Yamaguchi2001.3	.	=	=	.	.
+Peer2015	5.11	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Edney1961	2	=	=	.	.
+Peer2015	5.12	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Khanyile2012	.	=	=	.	.
+Peer2015	5.13	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Millard1970	4	=	=	.	.
+Peer2015	5.14	Uca (Gelasimus) hesperiae	.	text p. 187-188, 190-191, 194-195, 198; Figure 4c	citation	Peer2014	2	=	=	.	.
+Peer2015	6.01	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	location	Kosi Lake, KwaZulu-Natal, South Africa	.	inversa	<	.	.
+Peer2015	6.02	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Cannicci2009	.	=	=	.	.
+Peer2015	6.03	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Hartnoll1975	8	=	=	.	.
+Peer2015	6.04	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Skov2001	.	=	=	.	.
+Peer2015	6.05	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Kochey2013	.	=	=	.	.
+Peer2015	6.06	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Kingsley1880	17	=	=	.	.
+Peer2015	6.07	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Branch1994	.	=	=	.	.
+Peer2015	6.08	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Branch2010	.	=	=	.	.
+Peer2015	6.09	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Macnae1963	5	=	=	.	.
+Peer2015	6.1	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Hoffmann1874	7	=	=	.	.
+Peer2015	6.11	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Crane1975	36	=	=	.	.
+Peer2015	6.12	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Emmerson1994	.	=	=	.	.
+Peer2015	6.13	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Yamaguchi2001.3	.	=	=	.	.
+Peer2015	6.14	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Edney1961	5	=	=	.	.
+Peer2015	6.15	Uca (Cranuca) inversa	.	text p. 187-188, 190-192, 194, 198; Figure 4e	citation	Khanyile2012	.	=	=	.	.
+Peer2015	7.1	Austruca	.	text p. 189-190	citation	Bott1973.2	58	#genus#Austruca	<	Used as subgenus	.
+Peer2015	7.2	Austruca	.	text p. 189-190	citation	Naderloo2010	4	#genus#Austruca	<	Used as subgenus	.
+Peer2015	7.3	Austruca	.	text p. 189-190	citation	Shih2013	.	#genus#Austruca	<	Used as subgenus	.
+Peer2015	8.1	Australuca	.	text p. 190	citation	Crane1975	17	#subgenus#Australuca	<	Used as subgenus	.
+Peer2015	8.2	Australuca	.	text p. 190	citation	Rosenberg2001	5	#subgenus#Australuca	<	Used as subgenus	.
+Peer2015	8.3	Australuca	.	text p. 190	citation	Sturmbauer1996	0	#subgenus#Australuca	<	Used as subgenus	.
+Peer2015	9.1	Cranuca	.	text p. 190	citation	Beinlich2006	1	#genus#Cranuca	<	Used as subgenus	.
+Peer2015	9.2	Cranuca	.	text p. 190	citation	Shih2009	.	#genus#Cranuca	<	Used as subgenus	.
+Peer2015	10.1	Gelasimus	.	text p. 190	citation	Latreille1817.2	0	#genus#Gelasimus	<	Used as subgenus	.
+Peer2015	10.2	Gelasimus	.	text p. 190	citation	Shih2009	.	#genus#Gelasimus	<	Used as subgenus	.
+Peer2015	11	Leptuca	.	text p. 190	citation	Bott1973.2	64	#genus#Leptuca	<	Used as subgenus	.
+Peer2015	12	Minuca	.	text p. 190	citation	Bott1954	40	#genus#Minuca	<	Used as subgenus	.
+Peer2015	13.1	Paraleptuca	.	text p. 190	citation	Bott1973.2	59	#genus#Paraleptuca	<	Used as subgenus	.
+Peer2015	13.2	Paraleptuca	.	text p. 190	citation	Crane1975	33	#genus#Paraleptuca	<	Used as subgenus	.
+Peer2015	13.1	Paraleptuca	.	text p. 190	citation	Beinlich2006	6	#genus#Paraleptuca	<	Used as subgenus	.
+Peer2015	14.1	Tubuca	.	text p. 190	citation	Bott1973.2	57	#genus#Tubuca	<	Used as subgenus	.
+Peer2015	14.2	Tubuca	.	text p. 190	citation	Crane1975	2	#genus#Tubuca	<	Used as subgenus	.
+Peer2015	14.3	Tubuca	.	text p. 190	citation	Rosenberg2001	4	#genus#Tubuca	<	Used as subgenus	.
+Peer2015	14.4	Tubuca	.	text p. 190	citation	Sturmbauer1996	0	#genus#Tubuca	<	Used as subgenus	.
+Peer2015	15	Uca	.	text p. 190	citation	Leach1814	3	#genus#Uca	<	Used as subgenus	.
+Peer2015	16	Uca vomeris	.	text p. 192	citation	Hemmi2006	.	=	=	.	.
+Peer2015	17	Uca subcylindrica	.	text p. 195	citation	Rabalais1983.2	.	=	=	.	.
+Peer2015	18	Uca vocator	.	text p. 195	citation	France1998	.	=	=	.	.
+Peer2015	19.1	Uca vocans	.	text p. 195	citation	Lim2004	.	=	=	.	.
+Peer2015	19.2	Uca vocans	.	text p. 195	citation	Retraubun1998	.	=	=	.	.
+Peer2015	19.3	Uca vocans	.	text p. 195	citation	Dye1986	.	=	=	.	.
+Peer2015	20	Uca tetragonon	.	text p. 196	citation	Koga1995	3	=	=	.	.
+Peer2015	21.1	Uca pugnax	.	text p. 196, 198	citation	Valiela1974	1	=	=	.	.
+Peer2015	21.2	Uca pugnax	.	text p. 196, 198	citation	Teal1958	3	=	=	.	.
+Peer2015	22	Uca lactea	.	text p. 196	citation	Retraubun1998	.	=	=	.	.
+Peer2015	23	Uca sindensis	.	text p. 196	citation	Mokhlesi2011	1	=	=	.	.
+Peer2015	24	Uca polita	.	text p. 196	citation	Dye1986	.	=	=	.	.
+Peer2015	25	Uca minax	.	text p. 198	citation	Teal1958	1	=	=	.	.
+Peer2015	26	Uca pugilator	.	text p. 198	citation	Teal1958	2	=	=	.	.
+Peer2015	27.1	Uca rapax	.	text p. 198	citation	Zanders1996.3	.	=	=	.	.
+Peer2015	27.2	Uca rapax	.	text p. 198	citation	Vernberg1967.1	1	=	=	.	.
+Peer2015	28	Uca uruguayensis	.	text p. 198	citation	Vernberg1967.1	2	=	=	.	.
+delCastillo2015	1.1	Uca virens	.	text p. 14-20	location	Laguna Tamiahua, Veracruz, Mexico	.	virens	<	.	.
+delCastillo2015	1.2	Uca virens	.	text p. 14-20	citation	Crane1975	68	=	=	.	.
+delCastillo2015	1.3	Uca virens	.	text p. 14-20	citation	Felder1973	.	=	=	.	.
+delCastillo2015	1.4	Uca virens	.	text p. 14-20	citation	vonHagen1975	7.2	=	=	.	.
+delCastillo2015	1.5	Uca virens	.	text p. 14-20	citation	vonHagen1976	4.3	=	=	.	.
+delCastillo2015	1.6	Uca virens	.	text p. 14-20	citation	vonHagen1980	.	=	=	.	.
+delCastillo2015	1.7	Uca virens	.	text p. 14-20	citation	Rabalais1991	.	=	=	.	.
+delCastillo2015	2	Uca panacea	.	text p. 14-15	location	Laguna Tamiahua, Veracruz, Mexico	.	panacea	<	.	.
+delCastillo2015	3	Uca rapax	.	text p. 14-15	location	Laguna Tamiahua, Veracruz, Mexico	.	rapax	<	.	.
+delCastillo2015	4	Uca spinicarpa	.	text p. 14-15	location	Laguna Tamiahua, Veracruz, Mexico	.	spinicarpa	<	.	.
+delCastillo2015	5	Uca vocator	.	text p. 14-15	location	Laguna Tamiahua, Veracruz, Mexico	.	vocator	<	.	.
+delCastillo2015	6.01	Uca	.	text p. 14-16, 18-19	citation	Rosenberg2001	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.02	Uca	.	text p. 14-16, 18-19	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.03	Uca	.	text p. 14-16, 18-19	citation	Mouton1995	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.04	Uca	.	text p. 14-16, 18-19	citation	Yoder2005	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.05	Uca	.	text p. 14-16, 18-19	citation	Litulo2004.3	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.06	Uca	.	text p. 14-16, 18-19	citation	Beinlich2006	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.07	Uca	.	text p. 14-16, 18-19	citation	Barnwell1984.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.08	Uca	.	text p. 14-16, 18-19	citation	Rabalais1991	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.09	Uca	.	text p. 14-16, 18-19	citation	Yamaguchi2001.5	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.1	Uca	.	text p. 14-16, 18-19	citation	RazGuzman1992.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.11	Uca	.	text p. 14-16, 18-19	citation	RazGuzman1996	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.12	Uca	.	text p. 14-16, 18-19	citation	Sastry1983	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.13	Uca	.	text p. 14-16, 18-19	citation	Thurman1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.14	Uca	.	text p. 14-16, 18-19	citation	Figueiredo2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.15	Uca	.	text p. 14-16, 18-19	citation	Litulo2005.4	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	6.16	Uca	.	text p. 14-16, 18-19	citation	Cesar2007	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+delCastillo2015	7	Uca pugnax	.	text p. 15	citation	Crane1975	67	=	=	.	.
+delCastillo2015	8.1	Uca subcylindrica	.	text p. 15	citation	Rabalais1991	.	=	=	.	.
+delCastillo2015	8.2	Uca subcylindrica	.	text p. 15	citation	Litulo2004.3	.	=	=	.	.
+delCastillo2015	8.3	Uca subcylindrica	.	text p. 15	citation	Litulo2005.4	.	=	=	.	.
+delCastillo2015	8.4	Uca subcylindrica	.	text p. 15	citation	Costa2006	.	=	=	.	.
+delCastillo2015	8.5	Uca subcylindrica	.	text p. 15	citation	Lavajoo2011	.	=	=	.	.
+delCastillo2015	9	Uca uruguayensis	.	text p. 18	citation	Cesar2007	.	=	=	.	.
+delCastillo2015	10	Uca annulipes	.	text p. 20	citation	Litulo2004.1	.	=	=	.	.
+Anggraeni2015	1	Uca sp.	.	text p. 216	citation	Pratiwi2002	.	=	=	.	.
 Durica2016	1	Uca pugilator	.	text p. E59	n/a	.	.	pugilator	<	.	.
 Shyamal2016	1	Uca pugilator	.	text p. E202	n/a	.	.	pugilator	<	.	.
 Smith2016	1	.	fiddler crabs	text p. 672	citation	Kronstadt2013	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
@@ -25205,6 +25730,9 @@ Pulmanns2016	1.2	Uca spp.	fiddler crabs	text p. 1-2, 10-11, 13-14	citation	Hoffm
 Pulmanns2016	2	Uca polita	.	text p. 14	citation	Dye1986	.	=	=	.	.
 Pulmanns2016	3	Uca vocans	.	text p. 14	citation	Dye1986	.	=	=	.	.
 Pulmanns2016	4	Uca pugnax	.	text p. 14	citation	Thomas2010	.	=	=	.	.
+Salawu2016	1.1	Uca tangeri	.	text p. 355-362	citation	Crane1975	42	=	=	.	.
+Salawu2016	1.2	Uca tangeri	.	text p. 355-362	location	Lekki, Nigeria	.	tangeri	<	.	.
+Salawu2016	2	Uca	.	text p. 355	citation	Crane1975	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Didion2017	1	Uca pugilator	Atlantic Sand Fiddler	text p. 102	n/a	.	.	pugilator	<	.	.
 Laurenzano2017	1.1	Minuca rapax	.	text p. 239	location	Suriname	.	rapax	<	.	.
 Laurenzano2017	1.2	Minuca rapax	.	text p. 239	location	Brazil	.	rapax	<	.	.
@@ -25306,7 +25834,7 @@ Wunderlich2017	5	Uca spinicarpa	.	text p. 284	citation	GuillenHernandez2013	1	=	
 Wunderlich2017	6	Uca vocator	.	text p. 284	citation	Bourdon1970	2	=	=	.	.
 Wunderlich2017	7	Uca uruguayensis	.	text p. 284, 288	citation	Roccatagliata2002	.	=	=	.	.
 RomeroRodriguez2017	1.1	Uca spinicarpa	.	text p. 459-462	citation	Bezerra2010	.	=	=	.	.
-RomeroRodriguez2017	1.2	Uca spinicarpa	.	text p. 459-462	citation	GuillenHernandez2008	.	=	=	.	.
+RomeroRodriguez2017	1.2	Uca spinicarpa	.	text p. 459-462	citation	GuillenHernandez2008	1	=	=	.	.
 RomeroRodriguez2017	1.3	Uca spinicarpa	.	text p. 459-462	location	Chelem, Yucatan, Mexico	.	spinicarpa	<	.	.
 RomeroRodriguez2017	2	Uca pugilator	.	text p. 460-461	citation	Markham1985	.	=	=	.	.
 RomeroRodriguez2017	3	Uca pugnax	.	text p. 460-461	citation	LemosDeCastro1973	.	=	=	.	.
@@ -25403,7 +25931,7 @@ Shih2018.1	2.05	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 
 Shih2018.1	2.06	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Naderloo2016	.	=	=	.	.
 Shih2018.1	2.07	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Crane1975	16	=	=	in part	.
 Shih2018.1	2.08	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Litulo2005.2	.	=	=	.	.
-Shih2018.1	2.09	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Peer2015	.	=	=	.	.
+Shih2018.1	2.09	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Peer2015	4	=	=	.	.
 Shih2018.1	2.1	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	citation	Ghory2006	1	=	=	.	.
 Shih2018.1	2.13	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Poroani, Mayotte [ZRC 1999.1107, LC053375]	.	urvillei	<	.	.
 Shih2018.1	2.14	Tubuca urvillei	.	text p. 41-46, 48-49, 51, 53-57; Figures 1-2, 4B, 5E-H, 7B, 7D, 7F, 7H	specimen	Shimo la Tewa, Mombasa, Kenya [SMF 19985, LC053375]	.	urvillei	<	.	.
@@ -25707,6 +26235,27 @@ Pratiwi2018	9	Uca forcipata	.	text p. 94-95; Figure 2	location	Kema, North Sulaw
 Chen2018	1	Uca (Gelasimus) borealis	.	text p. 27-31, 33	location	Guangxi, China	.	borealis	<	MH183126	.
 Girish2018	1	Uca pugilator	.	text p. 5	citation	Durica2002	.	=	=	.	.
 CarmonaSuarez2018	1	Uca	fiddler crabs	text p. 743	citation	Koch2005	0	>&ldquo;fiddler crabs&rdquo;	=	.	.
+Baakdah2018	1.1	Austruca albimana	.	text p. 43, 45-46, 51, 54	citation	Por1975	.	=	=	.	.
+Baakdah2018	1.2	Austruca albimana	.	text p. 43, 45-46, 51, 54	citation	Hogarth1986	3	=	=	.	.
+Baakdah2018	1.3	Austruca albimana	.	text p. 43, 45-46, 51, 54	citation	Vine1986	.	=	=	.	.
+Baakdah2018	1.4	Austruca albimana	.	text p. 43, 45-46, 51, 54	citation	Mandura1987	.	=	=	.	.
+Baakdah2018	1.5	Austruca albimana	.	text p. 43, 45-46, 51, 54	location	Al Darb, Jazan, Saudi Arabia	.	albimana	<	.	.
+Baakdah2018	1.6	Austruca albimana	.	text p. 43, 45-46, 51, 54	location	Jazan, Saudi Arabia	.	albimana	<	.	.
+Baakdah2018	2.1	Cranuca inversa	.	text p. 43, 45-46, 51, 54	citation	Mandura1987	.	=	=	.	.
+Baakdah2018	2.2	Cranuca inversa	.	text p. 43, 45-46, 51, 54	citation	Por1975	.	=	=	.	.
+Baakdah2018	2.3	Cranuca inversa	.	text p. 43, 45-46, 51, 54	citation	Vine1986	.	=	=	.	.
+Baakdah2018	2.4	Cranuca inversa	.	text p. 43, 45-46, 51, 54	citation	Hogarth1986	4	=	=	.	.
+Baakdah2018	2.5	Cranuca inversa	.	text p. 43, 45-46, 51, 54	location	Al Darb, Jazan, Saudi Arabia	.	inversa	<	.	.
+Baakdah2018	2.6	Cranuca inversa	.	text p. 43, 45-46, 51, 54	location	Jazan, Saudi Arabia	.	inversa	<	.	.
+Baakdah2018	3.1	Tubuca urvillei	.	text p. 43, 45-47, 54	citation	Hogarth1986	1	=	=	.	.
+Baakdah2018	3.2	Tubuca urvillei	.	text p. 43, 45-47, 54	location	Jazan, Saudi Arabia	.	alcocki	>MSR:geography	.	.
+Baakdah2018	3.3	Tubuca urvillei	.	text p. 43, 45-47, 54	citation	Mandura1987	.	=	=	.	.
+Baakdah2018	3.4	Tubuca urvillei	.	text p. 43, 45-47, 54	citation	Vine1986	.	=	=	.	.
+Baakdah2018	4	Gelasimus vocans	.	text p. 46	citation	Eshky1992	.	=	=	.	.
+Baakdah2018	5	Austruca annulipes	.	text p. 46	citation	Eshky1992	.	=	=	.	.
+Baakdah2018	6	Austruca lactea	.	text p. 46	citation	AlNafisi2009	.	=	=	.	.
+Baakdah2018	7	Afruca tangeri	.	text p. 46	citation	Onadeko2015	.	=	=	.	.
+Baakdah2018	8	Tubuca urvielli	.	text p. 52	location	Jazan, Saudi Arabia	.	alcocki	>MSR:geography	typo	.
 Olsvik2019	1.1	Uca pugilator	Sand fiddler crab	text p. 493	citation	Weis1987.1	.	=	=	.	.
 Olsvik2019	1.2	Uca pugilator	Sand fiddler crab	text p. 493	citation	Weis1988.1	.	=	=	.	.
 Olsvik2019	2	Uca pugnax	Mud fiddler crab	text p. 493	citation	Stueckle2008.3	.	=	=	.	.
@@ -25890,3 +26439,13 @@ ElHacen2019	2.5	.	fiddler crabs	text p. 754	citation	Ens1993	0	>&ldquo;fiddler c
 ElHacen2019	2.6	.	fiddler crabs	text p. 754	citation	Zwarts1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 ElHacen2019	2.7	.	fiddler crabs	text p. 754	citation	Zwarts1990.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 ElHacen2019	2.8	.	fiddler crabs	text p. 754	citation	Stienen2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Michael2020	1.1	Austruca annulipes	.	text p. 91, 93-97	citation	Marbun2019	.	=	=	.	.
+Michael2020	1.2	Austruca annulipes	.	text p. 91, 93-97	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	This paper uses a variety of spellings. Actual species are unclear.
+Michael2020	2	Paraleptuca chlorophthalmus	.	text p. 91, 96-97	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	3	Galasimus vomeris	.	text p. 91, 93-97	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	4	Paraleptuca clorophthalmus	.	text p. 93-95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	5	Austruca annlipes	.	text p. 94-95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	6	Gelasimus vomeris	.	text p. 95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	7	Uca annlipes	.	text p. 95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	8	Uca clorophthalmus	.	text p. 95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.
+Michael2020	9	Uca vomeris	.	text p. 95	location	Bahowo, North Sulawesi, Sulawesi, Indonesia	.	?	.	.	.

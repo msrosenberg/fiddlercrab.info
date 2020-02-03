@@ -247,7 +247,7 @@ Rio Grande do Norte, Brazil	-5.082587	-35.755867	State	.	Rio Grande do Norte	.	B
 São Paulo, Brazil	-23.968119	-46.345005	State	Using Santos	São Paulo	.	Brazil	Southeastern Brazil	.	9.6	-31.0	-35.7	-65.5
 Sergipe, Brazil	-10.947084	-37.043068	State	.	Sergipe	.	Brazil	Eastern Brazil	.	9.6	-31.0	-35.7	-65.5
 Southeastern Brazil	-22.881464	-43.184756	The coastal states in the southeast and south regions	Using Rio	Southeastern Brazil	.	Brazil	.	.	.	.	.	.
-Tefé, Brazil	-3.345449	-64.721029	Doflein (1899) describes a new species labeled as collected from Tefé, Brazil. The specimen has since been identified as the species <em class="species">Uca chlorophthalmus.</em> Since Tefé is from the interior of the country without an ocean border, the collection location is clearly incorrect and the specimen was likely collected somewhere from the Indian coast of Africa and then subsequently mislabled.	.	Tefé	.	Brazil	.	X	8.7	120.2	-5.0	107.8
+Tefé, Brazil	-3.345449	-64.721029	Doflein (1899) described a new species labeled as collected from Tefé, Brazil. The specimen has since been identified as the species <em class="species">Uca chlorophthalmus.</em> Since Tefé is from the interior of the country without an ocean border, the collection location is clearly incorrect and the specimen was likely collected somewhere from the Indian coast of Africa and then subsequently mislabled.	.	Tefé	.	Brazil	.	X	8.7	120.2	-5.0	107.8
 Brisbane River, Brisbane, Queensland, Australia	-27.408700	153.147615	.	Near Brisbane	Brisbane River	.	Brisbane, Queensland, Australia	.	.	.	.	.	.
 Redland Bay, Brisbane, Queensland, Australia	-27.646243	153.308555	.	.	Redland Bay	.	Brisbane, Queensland, Australia	.	.	.	.	.	.
 Vancouver Island, British Columbia, Canada	48.428197	-123.466956	.	.	Vancouver Island	.	British Columbia, Canada	.	X	51.2	-122.1	47.4	-128.3
@@ -567,7 +567,7 @@ Khor Al-Zubair, Iraq	30.189840	47.889520	.	.	Khor Al-Zubair	.	Iraq	.	.	.	.	.	.
 Urauchi River, Iriomote-jima, Okinawa, Ryukyu Islands, Japan	24.400000	123.766667	.	coords from paper	Urauchi River	.	Iriomote-jima, Okinawa, Ryukyu Islands, Japan	.	.	.	.	.	.
 Caleta Black, Isabela Island, Galápagos Islands	-0.199577	-91.383597	.	.	Caleta Black	.	Isabela Island, Galápagos Islands	.	.	1.2	-88.7	-2.0	-93.0
 Bahia Charagato, Isla de Cubagua, Nueva Esparta, Venezuela	10.824492	-64.165194	.	.	Bahia Charagato	Charagato Bay	Isla de Cubagua, Nueva Esparta, Venezuela	.	.	.	.	.	.
-Tenacatita Bay, Jalisco, Mexico	19.280694	-104.824033	.	Pacific coast	Tenacatita Bay	.	Jalisco, Mexico	.	.	.	.	.	.
+Tenacatita Bay, Jalisco, Mexico	19.280694	-104.824033	.	.	Tenacatita Bay	.	Jalisco, Mexico	.	.	.	.	.	.
 Kingston Harbor, Jamaica	17.966745	-76.817183	.	.	Kingston Harbor	.	Jamaica	.	.	.	.	.	.
 Rio Bueno Harbor, Jamaica	18.474683	-77.454958	.	.	Rio Bueno Harbor	.	Jamaica	.	.	.	.	.	.
 Trelawny, Jamaica	18.489757	-77.649641	.	.	Trelawny	.	Jamaica	.	.	.	.	.	.
@@ -812,7 +812,7 @@ Cupica Bay, Choco, Colombia	6.690131	-77.475002	.	.	Cupica Bay	.	Choco, Colombia
 Gorgona Island, Cauca, Colombia	2.967500	-78.180278	.	.	Gorgona Island	.	Cauca, Colombia	.	.	3.2	-77.7	2.5	-78.6
 Tumaco, Nariño, Colombia	1.796322	-78.800515	.	Pacific coast, near Ecuador	Tumaco	.	Nariño, Colombia	.	.	3.0	-77.7	0.7	-80.0
 Guanacaste, Costa Rica	10.613789	-85.696355	.	.	Guanacaste	.	Pacific coast of Costa Rica	.	.	11.4	-82.0	7.8	-86.0
-Puntarenas, Costa Rica	9.966667	-84.833333	.	Pacific coast	Puntarenas	.	Pacific coast of Costa Rica	.	.	11.4	-82.0	7.8	-86.0
+Puntarenas, Costa Rica	9.966667	-84.833333	Province	Pacific coast	Puntarenas	.	Pacific coast of Costa Rica	.	.	11.4	-82.0	7.8	-86.0
 Araçagi, Paço do Lumiar, São Luís, Maranhão, Brazil	-2.467920	-44.206920	.	.	Araçagi	.	Paço do Lumiar, São Luís, Maranhão, Brazil	.	.	9.6	-31.0	-35.7	-65.5
 Pau Deitado, Paço do Lumiar, São Luís, Maranhão, Brazil	-2.521998	-44.083614	.	.	Pau Deitado	.	Paço do Lumiar, São Luís, Maranhão, Brazil	.	.	9.6	-31.0	-35.7	-65.5
 Raposa, Paço do Lumiar, São Luís, Maranhão, Brazil	-2.455366	-44.108077	.	.	Raposa	.	Paço do Lumiar, São Luís, Maranhão, Brazil	.	.	9.6	-31.0	-35.7	-65.5
@@ -1731,7 +1731,7 @@ Tolo Pond, Hong Kong, China	22.440250	114.192456	.	.	Tolo Pond	.	Hong Kong, Chin
 Siu Tan, Hong Kong, China	22.525699	114.265202	.	.	Siu Tan	.	Hong Kong, China	.	.	.	.	.	.
 St. John, U.S. Virgin Islands	18.345565	-64.744870	.	.	St. John	.	U.S. Virgin Islands	.	.	.	.	.	.
 Lieutenant River, Old Lyme, New London County, Connecticut, USA	41.310012	-72.339932	.	.	Lieutenant River	.	Old Lyme, New London County, Connecticut, USA	.	.	.	.	.	.
-Old Lyme, New London County, Connecticut, USA	41.282695	72.323402	.	.	Old Lyme	.	New London County, Connecticut, USA	.	.	.	.	.	.
+Old Lyme, New London County, Connecticut, USA	41.282695	-72.323402	.	.	Old Lyme	.	New London County, Connecticut, USA	.	.	.	.	.	.
 Ambeua, Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	-5.497500	123.759761	.	.	Ambeua	.	Kaledupa, Southeast Sulawesi, Sulawesi, Indonesia	.	.	.	.	.	.
 Segara Anakan Lagoon, Central Java, Java, Indonesia	-7.683333	108.916667	.	.	Segara Anakan Lagoon	.	Central Java, Java, Indonesia	.	.	.	.	.	.
 Teluk Kodek, Lombok, West Nusa Tenggara, Indonesia	-8.393850	116.099750	.	.	Teluk Kodek	.	Lombok, West Nusa Tenggara, Indonesia	.	.	.	.	.	.
@@ -1904,3 +1904,25 @@ Trenggalek, East Java, Java, Indonesia	-8.328456	111.578521	.	.	Trenggalek	.	Eas
 Zira, Banc d'Arguin, Mauritania	19.868834	-16.296017	.	.	Zira	.	Banc d'Arguin, Mauritania	.	.	.	.	.	.
 Agheneiver, Banc d'Arguin, Mauritania	19.868041	-16.389780	.	.	Agheneiver	.	Banc d'Arguin, Mauritania	.	.	.	.	.	.
 Salina San Carlos, Cádiz, Andalusia, Spain	36.854978	-6.348306	.	.	Salina San Carlos	.	Cádiz, Andalusia, Spain	.	.	.	.	.	.
+Lekki, Nigeria	6.498607	3.795484	.	.	Lekki	.	Nigeria	.	.	.	.	.	.
+Laguna de Bara de Navidad, Jalisco, Mexico	19.191370	-104.671104	.	.	Laguna de Bara de Navidad	.	Jalisco, Mexico	.	.	.	.	.	.
+Isla San Ignacio, Sinaloa, Mexico	25.369444	-108.797778	.	coords from paper	Isla San Ignacio	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Guasayeye, Sinaloa, Mexico	25.476417	-108.844694	.	coords from paper	Isla Guasayeye	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Tesobiate, Sinaloa, Mexico	25.488500	-108.806472	.	coords from paper	Isla Tesobiate	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Nescoco, Sinaloa, Mexico	25.501024	-108.859543	.	.	Isla Nescoco	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Las Chivas, Sinaloa, Mexico	25.507806	-108.886583	.	coords from paper	Isla Las Chivas	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Altamura, Sinaloa, Mexico	24.819444	-108.310833	.	coords from paper	Isla Altamura	.	Sinaloa, Mexico	.	.	.	.	.	.
+Isla Talchichitle, Sinaloa, Mexico	24.812500	-108.156667	.	coords from paper	Isla Talchichitle	.	Sinaloa, Mexico	.	.	.	.	.	.
+Tabasco, Mexico	18.441524	-93.281411	State	.	Tabasco	.	Atlantic coast of Mexico	.	.	.	.	.	.
+Copano Bay, Texas, USA	28.125311	-97.102122	.	.	Copano Bay	.	Texas, USA	.	.	.	.	.	.
+Progreso, Yucatan, Mexico	21.288554	-89.661664	.	.	Progreso	.	Yucatan, Mexico	.	.	.	.	.	.
+Little Dauphin Island, Dauphin Island, Mobile County, Alabama, USA	30.269591	-88.102517	.	.	Little Dauphin Island	.	Dauphin Island, Mobile County, Alabama, USA	.	.	.	.	.	.
+Horn Island, Jackson County, Mississippi, USA	30.232955	-88.666950	.	.	Horn Island	.	Jackson County, Mississippi, USA	.	.	.	.	.	.
+Punta Morales, Puntarenas, Costa Rica	10.066248	-84.967966	.	.	Punta Morales	.	Puntarenas, Costa Rica	.	.	11.4	-82.0	7.8	-86.0
+Jiaozhou, Qingdao, Shandong, China	36.157811	120.112927	.	.	Jiaozhou	.	Qingdao, Shandong, China	.	.	.	.	.	.
+Bahowo, North Sulawesi, Sulawesi, Indonesia	1.583072	124.818429	.	.	Bahowo	.	North Sulawesi, Sulawesi, Indonesia	.	.	.	.	.	.
+Kosi Lake, KwaZulu-Natal, South Africa	-26.985076	32.838548	.	.	Kosi Lake	Kuhlange	KwaZulu-Natal, South Africa	.	.	.	.	.	.
+Mlalazi, KwaZulu-Natal, South Africa	-28.943971	31.818127	.	.	Mlalazi	.	KwaZulu-Natal, South Africa	.	.	.	.	.	.
+Mfolozi, KwaZulu-Natal, South Africa	-28.389641	32.424829	.	.	Mfolozi	.	KwaZulu-Natal, South Africa	.	.	.	.	.	.
+Western Cape, South Africa	-34.422047	21.306483	.	.	Western Cape	.	South Africa	.	.	.	.	.	.
+Knysna Lagoon, Western Cape, South Africa	-34.051004	23.039515	.	.	Knysna Lagoon	.	Western Cape, South Africa	.	.	.	.	.	.

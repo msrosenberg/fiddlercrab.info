@@ -392,6 +392,23 @@ dd {
   border-bottom: 1px silver solid;
 }
 
+.size_data_table {
+	font-size: 0.75em;
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+.size_data_table td {
+  padding: 0px 5px;
+ }
+
+.size_data_table tbody tr:nth-child(even)  td { background-color: #eee; }
+ 
+.size_data_table th{
+  border-bottom: 1px silver solid;
+}
+
+
 .rowspacer {
   border-bottom: 1px silver solid;
   font-size: 0.5em;
@@ -566,6 +583,10 @@ a:visited.vidlink {
 
 	 .morphimg  {
 	  width: 500px;
+	  } 
+
+	 .sizeimg  {
+	  width: 800px;
 	  } 
 
 	.spsection table {
