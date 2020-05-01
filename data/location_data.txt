@@ -513,18 +513,18 @@ Osaka, Honshu, Japan	34.601200	135.426160	Prefecture	.	Osaka	.	Honshu, Japan	.	.
 Wakayama, Honshu, Japan	34.228114	135.154210	Prefecture	.	Wakayama	Wakanoura	Honshu, Japan	.	.
 Piermont Marsh, Hudson River, New York, USA	41.027695	-73.903972	.	.	Piermont Marsh	.	Hudson River, New York, USA	.	.
 Chikusa River Estuary, Hyogo, Honshu, Japan	34.740808	134.391969	.	.	Chikusa River Estuary	.	Hyogo, Honshu, Japan	.	.
-"Bombay State", India	18.975000	72.825833	An old administrative district that is not aligned with modern subdivisions	Using Mumbai	Bombay State	.	India	.	.
+"Bombay State", India	18.975000	72.825833	An old administrative district that is not aligned with modern subdivisions	Using Mumbai	Bombay State	.	India	West coast of India	.
 Southeastern India	10.309486	79.852225	.	.	Southeastern India	Coromandel Coast	India	Bay of Bengal;East coast of India	.
 Andaman and Nicobar Islands, India	11.680000	92.770000	.	.	Andaman and Nicobar Islands	.	India	Bay of Bengal	.
 Bheemunipatnam, Visakhapatnam, Andhra Pradesh, India	17.886385	83.447109	.	.	Bheemunipatnam	Bimlipatam	Visakhapatnam, Andhra Pradesh, India	.	.
 Chennai, Tamil Nadu, India	13.083333	80.266667	.	.	Chennai	Madras	Tamil Nadu, India	.	.
 Chilka Lake, Odisha, India	19.716667	85.316667	.	.	Chilka Lake	.	Odisha, India	.	.
-Goa, India	15.414050	73.900395	State	.	Goa	.	India	.	.
+Goa, India	15.414050	73.900395	State	.	Goa	.	India	West coast of India	.
 Gulf of Kutch, Gujarat, India	22.628521	69.737978	.	.	Gulf of Kutch	Gulf of Kachchh	Gujarat, India	.	.
 Gulf of Mannar, Tamil Nadu, India	8.470000	79.020000	.	.	Gulf of Mannar	.	Tamil Nadu, India	.	.
 Kannur, Kannur District, Kerala, India	11.852296	75.367443	.	.	Kannur	.	Kannur District, Kerala, India	.	.
-Kerala, India	9.923079	76.249552	State	Using Kochi	Kerala	Travancore	India	Southwestern India;Arabian Sea;Southern India	.
-Maharashtra, India	18.975000	72.825833	State	Using Mumbai	Maharashtra	.	India	Arabian Sea	.
+Kerala, India	9.923079	76.249552	State	Using Kochi	Kerala	Travancore	India	Southwestern India;Southern India;West coast of India	.
+Maharashtra, India	18.975000	72.825833	State	Using Mumbai	Maharashtra	.	India	West coast of India	.
 Mahé, India	11.702657	75.535604	.	.	Mahé (India)	.	India	.	.
 Malta River, South 24 Parganas, West Bengal, India	22.081670	88.639218	.	.	Malta River	.	South 24 Parganas, West Bengal, India	.	.
 Pamban, Ramanathapuram District, Tamil Nadu, India	9.277137	79.205521	.	.	Pamban	.	Ramanathapuram District, Tamil Nadu, India	.	.
@@ -1277,7 +1277,7 @@ Kannur District, Kerala, India	11.852296	75.367443	District	.	Kannur District	.	
 Ernakulam District, Kerala, India	9.972960	76.238324	District	.	Ernakulam District	.	Kerala, India	.	.
 Sindhudurg District, Maharashtra, India	16.093265	73.460437	District	.	Sindhudurg District	.	Maharashtra, India	.	.
 Kanyakumari District, Tamil Nadu, India	8.132118	77.304265	District	.	Kanyakumari District	.	Tamil Nadu, India	.	.
-Gujarat, India	21.153050	70.044829	State	.	Gujarat	.	India	Arabian Sea	.
+Gujarat, India	21.153050	70.044829	State	.	Gujarat	.	India	West coast of India	.
 Khánh Hòa Province, Vietnam	12.306496	109.240822	.	.	Khánh Hòa Province	.	Vietnam	.	.
 Nam Định Province, Vietnam	20.144949	106.327002	.	.	Nam Định Province	.	Vietnam	.	.
 Haiphong, Vietnam	20.865139	106.683833	.	.	Haiphong	.	Vietnam	.	.
@@ -1605,7 +1605,7 @@ Chalong Bay, Phuket Island, Thailand	7.815136	98.363759	.	.	Chalong Bay	.	Phuket
 Laem Tukkae, Phuket Island, Thailand	7.867536	98.435447	.	.	Laem Tukkae	.	Phuket Island, Thailand	.	.
 Tha Thiap Ruea Bang Rong, Phuket Island, Thailand	8.049609	98.416017	.	.	Tha Thiap Ruea Bang Rong	.	Phuket Island, Thailand	.	.
 Hooghly River, West Bengal, India	21.896637	88.066716	.	.	Hooghly River	.	West Bengal, India	.	.
-Karnataka, India	13.956143	74.510136	State	.	Karnataka	.	India	Arabian Sea	.
+Karnataka, India	13.956143	74.510136	State	.	Karnataka	.	India	West coast of India	.
 Malpe, Karnataka, India	13.344923	74.703727	.	.	Malpe	.	Karnataka, India	.	.
 Gulf of Khambhat, Gujarat, India	21.915114	72.401951	.	.	Gulf of Khambat	.	Gujarat, India	.	.
 Saurashtra, Gujarat, India	20.949594	70.289346	.	.	Saurashtra	.	Gujarat, India	.	.
@@ -1947,3 +1947,21 @@ Nembe, Nigeria	4.338830	6.411331	Location approximate	.	Nembe	.	Nigeria	.	.
 Al-Doha, Kuwait	29.371273	47.802937	.	.	Al-Doha	.	Kuwait	Kuwait Bay, Kuwait	.
 Kuwait Institute of Scientific Research West Site, Kuwait	29.324041	47.865963	.	.	Kuwait Institute of Scientific Research West Site	.	Kuwait	Kuwait Bay, Kuwait	.
 Kuwait Institute of Scientific Research East Site, Kuwait	29.337230	47.902525	.	.	Kuwait Institute of Scientific Research East Site	.	Kuwait	Kuwait Bay, Kuwait	.
+Graeme Hall Swamp, Barbados	13.072642	-59.578010	.	.	Graeme Hall Swamp	.	Barbados	.	.
+Puerto Vallarta, Jalisco, Mexico	20.652450	-105.249029	.	.	Puerto Vallarta	.	Jalisco, Mexico	.	.
+Central Pacific Ocean	-10.306432	-165.602984	.	.	Central Pacific Ocean	.	Pacific Ocean	.	.
+Abo, Somalia	11.791655	50.520700	.	.	Abo	.	Somalia	.	.
+Jazeera, Somalia	1.948519	45.181457	.	.	Jazeera	Gesira	Somalia	.	.
+Webi Jubba River, Somalia	-0.250597	42.528420	.	.	Webi Jubba River	Giuba River	Somalia	.	.
+Lac Badana, Somalia	-0.840830	42.067940	.	.	Lac Badana	.	Somalia	.	.
+Bender Mtoni, Somalia	-0.481602	42.432653	.	.	Bender Mtoni	.	Somalia	.	.
+Yemn, Somalia	-0.850701	42.072879	Locationi approximate	.	Yemn	.	Somalia	.	.
+Southern Somalia	0.859455	43.751653	.	.	Southern Somalia	.	Somalia	.	.
+West coast of India	17.055006	73.250474	.	.	West coast of India	.	India	Arabian Sea	.
+Bahía Blanca, Buenos Aires Province, Argentina	-38.855147	-62.203785	.	.	Bahía Blanca	.	Buenos Aires Province, Argentina	.	.
+Puerto Rosales, Bahía Blanca, Buenos Aires Province, Argentina	-38.899200	-62.101605	.	.	Puerto Rosales	.	Bahía Blanca, Buenos Aires Province, Argentina	.	.
+Maruhubi, Zanzibar, Unguja, Tanzania	-6.142490	39.208145	.	.	Maruhubi	.	Zanzibar, Unguja, Tanzania	.	.
+Richard's Bay, KwaZulu-Natal, South Africa	-28.804678	32.047430	.	.	Richard's Bay	.	KwaZulu-Natal, South Africa	.	.
+Mngazana, Eastern Cape, South Africa	-31.691829	29.420641	.	.	Mngazana	.	Eastern Cape, South Africa	.	.
+Mtwapa Creek, Kenya	-3.958634	39.753482	Border of Mombassa and Kilifi Counties	.	Mtwapa Creek	.	Kenya	.	.
+Rowes Bay, Townsville, Queensland, Australia	-19.222747	146.117690	.	.	Rowes Bay	.	Townsville, Queensland, Australia	.	.

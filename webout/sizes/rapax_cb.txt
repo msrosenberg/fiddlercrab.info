@@ -12,33 +12,74 @@ Rosenberg2000	male	15.25
 vonHagen1987.1	male	15	
 vonHagen1987.1	male	18.7	
 vonHagen1987.1	male	19.1	
+Greenspan1980	female	11	data from figure 2
+Greenspan1980	female	11.8	data from figure 2
+Greenspan1980	female	12	data from figure 2
+Greenspan1980	female	11.9	data from figure 2
+Greenspan1980	female	13.2	data from figure 2
+Greenspan1980	female	14.2	data from figure 2
+Greenspan1980	female	13.4	data from figure 2
+Greenspan1980	female	14.3	data from figure 2
+Greenspan1980	female	15.4	data from figure 2
+Greenspan1980	female	15.3	data from figure 2
+Greenspan1980	female	15.2	data from figure 2
+Greenspan1980	female	15	data from figure 2
+Greenspan1980	female	16.1	data from figure 2
+Greenspan1980	female	16.3	data from figure 2
+Greenspan1980	female	16.9	data from figure 2
+Greenspan1980	female	17.6	data from figure 2
+Greenspan1980	female	17.9	data from figure 2
+Greenspan1980	female	18	data from figure 2
+Greenspan1980	female	16.8	data from figure 2
+Greenspan1980	female	16.8	data from figure 2
+Greenspan1980	female	16.3	data from figure 2
+Greenspan1980	female	17.9	data from figure 2
+Greenspan1980	female	18.3	data from figure 2
+Greenspan1980	female	20.4	data from figure 2
+Greenspan1980	female	20.7	data from figure 2
+Greenspan1980	female	11	data from figure 4
+Greenspan1980	female	12	data from figure 4
+Greenspan1980	female	15.2	data from figure 4
+Greenspan1980	female	15	data from figure 4
+Greenspan1980	female	14.4	data from figure 4
+Greenspan1980	female	14.4	data from figure 4
+Greenspan1980	female	16	data from figure 4
+Greenspan1980	female	17	data from figure 4
+Greenspan1980	female	16.7	data from figure 4
+Greenspan1980	female	17.7	data from figure 4
+Greenspan1980	female	18.3	data from figure 4
+Greenspan1980	male	17.4	data from figure 4
+Greenspan1980	male	12.9	data from figure 4
+Greenspan1980	male	15.3	data from figure 4
+Greenspan1980	male	15.5	data from figure 4
+Greenspan1980	male	16.1	data from figure 4
+Greenspan1980	male	16.5	data from figure 4
+Greenspan1980	male	15.5	data from figure 4
+Greenspan1980	male	17.8	data from figure 4
+Greenspan1980	male	19.5	data from figure 4
+Greenspan1980	male	19.5	data from figure 4
+Greenspan1980	male	23.5	data from figure 4
+
+Ranges
+Reference	Sex	n	Min	Max	Notes
+Greenspan1980	male	180	13	25	
 
 Means
 Reference	Sex	n	Mean	Notes
 Ruppert1988	non-specified	1	25	rough values
+Greenspan1980	male	1	16	
+Greenspan1980	female	1	14	
 
 Histogram Counts
 Reference	Set	Sex	n	Min	Max	Notes
-Koch2005	Koch (2005) female rapax set	female	4.17	4	5	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	3.85	5	6	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	3.53	6	7	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	4.49	7	8	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	2.4	8	9	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	2.08	9	10	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	3.85	10	11	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	2.08	11	12	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	1.92	12	13	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	2.72	13	14	counts are averages across multiple samplings, rather than pure frequency counts
-Koch2005	Koch (2005) female rapax set	female	1.28	14	15	counts are averages across multiple samplings, rather than pure frequency counts
-
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	12	5	6.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	32	7	8.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	26	9	10.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	6	11	12.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	4	13	14.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	4	15	16.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	2	17	18.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 2	female	2	19	20.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	18	5	6.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	36	7	8.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	12	9	10.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	12	11	12.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	13	13	14.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	6	15	16.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	2	17	18.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 4	female	1	19	20.9	data from table 2
 
 Koch2005	Koch (2005) male rapax set	male	4.65	4	5	counts are averages across multiple samplings, rather than pure frequency counts
 Koch2005	Koch (2005) male rapax set	male	2.53	5	6	counts are averages across multiple samplings, rather than pure frequency counts
@@ -58,27 +99,6 @@ Koch2005	Koch (2005) male rapax set	male	0.87	18	19	counts are averages across m
 Koch2005	Koch (2005) male rapax set	male	0.38	20	21	counts are averages across multiple samplings, rather than pure frequency counts
 Koch2005	Koch (2005) male rapax set	male	0.06	21	22	counts are averages across multiple samplings, rather than pure frequency counts
 
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	2	5	6.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	8	7	8.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	35	9	10.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	32	11	12.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	26	13	14.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	19	15	16.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	7	17	18.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	6	19	20.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 1	female	2	21	22.9	data from table 2
-
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	23	7	8.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	26	9	10.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	35	11	12.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	34	13	14.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	57	15	16.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	34	17	18.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	16	19	20.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	29	21	22.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	26	23	24.9	data from table 2
-Ahmed1976.1	Ahmed (1976) male rapax set 1	male	7	25	26.9	data from table 2
-
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	8	5	6.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	32	7	8.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	24	9	10.9	data from table 2
@@ -88,6 +108,16 @@ Ahmed1976.1	Ahmed (1976) male rapax set 4	male	3	15	16.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	1	17	18.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	1	19	20.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 4	male	1	21	22.9	data from table 2
+
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	2	5	6.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	8	7	8.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	35	9	10.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	32	11	12.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	26	13	14.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	19	15	16.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	7	17	18.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	6	19	20.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 1	female	2	21	22.9	data from table 2
 
 Ahmed1976.1	Ahmed (1976) male rapax set 3	male	17	5	6.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 3	male	47	7	8.9	data from table 2
@@ -111,14 +141,14 @@ Ahmed1976.1	Ahmed (1976) female rapax set 3	female	21	17	18.9	data from table 2
 Ahmed1976.1	Ahmed (1976) female rapax set 3	female	15	19	20.9	data from table 2
 Ahmed1976.1	Ahmed (1976) female rapax set 3	female	1	21	22.9	data from table 2
 
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	18	5	6.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	36	7	8.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	12	9	10.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	12	11	12.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	13	13	14.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	6	15	16.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	2	17	18.9	data from table 2
-Ahmed1976.1	Ahmed (1976) female rapax set 4	female	1	19	20.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	12	5	6.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	32	7	8.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	26	9	10.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	6	11	12.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	4	13	14.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	4	15	16.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	2	17	18.9	data from table 2
+Ahmed1976.1	Ahmed (1976) female rapax set 2	female	2	19	20.9	data from table 2
 
 Ahmed1976.1	Ahmed (1976) male rapax set 2	male	13	5	6.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 2	male	12	7	8.9	data from table 2
@@ -130,4 +160,27 @@ Ahmed1976.1	Ahmed (1976) male rapax set 2	male	10	17	18.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 2	male	2	19	20.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 2	male	5	21	22.9	data from table 2
 Ahmed1976.1	Ahmed (1976) male rapax set 2	male	1	23	24.9	data from table 2
+
+Koch2005	Koch (2005) female rapax set	female	4.17	4	5	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	3.85	5	6	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	3.53	6	7	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	4.49	7	8	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	2.4	8	9	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	2.08	9	10	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	3.85	10	11	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	2.08	11	12	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	1.92	12	13	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	2.72	13	14	counts are averages across multiple samplings, rather than pure frequency counts
+Koch2005	Koch (2005) female rapax set	female	1.28	14	15	counts are averages across multiple samplings, rather than pure frequency counts
+
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	23	7	8.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	26	9	10.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	35	11	12.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	34	13	14.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	57	15	16.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	34	17	18.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	16	19	20.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	29	21	22.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	26	23	24.9	data from table 2
+Ahmed1976.1	Ahmed (1976) male rapax set 1	male	7	25	26.9	data from table 2
 
