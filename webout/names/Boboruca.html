@@ -23,6 +23,28 @@
     <script defer src="../js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
     <link rel="author" href="msrosenberg@vcu.edu" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/name_Boboruca_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -253,9 +275,9 @@
           ['1978', null, null],
           ['1979', null, null],
           ['1980', null, null],
-          ['1981', null, null],
-          ['1982', null, null],
-          ['1983', null, null],
+          ['1981', 0, 0],
+          ['1982', 1, 1],
+          ['1983', 0, 0],
           ['1984', null, null],
           ['1985', null, null],
           ['1986', null, null],
@@ -338,6 +360,10 @@
       </nav>
     </header>
 
+    <div class="map_section">
+    <h3 class="nobookmark">Locations Where the Name has Been Applied</h3>
+           <div id="point_map_canvas" class="sp_map"></div>
+    </div>
     <div class="chron_div">
       <div class="chronchart_title_top">Number of Uses of Name per Year</div>
       <div id="chronchart0_div" class="chronchart_top"></div>
@@ -360,6 +386,17 @@
       <td><a href="../uca_systematics.html#genus_Leptuca">Genus <em class="species">Leptuca</em></a></td>
       <td><span  role="presentation" class="fa fa-exchange" aria-hidden></span> Synonymy</td>
       <td>Proposed as a subgenus, with <em class="species">Leptuca thayeri</em> as the type.</td>
+    </tr>
+    <tr>
+      <td class="rowspacer" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="../references/vonPrahl1982.html">von Prahl (1982)</a></td>
+      <td>text p. 440-442</td>
+      <td><span  role="presentation" class="fa fa-map-marker-alt" aria-hidden></span> location: <a href="../locations/Pacific_coast_of_Colombia.html">Pacific coast of Colombia</a></td>
+      <td><a href="../uca_systematics.html#genus_Minuca">Genus <em class="species">Minuca</em></a></td>
+      <td><span  role="presentation" class="fa fa-arrow-alt-left" aria-hidden></span> Original</td>
+      <td>used as subgenus</td>
     </tr>
     <tr>
       <td class="rowspacer" colspan="6">&nbsp;</td>
@@ -440,7 +477,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="../citation.html"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span  role="presentation" class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2020.05.01.09.59 &mdash; Copyright &copy; 2003&ndash;2020 All Rights Reserved</p>
+       <p id="copyright">Release: 2020.06.01.13.24 &mdash; Copyright &copy; 2003&ndash;2020 All Rights Reserved</p>
     </footer>
   </body>
 </html>
