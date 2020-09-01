@@ -9891,23 +9891,23 @@ Frey1970	1	Uca pugilator	.	text p. 554	location	Georgia, USA	.	pugilator	<	.	.
 Kraeuter1970	1	Uca minax	.	text p. 161, 170, 172	location	York River, Virginia, USA	.	minax	<	.	.
 Kraeuter1970	2	Uca pugnax	.	text p. 170, 172	location	York River, Virginia, USA	.	pugnax	<	.	.
 Chirichigno1970	1.1	Uca princeps	.	text p. 63-64; Figure 154	location	Ecuador	.	princeps	<	.	.
-Chirichigno1970	1.2	Uca princeps	.	text p. 63-64; Figure 154	location	Peru	.	princeps	<	.	.
 Chirichigno1970	2.1	Uca panamensis	.	text p. 63-64; Figure 155	location	Ecuador	.	panamensis	<	.	.
-Chirichigno1970	2.2	Uca panamensis	.	text p. 63-64; Figure 155	location	Peru	.	panamensis	<	.	.
 Chirichigno1970	3.1	Uca insignis	.	text p. 63, 66; Figure 156	location	Ecuador	.	insignis	<	.	.
+Chirichigno1970	4.1	Uca maracoani	.	text p. 63, 66; Figure 157	location	Ecuador	.	insignis	Moscoso2012	.	.
+Chirichigno1970	5.1	Uca stylifera	.	text p. 63, 66; Figure 158	location	Ecuador	.	stylifera	<	.	.
+Chirichigno1970	6.1	Uca macrodactyla	.	text p. 63	location	Ecuador	.	galapagensis	Moscoso2012	.	.
+Chirichigno1970	7.1	Uca stenodactyla	.	text p. 65	location	Ecuador	.	stenodactylus	<	.	.
+Chirichigno1970	8.1	Uca galapagensis	.	text p. 65-66; Figure 159	location	Ecuador	.	galapagensis	<	.	.
+Chirichigno1970	1.2	Uca princeps	.	text p. 63-64; Figure 154	location	Peru	.	princeps	<	.	.
+Chirichigno1970	2.2	Uca panamensis	.	text p. 63-64; Figure 155	location	Peru	.	panamensis	<	.	.
 Chirichigno1970	3.2	Uca insignis	.	text p. 63, 66; Figure 156	location	Peru	.	insignis	<	.	.
 Chirichigno1970	3.3	Uca insignis	.	text p. 63, 66; Figure 156	location	Chile	.	insignis	<	.	.
-Chirichigno1970	4.1	Uca maracoani	.	text p. 63, 66; Figure 157	location	Ecuador	.	insignis	Moscoso2012	.	.
 Chirichigno1970	4.2	Uca maracoani	.	text p. 63, 66; Figure 157	location	Peru	.	insignis	Moscoso2012	.	.
-Chirichigno1970	5.1	Uca stylifera	.	text p. 63, 66; Figure 158	location	Ecuador	.	stylifera	<	.	.
 Chirichigno1970	5.2	Uca stylifera	.	text p. 63, 66; Figure 158	location	Peru	.	stylifera	<	.	.
-Chirichigno1970	6.1	Uca macrodactyla	.	text p. 63	location	Ecuador	.	galapagensis	Moscoso2012	.	.
 Chirichigno1970	6.2	Uca macrodactyla	.	text p. 63	location	Peru	.	galapagensis	Moscoso2012	.	.
 Chirichigno1970	6.3	Uca macrodactyla	.	text p. 63	location	Chile	.	galapagensis	Moscoso2012	.	.
-Chirichigno1970	7.1	Uca stenodactyla	.	text p. 65	location	Ecuador	.	stenodactylus	<	.	.
 Chirichigno1970	7.2	Uca stenodactyla	.	text p. 65	location	Peru	.	stenodactylus	<	.	.
 Chirichigno1970	7.3	Uca stenodactyla	.	text p. 65	location	Chile	.	stenodactylus	<	.	.
-Chirichigno1970	8.1	Uca galapagensis	.	text p. 65-66; Figure 159	location	Ecuador	.	galapagensis	<	.	.
 Chirichigno1970	8.2	Uca galapagensis	.	text p. 65-66; Figure 159	location	Peru	.	galapagensis	<	.	.
 Millard1970	1	Uca annulipes	.	text p. 285, 301	location	St Lucia, KwaZulu-Natal, South Africa	.	occidentalis	>MSR:geography	.	.
 Millard1970	2	Uca urvillei	.	text p. 285, 301	location	St Lucia, KwaZulu-Natal, South Africa	.	urvillei	<	.	.
@@ -23373,7 +23373,6 @@ Poupin2010.2	5.1	Uca neocultrimana	Melanesian Fiddler Crab	text p. 100-101 (fig 
 Poupin2010.2	5.2	Uca neocultrimana	Melanesian Fiddler Crab	text p. 100-101 (fig c,d)	location	Wallis and Futuna	.	excisa	>MSR:synonymy	.	.
 Poupin2010.2	5.3	Uca neocultrimana	Melanesian Fiddler Crab	text p. 100-101 (fig c,d)	location	Samoa	.	excisa	>MSR:synonymy	.	.
 Poupin2010.2	6	Uca jocelynae	.	text p. 100	citation	Shih2010.1	1	=	=	.	.
-Poupin2010.1	1	Uca tetragonon	.	text p. 5 (fig)	location	Wallis, Wallis and Futuna	.	tetragonon	<	.	.
 Poupin2010.1	2	Uca annulipes	.	text p. 75	location	Mayotte	.	occidentalis	>MSR:geography	.	.
 Poupin2010.1	3	Uca arcuata	.	text p. 75	location	New Caledonia	.	?	.	.	.
 Poupin2010.1	4.1	Uca chlorophthalmus	.	text p. 75	location	Mayotte	.	chlorophthalmus	<	.	.
@@ -23388,11 +23387,12 @@ Poupin2010.1	9	Uca lactea	.	text p. 75	location	New Caledonia	.	perplexa	>MSR:ge
 Poupin2010.1	10	Uca neocultrimana	.	text p. 75	location	Wallis and Futuna	.	excisa	<	.	.
 Poupin2010.1	11.1	Uca perplexa	.	text p. 75	location	New Caledonia	.	perplexa	<	.	.
 Poupin2010.1	11.2	Uca perplexa	.	text p. 75	location	Wallis and Futuna	.	citrus	Shih2020.2	.	.
-Poupin2010.1	12.1	Uca tetragonon	.	text p. 75	location	Mayotte	.	tetragonon	<	.	.
-Poupin2010.1	12.2	Uca tetragonon	.	text p. 75	location	Reunion Island	.	tetragonon	<	.	.
-Poupin2010.1	12.3	Uca tetragonon	.	text p. 75	location	New Caledonia	.	tetragonon	<	.	.
-Poupin2010.1	12.4	Uca tetragonon	.	text p. 75	location	Wallis and Futuna	.	tetragonon	<	.	.
-Poupin2010.1	12.5	Uca tetragonon	.	text p. 75	location	French Polynesia	.	tetragonon	<	.	.
+Poupin2010.1	12.1	Uca tetragonon	.	text p. 5 (fig), 75	location	Mayotte	.	tetragonon	<	.	.
+Poupin2010.1	12.2	Uca tetragonon	.	text p. 5 (fig), 75	location	Reunion Island	.	tetragonon	<	.	.
+Poupin2010.1	12.3	Uca tetragonon	.	text p. 5 (fig), 75	location	New Caledonia	.	tetragonon	<	.	.
+Poupin2010.1	12.4	Uca tetragonon	.	text p. 5 (fig), 75	location	Wallis and Futuna	.	tetragonon	<	.	.
+Poupin2010.1	12.5	Uca tetragonon	.	text p. 5 (fig), 75	location	French Polynesia	.	tetragonon	<	.	.
+Poupin2010.1	12.6	Uca tetragonon	.	text p. 5 (fig), 75	location	Wallis, Wallis and Futuna	.	tetragonon	<	.	.
 Poupin2010.1	13	Uca triangularis	.	text p. 75	location	New Caledonia	.	triangularis	<	.	.
 Poupin2010.1	14	Uca urvillei	.	text p. 75	location	Mayotte	.	urvillei	<	.	.
 Poupin2010.1	15.1	Uca vocans	.	text p. 75	location	Mayotte	.	hesperiae	>MSR:geography	.	.
@@ -28985,3 +28985,1210 @@ Shih2020	1.3	.	fiddler crabs	text p. 249-250	citation	Shih2016.2	84	=	=	.	.
 Shih2020	1.4	.	fiddler crabs	text p. 249-250	citation	Shih2018.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
 Shih2020	1.5	.	fiddler crabs	text p. 249-250	citation	Shih2019	1	=	=	.	.
 Shih2020	1.6	.	fiddler crabs	text p. 249-250	citation	Thurman2018	.	=	=	.	.
+Takeda2020	1	Austruca perplexa	.	text p. 147-150	citation	Takeda2010	.	=	=	.	.
+Takeda2020	2.1	Gelasimus vocans	.	text p. 147	citation	Nakasone1982	.	=	=	.	.
+Takeda2020	2.2	Gelasimus vocans	.	text p. 147	citation	Murai1983	.	=	=	.	.
+Takeda2020	2.3	Gelasimus vocans	.	text p. 147	citation	Takeda2019	.	=	=	.	.
+Takeda2020	3.1	Leptuca pugilator	.	text p. 147	citation	Salmon1983.1	.	=	=	.	.
+Takeda2020	3.2	Leptuca pugilator	.	text p. 147	citation	Cameron1993	.	=	=	.	.
+Takeda2020	3.3	Leptuca pugilator	.	text p. 147	citation	OConnor1991	.	=	=	.	.
+Takeda2020	3.4	Leptuca pugilator	.	text p. 147	citation	OConnor1993	.	=	=	.	.
+Takeda2020	4	Uca cumulanta	.	text p. 147	citation	Chiussi2001	.	=	=	.	.
+Takeda2020	5.1	Minuca pugnax	.	text p. 148	citation	OConnor1993	.	=	=	.	.
+Takeda2020	5.2	Minuca pugnax	.	text p. 148	citation	OConnor2005	.	=	=	.	.
+Takeda2020	5.3	Minuca pugnax	.	text p. 148	citation	OConnor1998	.	=	=	.	.
+Takeda2020	5.4	Minuca pugnax	.	text p. 148	citation	OConnor1997	.	=	=	.	.
+Takeda2020	5.5	Minuca pugnax	.	text p. 148	citation	OConnor1999	.	=	=	.	.
+Takeda2020	5.6	Minuca pugnax	.	text p. 148	citation	OConnor2006	.	=	=	.	.
+Takeda2020	6	Minuca minax	.	text p. 148	citation	OConnor2004	.	=	=	.	.
+Rosenberg2020	1.001	.	fiddler crabs	text p. 364-378	citation	Burns1976	0	>&ldquo;fiddler crabs&rdquo;	<	.	Includes the supplemental materials
+Rosenberg2020	1.002	.	fiddler crabs	text p. 364-378	citation	Haines1976	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.003	.	fiddler crabs	text p. 364-378	citation	Moore1991	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.004	.	fiddler crabs	text p. 364-378	citation	Jones1994.2	.	=	=	.	.
+Rosenberg2020	1.005	.	fiddler crabs	text p. 364-378	citation	Kostka2002.1	.	=	=	.	.
+Rosenberg2020	1.006	.	fiddler crabs	text p. 364-378	citation	Curran2003	2	=	=	.	.
+Rosenberg2020	1.007	.	fiddler crabs	text p. 364-378	citation	Smith2003.2	.	=	=	.	.
+Rosenberg2020	1.008	.	fiddler crabs	text p. 364-378	citation	Guest2004	.	=	=	.	.
+Rosenberg2020	1.009	.	fiddler crabs	text p. 364-378	citation	Kristensen2006	.	=	=	.	.
+Rosenberg2020	1.01	.	fiddler crabs	text p. 364-378	citation	Ferreira2007	.	=	=	.	.
+Rosenberg2020	1.011	.	fiddler crabs	text p. 364-378	citation	Lim2007.1	.	=	=	.	.
+Rosenberg2020	1.012	.	fiddler crabs	text p. 364-378	citation	Cannicci2008	.	=	=	.	.
+Rosenberg2020	1.013	.	fiddler crabs	text p. 364-378	citation	Kristensen2008	.	=	=	.	.
+Rosenberg2020	1.014	.	fiddler crabs	text p. 364-378	citation	PenhaLopes2009.1	.	=	=	.	.
+Rosenberg2020	1.015	.	fiddler crabs	text p. 364-378	citation	Wang2010	.	=	=	.	.
+Rosenberg2020	1.016	.	fiddler crabs	text p. 364-378	citation	Bartolini2011	.	=	=	.	.
+Rosenberg2020	1.017	.	fiddler crabs	text p. 364-378	citation	Chowdhury2012	.	=	=	.	.
+Rosenberg2020	1.018	.	fiddler crabs	text p. 364-378	citation	Ohzono2012	.	=	=	.	.
+Rosenberg2020	1.019	.	fiddler crabs	text p. 364-378	citation	SayaoAguiar2012	.	=	=	.	.
+Rosenberg2020	1.02	.	fiddler crabs	text p. 364-378	citation	Diele2013	8	=	=	.	.
+Rosenberg2020	1.021	.	fiddler crabs	text p. 364-378	citation	Andreeta2014	1	=	=	.	.
+Rosenberg2020	1.022	.	fiddler crabs	text p. 364-378	citation	Chatterjee2014.2	.	=	=	.	.
+Rosenberg2020	1.023	.	fiddler crabs	text p. 364-378	citation	GonzalezOrtiz2014	2	=	=	.	.
+Rosenberg2020	1.024	.	fiddler crabs	text p. 364-378	citation	Fanjul2015	1	=	=	.	.
+Rosenberg2020	1.025	.	fiddler crabs	text p. 364-378	citation	Nobbs2015	.	=	=	.	.
+Rosenberg2020	1.026	.	fiddler crabs	text p. 364-378	citation	Smith2015.1	.	=	=	.	.
+Rosenberg2020	1.027	.	fiddler crabs	text p. 364-378	citation	Citadin2016	.	=	=	.	.
+Rosenberg2020	1.028	.	fiddler crabs	text p. 364-378	citation	Correia2016	2	=	=	.	.
+Rosenberg2020	1.029	.	fiddler crabs	text p. 364-378	citation	Vu2017	.	=	=	.	.
+Rosenberg2020	1.03	.	fiddler crabs	text p. 364-378	citation	Booth2019	.	=	=	.	.
+Rosenberg2020	1.031	.	fiddler crabs	text p. 364-378	citation	ElHacen2019	2	=	=	.	.
+Rosenberg2020	1.032	.	fiddler crabs	text p. 364-378	citation	Moore2019	.	=	=	.	.
+Rosenberg2020	1.033	.	fiddler crabs	text p. 364-378	citation	Katz1980	.	=	=	.	.
+Rosenberg2020	1.034	.	fiddler crabs	text p. 364-378	citation	Holdredge2010	.	=	=	.	.
+Rosenberg2020	1.035	.	fiddler crabs	text p. 364-378	citation	Thomas2010	.	=	=	.	.
+Rosenberg2020	1.036	.	fiddler crabs	text p. 364-378	citation	Gittman2013	.	=	=	.	.
+Rosenberg2020	1.037	.	fiddler crabs	text p. 364-378	citation	Michaels2013	.	=	=	.	.
+Rosenberg2020	1.038	.	fiddler crabs	text p. 364-378	citation	DePatra1989	.	=	=	.	.
+Rosenberg2020	1.039	.	fiddler crabs	text p. 364-378	citation	Citadin2018	.	=	=	.	.
+Rosenberg2020	1.04	.	fiddler crabs	text p. 364-378	citation	Raposa2018	.	=	=	.	.
+Rosenberg2020	1.041	.	fiddler crabs	text p. 364-378	citation	Raut1943	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.042	.	fiddler crabs	text p. 364-378	citation	Kushan1979	1	=	=	.	.
+Rosenberg2020	1.043	.	fiddler crabs	text p. 364-378	citation	Subramanian1984	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.044	.	fiddler crabs	text p. 364-378	citation	Petit1987	.	=	=	.	.
+Rosenberg2020	1.045	.	fiddler crabs	text p. 364-378	citation	Zwarts1989	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.046	.	fiddler crabs	text p. 364-378	citation	Zwarts1990.3	2	=	=	.	.
+Rosenberg2020	1.047	.	fiddler crabs	text p. 364-378	citation	Zwarts1990.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.048	.	fiddler crabs	text p. 364-378	citation	Zwarts1990.2	2	=	=	.	.
+Rosenberg2020	1.049	.	fiddler crabs	text p. 364-378	citation	Grant1992	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.05	.	fiddler crabs	text p. 364-378	citation	Turpie1993	1	=	=	.	.
+Rosenberg2020	1.051	.	fiddler crabs	text p. 364-378	citation	Lee1994	.	=	=	.	.
+Rosenberg2020	1.052	.	fiddler crabs	text p. 364-378	citation	McNeil1995.2	2	=	=	.	.
+Rosenberg2020	1.053	.	fiddler crabs	text p. 364-378	citation	McNeil1995.1	1	=	=	.	.
+Rosenberg2020	1.054	.	fiddler crabs	text p. 364-378	citation	Thibault1995	2	=	=	.	.
+Rosenberg2020	1.055	.	fiddler crabs	text p. 364-378	citation	Desanto1997	.	=	=	.	.
+Rosenberg2020	1.056	.	fiddler crabs	text p. 364-378	citation	Backwell1998.2	1	=	=	.	.
+Rosenberg2020	1.057	.	fiddler crabs	text p. 364-378	citation	Olmos2001	.	=	=	.	.
+Rosenberg2020	1.058	.	fiddler crabs	text p. 364-378	citation	Vannini2001	4	=	=	.	.
+Rosenberg2020	1.059	.	fiddler crabs	text p. 364-378	citation	Whitelaw2002	1	=	=	.	.
+Rosenberg2020	1.06	.	fiddler crabs	text p. 364-378	citation	Jennions2003	.	=	=	.	.
+Rosenberg2020	1.061	.	fiddler crabs	text p. 364-378	citation	Hugie2004	.	=	=	.	.
+Rosenberg2020	1.062	.	fiddler crabs	text p. 364-378	citation	Martinez2004	.	=	=	.	.
+Rosenberg2020	1.063	.	fiddler crabs	text p. 364-378	citation	Ribeiro2004	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.064	.	fiddler crabs	text p. 364-378	citation	Rulison2010	2	=	=	.	.
+Rosenberg2020	1.065	.	fiddler crabs	text p. 364-378	citation	Rush2010	.	=	=	.	.
+Rosenberg2020	1.066	.	fiddler crabs	text p. 364-378	citation	Lourenco2017	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.067	.	fiddler crabs	text p. 364-378	citation	Alleman2017	1	=	=	.	.
+Rosenberg2020	1.068	.	fiddler crabs	text p. 364-378	citation	Krebs1977	2	=	=	.	.
+Rosenberg2020	1.069	.	fiddler crabs	text p. 364-378	citation	Burns1979	1	=	=	.	.
+Rosenberg2020	1.07	.	fiddler crabs	text p. 364-378	citation	Lee1981.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.071	.	fiddler crabs	text p. 364-378	citation	Deecaraman1985	.	=	=	.	.
+Rosenberg2020	1.072	.	fiddler crabs	text p. 364-378	citation	Shafer1987	.	=	=	.	.
+Rosenberg2020	1.073	.	fiddler crabs	text p. 364-378	citation	Snowden1987	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.074	.	fiddler crabs	text p. 364-378	citation	Jacob1988	2	=	=	.	.
+Rosenberg2020	1.075	.	fiddler crabs	text p. 364-378	citation	Snowden1990	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.076	.	fiddler crabs	text p. 364-378	citation	Burger1991	.	=	=	.	.
+Rosenberg2020	1.077	.	fiddler crabs	text p. 364-378	citation	Burger1992.1	.	=	=	.	.
+Rosenberg2020	1.078	.	fiddler crabs	text p. 364-378	citation	Burger1992.2	.	=	=	.	.
+Rosenberg2020	1.079	.	fiddler crabs	text p. 364-378	citation	Teal1992	.	=	=	.	.
+Rosenberg2020	1.08	.	fiddler crabs	text p. 364-378	citation	Culbertson2008	.	=	=	.	.
+Rosenberg2020	1.081	.	fiddler crabs	text p. 364-378	citation	Chase2013	.	=	=	.	.
+Rosenberg2020	1.082	.	fiddler crabs	text p. 364-378	citation	Zengel2016	.	=	=	.	.
+Rosenberg2020	1.083	.	fiddler crabs	text p. 364-378	citation	Deis2017	.	=	=	.	.
+Rosenberg2020	1.084	.	fiddler crabs	text p. 364-378	citation	Damare2018	.	=	=	.	.
+Rosenberg2020	1.085	.	fiddler crabs	text p. 364-378	citation	Franco2018	.	=	=	.	.
+Rosenberg2020	1.086	.	fiddler crabs	text p. 364-378	citation	Lambert1982	.	=	=	.	.
+Rosenberg2020	1.087	.	fiddler crabs	text p. 364-378	citation	OConnor1985	.	=	=	.	.
+Rosenberg2020	1.088	.	fiddler crabs	text p. 364-378	citation	Epifanio1988.1	.	=	=	.	.
+Rosenberg2020	1.089	.	fiddler crabs	text p. 364-378	citation	Epifanio1988.3	.	=	=	.	.
+Rosenberg2020	1.09	.	fiddler crabs	text p. 364-378	citation	Anger1994	.	=	=	.	.
+Rosenberg2020	1.091	.	fiddler crabs	text p. 364-378	citation	Christy2003.1	.	=	=	.	.
+Rosenberg2020	1.092	.	fiddler crabs	text p. 364-378	citation	LopezDuarte2011	.	=	=	.	.
+Rosenberg2020	1.093	.	fiddler crabs	text p. 364-378	citation	Levinton2013	.	=	=	.	.
+Rosenberg2020	1.094	.	fiddler crabs	text p. 364-378	citation	Simith2014	.	=	=	.	.
+Rosenberg2020	1.095	.	fiddler crabs	text p. 364-378	citation	Wieman2014	.	=	=	.	.
+Rosenberg2020	1.096	.	fiddler crabs	text p. 364-378	citation	Johnson2014	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.097	.	fiddler crabs	text p. 364-378	citation	Peer2015	1	=	=	.	.
+Rosenberg2020	1.098	.	fiddler crabs	text p. 364-378	citation	Rosenberg2018	3	=	=	.	.
+Rosenberg2020	1.099	.	fiddler crabs	text p. 364-378	citation	Truchet2019	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.1	.	fiddler crabs	text p. 364-378	citation	Crane1975	1	=	=	.	.
+Rosenberg2020	1.101	.	fiddler crabs	text p. 364-378	citation	Salmon1988.2	1	=	=	.	.
+Rosenberg2020	1.102	.	fiddler crabs	text p. 364-378	citation	Levinton1996	.	=	=	.	.
+Rosenberg2020	1.103	.	fiddler crabs	text p. 364-378	citation	Sturmbauer1996	1	=	=	.	.
+Rosenberg2020	1.104	.	fiddler crabs	text p. 364-378	citation	Beinlich2006	105	=	=	.	.
+Rosenberg2020	1.105	.	fiddler crabs	text p. 364-378	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	1.106	.	fiddler crabs	text p. 364-378	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	1.107	.	fiddler crabs	text p. 364-378	citation	Apel1999	9	=	=	.	.
+Rosenberg2020	1.108	.	fiddler crabs	text p. 364-378	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	1.109	.	fiddler crabs	text p. 364-378	citation	Shih2010.2	17	=	=	.	.
+Rosenberg2020	1.11	.	fiddler crabs	text p. 364-378	citation	Bezerra2012	.	=	=	.	.
+Rosenberg2020	1.111	.	fiddler crabs	text p. 364-378	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	1.112	.	fiddler crabs	text p. 364-378	citation	Hopkins2016	.	=	=	.	.
+Rosenberg2020	1.113	.	fiddler crabs	text p. 364-378	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	1.114	.	fiddler crabs	text p. 364-378	citation	Thurman2017	.	=	=	.	.
+Rosenberg2020	1.115	.	fiddler crabs	text p. 364-378	citation	Peer2018.2	.	=	=	.	.
+Rosenberg2020	1.116	.	fiddler crabs	text p. 364-378	citation	Ono1965	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.117	.	fiddler crabs	text p. 364-378	citation	Macnae1967	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.118	.	fiddler crabs	text p. 364-378	citation	Frith1976	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.119	.	fiddler crabs	text p. 364-378	citation	Icely1978	1	=	=	.	.
+Rosenberg2020	1.12	.	fiddler crabs	text p. 364-378	citation	Thurman1998.1	.	=	=	.	.
+Rosenberg2020	1.121	.	fiddler crabs	text p. 364-378	citation	Ravichandran2001	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.122	.	fiddler crabs	text p. 364-378	citation	Silva2002	.	=	=	.	.
+Rosenberg2020	1.123	.	fiddler crabs	text p. 364-378	citation	Nobbs2003	.	=	=	.	.
+Rosenberg2020	1.124	.	fiddler crabs	text p. 364-378	citation	Lim2005	.	=	=	.	.
+Rosenberg2020	1.125	.	fiddler crabs	text p. 364-378	citation	Bezerra2006	.	=	=	.	.
+Rosenberg2020	1.126	.	fiddler crabs	text p. 364-378	citation	Ohno2006	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.127	.	fiddler crabs	text p. 364-378	citation	An2008	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.128	.	fiddler crabs	text p. 364-378	citation	Diele2010	.	=	=	.	.
+Rosenberg2020	1.129	.	fiddler crabs	text p. 364-378	citation	Mokhtari2015	.	=	=	.	.
+Rosenberg2020	1.13	.	fiddler crabs	text p. 364-378	citation	Nobbs2017	.	=	=	.	.
+Rosenberg2020	1.131	.	fiddler crabs	text p. 364-378	citation	Shih2016.2	84	=	=	.	.
+Rosenberg2020	1.132	.	fiddler crabs	text p. 364-378	citation	Rosenberg2019	1	=	=	.	.
+Rosenberg2020	1.133	.	fiddler crabs	text p. 364-378	citation	Owen1839	3	=	=	.	.
+Rosenberg2020	1.134	.	fiddler crabs	text p. 364-378	citation	Kingsley1880	47	=	=	.	.
+Rosenberg2020	1.135	.	fiddler crabs	text p. 364-378	citation	Castro2011	3	=	=	.	.
+Rosenberg2020	1.136	.	fiddler crabs	text p. 364-378	citation	Kirk1880	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.137	.	fiddler crabs	text p. 364-378	citation	Filhol1885	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.138	.	fiddler crabs	text p. 364-378	citation	Filhol1885.2	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.139	.	fiddler crabs	text p. 364-378	citation	Bennett1964	1	=	=	.	.
+Rosenberg2020	1.14	.	fiddler crabs	text p. 364-378	citation	Bate1866	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.141	.	fiddler crabs	text p. 364-378	citation	Doflein1899	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.142	.	fiddler crabs	text p. 364-378	citation	Stossich1878	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.143	.	fiddler crabs	text p. 364-378	citation	Naderloo2017	1	=	=	.	.
+Rosenberg2020	1.144	.	fiddler crabs	text p. 364-378	citation	Zanders1996.3	.	=	=	.	.
+Rosenberg2020	1.145	.	fiddler crabs	text p. 364-378	citation	Khanyile2012	.	=	=	.	.
+Rosenberg2020	1.146	.	fiddler crabs	text p. 364-378	citation	Peer2015	1	=	=	.	.
+Rosenberg2020	1.147	.	fiddler crabs	text p. 364-378	citation	Shih2019	1	=	=	.	.
+Rosenberg2020	1.148	.	fiddler crabs	text p. 364-378	citation	Rosenberg2000	1	=	=	.	.
+Rosenberg2020	1.149	.	fiddler crabs	text p. 364-378	citation	Thurman2018	.	=	=	.	.
+Rosenberg2020	1.15	.	fiddler crabs	text p. 364-378	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	1.151	.	fiddler crabs	text p. 364-378	citation	Naderloo2010	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.152	.	fiddler crabs	text p. 364-378	citation	Naderloo2016	.	=	=	.	.
+Rosenberg2020	1.153	.	fiddler crabs	text p. 364-378	citation	Shih2010.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.154	.	fiddler crabs	text p. 364-378	citation	Shih2012	.	=	=	.	.
+Rosenberg2020	1.155	.	fiddler crabs	text p. 364-378	citation	Shih2013.2	5	=	=	.	.
+Rosenberg2020	1.156	.	fiddler crabs	text p. 364-378	citation	Shih2018.1	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.157	.	fiddler crabs	text p. 364-378	citation	Rosenberg2014	1	=	=	.	.
+Rosenberg2020	1.158	.	fiddler crabs	text p. 364-378	citation	Heller1865	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.159	.	fiddler crabs	text p. 364-378	citation	Alcock1900	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.16	.	fiddler crabs	text p. 364-378	citation	Pesta1911	1	=	=	.	.
+Rosenberg2020	1.161	.	fiddler crabs	text p. 364-378	citation	Pesta1913	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.162	.	fiddler crabs	text p. 364-378	citation	McNeill1920	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.163	.	fiddler crabs	text p. 364-378	citation	Sankarankutty1961	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.164	.	fiddler crabs	text p. 364-378	citation	Tikader1985	0	>&ldquo;fiddler crabs&rdquo;	<	.	.
+Rosenberg2020	1.165	.	fiddler crabs	text p. 364-378	citation	Tikader1986	1	=	=	.	.
+Rosenberg2020	1.166	.	fiddler crabs	text p. 364-378	citation	Das1989	1	=	=	.	.
+Rosenberg2020	1.167	.	fiddler crabs	text p. 364-378	citation	Bairagi1995	1	=	=	.	.
+Rosenberg2020	1.168	.	fiddler crabs	text p. 364-378	citation	DevRoy2000	.	=	=	.	.
+Rosenberg2020	1.169	.	fiddler crabs	text p. 364-378	citation	Das2001	1	=	=	.	.
+Rosenberg2020	1.17	.	fiddler crabs	text p. 364-378	citation	DevRoy2012	1	=	=	.	.
+Rosenberg2020	1.171	.	fiddler crabs	text p. 364-378	citation	Rabalais1983.2	.	=	=	.	.
+Rosenberg2020	2.1	Austruca	.	text p. 366, 369, 374-375	location	Oman	.	#genus#Austruca	<	.	.
+Rosenberg2020	2.2	Austruca	.	text p. 366, 369, 374-375	location	Cambodia	.	#genus#Austruca	<	.	.
+Rosenberg2020	2.3	Austruca	.	text p. 366, 369, 374-375	location	Indo-West Pacific Oceans	.	#genus#Austruca	<	.	.
+Rosenberg2020	3.1	Leptuca	.	text p. 368-369, 371	location	Western Atlantic Ocean	.	#genus#Leptuca	<	.	.
+Rosenberg2020	3.2	Leptuca	.	text p. 368-369, 371	location	Eastern Pacific Ocean	.	#genus#Leptuca	<	.	.
+Rosenberg2020	4.1	Uca	.	text p. 369, 371	location	Western Atlantic Ocean	.	#genus#Uca	<	.	.
+Rosenberg2020	4.2	Uca	.	text p. 369, 371	location	Eastern Pacific Ocean	.	#genus#Uca	<	.	.
+Rosenberg2020	5	Afruca	.	text p. 369	location	Eastern Atlantic Ocean	.	#genus#Afruca	<	.	.
+Rosenberg2020	6.1	Minuca	.	text p. 369, 371	location	Western Atlantic Ocean	.	#genus#Minuca	<	.	.
+Rosenberg2020	6.2	Minuca	.	text p. 369, 371	location	Eastern Pacific Ocean	.	#genus#Minuca	<	.	.
+Rosenberg2020	7	Petruca	.	text p. 369, 371	location	Eastern Pacific Ocean	.	#genus#Petruca	<	.	.
+Rosenberg2020	8	Xeruca	.	text p. 369, 374	location	Indo-West Pacific Oceans	.	#genus#Xeruca	<	.	.
+Rosenberg2020	9	Cranuca	.	text p. 369, 374	location	Indo-West Pacific Oceans	.	#genus#Cranuca	<	.	.
+Rosenberg2020	10	Gelasimus	.	text p. 369, 374	location	Indo-West Pacific Oceans	.	#genus#Gelasimus	<	.	.
+Rosenberg2020	11	Tubuca	.	text p. 369, 374-375	location	Indo-West Pacific Oceans	.	#genus#Tubuca	<	.	.
+Rosenberg2020	12	Paraleptuca	.	text p. 369, 374	location	Indo-West Pacific Oceans	.	#genus#Paraleptuca	<	.	.
+Rosenberg2020	13	Tubuca (Australuca)	.	text p. 369	location	Australia	.	#subgenus#Australuca	<	.	.
+Rosenberg2020	14	Austruca (Austruca)	.	text p. 369, 378	location	Indo-West Pacific Oceans	.	#subgenus#Austruca	<	.	.
+Rosenberg2020	15	Tubuca (Tubuca)	.	text p. 369	location	Indo-West Pacific Oceans	.	#subgenus#Tubuca	<	.	.
+Rosenberg2020	16	Gelasimus (Gelasimus)	.	text p. 369, 378	location	Indo-West Pacific Oceans	.	#subgenus#Gelasimus	<	.	.
+Rosenberg2020	17.01	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	citation	Spivak2009	1	=	=	.	.
+Rosenberg2020	17.02	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	citation	Crane1975	42	=	=	.	.
+Rosenberg2020	17.03	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	citation	Castro2012	1	=	=	.	.
+Rosenberg2020	17.04	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	citation	Gonzalez2018	1	=	=	.	.
+Rosenberg2020	17.05	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	citation	Gonzalez2017	1	=	=	.	.
+Rosenberg2020	17.06	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Portugal	.	tangeri	<	.	.
+Rosenberg2020	17.07	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Spain	.	tangeri	<	.	.
+Rosenberg2020	17.08	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Morocco	.	tangeri	<	.	.
+Rosenberg2020	17.09	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Western Sahara	.	tangeri	<	.	.
+Rosenberg2020	17.1	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Mauritania	.	tangeri	<	.	.
+Rosenberg2020	17.11	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Senegal	.	tangeri	<	.	.
+Rosenberg2020	17.12	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	The Gambia	.	tangeri	<	.	.
+Rosenberg2020	17.13	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Guinea-Bissau	.	tangeri	<	.	.
+Rosenberg2020	17.14	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Guinea	.	tangeri	<	.	.
+Rosenberg2020	17.15	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Sierra Leone	.	tangeri	<	.	.
+Rosenberg2020	17.16	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Liberia	.	tangeri	<	.	.
+Rosenberg2020	17.17	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Ivory Coast	.	tangeri	<	.	.
+Rosenberg2020	17.18	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Ghana	.	tangeri	<	.	.
+Rosenberg2020	17.19	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Togo	.	tangeri	<	.	.
+Rosenberg2020	17.2	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Benin	.	tangeri	<	.	.
+Rosenberg2020	17.21	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Nigeria	.	tangeri	<	.	.
+Rosenberg2020	17.22	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Cameroon	.	tangeri	<	.	.
+Rosenberg2020	17.23	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Equatorial Guinea	.	tangeri	<	.	.
+Rosenberg2020	17.24	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Gabon	.	tangeri	<	.	.
+Rosenberg2020	17.25	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Republic of the Congo	.	tangeri	<	.	.
+Rosenberg2020	17.26	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Democratic Republic of the Congo	.	tangeri	<	.	.
+Rosenberg2020	17.27	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Angola	.	tangeri	<	.	.
+Rosenberg2020	17.28	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	São Tomé and Príncipe	.	tangeri	<	.	.
+Rosenberg2020	17.29	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Cape Verde	.	tangeri	<	.	.
+Rosenberg2020	17.3	Afruca tangeri	.	text p. 367-371, 377-378; supplement 3	location	Canary Islands, Spain	.	tangeri	<	.	.
+Rosenberg2020	18.01	Austruca albimana	.	text p. 370, 375; supplement 4	citation	ElSayed2016	2	=	=	.	.
+Rosenberg2020	18.02	Austruca albimana	.	text p. 370, 375; supplement 4	citation	Naderloo2015	1	=	=	.	.
+Rosenberg2020	18.03	Austruca albimana	.	text p. 370, 375; supplement 4	citation	Naderloo2012	2	=	=	.	.
+Rosenberg2020	18.04	Austruca albimana	.	text p. 370, 375; supplement 4	citation	Naderloo2010	14	=	=	.	.
+Rosenberg2020	18.05	Austruca albimana	.	text p. 370, 375; supplement 4	citation	Shih2009	.	=	=	.	.
+Rosenberg2020	18.06	Austruca albimana	.	text p. 370, 375; supplement 4	location	Somalia	.	albimana	<	.	.
+Rosenberg2020	18.07	Austruca albimana	.	text p. 370, 375; supplement 4	location	Eritrea	.	albimana	<	.	.
+Rosenberg2020	18.08	Austruca albimana	.	text p. 370, 375; supplement 4	location	Djibouti	.	albimana	<	.	.
+Rosenberg2020	18.09	Austruca albimana	.	text p. 370, 375; supplement 4	location	Sudan	.	albimana	<	.	.
+Rosenberg2020	18.1	Austruca albimana	.	text p. 370, 375; supplement 4	location	Egypt	.	albimana	<	.	.
+Rosenberg2020	18.11	Austruca albimana	.	text p. 370, 375; supplement 4	location	Saudi Arabia	.	albimana	<	.	.
+Rosenberg2020	18.12	Austruca albimana	.	text p. 370, 375; supplement 4	location	Yemen	.	albimana	<	.	.
+Rosenberg2020	18.13	Austruca albimana	.	text p. 370, 375; supplement 4	location	Oman	.	albimana	<	.	.
+Rosenberg2020	18.14	Austruca albimana	.	text p. 370, 375; supplement 4	location	United Arab Emirates	.	albimana	<	.	.
+Rosenberg2020	18.15	Austruca albimana	.	text p. 370, 375; supplement 4	location	Socotra, Yemen	.	albimana	<	.	.
+Rosenberg2020	18.16	Austruca albimana	.	text p. 370, 375; supplement 4	location	Gulf of Aden	.	albimana	<	.	.
+Rosenberg2020	18.17	Austruca albimana	.	text p. 370, 375; supplement 4	location	Red Sea	.	albimana	<	.	.
+Rosenberg2020	18.18	Austruca albimana	.	text p. 370, 375; supplement 4	location	Gulf of Oman	.	albimana	<	.	.
+Rosenberg2020	18.19	Austruca albimana	.	text p. 370, 375; supplement 4	location	Persian Gulf	.	albimana	<	.	.
+Rosenberg2020	19.01	Austruca annulipes	.	text p. 370, 374-377; supplement 5	citation	Naderloo2016	.	=	=	.	.
+Rosenberg2020	19.02	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Pakistan	.	annulipes	<	.	.
+Rosenberg2020	19.03	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	India	.	annulipes	<	.	.
+Rosenberg2020	19.04	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Bangladesh	.	annulipes	<	.	.
+Rosenberg2020	19.05	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Myanmar	.	annulipes	<	.	.
+Rosenberg2020	19.06	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Malaysia	.	annulipes	<	.	.
+Rosenberg2020	19.07	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Thailand	.	annulipes	<	.	.
+Rosenberg2020	19.08	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Cambodia	.	annulipes	<	.	.
+Rosenberg2020	19.09	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Vietnam	.	annulipes	<	.	.
+Rosenberg2020	19.1	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Hainan Island, China	.	annulipes	<	.	.
+Rosenberg2020	19.11	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Philippines	.	annulipes	<	.	.
+Rosenberg2020	19.12	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Singapore	.	annulipes	<	.	.
+Rosenberg2020	19.13	Austruca annulipes	.	text p. 370, 374-377; supplement 5	location	Indonesia	.	annulipes	<	.	.
+Rosenberg2020	20.1	Austruca bengali	.	text p. 366, 370, 375; supplement 6	citation	Shih2019	14	=	=	.	.
+Rosenberg2020	20.2	Austruca bengali	.	text p. 366, 370, 375; supplement 6	location	Myanmar	.	bengali	<	.	.
+Rosenberg2020	20.3	Austruca bengali	.	text p. 366, 370, 375; supplement 6	location	Western Malaysia	.	bengali	<	.	.
+Rosenberg2020	20.4	Austruca bengali	.	text p. 366, 370, 375; supplement 6	location	West coast of Thailand	.	bengali	<	.	.
+Rosenberg2020	21.1	Austruca cryptica	.	text p. 370, 376; supplement 7	citation	Naderloo2010	1	=	=	.	.
+Rosenberg2020	21.2	Austruca cryptica	.	text p. 370, 376; supplement 7	citation	Michie2015	1	=	=	.	.
+Rosenberg2020	21.3	Austruca cryptica	.	text p. 370, 376; supplement 7	location	Western Flores, East Nusa Tenggara, Indonesia	.	cryptica	<	.	.
+Rosenberg2020	21.4	Austruca cryptica	.	text p. 370, 376; supplement 7	location	Sulawesi, Indonesia	.	cryptica	<	.	.
+Rosenberg2020	21.5	Austruca cryptica	.	text p. 370, 376; supplement 7	location	Mindanao, Philippines	.	cryptica	<	.	.
+Rosenberg2020	21.6	Austruca cryptica	.	text p. 370, 376; supplement 7	location	Cebu, Philippines	.	cryptica	<	.	.
+Rosenberg2020	21.7	Austruca cryptica	.	text p. 370, 376; supplement 7	location	Negros, Philippines	.	cryptica	<	.	.
+Rosenberg2020	22.01	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Naderloo2017	2	=	=	.	.
+Rosenberg2020	22.02	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Naderloo2015	2	=	=	.	.
+Rosenberg2020	22.03	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Naderloo2012	3	=	=	.	.
+Rosenberg2020	22.04	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Naderloo2010	13	=	=	.	.
+Rosenberg2020	22.05	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Naderloo2013	.	=	=	.	.
+Rosenberg2020	22.06	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Saher2014	1	=	=	.	.
+Rosenberg2020	22.07	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Shih2009	.	=	=	.	.
+Rosenberg2020	22.08	Austruca iranica	.	text p. 370, 375; supplement 8	citation	Trivdei2017	.	=	=	.	.
+Rosenberg2020	22.09	Austruca iranica	.	text p. 370, 375; supplement 8	location	Kuwait	.	iranica	<	.	.
+Rosenberg2020	22.1	Austruca iranica	.	text p. 370, 375; supplement 8	location	Iraq	.	iranica	<	.	.
+Rosenberg2020	22.11	Austruca iranica	.	text p. 370, 375; supplement 8	location	Iran	.	iranica	<	.	.
+Rosenberg2020	22.12	Austruca iranica	.	text p. 370, 375; supplement 8	location	Pakistan	.	iranica	<	.	.
+Rosenberg2020	22.13	Austruca iranica	.	text p. 370, 375; supplement 8	location	Gujarat, India	.	iranica	<	.	.
+Rosenberg2020	22.14	Austruca iranica	.	text p. 370, 375; supplement 8	location	United Arab Emirates	.	iranica	<	.	.
+Rosenberg2020	22.15	Austruca iranica	.	text p. 370, 375; supplement 8	location	Oman	.	iranica	<	.	.
+Rosenberg2020	22.16	Austruca iranica	.	text p. 370, 375; supplement 8	location	Persian Gulf	.	iranica	<	.	.
+Rosenberg2020	23.1	Austruca lactea	.	text p. 370, 375; supplement 9	citation	Naderloo2010	6	=	=	.	.
+Rosenberg2020	23.2	Austruca lactea	.	text p. 370, 375; supplement 9	citation	Shih2009	.	=	=	.	.
+Rosenberg2020	23.3	Austruca lactea	.	text p. 370, 375; supplement 9	citation	Shih2010.2	8	=	=	.	.
+Rosenberg2020	23.4	Austruca lactea	.	text p. 370, 375; supplement 9	location	Vietnam	.	lactea	<	.	.
+Rosenberg2020	23.5	Austruca lactea	.	text p. 370, 375; supplement 9	location	China	.	lactea	<	.	.
+Rosenberg2020	23.6	Austruca lactea	.	text p. 370, 375; supplement 9	location	Japan	.	lactea	<	.	.
+Rosenberg2020	23.7	Austruca lactea	.	text p. 370, 375; supplement 9	location	Taiwan	.	lactea	<	.	.
+Rosenberg2020	24.1	Austruca mjoebergi	.	text p. 370, 377; supplement 10	citation	Naderloo2010	17	=	=	.	.
+Rosenberg2020	24.2	Austruca mjoebergi	.	text p. 370, 377; supplement 10	citation	Shih2009	.	=	=	.	.
+Rosenberg2020	24.3	Austruca mjoebergi	.	text p. 370, 377; supplement 10	citation	Barnes2010	7	=	=	.	.
+Rosenberg2020	24.4	Austruca mjoebergi	.	text p. 370, 377; supplement 10	location	Northern Territory, Australia	.	mjoebergi	<	.	.
+Rosenberg2020	24.5	Austruca mjoebergi	.	text p. 370, 377; supplement 10	location	Western Australia, Australia	.	mjoebergi	<	.	.
+Rosenberg2020	24.6	Austruca mjoebergi	.	text p. 370, 377; supplement 10	location	Sulawesi, Indonesia	.	mjoebergi	<	.	.
+Rosenberg2020	24.7	Austruca mjoebergi	.	text p. 370, 377; supplement 10	location	New Guinea, Indonesia	.	mjoebergi	<	.	.
+Rosenberg2020	25.01	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	citation	Hodgson1987	2.1	=	=	.	.
+Rosenberg2020	25.02	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	citation	Naderloo2016	.	=	=	.	.
+Rosenberg2020	25.03	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	citation	Peer2015	2	=	=	.	.
+Rosenberg2020	25.04	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	citation	Poupin2018	.	=	=	.	.
+Rosenberg2020	25.05	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	South Africa	.	occidentalis	<	.	.
+Rosenberg2020	25.06	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Mozambique	.	occidentalis	<	.	.
+Rosenberg2020	25.07	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Tanzania	.	occidentalis	<	.	.
+Rosenberg2020	25.08	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Kenya	.	occidentalis	<	.	.
+Rosenberg2020	25.09	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Somalia	.	occidentalis	<	.	.
+Rosenberg2020	25.1	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Madagascar	.	occidentalis	<	.	.
+Rosenberg2020	25.11	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Mauritius, Mauritius (Republic)	.	occidentalis	<	.	.
+Rosenberg2020	25.12	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Seychelles	.	occidentalis	<	.	.
+Rosenberg2020	25.13	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Mayotte	.	occidentalis	<	.	.
+Rosenberg2020	25.14	Austruca occidentalis	.	text p. 368, 370, 374; supplement 11	location	Reunion Island	.	occidentalis	<	.	.
+Rosenberg2020	26.01	Austruca perplexa	.	text p. 370, 375-378; supplement 12	citation	Barnes2010	3	=	=	.	.
+Rosenberg2020	26.02	Austruca perplexa	.	text p. 370, 375-378; supplement 12	citation	Naderloo2010	16	=	=	.	.
+Rosenberg2020	26.03	Austruca perplexa	.	text p. 370, 375-378; supplement 12	citation	Shih2010.2	16	=	=	.	.
+Rosenberg2020	26.04	Austruca perplexa	.	text p. 370, 375-378; supplement 12	citation	Shih2009	.	=	=	.	.
+Rosenberg2020	26.05	Austruca perplexa	.	text p. 370, 375-378; supplement 12	citation	Poupin2010.1	11	=	=	.	.
+Rosenberg2020	26.06	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Eastern Queensland, Australia	.	perplexa	<	.	.
+Rosenberg2020	26.07	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	New South Wales, Australia	.	perplexa	<	.	.
+Rosenberg2020	26.08	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Papua New Guinea	.	perplexa	<	.	.
+Rosenberg2020	26.09	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Indonesia	.	perplexa	<	.	.
+Rosenberg2020	26.1	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Philippines	.	perplexa	<	.	.
+Rosenberg2020	26.11	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Taiwan	.	perplexa	<	.	.
+Rosenberg2020	26.12	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Japan	.	perplexa	<	.	.
+Rosenberg2020	26.13	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Singapore	.	perplexa	<	.	.
+Rosenberg2020	26.14	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Thailand	.	perplexa	<	.	.
+Rosenberg2020	26.15	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Malaysia	.	perplexa	<	.	.
+Rosenberg2020	26.16	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Cambodia	.	perplexa	<	.	.
+Rosenberg2020	26.17	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Vietnam	.	perplexa	<	.	.
+Rosenberg2020	26.18	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Brunei	.	perplexa	<	.	.
+Rosenberg2020	26.19	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Palau	.	perplexa	<	.	.
+Rosenberg2020	26.2	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Guam	.	perplexa	<	.	.
+Rosenberg2020	26.21	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Mariana Islands	.	perplexa	<	.	.
+Rosenberg2020	26.22	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Federated States of Micronesia	.	perplexa	<	.	.
+Rosenberg2020	26.23	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Solomon Islands	.	perplexa	<	.	.
+Rosenberg2020	26.24	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Vanuatu	.	perplexa	<	.	.
+Rosenberg2020	26.25	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	New Caledonia	.	perplexa	<	.	.
+Rosenberg2020	26.26	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Fiji	.	citrus	>MSR:geography	.	.
+Rosenberg2020	26.27	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Wallis and Futuna	.	citrus	>MSR:geography	.	.
+Rosenberg2020	26.28	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Tuvalu	.	perplexa	<	.	.
+Rosenberg2020	26.29	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Samoa	.	citrus	>MSR:geography	.	.
+Rosenberg2020	26.3	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	French Polynesia	.	citrus	>MSR:geography	.	.
+Rosenberg2020	26.31	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Cook Islands	.	citrus	>MSR:geography	.	.
+Rosenberg2020	26.32	Austruca perplexa	.	text p. 370, 375-378; supplement 12	location	Tonga	.	citrus	>MSR:geography	.	.
+Rosenberg2020	27.01	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Collins1984	2	=	=	.	.
+Rosenberg2020	27.02	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Crane1975	37	=	=	.	.
+Rosenberg2020	27.03	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Naderloo2015	5	=	=	.	.
+Rosenberg2020	27.04	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Naderloo2012	6	=	=	.	.
+Rosenberg2020	27.05	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Naderloo2013	.	=	=	.	.
+Rosenberg2020	27.06	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Naser2010	1	=	=	.	.
+Rosenberg2020	27.07	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Saher2012	.	=	=	.	.
+Rosenberg2020	27.08	Austruca sindensis	.	text p. 370, 375; supplement 13	citation	Trivedi2015	3	=	=	.	.
+Rosenberg2020	27.09	Austruca sindensis	.	text p. 370, 375; supplement 13	location	Kuwait	.	sindensis	<	.	.
+Rosenberg2020	27.1	Austruca sindensis	.	text p. 370, 375; supplement 13	location	Iraq	.	sindensis	<	.	.
+Rosenberg2020	27.11	Austruca sindensis	.	text p. 370, 375; supplement 13	location	Iran	.	sindensis	<	.	.
+Rosenberg2020	27.12	Austruca sindensis	.	text p. 370, 375; supplement 13	location	Pakistan	.	sindensis	<	.	.
+Rosenberg2020	27.13	Austruca sindensis	.	text p. 370, 375; supplement 13	location	Gujarat, India	.	sindensis	<	.	.
+Rosenberg2020	28.01	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Crane1975	93	=	=	.	.
+Rosenberg2020	28.02	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Dai1991	.	=	=	.	.
+Rosenberg2020	28.03	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Fukui1989	.	=	=	.	.
+Rosenberg2020	28.04	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	George1982	8	=	=	.	.
+Rosenberg2020	28.05	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Huang1989	.	=	=	.	.
+Rosenberg2020	28.06	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Iguchi1994	.	=	=	.	.
+Rosenberg2020	28.07	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Jones1994	.	=	=	.	.
+Rosenberg2020	28.08	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Poupin2010.1	13	=	=	.	.
+Rosenberg2020	28.09	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Shih2010.2	11	=	=	.	.
+Rosenberg2020	28.1	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Shih2019	13	=	=	.	.
+Rosenberg2020	28.11	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	Tang2007	3	=	=	.	.
+Rosenberg2020	28.12	Austruca triangularis	.	text p. 370, 375-377; supplement 14	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	28.13	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Taiwan	.	triangularis	<	.	.
+Rosenberg2020	28.14	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Ryukyu Islands, Japan	.	triangularis	<	.	.
+Rosenberg2020	28.15	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Philippines	.	triangularis	<	.	.
+Rosenberg2020	28.16	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Borneo	.	triangularis	<	.	.
+Rosenberg2020	28.17	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	New Caledonia	.	triangularis	<	.	.
+Rosenberg2020	28.18	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Eastern Queensland, Australia	.	triangularis	<	.	.
+Rosenberg2020	28.19	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Melville Island, Northern Territory, Australia	.	triangularis	<	.	.
+Rosenberg2020	28.2	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	China	.	triangularis	<	.	.
+Rosenberg2020	28.21	Austruca triangularis	.	text p. 370, 375-377; supplement 14	location	Indonesia	.	triangularis	<	.	.
+Rosenberg2020	29.1	Austruca variegata	.	text p. 366, 370, 375; supplement 15	citation	Shih2019	15	=	=	.	.
+Rosenberg2020	29.2	Austruca variegata	.	text p. 366, 370, 375; supplement 15	location	Sri Lanka	.	variegata	<	.	.
+Rosenberg2020	29.3	Austruca variegata	.	text p. 366, 370, 375; supplement 15	location	East coast of India	.	variegata	<	.	.
+Rosenberg2020	29.4	Austruca variegata	.	text p. 366, 370, 375; supplement 15	location	Bangladesh	.	variegata	<	.	.
+Rosenberg2020	30.01	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Apel1999	1	=	=	.	.
+Rosenberg2020	30.02	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Crane1975	36	=	=	.	.
+Rosenberg2020	30.03	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Naderloo2012	1	=	=	.	.
+Rosenberg2020	30.04	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Peer2015	6	=	=	.	.
+Rosenberg2020	30.05	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Poupin2018	.	=	=	.	.
+Rosenberg2020	30.06	Cranuca inversa	.	text p. 370, 375; supplement 16	citation	Price1987	5	=	=	.	.
+Rosenberg2020	30.07	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Mozambique	.	inversa	<	.	.
+Rosenberg2020	30.08	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Tanzania	.	inversa	<	.	.
+Rosenberg2020	30.09	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Kenya	.	inversa	<	.	.
+Rosenberg2020	30.1	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Somalia	.	inversa	<	.	.
+Rosenberg2020	30.11	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Eritrea	.	inversa	<	.	.
+Rosenberg2020	30.12	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Djibouti	.	inversa	<	.	.
+Rosenberg2020	30.13	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Sudan	.	inversa	<	.	.
+Rosenberg2020	30.14	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Egypt	.	inversa	<	.	.
+Rosenberg2020	30.15	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Saudi Arabia	.	inversa	<	.	.
+Rosenberg2020	30.16	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Yemen	.	inversa	<	.	.
+Rosenberg2020	30.17	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Oman	.	inversa	<	.	.
+Rosenberg2020	30.18	Cranuca inversa	.	text p. 370, 375; supplement 16	location	United Arab Emirates	.	inversa	<	.	.
+Rosenberg2020	30.19	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Qeshm, Hormozgan Province, Iran	.	inversa	<	.	.
+Rosenberg2020	30.2	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Madagascar	.	inversa	<	.	.
+Rosenberg2020	30.21	Cranuca inversa	.	text p. 370, 375; supplement 16	location	Mayotte	.	inversa	<	.	.
+Rosenberg2020	31.1	Gelasimus borealis	.	text p. 370, 375; supplement 17	citation	Crane1975	32	=	=	.	.
+Rosenberg2020	31.2	Gelasimus borealis	.	text p. 370, 375; supplement 17	citation	Jones1994	.	=	=	.	.
+Rosenberg2020	31.3	Gelasimus borealis	.	text p. 370, 375; supplement 17	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	31.4	Gelasimus borealis	.	text p. 370, 375; supplement 17	citation	Shih2010.1	6	=	=	.	.
+Rosenberg2020	31.5	Gelasimus borealis	.	text p. 370, 375; supplement 17	citation	Shih2010.2	4	=	=	.	.
+Rosenberg2020	31.6	Gelasimus borealis	.	text p. 370, 375; supplement 17	location	Vietnam	.	borealis	<	.	.
+Rosenberg2020	31.7	Gelasimus borealis	.	text p. 370, 375; supplement 17	location	China	.	borealis	<	.	.
+Rosenberg2020	31.8	Gelasimus borealis	.	text p. 370, 375; supplement 17	location	Taiwan	.	borealis	<	.	.
+Rosenberg2020	31.9	Gelasimus borealis	.	text p. 370, 375; supplement 17	location	Japan	.	borealis	<	.	.
+Rosenberg2020	32.1	Gelasimus dampieri	.	text p. 370, 377; supplement 18	citation	George1982	17	=	=	.	.
+Rosenberg2020	32.2	Gelasimus dampieri	.	text p. 370, 377; supplement 18	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	32.3	Gelasimus dampieri	.	text p. 370, 377; supplement 18	location	Northern Territory, Australia	.	dampieri	<	.	.
+Rosenberg2020	32.4	Gelasimus dampieri	.	text p. 370, 377; supplement 18	location	Western Australia, Australia	.	dampieri	<	.	.
+Rosenberg2020	33.1	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	citation	Poupin2010.2	5	=	=	.	.
+Rosenberg2020	33.2	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	citation	Shih2010.1	2	=	=	.	.
+Rosenberg2020	33.3	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	location	Fiji	.	excisa	<	.	.
+Rosenberg2020	33.4	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	location	Wallis and Futuna	.	excisa	<	.	.
+Rosenberg2020	33.5	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	location	Samoa	.	excisa	<	.	.
+Rosenberg2020	33.6	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	location	Tuvalu	.	excisa	<	.	.
+Rosenberg2020	33.7	Gelasimus excisa	.	text p. 370, 376-377; supplement 19	location	Tonga	.	excisa	<	.	.
+Rosenberg2020	34.01	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	citation	Crane1975	30	=	=	.	.
+Rosenberg2020	34.02	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	citation	Fransen1997	20	=	=	.	.
+Rosenberg2020	34.03	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	citation	Jaroensutasinee2002	1	=	=	.	.
+Rosenberg2020	34.04	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	citation	Peer2015	5	=	=	.	.
+Rosenberg2020	34.05	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	citation	Poupin2018	.	=	=	.	.
+Rosenberg2020	34.06	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	South Africa	.	hesperiae	<	.	.
+Rosenberg2020	34.07	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Mozambique	.	hesperiae	<	.	.
+Rosenberg2020	34.08	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Mayotte	.	hesperiae	<	.	.
+Rosenberg2020	34.09	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Mauritius, Mauritius (Republic)	.	hesperiae	<	.	.
+Rosenberg2020	34.1	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Reunion Island	.	hesperiae	<	.	.
+Rosenberg2020	34.11	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Tanzania	.	hesperiae	<	.	.
+Rosenberg2020	34.12	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Kenya	.	hesperiae	<	.	.
+Rosenberg2020	34.13	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Somalia	.	hesperiae	<	.	.
+Rosenberg2020	34.14	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Eritrea	.	hesperiae	<	.	.
+Rosenberg2020	34.15	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Djibouti	.	hesperiae	<	.	.
+Rosenberg2020	34.16	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	United Arab Emirates	.	hesperiae	<	.	.
+Rosenberg2020	34.17	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	India	.	hesperiae	<	.	.
+Rosenberg2020	34.18	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Sri Lanka	.	hesperiae	<	.	.
+Rosenberg2020	34.19	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Myanmar	.	hesperiae	<	.	.
+Rosenberg2020	34.2	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	Sumatra, Indonesia	.	hesperiae	<	.	.
+Rosenberg2020	34.21	Gelasimus hesperiae	.	text p. 370, 375; supplement 20	location	West coast of Thailand	.	hesperiae	<	.	.
+Rosenberg2020	35.01	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	citation	Shih2010.1	1	=	=	.	.
+Rosenberg2020	35.02	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Ryukyu Islands, Japan	.	jocelynae	<	.	.
+Rosenberg2020	35.03	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Taiwan	.	jocelynae	<	.	.
+Rosenberg2020	35.04	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Philippines	.	jocelynae	<	.	.
+Rosenberg2020	35.05	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Indonesia	.	jocelynae	<	.	.
+Rosenberg2020	35.06	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Papua New Guinea	.	jocelynae	<	.	.
+Rosenberg2020	35.07	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	New Caledonia	.	jocelynae	<	.	.
+Rosenberg2020	35.08	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Solomon Islands	.	jocelynae	<	.	.
+Rosenberg2020	35.09	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Vanuatu	.	jocelynae	<	.	.
+Rosenberg2020	35.1	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Federated States of Micronesia	.	jocelynae	<	.	.
+Rosenberg2020	35.11	Gelasimus jocelynae	.	text p. 370, 375-377; supplement 21	location	Palau	.	jocelynae	<	.	.
+Rosenberg2020	36.01	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Shih2016.2	22	=	=	.	.
+Rosenberg2020	36.02	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Crane1975	25	=	=	.	.
+Rosenberg2020	36.03	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Adirwiryono1984	7	=	=	.	.
+Rosenberg2020	36.04	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Apel1999	5	=	=	.	.
+Rosenberg2020	36.05	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Barnes2010	8	=	=	.	.
+Rosenberg2020	36.06	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	DevRoy2012	4	=	=	.	.
+Rosenberg2020	36.07	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	George1982	7	=	=	.	.
+Rosenberg2020	36.08	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Jones1994	.	=	=	.	.
+Rosenberg2020	36.09	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	Poupin2018	.	=	=	.	.
+Rosenberg2020	36.1	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	36.11	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Madagascar	.	tetragonon	<	.	.
+Rosenberg2020	36.12	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Reunion Island	.	tetragonon	<	.	.
+Rosenberg2020	36.13	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Mauritius, Mauritius (Republic)	.	tetragonon	<	.	.
+Rosenberg2020	36.14	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Mayotte	.	tetragonon	<	.	.
+Rosenberg2020	36.15	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Kenya	.	tetragonon	<	.	.
+Rosenberg2020	36.16	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Somalia	.	tetragonon	<	.	.
+Rosenberg2020	36.17	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Djibouti	.	tetragonon	<	.	.
+Rosenberg2020	36.18	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Eritrea	.	tetragonon	<	.	.
+Rosenberg2020	36.19	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Sudan	.	tetragonon	<	.	.
+Rosenberg2020	36.2	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Egypt	.	tetragonon	<	.	.
+Rosenberg2020	36.21	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Saudi Arabia	.	tetragonon	<	.	.
+Rosenberg2020	36.22	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Maldives	.	tetragonon	<	.	.
+Rosenberg2020	36.23	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Andaman and Nicobar Islands, India	.	tetragonon	<	.	.
+Rosenberg2020	36.24	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	West coast of Thailand	.	tetragonon	<	.	.
+Rosenberg2020	36.25	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Malaysia	.	tetragonon	<	.	.
+Rosenberg2020	36.26	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Eastern Australia	.	tetragonon	<	.	.
+Rosenberg2020	36.27	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Indonesia	.	tetragonon	<	.	.
+Rosenberg2020	36.28	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Philippines	.	tetragonon	<	.	.
+Rosenberg2020	36.29	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Taiwan	.	tetragonon	<	.	.
+Rosenberg2020	36.3	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Ryukyu Islands, Japan	.	tetragonon	<	.	.
+Rosenberg2020	36.31	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	New Caledonia	.	tetragonon	<	.	.
+Rosenberg2020	36.32	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Solomon Islands	.	tetragonon	<	.	.
+Rosenberg2020	36.33	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Fiji	.	tetragonon	<	.	.
+Rosenberg2020	36.34	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	French Polynesia	.	tetragonon	<	.	.
+Rosenberg2020	36.35	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Tuvalu	.	tetragonon	<	.	.
+Rosenberg2020	36.36	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Samoa	.	tetragonon	<	.	.
+Rosenberg2020	36.37	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Wallis and Futuna	.	tetragonon	<	.	.
+Rosenberg2020	36.38	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Vanuatu	.	tetragonon	<	.	.
+Rosenberg2020	36.39	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Tonga	.	tetragonon	<	.	.
+Rosenberg2020	36.4	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Federated States of Micronesia	.	tetragonon	<	.	.
+Rosenberg2020	36.41	Gelasimus tetragonon	.	text p. 370, 374-378; supplement 22	location	Palau	.	tetragonon	<	.	.
+Rosenberg2020	37.01	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Barnes2010	2	=	=	.	.
+Rosenberg2020	37.02	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Crane1975	27	=	=	.	.
+Rosenberg2020	37.03	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Huang1989	.	=	=	.	.
+Rosenberg2020	37.04	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Nakasone1982	.	=	=	.	.
+Rosenberg2020	37.05	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Nakasone1983.1	.	=	=	.	.
+Rosenberg2020	37.06	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Shih2010.1	9	=	=	.	.
+Rosenberg2020	37.07	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	citation	Shih2010.2	13	=	=	.	.
+Rosenberg2020	37.08	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Hainan Island, China	.	vocans	<	.	.
+Rosenberg2020	37.09	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Ryukyu Islands, Japan	.	vocans	<	.	.
+Rosenberg2020	37.1	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Philippines	.	vocans	<	.	.
+Rosenberg2020	37.11	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Indonesia	.	vocans	<	.	.
+Rosenberg2020	37.12	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Malaysia	.	vocans	<	.	.
+Rosenberg2020	37.13	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Thailand	.	vocans	<	.	.
+Rosenberg2020	37.14	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Singapore	.	vocans	<	.	.
+Rosenberg2020	37.15	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Brunei	.	vocans	<	.	.
+Rosenberg2020	37.16	Gelasimus vocans	.	text p. 370, 375-377; supplement 23	location	Myanmar	.	vocans	<	.	.
+Rosenberg2020	38.1	Gelasimus vomeris	.	text p. 370, 377; supplement 24	citation	Crane1975	28	=	=	.	.
+Rosenberg2020	38.2	Gelasimus vomeris	.	text p. 370, 377; supplement 24	citation	George1982	6	=	=	.	.
+Rosenberg2020	38.3	Gelasimus vomeris	.	text p. 370, 377; supplement 24	citation	Poupin2010.1	16	=	=	.	.
+Rosenberg2020	38.4	Gelasimus vomeris	.	text p. 370, 377; supplement 24	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	38.5	Gelasimus vomeris	.	text p. 370, 377; supplement 24	location	Eastern Australia	.	vomeris	<	.	.
+Rosenberg2020	38.6	Gelasimus vomeris	.	text p. 370, 377; supplement 24	location	New Caledonia	.	vomeris	<	.	.
+Rosenberg2020	39.1	Leptuca batuenta	.	text p. 370, 373; supplement 25	citation	Crane1975	80	=	=	.	.
+Rosenberg2020	39.2	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	El Salvador	.	batuenta	<	.	.
+Rosenberg2020	39.3	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Pacific coast of Honduras	.	batuenta	<	.	.
+Rosenberg2020	39.4	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Pacific coast of Nicaragua	.	batuenta	<	.	.
+Rosenberg2020	39.5	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Pacific coast of Costa Rica	.	batuenta	<	.	.
+Rosenberg2020	39.6	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Pacific coast of Panama	.	batuenta	<	.	.
+Rosenberg2020	39.6	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Pacific coast of Colombia	.	batuenta	<	.	.
+Rosenberg2020	39.7	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Ecuador	.	batuenta	<	.	.
+Rosenberg2020	39.8	Leptuca batuenta	.	text p. 370, 373; supplement 25	location	Peru	.	batuenta	<	.	.
+Rosenberg2020	40.1	Leptuca beebei	.	text p. 370, 373; supplement 26	citation	Crane1975	91	=	=	.	.
+Rosenberg2020	40.2	Leptuca beebei	.	text p. 370, 373; supplement 26	location	El Salvador	.	beebei	<	.	.
+Rosenberg2020	40.3	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Pacific coast of Honduras	.	beebei	<	.	.
+Rosenberg2020	40.4	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Pacific coast of Nicaragua	.	beebei	<	.	.
+Rosenberg2020	40.5	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Pacific coast of Costa Rica	.	beebei	<	.	.
+Rosenberg2020	40.6	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Pacific coast of Panama	.	beebei	<	.	.
+Rosenberg2020	40.6	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Pacific coast of Colombia	.	beebei	<	.	.
+Rosenberg2020	40.7	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Ecuador	.	beebei	<	.	.
+Rosenberg2020	40.8	Leptuca beebei	.	text p. 370, 373; supplement 26	location	Peru	.	beebei	<	.	.
+Rosenberg2020	41.1	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	citation	Crane1975	76	=	=	.	.
+Rosenberg2020	41.2	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	citation	Brusca1980	10	=	=	.	.
+Rosenberg2020	41.3	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	citation	Garth1980	.	=	=	.	.
+Rosenberg2020	41.4	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	citation	Green1980	2	=	=	.	.
+Rosenberg2020	41.5	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	citation	VillalobosHiriart1989	4	=	=	.	.
+Rosenberg2020	41.6	Leptuca coloradensis	.	text p. 370, 372-373; supplement 27	location	Gulf of California, Mexico	.	coloradensis	<	.	.
+Rosenberg2020	42.01	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Rosenberg2018	2	=	=	.	.
+Rosenberg2020	42.02	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Crane1975	75	=	=	.	.
+Rosenberg2020	42.03	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Brusca1980	1	=	=	.	.
+Rosenberg2020	42.04	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Garth1980	.	=	=	.	.
+Rosenberg2020	42.05	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Green1980	1	=	=	.	.
+Rosenberg2020	42.06	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Hendrickx1984	4	=	=	.	.
+Rosenberg2020	42.07	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Hubbard1989	1	=	=	.	.
+Rosenberg2020	42.08	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	LeijaTristan1990	.	=	=	.	.
+Rosenberg2020	42.09	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Naiditch2001	4	=	=	.	.
+Rosenberg2020	42.1	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	citation	Neuffer2001	4	=	=	.	.
+Rosenberg2020	42.11	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	location	California, USA	.	crenulata	<	.	.
+Rosenberg2020	42.12	Leptuca crenulata	.	text p. 368, 370, 372-373; supplement 28	location	Pacific coast of Mexico	.	crenulata	<	.	.
+Rosenberg2020	43.01	Leptuca cumulanta	.	text p. 370-372; supplement 29	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	43.02	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Jamaica	.	cumulanta	<	.	.
+Rosenberg2020	43.03	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Atlantic coast of Colombia	.	cumulanta	<	.	.
+Rosenberg2020	43.04	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Venezuela	.	cumulanta	<	.	.
+Rosenberg2020	43.05	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Guyana	.	cumulanta	<	.	.
+Rosenberg2020	43.06	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Suriname	.	cumulanta	<	.	.
+Rosenberg2020	43.07	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	French Guiana	.	cumulanta	<	.	.
+Rosenberg2020	43.08	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Northern Brazil	.	cumulanta	<	.	.
+Rosenberg2020	43.09	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Curaçao	.	cumulanta	<	.	.
+Rosenberg2020	43.1	Leptuca cumulanta	.	text p. 370-372; supplement 29	location	Southeastern Brazil	.	cumulanta	<	.	.
+Rosenberg2020	44.1	Leptuca deichmanni	.	text p. 370, 373; supplement 30	citation	Crane1975	101	=	=	.	.
+Rosenberg2020	44.2	Leptuca deichmanni	.	text p. 370, 373; supplement 30	citation	vonPrahl1982	19	=	=	.	.
+Rosenberg2020	44.3	Leptuca deichmanni	.	text p. 370, 373; supplement 30	location	Pacific coast of Nicaragua	.	deichmanni	<	.	.
+Rosenberg2020	44.4	Leptuca deichmanni	.	text p. 370, 373; supplement 30	location	Pacific coast of Costa Rica	.	deichmanni	<	.	.
+Rosenberg2020	44.5	Leptuca deichmanni	.	text p. 370, 373; supplement 30	location	Pacific coast of Panama	.	deichmanni	<	.	.
+Rosenberg2020	44.6	Leptuca deichmanni	.	text p. 370, 373; supplement 30	location	Pacific coast of Colombia	.	deichmanni	<	.	.
+Rosenberg2020	45.1	Leptuca dorotheae	.	text p. 370, 373; supplement 31	citation	Crane1975	90	=	=	.	.
+Rosenberg2020	45.2	Leptuca dorotheae	.	text p. 370, 373; supplement 31	citation	vonPrahl1982	14	=	=	.	.
+Rosenberg2020	45.3	Leptuca dorotheae	.	text p. 370, 373; supplement 31	citation	Shih2016.2	28	=	=	.	.
+Rosenberg2020	45.4	Leptuca dorotheae	.	text p. 370, 373; supplement 31	location	Pacific coast of Costa Rica	.	dorotheae	<	.	.
+Rosenberg2020	45.4	Leptuca dorotheae	.	text p. 370, 373; supplement 31	location	Pacific coast of Panama	.	dorotheae	<	.	.
+Rosenberg2020	45.6	Leptuca dorotheae	.	text p. 370, 373; supplement 31	location	Pacific coast of Colombia	.	dorotheae	<	.	.
+Rosenberg2020	45.7	Leptuca dorotheae	.	text p. 370, 373; supplement 31	location	Ecuador	.	dorotheae	<	.	.
+Rosenberg2020	45.8	Leptuca dorotheae	.	text p. 370, 373; supplement 31	location	Peru	.	dorotheae	<	.	.
+Rosenberg2020	46.1	Leptuca festae	.	text p. 370, 373; supplement 32	citation	Crane1975	87	=	=	.	.
+Rosenberg2020	46.2	Leptuca festae	.	text p. 370, 373; supplement 32	citation	vonPrahl1982	13	=	=	.	.
+Rosenberg2020	46.3	Leptuca festae	.	text p. 370, 373; supplement 32	location	El Salvador	.	festae	<	.	.
+Rosenberg2020	46.4	Leptuca festae	.	text p. 370, 373; supplement 32	location	Pacific coast of Honduras	.	festae	<	.	.
+Rosenberg2020	46.5	Leptuca festae	.	text p. 370, 373; supplement 32	location	Pacific coast of Nicaragua	.	festae	<	.	.
+Rosenberg2020	46.6	Leptuca festae	.	text p. 370, 373; supplement 32	location	Pacific coast of Costa Rica	.	festae	<	.	.
+Rosenberg2020	46.7	Leptuca festae	.	text p. 370, 373; supplement 32	location	Pacific coast of Panama	.	festae	<	.	.
+Rosenberg2020	46.8	Leptuca festae	.	text p. 370, 373; supplement 32	location	Pacific coast of Colombia	.	festae	<	.	.
+Rosenberg2020	46.9	Leptuca festae	.	text p. 370, 373; supplement 32	location	Ecuador	.	festae	<	.	.
+Rosenberg2020	47.1	Leptuca helleri	.	text p. 370, 373-374; supplement 33	location	Galápagos Islands	.	helleri	<	.	.
+Rosenberg2020	47.2	Leptuca helleri	.	text p. 370, 373-374; supplement 33	citation	Garth1946	2	=	=	.	.
+Rosenberg2020	47.3	Leptuca helleri	.	text p. 370, 373-374; supplement 33	citation	Moscoso2012	4	=	=	.	.
+Rosenberg2020	47.4	Leptuca helleri	.	text p. 370, 373-374; supplement 33	citation	Moscoso2013	12	=	=	.	.
+Rosenberg2020	47.5	Leptuca helleri	.	text p. 370, 373-374; supplement 33	citation	Crane1975	88	=	=	.	.
+Rosenberg2020	48.1	Leptuca inaequalis	.	text p. 370, 373; supplement 34	citation	Crane1975	83	=	=	.	.
+Rosenberg2020	48.2	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	El Salvador	.	inaequalis	<	.	.
+Rosenberg2020	48.3	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Pacific coast of Honduras	.	inaequalis	<	.	.
+Rosenberg2020	48.4	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Pacific coast of Nicaragua	.	inaequalis	<	.	.
+Rosenberg2020	48.5	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Pacific coast of Costa Rica	.	inaequalis	<	.	.
+Rosenberg2020	48.6	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Pacific coast of Panama	.	inaequalis	<	.	.
+Rosenberg2020	48.7	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Pacific coast of Colombia	.	inaequalis	<	.	.
+Rosenberg2020	48.8	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Ecuador	.	inaequalis	<	.	.
+Rosenberg2020	48.9	Leptuca inaequalis	.	text p. 370, 373; supplement 34	location	Peru	.	inaequalis	<	.	.
+Rosenberg2020	49.01	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	citation	Brusca1980	2	=	=	.	.
+Rosenberg2020	49.02	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	citation	Crane1975	104	=	=	.	.
+Rosenberg2020	49.03	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	citation	Campos1989	1	=	=	.	.
+Rosenberg2020	49.04	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	citation	Hendrickx1979	9	=	=	.	.
+Rosenberg2020	49.05	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	citation	Hendrickx1984	2	=	=	.	.
+Rosenberg2020	49.06	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Mexico	.	latimanus	<	.	.
+Rosenberg2020	49.07	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Guatemala	.	latimanus	<	.	.
+Rosenberg2020	49.08	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	El Salvador	.	latimanus	<	.	.
+Rosenberg2020	49.09	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Honduras	.	latimanus	<	.	.
+Rosenberg2020	49.1	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Nicaragua	.	latimanus	<	.	.
+Rosenberg2020	49.11	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Costa Rica	.	latimanus	<	.	.
+Rosenberg2020	49.12	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Panama	.	latimanus	<	.	.
+Rosenberg2020	49.13	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Pacific coast of Colombia	.	latimanus	<	.	.
+Rosenberg2020	49.14	Leptuca latimanus	.	text p. 370, 372-373; supplement 35	location	Ecuador	.	latimanus	<	.	.
+Rosenberg2020	50.01	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Barnwell1986.1	.	=	=	.	.
+Rosenberg2020	50.02	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	50.03	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Crane1975	99	=	=	.	.
+Rosenberg2020	50.04	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	50.05	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Thurman2010	.	=	=	.	.
+Rosenberg2020	50.06	Leptuca leptodactyla	.	text p. 370-372; supplement 36	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	50.07	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Atlantic coast of Colombia	.	leptodactyla	<	.	.
+Rosenberg2020	50.08	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Venezuela	.	leptodactyla	<	.	.
+Rosenberg2020	50.09	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Guyana	.	leptodactyla	<	.	.
+Rosenberg2020	50.1	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Suriname	.	leptodactyla	<	.	.
+Rosenberg2020	50.11	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	French Guiana	.	leptodactyla	<	.	.
+Rosenberg2020	50.12	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Yucatan Peninsula, Mexico	.	leptodactyla	<	.	.
+Rosenberg2020	50.13	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Southern Florida, USA	.	leptodactyla	<	.	.
+Rosenberg2020	50.14	Leptuca leptodactyla	.	text p. 370-372; supplement 36	location	Caribbean	.	leptodactyla	<	.	.
+Rosenberg2020	51.1	Leptuca limicola	.	text p. 370, 373; supplement 37	citation	Crane1975	100	=	=	.	.
+Rosenberg2020	51.2	Leptuca limicola	.	text p. 370, 373; supplement 37	location	El Salvador	.	limicola	<	.	.
+Rosenberg2020	51.3	Leptuca limicola	.	text p. 370, 373; supplement 37	location	Pacific coast of Honduras	.	limicola	<	.	.
+Rosenberg2020	51.4	Leptuca limicola	.	text p. 370, 373; supplement 37	location	Pacific coast of Nicaragua	.	limicola	<	.	.
+Rosenberg2020	51.5	Leptuca limicola	.	text p. 370, 373; supplement 37	location	Pacific coast of Costa Rica	.	limicola	<	.	.
+Rosenberg2020	51.6	Leptuca limicola	.	text p. 370, 373; supplement 37	location	Pacific coast of Panama	.	limicola	<	.	.
+Rosenberg2020	52.1	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Brusca1980	3	=	=	.	.
+Rosenberg2020	52.2	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Campos1989	2	=	=	.	.
+Rosenberg2020	52.3	Leptuca musica	.	text p. 370, 372; supplement 38	citation	CortesCarrasco2013	1	=	=	.	.
+Rosenberg2020	52.4	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Crane1975	102	=	=	.	.
+Rosenberg2020	52.5	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Harris1998	1	=	=	.	.
+Rosenberg2020	52.6	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Hendrickx1984	3	=	=	.	.
+Rosenberg2020	52.7	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Naiditch2001	2	=	=	.	.
+Rosenberg2020	52.8	Leptuca musica	.	text p. 370, 372; supplement 38	citation	Neuffer2001	2	=	=	.	.
+Rosenberg2020	52.9	Leptuca musica	.	text p. 370, 372; supplement 38	location	Pacific coast of Mexico	.	musica	<	.	.
+Rosenberg2020	53.1	Leptuca oerstedi	.	text p. 370, 373; supplement 39	citation	Crane1975	82	=	=	.	.
+Rosenberg2020	53.2	Leptuca oerstedi	.	text p. 370, 373; supplement 39	location	El Salvador	.	oerstedi	<	.	.
+Rosenberg2020	53.3	Leptuca oerstedi	.	text p. 370, 373; supplement 39	location	Pacific coast of Honduras	.	oerstedi	<	.	.
+Rosenberg2020	53.4	Leptuca oerstedi	.	text p. 370, 373; supplement 39	location	Pacific coast of Nicaragua	.	oerstedi	<	.	.
+Rosenberg2020	53.5	Leptuca oerstedi	.	text p. 370, 373; supplement 39	location	Pacific coast of Costa Rica	.	oerstedi	<	.	.
+Rosenberg2020	53.6	Leptuca oerstedi	.	text p. 370, 373; supplement 39	location	Pacific coast of Panama	.	oerstedi	<	.	.
+Rosenberg2020	54.1	Leptuca panacea	.	text p. 370-371; supplement 40	location	Gulf of Mexico	.	panacea	<	.	.
+Rosenberg2020	54.2	Leptuca panacea	.	text p. 370-371; supplement 40	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	55.1	Leptuca pugilator	.	text p. 370-371; supplement 41	location	Atlantic coast of United States	.	pugilator	<	.	.
+Rosenberg2020	55.2	Leptuca pugilator	.	text p. 370-371; supplement 41	location	Florida, USA	.	pugilator	<	.	.
+Rosenberg2020	55.3	Leptuca pugilator	.	text p. 370-371; supplement 41	location	Alabama, USA	.	pugilator	<	.	.
+Rosenberg2020	55.4	Leptuca pugilator	.	text p. 370-371; supplement 41	location	Mississippi, USA	.	pugilator	<	.	.
+Rosenberg2020	55.5	Leptuca pugilator	.	text p. 370-371; supplement 41	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	56.1	Leptuca pygmaea	.	text p. 370, 373; supplement 42	citation	Crane1975	56	=	=	.	.
+Rosenberg2020	56.2	Leptuca pygmaea	.	text p. 370, 373; supplement 42	citation	vonPrahl1982	9	=	=	.	.
+Rosenberg2020	56.3	Leptuca pygmaea	.	text p. 370, 373; supplement 42	location	Golfo Dolce, Puntarenas, Costa Rica	.	pygmaea	<	.	.
+Rosenberg2020	56.4	Leptuca pygmaea	.	text p. 370, 373; supplement 42	location	Pacific coast of Panama	.	pygmaea	<	.	.
+Rosenberg2020	56.5	Leptuca pygmaea	.	text p. 370, 373; supplement 42	location	Pacific coast of Colombia	.	pygmaea	<	.	.
+Rosenberg2020	57.1	Leptuca saltitanta	.	text p. 370, 373; supplement 43	citation	Crane1975	81	=	=	.	.
+Rosenberg2020	57.2	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	El Salvador	.	saltitanta	<	.	.
+Rosenberg2020	57.3	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	Pacific coast of Honduras	.	saltitanta	<	.	.
+Rosenberg2020	57.4	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	Pacific coast of Nicaragua	.	saltitanta	<	.	.
+Rosenberg2020	57.5	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	Pacific coast of Costa Rica	.	saltitanta	<	.	.
+Rosenberg2020	57.6	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	Pacific coast of Panama	.	saltitanta	<	.	.
+Rosenberg2020	57.7	Leptuca saltitanta	.	text p. 370, 373; supplement 43	location	Pacific coast of Colombia	.	saltitanta	<	.	.
+Rosenberg2020	58.1	Leptuca speciosa	.	text p. 370-371; supplement 44	location	The Bahamas	.	speciosa	<	.	.
+Rosenberg2020	58.2	Leptuca speciosa	.	text p. 370-371; supplement 44	location	Cuba	.	speciosa	<	.	.
+Rosenberg2020	58.3	Leptuca speciosa	.	text p. 370-371; supplement 44	location	Yucatan Peninsula, Mexico	.	speciosa	<	.	.
+Rosenberg2020	58.4	Leptuca speciosa	.	text p. 370-371; supplement 44	location	Southern Florida, USA	.	speciosa	<	.	.
+Rosenberg2020	58.5	Leptuca speciosa	.	text p. 370-371; supplement 44	citation	Hopkins2010.1	.	=	=	.	.
+Rosenberg2020	58.6	Leptuca speciosa	.	text p. 370-371; supplement 44	citation	Thurman2010	.	=	=	.	.
+Rosenberg2020	59.1	Leptuca spinicarpa	.	text p. 370-371; supplement 45	location	Gulf of Mexico	.	spinicarpa	<	.	.
+Rosenberg2020	59.2	Leptuca spinicarpa	.	text p. 370-371; supplement 45	citation	Hopkins2010.1	.	=	=	.	.
+Rosenberg2020	59.3	Leptuca spinicarpa	.	text p. 370-371; supplement 45	citation	RomeroRodriguez2017	1	=	=	.	.
+Rosenberg2020	60.01	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	citation	Crane1975	92	=	=	.	.
+Rosenberg2020	60.02	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	El Salvador	.	stenodactylus	<	.	.
+Rosenberg2020	60.03	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Pacific coast of Honduras	.	stenodactylus	<	.	.
+Rosenberg2020	60.04	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Pacific coast of Nicaragua	.	stenodactylus	<	.	.
+Rosenberg2020	60.05	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Pacific coast of Costa Rica	.	stenodactylus	<	.	.
+Rosenberg2020	60.06	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Pacific coast of Panama	.	stenodactylus	<	.	.
+Rosenberg2020	60.07	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Pacific coast of Colombia	.	stenodactylus	<	.	.
+Rosenberg2020	60.08	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Ecuador	.	stenodactylus	<	.	.
+Rosenberg2020	60.09	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Peru	.	stenodactylus	<	.	.
+Rosenberg2020	60.1	Leptuca stenodactylus	.	text p. 368, 370, 373; supplement 46	location	Chile	.	stenodactylus	<	.	.
+Rosenberg2020	61.1	Leptuca subcylindrica	.	text p. 370; supplement 47	location	Gulf of Mexico	.	subcylindrica	<	.	.
+Rosenberg2020	61.2	Leptuca subcylindrica	.	text p. 370; supplement 47	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	61.3	Leptuca subcylindrica	.	text p. 370; supplement 47	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	61.4	Leptuca subcylindrica	.	text p. 370; supplement 47	citation	Crane1975	70	=	=	.	.
+Rosenberg2020	61.5	Leptuca subcylindrica	.	text p. 370; supplement 47	citation	Neck1987	2	=	=	.	.
+Rosenberg2020	62	Leptuca subcylindrical	.	text p. 371	location	Gulf of Mexico	.	subcylindrica	<	typo	.
+Rosenberg2020	63.1	Leptuca tallanica	.	text p. 370, 373; supplement 48	location	Ecuador	.	tallanica	<	.	.
+Rosenberg2020	63.2	Leptuca tallanica	.	text p. 370, 373; supplement 48	location	Peru	.	tallanica	<	.	.
+Rosenberg2020	63.3	Leptuca tallanica	.	text p. 370, 373; supplement 48	citation	Crane1975	86	=	=	.	.
+Rosenberg2020	64.1	Leptuca tenuipedis	.	text p. 370; supplement 49	location	El Salvador	.	tenuipedis	<	.	.
+Rosenberg2020	64.2	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Pacific coast of Honduras	.	tenuipedis	<	.	.
+Rosenberg2020	64.3	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Pacific coast of Nicaragua	.	tenuipedis	<	.	.
+Rosenberg2020	64.4	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Pacific coast of Costa Rica	.	tenuipedis	<	.	.
+Rosenberg2020	64.5	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Pacific coast of Panama	.	tenuipedis	<	.	.
+Rosenberg2020	64.6	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Pacific coast of Colombia	.	tenuipedis	<	.	.
+Rosenberg2020	64.7	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Ecuador	.	tenuipedis	<	.	.
+Rosenberg2020	64.8	Leptuca tenuipedis	.	text p. 370; supplement 49	location	Peru	.	tenuipedis	<	.	.
+Rosenberg2020	64.9	Leptuca tenuipedis	.	text p. 370; supplement 49	citation	Crane1975	84	=	=	.	.
+Rosenberg2020	65	Leptuca tenuidpedis	.	text p. 373	n/a	.	.	tenuipedis	<	typo	.
+Rosenberg2020	66.01	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Guatemala	.	terpsichores	<	.	.
+Rosenberg2020	66.02	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	El Salvador	.	terpsichores	<	.	.
+Rosenberg2020	66.03	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Honduras	.	terpsichores	<	.	.
+Rosenberg2020	66.04	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Nicaragua	.	terpsichores	<	.	.
+Rosenberg2020	66.05	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Costa Rica	.	terpsichores	<	.	.
+Rosenberg2020	66.06	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Panama	.	terpsichores	<	.	.
+Rosenberg2020	66.07	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Pacific coast of Colombia	.	terpsichores	<	.	.
+Rosenberg2020	66.08	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Ecuador	.	terpsichores	<	.	.
+Rosenberg2020	66.09	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	location	Peru	.	terpsichores	<	.	.
+Rosenberg2020	66.1	Leptuca terpsichores	.	text p. 367, 370, 373; supplement 50	citation	Crane1975	103	=	=	.	.
+Rosenberg2020	67.01	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Crane1975	39	=	=	.	.
+Rosenberg2020	67.02	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	67.03	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Barnwell1986.1	.	=	=	.	.
+Rosenberg2020	67.04	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Powers1977	18	=	=	.	.
+Rosenberg2020	67.05	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	67.06	Leptuca thayeri	.	text p. 369-371; supplement 51	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	67.07	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Florida, USA	.	thayeri	<	.	.
+Rosenberg2020	67.08	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Yucatan Peninsula, Mexico	.	thayeri	<	.	.
+Rosenberg2020	67.09	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Belize	.	thayeri	<	.	.
+Rosenberg2020	67.1	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Guatemala	.	thayeri	<	.	.
+Rosenberg2020	67.11	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Honduras	.	thayeri	<	.	.
+Rosenberg2020	67.12	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Nicaragua	.	thayeri	<	.	.
+Rosenberg2020	67.13	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Costa Rica	.	thayeri	<	.	.
+Rosenberg2020	67.14	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Panama	.	thayeri	<	.	.
+Rosenberg2020	67.15	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Atlantic coast of Colombia	.	thayeri	<	.	.
+Rosenberg2020	67.16	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Venezuela	.	thayeri	<	.	.
+Rosenberg2020	67.17	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Guyana	.	thayeri	<	.	.
+Rosenberg2020	67.18	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Suriname	.	thayeri	<	.	.
+Rosenberg2020	67.19	Leptuca thayeri	.	text p. 369-371; supplement 51	location	French Guiana	.	thayeri	<	.	.
+Rosenberg2020	67.2	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Brazil	.	thayeri	<	.	.
+Rosenberg2020	67.21	Leptuca thayeri	.	text p. 369-371; supplement 51	location	Caribbean	.	thayeri	<	.	.
+Rosenberg2020	68.1	Leptuca tomentosa	.	text p. 370, 373; supplement 52	citation	Crane1975	85	=	=	.	.
+Rosenberg2020	68.2	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	El Salvador	.	tomentosa	<	.	.
+Rosenberg2020	68.3	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Pacific coast of Honduras	.	tomentosa	<	.	.
+Rosenberg2020	68.4	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Pacific coast of Nicaragua	.	tomentosa	<	.	.
+Rosenberg2020	68.5	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Pacific coast of Costa Rica	.	tomentosa	<	.	.
+Rosenberg2020	68.6	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Pacific coast of Panama	.	tomentosa	<	.	.
+Rosenberg2020	68.7	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Pacific coast of Colombia	.	tomentosa	<	.	.
+Rosenberg2020	68.8	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Ecuador	.	tomentosa	<	.	.
+Rosenberg2020	68.9	Leptuca tomentosa	.	text p. 370, 373; supplement 52	location	Peru	.	tomentosa	<	.	.
+Rosenberg2020	69.1	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	citation	Crane1975	40	=	=	.	.
+Rosenberg2020	69.2	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	citation	vonPrahl1981.1	5	=	=	.	.
+Rosenberg2020	69.3	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	citation	vonPrahl1982	22	=	=	.	.
+Rosenberg2020	69.4	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	El Salvador	.	umbratila	<	.	.
+Rosenberg2020	69.5	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	Pacific coast of Honduras	.	umbratila	<	.	.
+Rosenberg2020	69.6	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	Pacific coast of Nicaragua	.	umbratila	<	.	.
+Rosenberg2020	69.7	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	Pacific coast of Costa Rica	.	umbratila	<	.	.
+Rosenberg2020	69.8	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	Pacific coast of Panama	.	umbratila	<	.	.
+Rosenberg2020	69.9	Leptuca umbratila	.	text p. 369-370, 373; supplment 53	location	Pacific coast of Colombia	.	umbratila	<	.	.
+Rosenberg2020	70.1	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	citation	Truchet2019	1	=	=	.	.
+Rosenberg2020	70.2	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	location	Southeastern Brazil	.	uruguayensis	<	.	.
+Rosenberg2020	70.3	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	location	Uruguay	.	uruguayensis	<	.	.
+Rosenberg2020	70.4	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	location	Argentina	.	uruguayensis	<	.	.
+Rosenberg2020	70.5	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	citation	Olivier1972	1	=	=	.	.
+Rosenberg2020	70.6	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	citation	Ribeiro2003.1	1	=	=	.	.
+Rosenberg2020	70.7	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	citation	Ribeiro2004	1	=	=	.	.
+Rosenberg2020	70.8	Leptuca uruguayensis	.	text p. 368, 370-371; supplement 54	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	71.1	Minuca argillicola	.	text p. 370, 373; supplement 55	citation	Crane1975	72	=	=	.	.
+Rosenberg2020	71.2	Minuca argillicola	.	text p. 370, 373; supplement 55	citation	vonPrahl1982	12	=	=	.	.
+Rosenberg2020	71.3	Minuca argillicola	.	text p. 370, 373; supplement 55	location	Pacific coast of Costa Rica	.	argillicola	<	.	.
+Rosenberg2020	71.4	Minuca argillicola	.	text p. 370, 373; supplement 55	location	Pacific coast of Panama	.	argillicola	<	.	.
+Rosenberg2020	71.5	Minuca argillicola	.	text p. 370, 373; supplement 55	location	Pacific coast of Colombia	.	argillicola	<	.	.
+Rosenberg2020	72.1	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	citation	Crane1975	62	=	=	.	.
+Rosenberg2020	72.2	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	citation	Brusca1980	8	=	=	.	.
+Rosenberg2020	72.3	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	El Salvador	.	brevifrons	<	.	.
+Rosenberg2020	72.4	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Honduras	.	brevifrons	<	.	.
+Rosenberg2020	72.5	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Nicaragua	.	brevifrons	<	.	.
+Rosenberg2020	72.6	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Costa Rica	.	brevifrons	<	.	.
+Rosenberg2020	72.7	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Panama	.	brevifrons	<	.	.
+Rosenberg2020	72.8	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Guatemala	.	brevifrons	<	.	.
+Rosenberg2020	72.9	Minuca brevifrons	.	text p. 370, 372-373; supplement 56	location	Pacific coast of Mexico	.	brevifrons	<	.	.
+Rosenberg2020	73.01	Minuca burgersi	.	text p. 370-371; supplement 57	location	Belize	.	burgersi	<	.	.
+Rosenberg2020	73.02	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Honduras	.	burgersi	<	.	.
+Rosenberg2020	73.03	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Nicaragua	.	burgersi	<	.	.
+Rosenberg2020	73.04	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Costa Rica	.	burgersi	<	.	.
+Rosenberg2020	73.05	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Panama	.	burgersi	<	.	.
+Rosenberg2020	73.06	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Colombia	.	burgersi	<	.	.
+Rosenberg2020	73.07	Minuca burgersi	.	text p. 370-371; supplement 57	location	Venezuela	.	burgersi	<	.	.
+Rosenberg2020	73.08	Minuca burgersi	.	text p. 370-371; supplement 57	location	Guyana	.	burgersi	<	.	.
+Rosenberg2020	73.09	Minuca burgersi	.	text p. 370-371; supplement 57	location	Suriname	.	burgersi	<	.	.
+Rosenberg2020	73.1	Minuca burgersi	.	text p. 370-371; supplement 57	location	French Guiana	.	burgersi	<	.	.
+Rosenberg2020	73.11	Minuca burgersi	.	text p. 370-371; supplement 57	location	Brazil	.	burgersi	<	.	.
+Rosenberg2020	73.12	Minuca burgersi	.	text p. 370-371; supplement 57	location	Caribbean	.	burgersi	<	.	.
+Rosenberg2020	73.13	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Mexico	.	burgersi	<	.	.
+Rosenberg2020	73.14	Minuca burgersi	.	text p. 370-371; supplement 57	location	Atlantic coast of Guatemala	.	burgersi	<	.	.
+Rosenberg2020	73.15	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Crane1975	59	=	=	.	.
+Rosenberg2020	73.16	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	73.17	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Barnwell1986.1	.	=	=	.	.
+Rosenberg2020	73.18	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Powers1977	8	=	=	.	.
+Rosenberg2020	73.19	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	73.2	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	73.21	Minuca burgersi	.	text p. 370-371; supplement 57	citation	Thurman2010	.	=	=	.	.
+Rosenberg2020	74.01	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	citation	Brusca1980	6	=	=	.	.
+Rosenberg2020	74.02	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	citation	Crane1975	58	=	=	.	.
+Rosenberg2020	74.03	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	citation	Hendrickx1979	8	=	=	.	.
+Rosenberg2020	74.04	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	citation	Hendrickx1984	6	=	=	.	.
+Rosenberg2020	74.05	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	citation	vonPrahl1982	11	=	=	.	.
+Rosenberg2020	74.06	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	El Salvador	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.07	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Honduras	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.08	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Nicaragua	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.09	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Costa Rica	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.1	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Panama	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.11	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Guatemala	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.12	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Mexico	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.13	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Pacific coast of Colombia	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.14	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Ecuador	.	ecuadoriensis	<	.	.
+Rosenberg2020	74.15	Minuca ecuadoriensis	.	text p. 369-370, 372-373; supplement 58	location	Peru	.	ecuadoriensis	<	.	.
+Rosenberg2020	75.01	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Galápagos Islands	.	galapagensis	<	.	.
+Rosenberg2020	75.02	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	citation	Garth1946	1	=	=	.	.
+Rosenberg2020	75.03	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Pacific coast of Costa Rica	.	galapagensis	<	.	.
+Rosenberg2020	75.04	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Pacific coast of Panama	.	galapagensis	<	.	.
+Rosenberg2020	75.05	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Pacific coast of Colombia	.	galapagensis	<	.	.
+Rosenberg2020	75.06	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Ecuador	.	galapagensis	<	.	.
+Rosenberg2020	75.07	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	location	Peru	.	galapagensis	<	.	.
+Rosenberg2020	75.08	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	citation	Crane1975	63	=	=	.	.
+Rosenberg2020	75.09	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	citation	vonPrahl1982	10	=	=	.	.
+Rosenberg2020	75.1	Minuca galapagensis	.	text p. 370, 373-374; supplement 59	citation	Barnwell1985	4	=	=	.	.
+Rosenberg2020	76.1	Minuca herradurensis	.	text p. 370, 373; supplement 60	citation	Crane1975	64	=	=	.	.
+Rosenberg2020	76.2	Minuca herradurensis	.	text p. 370, 373; supplement 60	citation	Hendrickx1979	7	=	=	.	.
+Rosenberg2020	76.3	Minuca herradurensis	.	text p. 370, 373; supplement 60	citation	Barnwell1985	3	=	=	.	.
+Rosenberg2020	76.4	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	El Salvador	.	herradurensis	<	.	.
+Rosenberg2020	76.5	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	Pacific coast of Honduras	.	herradurensis	<	.	.
+Rosenberg2020	76.6	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	Pacific coast of Nicaragua	.	herradurensis	<	.	.
+Rosenberg2020	76.7	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	Pacific coast of Costa Rica	.	herradurensis	<	.	.
+Rosenberg2020	76.8	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	Pacific coast of Panama	.	herradurensis	<	.	.
+Rosenberg2020	76.9	Minuca herradurensis	.	text p. 370, 373; supplement 60	location	Pacific coast of Guatemala	.	herradurensis	<	.	.
+Rosenberg2020	77.1	Minuca longisignalis	.	text p. 370-371; supplement 61	location	Gulf coast of United States	.	longisignalis	<	.	.
+Rosenberg2020	77.2	Minuca longisignalis	.	text p. 370-371; supplement 61	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	78.1	Minuca marguerita	.	text p. 370-371; supplement 62	location	Atlantic coast of Mexico	.	marguerita	<	.	.
+Rosenberg2020	78.2	Minuca marguerita	.	text p. 370-371; supplement 62	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	79.1	Minuca minax	.	text p. 370-371; supplement 63	location	Atlantic coast of United States	.	minax	<	.	.
+Rosenberg2020	79.2	Minuca minax	.	text p. 370-371; supplement 63	location	West coast of Florida, USA	.	minax	<	.	.
+Rosenberg2020	79.3	Minuca minax	.	text p. 370-371; supplement 63	location	Alabama, USA	.	minax	<	.	.
+Rosenberg2020	79.4	Minuca minax	.	text p. 370-371; supplement 63	location	Mississippi, USA	.	minax	<	.	.
+Rosenberg2020	79.5	Minuca minax	.	text p. 370-371; supplement 63	location	Louisiana, USA	.	minax	<	.	.
+Rosenberg2020	79.6	Minuca minax	.	text p. 370-371; supplement 63	location	Texas, USA	.	minax	<	.	.
+Rosenberg2020	79.7	Minuca minax	.	text p. 370-371; supplement 63	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	80.01	Minuca mordax	.	text p. 370-372; supplement 63	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	80.02	Minuca mordax	.	text p. 370-372; supplement 63	location	Belize	.	mordax	<	.	.
+Rosenberg2020	80.03	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Honduras	.	mordax	<	.	.
+Rosenberg2020	80.04	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Nicaragua	.	mordax	<	.	.
+Rosenberg2020	80.05	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Costa Rica	.	mordax	<	.	.
+Rosenberg2020	80.06	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Panama	.	mordax	<	.	.
+Rosenberg2020	80.07	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Colombia	.	mordax	<	.	.
+Rosenberg2020	80.08	Minuca mordax	.	text p. 370-372; supplement 63	location	Venezuela	.	mordax	<	.	.
+Rosenberg2020	80.09	Minuca mordax	.	text p. 370-372; supplement 63	location	Guyana	.	mordax	<	.	.
+Rosenberg2020	80.1	Minuca mordax	.	text p. 370-372; supplement 63	location	Suriname	.	mordax	<	.	.
+Rosenberg2020	80.11	Minuca mordax	.	text p. 370-372; supplement 63	location	French Guiana	.	mordax	<	.	.
+Rosenberg2020	80.12	Minuca mordax	.	text p. 370-372; supplement 63	location	Brazil	.	mordax	<	.	.
+Rosenberg2020	80.13	Minuca mordax	.	text p. 370-372; supplement 63	location	Atlantic coast of Guatemala	.	mordax	<	.	.
+Rosenberg2020	81.1	Minuca osa	.	text p. 367, 370, 373; supplement 65	citation	Landstorfer2010	12	=	=	.	.
+Rosenberg2020	81.2	Minuca osa	.	text p. 367, 370, 373; supplement 65	location	Golfo Dolce, Puntarenas, Costa Rica	.	osa	<	.	.
+Rosenberg2020	82.1	Minuca pugnax	.	text p. 368, 370-371; supplement 66	location	Atlantic coast of United States	.	pugnax	<	.	.
+Rosenberg2020	82.2	Minuca pugnax	.	text p. 368, 370-371; supplement 66	location	New Hampshire, USA	.	pugnax	<	.	.
+Rosenberg2020	82.3	Minuca pugnax	.	text p. 368, 370-371; supplement 66	citation	Johnson2014	1	=	=	.	.
+Rosenberg2020	82.4	Minuca pugnax	.	text p. 368, 370-371; supplement 66	citation	Hopkins2010.2	.	=	=	.	.
+Rosenberg2020	83.01	Minuca rapax	.	text p. 370-371; supplement 67	citation	Thurman2018	.	=	=	.	.
+Rosenberg2020	83.02	Minuca rapax	.	text p. 370-371; supplement 67	location	Belize	.	rapax	<	.	.
+Rosenberg2020	83.03	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Honduras	.	rapax	<	.	.
+Rosenberg2020	83.04	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Nicaragua	.	rapax	<	.	.
+Rosenberg2020	83.05	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Costa Rica	.	rapax	<	.	.
+Rosenberg2020	83.06	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Panama	.	rapax	<	.	.
+Rosenberg2020	83.07	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Colombia	.	rapax	<	.	.
+Rosenberg2020	83.08	Minuca rapax	.	text p. 370-371; supplement 67	location	Venezuela	.	rapax	<	.	.
+Rosenberg2020	83.09	Minuca rapax	.	text p. 370-371; supplement 67	location	Guyana	.	rapax	<	.	.
+Rosenberg2020	83.1	Minuca rapax	.	text p. 370-371; supplement 67	location	Suriname	.	rapax	<	.	.
+Rosenberg2020	83.11	Minuca rapax	.	text p. 370-371; supplement 67	location	French Guiana	.	rapax	<	.	.
+Rosenberg2020	83.12	Minuca rapax	.	text p. 370-371; supplement 67	location	Brazil	.	rapax	<	.	.
+Rosenberg2020	83.13	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Guatemala	.	rapax	<	.	.
+Rosenberg2020	83.14	Minuca rapax	.	text p. 370-371; supplement 67	location	Caribbean	.	rapax	<	.	.
+Rosenberg2020	83.15	Minuca rapax	.	text p. 370-371; supplement 67	location	Florida, USA	.	rapax	<	.	.
+Rosenberg2020	83.16	Minuca rapax	.	text p. 370-371; supplement 67	location	Atlantic coast of Mexico	.	rapax	<	.	.
+Rosenberg2020	84.1	Minuca victoriana	.	text p. 370-372; supplement 68	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	84.2	Minuca victoriana	.	text p. 370-372; supplement 68	location	Brazil	.	victoriana	<	.	.
+Rosenberg2020	85.1	Minuca virens	.	text p. 370-371; supplement 69	location	Gulf of Mexico	.	virens	<	.	.
+Rosenberg2020	85.2	Minuca virens	.	text p. 370-371; supplement 69	citation	Thurman2018	.	=	=	.	.
+Rosenberg2020	86.01	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Mexico	.	vocator	<	.	.
+Rosenberg2020	86.02	Minuca vocator	.	text p. 369-371; supplement 70	location	Texas, USA	.	vocator	<	.	.
+Rosenberg2020	86.03	Minuca vocator	.	text p. 369-371; supplement 70	location	Belize	.	vocator	<	.	.
+Rosenberg2020	86.04	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Honduras	.	vocator	<	.	.
+Rosenberg2020	86.05	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Nicaragua	.	vocator	<	.	.
+Rosenberg2020	86.06	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Costa Rica	.	vocator	<	.	.
+Rosenberg2020	86.07	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Panama	.	vocator	<	.	.
+Rosenberg2020	86.08	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Colombia	.	vocator	<	.	.
+Rosenberg2020	86.09	Minuca vocator	.	text p. 369-371; supplement 70	location	Venezuela	.	vocator	<	.	.
+Rosenberg2020	86.1	Minuca vocator	.	text p. 369-371; supplement 70	location	Guyana	.	vocator	<	.	.
+Rosenberg2020	86.11	Minuca vocator	.	text p. 369-371; supplement 70	location	Suriname	.	vocator	<	.	.
+Rosenberg2020	86.12	Minuca vocator	.	text p. 369-371; supplement 70	location	French Guiana	.	vocator	<	.	.
+Rosenberg2020	86.13	Minuca vocator	.	text p. 369-371; supplement 70	location	Brazil	.	vocator	<	.	.
+Rosenberg2020	86.14	Minuca vocator	.	text p. 369-371; supplement 70	location	Atlantic coast of Guatemala	.	vocator	<	.	.
+Rosenberg2020	86.15	Minuca vocator	.	text p. 369-371; supplement 70	location	Dominican Republic	.	vocator	<	.	.
+Rosenberg2020	86.16	Minuca vocator	.	text p. 369-371; supplement 70	location	Haiti	.	vocator	<	.	.
+Rosenberg2020	86.17	Minuca vocator	.	text p. 369-371; supplement 70	location	Puerto Rico	.	vocator	<	.	.
+Rosenberg2020	86.18	Minuca vocator	.	text p. 369-371; supplement 70	location	Lesser Antilles	.	vocator	<	.	.
+Rosenberg2020	86.19	Minuca vocator	.	text p. 369-371; supplement 70	citation	Crane1975	57	=	=	.	.
+Rosenberg2020	86.2	Minuca vocator	.	text p. 369-371; supplement 70	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	86.21	Minuca vocator	.	text p. 369-371; supplement 70	citation	Barnwell1986.1	.	=	=	.	.
+Rosenberg2020	86.22	Minuca vocator	.	text p. 369-371; supplement 70	citation	PerezMozqueda2014	5	=	=	.	.
+Rosenberg2020	86.23	Minuca vocator	.	text p. 369-371; supplement 70	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	86.24	Minuca vocator	.	text p. 369-371; supplement 70	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	86.25	Minuca vocator	.	text p. 369-371; supplement 70	citation	Thurman1984.1	.	=	=	.	.
+Rosenberg2020	87.01	Minuca zacae	.	text p. 370, 372-373; supplement 71	citation	Crane1975	69	=	=	.	.
+Rosenberg2020	87.02	Minuca zacae	.	text p. 370, 372-373; supplement 71	citation	Hendrickx1979	5	=	=	.	.
+Rosenberg2020	87.03	Minuca zacae	.	text p. 370, 372-373; supplement 71	citation	Hendrickx1984	5	=	=	.	.
+Rosenberg2020	87.04	Minuca zacae	.	text p. 370, 372-373; supplement 71	citation	Hendrickx1992	1	=	=	.	.
+Rosenberg2020	87.05	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	El Salvador	.	zacae	<	.	.
+Rosenberg2020	87.06	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	Pacific coast of Honduras	.	zacae	<	.	.
+Rosenberg2020	87.07	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	Pacific coast of Nicaragua	.	zacae	<	.	.
+Rosenberg2020	87.08	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	Pacific coast of Costa Rica	.	zacae	<	.	.
+Rosenberg2020	87.09	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	Pacific coast of Guatemala	.	zacae	<	.	.
+Rosenberg2020	87.1	Minuca zacae	.	text p. 370, 372-373; supplement 71	location	Pacific coast of Mexico	.	zacae	<	.	.
+Rosenberg2020	88.1	Paraleptuca boninensis	.	text p. 368, 370, 376; supplement 72	citation	Shih2013.2	1	=	=	.	.
+Rosenberg2020	88.2	Paraleptuca boninensis	.	text p. 368, 370, 376; supplement 72	location	Chichijima, Ogasawara Islands, Japan	.	boninensis	<	.	.
+Rosenberg2020	89.01	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	citation	Crane1975	34	=	=	.	.
+Rosenberg2020	89.02	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	citation	Icely1978	4	=	=	.	.
+Rosenberg2020	89.03	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	citation	Poupin2010.1	4	=	=	.	.
+Rosenberg2020	89.04	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	South Africa	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.05	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Mozambique	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.06	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Tanzania	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.07	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Kenya	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.08	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Southern Somalia	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.09	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Madagascar	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.1	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Mauritius, Mauritius (Republic)	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.11	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Seychelles	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.12	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Mayotte	.	chlorophthalmus	<	.	.
+Rosenberg2020	89.13	Paraleptuca chlorophthalmus	.	text p. 370, 374; supplement 73	location	Reunion Island	.	chlorophthalmus	<	.	.
+Rosenberg2020	90.01	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	citation	Crane1975	35	=	=	.	.
+Rosenberg2020	90.02	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	citation	Barnes2010	4	=	=	.	.
+Rosenberg2020	90.03	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	citation	Poupin2010.1	6	=	=	.	.
+Rosenberg2020	90.04	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	citation	Shih2012	.	=	=	.	.
+Rosenberg2020	90.05	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	90.06	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Eastern Queensland, Australia	.	crassipes	<	.	.
+Rosenberg2020	90.07	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	New South Wales, Australia	.	crassipes	<	.	.
+Rosenberg2020	90.08	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Papua New Guinea	.	crassipes	<	.	.
+Rosenberg2020	90.09	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Indonesia	.	crassipes	<	.	.
+Rosenberg2020	90.1	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Philippines	.	crassipes	<	.	.
+Rosenberg2020	90.11	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Taiwan	.	crassipes	<	.	.
+Rosenberg2020	90.12	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Ryukyu Islands, Japan	.	crassipes	<	.	.
+Rosenberg2020	90.13	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Palau	.	crassipes	<	.	.
+Rosenberg2020	90.14	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Guam	.	crassipes	<	.	.
+Rosenberg2020	90.15	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Mariana Islands	.	crassipes	<	.	.
+Rosenberg2020	90.16	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Federated States of Micronesia	.	crassipes	<	.	.
+Rosenberg2020	90.17	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Solomon Islands	.	crassipes	<	.	.
+Rosenberg2020	90.18	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Vanuatu	.	crassipes	<	.	.
+Rosenberg2020	90.19	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	New Caledonia	.	crassipes	<	.	.
+Rosenberg2020	90.2	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Fiji	.	crassipes	<	.	.
+Rosenberg2020	90.21	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Wallis and Futuna	.	crassipes	<	.	.
+Rosenberg2020	90.22	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Tuvalu	.	crassipes	<	.	.
+Rosenberg2020	90.23	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Samoa	.	crassipes	<	.	.
+Rosenberg2020	90.24	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	French Polynesia	.	crassipes	<	.	.
+Rosenberg2020	90.25	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Cook Islands	.	crassipes	<	.	.
+Rosenberg2020	90.26	Paraleptuca crassipes	.	text p. 370, 375-378; supplement 74	location	Tonga	.	crassipes	<	.	.
+Rosenberg2020	91.1	Paraleptuca splendida	.	text p. 370, 375; supplement 75	citation	Shih2012	.	=	=	.	.
+Rosenberg2020	91.2	Paraleptuca splendida	.	text p. 370, 375; supplement 75	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	91.3	Paraleptuca splendida	.	text p. 370, 375; supplement 75	location	Vietnam	.	splendida	<	.	.
+Rosenberg2020	91.4	Paraleptuca splendida	.	text p. 370, 375; supplement 75	location	China	.	splendida	<	.	.
+Rosenberg2020	91.5	Paraleptuca splendida	.	text p. 370, 375; supplement 75	location	Taiwan	.	splendida	<	.	.
+Rosenberg2020	92.1	Petruca panamensis	.	text p. 370, 373; supplement 76	citation	Crane1975	55	=	=	.	.
+Rosenberg2020	92.2	Petruca panamensis	.	text p. 370, 373; supplement 76	location	El Salvador	.	panamensis	<	.	.
+Rosenberg2020	92.3	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Pacific coast of Honduras	.	panamensis	<	.	.
+Rosenberg2020	92.4	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Pacific coast of Nicaragua	.	panamensis	<	.	.
+Rosenberg2020	92.5	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Pacific coast of Costa Rica	.	panamensis	<	.	.
+Rosenberg2020	92.6	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Pacific coast of Panama	.	panamensis	<	.	.
+Rosenberg2020	92.7	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Pacific coast of Colombia	.	panamensis	<	.	.
+Rosenberg2020	92.8	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Ecuador	.	panamensis	<	.	.
+Rosenberg2020	92.9	Petruca panamensis	.	text p. 370, 373; supplement 76	location	Peru	.	panamensis	<	.	.
+Rosenberg2020	93.1	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Bairagi1988	3	=	=	.	.
+Rosenberg2020	93.2	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Crane1975	3	=	=	.	.
+Rosenberg2020	93.3	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Jones1994	.	=	=	.	.
+Rosenberg2020	93.4	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	93.5	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Shih2010.2	1	=	=	.	.
+Rosenberg2020	93.6	Tubuca acuta	.	text p. 370, 375; supplement 76	citation	Tue2012	1	=	=	.	.
+Rosenberg2020	93.7	Tubuca acuta	.	text p. 370, 375; supplement 76	location	China	.	acuta	<	.	.
+Rosenberg2020	93.8	Tubuca acuta	.	text p. 370, 375; supplement 76	location	Vietnam	.	acuta	<	.	.
+Rosenberg2020	94.1	Tubuca alcocki	.	text p. 370, 375, 377; supplement 78	citation	Shih2018.1	1	=	=	.	.
+Rosenberg2020	94.2	Tubuca alcocki	.	text p. 370, 375, 377; supplement 78	location	Pakistan	.	alcocki	<	.	.
+Rosenberg2020	94.3	Tubuca alcocki	.	text p. 370, 375, 377; supplement 78	location	India	.	alcocki	<	.	.
+Rosenberg2020	94.4	Tubuca alcocki	.	text p. 370, 375, 377; supplement 78	location	Bangladesh	.	alcocki	<	.	.
+Rosenberg2020	94.5	Tubuca alcocki	.	text p. 370, 375, 377; supplement 78	location	West coast of Thailand	.	alcocki	<	.	.
+Rosenberg2020	95.1	Tubuca arcuata	.	text p. 370, 375; supplement 79	citation	Crane1975	12	=	=	.	.
+Rosenberg2020	95.2	Tubuca arcuata	.	text p. 370, 375; supplement 79	citation	Jones1994	.	=	=	.	.
+Rosenberg2020	95.3	Tubuca arcuata	.	text p. 370, 375; supplement 79	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	95.4	Tubuca arcuata	.	text p. 370, 375; supplement 79	citation	Shih2010.2	3	=	=	.	.
+Rosenberg2020	95.5	Tubuca arcuata	.	text p. 370, 375; supplement 79	citation	Hosoya1993	.	=	=	.	.
+Rosenberg2020	95.6	Tubuca arcuata	.	text p. 370, 375; supplement 79	location	China	.	arcuata	<	.	.
+Rosenberg2020	95.7	Tubuca arcuata	.	text p. 370, 375; supplement 79	location	Taiwan	.	arcuata	<	.	.
+Rosenberg2020	95.8	Tubuca arcuata	.	text p. 370, 375; supplement 79	location	South Korea	.	arcuata	<	.	.
+Rosenberg2020	95.9	Tubuca arcuata	.	text p. 370, 375; supplement 79	location	Japan	.	arcuata	<	.	.
+Rosenberg2020	96.1	Tubuca bellator	.	text p. 370, 376; supplement 80	citation	Crane1975	18	=	=	.	.
+Rosenberg2020	96.2	Tubuca bellator	.	text p. 370, 376; supplement 80	location	Java, Indonesia	.	bellator	<	.	.
+Rosenberg2020	96.3	Tubuca bellator	.	text p. 370, 376; supplement 80	location	Borneo	.	bellator	<	.	.
+Rosenberg2020	96.4	Tubuca bellator	.	text p. 370, 376; supplement 80	location	Philippines	.	bellator	<	.	.
+Rosenberg2020	97.1	Tubuca capricornis	.	text p. 370, 377; supplement 81	citation	George1982	12	=	=	.	.
+Rosenberg2020	97.2	Tubuca capricornis	.	text p. 370, 377; supplement 81	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	97.3	Tubuca capricornis	.	text p. 370, 377; supplement 81	location	Western Australia, Australia	.	capricornis	<	.	.
+Rosenberg2020	97.4	Tubuca capricornis	.	text p. 370, 377; supplement 81	location	Northern Territory, Australia	.	capricornis	<	.	.
+Rosenberg2020	98.01	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	98.02	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	George1982	4	=	=	.	.
+Rosenberg2020	98.03	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Crane1975	14	=	=	.	.
+Rosenberg2020	98.04	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	98.05	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Fukui1989	.	=	=	.	.
+Rosenberg2020	98.06	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Poupin2010.1	5	=	=	.	.
+Rosenberg2020	98.07	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Geist2012	6	=	=	.	.
+Rosenberg2020	98.08	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Huang1989	.	=	=	.	.
+Rosenberg2020	98.09	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	citation	Michie2015	12	=	=	.	.
+Rosenberg2020	98.1	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Eastern Australia	.	coarctata	<	.	.
+Rosenberg2020	98.11	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	New Caledonia	.	coarctata	<	.	.
+Rosenberg2020	98.12	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Fiji	.	coarctata	<	.	.
+Rosenberg2020	98.13	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Philippines	.	coarctata	<	.	.
+Rosenberg2020	98.14	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Taiwan	.	coarctata	<	.	.
+Rosenberg2020	98.15	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Ryukyu Islands, Japan	.	coarctata	<	.	.
+Rosenberg2020	98.16	Tubuca coarctata	.	text p. 370, 375-377; supplement 82	location	Indonesia	.	coarctata	<	.	.
+Rosenberg2020	99.1	Tubuca demani	.	text p. 370, 376; supplement 83	citation	Crane1975	9	=	=	.	.
+Rosenberg2020	99.2	Tubuca demani	.	text p. 370, 376; supplement 83	citation	Barnes2010	5	=	=	.	.
+Rosenberg2020	99.3	Tubuca demani	.	text p. 370, 376; supplement 83	location	Indonesia	.	demani	<	.	.
+Rosenberg2020	99.4	Tubuca demani	.	text p. 370, 376; supplement 83	location	Philippines	.	demani	<	.	.
+Rosenberg2020	100.01	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	100.02	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	George1982	5	=	=	.	.
+Rosenberg2020	100.03	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	Crane1975	6	=	=	.	.
+Rosenberg2020	100.04	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	100.05	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	Barnes2010	6	=	=	.	.
+Rosenberg2020	100.06	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	citation	Shih2010.2	7	=	=	.	.
+Rosenberg2020	100.07	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Taiwan	.	dussumieri	<	.	.
+Rosenberg2020	100.08	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Ryukyu Islands, Japan	.	dussumieri	<	.	.
+Rosenberg2020	100.09	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Indonesia	.	dussumieri	<	.	.
+Rosenberg2020	100.1	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Philippines	.	dussumieri	<	.	.
+Rosenberg2020	100.11	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Eastern Australia	.	dussumieri	<	.	.
+Rosenberg2020	100.12	Tubuca dussumieri	.	text p. 370, 375-377; supplement 84	location	Papua New Guinea	.	dussumieri	<	.	.
+Rosenberg2020	101.1	Tubuca elegans	.	text p. 370, 377; supplement 85	location	Northern Territory, Australia	.	elegans	<	.	.
+Rosenberg2020	101.2	Tubuca elegans	.	text p. 370, 377; supplement 85	location	Western Australia, Australia	.	elegans	<	.	.
+Rosenberg2020	101.3	Tubuca elegans	.	text p. 370, 377; supplement 85	citation	George1982	1	=	=	.	.
+Rosenberg2020	101.4	Tubuca elegans	.	text p. 370, 377; supplement 85	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	102.1	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	location	Northwestern Queensland, Australia	.	flammula	<	.	.
+Rosenberg2020	102.2	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	location	Northern Territory, Australia	.	flammula	<	.	.
+Rosenberg2020	102.3	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	location	Western Australia, Australia	.	flammula	<	.	.
+Rosenberg2020	102.4	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	location	New Guinea, Indonesia	.	flammula	<	.	.
+Rosenberg2020	102.5	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	citation	George1982	13	=	=	.	.
+Rosenberg2020	102.6	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	102.7	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	citation	Fransen1997	5	=	=	.	.
+Rosenberg2020	102.8	Tubuca flammula	.	text p. 367, 370, 377; supplement 86	citation	Crane1975	15	=	=	.	.
+Rosenberg2020	103.1	Tubuca forcipata	.	text p. 370, 376; supplement 87	citation	Crane1975	13	=	=	.	.
+Rosenberg2020	103.2	Tubuca forcipata	.	text p. 370, 376; supplement 87	citation	Pratiwi2018	9	=	=	.	.
+Rosenberg2020	103.3	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Philippines	.	forcipata	<	.	.
+Rosenberg2020	103.4	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Indonesia	.	forcipata	<	.	.
+Rosenberg2020	103.5	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Borneo	.	forcipata	<	.	.
+Rosenberg2020	103.6	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Singapore	.	forcipata	<	.	.
+Rosenberg2020	103.7	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Thailand	.	forcipata	<	.	.
+Rosenberg2020	103.8	Tubuca forcipata	.	text p. 370, 376; supplement 87	location	Malaysia	.	forcipata	<	.	.
+Rosenberg2020	104.1	Tubuca hirsutimanus	.	text p. 370, 377; supplement 88	location	Northern Territory, Australia	.	hirsutimanus	<	.	.
+Rosenberg2020	104.2	Tubuca hirsutimanus	.	text p. 370, 377; supplement 88	location	Western Australia, Australia	.	hirsutimanus	<	.	.
+Rosenberg2020	104.3	Tubuca hirsutimanus	.	text p. 370, 377; supplement 88	citation	George1982	3	=	=	.	.
+Rosenberg2020	104.4	Tubuca hirsutimanus	.	text p. 370, 377; supplement 88	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	105.1	Tubuca longidigitum	.	text p. 370, 377; supplement 89	location	Eastern Queensland, Australia	.	longidigitum	<	.	.
+Rosenberg2020	105.2	Tubuca longidigitum	.	text p. 370, 377; supplement 89	citation	George1982	14	=	=	.	.
+Rosenberg2020	105.3	Tubuca longidigitum	.	text p. 370, 377; supplement 89	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	106.01	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	citation	Crane1975	8	=	=	.	.
+Rosenberg2020	106.02	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	citation	Shih2010.2	9	=	=	.	.
+Rosenberg2020	106.03	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	citation	Shih2016	.	=	=	.	.
+Rosenberg2020	106.04	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	China	.	paradussumieri	<	.	.
+Rosenberg2020	106.05	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Taiwan	.	paradussumieri	<	.	.
+Rosenberg2020	106.06	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Vietnam	.	paradussumieri	<	.	.
+Rosenberg2020	106.07	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Cambodia	.	paradussumieri	<	.	.
+Rosenberg2020	106.08	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Thailand	.	paradussumieri	<	.	.
+Rosenberg2020	106.09	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Malaysia	.	paradussumieri	<	.	.
+Rosenberg2020	106.1	Tubuca paradussumieri	.	text p. 370, 375-377; supplement 90	location	Borneo	.	paradussumieri	<	.	.
+Rosenberg2020	107.1	Tubuca polita	.	text p. 370, 377; supplement 91	citation	George1982	16	=	=	.	.
+Rosenberg2020	107.2	Tubuca polita	.	text p. 370, 377; supplement 91	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	107.3	Tubuca polita	.	text p. 370, 377; supplement 91	location	Australia	.	polita	<	.	.
+Rosenberg2020	108.1	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	citation	Crane1975	4	=	=	.	.
+Rosenberg2020	108.2	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	citation	Tan1994	4	=	=	.	.
+Rosenberg2020	108.3	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	citation	Suzawa1993	.	=	=	.	.
+Rosenberg2020	108.4	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	citation	Shih2016.2	75	=	=	.	.
+Rosenberg2020	108.5	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	location	Singapore	.	rhizophorae	<	.	.
+Rosenberg2020	108.6	Tubuca rhizophorae	.	text p. 370, 376; supplement 92	location	Malaysia	.	rhizophorae	<	.	.
+Rosenberg2020	109.01	Tubuca rosea	.	text p. 370, 375; supplement 93	citation	Bairagi1988	2	=	=	.	.
+Rosenberg2020	109.02	Tubuca rosea	.	text p. 370, 375; supplement 93	citation	Bouillon2002	.	=	=	.	.
+Rosenberg2020	109.03	Tubuca rosea	.	text p. 370, 375; supplement 93	citation	Crane1975	5	=	=	.	.
+Rosenberg2020	109.04	Tubuca rosea	.	text p. 370, 375; supplement 93	citation	Fransen1997	15	=	=	.	.
+Rosenberg2020	109.05	Tubuca rosea	.	text p. 370, 375; supplement 93	location	Bangladesh	.	rosea	<	.	.
+Rosenberg2020	109.06	Tubuca rosea	.	text p. 370, 375; supplement 93	location	West Bengal, India	.	rosea	<	.	.
+Rosenberg2020	109.07	Tubuca rosea	.	text p. 370, 375; supplement 93	location	Myanmar	.	rosea	<	.	.
+Rosenberg2020	109.08	Tubuca rosea	.	text p. 370, 375; supplement 93	location	Western Malaysia	.	rosea	<	.	.
+Rosenberg2020	109.09	Tubuca rosea	.	text p. 370, 375; supplement 93	location	West coast of Thailand	.	rosea	<	.	.
+Rosenberg2020	109.1	Tubuca rosea	.	text p. 370, 375; supplement 93	location	Sumatra, Indonesia	.	rosea	<	.	.
+Rosenberg2020	109.11	Tubuca rosea	.	text p. 370, 375; supplement 93	location	Borneo	.	rosea	<	.	.
+Rosenberg2020	110.1	Tubuca seismella	.	text p. 370, 377; supplement 94	citation	George1982	15	=	=	.	.
+Rosenberg2020	110.2	Tubuca seismella	.	text p. 370, 377; supplement 94	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	110.3	Tubuca seismella	.	text p. 370, 377; supplement 94	location	Australia	.	seismella	<	.	.
+Rosenberg2020	111.1	Tubuca signata	.	text p. 370, 377; supplement 95	citation	George1982	9	=	=	.	.
+Rosenberg2020	111.2	Tubuca signata	.	text p. 370, 377; supplement 95	citation	vonHagen1989	.	=	=	.	.
+Rosenberg2020	111.3	Tubuca signata	.	text p. 370, 377; supplement 95	location	Australia	.	signata	<	.	.
+Rosenberg2020	112.1	Tubuca typhoni	.	text p. 370, 375-376; supplement 96	citation	Crane1975	10	=	=	.	.
+Rosenberg2020	112.2	Tubuca typhoni	.	text p. 370, 375-376; supplement 96	citation	Shih2010.2	12	=	=	.	.
+Rosenberg2020	112.3	Tubuca typhoni	.	text p. 370, 375-376; supplement 96	location	Hainan Island, China	.	typhoni	<	.	.
+Rosenberg2020	112.4	Tubuca typhoni	.	text p. 370, 375-376; supplement 96	location	Philippines	.	typhoni	<	.	.
+Rosenberg2020	113.1	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	citation	Hodgson1987	1	=	=	.	.
+Rosenberg2020	113.2	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	citation	Shih2018.1	2	=	=	.	.
+Rosenberg2020	113.3	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	South Africa	.	urvillei	<	.	.
+Rosenberg2020	113.4	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Mozambique	.	urvillei	<	.	.
+Rosenberg2020	113.5	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Tanzania	.	urvillei	<	.	.
+Rosenberg2020	113.6	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Kenya	.	urvillei	<	.	.
+Rosenberg2020	113.7	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Somalia	.	urvillei	<	.	.
+Rosenberg2020	113.8	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Madagascar	.	urvillei	<	.	.
+Rosenberg2020	113.9	Tubuca urvillei	.	text p. 370, 374-375; supplement 97	location	Mayotte	.	urvillei	<	.	.
+Rosenberg2020	114.01	Uca heteropleura	.	text p. 370, 373; supplement 98	citation	Crane1975	47	=	=	.	.
+Rosenberg2020	114.02	Uca heteropleura	.	text p. 370, 373; supplement 98	citation	vonPrahl1982	6	=	=	.	.
+Rosenberg2020	114.03	Uca heteropleura	.	text p. 370, 373; supplement 98	location	El Salvador	.	heteropleura	<	.	.
+Rosenberg2020	114.04	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Pacific coast of Honduras	.	heteropleura	<	.	.
+Rosenberg2020	114.05	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Pacific coast of Nicaragua	.	heteropleura	<	.	.
+Rosenberg2020	114.06	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Pacific coast of Costa Rica	.	heteropleura	<	.	.
+Rosenberg2020	114.07	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Pacific coast of Panama	.	heteropleura	<	.	.
+Rosenberg2020	114.08	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Pacific coast of Colombia	.	heteropleura	<	.	.
+Rosenberg2020	114.09	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Ecuador	.	heteropleura	<	.	.
+Rosenberg2020	114.1	Uca heteropleura	.	text p. 370, 373; supplement 98	location	Peru	.	heteropleura	<	.	.
+Rosenberg2020	115.01	Uca insignis	.	text p. 369-370, 373; supplment 99	citation	Crane1975	51	=	=	.	.
+Rosenberg2020	115.02	Uca insignis	.	text p. 369-370, 373; supplment 99	citation	vonPrahl1982	3	=	=	.	.
+Rosenberg2020	115.03	Uca insignis	.	text p. 369-370, 373; supplment 99	location	El Salvador	.	insignis	<	.	.
+Rosenberg2020	115.04	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Pacific coast of Honduras	.	insignis	<	.	.
+Rosenberg2020	115.05	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Pacific coast of Nicaragua	.	insignis	<	.	.
+Rosenberg2020	115.06	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Pacific coast of Costa Rica	.	insignis	<	.	.
+Rosenberg2020	115.07	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Pacific coast of Panama	.	insignis	<	.	.
+Rosenberg2020	115.08	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Pacific coast of Colombia	.	insignis	<	.	.
+Rosenberg2020	115.09	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Ecuador	.	insignis	<	.	.
+Rosenberg2020	115.1	Uca insignis	.	text p. 369-370, 373; supplment 99	location	Peru	.	insignis	<	.	.
+Rosenberg2020	116.1	Uca intermedia	.	text p. 370, 373; supplement 100	citation	vonPrahl1985	1	=	=	.	.
+Rosenberg2020	116.2	Uca intermedia	.	text p. 370, 373; supplement 100	citation	Rosenberg2001	15	=	=	.	.
+Rosenberg2020	116.3	Uca intermedia	.	text p. 370, 373; supplement 100	location	Pacific coast of Panama	.	intermedia	<	.	.
+Rosenberg2020	116.4	Uca intermedia	.	text p. 370, 373; supplement 100	location	Pacific coast of Colombia	.	intermedia	<	.	.
+Rosenberg2020	117.01	Uca major	.	text p. 370-372; supplement 101	citation	Crane1975	48	=	=	.	.
+Rosenberg2020	117.02	Uca major	.	text p. 370-372; supplement 101	citation	Barnwell1986.1	.	=	=	.	.
+Rosenberg2020	117.03	Uca major	.	text p. 370-372; supplement 101	citation	Barnwell1984.1	.	=	=	.	.
+Rosenberg2020	117.04	Uca major	.	text p. 370-372; supplement 101	citation	Thurman1987.1	.	=	=	.	.
+Rosenberg2020	117.05	Uca major	.	text p. 370-372; supplement 101	citation	Thurman2010	.	=	=	.	.
+Rosenberg2020	117.06	Uca major	.	text p. 370-372; supplement 101	citation	UtreraLopez2013	1	=	=	.	.
+Rosenberg2020	117.07	Uca major	.	text p. 370-372; supplement 101	location	Atlantic coast of Colombia	.	major	<	.	.
+Rosenberg2020	117.08	Uca major	.	text p. 370-372; supplement 101	location	Venezuela	.	major	<	.	.
+Rosenberg2020	117.09	Uca major	.	text p. 370-372; supplement 101	location	Guyana	.	major	<	.	.
+Rosenberg2020	117.1	Uca major	.	text p. 370-372; supplement 101	location	Suriname	.	major	<	.	.
+Rosenberg2020	117.11	Uca major	.	text p. 370-372; supplement 101	location	French Guiana	.	major	<	.	.
+Rosenberg2020	117.12	Uca major	.	text p. 370-372; supplement 101	location	Caribbean	.	major	<	.	.
+Rosenberg2020	117.13	Uca major	.	text p. 370-372; supplement 101	location	Atlantic coast of Panama	.	major	<	.	.
+Rosenberg2020	117.14	Uca major	.	text p. 370-372; supplement 101	location	Tabasco, Mexico	.	major	<	.	.
+Rosenberg2020	117.15	Uca major	.	text p. 370-372; supplement 101	location	Veracruz, Mexico	.	major	<	.	.
+Rosenberg2020	118.1	Uca maracoani	.	text p. 369-372; supplement 102	citation	Thurman2013.1	.	=	=	.	.
+Rosenberg2020	118.2	Uca maracoani	.	text p. 369-372; supplement 102	location	Venezuela	.	maracoani	<	.	.
+Rosenberg2020	118.3	Uca maracoani	.	text p. 369-372; supplement 102	location	Guyana	.	maracoani	<	.	.
+Rosenberg2020	118.4	Uca maracoani	.	text p. 369-372; supplement 102	location	Suriname	.	maracoani	<	.	.
+Rosenberg2020	118.5	Uca maracoani	.	text p. 369-372; supplement 102	location	French Guiana	.	maracoani	<	.	.
+Rosenberg2020	118.6	Uca maracoani	.	text p. 369-372; supplement 102	location	Brazil	.	maracoani	<	.	.
+Rosenberg2020	119.1	Uca monilifera	.	text p. 370, 372-373; supplement 103	citation	Crane1975	46	=	=	.	.
+Rosenberg2020	119.2	Uca monilifera	.	text p. 370, 372-373; supplement 103	citation	Brusca1980	16	=	=	.	.
+Rosenberg2020	119.3	Uca monilifera	.	text p. 370, 372-373; supplement 103	location	Gulf of California, Mexico	.	monilifera	<	.	.
+Rosenberg2020	120.1	Uca ornata	.	text p. 370, 373; supplement 104	citation	Crane1975	52	=	=	.	.
+Rosenberg2020	120.1	Uca ornata	.	text p. 370, 373; supplement 104	location	El Salvador	.	ornata	<	.	.
+Rosenberg2020	120.3	Uca ornata	.	text p. 370, 373; supplement 104	location	Pacific coast of Honduras	.	ornata	<	.	.
+Rosenberg2020	120.4	Uca ornata	.	text p. 370, 373; supplement 104	location	Pacific coast of Nicaragua	.	ornata	<	.	.
+Rosenberg2020	120.5	Uca ornata	.	text p. 370, 373; supplement 104	location	Pacific coast of Costa Rica	.	ornata	<	.	.
+Rosenberg2020	120.6	Uca ornata	.	text p. 370, 373; supplement 104	location	Pacific coast of Panama	.	ornata	<	.	.
+Rosenberg2020	120.7	Uca ornata	.	text p. 370, 373; supplement 104	location	Pacific coast of Colombia	.	ornata	<	.	.
+Rosenberg2020	120.8	Uca ornata	.	text p. 370, 373; supplement 104	location	Ecuador	.	ornata	<	.	.
+Rosenberg2020	120.9	Uca ornata	.	text p. 370, 373; supplement 104	location	Peru	.	ornata	<	.	.
+Rosenberg2020	121.01	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	citation	Rosenberg2018	1	=	=	.	.
+Rosenberg2020	121.02	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	citation	Crane1975	45	=	=	.	.
+Rosenberg2020	121.03	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	citation	Brusca1980	15	=	=	.	.
+Rosenberg2020	121.04	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	citation	Hendrickx1984	1	=	=	.	.
+Rosenberg2020	121.05	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	El Salvador	.	princeps	<	.	.
+Rosenberg2020	121.06	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Pacific coast of Honduras	.	princeps	<	.	.
+Rosenberg2020	121.07	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Pacific coast of Nicaragua	.	princeps	<	.	.
+Rosenberg2020	121.08	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Pacific coast of Costa Rica	.	princeps	<	.	.
+Rosenberg2020	121.09	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Pacific coast of Panama	.	princeps	<	.	.
+Rosenberg2020	121.1	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Pacific coast of Colombia	.	princeps	<	.	.
+Rosenberg2020	121.11	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Ecuador	.	princeps	<	.	.
+Rosenberg2020	121.12	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Peru	.	princeps	<	.	.
+Rosenberg2020	121.13	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Guatemala	.	princeps	<	.	.
+Rosenberg2020	121.14	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	Mexico	.	princeps	<	.	.
+Rosenberg2020	121.15	Uca princeps	.	text p. 366, 370, 372-373; supplement 105	location	California, USA	.	princeps	<	.	.
+Rosenberg2020	122.01	Uca stylifera	.	text p. 370, 373; supplement 106	citation	Crane1975	49	=	=	.	.
+Rosenberg2020	122.02	Uca stylifera	.	text p. 370, 373; supplement 106	citation	vonPrahl1982	4	=	=	.	.
+Rosenberg2020	122.03	Uca stylifera	.	text p. 370, 373; supplement 106	location	El Salvador	.	stylifera	<	.	.
+Rosenberg2020	122.04	Uca stylifera	.	text p. 370, 373; supplement 106	location	Pacific coast of Honduras	.	stylifera	<	.	.
+Rosenberg2020	122.05	Uca stylifera	.	text p. 370, 373; supplement 106	location	Pacific coast of Nicaragua	.	stylifera	<	.	.
+Rosenberg2020	122.06	Uca stylifera	.	text p. 370, 373; supplement 106	location	Pacific coast of Costa Rica	.	stylifera	<	.	.
+Rosenberg2020	122.07	Uca stylifera	.	text p. 370, 373; supplement 106	location	Pacific coast of Panama	.	stylifera	<	.	.
+Rosenberg2020	122.08	Uca stylifera	.	text p. 370, 373; supplement 106	location	Pacific coast of Colombia	.	stylifera	<	.	.
+Rosenberg2020	122.09	Uca stylifera	.	text p. 370, 373; supplement 106	location	Ecuador	.	stylifera	<	.	.
+Rosenberg2020	122.1	Uca stylifera	.	text p. 370, 373; supplement 106	location	Peru	.	stylifera	<	.	.
+Rosenberg2020	123.1	Xeruca formosensis	.	text p. 370, 375; supplement 107	citation	Shih1999.1	.	=	=	.	.
+Rosenberg2020	123.2	Xeruca formosensis	.	text p. 370, 375; supplement 107	location	Taiwan	.	formosensis	<	.	.
