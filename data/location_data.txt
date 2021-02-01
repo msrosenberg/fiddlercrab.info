@@ -30,7 +30,7 @@ Cook Islands	-21.200000	-159.766667	.	.	Cook Islands	.	.	Polynesia	.
 Costa Rica	9.907572	-83.925784	.	.	Costa Rica	.	.	Central America	.
 Cuba	22.064379	-79.476363	.	.	Cuba	.	.	Caribbean;Greater Antilles	.
 Curaçao	12.183333	-69.000000	.	.	Curaçao	.	.	Caribbean;ABC Islands, Leeward Antilles	.
-Democratic Republic of the Congo	-6.028319	12.459611	.	Using Parc marin des mangroves	Democratic Republic of the Congo	.	.	Africa;Atlantic coast of Africa	.
+Democratic Republic of the Congo	-6.028319	12.459611	.	Using Parc marin des mangroves	Democratic Republic of the Congo	Zaire	.	Africa;Atlantic coast of Africa	.
 Divers	.	.	Presumably a town or island on the Atlantic coast of Africa	.	Divers	.	.	.	.
 Djibouti	11.588333	43.145000	.	.	Djibouti	جيبوتي	.	Africa;Indian coast of Africa;Gulf of Aden	.
 Dominica	15.429909	-61.338679	.	.	Dominica	.	.	Caribbean;Windward Islands, Lesser Antilles	.
@@ -192,10 +192,10 @@ Nellore District, Andhra Pradesh, India	14.581695	80.184487	District	.	Nellore D
 Srikakulam District, Andhra Pradesh, India	18.520403	84.296921	District	.	Srikakulam District	శ్రీకాకుళం	Andhra Pradesh, India	.	.
 Visakhapatnam, Andhra Pradesh, India	17.688622	83.291429	.	.	Visakhapatnam	విశాఖపట్నం	Andhra Pradesh, India	.	.
 Vizianagaram District, Andhra Pradesh, India	18.013257	83.569926	District	.	Vizianagaram District	విజయనగరం	Andhra Pradesh, India	.	.
-Cabinda, Angola	-5.551302	12.185129	.	.	Cabinda	Chinchoxo	Angola	.	.
-Congo River, Angola	-6.067362	12.458098	.	.	Congo River	.	Angola	.	.
-Lobito Bay, Angola	-12.333333	13.566667	.	.	Lobito Bay	.	Angola	.	.
-Luanda, Angola	-8.838333	13.234444	.	.	Luanda	St. Paul de Loanda	Angola	.	.
+Cabinda, Cabinda Province, Angola	-5.551302	12.185129	.	.	Cabinda	Chinchoxo;Tshintshotscho	Cabinda Province, Angola	.	.
+Congo River, Zaire Province, Angola	-6.067362	12.458098	.	.	Congo River	.	Zaire Province, Angola	.	.
+Lobito Bay, Benguela Province, Angola	-12.333333	13.566667	.	.	Lobito Bay	.	Benguela Province, Angola	.	.
+Luanda, Luanda Province, Angola	-8.838333	13.234444	.	.	Luanda	St. Paul de Loanda	Luanda Province, Angola	.	.
 Sandy Ground, Anguilla	18.205015	-63.093935	.	.	Sandy Ground	.	Anguilla	.	.
 Antigua, Antigua and Barbuda	17.079532	-61.813649	.	.	Antigua	.	Antigua and Barbuda	.	.
 Barbuda, Antigua and Barbuda	17.615555	-61.791627	.	.	Barbuda	.	Antigua and Barbuda	.	.
@@ -318,7 +318,6 @@ Kamboi, Bharuch District, Gujarat India	22.216901	72.621714	.	.	Kamboi	કંબ
 Nada, Bharuch District, Gujarat India	21.922921	72.512659	.	.	Nada	.	Bharuch District, Gujarat India	.	.
 Loboc River, Bohol, Philippines	9.607506	124.012286	.	.	Loboc River	.	Bohol, Philippines	.	.
 Panglao, Bohol, Philippines	9.583333	123.750000	.	.	Panglao	.	Bohol, Philippines	.	.
-Panglao, Bohol, Philippines	9.563601	123.805166	.	.	Panglao	.	Bohol, Philippines	.	.
 Cartagena, Bolívar, Colombia	10.415675	-75.493653	.	.	Cartagena	.	Bolívar, Colombia	.	.
 Northwestern Borneo	3.181282	113.038717	.	Using Bintulu	Northwestern Borneo	.	Borneo	.	.
 East Kalimantan, Borneo, Indonesia	-0.104688	117.468809	Province	.	East Kalimantan	.	Borneo, Indonesia	.	.
@@ -2258,7 +2257,7 @@ Cayo Fragoso, Caibarién, Villa Clara, Cuba	22.695553	-79.439069	.	.	Cayo Fragos
 Guantánamo Province, Cuba	20.232672	-74.811966	Province	.	Guantánamo Province	.	Cuba	.	.
 Río Miel, Guantánamo Province, Cuba	20.339410	-74.480624	.	.	Río Miel	.	Guantánamo Province, Cuba	.	.
 Ao Nam-Bor, Phuket Island, Thailand	7.838793	98.397128	.	.	Ao Nam-Bor	.	Phuket Island, Thailand	.	.
-Pandan Mangrove Reserve, Singapore	1.314143	103.739106	This preserve no longer appears to exist and has been turned into the Pandan Reservoir		Pandan Mangrove Reserve	Pandan Reservoir	Singapore	.	.
+Pandan Mangrove Reserve, Singapore	1.314143	103.739106	This preserve no longer appears to exist and has been turned into the Pandan Reservoir	.	Pandan Mangrove Reserve	Pandan Reservoir	Singapore	.	.
 Morrumbene, Mozambique	-23.684203	35.369237	.	.	Morrumbene	.	Mozambique	.	.
 Wakatobi, Southeast Sulawesi, Sulawesi, Indonesia	-5.608900	123.826878	.	.	Wakatobi	.	Southeast Sulawesi, Sulawesi, Indonesia	.	.
 Wangiwangi, Wakatobi, Southeast Sulawesi, Sulawesi, Indonesia	-5.314506	123.585596	.	.	Wangiwangi	.	Wakatobi, Southeast Sulawesi, Sulawesi, Indonesia	.	.
@@ -2266,3 +2265,41 @@ Liya, Wangiwangi, Wakatobi, Southeast Sulawesi, Sulawesi, Indonesia	-5.386694	12
 Berrys Creek, Hackensack Meadowlands, Bergen County, New Jersey, USA	40.787982	-74.090932	.	.	Berrys Creek	.	Hackensack Meadowlands, Bergen County, New Jersey, USA	.	.
 Sawmill Creek, Hackensack Meadowlands, Bergen County, New Jersey, USA	40.772378	-74.112378	This creek likely no longer exists	.	Sawmill Creek	.	Hackensack Meadowlands, Bergen County, New Jersey, USA	.	.
 Little Sippewisset Marsh, West Falmouth, Falmouth, Barnstable County, Massachusetts, USA	41.575562	-70.635821	.	.	Little Sippewisset Marsh	.	West Falmouth, Falmouth, Barnstable County, Massachusetts, USA	.	.
+Boynton Beach, Palm Beach County, Florida, USA	26.523772	-80.054570	.	.	Boynton Beach	.	Palm Beach County, Florida, USA	.	.
+Muwanda, Unguja, Tanzania	-5.912330	39.215118	.	.	Muwanda	.	Unguja, Tanzania	.	.
+Kitogani, Unguja, Tanzania	-6.300746	39.421860	.	.	Kitogani	.	Unguja, Tanzania	.	.
+Mikindani, Mombasa, Kenya	-4.011691	39.640719	.	.	Mikindani	.	Mombasa, Kenya	.	.
+Loango, Republic of the Congo	-4.628489	11.824564	.	.	Loango	.	Republic of the Congo	.	.
+Monrovia, Liberia	6.322043	-10.811210	.	.	Monrovia	.	Liberia	.	.
+Mesurado River, Monrovia, Liberia	6.316556	-10.796662	.	.	Mesurado River	.	Monrovia, Liberia	.	.
+Bushrod Island, Monrovia, Liberia	6.345915	-10.784996	.	.	Bushrod Island	.	Monrovia, Liberia	.	.
+Grand Cape Mount, Liberia	6.689760	-11.317463	County	.	Grand Cape Mount	.	Liberia	.	.
+Robertsport, Grand Cape Mount, Liberia	6.754851	-11.366298	.	.	Robertsport	.	Grand Cape Mount, Liberia	.	.
+Accra, Ghana	5.563530	-0.134926	.	.	Accra	.	Ghana	.	.
+Butre, Ghana	4.822919	-1.916473	.	.	Butre	.	Ghana	.	.
+Tarkwa Bay, Lagos, Nigeria	6.400844	3.395006	.	.	Tarkwa Bay	.	Lagos, Nigeria	.	.
+Escravos River, Nigeria	5.597616	5.195252	.	.	Escravos River	.	Nigeria	.	.
+Forcados River, Nigeria	5.375971	5.432024	.	.	Forcados River	.	Nigeria	.	.
+Cabinda Province, Angola	-5.292944	12.167516	Province	.	Cabinda Province	.	Angola	.	.
+Musserra, Zaire Province, Angola	-7.545705	12.985648	.	.	Musserra	.	Zaire Province, Angola	.	.
+Santo Antonio do Zaire, Zaire Province, Angola	-6.109107	12.299052	.	.	Santo Antonio do Zaire	.	Zaire Province, Angola	Congo River, Zaire Province, Angola	.
+Samba, Luanda, Luanda Province, Angola	-8.863010	13.200030	.	.	Samba	.	Luanda, Luanda Province, Angola	.	.
+Ilha do Cabo, Luanda, Luanda Province, Angola	-8.777193	13.244994	.	.	Ilha do Cabo	.	Luanda, Luanda Province, Angola	.	.
+Benguela Province, Angola	-12.529228	13.439624	Province	.	Benguela Province	.	Angola	.	.
+Baia Farta, Benguela Province, Angola	-12.607814	13.200051	.	.	Baia Farta	.	Benguela Province, Angola	.	.
+Morro da Cruz, Luanda Province, Angola	-8.958716	13.104862	.	.	Morro da Cruz	.	Luanda Province, Angola	.	.
+Pongo River, Guinea	10.076424	-14.060932	.	.	Pongo River	.	Guinea	.	.
+Marara, Pongo River, Guinea	10.044982	-14.058212	.	.	Marara	.	Pongo River, Guinea	.	.
+Sakumono Lagoon, Ghana	5.617706	-0.033585	.	.	Sakumono Lagoon	.	Ghana	.	.
+Zaire Province, Angola	-6.921958	12.785840	Province	.	Zaire Province	.	Angola	.	.
+Luanda Province, Angola	8.881587	13.177589	Province	.	Luanda Province	.	Angola	.	.
+Port Glaud, Mahé, Seychelles	-4.657523	55.410131	.	.	Port Glaud	.	Mahé, Seychelles	.	.
+Gwatr Bay, Sistan and Baluchestan Province, Iran	25.167671	61.500964	.	.	Gwatr Bay	.	Sistan and Baluchestan Province, Iran	Gulf of Oman coast of Iran	.
+Sistan and Baluchestan Province, Iran	25.388092	60.339247	.	.	Sistan and Baluchestan Province	استان سیستان و بلوچستان	Iran	.	.
+Khor-Khalasi, Iran	25.472215	59.348880	Location is unclear, other than on the Gulf of Oman coast of Iran	.	Khor-Khalasi	.	Iran	Gulf of Oman coast of Iran	.
+Alibag, Maharashtra, India	18.645039	72.868225	.	.	Alibag	अलिबाग	Maharashtra, India	.	.
+Weligama Bay, Sri Lanka	5.963385	80.437985	.	.	Weligama Bay	.	Sri Lanka	.	.
+Bentota Ganga, Sri Lanka	6.439175	79.992242	River	.	Bentota Ganga	.	Sri Lanka	.	.
+Negombo, Sri Lanka	7.161685	79.845641	.	.	Negombo	.	Sri Lanka	.	.
+Cherating, Pahang, Malaysia	4.126936	103.387626	.	.	Cherating	.	Pahang, Malaysia	.	.
+Nha Trang Bay, Vietnam	12.248909	109.214050	.	.	Nha Trang Bay	.	Vietnam	.	.
