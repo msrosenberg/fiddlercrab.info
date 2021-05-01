@@ -54,6 +54,7 @@ Shih2015.2	male	38.2
 Tanaka2004	male	23.2	
 Tanaka2004	male	16.4	
 Tanaka2004	male	16.3	
+Chertoprud2012	female	19.2	
 
 Ranges
 Reference	Sex	n	Min	Max	Notes
@@ -67,4 +68,8 @@ Shih2010.2	female	8	17.5	36.48
 Shih2010.2	female	5	17.3	23.49	
 Shih2010.2	male	3	25.4	28.55	
 Shih2010.2	male	4	11.53	16.71	
+
+Means w/Standard Deviation
+Reference	Sex	n	Mean	SD	Notes
+Chertoprud2012	male	2	18.6	2.8	Not clear if this paper repoted SD or SE; treating as SD
 

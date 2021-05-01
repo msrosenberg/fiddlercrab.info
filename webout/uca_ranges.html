@@ -40,9 +40,6 @@
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.TERRAIN
         };
-        var range_map = new google.maps.Map(document.getElementById("range_map_canvas"),mapOptions);
-        var range_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/fiddlers_all_range_map.kmz",{suppressInfoWindows: true});
-        range_layer.setMap(range_map);
         var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
         var point_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/fiddlers_all_point_map.kmz",{suppressInfoWindows: false});
         point_layer.setMap(point_map);
@@ -68,30 +65,29 @@
 
     <section class="topspsection">
       <div class="map_section">
-        <div id="range_map_canvas"></div>
+        <div id="map_density"><a href="maps/fiddlers_all_range_map.png"><img src="maps/fiddlers_all_range_map.png"></a></div>
         <div id="point_map_canvas"></div>
         <div class="map_download">
-          <a href="maps/fiddlers_all_range_map.png"><span  role="presentation" class="fa fa-download" aria-hidden></span> Download PNG line map of ranges.</a> 
           <a href="maps/fiddlers_all_point_map.png"><span  role="presentation" class="fa fa-download" aria-hidden></span> Download PNG line map of point locations.</a>
         </div>
       </div>
       <p>
-        The first map shows the approximate density of species richness, with denser color where more species are found. The second map shows approximate point locations where fiddler crabs have been recorded in the scientific record. Red markers indicate points where fiddler crabs are found; purple indicates fossil-only locations; blue indicate false location records. See the <a href="locations/index.html">location index</a> for a full list of all point locations.
+        The first map shows the approximate density of species richness (click on map for larger view). The second map shows approximate point locations where fiddler crabs have been recorded in the scientific record. Red markers indicate points where fiddler crabs are found; purple indicates fossil-only locations; blue indicate false location records. See the <a href="locations/index.html">location index</a> for a full list of all point locations.
       </p>
       <p>
-        Specific ranges for a species or name can be found on its associated pages. The list below sorts the species by major geographic region.
+        Specific ranges for a species or name can be found on its associated pages. The list below sorts the species by major zoogeographic realm.
       </p>
     </section>
 
     <section class="spsection">
-      <h2 class="nobookmark">Eastern Atlantic</h2>
+      <h2 class="nobookmark">Eastern Atlantic Realm</h2>
       <ul class="splist">
         <li><a href="u_tangeri.html"><em class="species">Afruca tangeri</em></a></li>
       </ul>
     </section>
 
     <section class="spsection">
-      <h2 class="nobookmark">Western Atlantic</h2>
+      <h2 class="nobookmark">Western Atlantic Realm</h2>
       <ul class="splist">
         <li><a href="u_cumulanta.html"><em class="species">Leptuca cumulanta</em></a></li>
         <li><a href="u_leptodactyla.html"><em class="species">Leptuca leptodactyla</em></a></li>
@@ -118,7 +114,7 @@
     </section>
 
     <section class="spsection">
-      <h2 class="nobookmark">Eastern Pacific</h2>
+      <h2 class="nobookmark">Eastern Pacific Realm</h2>
       <ul class="splist">
         <li><a href="u_batuenta.html"><em class="species">Leptuca batuenta</em></a></li>
         <li><a href="u_beebei.html"><em class="species">Leptuca beebei</em></a></li>
@@ -160,7 +156,7 @@
     </section>
 
     <section class="spsection">
-      <h2 class="nobookmark">Indo-West Pacific</h2>
+      <h2 class="nobookmark">Indo-West Pacific Realm</h2>
       <ul class="splist">
         <li><a href="u_albimana.html"><em class="species">Austruca albimana</em></a></li>
         <li><a href="u_annulipes.html"><em class="species">Austruca annulipes</em></a></li>
@@ -217,7 +213,7 @@
        <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
        <p id="citation"><a href="citation.html"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
        <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span  role="presentation" class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
-       <p id="copyright">Release: 2021.04.01.14.31 &mdash; Copyright &copy; 2003&ndash;2021 All Rights Reserved</p>
+       <p id="copyright">Release: 2021.05.01.14.09 &mdash; Copyright &copy; 2003&ndash;2021 All Rights Reserved</p>
     </footer>
   </body>
 </html>

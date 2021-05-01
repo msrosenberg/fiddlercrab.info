@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laguna de San Andres</title>
+    <meta name="description" content="Fiddler Crabs" />
+    <link rel="icon" sizes="128x128" href="../favicon128.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="../favicon96.png" type="image/png" />
+    <link rel="icon" sizes="72x72" href="../favicon72.png" type="image/png" />
+    <link rel="icon" sizes="48x48" href="../favicon48.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="../favicon32.png" type="image/png" />
+    <link rel="icon" sizes="24x24" href="../favicon24.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="../favicon16.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
+    <link rel="stylesheet" href="../uca_style.css" />
+    <script defer src="../js/solid.min.js"></script>
+    <script defer src="../js/regular.min.js"></script>
+    <script defer src="../js/brands.min.js"></script>
+    <script defer src="../js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="../images/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="author" href="msrosenberg@vcu.edu" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaITaFdh_own-ULkURNKtyeh2ZR_cpR74&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(0,0),
+          zoom: 1,
+          disableDefaultUI: true,
+          panControl: false,
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var point_map = new google.maps.Map(document.getElementById("point_map_canvas"),mapOptions);
+        var point_layer = new google.maps.KmlLayer("https://www.fiddlercrab.info/maps/location_Laguna_de_San_Andres_-_Tamaulipas_-_Mexico_point_map.kmz",{suppressInfoWindows: false});
+        point_layer.setMap(point_map);
+      }
+    </script>
+  </head>
+
+  <body onload="initialize()">
+    <div id="skip-links" role="complementary" aria-label="Skip links menu"><a href="#Main" tabindex="1">Skip to content</a></div>
+    <div id="home">
+      <a href="../index.html" class="home-title">Fiddler Crabs</a>
+      <a href="../index.html" class="home-link"><span  role="presentation" class="fa fa-home" aria-hidden></span> Home</a>
+      <a href="../blog" class="home-link"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> Blog</a>
+    </div>
+    <header id="Laguna_de_San_Andres_-_Tamaulipas_-_Mexico.html">
+      <h1 class="nobookmark">Laguna de San Andres</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span  role="presentation" class="fa fa-list" aria-hidden></span> Location Index</a></li>
+        </ul>
+      </nav>
+    </header>
+    <dl>
+    <dt>Included Within</dt>
+      <dd><a href="Tamaulipas_-_Mexico.html">Tamaulipas</a></dd>
+    <dt>Approximate Coordinates</dt>
+      <dd>22.697606&deg;N, 97.858736&deg;W</dd>
+    <div class="map_section">
+           <div id="point_map_canvas" class="sp_map"></div>
+        <div class="map_download">
+         The red marker indicates the coordinates used to represent this location, yellow markers all other locations contained within this location. Purple markers indicate fossil-only locations or sub-locations.
+        </div>
+    </div>
+    </dl>
+  <section class="spsection">
+    <h3 class="nobookmark">Currently Recognized Species</h3>
+    <ul class="locpagelist">
+      <li><a href="../u_panacea.html"><em class="species">Leptuca panacea</em></a><sup>‡</sup></li>
+      <li><a href="../u_spinicarpa.html"><em class="species">Leptuca spinicarpa</em></a><sup>‡</sup></li>
+      <li><a href="../u_subcylindrica.html"><em class="species">Leptuca subcylindrica</em></a></li>
+      <li><a href="../u_virens.html"><em class="species">Minuca virens</em></a><sup>‡</sup></li>
+      <li><a href="../u_vocator.html"><em class="species">Minuca vocator</em></a><sup>‡</sup></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Names Which Have Been Used for This Area</h3>
+    <ul class="locpagelist">
+      <li><a href="../names/Uca_subcylindrica.html"><em class="species">Uca subcylindrica</em></a></li>
+    </ul>
+  </section>
+  <section class="spsection">
+    <h3 class="nobookmark">Specific Names Which Have Been Used for This Area</h3>
+    <ul class="locpagelist">
+      <li><a href="../names/sn_subcylindrica.html"><em class="species">subcylindrica</em></a></li>
+    </ul>
+  </section>
+    <section class="spsection">
+      <h3 id="references" class="nobookmark"><span  role="presentation" class="fa fa-book" aria-hidden></span> References</h3>
+      <p>
+<a href="../references/Thurman1979.html">Thurman (1979)</a>      </p>
+    </section>
+    <p>Entries marked with <sup>‡</sup> represent potential inhabitants inferred from species ranges.</p>
+
+    <footer>
+       <figure id="footmap"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=5f9t1sywiez&amp;m=0&amp;h=75&amp;c=ff0000&amp;r=30" async="async"></script><figcaption>Visitors</figcaption></figure>
+       <p id="citation"><a href="citation.html"><span  role="presentation" class="fa fa-pencil-alt" aria-hidden></span> How to cite this site</a></p>
+       <p id="contact">Questions or comments about the site? Contact <a href="mailto:msrosenberg@vcu.edu"><span  role="presentation" class="fa fa-envelope" aria-hidden></span> Dr. Michael S. Rosenberg</a></p>
+       <p id="copyright">Release: 2021.05.01.14.09 &mdash; Copyright &copy; 2003&ndash;2021 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

@@ -292,6 +292,11 @@ dd {
   border-bottom: 0;
  }
 
+#map_density {
+	width: 300px;
+	height: 150px;
+}
+
 #xxxsp_point_map_canvas,
 #point_map_canvas,
 #xxxsp_range_map_canvas,
@@ -592,6 +597,12 @@ a:visited.vidlink {
 	.spsection table {
 	  width: 800px;
 	 }
+
+	#map_density {
+		width: 800px;
+		height: 400px;
+		float: left;
+	}
 
 	#point_map_canvas,
 	#range_map_canvas {

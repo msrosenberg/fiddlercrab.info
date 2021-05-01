@@ -22,10 +22,15 @@ Tanase2019	male	15.1
 Tanase2019	female	16.2	
 Tanase2019	male	15.1	
 Tanase2019	female	14.5	
+Chertoprud2012	female	14.2	
 
 Ranges
 Reference	Sex	n	Min	Max	Notes
 Shih2010.2	female	3	8.07	12.35	
 Shih2010.2	male	12	13.04	26.17	
 Shih2010.2	female	4	14.62	16.11	
+
+Means w/Standard Deviation
+Reference	Sex	n	Mean	SD	Notes
+Chertoprud2012	male	8	15.2	2.7	Not clear if this paper repoted SD or SE; treating as SD
 
