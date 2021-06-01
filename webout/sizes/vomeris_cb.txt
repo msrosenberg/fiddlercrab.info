@@ -15,4 +15,17 @@ Ranges
 Reference	Sex	n	Min	Max	Notes
 Williams1980	male	118	5.1	19.7	
 Williams1980	female	27	5.5	16.4	
+George1982	male	38	10	22.1	
+George1982	female	18	9	19.5	non-ovigerous
+George1982	female	7	10.8	16.8	ovigerous
+George1982	male	188	6.7	29.2	
+George1982	female	103	6.3	23	non-ovigerous
+George1982	female	15	11.1	22	ovigerous
+George1982	male	85	9.1	28.6	
+George1982	female	30	4.8	22.8	non-ovigerous
+George1982	female	10	18.5	23	ovigerous
+
+Means w/Standard Deviation
+Reference	Sex	n	Mean	SD	Notes
+Dye1987	mixed	20	20.42	0.97	Not clear if this paper repoted SD or SE; treating as SD
 

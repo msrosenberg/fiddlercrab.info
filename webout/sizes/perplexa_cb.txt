@@ -60,6 +60,12 @@ Shih2020.2	male	11
 Fujita2018	male	18.7	
 Juncker2009	male	7.3	
 Tanase2019	male	11.3	
+Lagare2020	male	13.9	
+Lagare2020	male	15.7	
+Lagare2020	male	16.3	
+George1982	male	11.2	
+George1982	female	13.3	non-ovigerous
+George1982	female	8	non-ovigerous
 
 Ranges
 Reference	Sex	n	Min	Max	Notes
@@ -135,4 +141,15 @@ Juncker2009	female	3	9.6	9.9
 Juncker2009	male	5	8	13	
 Juncker2009	male	2	8.6	10	
 Juncker2009	female	2	7.8	11.7	
+George1982	male	75	4.2	14.9	
+George1982	female	25	4.9	11.9	non-ovigerous
+George1982	male	5	13.5	15.7	
+
+Means w/Standard Error
+Reference	Sex	n	Mean	SE	Notes
+Tina2018.5	male	23	16.66	0.47	non-regenerated claws
+Tina2018.5	male	20	17.15	0.43	regenerated claws
+Tina2018.5	female	15	15.09	0.85	
+Tina2020.2	male	50	13.74	0.42	
+Tina2020.2	female	50	12.68	0.33	
 

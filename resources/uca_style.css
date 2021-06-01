@@ -500,6 +500,11 @@ a:visited.vidlink {
 	box-shadow: 0 0 1px lightgray;
 }
 
+.species_key_fig {max-width: 800px}
+
+.species_key_photo {}
+
+
 @media screen and (min-width: 600px) {
 	a:hover {
 	  color: red;

@@ -2312,8 +2312,8 @@ vonHagen1987.1	Trinidad	.	cumulanta	male	.	.	individual	.	16.8	.	.	.	.
 vonHagen1987.1	Rio de Janeiro, Brazil	.	rapax	male	.	.	individual	.	19.1	.	.	.	.
 Warner1969	Jamaica	.	rapax	non-specified	.	.	max	.	.	.	25	.	.
 Warner1969	Jamaica	.	thayeri	non-specified	.	.	max	.	.	.	27	.	.
-Tuberty2001	Northwestern Florida, USA	.	panacea	mixed	.	.	mean/sd	.	13.82	.	.	1.1	.
-Tuberty2001	Northwestern Florida, USA	.	panacea	mixed	.	.	mean/sd	.	17.41	.	.	1.19	.
+Tuberty2001	Northwestern Florida, USA	.	panacea	mixed	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	.	13.82	.	.	1.1	.
+Tuberty2001	Northwestern Florida, USA	.	panacea	mixed	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	.	17.41	.	.	1.19	.
 Tazelaar1933	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	male	size class ~20 mm	.	mean	16	19.58	.	.	.	.
 Tazelaar1933	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	male	size class ~15 mm	.	mean	10	14.68	.	.	.	.
 Tazelaar1933	Woods Hole, Falmouth, Barnstable County, Massachusetts, USA	.	pugnax	male	size class ~12 mm	.	mean	12	10.86	.	.	.	.
@@ -2918,7 +2918,7 @@ Williams1980	Rowes Bay, Townsville, Queensland, Australia	.	perplexa	male	.	.	ra
 Williams1980	Rowes Bay, Townsville, Queensland, Australia	.	polita	male	.	.	range	30	.	4.3	12.5	.	.
 Williams1980	Rowes Bay, Townsville, Queensland, Australia	.	vomeris	female	.	.	range	27	.	5.5	16.4	.	.
 Williams1980	Rowes Bay, Townsville, Queensland, Australia	.	perplexa	female	.	.	range	31	.	3.3	9.3	.	.
-Onadeko2015	University of Lagos, Lagos, Nigeria	.	tangeri	non-specified	.	.	mean/sd	.	48	.	.	3.2	.
+Onadeko2015	University of Lagos, Lagos, Nigeria	.	tangeri	non-specified	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	.	48	.	.	3.2	.
 vonPrahl1979.2	Cabo Marzo, Chocó, Colombia	.	panamensis	male	.	.	individual	.	19.7	.	.	.	.
 vonPrahl1979.2	Gorgona Island, Cauca, Colombia	.	panamensis	male	.	.	individual	.	15	.	.	.	.
 vonPrahl1979.2	Gorgona Island, Cauca, Colombia	.	panamensis	male	.	.	individual	.	11	.	.	.	.
@@ -3329,3 +3329,297 @@ Chertoprud2012	Nhatrang Bay, Tre Island, Dam Bay	.	tetragonon	male	Not clear if 
 Chertoprud2012	Nhatrang Bay, Tre Island, Dam Bay	.	tetragonon	female	.	.	individual	.	23.2	.	.	.	.
 Chertoprud2012	Nhatrang Bay, Tre Island, Dam Bay	.	vocans	male	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	8	15.2	.	.	2.7	.
 Chertoprud2012	Nhatrang Bay, Tre Island, Dam Bay	.	vocans	female	.	.	individual	.	14.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32095, MNHN-IU-2009-1014	occidentalis	male	.	.	individual	.	11.4	.	.	.	.
+Poupin2018	Mayotte	MNHN B32096, MNHN-IU-2009-1015	occidentalis	male	.	.	individual	.	10.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32097, MNHN-IU-2009-1016	occidentalis	male	.	.	range	9	.	7.8	12.8	.	.
+Poupin2018	Mayotte	MNHN B32097, MNHN-IU-2009-1016	occidentalis	female	.	.	range	8	.	6.5	10.3	.	.
+Poupin2018	Mayotte	MNHN B32098, MNHN-IU-2009-1017	occidentalis	male	.	.	range	2	.	9.2	10.5	.	.
+Poupin2018	Mayotte	MNHN B32098, MNHN-IU-2009-1017	occidentalis	female	.	.	range	2	.	8.5	11	.	.
+Poupin2018	Mayotte	MNHN B32099, MNHN-IU-2009-1018	occidentalis	male	.	.	range	11	.	8.3	14	.	.
+Poupin2018	Mayotte	MNHN B32094, MNHN-IU-2009-1013	occidentalis	male	.	.	range	8	.	5.5	13.4	.	.
+Poupin2018	Mayotte	MNHN B32094, MNHN-IU-2009-1013	occidentalis	female	.	.	range	4	.	8.5	11.8	.	.
+Poupin2018	Mayotte	MNHN B32093, MNHN-IU-2009-1012	occidentalis	male	.	.	range	10	.	8	14.7	.	.
+Poupin2018	Mayotte	MNHN B32100, MNHN-IU-2009-1019	inversa	male	.	.	individual	.	20.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32100, MNHN-IU-2009-1019	inversa	female	.	.	individual	.	10.7	.	.	.	.
+Poupin2018	Mayotte	MNHN B32101, MNHN-IU-2009-1020	inversa	male	.	.	range	5	.	11.6	18.2	.	.
+Poupin2018	Mayotte	MNHN B32104, MNHN-IU-2009-1023	inversa	male	.	.	range	9	.	11	22.9	.	.
+Poupin2018	Mayotte	MNHN B32104, MNHN-IU-2009-1023	inversa	female	.	.	range	6	.	8.5	17	.	.
+Poupin2018	Mayotte	MNHN B32102, MNHN-IU-2009-1021	inversa	male	.	.	individual	.	14	.	.	.	.
+Poupin2018	Mayotte	MNHN B32102, MNHN-IU-2009-1021	inversa	male	.	.	individual	.	13.4	.	.	.	.
+Poupin2018	Mayotte	MNHN B32102, MNHN-IU-2009-1021	inversa	male	.	.	individual	.	12.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32103, MNHN-IU-2009-1022	inversa	male	.	.	individual	.	10.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32103, MNHN-IU-2009-1022	inversa	male	.	.	individual	.	14.7	.	.	.	.
+Poupin2018	Mayotte	MNHN B32105, MNHN-IU-2009-1024	hesperiae	male	.	.	individual	.	19.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32106, MNHN-IU-2009-1025	hesperiae	male	.	.	individual	.	16.8	.	.	.	.
+Poupin2018	Mayotte	MNHN B32106, MNHN-IU-2009-1025	hesperiae	female	.	.	individual	.	18.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32107, MNHN-IU-2009-1026	hesperiae	male	.	.	individual	.	17.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32108, MNHN-IU-2009-1027	tetragonon	male	.	.	individual	.	20.8	.	.	.	.
+Poupin2018	Mayotte	MNHN B32108, MNHN-IU-2009-1027	tetragonon	female	.	.	individual	.	17.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32108, MNHN-IU-2009-1027	tetragonon	female	.	.	individual	.	26.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32116, MNHN-IU-2009-1035	chlorophthalmus	male	.	.	range	15	.	11	17.7	.	.
+Poupin2018	Mayotte	MNHN B32116, MNHN-IU-2009-1035	chlorophthalmus	female	.	.	range	15	.	8.8	16.9	.	.
+Poupin2018	Mayotte	MNHN-IU-2011-5600	chlorophthalmus	male	.	.	individual	.	19.2	.	.	.	.
+Poupin2018	Mayotte	MNHN IU-2011-5601	chlorophthalmus	male	.	.	individual	.	16.2	.	.	.	.
+Poupin2018	Mayotte	MNHN IU-2011-5599	chlorophthalmus	male	.	.	individual	.	18.6	.	.	.	.
+Poupin2018	Mayotte	MNHN B32109, MNHN-IU-2009-1028	chlorophthalmus	male	.	.	range	4	.	14	18.3	.	.
+Poupin2018	Mayotte	MNHN B32109, MNHN-IU-2009-1028	chlorophthalmus	female	.	.	individual	.	17.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32110, MNHN-IU-2009-1029	chlorophthalmus	male	.	.	individual	.	14	.	.	.	.
+Poupin2018	Mayotte	MNHN B32110, MNHN-IU-2009-1029	chlorophthalmus	female	.	.	individual	.	13	.	.	.	.
+Poupin2018	Mayotte	MNHN B32111, MNHN-IU-2009-1030	chlorophthalmus	male	.	.	individual	.	12.4	.	.	.	.
+Poupin2018	Mayotte	MNHN B32111, MNHN-IU-2009-1030	chlorophthalmus	female	.	.	individual	.	15.3	.	.	.	.
+Poupin2018	Mayotte	MNHN B32112, MNHN-IU-2009-1031	chlorophthalmus	male	.	.	range	6	.	13	14.7	.	.
+Poupin2018	Mayotte	MNHN B32113, MNHN-IU-2009-1032	chlorophthalmus	male	.	.	individual	.	10.4	.	.	.	.
+Poupin2018	Mayotte	MNHN B32114, MNHN-IU-2009-1033	chlorophthalmus	male	.	.	range	4	.	8.7	11.3	.	.
+Poupin2018	Mayotte	MNHN B32114, MNHN-IU-2009-1033	chlorophthalmus	female	.	.	individual	.	10.4	.	.	.	.
+Poupin2018	Mayotte	MNHN B32114, MNHN-IU-2009-1033	chlorophthalmus	female	.	.	individual	.	15	.	.	.	.
+Poupin2018	Mayotte	MNHN B32115, MNHN-IU-2009-1034	chlorophthalmus	male	.	.	range	19	.	11.9	19.2	.	.
+Poupin2018	Mayotte	MNHN B32115, MNHN-IU-2009-1034	chlorophthalmus	female	.	.	range	4	.	16.9	18.7	.	.
+Poupin2018	Mayotte	MNHN B32092, MNHN-IU-2009-1011	urvillei	male	.	.	range	15	.	22	33.7	.	.
+Poupin2018	Mayotte	MNHN B32092, MNHN-IU-2009-1011	urvillei	female	.	.	range	3	.	20.7	25	.	.
+Poupin2018	Mayotte	MNHN B32091, MNHN-IU-2009-1010	urvillei	female	.	.	individual	.	13.8	.	.	.	.
+Poupin2018	Mayotte	MNHN B32090, MNHN-IU-2009-1009	urvillei	male	.	.	individual	.	27.2	.	.	.	.
+Poupin2018	Mayotte	MNHN B32090, MNHN-IU-2009-1009	urvillei	female	.	.	individual	.	23.5	.	.	.	.
+Poupin2018	Mayotte	MNHN B32088, MNHN-IU-2009-1007	urvillei	male	.	.	range	12	.	17	30	.	.
+Poupin2018	Mayotte	MNHN B32088, MNHN-IU-2009-1007	urvillei	female	.	.	range	10	.	17	29	.	.
+Poupin2018	Mayotte	MNHN B32089, MNHN-IU-2009-1008	urvillei	male	.	.	range	10	.	22	28	.	.
+Poupin2018	Mayotte	MNHN B32089, MNHN-IU-2009-1008	urvillei	female	.	.	individual	.	22.5	.	.	.	.
+Poupin2018	Mayotte	MNHN B32089, MNHN-IU-2009-1008	urvillei	female	.	.	individual	.	23.5	.	.	.	.
+Lagare2020	Baluarte, Tagoloan, Misamis Oriental Province, Mindanao, Philippines	ZRC	perplexa	male	.	.	individual	.	13.9	.	.	.	.
+Lagare2020	Baluarte, Tagoloan, Misamis Oriental Province, Mindanao, Philippines	ZRC	perplexa	male	.	.	individual	.	15.7	.	.	.	.
+Lagare2020	Baluarte, Tagoloan, Misamis Oriental Province, Mindanao, Philippines	ZRC	perplexa	male	.	.	individual	.	16.3	.	.	.	.
+George1982	Western Australia	.	capricornis	male	.	.	range	49	.	6.8	26.6	.	.
+George1982	Western Australia	.	capricornis	female	non-ovigerous	.	range	23	.	4.9	16.4	.	.
+George1982	Western Australia	.	capricornis	female	ovigerous	.	individual	.	16.9	.	.	.	.
+George1982	Western Australia	.	capricornis	female	ovigerous	.	individual	.	14.4	.	.	.	.
+George1982	Northern Territory Australia	.	capricornis	male	.	.	range	53	.	4.3	19.7	.	.
+George1982	Northern Territory Australia	.	capricornis	female	non-ovigerous	.	range	26	.	7.6	17.6	.	.
+George1982	Northern Territory Australia	.	capricornis	female	ovigerous	.	individual	.	9.6	.	.	.	.
+George1982	Torres Strait	.	capricornis	female	non-ovigerous	.	individual	.	10.8	.	.	.	.
+George1982	Torres Strait	.	capricornis	female	non-ovigerous	.	individual	.	9.3	.	.	.	.
+George1982	Torres Strait	.	capricornis	female	ovigerous	.	individual	.	11.7	.	.	.	.
+George1982	Queensland	.	dussumieri	male	listed as {{capricornis}}, but actually {{dussumieri}} according to von Hagen and Jones (1989)	.	range	5	.	7	13.5	.	.
+George1982	Torres Strait	.	capricornis	female	non-ovigerous	.	individual	.	16.3	.	.	.	.
+George1982	Torres Strait	.	capricornis	female	non-ovigerous	.	individual	.	14.6	.	.	.	.
+George1982	Western Australia	.	elegans	male	.	.	individual	.	21.7	.	.	.	.
+George1982	Western Australia	.	elegans	male	.	.	range	117	.	7.5	26.6	.	.
+George1982	Western Australia	.	elegans	female	non-ovigerous	.	range	64	.	6.4	20	.	.
+George1982	Western Australia	.	elegans	female	ovigerous	.	individual	.	14.4	.	.	.	.
+George1982	Northern Territory Australia	.	elegans	male	.	.	range	18	.	9.8	11.9	.	.
+George1982	Northern Territory Australia	.	elegans	female	non-ovigerous	.	range	10	.	9.7	10.4	.	.
+George1982	Western Australia	.	capricornis	male	listed under pavo	.	individual	.	25.6	.	.	.	.
+George1982	Western Australia	.	capricornis	male	listed under pavo	.	range	67	.	14.1	32.3	.	.
+George1982	Western Australia	.	capricornis	female	listed under pavo; non-ovigerous	.	range	22	.	10.7	27.1	.	.
+George1982	Western Australia	.	capricornis	female	listed under pavo; ovigerous	.	individual	.	24.5	.	.	.	.
+George1982	Northern Territory Australia	.	capricornis	male	listed under pavo	.	range	18	.	14	27.3	.	.
+George1982	Northern Territory Australia	.	capricornis	female	listed under pavo; ovigerous	.	range	9	.	7.8	18.3	.	.
+George1982	Northern Territory Australia	.	capricornis	male	listed as {{dussumieri}}, but actually {{capricornis}} according to von Hagen and Jones (1989)	.	range	10	.	13.6	25.7	.	.
+George1982	Northern Territory Australia	.	capricornis	female	ovigerous; listed as {{dussumieri}}, but actually {{capricornis}} according to von Hagen and Jones (1989)	.	individual	.	18.7	.	.	.	.
+George1982	Queensland	.	dussumieri	male	.	.	range	77	.	8.4	39.9	.	.
+George1982	Queensland	.	dussumieri	female	non-ovigerous	.	range	19	.	17.8	34	.	.
+George1982	Queensland	.	dussumieri	female	ovigerous	.	range	4	.	15.3	34.4	.	.
+George1982	Northern Territory Australia	.	flammula	male	labeled {{coarctata}} but we currently do not believe the species is found in that part of Australia; {{flammula}} is the most likely confusion	.	range	18	.	7.4	27	.	.
+George1982	Northern Territory Australia	.	flammula	female	non-ovigerous; labeled {{coarctata}} but we currently do not believe the species is found in that part of Australia; {{flammula}} is the most likely confusion	.	range	10	.	7.1	18.6	.	.
+George1982	Queensland	.	coarctata	male	.	.	range	151	.	7	37.4	.	.
+George1982	Queensland	.	coarctata	female	non-ovigerous	.	range	40	.	7.1	18.6	.	.
+George1982	Queensland	.	coarctata	female	ovigerous	.	individual	.	14.6	.	.	.	.
+George1982	Western Australia	.	flammula	male	.	.	range	130	.	6.5	39.6	.	.
+George1982	Western Australia	.	flammula	female	non-ovigerous	.	range	52	.	5.4	30	.	.
+George1982	Western Australia	.	flammula	female	ovigerous	.	individual	.	21.1	.	.	.	.
+George1982	Western Australia	.	flammula	female	ovigerous	.	individual	.	16.8	.	.	.	.
+George1982	Northern Territory Australia	.	flammula	male	.	.	range	183	.	6.4	34.9	.	.
+George1982	Northern Territory Australia	.	flammula	female	non-ovigerous	.	range	117	.	4.6	27.7	.	.
+George1982	Northern Territory Australia	.	flammula	female	ovigerous	.	range	7	.	10.3	17.1	.	.
+George1982	Western Australia	.	signata	male	.	.	range	187	.	5.4	18.4	.	.
+George1982	Western Australia	.	signata	female	non-ovigerous	.	range	63	.	4	14.7	.	.
+George1982	Northern Territory Australia	.	signata	male	.	.	range	99	.	5.2	17.9	.	.
+George1982	Northern Territory Australia	.	signata	female	non-ovigerous	.	range	60	.	3.9	14.3	.	.
+George1982	Northern Territory Australia	.	signata	female	ovigerous	.	range	3	.	9.6	15.6	.	.
+George1982	Gulf of Carpentaria	.	signata	male	.	.	range	6	.	17.9	21.9	.	.
+George1982	Gulf of Carpentaria	.	signata	female	non-ovigerous	.	individual	.	14.3	.	.	.	.
+George1982	Gulf of Carpentaria	.	signata	female	non-ovigerous	.	individual	.	14.2	.	.	.	.
+George1982	Western Australia	.	hirsutimanus	male	.	.	range	293	.	5.8	18.6	.	.
+George1982	Western Australia	.	hirsutimanus	female	non-ovigerous	.	range	118	.	4.6	17.6	.	.
+George1982	Western Australia	.	hirsutimanus	female	ovigerous	.	range	62	.	7.9	15.4	.	.
+George1982	Northern Territory Australia	.	hirsutimanus	male	.	.	range	315	.	4.6	18	.	.
+George1982	Northern Territory Australia	.	hirsutimanus	female	non-ovigerous	.	range	181	.	4.7	16	.	.
+George1982	Northern Territory Australia	.	hirsutimanus	female	ovigerous	.	range	20	.	8.9	12.9	.	.
+George1982	Queensland	.	longidigitum	male	.	.	range	28	.	8.6	24.3	.	.
+George1982	Queensland	.	longidigitum	female	non-ovigerous	.	range	6	.	13.5	21.5	.	.
+George1982	Queensland	.	longidigitum	female	ovigerous	.	individual	.	18.1	.	.	.	.
+George1982	Queensland	.	longidigitum	female	ovigerous	.	individual	.	17.2	.	.	.	.
+George1982	Western Australia	.	seismella	male	.	.	range	249	.	5.1	16.1	.	.
+George1982	Western Australia	.	seismella	female	non-ovigerous	.	range	143	.	4.9	16.5	.	.
+George1982	Western Australia	.	seismella	female	ovigerous	.	range	53	.	7.3	15.8	.	.
+George1982	Northern Territory Australia	.	seismella	male	.	.	range	167	.	4.9	17.7	.	.
+George1982	Northern Territory Australia	.	seismella	female	non-ovigerous	.	range	112	.	7.5	13.9	.	.
+George1982	Northern Territory Australia	.	seismella	female	ovigerous	.	range	44	.	9.3	14	.	.
+George1982	Queensland	.	seismella	male	.	.	range	50	.	5.7	16	.	.
+George1982	Queensland	.	seismella	female	non-ovigerous	.	range	12	.	6.5	14.3	.	.
+George1982	Queensland	.	seismella	female	ovigerous	.	individual	.	5.8	.	.	.	.
+George1982	Western Australia	.	polita	male	.	.	range	141	.	5.1	24.3	.	.
+George1982	Western Australia	.	polita	female	non-ovigerous	.	range	87	.	4.8	16.8	.	.
+George1982	Northern Territory Australia	.	polita	male	.	.	range	19	.	8.4	17.5	.	.
+George1982	Northern Territory Australia	.	polita	female	non-ovigerous	.	range	7	.	6.3	14.1	.	.
+George1982	Torres Strait	.	polita	male	.	.	range	22	.	6.3	24	.	.
+George1982	Torres Strait	.	polita	female	non-ovigerous	.	range	12	.	6.5	19.7	.	.
+George1982	Queensland	.	polita	male	.	.	range	56	.	10.4	26.2	.	.
+George1982	Queensland	.	polita	female	non-ovigerous	.	range	15	.	12.1	19.8	.	.
+George1982	Queensland	.	polita	female	ovigerous	.	individual	.	12.6	.	.	.	.
+George1982	New South Wales, Australia	.	polita	female	.	.	individual	.	15.4	.	.	.	.
+George1982	New South Wales, Australia	.	polita	female	.	.	individual	.	13.8	.	.	.	.
+George1982	Torres Strait	.	tetragonon	male	.	.	range	10	.	16.8	27	.	.
+George1982	Torres Strait	.	tetragonon	female	non-ovigerous	.	range	21	.	13.5	32	.	.
+George1982	Queensland	.	tetragonon	female	.	.	individual	.	31	.	.	.	.
+George1982	Queensland	.	tetragonon	female	.	.	individual	.	28.1	.	.	.	.
+George1982	Western Australia	.	dampieri	male	.	.	range	97	.	5.1	26.1	.	.
+George1982	Western Australia	.	dampieri	female	non-ovigerous	.	range	58	.	8.4	21.5	.	.
+George1982	Western Australia	.	dampieri	female	ovigerous	.	range	17	.	12.3	21.1	.	.
+George1982	Northern Territory Australia	.	dampieri	male	.	.	range	30	.	8.1	17.2	.	.
+George1982	Northern Territory Australia	.	dampieri	female	non-ovigerous	.	range	29	.	4.6	17.3	.	.
+George1982	Northern Territory Australia	.	dampieri	female	ovigerous	.	individual	.	14.8	.	.	.	.
+George1982	Northern Territory Australia	.	dampieri	male	labeled {{vomeris}}, the only <em>Gelasimus</em> in the Northern Territory is thought to be {{dampieri}}	.	range	22	.	13.7	20.6	.	.
+George1982	Northern Territory Australia	.	dampieri	female	non-ovigerous; labeled {{vomeris}}, the only <em>Gelasimus</em> in the Northern Territory is thought to be {{dampieri}}	.	range	8	.	12.8	17.1	.	.
+George1982	Northern Territory Australia	.	dampieri	female	ovigerous; labeled {{vomeris}}, the only <em>Gelasimus</em> in the Northern Territory is thought to be {{dampieri}}	.	individual	.	17.1	.	.	.	.
+George1982	Northern Territory Australia	.	dampieri	female	ovigerous; labeled {{vomeris}}, the only <em>Gelasimus</em> in the Northern Territory is thought to be {{dampieri}}	.	individual	.	15.6	.	.	.	.
+George1982	Torres Strait	.	vomeris	male	.	.	range	38	.	10	22.1	.	.
+George1982	Torres Strait	.	vomeris	female	non-ovigerous	.	range	18	.	9	19.5	.	.
+George1982	Torres Strait	.	vomeris	female	ovigerous	.	range	7	.	10.8	16.8	.	.
+George1982	Queensland	.	vomeris	male	.	.	range	188	.	6.7	29.2	.	.
+George1982	Queensland	.	vomeris	female	non-ovigerous	.	range	103	.	6.3	23	.	.
+George1982	Queensland	.	vomeris	female	ovigerous	.	range	15	.	11.1	22	.	.
+George1982	New South Wales, Australia	.	vomeris	male	.	.	range	85	.	9.1	28.6	.	.
+George1982	New South Wales, Australia	.	vomeris	female	non-ovigerous	.	range	30	.	4.8	22.8	.	.
+George1982	New South Wales, Australia	.	vomeris	female	ovigerous	.	range	10	.	18.5	23	.	.
+George1982	.	.	crassipes	male	.	.	range	4	.	24.2	25.6	.	.
+George1982	.	.	crassipes	female	.	.	individual	.	21.9	.	.	.	.
+George1982	Northern Territory Australia	.	triangularis	male	.	.	range	5	.	7.5	11	.	.
+George1982	Northern Territory Australia	.	triangularis	female	non-ovigerous	.	individual	.	9.9	.	.	.	.
+George1982	Northern Territory Australia	.	triangularis	female	non-ovigerous	.	individual	.	7.4	.	.	.	.
+George1982	Queensland	.	triangularis	male	.	.	range	15	.	6.8	12.3	.	.
+George1982	Queensland	.	triangularis	female	non-ovigerous	.	range	8	.	6.6	12.9	.	.
+George1982	Western Australia	.	mjoebergi	male	.	.	range	122	.	6.7	16.4	.	.
+George1982	Western Australia	.	mjoebergi	female	non-ovigerous	.	range	80	.	7.5	13.8	.	.
+George1982	Northern Territory Australia	.	mjoebergi	male	.	.	range	58	.	4.2	13.9	.	.
+George1982	Northern Territory Australia	.	mjoebergi	female	non-ovigerous	.	range	20	.	4.7	10	.	.
+George1982	Torres Strait	.	perplexa	male	.	.	individual	.	11.2	.	.	.	.
+George1982	Queensland	.	perplexa	male	.	.	range	75	.	4.2	14.9	.	.
+George1982	Queensland	.	perplexa	female	non-ovigerous	.	range	25	.	4.9	11.9	.	.
+George1982	New South Wales, Australia	.	perplexa	male	.	.	range	5	.	13.5	15.7	.	.
+George1982	New South Wales, Australia	.	perplexa	female	non-ovigerous	.	individual	.	13.3	.	.	.	.
+George1982	New South Wales, Australia	.	perplexa	female	non-ovigerous	.	individual	.	8	.	.	.	.
+Shirafuji2002	Koya River, Japan	.	arcuata	male	.	.	individual	.	33.6	.	.	.	.
+Shirafuji2002	Koya River, Japan	.	arcuata	female	.	.	individual	.	27.3	.	.	.	.
+Shirafuji2002	Koya River, Japan	.	arcuata	male	.	.	individual	.	36.3	.	.	.	.
+Shirafuji2002	Imazu River, Japan	.	arcuata	male	.	.	individual	.	36.7	.	.	.	.
+Shirafuji2002	Nagae River, Japan	.	arcuata	male	.	.	individual	.	28.9	.	.	.	.
+Dye1987	Bowling Green Bay, Queensland, Australia	.	vomeris	mixed	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	20	20.42	.	.	0.97	.
+Dye1987	Bowling Green Bay, Queensland, Australia	.	polita	mixed	Not clear if this paper repoted SD or SE; treating as SD	.	mean/sd	20	14.62	.	.	0.88	.
+Tina2015	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	44	8.6	.	.	.	0.26
+Tina2015	Kantang Mangrove Forest, Trang, Thailand	.	bengali	female	.	.	mean/se	44	8.29	.	.	.	0.17
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	female	.	.	mean/se	35	5.85	.	.	.	0.3
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	female	.	.	mean/se	35	6.53	.	.	.	0.37
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	female	.	.	mean/se	38	6.9	.	.	.	0.17
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	32	7.27	.	.	.	0.56
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	30	7.32	.	.	.	0.34
+Tina2015.3	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	38	7.38	.	.	.	0.18
+Tina2016	Pak Meng Beach, Trang, Thailand	.	annulipes	male	.	.	mean/se/min/max	45	7.8	4.51	10.29	.	0.22
+Tina2016	Pak Meng Beach, Trang, Thailand	.	annulipes	female	.	.	mean/se/min/max	39	7.29	5.49	8.98	.	0.17
+Tina2016.2	Pak Meng Beach, Trang, Thailand	.	hesperiae	male	Labeled as vocans, but I believe hesperae	.	mean/se/min/max	33	11.13	7.5	14.36	.	0.38
+Tina2016.2	Pak Meng Beach, Trang, Thailand	.	hesperiae	female	Labeled as vocans, but I believe hesperae	.	mean/se/min/max	26	12.9	8.74	15.3	.	0.4
+Tina2016.2	Pak Meng Beach, Trang, Thailand	.	hesperiae	male	Labeled as vocans, but I believe hesperae	.	mean/se/min/max	27	18.77	16.01	26.16	.	0.55
+Tina2016.2	Pak Meng Beach, Trang, Thailand	.	hesperiae	female	Labeled as vocans, but I believe hesperae	.	mean/se/min/max	27	18.54	16.29	25.3	.	0.39
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	redundant with individual data below	skip	mean/se	26	15.69	.	.	.	0.86
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	redundant with individual data below	skip	mean/se	22	15.4	.	.	.	0.88
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	7	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	8.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	10.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	11	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	11.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	11.8	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	12	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	13.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	13	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	14.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	14.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	15.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	15.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	15.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	16.8	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	16.9	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	17.1	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	16.8	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	19.8	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	18.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	18.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	19.7	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	21.8	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	22.1	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	23.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	Data extracted from figure 1	.	individual	.	23.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	8.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	10.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	10.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	12.2	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	11.7	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	12	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	11.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	12.1	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	12.6	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	13.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	15.1	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	15.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	16.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	17.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	17.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	18.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	18.2	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	18.5	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	20.2	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	22.4	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	22.3	.	.	.	.
+Tina2016.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	female	Data extracted from figure 1	.	individual	.	21.8	.	.	.	.
+Tina2017	Tammalang, Satun, Thailand	.	rosea	male	.	.	mean/se	52	10.31	.	.	.	0.36
+Tina2017	Tammalang, Satun, Thailand	.	rosea	female	.	.	mean/se	35	9.56	.	.	.	0.31
+Tina2017.2	Pak Meng Beach, Trang, Thailand	.	annulipes	male	.	.	mean/se	21	8.92	.	.	.	0.51
+Tina2017.2	Pak Meng Beach, Trang, Thailand	.	annulipes	female	.	.	mean/se	28	8.08	.	.	.	0.27
+Tina2017.4	Pak Meng Beach, Trang, Thailand	.	annulipes	male	.	.	mean/se	21	19.9	.	.	.	0.42
+Tina2017.4	Pak Meng Beach, Trang, Thailand	.	annulipes	male	.	.	mean/se	21	21.77	.	.	.	0.47
+Tina2017.4	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	33	9.67	.	.	.	0.21
+Tina2017.4	Kantang Mangrove Forest, Trang, Thailand	.	bengali	male	.	.	mean/se	33	10.42	.	.	.	0.24
+Tina2017.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	.	.	mean/se	31	26.16	.	.	.	1.01
+Tina2017.4	Mangrove Extension, Learning and Development Center 5, Satun, Thailand	.	rosea	male	.	.	mean/se	31	30.21	.	.	.	1.12
+Tina2017.3	Tammalang, Satun, Thailand	.	rosea	female	ovigerous	.	mean/se	13	18.06	.	.	.	0.5
+Tina2017.3	Tammalang, Satun, Thailand	.	rosea	female	non-ovigerous	.	mean/se	20	17.02	.	.	.	0.48
+Tina2018.1	Tammalang, Satun, Thailand	.	rosea	male	.	.	mean/se	39	17.94	.	.	.	0.38
+Tina2018.1	Tammalang, Satun, Thailand	.	rosea	female	.	.	mean/se	53	17.52	.	.	.	0.24
+Tina2018.2	Tammalang, Satun, Thailand	.	rosea	male	.	.	mean/se	37	16.75	.	.	.	0.39
+Tina2018.2	Tammalang, Satun, Thailand	.	rosea	female	.	.	mean/se	36	16.86	.	.	.	0.33
+Tina2018.3	Pak Meng Beach, Trang, Thailand	.	annulipes	male	.	.	mean/se	36	13.54	.	.	.	0.19
+Tina2018.3	Pak Meng Beach, Trang, Thailand	.	annulipes	female	.	.	mean/se	33	13.06	.	.	.	0.16
+Tina2018.5	Ban Nai Thung, Nakhon Si Thammarat, Thailand	.	perplexa	male	non-regenerated claws	.	mean/se	23	16.66	.	.	.	0.47
+Tina2018.5	Ban Nai Thung, Nakhon Si Thammarat, Thailand	.	perplexa	male	regenerated claws	.	mean/se	20	17.15	.	.	.	0.43
+Tina2018.5	Ban Nai Thung, Nakhon Si Thammarat, Thailand	.	perplexa	female	.	.	mean/se	15	15.09	.	.	.	0.85
+Keeratipattarakarn2018	Tammalang, Satun, Thailand	.	rosea	female	ovigerous	.	mean/se	22	17.74	.	.	.	0.51
+Keeratipattarakarn2018	Tammalang, Satun, Thailand	.	rosea	female	non-ovigerous	.	mean/se	17	16.8	.	.	.	0.48
+Keeratipattarakarn2020	Tammalang, Satun, Thailand	.	rosea	male	.	.	mean/se	14	19.91	.	.	.	0.53
+Keeratipattarakarn2020	Tammalang, Satun, Thailand	.	rosea	female	.	.	mean/se	11	20.27	.	.	.	0.52
+Tina2020.2	Ban Nai Thung, Nakhon Si Thammarat, Thailand	.	perplexa	male	.	.	mean/se	50	13.74	.	.	.	0.42
+Tina2020.2	Ban Nai Thung, Nakhon Si Thammarat, Thailand	.	perplexa	female	.	.	mean/se	50	12.68	.	.	.	0.33
+Jaroensutasinee2003	Ko Lanta, Krabi, Thailand	.	paradussumieri	male	.	.	mean/sd	70	25.78	.	.	3.87	.
+Jaroensutasinee2003	Ko Lanta, Krabi, Thailand	.	paradussumieri	female	.	.	mean/sd	70	25.05	.	.	2.45	.
+Jaroensutasinee2004	Southern Thailand	.	alcocki	male	.	.	mean/sd	.	17.11	.	.	5.26	.
+Jaroensutasinee2004	Southern Thailand	.	alcocki	female	.	.	mean/sd	.	15.22	.	.	3.8	.
+Jaroensutasinee2004	Southern Thailand	.	tetragonon	male	.	.	mean/sd	.	20.04	.	.	3.78	.
+Jaroensutasinee2004	Southern Thailand	.	tetragonon	female	.	.	mean/sd	.	17.92	.	.	6.45	.
+Jaroensutasinee2004	Southern Thailand	.	paradussumieri	male	.	.	mean/sd	.	20.78	.	.	7.84	.
+Jaroensutasinee2004	Southern Thailand	.	paradussumieri	female	.	.	mean/sd	.	17.14	.	.	4.82	.
+Jaroensutasinee2004	Southern Thailand	.	rosea	male	.	.	mean/sd	.	18.28	.	.	4.37	.
+Jaroensutasinee2004	Southern Thailand	.	rosea	female	.	.	mean/sd	.	14.12	.	.	4.11	.
+Jaroensutasinee2004	Southern Thailand	.	bengali	male	.	.	mean/sd	.	10.11	.	.	2.63	.
+Jaroensutasinee2004	Southern Thailand	.	bengali	female	.	.	mean/sd	.	9.24	.	.	2.25	.
+Jaroensutasinee2004	Southern Thailand	.	hesperiae	male	.	.	mean/sd	.	13.83	.	.	4.34	.
+Jaroensutasinee2004	Southern Thailand	.	hesperiae	female	.	.	mean/sd	.	12.38	.	.	4.33	.
+Jaroensutasinee2004	Southern Thailand	.	forcipata	male	.	.	mean/sd	.	18.2	.	.	6.08	.
+Jaroensutasinee2004	Southern Thailand	.	forcipata	female	.	.	mean/sd	.	14.7	.	.	4.75	.
+Jaroensutasinee2004	Southern Thailand	.	annulipes	male	.	.	mean/sd	.	12.55	.	.	3.22	.
+Jaroensutasinee2004	Southern Thailand	.	annulipes	female	.	.	mean/sd	.	10.35	.	.	2.44	.

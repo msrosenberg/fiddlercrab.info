@@ -57,6 +57,11 @@ Vannini1981	male	27.1
 Fujita2018	male	23.8	
 Juncker2009	male	25.1	
 Chertoprud2012	female	23.2	
+Poupin2018	male	20.8	
+Poupin2018	female	17.2	
+Poupin2018	female	26.2	
+George1982	female	31	
+George1982	female	28.1	
 
 Ranges
 Reference	Sex	n	Min	Max	Notes
@@ -72,6 +77,8 @@ Ho1993	male	5	19.1	27.1
 Poupin2010.2	non-specified	2	14	34	rough values
 Marbun2019	female	37	20	28	
 Marbun2019	male	29	30	39	
+George1982	male	10	16.8	27	
+George1982	female	21	13.5	32	non-ovigerous
 
 Means
 Reference	Sex	n	Mean	Notes
@@ -92,4 +99,6 @@ Frith1977.2	female	30	15.52	0.76	subsample
 Frith1977.2	female	29	18.26	0.75	subsample
 Frith1977.2	female	8	21.01	0.59	subsample
 Chertoprud2012	male	3	18.1	4.6	Not clear if this paper repoted SD or SE; treating as SD
+Jaroensutasinee2004	male	1	20.04	3.78	
+Jaroensutasinee2004	female	1	17.92	6.45	
 

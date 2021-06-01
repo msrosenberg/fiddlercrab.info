@@ -11,8 +11,23 @@ Rosenberg2000	male	19.7
 Rosenberg2000	male	19.6	
 Rosenberg2000	male	14.65	
 Shih2015.2	male	22.5	
+George1982	female	12.6	ovigerous
+George1982	female	15.4	
+George1982	female	13.8	
 
 Ranges
 Reference	Sex	n	Min	Max	Notes
 Williams1980	male	30	4.3	12.5	
+George1982	male	141	5.1	24.3	
+George1982	female	87	4.8	16.8	non-ovigerous
+George1982	male	19	8.4	17.5	
+George1982	female	7	6.3	14.1	non-ovigerous
+George1982	male	22	6.3	24	
+George1982	female	12	6.5	19.7	non-ovigerous
+George1982	male	56	10.4	26.2	
+George1982	female	15	12.1	19.8	non-ovigerous
+
+Means w/Standard Deviation
+Reference	Sex	n	Mean	SD	Notes
+Dye1987	mixed	20	14.62	0.88	Not clear if this paper repoted SD or SE; treating as SD
 
